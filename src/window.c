@@ -39,6 +39,9 @@ struct _LockWindow {
     gchar *uid; /**< Stores the entered UID part for an encryption process. */
     gchar *uid_used; /**< Stores the UID actually used during an encryption process. */
 
+    /* Key */
+    GFile *backup_folder;
+
     /* Text */
     AdwViewStackPage *text_page;
     AdwSplitButton *text_button;
@@ -86,9 +89,12 @@ gboolean lock_window_sign_file_on_completed(LockWindow * window);
 gboolean lock_window_verify_text_on_completed(LockWindow * window);
 gboolean lock_window_verify_file_on_completed(LockWindow * window);
 
-/* Key management */
+/* Key */
 static void lock_window_key_dialog(GSimpleAction * action, GVariant * parameter,
                                    LockWindow * window);
+static void lock_window_backup_folder_present(GSimpleAction * self,
+                                              GVariant * parameter,
+                                              LockWindow * window);
 
 /* Text */
 static void lock_window_text_view_copy(AdwSplitButton * self,
@@ -128,13 +134,21 @@ static void lock_window_init(LockWindow *window)
                      G_CALLBACK(lock_window_stack_page_on_changed), window);
     lock_window_stack_page_on_changed(window->stack, NULL, window);
 
-    /* Key management */
+    /* Key */
 
+    // Manage
     g_autoptr(GSimpleAction) manage_keys_action =
         g_simple_action_new("manage_keys", NULL);
     g_signal_connect(manage_keys_action, "activate",
                      G_CALLBACK(lock_window_key_dialog), window);
     g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(manage_keys_action));
+
+    // Backup
+    g_autoptr(GSimpleAction) backup_keys_action =
+        g_simple_action_new("backup_keys", NULL);
+    g_signal_connect(backup_keys_action, "activate",
+                     G_CALLBACK(lock_window_backup_folder_present), window);
+    g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(backup_keys_action));
 
     /* Text */
     g_signal_connect(window->text_button, "clicked",
@@ -297,7 +311,7 @@ static void lock_window_stack_page_on_changed(AdwViewStack *self,
     visible_page = NULL;
 }
 
-/**** Key management ****/
+/**** Key ****/
 
 /**
  * This function initializes the UI required for managing keys.
@@ -315,6 +329,58 @@ static void lock_window_key_dialog(GSimpleAction *action, GVariant *parameter,
     LockKeyDialog *dialog = lock_key_dialog_new(window);
 
     adw_dialog_present(ADW_DIALOG(dialog), GTK_WIDGET(window));
+}
+
+/**
+ * This function opens the backup folder of a LockWindow.
+ *
+ * @param object https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
+ * @param result https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
+ * @param user_data https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
+ */
+static void lock_window_backup_folder_open(GObject *source_object,
+                                           GAsyncResult *res, gpointer data)
+{
+    GtkFileDialog *dialog = GTK_FILE_DIALOG(source_object);
+    LockWindow *window = LOCK_WINDOW(data);
+
+    window->backup_folder =
+        gtk_file_dialog_select_folder_finish(dialog, res, NULL);
+    if (window->backup_folder == NULL) {
+        /* Cleanup */
+        g_object_unref(dialog);
+        dialog = NULL;
+
+        window = NULL;
+
+        return;
+    }
+
+    /* Cleanup */
+    g_object_unref(dialog);
+    dialog = NULL;
+}
+
+/**
+ * This function opens an open folder dialog for a LockWindow.
+ *
+ * @param self https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ * @param window https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ */
+static void lock_window_backup_folder_present(GSimpleAction *self,
+                                              GVariant *parameter,
+                                              LockWindow *window)
+{
+    (void)self;
+    (void)parameter;
+
+    GtkFileDialog *dialog = gtk_file_dialog_new();
+    GCancellable *cancel = g_cancellable_new();
+
+    gtk_file_dialog_select_folder(dialog, GTK_WINDOW(window),
+                                  cancel, lock_window_backup_folder_open,
+                                  window);
 }
 
 /**** Text ****/
