@@ -167,7 +167,7 @@ void lock_key_row_export(LockKeyRow *row)
     char *path = g_file_get_path(row->export_file);
     const char *uid = adw_preferences_row_get_title(ADW_PREFERENCES_ROW(row));
 
-    row->export_success = key_export(uid, path);
+    row->export_success = key_export(uid, path, 0);
 
     /* Cleanup */
     g_free(path);

@@ -32,6 +32,7 @@ void thread_verify_file(GtkButton * self, LockWindow * window);
 void thread_import_key(LockKeyDialog * dialog);
 void thread_generate_key(GtkButton * self, LockKeyDialog * dialog);
 void thread_export_key(LockKeyRow * row);
+void thread_backup_keyring(LockWindow * window);
 void thread_remove_key(LockKeyRow * row);
 
 #endif                          // THREADING_H

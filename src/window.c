@@ -40,6 +40,8 @@ struct _LockWindow {
     gchar *uid_used; /**< Stores the UID actually used during an encryption process. */
 
     /* Key */
+    gboolean public_success;
+    gboolean secret_success;
     GFile *backup_folder;
 
     /* Text */
@@ -72,6 +74,9 @@ G_DEFINE_TYPE(LockWindow, lock_window, ADW_TYPE_APPLICATION_WINDOW);
 static void lock_window_stack_page_on_changed(AdwViewStack * self,
                                               GParamSpec * pspec,
                                               LockWindow * window);
+
+// Key
+gboolean lock_window_backup_on_completed(LockWindow * window);
 
 // Encryption
 gboolean lock_window_encrypt_text_on_completed(LockWindow * window);
@@ -359,6 +364,8 @@ static void lock_window_backup_folder_open(GObject *source_object,
     /* Cleanup */
     g_object_unref(dialog);
     dialog = NULL;
+
+    thread_backup_keyring(window);
 }
 
 /**
@@ -381,6 +388,60 @@ static void lock_window_backup_folder_present(GSimpleAction *self,
     gtk_file_dialog_select_folder(dialog, GTK_WINDOW(window),
                                   cancel, lock_window_backup_folder_open,
                                   window);
+}
+
+/**
+ * This function create a backup of the GnuPG keyring in a LockWindow.
+ *
+ * @param window https://docs.gtk.org/glib/callback.ThreadFunc.html
+ */
+void lock_window_backup(LockWindow *window)
+{
+    const char *folder = g_file_get_path(window->backup_folder);
+    const char *public_path = g_build_filename(folder,
+                                               _("Public Keyring.asc"),
+                                               NULL);
+    const char *secret_path = g_build_filename(folder,
+                                               _("Secret Keyring.asc"),
+                                               NULL);
+
+    window->public_success = key_export(NULL, public_path, 0);
+    window->secret_success =
+        key_export(NULL, secret_path,
+                   GPGME_EXPORT_MODE_SECRET | GPGME_EXPORT_MODE_SECRET_SUBKEY);
+
+    /* UI */
+    g_idle_add((GSourceFunc) lock_window_backup_on_completed, window);
+
+    g_thread_exit(0);
+}
+
+/**
+ * This function handles UI updates for keyring backups and is supposed to be called via g_idle_add().
+ *
+ * @param window https://docs.gtk.org/glib/callback.SourceFunc.html
+ *
+ * @return https://docs.gtk.org/glib/func.idle_add.html
+ */
+gboolean lock_window_backup_on_completed(LockWindow *window)
+{
+    AdwToast *toast;
+
+    if (!window->public_success && !window->secret_success) {
+        toast = adw_toast_new(_("Backup failed"));
+    } else if (!window->public_success) {
+        toast = adw_toast_new(_("Backup of public keys failed"));
+    } else if (!window->secret_success) {
+        toast = adw_toast_new(_("Backup of secret keys failed"));
+    } else {
+        toast = adw_toast_new(_("Keyring backed up"));
+    }
+
+    adw_toast_set_timeout(toast, 2);
+    adw_toast_overlay_add_toast(window->toast_overlay, toast);
+
+    /* Only execute once */
+    return false;               // https://docs.gtk.org/glib/func.idle_add.html
 }
 
 /**** Text ****/
@@ -660,7 +721,9 @@ void lock_window_encrypt_text(LockWindow *window)
 
     gpgme_key_t key = key_search(window->uid);
     HANDLE_ERROR_UID(, key, lock_window_encrypt_text_on_completed, window,
-                     g_free(plain); plain = NULL;);
+                     g_free(plain);
+                     plain = NULL;
+        );
     lock_window_set_uid(window, "");    // Mark email search as successful
     if (key->uids->name) {
         lock_window_set_uid_used(window, key->uids->name);
@@ -750,8 +813,10 @@ void lock_window_encrypt_file(LockWindow *window)
     gpgme_key_t key = key_search(window->uid);
     HANDLE_ERROR_UID(, key, lock_window_encrypt_file_on_completed, window,
                      /* Cleanup */
-                     g_free(input_path); input_path = NULL;
-                     g_free(output_path); output_path = NULL;);
+                     g_free(input_path);
+                     input_path = NULL; g_free(output_path);
+                     output_path = NULL;
+        );
     lock_window_set_uid(window, "");    // Mark email search as successful
     if (key->uids->name) {
         lock_window_set_uid_used(window, key->uids->name);

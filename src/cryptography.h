@@ -12,7 +12,7 @@ gpgme_key_t key_search(const char *uid);
 bool key_import(const char *path);
 bool key_generate(const char *userid, const char *sign_algorithm,
                   const char *encrypt_algorithm, unsigned long expiry);
-bool key_export(const char *uid, const char *path);
+bool key_export(const char *uid, const char *path, unsigned int flags);
 bool key_remove(gpgme_key_t key);
 
 // Encrypt

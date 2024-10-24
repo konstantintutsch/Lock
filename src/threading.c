@@ -202,6 +202,18 @@ void thread_export_key(LockKeyRow *row)
 }
 
 /**
+ * This function creates a new thread for the backup of the keyring in a LockWindow.
+ *
+ * @param window Window to process the backup in
+ */
+void thread_backup_keyring(LockWindow *window)
+{
+    CRYPTOGRAPHY_THREAD_WRAPPER("backup_keyring",
+                                C_("Thread Error", "keyring backup"),
+                                lock_window_backup, window);
+}
+
+/**
  * This function creates a new thread for the removal of a key in a LockKeyRow.
  *
  * @param row Row to remove the key of

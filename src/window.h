@@ -12,6 +12,9 @@ G_DECLARE_FINAL_TYPE(LockWindow, lock_window, LOCK, WINDOW,
 LockWindow *lock_window_new(LockApplication * app);
 void lock_window_open(LockWindow * window, GFile * file);
 
+/* Key */
+void lock_window_backup(LockWindow * window);
+
 /* Cryptography */
 
 // Encryption
