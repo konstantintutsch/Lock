@@ -245,7 +245,7 @@ bool key_export(const char *uid, const char *path)
 }
 
 /**
- * This function removes a key and its subkeys from the system.
+ * This function removes a key and its subkeys from the GnuPG keyring.
  *
  * @param key Key to remove
  *

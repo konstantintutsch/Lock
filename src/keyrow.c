@@ -259,7 +259,7 @@ static void lock_key_row_remove_confirm(GtkButton *self, LockKeyRow *row)
 }
 
 /**
- * This function removes a key and its subkeys from the system in a LockKeyRow.
+ * This function removes a key and its subkeys from the GnuPG keyring in a LockKeyRow.
  *
  * @param row https://docs.gtk.org/glib/callback.ThreadFunc.html
  */
