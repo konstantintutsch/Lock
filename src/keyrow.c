@@ -165,9 +165,9 @@ static void lock_key_row_export_file_present(GtkButton *self, LockKeyRow *row)
 void lock_key_row_export(LockKeyRow *row)
 {
     char *path = g_file_get_path(row->export_file);
-    const char *uid = adw_preferences_row_get_title(ADW_PREFERENCES_ROW(row));
+    const char *fingerprint = adw_action_row_get_subtitle(ADW_ACTION_ROW(row));
 
-    row->export_success = key_manage(path, uid, EXPORT);
+    row->export_success = key_manage(path, fingerprint, EXPORT);
 
     /* Cleanup */
     g_free(path);
@@ -265,9 +265,9 @@ static void lock_key_row_remove_confirm(GtkButton *self, LockKeyRow *row)
  */
 void lock_key_row_remove(LockKeyRow *row)
 {
-    const char *uid = adw_preferences_row_get_title(ADW_PREFERENCES_ROW(row));
+    const char *fingerprint = adw_action_row_get_subtitle(ADW_ACTION_ROW(row));
 
-    row->remove_success = key_manage(NULL, uid, REMOVE);
+    row->remove_success = key_manage(NULL, fingerprint, REMOVE);
 
     /* UI */
     g_idle_add((GSourceFunc) lock_key_row_remove_on_completed, row);

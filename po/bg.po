@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-26 07:53+0200\n"
+"POT-Creation-Date: 2024-10-27 20:51+0100\n"
 "PO-Revision-Date: 2024-10-23 00:58+0200\n"
 "Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian <dict-notifications@fsa-bg.org>\n"
@@ -49,16 +49,16 @@ msgstr "Шифриране за"
 msgid "Enter name or email …"
 msgstr "Въведете име или е-поща …"
 
-#: src/window.c:646 src/window.c:729
+#: src/window.c:648 src/window.c:733
 #, c-format
 msgid "Failed to find key for User ID “%s”"
 msgstr "Ключ за идентификатор на потребител „%s“ не може да бъде намерен"
 
-#: src/window.c:651 src/window.c:734
+#: src/window.c:653 src/window.c:738
 msgid "Encryption failed"
 msgstr "Шифрирането е неуспешно"
 
-#: src/window.c:657
+#: src/window.c:659
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -66,7 +66,7 @@ msgctxt ""
 msgid "Text encrypted for %s"
 msgstr "Текстът е шифриран за %s"
 
-#: src/window.c:740
+#: src/window.c:744
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -74,39 +74,39 @@ msgctxt ""
 msgid "File encrypted for %s"
 msgstr "Файлът е шифриран за %s"
 
-#: src/window.c:797 src/window.c:852
+#: src/window.c:801 src/window.c:856
 msgid "Decryption failed"
 msgstr "Дешифрирането е неуспешно"
 
-#: src/window.c:799
+#: src/window.c:803
 msgid "Text decrypted"
 msgstr "Текстът е дешифриран"
 
-#: src/window.c:854
+#: src/window.c:858
 msgid "File decrypted"
 msgstr "Файлът е дешифриран"
 
-#: src/window.c:910 src/window.c:965
+#: src/window.c:914 src/window.c:969
 msgid "Signing failed"
 msgstr "Подписването е неуспешно"
 
-#: src/window.c:912
+#: src/window.c:916
 msgid "Text signed"
 msgstr "Текстът е подписан"
 
-#: src/window.c:967
+#: src/window.c:971
 msgid "File signed"
 msgstr "Файлът е подписан"
 
-#: src/window.c:1023 src/window.c:1078
+#: src/window.c:1027 src/window.c:1082
 msgid "Verification failed"
 msgstr "Потвърждаването е неуспешно"
 
-#: src/window.c:1025
+#: src/window.c:1029
 msgid "Text verified"
 msgstr "Текстът е потвърден"
 
-#: src/window.c:1080
+#: src/window.c:1084
 msgid "File verified"
 msgstr "Файлът е потвърден"
 
@@ -176,14 +176,14 @@ msgctxt "Error message constructor for failed GPGME operations"
 msgid "Failed to %s: %s"
 msgstr "Неуспех на %s: %s"
 
-#: src/cryptography.c:49 src/cryptography.c:91 src/cryptography.c:147
-#: src/cryptography.c:266 src/cryptography.c:365
+#: src/cryptography.c:49 src/cryptography.c:92 src/cryptography.c:150
+#: src/cryptography.c:261 src/cryptography.c:366
 msgctxt "GPGME Error"
 msgid "create new GPGME context"
 msgstr "създадане на нов GPGME контекст"
 
-#: src/cryptography.c:54 src/cryptography.c:96 src/cryptography.c:152
-#: src/cryptography.c:271 src/cryptography.c:370
+#: src/cryptography.c:54 src/cryptography.c:97 src/cryptography.c:155
+#: src/cryptography.c:266 src/cryptography.c:371
 msgctxt "GPGME Error"
 msgid "set protocol of GPGME context to OpenPGP"
 msgstr "задаване на протокол на GPGME контекста на OpenPGP"
@@ -193,27 +193,27 @@ msgctxt "GPGME Error"
 msgid "find key matching User ID"
 msgstr "намиране на ключ, съответстващ на идентификатора на потребителя"
 
-#: src/cryptography.c:107 src/cryptography.c:116
+#: src/cryptography.c:108 src/cryptography.c:117
 msgctxt "GPGME Error"
 msgid "generate new GPG key for signing"
 msgstr "генериране на нов GPG ключ за подписване"
 
-#: src/cryptography.c:123
+#: src/cryptography.c:124
 msgctxt "GPGME Error"
 msgid "delete unfinished, generated ECC key"
 msgstr "изтриване на незавършен, генериран ECC ключ"
 
-#: src/cryptography.c:158
+#: src/cryptography.c:161
 msgctxt "GPGME Error"
 msgid "load GPGME key data from file"
 msgstr "зареждане на данни за GPGME ключа от файл"
 
-#: src/cryptography.c:164
+#: src/cryptography.c:166
 msgctxt "GPGME Error"
 msgid "import GPG key from file"
 msgstr "внасяне на GPG ключ от файл"
 
-#: src/cryptography.c:175
+#: src/cryptography.c:176
 msgctxt "GPGME Error"
 msgid "create GPGME key data in memory"
 msgstr "създаване на данни за GPGME ключ в паметта"
@@ -224,44 +224,45 @@ msgctxt "GPGME Error"
 msgid "export GPG key(s) to file"
 msgstr "внасяне на GPG ключ от файл"
 
-#: src/cryptography.c:196
+#: src/cryptography.c:195
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr "Изнесеният файл не може да бъде отворен: %s"
 
-#: src/cryptography.c:226
-#, fuzzy, c-format
-msgid "Could not find key for User ID %s to remove."
-msgstr "Ключ за идентификатор на потребител „%s“ не може да бъде намерен"
+#: src/cryptography.c:224
+#, fuzzy
+msgctxt "GPGME Error"
+msgid "get GPG key for removal"
+msgstr "премахване на ключ"
 
-#: src/cryptography.c:232
+#: src/cryptography.c:228
 msgctxt "GPGME Error"
 msgid "remove GPG key"
 msgstr "премахване на GPG ключ"
 
-#: src/cryptography.c:279
+#: src/cryptography.c:274
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "create new GPGME input data from string"
 msgstr "създаване на нови подписани GPGME данни от низ"
 
-#: src/cryptography.c:284 src/cryptography.c:391
+#: src/cryptography.c:280 src/cryptography.c:394
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "create new GPGME output data in memory"
 msgstr "създаване на данни за GPGME ключ в паметта"
 
-#: src/cryptography.c:293
+#: src/cryptography.c:289
 msgctxt "GPGME Error"
 msgid "encrypt GPGME data from memory"
 msgstr "шифриране на GPGME данни от паметта"
 
-#: src/cryptography.c:299
+#: src/cryptography.c:296
 msgctxt "GPGME Error"
 msgid "decrypt GPGME data from memory"
 msgstr "дешифриране на GPGME данни от паметта"
 
-#: src/cryptography.c:307
+#: src/cryptography.c:305
 msgctxt "GPGME Error"
 msgid "sign GPGME data from memory"
 msgstr "подписване на GPGME данни от паметта"
@@ -271,50 +272,50 @@ msgctxt "GPGME Error"
 msgid "verify GPGME data from memory"
 msgstr "потвърждаване на GPGME данни от паметта"
 
-#: src/cryptography.c:354
+#: src/cryptography.c:355
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s е премахнато, за да се подготви презаписването"
 
-#: src/cryptography.c:377
+#: src/cryptography.c:378
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "create new GPGME input data from file"
 msgstr "създаване на нови подписани GPGME данни от низ"
 
-#: src/cryptography.c:384
+#: src/cryptography.c:386
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "set file name of GPGME input data"
 msgstr "задаване на местоположението до файла с подписаните GPGME данни"
 
-#: src/cryptography.c:399
+#: src/cryptography.c:402
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "set file name of GPGME output data"
 msgstr "задаване на местоположението до файла с подписаните GPGME данни"
 
-#: src/cryptography.c:409
+#: src/cryptography.c:413
 msgctxt "GPGME Error"
 msgid "encrypt GPGME data from file"
 msgstr "шифриране на GPGME данни от файл"
 
-#: src/cryptography.c:414
+#: src/cryptography.c:420
 msgctxt "GPGME Error"
 msgid "decrypt GPGME data from file"
 msgstr "дешифриране на GPGME данни от файл"
 
-#: src/cryptography.c:421
+#: src/cryptography.c:429
 msgctxt "GPGME Error"
 msgid "sign GPGME data from file"
 msgstr "подписване на GPGME данни от файл"
 
-#: src/cryptography.c:426
+#: src/cryptography.c:436
 msgctxt "GPGME Error"
 msgid "verify GPGME data from file"
 msgstr "потвърждаване на GPGME данни от файл"
 
-#: src/cryptography.c:441
+#: src/cryptography.c:453
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Изходният файл не може да бъде отворен: %s"
@@ -640,6 +641,10 @@ msgstr "Обикновен текст"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "User ID dialog"
 msgstr "Прозорец за идентификатор на потребителя"
+
+#, fuzzy, c-format
+#~ msgid "Could not find key for fingerprint %s to remove."
+#~ msgstr "Ключ за идентификатор на потребител „%s“ не може да бъде намерен"
 
 #~ msgctxt "GPGME Error"
 #~ msgid "create new decrypted GPGME data from file"

@@ -24,7 +24,7 @@ void cryptography_init();
 gpgme_key_t key_search(const char *userid);
 bool key_generate(const char *userid, const char *sign_algorithm,
                   const char *encrypt_algorithm, unsigned long expiry);
-bool key_manage(const char *path, const char *userid, key_flags flags);
+bool key_manage(const char *path, const char *fingerprint, key_flags flags);
 
 /* Operations */
 char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key);
