@@ -88,6 +88,17 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.0.1" date="2024-10-29">
+            <description translate="no">
+                <ul>
+                    <li>Added interface for missing file selection</li>
+                    <li>Added translation and source links to about dialog</li>
+                    <li>Fixed crash when input and/or output files were missing</li>
+                    <li>Improved performance: key export, key removal, text and file processing</li>
+                    <li>Updated translations available: Hebrew</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.0.0+2" date="2024-10-28">
             <description translate="no">
                 <ul>
