@@ -31,7 +31,7 @@
     <url type="homepage">https://konstantintutsch.com/Lock</url>
     <url type="vcs-browser">https://github.com/konstantintutsch/Lock</url>
     <url type="bugtracker">https://github.com/konstantintutsch/Lock/issues</url>
-    <url type="translate">https://github.com/konstantintutsch/Lock/tree/main/po</url>
+    <url type="translate">https://hosted.weblate.org/engage/Lock/</url>
     <update_contact>mail@konstantintutsch.com</update_contact>
     <developer id="com.konstantintutsch">
         <name translate="no">Konstantin Tutsch</name>

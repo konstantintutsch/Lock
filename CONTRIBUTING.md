@@ -14,17 +14,9 @@ You want to directly contribute to this project? Great! Open a pull request via 
 
 ### Translations
 
-This project is translated using GNU gettext. Translations for a specific language can be found at `po/<lang>.po`.
+[![Translations (Progress)](https://hosted.weblate.org/widget/Lock/application/multi-auto.svg)](https://hosted.weblate.org/engage/Lock/)
 
-#### Adding a new language
-
-If you want to add a language, append it to [LINGUAS](po/LINGUAS). Once finished, run the `translate` Just recipe.
-
-```
-just translate
-```
-
-The empty translations file is now accessible at `po/<lang>.po` and is ready to be translated.
+This project is translated using GNU gettext. You can contribute via Weblate [here](https://hosted.weblate.org/engage/Lock/).
 
 ### Code
 

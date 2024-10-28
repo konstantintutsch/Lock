@@ -1,4 +1,4 @@
-# Lock [<img align="right" alt="Build Status" src="https://github.com/konstantintutsch/Lock/actions/workflows/build.yaml/badge.svg">](https://github.com/konstantintutsch/Lock/actions/workflows/build.yaml)
+# Lock [<img align="right" alt="Translation Status" src="https://hosted.weblate.org/widget/Lock/application/svg-badge.svg">](https://hosted.weblate.org/engage/Lock/) [<img align="right" alt="Build Status" src="https://github.com/konstantintutsch/Lock/actions/workflows/build.yaml/badge.svg">](https://github.com/konstantintutsch/Lock/actions/workflows/build.yaml)
 
 <img align="right" alt="Lock Icon" src="data/icons/com.konstantintutsch.Lock.svg">
 
