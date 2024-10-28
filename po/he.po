@@ -1,0 +1,628 @@
+# Copyright (C) 2024
+# This file is distributed under the same license as the Lock package.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: com.konstantintutsch.Lock\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-26 07:53+0200\n"
+"PO-Revision-Date: 2024-10-28 09:07+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: \n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+
+#. Details
+#: src/application.c:132 data/com.konstantintutsch.Lock.desktop.in.in:5
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
+msgid "Process data with GnuPG"
+msgstr "עיבוד נתונים עם GnuPG"
+
+#: src/application.c:143
+msgid "translator-credits"
+msgstr "ירון שהרבני <sh.yaron@gmail.com>"
+
+#: src/application.c:148
+msgid "Dependencies"
+msgstr "תלויות"
+
+#: src/window.c:143 data/ui/entrydialog.blp:33
+msgid "Enter text …"
+msgstr "נא למלא טקסט…"
+
+#: src/window.c:367
+msgid "Text copied"
+msgstr "הטקסט הועתק"
+
+#: src/window.c:557 src/window.c:577
+msgid "Encrypt for"
+msgstr "הצפנה עבור"
+
+#: src/window.c:557 src/window.c:577
+msgid "Enter name or email …"
+msgstr "נא למלא שם או כתובת דוא״ל…"
+
+#: src/window.c:646 src/window.c:729
+#, c-format
+msgid "Failed to find key for User ID “%s”"
+msgstr "איתור מפתח למזהה המשתמש „%s”"
+
+#: src/window.c:651 src/window.c:734
+msgid "Encryption failed"
+msgstr "ההצפנה נכשלה"
+
+#: src/window.c:657
+#, c-format
+msgctxt ""
+"Formatter is either name, email or fingerprint of the public key used in the "
+"encryption process."
+msgid "Text encrypted for %s"
+msgstr "טקסט הוצפן עבור %s"
+
+#: src/window.c:740
+#, c-format
+msgctxt ""
+"Formatter is either name, email or fingerprint of the public key used in the "
+"encryption process."
+msgid "File encrypted for %s"
+msgstr "קובץ הוצפן עבור %s"
+
+#: src/window.c:797 src/window.c:852
+msgid "Decryption failed"
+msgstr "הפענוח נכשל"
+
+#: src/window.c:799
+msgid "Text decrypted"
+msgstr "הטקסט פוענח"
+
+#: src/window.c:854
+msgid "File decrypted"
+msgstr "הקובץ פוענח"
+
+#: src/window.c:910 src/window.c:965
+msgid "Signing failed"
+msgstr "החתימה נכשלה"
+
+#: src/window.c:912
+msgid "Text signed"
+msgstr "הטקסט נחתם"
+
+#: src/window.c:967
+msgid "File signed"
+msgstr "הקובץ נחתם"
+
+#: src/window.c:1023 src/window.c:1078
+msgid "Verification failed"
+msgstr "האימות נכשל"
+
+#: src/window.c:1025
+msgid "Text verified"
+msgstr "הטקסט אומת"
+
+#: src/window.c:1080
+msgid "File verified"
+msgstr "הקובץ אומת"
+
+#: src/keydialog.c:327
+msgid "Import failed"
+msgstr "הייבוא נכשל"
+
+#: src/keydialog.c:329
+msgid "Keys imported"
+msgstr "המפתחות יובאו"
+
+#: src/keydialog.c:396
+msgid "Generation failed"
+msgstr "היצירה נכשלה"
+
+#: src/keydialog.c:398
+msgid "Keypair generated"
+msgstr "נוצר צמד מפתחות"
+
+#: src/keyrow.c:91
+msgid "Key does not expire"
+msgstr "תוקף המפתח לא יפוג"
+
+#: src/keyrow.c:95
+#, c-format
+msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
+msgid "Expires %s at %s"
+msgstr "התוקף יפוג ב־%s ב־%s"
+
+#: src/keyrow.c:194
+msgid "Export failed"
+msgstr "הייצוא נכשל"
+
+#: src/keyrow.c:196
+msgid "Key exported"
+msgstr "המפתח יוצא"
+
+#: src/keyrow.c:242
+msgid "Remove key and subkeys?"
+msgstr "להסיר את המפתח ואת תת־המפתחות?"
+
+#: src/keyrow.c:245
+#, c-format
+msgid "The removal of the key of %s cannot be undone!"
+msgstr "הסרת המפתח %s היא בלתי הפיכה!"
+
+#: src/keyrow.c:248
+msgid "_Cancel"
+msgstr "_ביטול"
+
+#: src/keyrow.c:249
+msgid "_Remove"
+msgstr "ה_סרה"
+
+#: src/keyrow.c:290
+msgid "Removal failed"
+msgstr "ההסרה נכשלה"
+
+#: src/keyrow.c:292
+msgid "Key removed"
+msgstr "המפתח הוסר"
+
+#: src/cryptography.c:16
+#, c-format
+msgctxt "Error message constructor for failed GPGME operations"
+msgid "Failed to %s: %s"
+msgstr "%s נכשל: %s"
+
+#: src/cryptography.c:49 src/cryptography.c:91 src/cryptography.c:147
+#: src/cryptography.c:266 src/cryptography.c:365
+msgctxt "GPGME Error"
+msgid "create new GPGME context"
+msgstr "יצירת הקשר GPGME חדש"
+
+#: src/cryptography.c:54 src/cryptography.c:96 src/cryptography.c:152
+#: src/cryptography.c:271 src/cryptography.c:370
+msgctxt "GPGME Error"
+msgid "set protocol of GPGME context to OpenPGP"
+msgstr "הגדרת הפרוטוקול של הקשר GPGME ל־OpenPGP"
+
+#: src/cryptography.c:67
+msgctxt "GPGME Error"
+msgid "find key matching User ID"
+msgstr "איתור מפתח שתואם למזהה המשתמש"
+
+#: src/cryptography.c:107 src/cryptography.c:116
+msgctxt "GPGME Error"
+msgid "generate new GPG key for signing"
+msgstr "יצירת מפתח GPG חדש לחתימה"
+
+#: src/cryptography.c:123
+msgctxt "GPGME Error"
+msgid "delete unfinished, generated ECC key"
+msgstr "מחיקת מפתח ECC חלקי שנוצר"
+
+#: src/cryptography.c:158
+msgctxt "GPGME Error"
+msgid "load GPGME key data from file"
+msgstr "טעינת נתוני מפתח GPG מקובץ"
+
+#: src/cryptography.c:164
+msgctxt "GPGME Error"
+msgid "import GPG key from file"
+msgstr "ייבוא מפתח GPG מקובץ"
+
+#: src/cryptography.c:175
+msgctxt "GPGME Error"
+msgid "create GPGME key data in memory"
+msgstr "יצירת נתוני מפתח GPGME בזיכרון"
+
+#: src/cryptography.c:181
+msgctxt "GPGME Error"
+msgid "export GPG key(s) to file"
+msgstr "ייצוא מפתח/מפתחות GPG לקובץ"
+
+#: src/cryptography.c:196
+#, c-format
+msgid "Failed to open export file: %s"
+msgstr "ייצוא קובץ נכשל: %s"
+
+#: src/cryptography.c:226
+#, c-format
+msgid "Could not find key for User ID %s to remove."
+msgstr "לא ניתן למצוא מפתח למזהה המשתמש %s להסרה."
+
+#: src/cryptography.c:232
+msgctxt "GPGME Error"
+msgid "remove GPG key"
+msgstr "הסרת מפתח GPG"
+
+#: src/cryptography.c:279
+msgctxt "GPGME Error"
+msgid "create new GPGME input data from string"
+msgstr "יצירת נתוני קלט חדשים ל־GPGME ממחרוזת"
+
+#: src/cryptography.c:284 src/cryptography.c:391
+msgctxt "GPGME Error"
+msgid "create new GPGME output data in memory"
+msgstr "יצירת נתוני פלט חדשים מ־GPGME ממחרוזת"
+
+#: src/cryptography.c:293
+msgctxt "GPGME Error"
+msgid "encrypt GPGME data from memory"
+msgstr "הצפנת נתוני GPGME מהזיכרון"
+
+#: src/cryptography.c:299
+msgctxt "GPGME Error"
+msgid "decrypt GPGME data from memory"
+msgstr "פענוח נתוני GPGME מהזיכרון"
+
+#: src/cryptography.c:307
+msgctxt "GPGME Error"
+msgid "sign GPGME data from memory"
+msgstr "חתימת נתוני GPGME מהזיכרון"
+
+#: src/cryptography.c:312
+msgctxt "GPGME Error"
+msgid "verify GPGME data from memory"
+msgstr "אימות נתוני GPGME מהזיכרון"
+
+#: src/cryptography.c:354
+#, c-format
+msgid "Removed %s to prepare overwriting"
+msgstr "%s הוסר כדי להתכונן לשכתוב"
+
+#: src/cryptography.c:377
+msgctxt "GPGME Error"
+msgid "create new GPGME input data from file"
+msgstr "יצירת נתוני קלט ל־GPGME מקובץ"
+
+#: src/cryptography.c:384
+msgctxt "GPGME Error"
+msgid "set file name of GPGME input data"
+msgstr "הגדרת שם קובץ לנתוני קלט ל־GPGME"
+
+#: src/cryptography.c:399
+msgctxt "GPGME Error"
+msgid "set file name of GPGME output data"
+msgstr "הגדרת שם קובץ לנתוני פלט מ־GPGME"
+
+#: src/cryptography.c:409
+msgctxt "GPGME Error"
+msgid "encrypt GPGME data from file"
+msgstr "הצפנת נתוני GPGME מקובץ"
+
+#: src/cryptography.c:414
+msgctxt "GPGME Error"
+msgid "decrypt GPGME data from file"
+msgstr "פענוח נתוני GPGME מקובץ"
+
+#: src/cryptography.c:421
+msgctxt "GPGME Error"
+msgid "sign GPGME data from file"
+msgstr "חתימת נתוני GPG מקובץ"
+
+#: src/cryptography.c:426
+msgctxt "GPGME Error"
+msgid "verify GPGME data from file"
+msgstr "אימות נתוני GPGME מקובץ"
+
+#: src/cryptography.c:441
+#, c-format
+msgid "Failed to open output file: %s"
+msgstr "פתיחת קובץ הפלט נכשלה: %s"
+
+#: src/threading.c:20
+#, c-format
+msgctxt ""
+"First format specifier is a translation string marked as “Thread Error”"
+msgid "Failed to create %s thread: %s"
+msgstr "יצירת תהליכון %s נכשלה: %s"
+
+#: src/threading.c:41
+msgctxt "Thread Error"
+msgid "text encryption"
+msgstr "הצפנת טקסט"
+
+#: src/threading.c:62
+msgctxt "Thread Error"
+msgid "file encryption"
+msgstr "הצפנת קובץ"
+
+#: src/threading.c:82
+msgctxt "Thread Error"
+msgid "text decryption"
+msgstr "פענוח טקסט"
+
+#: src/threading.c:97
+msgctxt "Thread Error"
+msgid "file decryption"
+msgstr "פענוח קובץ"
+
+#: src/threading.c:114
+msgctxt "Thread Error"
+msgid "text signing"
+msgstr "חתימת טקסט"
+
+#: src/threading.c:128
+msgctxt "Thread Error"
+msgid "file signing"
+msgstr "חתימת קובץ"
+
+#: src/threading.c:146
+msgctxt "Thread Error"
+msgid "text verification"
+msgstr "אימות טקסט"
+
+#: src/threading.c:161
+msgctxt "Thread Error"
+msgid "file verification"
+msgstr "אימות קובץ"
+
+#: src/threading.c:173
+msgctxt "Thread Error"
+msgid "key import"
+msgstr "ייבוא מפתח"
+
+#: src/threading.c:188
+msgctxt "Thread Error"
+msgid "key generation"
+msgstr "יצירת מפתח"
+
+#: src/threading.c:200
+msgctxt "Thread Error"
+msgid "key export"
+msgstr "ייצוא מפתח"
+
+#: src/threading.c:212
+msgctxt "Thread Error"
+msgid "key removal"
+msgstr "הסרת מפתח"
+
+#: data/ui/window.blp:9 data/ui/window.blp:169
+#: data/com.konstantintutsch.Lock.desktop.in.in:4
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
+msgid "Lock"
+msgstr "נעילה"
+
+#: data/ui/window.blp:29
+msgid "Copy"
+msgstr "העתקה"
+
+#: data/ui/window.blp:30
+msgid "Copy the text"
+msgstr "העתקת הטקסט"
+
+#: data/ui/window.blp:33
+msgid "Cryptography operations"
+msgstr "פעולות קריפטוגרפיות"
+
+#: data/ui/window.blp:45
+msgid "Main Menu"
+msgstr "תפריט ראשי"
+
+#: data/ui/window.blp:55
+msgid "Text"
+msgstr "טקסט"
+
+#: data/ui/window.blp:73
+msgid "File"
+msgstr "קובץ"
+
+#: data/ui/window.blp:92
+msgid "Input File"
+msgstr "קובץ קלט"
+
+#: data/ui/window.blp:107
+msgid "Output File"
+msgstr "קובץ פלט"
+
+#: data/ui/window.blp:131 data/ui/window.blp:190
+msgid "Encrypt"
+msgstr "הצפנה"
+
+#: data/ui/window.blp:138 data/ui/window.blp:194
+msgid "Decrypt"
+msgstr "פענוח"
+
+#: data/ui/window.blp:145 data/ui/window.blp:200
+msgid "Sign"
+msgstr "חתימה"
+
+#: data/ui/window.blp:152 data/ui/window.blp:204
+msgid "Verify"
+msgstr "אימות"
+
+#: data/ui/window.blp:175 data/ui/keydialog.blp:13
+msgid "Manage keys"
+msgstr "ניהול מפתחות"
+
+#: data/ui/window.blp:181
+msgid "About Lock"
+msgstr "על מנעול"
+
+#: data/ui/entrydialog.blp:22
+msgid "Title"
+msgstr "כותרת"
+
+#: data/ui/keydialog.blp:32
+msgid "Refresh keys"
+msgstr "רענון מפתחות"
+
+#: data/ui/keydialog.blp:51
+msgid "No keys available"
+msgstr "אין מפתחות זמינים"
+
+#: data/ui/keydialog.blp:52
+msgid "Your GnuPG keyring does not contain any keys."
+msgstr "צרור מפתחות ה־GnuPG שלך לא מכיל מפתחות."
+
+#: data/ui/keydialog.blp:71
+msgctxt "Import keys from files"
+msgid "Import"
+msgstr "ייבוא"
+
+#: data/ui/keydialog.blp:72
+msgid "Import keys from files"
+msgstr "ייבוא מפתחות מקבצים"
+
+#: data/ui/keydialog.blp:79
+msgid "Create a new keypair"
+msgstr "יצירת צמד מפתחות חדש"
+
+#: data/ui/keydialog.blp:92
+msgid "Generate keypair"
+msgstr "יצירת צמד מפתחות"
+
+#: data/ui/keydialog.blp:119
+msgctxt "Name of the UID of the new keypair"
+msgid "Name"
+msgstr "שם"
+
+#: data/ui/keydialog.blp:124
+msgctxt "Email of the UID of the new keypair"
+msgid "Email"
+msgstr "דוא״ל"
+
+#: data/ui/keydialog.blp:129
+msgctxt "Signing algorithm of the new keypair"
+msgid "Signing Algorithm"
+msgstr "אלגוריתם חתימה"
+
+#: data/ui/keydialog.blp:130
+msgctxt "Signing algorithm of the new keypair"
+msgid "Key"
+msgstr "מפתח"
+
+#: data/ui/keydialog.blp:138
+msgctxt "Encryption algorithm of the new keypair"
+msgid "Encryption Algorithm"
+msgstr "אלגוריתם הצפנה"
+
+#: data/ui/keydialog.blp:139
+msgctxt "Encryption algorithm of the new keypair"
+msgid "Subkey"
+msgstr "תת־מפתח"
+
+#: data/ui/keydialog.blp:147
+msgctxt "Expiry time of the new keypair"
+msgid "Expiry"
+msgstr "תפוגת תוקף"
+
+#: data/ui/keydialog.blp:148
+msgctxt "Expiry unit of the new keypair"
+msgid "Months, disable with zero"
+msgstr "חודשים, להשבית עם אפס"
+
+#: data/ui/keydialog.blp:170
+msgctxt "Generate a new keypair"
+msgid "Generate"
+msgstr "יצירה"
+
+#: data/ui/keydialog.blp:171
+msgid "Generate a new keypair"
+msgstr "יצירת צמד מפתחות חדש"
+
+#: data/ui/keyrow.blp:5
+msgid "User ID"
+msgstr "מזהה משתמש"
+
+#: data/ui/keyrow.blp:6
+msgid "Fingerprint"
+msgstr "טביעת אצבע"
+
+#: data/ui/keyrow.blp:7
+msgid "Expiry"
+msgstr "תפוגת תוקף"
+
+#: data/ui/keyrow.blp:18
+msgid "Remove key"
+msgstr "הסרת מפתח"
+
+#: data/ui/keyrow.blp:25
+msgid "Export public key to file"
+msgstr "ייצוא מפתח ציבורי לקובץ"
+
+#: data/com.konstantintutsch.Lock.desktop.in.in:11
+msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
+msgstr "gpg;gnupg;קריפטוגרפיה;openpgp;הצפנה;פענוח;חתימה;אימות;מנעול;נעילה;"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
+msgid ""
+"Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
+"LibAdwaita GUI."
+msgstr ""
+"מנעול הוא מנשק משתמש גרפי ל־GnuPG (GPG) שמשתמש במנשק המשתמש LibAdwaita "
+"היפהפה."
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
+msgid "Process text and files:"
+msgstr "עיבוד טקסט וקבצים:"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:74
+msgid "Encryption"
+msgstr "הצפנה"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:78
+msgid "Decryption"
+msgstr "פענוח"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:14
+msgid "Signing"
+msgstr "חתימה"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:15
+msgid "Verification"
+msgstr "אימות"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:17
+msgid "Manage your GnuPG keyring:"
+msgstr "ניהול צרור מפתחות ה־GnuPG שלך:"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
+msgid "Generate new keypairs"
+msgstr "יצירת צמדי מפתחות חדשים"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
+msgid "Import keys"
+msgstr "ייבוא מפתחות"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:21
+msgid "Export public keys"
+msgstr "ייצוא מפתחות ציבוריים"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
+msgid "View expiry dates"
+msgstr "הצגת תאריכי תפוגת תוקף"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
+msgid "Remove keys"
+msgstr "הסרת מפתחות"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:46
+msgid "Light Appearance"
+msgstr "מראה בהיר"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:50
+msgid "Dark Appearance"
+msgstr "מראה כהה"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:54
+msgid "Key Management"
+msgstr "ניהול מפתחות"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:58
+msgid "Keypair Generation"
+msgstr "יצירת צמדי מפתחות"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:62
+msgid "File processing"
+msgstr "עיבוד קבצים"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:66
+msgid "Plain text"
+msgstr "טקסט פשוט"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
+msgid "User ID dialog"
+msgstr "חלונית מזהה משתמש"
