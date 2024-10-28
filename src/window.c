@@ -45,6 +45,7 @@ struct _LockWindow {
     /* Text */
     AdwViewStackPage *text_page;
     AdwSplitButton *text_button;
+    gboolean text_success;
     GtkTextBuffer *text_queue; /**< Text from the last cryptography operation on text */
     GtkTextView *text_view;
 
@@ -311,11 +312,10 @@ static void lock_window_stack_page_on_changed(AdwViewStack *self,
 }
 
 /**
- * This function updates the UI on a file selection of a LockWindow.
+ * This function updates the UI on a selection of an input or output file in a LockWindow.
  *
  * @param window Window to update the UI of
  */
-
 static void lock_window_on_file_selected(LockWindow *window)
 {
     gboolean ready = false;
@@ -638,9 +638,7 @@ void lock_window_encrypt_text(LockWindow *window)
     gpgme_key_t key = key_search(window->uid);
     HANDLE_ERROR_UID(, window->uid_found, key,
                      lock_window_encrypt_text_on_completed, window,
-                     g_free(plain);
-                     plain = NULL;
-        );
+                     g_free(plain); plain = NULL;);
 
     window->uid_found = true;
     if (key->uids->name) {
@@ -653,8 +651,9 @@ void lock_window_encrypt_text(LockWindow *window)
 
     gchar *armor = process_text(plain, ENCRYPT, key);
     if (armor == NULL) {
-        lock_window_text_queue_set_text(window, "");
+        window->text_success = false;
     } else {
+        window->text_success = true;
         lock_window_text_queue_set_text(window, armor);
     }
 
@@ -684,9 +683,6 @@ gboolean lock_window_encrypt_text_on_completed(LockWindow *window)
 {
     AdwToast *toast;
 
-    gchar *armor = lock_window_text_queue_get_text(window);
-    lock_window_text_queue_set_text(window, "");
-
     if (!window->uid_found) {
         toast =
             adw_toast_new(g_strdup_printf
@@ -694,7 +690,7 @@ gboolean lock_window_encrypt_text_on_completed(LockWindow *window)
                            window->uid));
 
         window->uid_found = true;
-    } else if (strcmp(armor, "") == 0) {
+    } else if (!window->text_success) {
         toast = adw_toast_new(_("Encryption failed"));
     } else {
         toast =
@@ -703,16 +699,17 @@ gboolean lock_window_encrypt_text_on_completed(LockWindow *window)
                            ("Formatter is either name, email or fingerprint of the public key used in the encryption process.",
                             "Text encrypted for %s"), window->uid_used));
 
+        gchar *armor = lock_window_text_queue_get_text(window);
         lock_window_text_view_set_text(window, armor);
+
+        /* Cleanup */
+        g_free(armor);
+        armor = NULL;
     }
 
     adw_toast_set_use_markup(toast, false);
     adw_toast_set_timeout(toast, 3);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
-
-    /* Cleanup */
-    g_free(armor);
-    armor = NULL;
 
     /* Only execute once */
     return false;               // https://docs.gtk.org/glib/func.idle_add.html
@@ -732,10 +729,8 @@ void lock_window_encrypt_file(LockWindow *window)
     HANDLE_ERROR_UID(, window->uid_found, key,
                      lock_window_encrypt_file_on_completed, window,
                      /* Cleanup */
-                     g_free(input_path);
-                     input_path = NULL; g_free(output_path);
-                     output_path = NULL;
-        );
+                     g_free(input_path); input_path = NULL;
+                     g_free(output_path); output_path = NULL;);
 
     window->uid_found = true;
     if (key->uids->name) {
@@ -812,8 +807,9 @@ void lock_window_decrypt_text(LockWindow *window)
 
     gchar *plain = process_text(armor, DECRYPT, NULL);
     if (plain == NULL) {
-        lock_window_text_queue_set_text(window, "");
+        window->text_success = false;
     } else {
+        window->text_success = true;
         lock_window_text_queue_set_text(window, plain);
     }
 
@@ -841,23 +837,21 @@ gboolean lock_window_decrypt_text_on_completed(LockWindow *window)
 {
     AdwToast *toast;
 
-    gchar *plain = lock_window_text_queue_get_text(window);
-    lock_window_text_queue_set_text(window, "");
-
-    if (strcmp(plain, "") == 0) {
+    if (!window->text_success) {
         toast = adw_toast_new(_("Decryption failed"));
     } else {
         toast = adw_toast_new(_("Text decrypted"));
 
+        gchar *plain = lock_window_text_queue_get_text(window);
         lock_window_text_view_set_text(window, plain);
+
+        /* Cleanup */
+        g_free(plain);
+        plain = NULL;
     }
 
     adw_toast_set_timeout(toast, 3);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
-
-    /* Cleanup */
-    g_free(plain);
-    plain = NULL;
 
     /* Only execute once */
     return false;               // https://docs.gtk.org/glib/func.idle_add.html
@@ -925,8 +919,9 @@ void lock_window_sign_text(LockWindow *window)
 
     gchar *armor = process_text(plain, SIGN, NULL);
     if (armor == NULL) {
-        lock_window_text_queue_set_text(window, "");
+        window->text_success = false;
     } else {
+        window->text_success = true;
         lock_window_text_queue_set_text(window, armor);
     }
 
@@ -954,23 +949,21 @@ gboolean lock_window_sign_text_on_completed(LockWindow *window)
 {
     AdwToast *toast;
 
-    gchar *armor = lock_window_text_queue_get_text(window);
-    lock_window_text_queue_set_text(window, "");
-
-    if (strcmp(armor, "") == 0) {
+    if (!window->text_success) {
         toast = adw_toast_new(_("Signing failed"));
     } else {
         toast = adw_toast_new(_("Text signed"));
 
+        gchar *armor = lock_window_text_queue_get_text(window);
         lock_window_text_view_set_text(window, armor);
+
+        /* Cleanup */
+        g_free(armor);
+        armor = NULL;
     }
 
     adw_toast_set_timeout(toast, 3);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
-
-    /* Cleanup */
-    g_free(armor);
-    armor = NULL;
 
     /* Only execute once */
     return false;               // https://docs.gtk.org/glib/func.idle_add.html
@@ -1038,8 +1031,9 @@ void lock_window_verify_text(LockWindow *window)
 
     gchar *plain = process_text(armor, VERIFY, NULL);
     if (plain == NULL) {
-        lock_window_text_queue_set_text(window, "");
+        window->text_success = false;
     } else {
+        window->text_success = true;
         lock_window_text_queue_set_text(window, plain);
     }
 
@@ -1067,23 +1061,21 @@ gboolean lock_window_verify_text_on_completed(LockWindow *window)
 {
     AdwToast *toast;
 
-    gchar *plain = lock_window_text_queue_get_text(window);
-    lock_window_text_queue_set_text(window, "");
-
-    if (strcmp(plain, "") == 0) {
+    if (!window->text_success) {
         toast = adw_toast_new(_("Verification failed"));
     } else {
         toast = adw_toast_new(_("Text verified"));
 
+        gchar *plain = lock_window_text_queue_get_text(window);
         lock_window_text_view_set_text(window, plain);
+
+        /* Cleanup */
+        g_free(plain);
+        plain = NULL;
     }
 
     adw_toast_set_timeout(toast, 3);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
-
-    /* Cleanup */
-    g_free(plain);
-    plain = NULL;
 
     /* Only execute once */
     return false;               // https://docs.gtk.org/glib/func.idle_add.html
