@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-28 18:22+0100\n"
+"POT-Creation-Date: 2024-10-28 18:29+0100\n"
 "PO-Revision-Date: 2024-10-28 09:07+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: \n"
@@ -236,10 +236,9 @@ msgid "Failed to open export file: %s"
 msgstr "ייצוא קובץ נכשל: %s"
 
 #: src/cryptography.c:224
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "get GPG key for removal"
-msgstr "הסרת מפתח"
+msgstr "קבלת מפתח GPG להסרה"
 
 #: src/cryptography.c:228
 msgctxt "GPGME Error"
