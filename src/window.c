@@ -15,7 +15,9 @@
 #define ACTION_MODE_TEXT 0
 #define ACTION_MODE_FILE 1
 
-#define HANDLE_ERROR_UID(status, key, ui_function, ui_data, memory) if (key == NULL) { \
+#define HANDLE_ERROR_UID(status, found, key, ui_function, ui_data, memory) if (key == NULL) { \
+        \
+        found = false; \
         \
         gpgme_key_release(key); \
         \
@@ -36,6 +38,7 @@ struct _LockWindow {
     AdwViewStack *stack;
     unsigned int action_mode;
 
+    gboolean uid_found;
     gchar *uid; /**< Stores the entered UID part for an encryption process. */
     gchar *uid_used; /**< Stores the UID actually used during an encryption process. */
 
@@ -593,11 +596,11 @@ void lock_window_encrypt_text(LockWindow *window)
     gchar *plain = lock_window_text_view_get_text(window);
 
     gpgme_key_t key = key_search(window->uid);
-    HANDLE_ERROR_UID(, key, lock_window_encrypt_text_on_completed, window,
-                     g_free(plain);
-                     plain = NULL;
-        );
-    lock_window_set_uid(window, "");    // Mark email search as successful
+    HANDLE_ERROR_UID(, window->uid_found, key,
+                     lock_window_encrypt_text_on_completed, window,
+                     g_free(plain); plain = NULL;);
+
+    window->uid_found = true;
     if (key->uids->name) {
         lock_window_set_uid_used(window, key->uids->name);
     } else if (key->uids->email) {
@@ -642,13 +645,13 @@ gboolean lock_window_encrypt_text_on_completed(LockWindow *window)
     gchar *armor = lock_window_text_queue_get_text(window);
     lock_window_text_queue_set_text(window, "");
 
-    if (strlen(window->uid) > 0) {
+    if (!window->uid_found) {
         toast =
             adw_toast_new(g_strdup_printf
                           (_("Failed to find key for User ID “%s”"),
                            window->uid));
 
-        lock_window_set_uid(window, "");
+        window->uid_found = true;
     } else if (strcmp(armor, "") == 0) {
         toast = adw_toast_new(_("Encryption failed"));
     } else {
@@ -684,13 +687,13 @@ void lock_window_encrypt_file(LockWindow *window)
     char *output_path = g_file_get_path(window->file_output);
 
     gpgme_key_t key = key_search(window->uid);
-    HANDLE_ERROR_UID(, key, lock_window_encrypt_file_on_completed, window,
+    HANDLE_ERROR_UID(, window->uid_found, key,
+                     lock_window_encrypt_file_on_completed, window,
                      /* Cleanup */
-                     g_free(input_path);
-                     input_path = NULL; g_free(output_path);
-                     output_path = NULL;
-        );
-    lock_window_set_uid(window, "");    // Mark email search as successful
+                     g_free(input_path); input_path = NULL;
+                     g_free(output_path); output_path = NULL;);
+
+    window->uid_found = true;
     if (key->uids->name) {
         lock_window_set_uid_used(window, key->uids->name);
     } else if (key->uids->email) {
@@ -727,13 +730,13 @@ gboolean lock_window_encrypt_file_on_completed(LockWindow *window)
 {
     AdwToast *toast;
 
-    if (strlen(window->uid) > 0) {
+    if (!window->uid_found) {
         toast =
             adw_toast_new(g_strdup_printf
                           (_("Failed to find key for User ID “%s”"),
                            window->uid));
 
-        lock_window_set_uid(window, "");
+        window->uid_found = true;
     } else if (!window->file_success) {
         toast = adw_toast_new(_("Encryption failed"));
     } else {
