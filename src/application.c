@@ -130,6 +130,9 @@ static void lock_application_show_about(GSimpleAction *self,
 
     // Details
     adw_about_dialog_set_comments(about, _("Process data with GnuPG"));
+    adw_about_dialog_add_link(about,
+                              C_("Button linking to translations", "Translate"),
+                              "https://hosted.weblate.org/engage/Lock/");
 
     // Credits
     const char *developers[] =

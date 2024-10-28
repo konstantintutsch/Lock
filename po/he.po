@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-28 18:03+0100\n"
+"POT-Creation-Date: 2024-10-28 18:17+0100\n"
 "PO-Revision-Date: 2024-10-28 09:07+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: \n"
@@ -23,11 +23,16 @@ msgstr ""
 msgid "Process data with GnuPG"
 msgstr "עיבוד נתונים עם GnuPG"
 
-#: src/application.c:143
+#: src/application.c:134
+msgctxt "Button linking to translations"
+msgid "Translate"
+msgstr ""
+
+#: src/application.c:146
 msgid "translator-credits"
 msgstr "ירון שהרבני <sh.yaron@gmail.com>"
 
-#: src/application.c:148
+#: src/application.c:151
 msgid "Dependencies"
 msgstr "תלויות"
 

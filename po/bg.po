@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-28 18:03+0100\n"
+"POT-Creation-Date: 2024-10-28 18:17+0100\n"
 "PO-Revision-Date: 2024-10-23 00:58+0200\n"
 "Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian <dict-notifications@fsa-bg.org>\n"
@@ -25,11 +25,16 @@ msgstr ""
 msgid "Process data with GnuPG"
 msgstr "Обработване на данни с GnuPG"
 
-#: src/application.c:143
+#: src/application.c:134
+msgctxt "Button linking to translations"
+msgid "Translate"
+msgstr ""
+
+#: src/application.c:146
 msgid "translator-credits"
 msgstr "twlvnn kraftwerk <kraft_werk@tutanota.com>"
 
-#: src/application.c:148
+#: src/application.c:151
 msgid "Dependencies"
 msgstr "Зависимости"
 

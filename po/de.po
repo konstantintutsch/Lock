@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-28 18:03+0100\n"
-"PO-Revision-Date: 2024-10-28 17:26+0100\n"
+"POT-Creation-Date: 2024-10-28 18:17+0100\n"
+"PO-Revision-Date: 2024-10-28 18:17+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -25,11 +25,16 @@ msgstr ""
 msgid "Process data with GnuPG"
 msgstr "Verarbeiten Sie Daten mit GnuPG"
 
-#: src/application.c:143
+#: src/application.c:134
+msgctxt "Button linking to translations"
+msgid "Translate"
+msgstr "Übersetzen"
+
+#: src/application.c:146
 msgid "translator-credits"
 msgstr "Konstantin Tutsch <mail@konstantintutsch.com>"
 
-#: src/application.c:148
+#: src/application.c:151
 msgid "Dependencies"
 msgstr "Abhängigkeiten"
 
