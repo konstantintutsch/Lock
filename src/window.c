@@ -50,6 +50,7 @@ struct _LockWindow {
 
     /* File */
     AdwViewStackPage *file_page;
+    AdwBanner *file_banner;
     gboolean file_success; /**< Success of the last cryptography operation on files */
     GFile *file_input;
     GFile *file_output;
@@ -60,6 +61,7 @@ struct _LockWindow {
     AdwActionRow *file_output_row;
     GtkButton *file_output_button;
 
+    GtkBox *file_process_box;
     GtkButton *file_encrypt_button;
     GtkButton *file_decrypt_button;
     GtkButton *file_sign_button;
@@ -72,6 +74,7 @@ G_DEFINE_TYPE(LockWindow, lock_window, ADW_TYPE_APPLICATION_WINDOW);
 static void lock_window_stack_page_on_changed(AdwViewStack * self,
                                               GParamSpec * pspec,
                                               LockWindow * window);
+static void lock_window_on_file_selected(LockWindow * window);
 
 // Encryption
 gboolean lock_window_encrypt_text_on_completed(LockWindow * window);
@@ -180,6 +183,9 @@ static void lock_window_init(LockWindow *window)
                      G_CALLBACK(lock_window_file_open_dialog_present), window);
     g_signal_connect(window->file_output_button, "clicked",
                      G_CALLBACK(lock_window_file_save_dialog_present), window);
+
+    lock_window_on_file_selected(window);
+
     // Encrypt
     g_signal_connect(window->file_encrypt_button, "clicked",
                      G_CALLBACK(lock_window_encrypt_file_dialog), window);
@@ -220,6 +226,8 @@ static void lock_window_class_init(LockWindowClass *class)
     /* File */
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
                                          file_page);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
+                                         file_banner);
 
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
                                          file_input_row);
@@ -231,6 +239,8 @@ static void lock_window_class_init(LockWindowClass *class)
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
                                          file_output_button);
 
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
+                                         file_process_box);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
                                          file_encrypt_button);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
@@ -298,6 +308,34 @@ static void lock_window_stack_page_on_changed(AdwViewStack *self,
     /* Cleanup */
     visible_child = NULL;
     visible_page = NULL;
+}
+
+/**
+ * This function updates the UI on a file selection of a LockWindow.
+ *
+ * @param window Window to update the UI of
+ */
+
+static void lock_window_on_file_selected(LockWindow *window)
+{
+    gboolean ready = false;
+
+    if (window->file_input && window->file_output)
+        ready = true;
+
+    adw_banner_set_revealed(window->file_banner, !ready);
+
+    GtkWidget *process_widget =
+        gtk_widget_get_first_child(GTK_WIDGET(window->file_process_box));
+    while (process_widget != NULL) {
+        gtk_widget_set_sensitive(process_widget, ready);
+
+        process_widget = gtk_widget_get_next_sibling(process_widget);
+    }
+
+    /* Cleanup */
+    g_free(process_widget);
+    process_widget = NULL;
 }
 
 /**** Key management ****/
@@ -438,6 +476,7 @@ static void lock_window_file_open(GObject *source_object, GAsyncResult *res,
 
     adw_action_row_set_subtitle(window->file_input_row,
                                 g_file_get_basename(window->file_input));
+    lock_window_on_file_selected(window);
 
     /* Cleanup */
     g_object_unref(dialog);
@@ -472,6 +511,7 @@ static void lock_window_file_save(GObject *source_object,
 
     adw_action_row_set_subtitle(window->file_output_row,
                                 g_file_get_basename(window->file_output));
+    lock_window_on_file_selected(window);
 
     /* Cleanup */
     g_object_unref(dialog);
@@ -598,7 +638,9 @@ void lock_window_encrypt_text(LockWindow *window)
     gpgme_key_t key = key_search(window->uid);
     HANDLE_ERROR_UID(, window->uid_found, key,
                      lock_window_encrypt_text_on_completed, window,
-                     g_free(plain); plain = NULL;);
+                     g_free(plain);
+                     plain = NULL;
+        );
 
     window->uid_found = true;
     if (key->uids->name) {
@@ -690,8 +732,10 @@ void lock_window_encrypt_file(LockWindow *window)
     HANDLE_ERROR_UID(, window->uid_found, key,
                      lock_window_encrypt_file_on_completed, window,
                      /* Cleanup */
-                     g_free(input_path); input_path = NULL;
-                     g_free(output_path); output_path = NULL;);
+                     g_free(input_path);
+                     input_path = NULL; g_free(output_path);
+                     output_path = NULL;
+        );
 
     window->uid_found = true;
     if (key->uids->name) {
