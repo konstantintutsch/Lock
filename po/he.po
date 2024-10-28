@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-28 18:17+0100\n"
+"POT-Creation-Date: 2024-10-28 18:22+0100\n"
 "PO-Revision-Date: 2024-10-28 09:07+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: \n"
@@ -28,11 +28,16 @@ msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr ""
 
-#: src/application.c:146
+#: src/application.c:137
+msgctxt "Button linking to source code"
+msgid "Develop"
+msgstr ""
+
+#: src/application.c:149
 msgid "translator-credits"
 msgstr "ירון שהרבני <sh.yaron@gmail.com>"
 
-#: src/application.c:151
+#: src/application.c:154
 msgid "Dependencies"
 msgstr "תלויות"
 
@@ -52,16 +57,16 @@ msgstr "הצפנה עבור"
 msgid "Enter name or email …"
 msgstr "נא למלא שם או כתובת דוא״ל…"
 
-#: src/window.c:689 src/window.c:775
+#: src/window.c:691 src/window.c:779
 #, c-format
 msgid "Failed to find key for User ID “%s”"
 msgstr "איתור מפתח למזהה המשתמש „%s”"
 
-#: src/window.c:694 src/window.c:780
+#: src/window.c:696 src/window.c:784
 msgid "Encryption failed"
 msgstr "ההצפנה נכשלה"
 
-#: src/window.c:700
+#: src/window.c:702
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -69,7 +74,7 @@ msgctxt ""
 msgid "Text encrypted for %s"
 msgstr "טקסט הוצפן עבור %s"
 
-#: src/window.c:786
+#: src/window.c:790
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -77,39 +82,39 @@ msgctxt ""
 msgid "File encrypted for %s"
 msgstr "קובץ הוצפן עבור %s"
 
-#: src/window.c:841 src/window.c:897
+#: src/window.c:845 src/window.c:901
 msgid "Decryption failed"
 msgstr "הפענוח נכשל"
 
-#: src/window.c:843
+#: src/window.c:847
 msgid "Text decrypted"
 msgstr "הטקסט פוענח"
 
-#: src/window.c:899
+#: src/window.c:903
 msgid "File decrypted"
 msgstr "הקובץ פוענח"
 
-#: src/window.c:953 src/window.c:1009
+#: src/window.c:957 src/window.c:1013
 msgid "Signing failed"
 msgstr "החתימה נכשלה"
 
-#: src/window.c:955
+#: src/window.c:959
 msgid "Text signed"
 msgstr "הטקסט נחתם"
 
-#: src/window.c:1011
+#: src/window.c:1015
 msgid "File signed"
 msgstr "הקובץ נחתם"
 
-#: src/window.c:1065 src/window.c:1121
+#: src/window.c:1069 src/window.c:1125
 msgid "Verification failed"
 msgstr "האימות נכשל"
 
-#: src/window.c:1067
+#: src/window.c:1071
 msgid "Text verified"
 msgstr "הטקסט אומת"
 
-#: src/window.c:1123
+#: src/window.c:1127
 msgid "File verified"
 msgstr "הקובץ אומת"
 
@@ -178,14 +183,14 @@ msgctxt "Error message constructor for failed GPGME operations"
 msgid "Failed to %s: %s"
 msgstr "%s נכשל: %s"
 
-#: src/cryptography.c:49 src/cryptography.c:91 src/cryptography.c:147
-#: src/cryptography.c:263 src/cryptography.c:362
+#: src/cryptography.c:49 src/cryptography.c:92 src/cryptography.c:150
+#: src/cryptography.c:261 src/cryptography.c:366
 msgctxt "GPGME Error"
 msgid "create new GPGME context"
 msgstr "יצירת הקשר GPGME חדש"
 
-#: src/cryptography.c:54 src/cryptography.c:96 src/cryptography.c:152
-#: src/cryptography.c:268 src/cryptography.c:367
+#: src/cryptography.c:54 src/cryptography.c:97 src/cryptography.c:155
+#: src/cryptography.c:266 src/cryptography.c:371
 msgctxt "GPGME Error"
 msgid "set protocol of GPGME context to OpenPGP"
 msgstr "הגדרת הפרוטוקול של הקשר GPGME ל־OpenPGP"
@@ -195,27 +200,27 @@ msgctxt "GPGME Error"
 msgid "find key matching User ID"
 msgstr "איתור מפתח שתואם למזהה המשתמש"
 
-#: src/cryptography.c:107 src/cryptography.c:116
+#: src/cryptography.c:108 src/cryptography.c:117
 msgctxt "GPGME Error"
 msgid "generate new GPG key for signing"
 msgstr "יצירת מפתח GPG חדש לחתימה"
 
-#: src/cryptography.c:123
+#: src/cryptography.c:124
 msgctxt "GPGME Error"
 msgid "delete unfinished, generated ECC key"
 msgstr "מחיקת מפתח ECC חלקי שנוצר"
 
-#: src/cryptography.c:158
+#: src/cryptography.c:161
 msgctxt "GPGME Error"
 msgid "load GPGME key data from file"
 msgstr "טעינת נתוני מפתח GPG מקובץ"
 
-#: src/cryptography.c:164
+#: src/cryptography.c:166
 msgctxt "GPGME Error"
 msgid "import GPG key from file"
 msgstr "ייבוא מפתח GPG מקובץ"
 
-#: src/cryptography.c:175
+#: src/cryptography.c:176
 msgctxt "GPGME Error"
 msgid "create GPGME key data in memory"
 msgstr "יצירת נתוני מפתח GPGME בזיכרון"
@@ -225,33 +230,33 @@ msgctxt "GPGME Error"
 msgid "export GPG key(s) to file"
 msgstr "ייצוא מפתח/מפתחות GPG לקובץ"
 
-#: src/cryptography.c:196
+#: src/cryptography.c:195
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr "ייצוא קובץ נכשל: %s"
 
-#: src/cryptography.c:225
+#: src/cryptography.c:224
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "get GPG key for removal"
 msgstr "הסרת מפתח"
 
-#: src/cryptography.c:229
+#: src/cryptography.c:228
 msgctxt "GPGME Error"
 msgid "remove GPG key"
 msgstr "הסרת מפתח GPG"
 
-#: src/cryptography.c:276
+#: src/cryptography.c:274
 msgctxt "GPGME Error"
 msgid "create new GPGME input data from string"
 msgstr "יצירת נתוני קלט חדשים ל־GPGME ממחרוזת"
 
-#: src/cryptography.c:281 src/cryptography.c:388
+#: src/cryptography.c:280 src/cryptography.c:394
 msgctxt "GPGME Error"
 msgid "create new GPGME output data in memory"
 msgstr "יצירת נתוני פלט חדשים מ־GPGME ממחרוזת"
 
-#: src/cryptography.c:290
+#: src/cryptography.c:289
 msgctxt "GPGME Error"
 msgid "encrypt GPGME data from memory"
 msgstr "הצפנת נתוני GPGME מהזיכרון"
@@ -261,57 +266,57 @@ msgctxt "GPGME Error"
 msgid "decrypt GPGME data from memory"
 msgstr "פענוח נתוני GPGME מהזיכרון"
 
-#: src/cryptography.c:304
+#: src/cryptography.c:305
 msgctxt "GPGME Error"
 msgid "sign GPGME data from memory"
 msgstr "חתימת נתוני GPGME מהזיכרון"
 
-#: src/cryptography.c:309
+#: src/cryptography.c:312
 msgctxt "GPGME Error"
 msgid "verify GPGME data from memory"
 msgstr "אימות נתוני GPGME מהזיכרון"
 
-#: src/cryptography.c:351
+#: src/cryptography.c:355
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s הוסר כדי להתכונן לשכתוב"
 
-#: src/cryptography.c:374
+#: src/cryptography.c:378
 msgctxt "GPGME Error"
 msgid "create new GPGME input data from file"
 msgstr "יצירת נתוני קלט ל־GPGME מקובץ"
 
-#: src/cryptography.c:381
+#: src/cryptography.c:386
 msgctxt "GPGME Error"
 msgid "set file name of GPGME input data"
 msgstr "הגדרת שם קובץ לנתוני קלט ל־GPGME"
 
-#: src/cryptography.c:396
+#: src/cryptography.c:402
 msgctxt "GPGME Error"
 msgid "set file name of GPGME output data"
 msgstr "הגדרת שם קובץ לנתוני פלט מ־GPGME"
 
-#: src/cryptography.c:406
+#: src/cryptography.c:413
 msgctxt "GPGME Error"
 msgid "encrypt GPGME data from file"
 msgstr "הצפנת נתוני GPGME מקובץ"
 
-#: src/cryptography.c:411
+#: src/cryptography.c:420
 msgctxt "GPGME Error"
 msgid "decrypt GPGME data from file"
 msgstr "פענוח נתוני GPGME מקובץ"
 
-#: src/cryptography.c:418
+#: src/cryptography.c:429
 msgctxt "GPGME Error"
 msgid "sign GPGME data from file"
 msgstr "חתימת נתוני GPG מקובץ"
 
-#: src/cryptography.c:423
+#: src/cryptography.c:436
 msgctxt "GPGME Error"
 msgid "verify GPGME data from file"
 msgstr "אימות נתוני GPGME מקובץ"
 
-#: src/cryptography.c:438
+#: src/cryptography.c:453
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "פתיחת קובץ הפלט נכשלה: %s"

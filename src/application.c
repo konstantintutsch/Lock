@@ -133,6 +133,9 @@ static void lock_application_show_about(GSimpleAction *self,
     adw_about_dialog_add_link(about,
                               C_("Button linking to translations", "Translate"),
                               "https://hosted.weblate.org/engage/Lock/");
+    adw_about_dialog_add_link(about,
+                              C_("Button linking to source code", "Develop"),
+                              "https://github.com/konstantintutsch/Lock");
 
     // Credits
     const char *developers[] =

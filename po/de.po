@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-28 18:17+0100\n"
-"PO-Revision-Date: 2024-10-28 18:17+0100\n"
+"POT-Creation-Date: 2024-10-28 18:22+0100\n"
+"PO-Revision-Date: 2024-10-28 18:23+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -30,11 +30,16 @@ msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr "Übersetzen"
 
-#: src/application.c:146
+#: src/application.c:137
+msgctxt "Button linking to source code"
+msgid "Develop"
+msgstr "Entwickeln"
+
+#: src/application.c:149
 msgid "translator-credits"
 msgstr "Konstantin Tutsch <mail@konstantintutsch.com>"
 
-#: src/application.c:151
+#: src/application.c:154
 msgid "Dependencies"
 msgstr "Abhängigkeiten"
 
@@ -54,16 +59,16 @@ msgstr "Verschlüsseln für"
 msgid "Enter name or email …"
 msgstr "Namen oder E-Mail eingeben …"
 
-#: src/window.c:689 src/window.c:775
+#: src/window.c:691 src/window.c:779
 #, c-format
 msgid "Failed to find key for User ID “%s”"
 msgstr "Für die Nutzer ID “%s” konnte kein Schlüssel gefunden werden"
 
-#: src/window.c:694 src/window.c:780
+#: src/window.c:696 src/window.c:784
 msgid "Encryption failed"
 msgstr "Verschlüsselung fehlgeschlagen"
 
-#: src/window.c:700
+#: src/window.c:702
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -71,7 +76,7 @@ msgctxt ""
 msgid "Text encrypted for %s"
 msgstr "Text verschlüsselt für %s"
 
-#: src/window.c:786
+#: src/window.c:790
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -79,39 +84,39 @@ msgctxt ""
 msgid "File encrypted for %s"
 msgstr "Datei verschlüsselt für %s"
 
-#: src/window.c:841 src/window.c:897
+#: src/window.c:845 src/window.c:901
 msgid "Decryption failed"
 msgstr "Entschlüsselung fehlgeschlagen"
 
-#: src/window.c:843
+#: src/window.c:847
 msgid "Text decrypted"
 msgstr "Text entschlüsselt"
 
-#: src/window.c:899
+#: src/window.c:903
 msgid "File decrypted"
 msgstr "Datei entschlüsselt"
 
-#: src/window.c:953 src/window.c:1009
+#: src/window.c:957 src/window.c:1013
 msgid "Signing failed"
 msgstr "Signierung fehlgeschlagen"
 
-#: src/window.c:955
+#: src/window.c:959
 msgid "Text signed"
 msgstr "Text signiert"
 
-#: src/window.c:1011
+#: src/window.c:1015
 msgid "File signed"
 msgstr "Datei signiert"
 
-#: src/window.c:1065 src/window.c:1121
+#: src/window.c:1069 src/window.c:1125
 msgid "Verification failed"
 msgstr "Verifikation fehlgeschlagen"
 
-#: src/window.c:1067
+#: src/window.c:1071
 msgid "Text verified"
 msgstr "Text verifiziert"
 
-#: src/window.c:1123
+#: src/window.c:1127
 msgid "File verified"
 msgstr "Datei verifiziert"
 
@@ -181,14 +186,14 @@ msgctxt "Error message constructor for failed GPGME operations"
 msgid "Failed to %s: %s"
 msgstr "Fehler beim %s: %s"
 
-#: src/cryptography.c:49 src/cryptography.c:91 src/cryptography.c:147
-#: src/cryptography.c:263 src/cryptography.c:362
+#: src/cryptography.c:49 src/cryptography.c:92 src/cryptography.c:150
+#: src/cryptography.c:261 src/cryptography.c:366
 msgctxt "GPGME Error"
 msgid "create new GPGME context"
 msgstr "Erstellen eines neuen GPGME Kontexts"
 
-#: src/cryptography.c:54 src/cryptography.c:96 src/cryptography.c:152
-#: src/cryptography.c:268 src/cryptography.c:367
+#: src/cryptography.c:54 src/cryptography.c:97 src/cryptography.c:155
+#: src/cryptography.c:266 src/cryptography.c:371
 msgctxt "GPGME Error"
 msgid "set protocol of GPGME context to OpenPGP"
 msgstr "Festlegen des Protokolls des GPGME Kontexts auf OpenPGP"
@@ -198,27 +203,27 @@ msgctxt "GPGME Error"
 msgid "find key matching User ID"
 msgstr "Finden eines Schlüssels mit passender Nutzer ID"
 
-#: src/cryptography.c:107 src/cryptography.c:116
+#: src/cryptography.c:108 src/cryptography.c:117
 msgctxt "GPGME Error"
 msgid "generate new GPG key for signing"
 msgstr "Generieren eines neuen Schlüssels für Signierung"
 
-#: src/cryptography.c:123
+#: src/cryptography.c:124
 msgctxt "GPGME Error"
 msgid "delete unfinished, generated ECC key"
 msgstr "Löschen des unfertigen, generierten ECC Schlüssels"
 
-#: src/cryptography.c:158
+#: src/cryptography.c:161
 msgctxt "GPGME Error"
 msgid "load GPGME key data from file"
 msgstr "Laden von GPGME Schlüsseldaten aus einer Datei"
 
-#: src/cryptography.c:164
+#: src/cryptography.c:166
 msgctxt "GPGME Error"
 msgid "import GPG key from file"
 msgstr "Importieren von einem GPG Schlüssel aus einer Datei"
 
-#: src/cryptography.c:175
+#: src/cryptography.c:176
 msgctxt "GPGME Error"
 msgid "create GPGME key data in memory"
 msgstr "Erstellen von GPGME Schlüsseldaten im Hauptspeicher"
@@ -228,32 +233,32 @@ msgctxt "GPGME Error"
 msgid "export GPG key(s) to file"
 msgstr "Exportieren von GPG Schlüssel(n) in eine Datei"
 
-#: src/cryptography.c:196
+#: src/cryptography.c:195
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr "Fehler beim Öffnen der Export-Datei: %s"
 
-#: src/cryptography.c:225
+#: src/cryptography.c:224
 msgctxt "GPGME Error"
 msgid "get GPG key for removal"
 msgstr "Erhalten eines GPG Schlüssels zur Entfernung"
 
-#: src/cryptography.c:229
+#: src/cryptography.c:228
 msgctxt "GPGME Error"
 msgid "remove GPG key"
 msgstr "Entfernen eines GPG Schlüssels"
 
-#: src/cryptography.c:276
+#: src/cryptography.c:274
 msgctxt "GPGME Error"
 msgid "create new GPGME input data from string"
 msgstr "Erstellen von GPGME Eingangsdaten aus einer Zeichenkette"
 
-#: src/cryptography.c:281 src/cryptography.c:388
+#: src/cryptography.c:280 src/cryptography.c:394
 msgctxt "GPGME Error"
 msgid "create new GPGME output data in memory"
 msgstr "Erstellen von GPGME Ausgangsdaten im Hauptspeicher"
 
-#: src/cryptography.c:290
+#: src/cryptography.c:289
 msgctxt "GPGME Error"
 msgid "encrypt GPGME data from memory"
 msgstr "Verschlüsseln von GPGME Daten aus dem Hauptspeicher"
@@ -263,57 +268,57 @@ msgctxt "GPGME Error"
 msgid "decrypt GPGME data from memory"
 msgstr "Entschlüsseln von GPGME Daten aus dem Hauptspeicher"
 
-#: src/cryptography.c:304
+#: src/cryptography.c:305
 msgctxt "GPGME Error"
 msgid "sign GPGME data from memory"
 msgstr "Signieren von GPGME Daten aus dem Hauptspeicher"
 
-#: src/cryptography.c:309
+#: src/cryptography.c:312
 msgctxt "GPGME Error"
 msgid "verify GPGME data from memory"
 msgstr "Verifizieren von GPGME Daten aus dem Hauptspeicher"
 
-#: src/cryptography.c:351
+#: src/cryptography.c:355
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s entfernt, um Überschreiben vorzubereiten"
 
-#: src/cryptography.c:374
+#: src/cryptography.c:378
 msgctxt "GPGME Error"
 msgid "create new GPGME input data from file"
 msgstr "Erstellen von GPGME Eingangsdaten aus einer Datei"
 
-#: src/cryptography.c:381
+#: src/cryptography.c:386
 msgctxt "GPGME Error"
 msgid "set file name of GPGME input data"
 msgstr "Setzen des Dateipfades von GPGME Eingangsdaten"
 
-#: src/cryptography.c:396
+#: src/cryptography.c:402
 msgctxt "GPGME Error"
 msgid "set file name of GPGME output data"
 msgstr "Setzen des Dateipfades von GPGME Ausgangsdaten"
 
-#: src/cryptography.c:406
+#: src/cryptography.c:413
 msgctxt "GPGME Error"
 msgid "encrypt GPGME data from file"
 msgstr "Verschlüsseln von GPGME Daten aus Datei"
 
-#: src/cryptography.c:411
+#: src/cryptography.c:420
 msgctxt "GPGME Error"
 msgid "decrypt GPGME data from file"
 msgstr "Entschlüsseln von GPGME Daten aus Datei"
 
-#: src/cryptography.c:418
+#: src/cryptography.c:429
 msgctxt "GPGME Error"
 msgid "sign GPGME data from file"
 msgstr "Signieren von GPGME Daten aus einer Datei"
 
-#: src/cryptography.c:423
+#: src/cryptography.c:436
 msgctxt "GPGME Error"
 msgid "verify GPGME data from file"
 msgstr "Verifiezieren von GPGME Daten aus einer Datei"
 
-#: src/cryptography.c:438
+#: src/cryptography.c:453
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Fehler beim Öffnen der Ausgabedatei: %s"
@@ -640,6 +645,10 @@ msgstr "Klartext"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "User ID dialog"
 msgstr "Nutzer ID Dialog"
+
+#~ msgctxt "Button linking to source code"
+#~ msgid "Contribute"
+#~ msgstr "Beitragen"
 
 #, c-format
 #~ msgid "Could not find key for fingerprint %s to remove."
