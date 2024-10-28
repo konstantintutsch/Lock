@@ -14,7 +14,7 @@ You want to directly contribute to this project? Great! Open a pull request via 
 
 ### Translations
 
-[![Translations (Progress)](https://hosted.weblate.org/widget/Lock/application/multi-auto.svg)](https://hosted.weblate.org/engage/Lock/)
+[![Translations (Progress)](https://hosted.weblate.org/widget/Lock/Application/multi-auto.svg)](https://hosted.weblate.org/engage/Lock/)
 
 This project is translated using GNU gettext. You can contribute via Weblate [here](https://hosted.weblate.org/engage/Lock/).
 
