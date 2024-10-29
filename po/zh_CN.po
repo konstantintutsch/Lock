@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 18:22+0100\n"
-"PO-Revision-Date: 2024-10-26 16:02+0800\n"
+"PO-Revision-Date: 2024-10-29 19:06+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -27,12 +27,12 @@ msgstr "使用 GnuPG 处理数据"
 #: src/application.c:134
 msgctxt "Button linking to translations"
 msgid "Translate"
-msgstr ""
+msgstr "翻译"
 
 #: src/application.c:137
 msgctxt "Button linking to source code"
 msgid "Develop"
-msgstr ""
+msgstr "开发"
 
 #: src/application.c:149
 msgid "translator-credits"
@@ -237,10 +237,9 @@ msgid "Failed to open export file: %s"
 msgstr "打开导出文件失败：%s"
 
 #: src/cryptography.c:224
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "get GPG key for removal"
-msgstr "密钥移除"
+msgstr "获取 GPG 密钥来移除"
 
 #: src/cryptography.c:228
 msgctxt "GPGME Error"
@@ -421,7 +420,7 @@ msgstr "文件"
 
 #: data/ui/window.blp:82
 msgid "No files selected for processing"
-msgstr ""
+msgstr "未选择要处理的文件"
 
 #: data/ui/window.blp:102
 msgid "Input File"
