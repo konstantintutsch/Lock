@@ -18,8 +18,6 @@ typedef enum {
     REMOVE = 1 << 2
 } key_flags;
 
-void cryptography_init();
-
 // Keys
 gpgme_key_t key_search(const char *userid);
 bool key_generate(const char *userid, const char *sign_algorithm,

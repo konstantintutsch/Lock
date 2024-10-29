@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     textdomain(GETTEXT_PACKAGE);
 
     // GnuPG Made Easy
-    cryptography_init();
+    g_message("GnuPG Made Easy %s", gpgme_check_version(NULL));
 
     // GUI
     LockApplication *application = lock_application_new();

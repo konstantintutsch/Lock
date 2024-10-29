@@ -22,14 +22,6 @@
         return Return; \
     }
 
-/**
- * This function initializes GnuPG Made Easy for a GUI application.
- */
-void cryptography_init()
-{
-    g_message("GnuPG Made Easy %s", gpgme_check_version(NULL));
-}
-
 /**** Key ****/
 
 /**
