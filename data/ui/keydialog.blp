@@ -34,56 +34,74 @@ template $LockKeyDialog : Adw.Dialog {
                         }
                     }
 
-                    content: Gtk.ScrolledWindow {
-                        propagate-natural-height: true;
+                    content: Gtk.Box {
+                        orientation: vertical;
+                        valign: fill;
+                        vexpand: true;
+                        halign: fill;
+                        hexpand: true;
 
-                        child: Adw.Clamp {
-                            tightening-threshold: 150;
-                            unit: sp;
+                        Adw.Spinner key_loading {
+                            valign: center;
+                            vexpand: true;
+                            halign: center;
+                            hexpand: true;
 
-                            child: Gtk.Box manage_box {
-                                orientation: vertical;
-                                valign: start;
-                                halign: fill;
+                            width-request: 64;
+                            height-request: 64;
+                        }
 
-                                Adw.StatusPage status_page {
-                                    icon-name: "system-lock-screen-symbolic";
-                                    title: _("No keys available");
-                                    description: _("Your GnuPG keyring does not contain any keys.");
-                                }
+                        Gtk.ScrolledWindow key_content {
+                            propagate-natural-height: true;
 
-                                Gtk.ListBox key_box {
-                                    styles ["boxed-list"]
+                            child: Adw.Clamp {
+                                tightening-threshold: 150;
+                                unit: sp;
 
-                                    margin-top: 20;
-                                }
+                                child: Gtk.Box manage_box {
+                                    orientation: vertical;
+                                    valign: start;
+                                    halign: fill;
 
-                                Gtk.Box {
-                                    orientation: horizontal;
-                                    valign: center;
-                                    halign: center;
-                                    margin-bottom: 20;
-                                    spacing: 10;
-
-                                    Gtk.Button import_button {
-                                        styles ["pill", "suggested-action"]
-
-                                        label: C_("Import keys from files", "Import");
-                                        tooltip-text: _("Import keys from files");
+                                    Adw.StatusPage status_page {
+                                        icon-name: "system-lock-screen-symbolic";
+                                        title: _("No keys available");
+                                        description: _("Your GnuPG keyring does not contain any keys.");
                                     }
 
-                                    Gtk.Button create_button {
-                                        styles ["pill"]
+                                    Gtk.ListBox key_box {
+                                        styles ["boxed-list"]
 
-                                        icon-name: "list-add-symbolic";
-                                        tooltip-text: _("Create a new keypair");
-
-                                        action-name: "navigation.push";
-                                        action-target: "'generate-page'";
+                                        margin-top: 20;
                                     }
-                                }
+
+                                    Gtk.Box {
+                                        orientation: horizontal;
+                                        valign: center;
+                                        halign: center;
+                                        margin-bottom: 20;
+                                        spacing: 10;
+
+                                        Gtk.Button import_button {
+                                            styles ["pill", "suggested-action"]
+
+                                            label: C_("Import keys from files", "Import");
+                                            tooltip-text: _("Import keys from files");
+                                        }
+
+                                        Gtk.Button create_button {
+                                            styles ["pill"]
+
+                                            icon-name: "list-add-symbolic";
+                                            tooltip-text: _("Create a new keypair");
+
+                                            action-name: "navigation.push";
+                                            action-target: "'generate-page'";
+                                        }
+                                    }
+                                };
                             };
-                        };
+                        }
                     };
                 };
             }

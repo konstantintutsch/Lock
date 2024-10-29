@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-28 18:22+0100\n"
+"POT-Creation-Date: 2024-10-29 17:58+0100\n"
 "PO-Revision-Date: 2024-10-29 19:06+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
@@ -58,16 +58,16 @@ msgstr "加密用于"
 msgid "Enter name or email …"
 msgstr "输入姓名或电子邮箱…"
 
-#: src/window.c:691 src/window.c:779
+#: src/window.c:689 src/window.c:775
 #, c-format
 msgid "Failed to find key for User ID “%s”"
 msgstr "查找用于用户标识“%s”的密钥失败"
 
-#: src/window.c:696 src/window.c:784
+#: src/window.c:694 src/window.c:780
 msgid "Encryption failed"
 msgstr "加密失败"
 
-#: src/window.c:702
+#: src/window.c:700
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -75,7 +75,7 @@ msgctxt ""
 msgid "Text encrypted for %s"
 msgstr "文本已为 %s 加密"
 
-#: src/window.c:790
+#: src/window.c:786
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -83,55 +83,55 @@ msgctxt ""
 msgid "File encrypted for %s"
 msgstr "文件已为 %s 加密"
 
-#: src/window.c:845 src/window.c:901
+#: src/window.c:841 src/window.c:897
 msgid "Decryption failed"
 msgstr "解密失败"
 
-#: src/window.c:847
+#: src/window.c:843
 msgid "Text decrypted"
 msgstr "文本已解密"
 
-#: src/window.c:903
+#: src/window.c:899
 msgid "File decrypted"
 msgstr "文件已解密"
 
-#: src/window.c:957 src/window.c:1013
+#: src/window.c:953 src/window.c:1009
 msgid "Signing failed"
 msgstr "签署失败"
 
-#: src/window.c:959
+#: src/window.c:955
 msgid "Text signed"
 msgstr "文本已签署"
 
-#: src/window.c:1015
+#: src/window.c:1011
 msgid "File signed"
 msgstr "文件已签署"
 
-#: src/window.c:1069 src/window.c:1125
+#: src/window.c:1065 src/window.c:1121
 msgid "Verification failed"
 msgstr "校验失败"
 
-#: src/window.c:1071
+#: src/window.c:1067
 msgid "Text verified"
 msgstr "文本已校验"
 
-#: src/window.c:1127
+#: src/window.c:1123
 msgid "File verified"
 msgstr "文件已校验"
 
-#: src/keydialog.c:327
+#: src/keydialog.c:354
 msgid "Import failed"
 msgstr "导入失败"
 
-#: src/keydialog.c:329
+#: src/keydialog.c:356
 msgid "Keys imported"
 msgstr "密钥已导入"
 
-#: src/keydialog.c:396
+#: src/keydialog.c:423
 msgid "Generation failed"
 msgstr "生成失败"
 
-#: src/keydialog.c:398
+#: src/keydialog.c:425
 msgid "Keypair generated"
 msgstr "密钥对已生成"
 
@@ -184,139 +184,139 @@ msgctxt "Error message constructor for failed GPGME operations"
 msgid "Failed to %s: %s"
 msgstr "%s 失败：%s"
 
-#: src/cryptography.c:49 src/cryptography.c:92 src/cryptography.c:150
-#: src/cryptography.c:261 src/cryptography.c:366
+#: src/cryptography.c:41 src/cryptography.c:83 src/cryptography.c:139
+#: src/cryptography.c:255 src/cryptography.c:354
 msgctxt "GPGME Error"
 msgid "create new GPGME context"
 msgstr "创建新 GPGME 上下文"
 
-#: src/cryptography.c:54 src/cryptography.c:97 src/cryptography.c:155
-#: src/cryptography.c:266 src/cryptography.c:371
+#: src/cryptography.c:46 src/cryptography.c:88 src/cryptography.c:144
+#: src/cryptography.c:260 src/cryptography.c:359
 msgctxt "GPGME Error"
 msgid "set protocol of GPGME context to OpenPGP"
 msgstr "设置 GPGME 上下文协议为 OpenPGP"
 
-#: src/cryptography.c:67
+#: src/cryptography.c:59
 msgctxt "GPGME Error"
 msgid "find key matching User ID"
 msgstr "查找匹配用户标识的密钥"
 
-#: src/cryptography.c:108 src/cryptography.c:117
+#: src/cryptography.c:99 src/cryptography.c:108
 msgctxt "GPGME Error"
 msgid "generate new GPG key for signing"
 msgstr "生成用于签署的新 GPG 密钥"
 
-#: src/cryptography.c:124
+#: src/cryptography.c:115
 msgctxt "GPGME Error"
 msgid "delete unfinished, generated ECC key"
 msgstr "删除未完成，已生成 ECC 密钥"
 
-#: src/cryptography.c:161
+#: src/cryptography.c:150
 msgctxt "GPGME Error"
 msgid "load GPGME key data from file"
 msgstr "从文件加载 GPGME 密钥数据"
 
-#: src/cryptography.c:166
+#: src/cryptography.c:156
 msgctxt "GPGME Error"
 msgid "import GPG key from file"
 msgstr "从文件导入 GPG 密钥"
 
-#: src/cryptography.c:176
+#: src/cryptography.c:167
 msgctxt "GPGME Error"
 msgid "create GPGME key data in memory"
 msgstr "在内存中创建 GPGME 密钥数据"
 
-#: src/cryptography.c:181
+#: src/cryptography.c:173
 msgctxt "GPGME Error"
 msgid "export GPG key(s) to file"
 msgstr "导出 GPG 密钥至文件"
 
-#: src/cryptography.c:195
+#: src/cryptography.c:188
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr "打开导出文件失败：%s"
 
-#: src/cryptography.c:224
+#: src/cryptography.c:217
 msgctxt "GPGME Error"
 msgid "get GPG key for removal"
 msgstr "获取 GPG 密钥来移除"
 
-#: src/cryptography.c:228
+#: src/cryptography.c:221
 msgctxt "GPGME Error"
 msgid "remove GPG key"
 msgstr "移除 GPG 密钥"
 
-#: src/cryptography.c:274
+#: src/cryptography.c:268
 msgctxt "GPGME Error"
 msgid "create new GPGME input data from string"
 msgstr "从字符串创建新 GPGME 输入数据"
 
-#: src/cryptography.c:280 src/cryptography.c:394
+#: src/cryptography.c:273 src/cryptography.c:380
 msgctxt "GPGME Error"
 msgid "create new GPGME output data in memory"
 msgstr "在内存中创建新 GPGME 输出数据"
 
-#: src/cryptography.c:289
+#: src/cryptography.c:282
 msgctxt "GPGME Error"
 msgid "encrypt GPGME data from memory"
 msgstr "从内存加密 GPGME 数据"
 
-#: src/cryptography.c:296
+#: src/cryptography.c:288
 msgctxt "GPGME Error"
 msgid "decrypt GPGME data from memory"
 msgstr "从内存解密 GPGME 数据"
 
-#: src/cryptography.c:305
+#: src/cryptography.c:296
 msgctxt "GPGME Error"
 msgid "sign GPGME data from memory"
 msgstr "从内存签署 GPGME 数据"
 
-#: src/cryptography.c:312
+#: src/cryptography.c:301
 msgctxt "GPGME Error"
 msgid "verify GPGME data from memory"
 msgstr "从内存校验 GPGME 数据"
 
-#: src/cryptography.c:355
+#: src/cryptography.c:343
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "已移除 %s 来准备覆盖"
 
-#: src/cryptography.c:378
+#: src/cryptography.c:366
 msgctxt "GPGME Error"
 msgid "create new GPGME input data from file"
 msgstr "从文件创建新 GPGME 输入数据"
 
-#: src/cryptography.c:386
+#: src/cryptography.c:373
 msgctxt "GPGME Error"
 msgid "set file name of GPGME input data"
 msgstr "设置 GPGME 输入数据的文件名"
 
-#: src/cryptography.c:402
+#: src/cryptography.c:388
 msgctxt "GPGME Error"
 msgid "set file name of GPGME output data"
 msgstr "设置 GPGME 输出数据的文件名"
 
-#: src/cryptography.c:413
+#: src/cryptography.c:398
 msgctxt "GPGME Error"
 msgid "encrypt GPGME data from file"
 msgstr "从文件加密 GPGME 数据"
 
-#: src/cryptography.c:420
+#: src/cryptography.c:403
 msgctxt "GPGME Error"
 msgid "decrypt GPGME data from file"
 msgstr "从文件解密 GPGME 数据"
 
-#: src/cryptography.c:429
+#: src/cryptography.c:410
 msgctxt "GPGME Error"
 msgid "sign GPGME data from file"
 msgstr "从文件签署 GPGME 数据"
 
-#: src/cryptography.c:436
+#: src/cryptography.c:415
 msgctxt "GPGME Error"
 msgid "verify GPGME data from file"
 msgstr "从文件校验 GPGME 数据"
 
-#: src/cryptography.c:453
+#: src/cryptography.c:430
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "打开输出文件失败：%s"
@@ -462,77 +462,77 @@ msgstr "标题"
 msgid "Refresh keys"
 msgstr "刷新密钥"
 
-#: data/ui/keydialog.blp:51
+#: data/ui/keydialog.blp:68
 msgid "No keys available"
 msgstr "无可用密钥"
 
-#: data/ui/keydialog.blp:52
+#: data/ui/keydialog.blp:69
 msgid "Your GnuPG keyring does not contain any keys."
 msgstr "您的 GnuPG 密钥串不包含任何密钥。"
 
-#: data/ui/keydialog.blp:71
+#: data/ui/keydialog.blp:88
 msgctxt "Import keys from files"
 msgid "Import"
 msgstr "导入"
 
-#: data/ui/keydialog.blp:72
+#: data/ui/keydialog.blp:89
 msgid "Import keys from files"
 msgstr "从文件导入密钥"
 
-#: data/ui/keydialog.blp:79
+#: data/ui/keydialog.blp:96
 msgid "Create a new keypair"
 msgstr "创建密钥对"
 
-#: data/ui/keydialog.blp:92
+#: data/ui/keydialog.blp:110
 msgid "Generate keypair"
 msgstr "生成密钥对"
 
-#: data/ui/keydialog.blp:119
+#: data/ui/keydialog.blp:137
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
 msgstr "姓名"
 
-#: data/ui/keydialog.blp:124
+#: data/ui/keydialog.blp:142
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr "电子邮箱"
 
-#: data/ui/keydialog.blp:129
+#: data/ui/keydialog.blp:147
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr "签署算法"
 
-#: data/ui/keydialog.blp:130
+#: data/ui/keydialog.blp:148
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr "密钥"
 
-#: data/ui/keydialog.blp:138
+#: data/ui/keydialog.blp:156
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "加密算法"
 
-#: data/ui/keydialog.blp:139
+#: data/ui/keydialog.blp:157
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr "子密钥"
 
-#: data/ui/keydialog.blp:147
+#: data/ui/keydialog.blp:165
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr "到期"
 
-#: data/ui/keydialog.blp:148
+#: data/ui/keydialog.blp:166
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr "单位为月，输入 0 可禁用"
 
-#: data/ui/keydialog.blp:170
+#: data/ui/keydialog.blp:188
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "生成"
 
-#: data/ui/keydialog.blp:171
+#: data/ui/keydialog.blp:189
 msgid "Generate a new keypair"
 msgstr "生成密钥对"
 

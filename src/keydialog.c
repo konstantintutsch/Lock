@@ -25,6 +25,8 @@ struct _LockKeyDialog {
     GtkButton *refresh_button;
     GtkBox *manage_box;
 
+    AdwSpinner *key_loading;
+    GtkScrolledWindow *key_content;
     AdwStatusPage *status_page;
     GtkListBox *key_box;
 
@@ -44,6 +46,9 @@ struct _LockKeyDialog {
 G_DEFINE_TYPE(LockKeyDialog, lock_key_dialog, ADW_TYPE_DIALOG);
 
 /* UI */
+static void lock_key_dialog_loading_keys(LockKeyDialog * dialog,
+                                         gboolean loading);
+
 gboolean lock_key_dialog_import_on_completed(LockKeyDialog * dialog);
 gboolean lock_key_dialog_generate_on_completed(LockKeyDialog * dialog);
 
@@ -88,6 +93,11 @@ static void lock_key_dialog_class_init(LockKeyDialogClass *class)
                                          refresh_button);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyDialog,
                                          manage_box);
+
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyDialog,
+                                         key_loading);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyDialog,
+                                         key_content);
 
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyDialog,
                                          status_page);
@@ -139,6 +149,8 @@ LockKeyDialog *lock_key_dialog_new(LockWindow *window)
 void lock_key_dialog_refresh(GtkButton *self, LockKeyDialog *dialog)
 {
     (void)self;
+
+    lock_key_dialog_loading_keys(dialog, true);
 
     gtk_list_box_remove_all(dialog->key_box);
 
@@ -205,6 +217,21 @@ void lock_key_dialog_refresh(GtkButton *self, LockKeyDialog *dialog)
 
         gtk_widget_set_visible(GTK_WIDGET(dialog->status_page), false);
     }
+
+    lock_key_dialog_loading_keys(dialog, false);
+}
+
+/**
+ * This function updates the UI of a LockKeyDialog to indicate whether the keys are currently loading or loaded.
+ *
+ * @param dialog Dialog to update the UI of
+ * @param loading Whether the keys are loading
+ */
+static void lock_key_dialog_loading_keys(LockKeyDialog *dialog,
+                                         gboolean loading)
+{
+    gtk_widget_set_visible(GTK_WIDGET(dialog->key_loading), loading);
+    gtk_widget_set_visible(GTK_WIDGET(dialog->key_content), !loading);
 }
 
 /**

@@ -638,9 +638,7 @@ void lock_window_encrypt_text(LockWindow *window)
     gpgme_key_t key = key_search(window->uid);
     HANDLE_ERROR_UID(, window->uid_found, key,
                      lock_window_encrypt_text_on_completed, window,
-                     g_free(plain);
-                     plain = NULL;
-        );
+                     g_free(plain); plain = NULL;);
 
     window->uid_found = true;
     if (key->uids->name) {
@@ -731,10 +729,8 @@ void lock_window_encrypt_file(LockWindow *window)
     HANDLE_ERROR_UID(, window->uid_found, key,
                      lock_window_encrypt_file_on_completed, window,
                      /* Cleanup */
-                     g_free(input_path);
-                     input_path = NULL; g_free(output_path);
-                     output_path = NULL;
-        );
+                     g_free(input_path); input_path = NULL;
+                     g_free(output_path); output_path = NULL;);
 
     window->uid_found = true;
     if (key->uids->name) {
