@@ -7,28 +7,25 @@ template $LockKeyDialog : Adw.Dialog {
     content-height: 420;
     can-close: true;
 
-    child: Gtk.Box {
-        orientation: vertical;
-        halign: fill;
-        hexpand: true;
-        valign: fill;
-        vexpand: true;
-
-        Adw.Spinner spinner {
-            halign: center;
+    child: Adw.ToastOverlay toast_overlay {
+        child: Gtk.Box {
+            orientation: vertical;
+            halign: fill;
             hexpand: true;
-            valign: center;
+            valign: fill;
             vexpand: true;
 
-            width-request: 64;
-            height-request: 64;
-        }
+            Adw.Spinner spinner {
+                halign: center;
+                hexpand: true;
+                valign: center;
+                vexpand: true;
 
-        Adw.ToastOverlay toast_overlay {
-            hexpand: true;
-            vexpand: true;
+                width-request: 64;
+                height-request: 64;
+            }
 
-            child: Adw.NavigationView {
+            Adw.NavigationView view {
                 Adw.NavigationPage {
                     title: _("Manage keys");
                     tag: "manage-page";
@@ -199,7 +196,7 @@ template $LockKeyDialog : Adw.Dialog {
                         };
                     };
                 }
-            };
-        }
+            }
+        };
     };
 }

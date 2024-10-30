@@ -20,8 +20,10 @@ struct _LockKeyDialog {
 
     LockWindow *window;
 
-    AdwSpinner *spinner;
     AdwToastOverlay *toast_overlay;
+
+    AdwSpinner *spinner;
+    AdwNavigationView *view;
 
     GtkButton *refresh_button;
     GtkBox *manage_box;
@@ -83,9 +85,12 @@ static void lock_key_dialog_class_init(LockKeyDialogClass *class)
                                                 UI_RESOURCE("keydialog.ui"));
 
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyDialog,
+                                         toast_overlay);
+
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyDialog,
                                          spinner);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyDialog,
-                                         toast_overlay);
+                                         view);
 
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyDialog,
                                          refresh_button);
@@ -142,7 +147,7 @@ LockKeyDialog *lock_key_dialog_new(LockWindow *window)
 void lock_key_dialog_show_spinner(LockKeyDialog *dialog, gboolean spinning)
 {
     gtk_widget_set_visible(GTK_WIDGET(dialog->spinner), spinning);
-    gtk_widget_set_visible(GTK_WIDGET(dialog->toast_overlay), !spinning);
+    gtk_widget_set_visible(GTK_WIDGET(dialog->view), !spinning);
 }
 
 /**
