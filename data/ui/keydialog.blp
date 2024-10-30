@@ -7,51 +7,51 @@ template $LockKeyDialog : Adw.Dialog {
     content-height: 420;
     can-close: true;
 
-    child: Adw.ToastOverlay toast_overlay {
-        child: Adw.NavigationView {
-            Adw.NavigationPage {
-                title: _("Manage keys");
-                tag: "manage-page";
+    child: Gtk.Box {
+        orientation: vertical;
+        halign: fill;
+        hexpand: true;
+        valign: fill;
+        vexpand: true;
 
-                child: Adw.ToolbarView {
+        Adw.Spinner spinner {
+            halign: center;
+            hexpand: true;
+            valign: center;
+            vexpand: true;
 
-                    [top]
-                    Adw.HeaderBar {
-                        styles ["flat"]
+            width-request: 64;
+            height-request: 64;
+        }
 
-                        [start]
-                        Gtk.Box {
-                            orientation: horizontal;
-                            valign: center;
-                            halign: start;
+        Adw.ToastOverlay toast_overlay {
+            child: Adw.NavigationView {
+                Adw.NavigationPage {
+                    title: _("Manage keys");
+                    tag: "manage-page";
 
-                            Gtk.Button refresh_button {
-                                styles ["flat"]
+                    child: Adw.ToolbarView {
 
-                                icon-name: "view-refresh-symbolic";
-                                tooltip-text: _("Refresh keys");
+                        [top]
+                        Adw.HeaderBar {
+                            styles ["flat"]
+
+                            [start]
+                            Gtk.Box {
+                                orientation: horizontal;
+                                valign: center;
+                                halign: start;
+
+                                Gtk.Button refresh_button {
+                                    styles ["flat"]
+
+                                    icon-name: "view-refresh-symbolic";
+                                    tooltip-text: _("Refresh keys");
+                                }
                             }
                         }
-                    }
 
-                    content: Gtk.Box {
-                        orientation: vertical;
-                        valign: fill;
-                        vexpand: true;
-                        halign: fill;
-                        hexpand: true;
-
-                        Adw.Spinner key_loading {
-                            valign: center;
-                            vexpand: true;
-                            halign: center;
-                            hexpand: true;
-
-                            width-request: 64;
-                            height-request: 64;
-                        }
-
-                        Gtk.ScrolledWindow key_content {
+                        content: Gtk.ScrolledWindow {
                             propagate-natural-height: true;
 
                             child: Adw.Clamp {
@@ -101,99 +101,102 @@ template $LockKeyDialog : Adw.Dialog {
                                     }
                                 };
                             };
-                        }
+                        };
                     };
-                };
-            }
+                }
 
-            Adw.NavigationPage {
-                title: _("Generate keypair");
-                tag: "generate-page";
+                Adw.NavigationPage {
+                    title: _("Generate keypair");
+                    tag: "generate-page";
 
-                child: Adw.ToolbarView {
+                    child: Adw.ToolbarView {
 
-                    [top]
-                    Adw.HeaderBar {
-                        styles ["flat"]
-                    }
+                        [top]
+                        Adw.HeaderBar {
+                            styles ["flat"]
+                        }
 
-                    content: Gtk.ScrolledWindow {
-                        propagate-natural-height: true;
+                        content: Gtk.ScrolledWindow {
+                            propagate-natural-height: true;
 
-                        child: Adw.Clamp {
-                            tightening-threshold: 150;
-                            unit: sp;
+                            child: Adw.Clamp {
+                                tightening-threshold: 150;
+                                unit: sp;
 
-                            child: Gtk.Box {
-                                orientation: vertical;
-                                valign: center;
-                                halign: fill;
-                                spacing: 20;
+                                margin-top: 20;
+                                margin-bottom: 20;
 
-                                Gtk.ListBox {
-                                    styles ["boxed-list"]
-
-                                    Adw.EntryRow name_entry {
-                                        title: C_("Name of the UID of the new keypair", "Name");
-                                        input-purpose: name;
-                                    }
-
-                                    Adw.EntryRow email_entry {
-                                        title: C_("Email of the UID of the new keypair", "Email");
-                                        input-purpose: email;
-                                    }
-
-                                    Adw.ComboRow sign_entry {
-                                        title: C_("Signing algorithm of the new keypair", "Signing Algorithm");
-                                        subtitle: C_("Signing algorithm of the new keypair", "Key");
-
-                                        model: Gtk.StringList {
-                                            strings: ["ed25519", "dsa3072", "rsa2048", "rsa4096"];
-                                        };
-                                    }
-
-                                    Adw.ComboRow encrypt_entry {
-                                        title: C_("Encryption algorithm of the new keypair", "Encryption Algorithm");
-                                        subtitle: C_("Encryption algorithm of the new keypair", "Subkey");
-
-                                        model: Gtk.StringList {
-                                            strings: ["curve25519", "rsa2048", "rsa4096"];
-                                        };
-                                    }
-
-                                    Adw.SpinRow expiry_entry {
-                                        title: C_("Expiry time of the new keypair", "Expiry");
-                                        subtitle: C_("Expiry unit of the new keypair", "Months, disable with zero");
-
-                                        adjustment: Gtk.Adjustment {
-                                            lower: 0;
-                                            upper: 240;
-                                            value: 48;
-
-                                            page-increment: 12;
-                                            step-increment: 1;
-                                        };
-                                    }
-                                }
-
-                                Gtk.Box {
-                                    orientation: horizontal;
+                                child: Gtk.Box {
+                                    orientation: vertical;
                                     valign: center;
-                                    halign: center;
-                                    spacing: 10;
+                                    halign: fill;
+                                    spacing: 20;
 
-                                    Gtk.Button generate_button {
-                                        styles ["pill", "suggested-action"]
+                                    Gtk.ListBox {
+                                        styles ["boxed-list"]
 
-                                        label: C_("Generate a new keypair", "Generate");
-                                        tooltip-text: _("Generate a new keypair");
+                                        Adw.EntryRow name_entry {
+                                            title: C_("Name of the UID of the new keypair", "Name");
+                                            input-purpose: name;
+                                        }
+
+                                        Adw.EntryRow email_entry {
+                                            title: C_("Email of the UID of the new keypair", "Email");
+                                            input-purpose: email;
+                                        }
+
+                                        Adw.ComboRow sign_entry {
+                                            title: C_("Signing algorithm of the new keypair", "Signing Algorithm");
+                                            subtitle: C_("Signing algorithm of the new keypair", "Key");
+
+                                            model: Gtk.StringList {
+                                                strings: ["ed25519", "dsa3072", "rsa2048", "rsa4096"];
+                                            };
+                                        }
+
+                                        Adw.ComboRow encrypt_entry {
+                                            title: C_("Encryption algorithm of the new keypair", "Encryption Algorithm");
+                                            subtitle: C_("Encryption algorithm of the new keypair", "Subkey");
+
+                                            model: Gtk.StringList {
+                                                strings: ["curve25519", "rsa2048", "rsa4096"];
+                                            };
+                                        }
+
+                                        Adw.SpinRow expiry_entry {
+                                            title: C_("Expiry time of the new keypair", "Expiry");
+                                            subtitle: C_("Expiry unit of the new keypair", "Months, disable with zero");
+
+                                            adjustment: Gtk.Adjustment {
+                                                lower: 0;
+                                                upper: 240;
+                                                value: 48;
+
+                                                page-increment: 12;
+                                                step-increment: 1;
+                                            };
+                                        }
                                     }
-                                }
+
+                                    Gtk.Box {
+                                        orientation: horizontal;
+                                        valign: center;
+                                        halign: center;
+                                        spacing: 10;
+
+                                        Gtk.Button generate_button {
+                                            styles ["pill", "suggested-action"]
+
+                                            label: C_("Generate a new keypair", "Generate");
+                                            tooltip-text: _("Generate a new keypair");
+                                        }
+                                    }
+                                };
                             };
                         };
                     };
-                };
-            }
-        };
+                }
+            };
+        }
     };
 }

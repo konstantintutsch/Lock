@@ -213,9 +213,12 @@ void thread_verify_file(GtkButton *self, LockWindow *window)
  */
 void thread_import_key(LockKeyDialog *dialog)
 {
-    thread_create("import_key",
-                  C_("Thread Error", "key import"),
-                  lock_key_dialog_import, dialog);
+    bool success = thread_create("import_key",
+                                 C_("Thread Error", "key import"),
+                                 lock_key_dialog_import, dialog);
+
+    if (success)
+        lock_key_dialog_show_spinner(dialog, true);
 }
 
 /**
@@ -228,9 +231,12 @@ void thread_generate_key(GtkButton *self, LockKeyDialog *dialog)
 {
     (void)self;
 
-    thread_create("generate_key",
-                  C_("Thread Error", "key generation"),
-                  lock_key_dialog_generate, dialog);
+    bool success = thread_create("generate_key",
+                                 C_("Thread Error", "key generation"),
+                                 lock_key_dialog_generate, dialog);
+
+    if (success)
+        lock_key_dialog_show_spinner(dialog, true);
 }
 
 /**

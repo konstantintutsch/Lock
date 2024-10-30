@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-30 18:19+0100\n"
+"POT-Creation-Date: 2024-10-30 18:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,16 +57,16 @@ msgstr ""
 msgid "Enter name or email …"
 msgstr ""
 
-#: src/window.c:706 src/window.c:794
+#: src/window.c:708 src/window.c:798
 #, c-format
 msgid "Failed to find key for User ID “%s”"
 msgstr ""
 
-#: src/window.c:711 src/window.c:799
+#: src/window.c:713 src/window.c:803
 msgid "Encryption failed"
 msgstr ""
 
-#: src/window.c:717
+#: src/window.c:719
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -74,7 +74,7 @@ msgctxt ""
 msgid "Text encrypted for %s"
 msgstr ""
 
-#: src/window.c:805
+#: src/window.c:809
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -82,55 +82,55 @@ msgctxt ""
 msgid "File encrypted for %s"
 msgstr ""
 
-#: src/window.c:862 src/window.c:920
+#: src/window.c:866 src/window.c:924
 msgid "Decryption failed"
 msgstr ""
 
-#: src/window.c:864
+#: src/window.c:868
 msgid "Text decrypted"
 msgstr ""
 
-#: src/window.c:922
+#: src/window.c:926
 msgid "File decrypted"
 msgstr ""
 
-#: src/window.c:978 src/window.c:1036
+#: src/window.c:982 src/window.c:1040
 msgid "Signing failed"
 msgstr ""
 
-#: src/window.c:980
+#: src/window.c:984
 msgid "Text signed"
 msgstr ""
 
-#: src/window.c:1038
+#: src/window.c:1042
 msgid "File signed"
 msgstr ""
 
-#: src/window.c:1094 src/window.c:1152
+#: src/window.c:1098 src/window.c:1156
 msgid "Verification failed"
 msgstr ""
 
-#: src/window.c:1096
+#: src/window.c:1100
 msgid "Text verified"
 msgstr ""
 
-#: src/window.c:1154
+#: src/window.c:1158
 msgid "File verified"
 msgstr ""
 
-#: src/keydialog.c:354
+#: src/keydialog.c:346
 msgid "Import failed"
 msgstr ""
 
-#: src/keydialog.c:356
+#: src/keydialog.c:348
 msgid "Keys imported"
 msgstr ""
 
-#: src/keydialog.c:423
+#: src/keydialog.c:417
 msgid "Generation failed"
 msgstr ""
 
-#: src/keydialog.c:425
+#: src/keydialog.c:419
 msgid "Keypair generated"
 msgstr ""
 
@@ -183,14 +183,14 @@ msgctxt "Error message constructor for failed GPGME operations"
 msgid "Failed to %s: %s"
 msgstr ""
 
-#: src/cryptography.c:41 src/cryptography.c:83 src/cryptography.c:139
-#: src/cryptography.c:255 src/cryptography.c:354
+#: src/cryptography.c:41 src/cryptography.c:84 src/cryptography.c:142
+#: src/cryptography.c:253 src/cryptography.c:358
 msgctxt "GPGME Error"
 msgid "create new GPGME context"
 msgstr ""
 
-#: src/cryptography.c:46 src/cryptography.c:88 src/cryptography.c:144
-#: src/cryptography.c:260 src/cryptography.c:359
+#: src/cryptography.c:46 src/cryptography.c:89 src/cryptography.c:147
+#: src/cryptography.c:258 src/cryptography.c:363
 msgctxt "GPGME Error"
 msgid "set protocol of GPGME context to OpenPGP"
 msgstr ""
@@ -200,27 +200,27 @@ msgctxt "GPGME Error"
 msgid "find key matching User ID"
 msgstr ""
 
-#: src/cryptography.c:99 src/cryptography.c:108
+#: src/cryptography.c:100 src/cryptography.c:109
 msgctxt "GPGME Error"
 msgid "generate new GPG key for signing"
 msgstr ""
 
-#: src/cryptography.c:115
+#: src/cryptography.c:116
 msgctxt "GPGME Error"
 msgid "delete unfinished, generated ECC key"
 msgstr ""
 
-#: src/cryptography.c:150
+#: src/cryptography.c:153
 msgctxt "GPGME Error"
 msgid "load GPGME key data from file"
 msgstr ""
 
-#: src/cryptography.c:156
+#: src/cryptography.c:158
 msgctxt "GPGME Error"
 msgid "import GPG key from file"
 msgstr ""
 
-#: src/cryptography.c:167
+#: src/cryptography.c:168
 msgctxt "GPGME Error"
 msgid "create GPGME key data in memory"
 msgstr ""
@@ -230,32 +230,32 @@ msgctxt "GPGME Error"
 msgid "export GPG key(s) to file"
 msgstr ""
 
-#: src/cryptography.c:188
+#: src/cryptography.c:187
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr ""
 
-#: src/cryptography.c:217
+#: src/cryptography.c:216
 msgctxt "GPGME Error"
 msgid "get GPG key for removal"
 msgstr ""
 
-#: src/cryptography.c:221
+#: src/cryptography.c:220
 msgctxt "GPGME Error"
 msgid "remove GPG key"
 msgstr ""
 
-#: src/cryptography.c:268
+#: src/cryptography.c:266
 msgctxt "GPGME Error"
 msgid "create new GPGME input data from string"
 msgstr ""
 
-#: src/cryptography.c:273 src/cryptography.c:380
+#: src/cryptography.c:272 src/cryptography.c:386
 msgctxt "GPGME Error"
 msgid "create new GPGME output data in memory"
 msgstr ""
 
-#: src/cryptography.c:282
+#: src/cryptography.c:281
 msgctxt "GPGME Error"
 msgid "encrypt GPGME data from memory"
 msgstr ""
@@ -265,57 +265,57 @@ msgctxt "GPGME Error"
 msgid "decrypt GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:296
+#: src/cryptography.c:297
 msgctxt "GPGME Error"
 msgid "sign GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:301
+#: src/cryptography.c:304
 msgctxt "GPGME Error"
 msgid "verify GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:343
+#: src/cryptography.c:347
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr ""
 
-#: src/cryptography.c:366
+#: src/cryptography.c:370
 msgctxt "GPGME Error"
 msgid "create new GPGME input data from file"
 msgstr ""
 
-#: src/cryptography.c:373
+#: src/cryptography.c:378
 msgctxt "GPGME Error"
 msgid "set file name of GPGME input data"
 msgstr ""
 
-#: src/cryptography.c:388
+#: src/cryptography.c:394
 msgctxt "GPGME Error"
 msgid "set file name of GPGME output data"
 msgstr ""
 
-#: src/cryptography.c:398
+#: src/cryptography.c:405
 msgctxt "GPGME Error"
 msgid "encrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:403
+#: src/cryptography.c:412
 msgctxt "GPGME Error"
 msgid "decrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:410
+#: src/cryptography.c:421
 msgctxt "GPGME Error"
 msgid "sign GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:415
+#: src/cryptography.c:428
 msgctxt "GPGME Error"
 msgid "verify GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:430
+#: src/cryptography.c:445
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr ""
@@ -372,17 +372,17 @@ msgctxt "Thread Error"
 msgid "key import"
 msgstr ""
 
-#: src/threading.c:232
+#: src/threading.c:235
 msgctxt "Thread Error"
 msgid "key generation"
 msgstr ""
 
-#: src/threading.c:244
+#: src/threading.c:250
 msgctxt "Thread Error"
 msgid "key export"
 msgstr ""
 
-#: src/threading.c:255
+#: src/threading.c:261
 msgctxt "Thread Error"
 msgid "key removal"
 msgstr ""
@@ -449,7 +449,7 @@ msgstr ""
 msgid "Verify"
 msgstr ""
 
-#: data/ui/window.blp:197 data/ui/keydialog.blp:13
+#: data/ui/window.blp:197 data/ui/keydialog.blp:30
 msgid "Manage keys"
 msgstr ""
 
@@ -461,7 +461,7 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: data/ui/keydialog.blp:32
+#: data/ui/keydialog.blp:49
 msgid "Refresh keys"
 msgstr ""
 
@@ -486,56 +486,56 @@ msgstr ""
 msgid "Create a new keypair"
 msgstr ""
 
-#: data/ui/keydialog.blp:110
+#: data/ui/keydialog.blp:109
 msgid "Generate keypair"
 msgstr ""
 
-#: data/ui/keydialog.blp:137
+#: data/ui/keydialog.blp:139
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
 msgstr ""
 
-#: data/ui/keydialog.blp:142
+#: data/ui/keydialog.blp:144
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr ""
 
-#: data/ui/keydialog.blp:147
+#: data/ui/keydialog.blp:149
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr ""
 
-#: data/ui/keydialog.blp:148
+#: data/ui/keydialog.blp:150
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr ""
 
-#: data/ui/keydialog.blp:156
+#: data/ui/keydialog.blp:158
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr ""
 
-#: data/ui/keydialog.blp:157
+#: data/ui/keydialog.blp:159
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr ""
 
-#: data/ui/keydialog.blp:165
+#: data/ui/keydialog.blp:167
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr ""
 
-#: data/ui/keydialog.blp:166
+#: data/ui/keydialog.blp:168
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr ""
 
-#: data/ui/keydialog.blp:188
+#: data/ui/keydialog.blp:190
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr ""
 
-#: data/ui/keydialog.blp:189
+#: data/ui/keydialog.blp:191
 msgid "Generate a new keypair"
 msgstr ""
 
