@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-29 17:58+0100\n"
+"POT-Creation-Date: 2024-10-30 18:19+0100\n"
 "PO-Revision-Date: 2024-10-26 21:56+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
@@ -42,32 +42,32 @@ msgstr "Quentin PAGÈS"
 msgid "Dependencies"
 msgstr "Dependéncias"
 
-#: src/window.c:150 data/ui/entrydialog.blp:33
+#: src/window.c:153 data/ui/entrydialog.blp:33
 msgid "Enter text …"
 msgstr "Picar de tèxte…"
 
-#: src/window.c:408
+#: src/window.c:425
 msgid "Text copied"
 msgstr "Tèxte copiat"
 
-#: src/window.c:600 src/window.c:620
+#: src/window.c:617 src/window.c:637
 msgid "Encrypt for"
 msgstr "Chifrar per"
 
-#: src/window.c:600 src/window.c:620
+#: src/window.c:617 src/window.c:637
 msgid "Enter name or email …"
 msgstr "Picatz un nom o email…"
 
-#: src/window.c:689 src/window.c:775
+#: src/window.c:706 src/window.c:794
 #, c-format
 msgid "Failed to find key for User ID “%s”"
 msgstr "Impossible de trobar una clau per l’ID utilizaire « %s »"
 
-#: src/window.c:694 src/window.c:780
+#: src/window.c:711 src/window.c:799
 msgid "Encryption failed"
 msgstr "Fracàs del chiframent"
 
-#: src/window.c:700
+#: src/window.c:717
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -75,7 +75,7 @@ msgctxt ""
 msgid "Text encrypted for %s"
 msgstr "Tèxte chifrat per %s"
 
-#: src/window.c:786
+#: src/window.c:805
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -83,39 +83,39 @@ msgctxt ""
 msgid "File encrypted for %s"
 msgstr "Fichièr chifrat per %s"
 
-#: src/window.c:841 src/window.c:897
+#: src/window.c:862 src/window.c:920
 msgid "Decryption failed"
 msgstr "Fracàs del deschiframent"
 
-#: src/window.c:843
+#: src/window.c:864
 msgid "Text decrypted"
 msgstr "Tèxte deschifrat"
 
-#: src/window.c:899
+#: src/window.c:922
 msgid "File decrypted"
 msgstr "Fichièr deschifrat"
 
-#: src/window.c:953 src/window.c:1009
+#: src/window.c:978 src/window.c:1036
 msgid "Signing failed"
 msgstr "Fracàs de la signatura"
 
-#: src/window.c:955
+#: src/window.c:980
 msgid "Text signed"
 msgstr "Tèxte signat"
 
-#: src/window.c:1011
+#: src/window.c:1038
 msgid "File signed"
 msgstr "Fichièr signat"
 
-#: src/window.c:1065 src/window.c:1121
+#: src/window.c:1094 src/window.c:1152
 msgid "Verification failed"
 msgstr "Verificacion fracassada"
 
-#: src/window.c:1067
+#: src/window.c:1096
 msgid "Text verified"
 msgstr "Tèxte verificat"
 
-#: src/window.c:1123
+#: src/window.c:1154
 msgid "File verified"
 msgstr "Fichièr verificat"
 
@@ -329,74 +329,74 @@ msgstr "la verificacion de las donadas GPGME a partir del fichièr"
 msgid "Failed to open output file: %s"
 msgstr "Fracàs de la dobertura del fichièr en sortida : %s"
 
-#: src/threading.c:20
+#: src/threading.c:35
 #, c-format
 msgctxt ""
 "First format specifier is a translation string marked as “Thread Error”"
 msgid "Failed to create %s thread: %s"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
-#: src/threading.c:41
+#: src/threading.c:59
 msgctxt "Thread Error"
 msgid "text encryption"
 msgstr "chifrar lo tèxte"
 
-#: src/threading.c:62
+#: src/threading.c:83
 msgctxt "Thread Error"
 msgid "file encryption"
 msgstr "chifrar lo fichièr"
 
-#: src/threading.c:82
+#: src/threading.c:106
 msgctxt "Thread Error"
 msgid "text decryption"
 msgstr "deschifrar lo tèxte"
 
-#: src/threading.c:97
+#: src/threading.c:124
 msgctxt "Thread Error"
 msgid "file decryption"
 msgstr "deschifrar lo fichièr"
 
-#: src/threading.c:114
+#: src/threading.c:145
 msgctxt "Thread Error"
 msgid "text signing"
 msgstr "signar lo tèxte"
 
-#: src/threading.c:128
+#: src/threading.c:163
 msgctxt "Thread Error"
 msgid "file signing"
 msgstr "signar lo fichièr"
 
-#: src/threading.c:146
+#: src/threading.c:184
 msgctxt "Thread Error"
 msgid "text verification"
 msgstr "verificar lo tèxte"
 
-#: src/threading.c:161
+#: src/threading.c:202
 msgctxt "Thread Error"
 msgid "file verification"
 msgstr "verificar lo fichièr"
 
-#: src/threading.c:173
+#: src/threading.c:217
 msgctxt "Thread Error"
 msgid "key import"
 msgstr "importar la clau"
 
-#: src/threading.c:188
+#: src/threading.c:232
 msgctxt "Thread Error"
 msgid "key generation"
 msgstr "generar la clau"
 
-#: src/threading.c:200
+#: src/threading.c:244
 msgctxt "Thread Error"
 msgid "key export"
 msgstr "exportar la clau"
 
-#: src/threading.c:212
+#: src/threading.c:255
 msgctxt "Thread Error"
 msgid "key removal"
 msgstr "suprimir la clau"
 
-#: data/ui/window.blp:9 data/ui/window.blp:180
+#: data/ui/window.blp:9 data/ui/window.blp:191
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
@@ -414,51 +414,56 @@ msgstr "Copiar lo tèxte"
 msgid "Cryptography operations"
 msgstr "Operacions de criptografia"
 
-#: data/ui/window.blp:45
+#: data/ui/window.blp:50
+#, fuzzy
+msgid "Processing …"
+msgstr "Tractament de fichièr"
+
+#: data/ui/window.blp:55
 msgid "Main Menu"
 msgstr "Menú principal"
 
-#: data/ui/window.blp:55
+#: data/ui/window.blp:66
 msgid "Text"
 msgstr "Tèxte"
 
-#: data/ui/window.blp:73
+#: data/ui/window.blp:84
 msgid "File"
 msgstr "Fichièr"
 
-#: data/ui/window.blp:82
+#: data/ui/window.blp:93
 msgid "No files selected for processing"
 msgstr ""
 
-#: data/ui/window.blp:102
+#: data/ui/window.blp:113
 msgid "Input File"
 msgstr "Fichièr en entrada"
 
-#: data/ui/window.blp:117
+#: data/ui/window.blp:128
 msgid "Output File"
 msgstr "Fichièr en sortida"
 
-#: data/ui/window.blp:141 data/ui/window.blp:201
+#: data/ui/window.blp:152 data/ui/window.blp:212
 msgid "Encrypt"
 msgstr "Chifrar"
 
-#: data/ui/window.blp:148 data/ui/window.blp:205
+#: data/ui/window.blp:159 data/ui/window.blp:216
 msgid "Decrypt"
 msgstr "Deschifrar"
 
-#: data/ui/window.blp:155 data/ui/window.blp:211
+#: data/ui/window.blp:166 data/ui/window.blp:222
 msgid "Sign"
 msgstr "Signar"
 
-#: data/ui/window.blp:162 data/ui/window.blp:215
+#: data/ui/window.blp:173 data/ui/window.blp:226
 msgid "Verify"
 msgstr "Verificar"
 
-#: data/ui/window.blp:186 data/ui/keydialog.blp:13
+#: data/ui/window.blp:197 data/ui/keydialog.blp:13
 msgid "Manage keys"
 msgstr "Gerir las claus"
 
-#: data/ui/window.blp:192
+#: data/ui/window.blp:203
 msgid "About Lock"
 msgstr "A prepaus de Lock"
 

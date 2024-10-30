@@ -40,11 +40,22 @@ template $LockWindow : Adw.ApplicationWindow {
             }
 
             [end]
-            Gtk.MenuButton {
-                icon-name: "open-menu-symbolic";
-                tooltip-text: _("Main Menu");
-                menu-model: primary_menu;
-                primary: true;
+            Gtk.Box {
+                orientation: horizontal;
+                halign: end;
+                valign: center;
+                spacing: 10;
+
+                Adw.Spinner processing_spinner {
+                    tooltip-text: _("Processing …");
+                }
+
+                Gtk.MenuButton {
+                    icon-name: "open-menu-symbolic";
+                    tooltip-text: _("Main Menu");
+                    menu-model: primary_menu;
+                    primary: true;
+                }
             }
         }
 

@@ -10,18 +10,36 @@
 
 #include <string.h>
 
-#define CRYPTOGRAPHY_THREAD_WRAPPER(ID, Target, Function, Data) GError *error = NULL; \
-    \
-    g_thread_try_new(ID, (gpointer)Function, Data, &error); \
-    \
-    if (error == NULL) \
-        return; \
-    \
-    g_warning(C_("First format specifier is a translation string marked as “Thread Error”", "Failed to create %s thread: %s"), Target, error->message); \
-    \
-    /* Cleanup */ \
-    g_error_free(error); \
+/**
+ * This function creates threads a function.
+ *
+ * @param id ID of the thread
+ * @param purpose Purpose of the thread to create (displayed in the error message)
+ * @param function Function to thread
+ * @param data Data to pass to the function
+ *
+ * @return Success
+ */
+bool thread_create(const gchar *id, const gchar *purpose, gpointer function,
+                   gpointer data)
+{
+    GError *error = NULL;
+
+    g_thread_try_new(id, function, data, &error);
+
+    if (error == NULL)
+        return true;
+
+    g_warning(C_
+              ("First format specifier is a translation string marked as “Thread Error”",
+               "Failed to create %s thread: %s"), purpose, error->message);
+
+    /* Cleanup */
+    g_error_free(error);
     error = NULL;
+
+    return false;
+}
 
 /**
  * This function creates a new thread for the encryption of the text view of a LockWindow.
@@ -37,11 +55,14 @@ void thread_encrypt_text(LockEntryDialog *self, const char *uid,
 
     lock_window_set_uid(window, uid);
 
-    CRYPTOGRAPHY_THREAD_WRAPPER("encrypt_text",
-                                C_("Thread Error", "text encryption"),
-                                lock_window_encrypt_text, window);
+    bool success = thread_create("encrypt_text",
+                                 C_("Thread Error", "text encryption"),
+                                 lock_window_encrypt_text, window);
 
     lock_window_set_uid(window, "");
+
+    if (success)
+        lock_window_cryptography_processing(window, true);
 }
 
 /**
@@ -58,11 +79,14 @@ void thread_encrypt_file(LockEntryDialog *self, const char *uid,
 
     lock_window_set_uid(window, uid);
 
-    CRYPTOGRAPHY_THREAD_WRAPPER("encrypt_file",
-                                C_("Thread Error", "file encryption"),
-                                lock_window_encrypt_file, window);
+    bool success = thread_create("encrypt_file",
+                                 C_("Thread Error", "file encryption"),
+                                 lock_window_encrypt_file, window);
 
     lock_window_set_uid(window, "");
+
+    if (success)
+        lock_window_cryptography_processing(window, true);
 }
 
 /**
@@ -78,9 +102,12 @@ void thread_decrypt_text(GSimpleAction *self, GVariant *parameter,
     (void)self;
     (void)parameter;
 
-    CRYPTOGRAPHY_THREAD_WRAPPER("decrypt_text",
-                                C_("Thread Error", "text decryption"),
-                                lock_window_decrypt_text, window);
+    bool success = thread_create("decrypt_text",
+                                 C_("Thread Error", "text decryption"),
+                                 lock_window_decrypt_text, window);
+
+    if (success)
+        lock_window_cryptography_processing(window, true);
 }
 
 /**
@@ -93,9 +120,12 @@ void thread_decrypt_file(GtkButton *self, LockWindow *window)
 {
     (void)self;
 
-    CRYPTOGRAPHY_THREAD_WRAPPER("decrypt_file",
-                                C_("Thread Error", "file decryption"),
-                                lock_window_decrypt_file, window);
+    bool success = thread_create("decrypt_file",
+                                 C_("Thread Error", "file decryption"),
+                                 lock_window_decrypt_file, window);
+
+    if (success)
+        lock_window_cryptography_processing(window, true);
 }
 
 /**
@@ -111,8 +141,12 @@ void thread_sign_text(GSimpleAction *self, GVariant *parameter,
     (void)self;
     (void)parameter;
 
-    CRYPTOGRAPHY_THREAD_WRAPPER("sign_text", C_("Thread Error", "text signing"),
-                                lock_window_sign_text, window);
+    bool success =
+        thread_create("sign_text", C_("Thread Error", "text signing"),
+                      lock_window_sign_text, window);
+
+    if (success)
+        lock_window_cryptography_processing(window, true);
 }
 
 /**
@@ -125,8 +159,12 @@ void thread_sign_file(GtkButton *self, LockWindow *window)
 {
     (void)self;
 
-    CRYPTOGRAPHY_THREAD_WRAPPER("sign_file", C_("Thread Error", "file signing"),
-                                lock_window_sign_file, window);
+    bool success =
+        thread_create("sign_file", C_("Thread Error", "file signing"),
+                      lock_window_sign_file, window);
+
+    if (success)
+        lock_window_cryptography_processing(window, true);
 }
 
 /**
@@ -142,9 +180,12 @@ void thread_verify_text(GSimpleAction *self, GVariant *parameter,
     (void)self;
     (void)parameter;
 
-    CRYPTOGRAPHY_THREAD_WRAPPER("verify_text",
-                                C_("Thread Error", "text verification"),
-                                lock_window_verify_text, window);
+    bool success = thread_create("verify_text",
+                                 C_("Thread Error", "text verification"),
+                                 lock_window_verify_text, window);
+
+    if (success)
+        lock_window_cryptography_processing(window, true);
 }
 
 /**
@@ -157,9 +198,12 @@ void thread_verify_file(GtkButton *self, LockWindow *window)
 {
     (void)self;
 
-    CRYPTOGRAPHY_THREAD_WRAPPER("verify_file",
-                                C_("Thread Error", "file verification"),
-                                lock_window_verify_file, window);
+    bool success = thread_create("verify_file",
+                                 C_("Thread Error", "file verification"),
+                                 lock_window_verify_file, window);
+
+    if (success)
+        lock_window_cryptography_processing(window, true);
 }
 
 /**
@@ -169,9 +213,9 @@ void thread_verify_file(GtkButton *self, LockWindow *window)
  */
 void thread_import_key(LockKeyDialog *dialog)
 {
-    CRYPTOGRAPHY_THREAD_WRAPPER("import_key",
-                                C_("Thread Error", "key import"),
-                                lock_key_dialog_import, dialog);
+    thread_create("import_key",
+                  C_("Thread Error", "key import"),
+                  lock_key_dialog_import, dialog);
 }
 
 /**
@@ -184,9 +228,9 @@ void thread_generate_key(GtkButton *self, LockKeyDialog *dialog)
 {
     (void)self;
 
-    CRYPTOGRAPHY_THREAD_WRAPPER("generate_key",
-                                C_("Thread Error", "key generation"),
-                                lock_key_dialog_generate, dialog);
+    thread_create("generate_key",
+                  C_("Thread Error", "key generation"),
+                  lock_key_dialog_generate, dialog);
 }
 
 /**
@@ -196,9 +240,8 @@ void thread_generate_key(GtkButton *self, LockKeyDialog *dialog)
  */
 void thread_export_key(LockKeyRow *row)
 {
-    CRYPTOGRAPHY_THREAD_WRAPPER("export_key",
-                                C_("Thread Error", "key export"),
-                                lock_key_row_export, row);
+    thread_create("export_key",
+                  C_("Thread Error", "key export"), lock_key_row_export, row);
 }
 
 /**
@@ -208,7 +251,6 @@ void thread_export_key(LockKeyRow *row)
  */
 void thread_remove_key(LockKeyRow *row)
 {
-    CRYPTOGRAPHY_THREAD_WRAPPER("remove_key",
-                                C_("Thread Error", "key removal"),
-                                lock_key_row_remove, row);
+    thread_create("remove_key",
+                  C_("Thread Error", "key removal"), lock_key_row_remove, row);
 }

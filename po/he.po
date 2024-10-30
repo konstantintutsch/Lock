@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-29 17:58+0100\n"
+"POT-Creation-Date: 2024-10-30 18:19+0100\n"
 "PO-Revision-Date: 2024-10-28 09:07+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: \n"
@@ -41,32 +41,32 @@ msgstr "ירון שהרבני <sh.yaron@gmail.com>"
 msgid "Dependencies"
 msgstr "תלויות"
 
-#: src/window.c:150 data/ui/entrydialog.blp:33
+#: src/window.c:153 data/ui/entrydialog.blp:33
 msgid "Enter text …"
 msgstr "נא למלא טקסט…"
 
-#: src/window.c:408
+#: src/window.c:425
 msgid "Text copied"
 msgstr "הטקסט הועתק"
 
-#: src/window.c:600 src/window.c:620
+#: src/window.c:617 src/window.c:637
 msgid "Encrypt for"
 msgstr "הצפנה עבור"
 
-#: src/window.c:600 src/window.c:620
+#: src/window.c:617 src/window.c:637
 msgid "Enter name or email …"
 msgstr "נא למלא שם או כתובת דוא״ל…"
 
-#: src/window.c:689 src/window.c:775
+#: src/window.c:706 src/window.c:794
 #, c-format
 msgid "Failed to find key for User ID “%s”"
 msgstr "איתור מפתח למזהה המשתמש „%s”"
 
-#: src/window.c:694 src/window.c:780
+#: src/window.c:711 src/window.c:799
 msgid "Encryption failed"
 msgstr "ההצפנה נכשלה"
 
-#: src/window.c:700
+#: src/window.c:717
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -74,7 +74,7 @@ msgctxt ""
 msgid "Text encrypted for %s"
 msgstr "טקסט הוצפן עבור %s"
 
-#: src/window.c:786
+#: src/window.c:805
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -82,39 +82,39 @@ msgctxt ""
 msgid "File encrypted for %s"
 msgstr "קובץ הוצפן עבור %s"
 
-#: src/window.c:841 src/window.c:897
+#: src/window.c:862 src/window.c:920
 msgid "Decryption failed"
 msgstr "הפענוח נכשל"
 
-#: src/window.c:843
+#: src/window.c:864
 msgid "Text decrypted"
 msgstr "הטקסט פוענח"
 
-#: src/window.c:899
+#: src/window.c:922
 msgid "File decrypted"
 msgstr "הקובץ פוענח"
 
-#: src/window.c:953 src/window.c:1009
+#: src/window.c:978 src/window.c:1036
 msgid "Signing failed"
 msgstr "החתימה נכשלה"
 
-#: src/window.c:955
+#: src/window.c:980
 msgid "Text signed"
 msgstr "הטקסט נחתם"
 
-#: src/window.c:1011
+#: src/window.c:1038
 msgid "File signed"
 msgstr "הקובץ נחתם"
 
-#: src/window.c:1065 src/window.c:1121
+#: src/window.c:1094 src/window.c:1152
 msgid "Verification failed"
 msgstr "האימות נכשל"
 
-#: src/window.c:1067
+#: src/window.c:1096
 msgid "Text verified"
 msgstr "הטקסט אומת"
 
-#: src/window.c:1123
+#: src/window.c:1154
 msgid "File verified"
 msgstr "הקובץ אומת"
 
@@ -320,74 +320,74 @@ msgstr "אימות נתוני GPGME מקובץ"
 msgid "Failed to open output file: %s"
 msgstr "פתיחת קובץ הפלט נכשלה: %s"
 
-#: src/threading.c:20
+#: src/threading.c:35
 #, c-format
 msgctxt ""
 "First format specifier is a translation string marked as “Thread Error”"
 msgid "Failed to create %s thread: %s"
 msgstr "יצירת תהליכון %s נכשלה: %s"
 
-#: src/threading.c:41
+#: src/threading.c:59
 msgctxt "Thread Error"
 msgid "text encryption"
 msgstr "הצפנת טקסט"
 
-#: src/threading.c:62
+#: src/threading.c:83
 msgctxt "Thread Error"
 msgid "file encryption"
 msgstr "הצפנת קובץ"
 
-#: src/threading.c:82
+#: src/threading.c:106
 msgctxt "Thread Error"
 msgid "text decryption"
 msgstr "פענוח טקסט"
 
-#: src/threading.c:97
+#: src/threading.c:124
 msgctxt "Thread Error"
 msgid "file decryption"
 msgstr "פענוח קובץ"
 
-#: src/threading.c:114
+#: src/threading.c:145
 msgctxt "Thread Error"
 msgid "text signing"
 msgstr "חתימת טקסט"
 
-#: src/threading.c:128
+#: src/threading.c:163
 msgctxt "Thread Error"
 msgid "file signing"
 msgstr "חתימת קובץ"
 
-#: src/threading.c:146
+#: src/threading.c:184
 msgctxt "Thread Error"
 msgid "text verification"
 msgstr "אימות טקסט"
 
-#: src/threading.c:161
+#: src/threading.c:202
 msgctxt "Thread Error"
 msgid "file verification"
 msgstr "אימות קובץ"
 
-#: src/threading.c:173
+#: src/threading.c:217
 msgctxt "Thread Error"
 msgid "key import"
 msgstr "ייבוא מפתח"
 
-#: src/threading.c:188
+#: src/threading.c:232
 msgctxt "Thread Error"
 msgid "key generation"
 msgstr "יצירת מפתח"
 
-#: src/threading.c:200
+#: src/threading.c:244
 msgctxt "Thread Error"
 msgid "key export"
 msgstr "ייצוא מפתח"
 
-#: src/threading.c:212
+#: src/threading.c:255
 msgctxt "Thread Error"
 msgid "key removal"
 msgstr "הסרת מפתח"
 
-#: data/ui/window.blp:9 data/ui/window.blp:180
+#: data/ui/window.blp:9 data/ui/window.blp:191
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
@@ -405,51 +405,56 @@ msgstr "העתקת הטקסט"
 msgid "Cryptography operations"
 msgstr "פעולות קריפטוגרפיות"
 
-#: data/ui/window.blp:45
+#: data/ui/window.blp:50
+#, fuzzy
+msgid "Processing …"
+msgstr "עיבוד קבצים"
+
+#: data/ui/window.blp:55
 msgid "Main Menu"
 msgstr "תפריט ראשי"
 
-#: data/ui/window.blp:55
+#: data/ui/window.blp:66
 msgid "Text"
 msgstr "טקסט"
 
-#: data/ui/window.blp:73
+#: data/ui/window.blp:84
 msgid "File"
 msgstr "קובץ"
 
-#: data/ui/window.blp:82
+#: data/ui/window.blp:93
 msgid "No files selected for processing"
 msgstr ""
 
-#: data/ui/window.blp:102
+#: data/ui/window.blp:113
 msgid "Input File"
 msgstr "קובץ קלט"
 
-#: data/ui/window.blp:117
+#: data/ui/window.blp:128
 msgid "Output File"
 msgstr "קובץ פלט"
 
-#: data/ui/window.blp:141 data/ui/window.blp:201
+#: data/ui/window.blp:152 data/ui/window.blp:212
 msgid "Encrypt"
 msgstr "הצפנה"
 
-#: data/ui/window.blp:148 data/ui/window.blp:205
+#: data/ui/window.blp:159 data/ui/window.blp:216
 msgid "Decrypt"
 msgstr "פענוח"
 
-#: data/ui/window.blp:155 data/ui/window.blp:211
+#: data/ui/window.blp:166 data/ui/window.blp:222
 msgid "Sign"
 msgstr "חתימה"
 
-#: data/ui/window.blp:162 data/ui/window.blp:215
+#: data/ui/window.blp:173 data/ui/window.blp:226
 msgid "Verify"
 msgstr "אימות"
 
-#: data/ui/window.blp:186 data/ui/keydialog.blp:13
+#: data/ui/window.blp:197 data/ui/keydialog.blp:13
 msgid "Manage keys"
 msgstr "ניהול מפתחות"
 
-#: data/ui/window.blp:192
+#: data/ui/window.blp:203
 msgid "About Lock"
 msgstr "על מנעול"
 

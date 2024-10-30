@@ -35,6 +35,7 @@ struct _LockWindow {
 
     AdwToastOverlay *toast_overlay;
 
+    AdwSpinner *processing_spinner;
     AdwViewStack *stack;
     unsigned int action_mode;
 
@@ -130,10 +131,12 @@ static void lock_window_init(LockWindow *window)
     window->uid = malloc((0 + 1) * sizeof(char));
     strcpy(window->uid, "");
 
-    /* Page changed */
+    /* UI */
     g_signal_connect(window->stack, "notify::visible-child",
                      G_CALLBACK(lock_window_stack_page_on_changed), window);
     lock_window_stack_page_on_changed(window->stack, NULL, window);
+
+    lock_window_cryptography_processing(window, false);
 
     /* Key management */
 
@@ -212,6 +215,8 @@ static void lock_window_class_init(LockWindowClass *class)
                                                 UI_RESOURCE("window.ui"));
 
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
+                                         processing_spinner);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
                                          toast_overlay);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
                                          stack);
@@ -278,6 +283,18 @@ void lock_window_open(LockWindow *window, GFile *file)
 }
 
 /**** UI ****/
+
+/**
+ * This functions updates the UI to indicate whether any cryptography operations are currently processing.
+ *
+ * @param window Window to update the UI of
+ * @param processing Whether an operation is currently being executed
+ */
+void lock_window_cryptography_processing(LockWindow *window,
+                                         gboolean processing)
+{
+    gtk_widget_set_visible(GTK_WIDGET(window->processing_spinner), processing);
+}
 
 /**
  * This function updates the UI on a change of a page of the stack page of a LockWindow.
@@ -709,6 +726,8 @@ gboolean lock_window_encrypt_text_on_completed(LockWindow *window)
 
     adw_toast_set_use_markup(toast, false);
     adw_toast_set_timeout(toast, 3);
+
+    lock_window_cryptography_processing(window, false);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
 
     /* Only execute once */
@@ -788,6 +807,8 @@ gboolean lock_window_encrypt_file_on_completed(LockWindow *window)
 
     adw_toast_set_use_markup(toast, false);
     adw_toast_set_timeout(toast, 3);
+
+    lock_window_cryptography_processing(window, false);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
 
     /* Only execute once */
@@ -851,6 +872,8 @@ gboolean lock_window_decrypt_text_on_completed(LockWindow *window)
     }
 
     adw_toast_set_timeout(toast, 3);
+
+    lock_window_cryptography_processing(window, false);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
 
     /* Only execute once */
@@ -900,6 +923,8 @@ gboolean lock_window_decrypt_file_on_completed(LockWindow *window)
     }
 
     adw_toast_set_timeout(toast, 3);
+
+    lock_window_cryptography_processing(window, false);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
 
     /* Only execute once */
@@ -963,6 +988,8 @@ gboolean lock_window_sign_text_on_completed(LockWindow *window)
     }
 
     adw_toast_set_timeout(toast, 3);
+
+    lock_window_cryptography_processing(window, false);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
 
     /* Only execute once */
@@ -1012,6 +1039,8 @@ gboolean lock_window_sign_file_on_completed(LockWindow *window)
     }
 
     adw_toast_set_timeout(toast, 3);
+
+    lock_window_cryptography_processing(window, false);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
 
     /* Only execute once */
@@ -1075,6 +1104,8 @@ gboolean lock_window_verify_text_on_completed(LockWindow *window)
     }
 
     adw_toast_set_timeout(toast, 3);
+
+    lock_window_cryptography_processing(window, false);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
 
     /* Only execute once */
@@ -1124,6 +1155,8 @@ gboolean lock_window_verify_file_on_completed(LockWindow *window)
     }
 
     adw_toast_set_timeout(toast, 3);
+
+    lock_window_cryptography_processing(window, false);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
 
     /* Only execute once */

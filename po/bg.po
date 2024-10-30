@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-29 17:58+0100\n"
+"POT-Creation-Date: 2024-10-30 18:19+0100\n"
 "PO-Revision-Date: 2024-10-23 00:58+0200\n"
 "Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian <dict-notifications@fsa-bg.org>\n"
@@ -43,32 +43,32 @@ msgstr "twlvnn kraftwerk <kraft_werk@tutanota.com>"
 msgid "Dependencies"
 msgstr "Зависимости"
 
-#: src/window.c:150 data/ui/entrydialog.blp:33
+#: src/window.c:153 data/ui/entrydialog.blp:33
 msgid "Enter text …"
 msgstr "Въведете текст …"
 
-#: src/window.c:408
+#: src/window.c:425
 msgid "Text copied"
 msgstr "Текстът е копиран"
 
-#: src/window.c:600 src/window.c:620
+#: src/window.c:617 src/window.c:637
 msgid "Encrypt for"
 msgstr "Шифриране за"
 
-#: src/window.c:600 src/window.c:620
+#: src/window.c:617 src/window.c:637
 msgid "Enter name or email …"
 msgstr "Въведете име или е-поща …"
 
-#: src/window.c:689 src/window.c:775
+#: src/window.c:706 src/window.c:794
 #, c-format
 msgid "Failed to find key for User ID “%s”"
 msgstr "Ключ за идентификатор на потребител „%s“ не може да бъде намерен"
 
-#: src/window.c:694 src/window.c:780
+#: src/window.c:711 src/window.c:799
 msgid "Encryption failed"
 msgstr "Шифрирането е неуспешно"
 
-#: src/window.c:700
+#: src/window.c:717
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -76,7 +76,7 @@ msgctxt ""
 msgid "Text encrypted for %s"
 msgstr "Текстът е шифриран за %s"
 
-#: src/window.c:786
+#: src/window.c:805
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -84,39 +84,39 @@ msgctxt ""
 msgid "File encrypted for %s"
 msgstr "Файлът е шифриран за %s"
 
-#: src/window.c:841 src/window.c:897
+#: src/window.c:862 src/window.c:920
 msgid "Decryption failed"
 msgstr "Дешифрирането е неуспешно"
 
-#: src/window.c:843
+#: src/window.c:864
 msgid "Text decrypted"
 msgstr "Текстът е дешифриран"
 
-#: src/window.c:899
+#: src/window.c:922
 msgid "File decrypted"
 msgstr "Файлът е дешифриран"
 
-#: src/window.c:953 src/window.c:1009
+#: src/window.c:978 src/window.c:1036
 msgid "Signing failed"
 msgstr "Подписването е неуспешно"
 
-#: src/window.c:955
+#: src/window.c:980
 msgid "Text signed"
 msgstr "Текстът е подписан"
 
-#: src/window.c:1011
+#: src/window.c:1038
 msgid "File signed"
 msgstr "Файлът е подписан"
 
-#: src/window.c:1065 src/window.c:1121
+#: src/window.c:1094 src/window.c:1152
 msgid "Verification failed"
 msgstr "Потвърждаването е неуспешно"
 
-#: src/window.c:1067
+#: src/window.c:1096
 msgid "Text verified"
 msgstr "Текстът е потвърден"
 
-#: src/window.c:1123
+#: src/window.c:1154
 msgid "File verified"
 msgstr "Файлът е потвърден"
 
@@ -330,74 +330,74 @@ msgstr "потвърждаване на GPGME данни от файл"
 msgid "Failed to open output file: %s"
 msgstr "Изходният файл не може да бъде отворен: %s"
 
-#: src/threading.c:20
+#: src/threading.c:35
 #, c-format
 msgctxt ""
 "First format specifier is a translation string marked as “Thread Error”"
 msgid "Failed to create %s thread: %s"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:41
+#: src/threading.c:59
 msgctxt "Thread Error"
 msgid "text encryption"
 msgstr "шифриране на текст"
 
-#: src/threading.c:62
+#: src/threading.c:83
 msgctxt "Thread Error"
 msgid "file encryption"
 msgstr "шифриране на файл"
 
-#: src/threading.c:82
+#: src/threading.c:106
 msgctxt "Thread Error"
 msgid "text decryption"
 msgstr "дешифриране на текст"
 
-#: src/threading.c:97
+#: src/threading.c:124
 msgctxt "Thread Error"
 msgid "file decryption"
 msgstr "дешифриране на файл"
 
-#: src/threading.c:114
+#: src/threading.c:145
 msgctxt "Thread Error"
 msgid "text signing"
 msgstr "подписване на текст"
 
-#: src/threading.c:128
+#: src/threading.c:163
 msgctxt "Thread Error"
 msgid "file signing"
 msgstr "подписване на файл"
 
-#: src/threading.c:146
+#: src/threading.c:184
 msgctxt "Thread Error"
 msgid "text verification"
 msgstr "потвърждаване на текст"
 
-#: src/threading.c:161
+#: src/threading.c:202
 msgctxt "Thread Error"
 msgid "file verification"
 msgstr "потвърждаване на файл"
 
-#: src/threading.c:173
+#: src/threading.c:217
 msgctxt "Thread Error"
 msgid "key import"
 msgstr "внасяне на ключ"
 
-#: src/threading.c:188
+#: src/threading.c:232
 msgctxt "Thread Error"
 msgid "key generation"
 msgstr "генериране на ключ"
 
-#: src/threading.c:200
+#: src/threading.c:244
 msgctxt "Thread Error"
 msgid "key export"
 msgstr "изнасяне на ключ"
 
-#: src/threading.c:212
+#: src/threading.c:255
 msgctxt "Thread Error"
 msgid "key removal"
 msgstr "премахване на ключ"
 
-#: data/ui/window.blp:9 data/ui/window.blp:180
+#: data/ui/window.blp:9 data/ui/window.blp:191
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
@@ -415,51 +415,56 @@ msgstr "Копиране на текста"
 msgid "Cryptography operations"
 msgstr "Криптографски операции"
 
-#: data/ui/window.blp:45
+#: data/ui/window.blp:50
+#, fuzzy
+msgid "Processing …"
+msgstr "Обработване на файлове"
+
+#: data/ui/window.blp:55
 msgid "Main Menu"
 msgstr "Основно меню"
 
-#: data/ui/window.blp:55
+#: data/ui/window.blp:66
 msgid "Text"
 msgstr "Текст"
 
-#: data/ui/window.blp:73
+#: data/ui/window.blp:84
 msgid "File"
 msgstr "Файл"
 
-#: data/ui/window.blp:82
+#: data/ui/window.blp:93
 msgid "No files selected for processing"
 msgstr ""
 
-#: data/ui/window.blp:102
+#: data/ui/window.blp:113
 msgid "Input File"
 msgstr "Входен файл"
 
-#: data/ui/window.blp:117
+#: data/ui/window.blp:128
 msgid "Output File"
 msgstr "Изходен файл"
 
-#: data/ui/window.blp:141 data/ui/window.blp:201
+#: data/ui/window.blp:152 data/ui/window.blp:212
 msgid "Encrypt"
 msgstr "Шифриране"
 
-#: data/ui/window.blp:148 data/ui/window.blp:205
+#: data/ui/window.blp:159 data/ui/window.blp:216
 msgid "Decrypt"
 msgstr "Дешифриране"
 
-#: data/ui/window.blp:155 data/ui/window.blp:211
+#: data/ui/window.blp:166 data/ui/window.blp:222
 msgid "Sign"
 msgstr "Подписване"
 
-#: data/ui/window.blp:162 data/ui/window.blp:215
+#: data/ui/window.blp:173 data/ui/window.blp:226
 msgid "Verify"
 msgstr "Потвърждаване"
 
-#: data/ui/window.blp:186 data/ui/keydialog.blp:13
+#: data/ui/window.blp:197 data/ui/keydialog.blp:13
 msgid "Manage keys"
 msgstr "Управление на ключовете"
 
-#: data/ui/window.blp:192
+#: data/ui/window.blp:203
 msgid "About Lock"
 msgstr "Относно „Ключалка“"
 
