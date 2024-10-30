@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-30 18:36+0100\n"
+"POT-Creation-Date: 2024-10-30 18:50+0100\n"
 "PO-Revision-Date: 2024-10-26 21:56+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
@@ -459,7 +459,7 @@ msgstr "Signar"
 msgid "Verify"
 msgstr "Verificar"
 
-#: data/ui/window.blp:197 data/ui/keydialog.blp:30
+#: data/ui/window.blp:197 data/ui/keydialog.blp:33
 msgid "Manage keys"
 msgstr "Gerir las claus"
 
@@ -471,81 +471,81 @@ msgstr "A prepaus de Lock"
 msgid "Title"
 msgstr "Títol"
 
-#: data/ui/keydialog.blp:49
+#: data/ui/keydialog.blp:52
 msgid "Refresh keys"
 msgstr "Actualizar las claus"
 
-#: data/ui/keydialog.blp:68
+#: data/ui/keydialog.blp:71
 msgid "No keys available"
 msgstr "Cap de claus pas disponiblas"
 
-#: data/ui/keydialog.blp:69
+#: data/ui/keydialog.blp:72
 msgid "Your GnuPG keyring does not contain any keys."
 msgstr "Vòstre trocèl GnuPG conten pas cap de claus."
 
-#: data/ui/keydialog.blp:88
+#: data/ui/keydialog.blp:91
 msgctxt "Import keys from files"
 msgid "Import"
 msgstr "Importar"
 
-#: data/ui/keydialog.blp:89
+#: data/ui/keydialog.blp:92
 msgid "Import keys from files"
 msgstr "Importar de claus a partir de fichièrs"
 
-#: data/ui/keydialog.blp:96
+#: data/ui/keydialog.blp:99
 msgid "Create a new keypair"
 msgstr "Crear un parelh de claus novèl"
 
-#: data/ui/keydialog.blp:109
+#: data/ui/keydialog.blp:112
 msgid "Generate keypair"
 msgstr "Generar un parelh de claus"
 
-#: data/ui/keydialog.blp:139
+#: data/ui/keydialog.blp:142
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
 msgstr "Nom"
 
-#: data/ui/keydialog.blp:144
+#: data/ui/keydialog.blp:147
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr "Adreça electronica"
 
-#: data/ui/keydialog.blp:149
+#: data/ui/keydialog.blp:152
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr "Algoritme de signatura"
 
-#: data/ui/keydialog.blp:150
+#: data/ui/keydialog.blp:153
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr "Clau"
 
-#: data/ui/keydialog.blp:158
+#: data/ui/keydialog.blp:161
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "Algoritme de chiframent"
 
-#: data/ui/keydialog.blp:159
+#: data/ui/keydialog.blp:162
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr "Sosclau"
 
-#: data/ui/keydialog.blp:167
+#: data/ui/keydialog.blp:170
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr "Expiracion"
 
-#: data/ui/keydialog.blp:168
+#: data/ui/keydialog.blp:171
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr "Meses, desactivar amb zèro"
 
-#: data/ui/keydialog.blp:190
+#: data/ui/keydialog.blp:193
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "Generar"
 
-#: data/ui/keydialog.blp:191
+#: data/ui/keydialog.blp:194
 msgid "Generate a new keypair"
 msgstr "Generar un parelh de claus novèl"
 

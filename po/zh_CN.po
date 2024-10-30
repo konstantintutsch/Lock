@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-30 18:36+0100\n"
+"POT-Creation-Date: 2024-10-30 18:50+0100\n"
 "PO-Revision-Date: 2024-10-29 19:06+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
@@ -451,7 +451,7 @@ msgstr "签署"
 msgid "Verify"
 msgstr "校验"
 
-#: data/ui/window.blp:197 data/ui/keydialog.blp:30
+#: data/ui/window.blp:197 data/ui/keydialog.blp:33
 msgid "Manage keys"
 msgstr "管理密钥"
 
@@ -463,81 +463,81 @@ msgstr "关于 Lock"
 msgid "Title"
 msgstr "标题"
 
-#: data/ui/keydialog.blp:49
+#: data/ui/keydialog.blp:52
 msgid "Refresh keys"
 msgstr "刷新密钥"
 
-#: data/ui/keydialog.blp:68
+#: data/ui/keydialog.blp:71
 msgid "No keys available"
 msgstr "无可用密钥"
 
-#: data/ui/keydialog.blp:69
+#: data/ui/keydialog.blp:72
 msgid "Your GnuPG keyring does not contain any keys."
 msgstr "您的 GnuPG 密钥串不包含任何密钥。"
 
-#: data/ui/keydialog.blp:88
+#: data/ui/keydialog.blp:91
 msgctxt "Import keys from files"
 msgid "Import"
 msgstr "导入"
 
-#: data/ui/keydialog.blp:89
+#: data/ui/keydialog.blp:92
 msgid "Import keys from files"
 msgstr "从文件导入密钥"
 
-#: data/ui/keydialog.blp:96
+#: data/ui/keydialog.blp:99
 msgid "Create a new keypair"
 msgstr "创建密钥对"
 
-#: data/ui/keydialog.blp:109
+#: data/ui/keydialog.blp:112
 msgid "Generate keypair"
 msgstr "生成密钥对"
 
-#: data/ui/keydialog.blp:139
+#: data/ui/keydialog.blp:142
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
 msgstr "姓名"
 
-#: data/ui/keydialog.blp:144
+#: data/ui/keydialog.blp:147
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr "电子邮箱"
 
-#: data/ui/keydialog.blp:149
+#: data/ui/keydialog.blp:152
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr "签署算法"
 
-#: data/ui/keydialog.blp:150
+#: data/ui/keydialog.blp:153
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr "密钥"
 
-#: data/ui/keydialog.blp:158
+#: data/ui/keydialog.blp:161
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "加密算法"
 
-#: data/ui/keydialog.blp:159
+#: data/ui/keydialog.blp:162
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr "子密钥"
 
-#: data/ui/keydialog.blp:167
+#: data/ui/keydialog.blp:170
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr "到期"
 
-#: data/ui/keydialog.blp:168
+#: data/ui/keydialog.blp:171
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr "单位为月，输入 0 可禁用"
 
-#: data/ui/keydialog.blp:190
+#: data/ui/keydialog.blp:193
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "生成"
 
-#: data/ui/keydialog.blp:191
+#: data/ui/keydialog.blp:194
 msgid "Generate a new keypair"
 msgstr "生成密钥对"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-30 18:36+0100\n"
+"POT-Creation-Date: 2024-10-30 18:50+0100\n"
 "PO-Revision-Date: 2024-10-20 11:55+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -465,7 +465,7 @@ msgstr "Podepsat"
 msgid "Verify"
 msgstr "Ověřit"
 
-#: data/ui/window.blp:197 data/ui/keydialog.blp:30
+#: data/ui/window.blp:197 data/ui/keydialog.blp:33
 msgid "Manage keys"
 msgstr "Spravovat klíče"
 
@@ -477,86 +477,86 @@ msgstr "O Zámku"
 msgid "Title"
 msgstr "Nadpis"
 
-#: data/ui/keydialog.blp:49
+#: data/ui/keydialog.blp:52
 msgid "Refresh keys"
 msgstr "Obnovit klíče"
 
-#: data/ui/keydialog.blp:68
+#: data/ui/keydialog.blp:71
 msgid "No keys available"
 msgstr "Žádné klíče k dispozici"
 
-#: data/ui/keydialog.blp:69
+#: data/ui/keydialog.blp:72
 #, fuzzy
 msgid "Your GnuPG keyring does not contain any keys."
 msgstr "Ve vašem systému nejsou uloženy žádné GnuPG klíče."
 
-#: data/ui/keydialog.blp:88
+#: data/ui/keydialog.blp:91
 #, fuzzy
 msgctxt "Import keys from files"
 msgid "Import"
 msgstr "Importovat"
 
-#: data/ui/keydialog.blp:89
+#: data/ui/keydialog.blp:92
 msgid "Import keys from files"
 msgstr "Importovat klíče ze souborů"
 
-#: data/ui/keydialog.blp:96
+#: data/ui/keydialog.blp:99
 msgid "Create a new keypair"
 msgstr ""
 
-#: data/ui/keydialog.blp:109
+#: data/ui/keydialog.blp:112
 #, fuzzy
 msgid "Generate keypair"
 msgstr "Spravovat klíče"
 
-#: data/ui/keydialog.blp:139
+#: data/ui/keydialog.blp:142
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
 msgstr ""
 
-#: data/ui/keydialog.blp:144
+#: data/ui/keydialog.blp:147
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr ""
 
-#: data/ui/keydialog.blp:149
+#: data/ui/keydialog.blp:152
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr ""
 
-#: data/ui/keydialog.blp:150
+#: data/ui/keydialog.blp:153
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr ""
 
-#: data/ui/keydialog.blp:158
+#: data/ui/keydialog.blp:161
 #, fuzzy
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "Šifrovat"
 
-#: data/ui/keydialog.blp:159
+#: data/ui/keydialog.blp:162
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr ""
 
-#: data/ui/keydialog.blp:167
+#: data/ui/keydialog.blp:170
 #, fuzzy
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr "Platnost"
 
-#: data/ui/keydialog.blp:168
+#: data/ui/keydialog.blp:171
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr ""
 
-#: data/ui/keydialog.blp:190
+#: data/ui/keydialog.blp:193
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr ""
 
-#: data/ui/keydialog.blp:191
+#: data/ui/keydialog.blp:194
 msgid "Generate a new keypair"
 msgstr ""
 

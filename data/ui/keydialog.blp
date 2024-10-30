@@ -25,6 +25,9 @@ template $LockKeyDialog : Adw.Dialog {
         }
 
         Adw.ToastOverlay toast_overlay {
+            hexpand: true;
+            vexpand: true;
+
             child: Adw.NavigationView {
                 Adw.NavigationPage {
                     title: _("Manage keys");

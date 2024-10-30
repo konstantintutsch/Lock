@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-30 18:36+0100\n"
+"POT-Creation-Date: 2024-10-30 18:50+0100\n"
 "PO-Revision-Date: 2024-10-23 00:58+0200\n"
 "Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian <dict-notifications@fsa-bg.org>\n"
@@ -460,7 +460,7 @@ msgstr "Подписване"
 msgid "Verify"
 msgstr "Потвърждаване"
 
-#: data/ui/window.blp:197 data/ui/keydialog.blp:30
+#: data/ui/window.blp:197 data/ui/keydialog.blp:33
 msgid "Manage keys"
 msgstr "Управление на ключовете"
 
@@ -472,83 +472,83 @@ msgstr "Относно „Ключалка“"
 msgid "Title"
 msgstr "Заглавие"
 
-#: data/ui/keydialog.blp:49
+#: data/ui/keydialog.blp:52
 msgid "Refresh keys"
 msgstr "Опресняване на ключовете"
 
-#: data/ui/keydialog.blp:68
+#: data/ui/keydialog.blp:71
 msgid "No keys available"
 msgstr "Няма налични ключове"
 
-#: data/ui/keydialog.blp:69
+#: data/ui/keydialog.blp:72
 #, fuzzy
 msgid "Your GnuPG keyring does not contain any keys."
 msgstr "Вашата система не съхранява GnuPG ключове."
 
-#: data/ui/keydialog.blp:88
+#: data/ui/keydialog.blp:91
 #, fuzzy
 msgctxt "Import keys from files"
 msgid "Import"
 msgstr "Внасяне"
 
-#: data/ui/keydialog.blp:89
+#: data/ui/keydialog.blp:92
 msgid "Import keys from files"
 msgstr "Внасяйте ключове от файлове"
 
-#: data/ui/keydialog.blp:96
+#: data/ui/keydialog.blp:99
 msgid "Create a new keypair"
 msgstr "Създаване на нова двойка ключове"
 
-#: data/ui/keydialog.blp:109
+#: data/ui/keydialog.blp:112
 msgid "Generate keypair"
 msgstr "Генериране на двойка ключове"
 
-#: data/ui/keydialog.blp:139
+#: data/ui/keydialog.blp:142
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
 msgstr "Име"
 
-#: data/ui/keydialog.blp:144
+#: data/ui/keydialog.blp:147
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr "Е-поща"
 
-#: data/ui/keydialog.blp:149
+#: data/ui/keydialog.blp:152
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr "Алгоритъм за подписване"
 
-#: data/ui/keydialog.blp:150
+#: data/ui/keydialog.blp:153
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr "Ключ"
 
-#: data/ui/keydialog.blp:158
+#: data/ui/keydialog.blp:161
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "Алгоритъм за шифриране"
 
-#: data/ui/keydialog.blp:159
+#: data/ui/keydialog.blp:162
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr "Подключ"
 
-#: data/ui/keydialog.blp:167
+#: data/ui/keydialog.blp:170
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr "Дата на изтичане"
 
-#: data/ui/keydialog.blp:168
+#: data/ui/keydialog.blp:171
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr "Месеци, изключва се с нула"
 
-#: data/ui/keydialog.blp:190
+#: data/ui/keydialog.blp:193
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "Генериране"
 
-#: data/ui/keydialog.blp:191
+#: data/ui/keydialog.blp:194
 msgid "Generate a new keypair"
 msgstr "Генериране на нова двойка ключове"
 
