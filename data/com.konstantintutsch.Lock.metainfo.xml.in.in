@@ -88,6 +88,13 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.0.3" date="2024-11-10">
+            <description translate="no">
+                <ul>
+                    <li>Fixed encryption key search not working properly</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.0.2" date="2024-10-31">
             <description translate="no">
                 <ul>
