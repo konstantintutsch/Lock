@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-30 18:58+0100\n"
+"POT-Creation-Date: 2024-11-10 19:51+0100\n"
 "PO-Revision-Date: 2024-10-26 21:56+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
@@ -42,34 +42,32 @@ msgstr "Quentin PAGÈS"
 msgid "Dependencies"
 msgstr "Dependéncias"
 
-#: src/window.c:153 data/ui/entrydialog.blp:33 src/window.c:150
+#: src/window.c:153 data/ui/entrydialog.blp:33
 msgid "Enter text …"
 msgstr "Picar de tèxte…"
 
-#: src/window.c:425 src/window.c:408
+#: src/window.c:425
 msgid "Text copied"
 msgstr "Tèxte copiat"
 
-#: src/window.c:617 src/window.c:637 src/window.c:600 src/window.c:620
+#: src/window.c:617 src/window.c:637
 msgid "Encrypt for"
 msgstr "Chifrar per"
 
-#: src/window.c:617 src/window.c:637 src/window.c:600 src/window.c:620
+#: src/window.c:617 src/window.c:637
 msgid "Enter name or email …"
 msgstr "Picatz un nom o email…"
 
-#: src/window.c:706 src/window.c:794 src/window.c:708 src/window.c:798
-#: src/window.c:689 src/window.c:775 src/window.c:691 src/window.c:779
+#: src/window.c:708 src/window.c:798
 #, c-format
 msgid "Failed to find key for User ID “%s”"
 msgstr "Impossible de trobar una clau per l’ID utilizaire « %s »"
 
-#: src/window.c:711 src/window.c:799 src/window.c:713 src/window.c:803
-#: src/window.c:694 src/window.c:780 src/window.c:696 src/window.c:784
+#: src/window.c:713 src/window.c:803
 msgid "Encryption failed"
 msgstr "Fracàs del chiframent"
 
-#: src/window.c:717 src/window.c:719 src/window.c:700 src/window.c:702
+#: src/window.c:719
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -77,7 +75,7 @@ msgctxt ""
 msgid "Text encrypted for %s"
 msgstr "Tèxte chifrat per %s"
 
-#: src/window.c:805 src/window.c:809 src/window.c:786 src/window.c:790
+#: src/window.c:809
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -85,62 +83,55 @@ msgctxt ""
 msgid "File encrypted for %s"
 msgstr "Fichièr chifrat per %s"
 
-#: src/window.c:862 src/window.c:920 src/window.c:866 src/window.c:924
-#: src/window.c:841 src/window.c:897 src/window.c:845 src/window.c:901
+#: src/window.c:866 src/window.c:924
 msgid "Decryption failed"
 msgstr "Fracàs del deschiframent"
 
-#: src/window.c:864 src/window.c:868 src/window.c:843 src/window.c:847
+#: src/window.c:868
 msgid "Text decrypted"
 msgstr "Tèxte deschifrat"
 
-#: src/window.c:922 src/window.c:926 src/window.c:899 src/window.c:903
+#: src/window.c:926
 msgid "File decrypted"
 msgstr "Fichièr deschifrat"
 
-#: src/window.c:978 src/window.c:1036 src/window.c:982 src/window.c:1040
-#: src/window.c:953 src/window.c:1009 src/window.c:957 src/window.c:1013
+#: src/window.c:982 src/window.c:1040
 msgid "Signing failed"
 msgstr "Fracàs de la signatura"
 
-#: src/window.c:980 src/window.c:984 src/window.c:955 src/window.c:959
+#: src/window.c:984
 msgid "Text signed"
 msgstr "Tèxte signat"
 
-#: src/window.c:1038 src/window.c:1042 src/window.c:1011 src/window.c:1015
+#: src/window.c:1042
 msgid "File signed"
 msgstr "Fichièr signat"
 
-#: src/window.c:1094 src/window.c:1152 src/window.c:1098 src/window.c:1156
-#: src/window.c:1065 src/window.c:1121 src/window.c:1069 src/window.c:1125
+#: src/window.c:1098 src/window.c:1156
 msgid "Verification failed"
 msgstr "Verificacion fracassada"
 
-#: src/window.c:1096 src/window.c:1100 src/window.c:1067 src/window.c:1071
+#: src/window.c:1100
 msgid "Text verified"
 msgstr "Tèxte verificat"
 
-#: src/window.c:1154 src/window.c:1158 src/window.c:1123 src/window.c:1127
+#: src/window.c:1158
 msgid "File verified"
 msgstr "Fichièr verificat"
 
-#: src/keydialog.c:351 src/keydialog.c:346 src/keydialog.c:354
-#: src/keydialog.c:327
+#: src/keydialog.c:351
 msgid "Import failed"
 msgstr "Fracàs de l'importacion"
 
-#: src/keydialog.c:353 src/keydialog.c:348 src/keydialog.c:356
-#: src/keydialog.c:329
+#: src/keydialog.c:353
 msgid "Keys imported"
 msgstr "Claus importadas"
 
-#: src/keydialog.c:422 src/keydialog.c:417 src/keydialog.c:423
-#: src/keydialog.c:396
+#: src/keydialog.c:422
 msgid "Generation failed"
 msgstr "Fracàs de generacion"
 
-#: src/keydialog.c:424 src/keydialog.c:419 src/keydialog.c:425
-#: src/keydialog.c:398
+#: src/keydialog.c:424
 msgid "Keypair generated"
 msgstr "Parelh de claus generat"
 
@@ -193,228 +184,220 @@ msgctxt "Error message constructor for failed GPGME operations"
 msgid "Failed to %s: %s"
 msgstr "Fracàs de %s : %s"
 
-#: src/cryptography.c:41 src/cryptography.c:83 src/cryptography.c:139
-#: src/cryptography.c:255 src/cryptography.c:354 src/cryptography.c:84
-#: src/cryptography.c:142 src/cryptography.c:253 src/cryptography.c:358
-#: src/cryptography.c:49 src/cryptography.c:92 src/cryptography.c:150
-#: src/cryptography.c:261 src/cryptography.c:366
+#: src/cryptography.c:41 src/cryptography.c:84 src/cryptography.c:142
+#: src/cryptography.c:253 src/cryptography.c:358
 msgctxt "GPGME Error"
 msgid "create new GPGME context"
 msgstr "la creacion d’un conèxte GPGME nòu"
 
-#: src/cryptography.c:46 src/cryptography.c:88 src/cryptography.c:144
-#: src/cryptography.c:260 src/cryptography.c:359 src/cryptography.c:89
-#: src/cryptography.c:147 src/cryptography.c:258 src/cryptography.c:363
-#: src/cryptography.c:54 src/cryptography.c:97 src/cryptography.c:155
-#: src/cryptography.c:266 src/cryptography.c:371
+#: src/cryptography.c:46 src/cryptography.c:89 src/cryptography.c:147
+#: src/cryptography.c:258 src/cryptography.c:363
 msgctxt "GPGME Error"
 msgid "set protocol of GPGME context to OpenPGP"
 msgstr "la definicion del protocòl del contèxte GPGME per OpenPGP"
 
-#: src/cryptography.c:59 src/cryptography.c:67
+#: src/cryptography.c:59
 msgctxt "GPGME Error"
 msgid "find key matching User ID"
 msgstr "la trobada d’una clau correspondenta a l’ID utilizaire"
 
-#: src/cryptography.c:99 src/cryptography.c:108 src/cryptography.c:100
-#: src/cryptography.c:109 src/cryptography.c:117
+#: src/cryptography.c:100 src/cryptography.c:109
 msgctxt "GPGME Error"
 msgid "generate new GPG key for signing"
 msgstr "la generacion de la clau GPG novèla per signar"
 
-#: src/cryptography.c:115 src/cryptography.c:116 src/cryptography.c:124
+#: src/cryptography.c:116
 msgctxt "GPGME Error"
 msgid "delete unfinished, generated ECC key"
 msgstr "la supression de la clau ECC generada non acabada"
 
-#: src/cryptography.c:150 src/cryptography.c:153 src/cryptography.c:161
+#: src/cryptography.c:153
 msgctxt "GPGME Error"
 msgid "load GPGME key data from file"
 msgstr "la mesa en memòria de las donadas clau GPGME a partir del fichièr"
 
-#: src/cryptography.c:156 src/cryptography.c:158 src/cryptography.c:166
+#: src/cryptography.c:158
 msgctxt "GPGME Error"
 msgid "import GPG key from file"
 msgstr "l’importacion de la clau GPG a partir del fichièr"
 
-#: src/cryptography.c:167 src/cryptography.c:168 src/cryptography.c:176
+#: src/cryptography.c:168
 msgctxt "GPGME Error"
 msgid "create GPGME key data in memory"
 msgstr "la creacion de las donadas de la clau GPGME en memòria"
 
-#: src/cryptography.c:173 src/cryptography.c:181
+#: src/cryptography.c:173
 msgctxt "GPGME Error"
 msgid "export GPG key(s) to file"
 msgstr "de l’exportacion de la(s) clau(s) dins un fichièr"
 
-#: src/cryptography.c:188 src/cryptography.c:187 src/cryptography.c:195
+#: src/cryptography.c:187
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr "Fracàs de la dobertura del fichièr d’exportacion : %s"
 
-#: src/cryptography.c:224
+#: src/cryptography.c:216
 msgctxt "GPGME Error"
 msgid "get GPG key for removal"
 msgstr "obténer la clau GPG de suprimir"
 
-#: src/cryptography.c:221 src/cryptography.c:220 src/cryptography.c:228
+#: src/cryptography.c:220
 msgctxt "GPGME Error"
 msgid "remove GPG key"
 msgstr "la supression de la clau GPG"
 
-#: src/cryptography.c:268 src/cryptography.c:266 src/cryptography.c:274
+#: src/cryptography.c:266
 msgctxt "GPGME Error"
 msgid "create new GPGME input data from string"
 msgstr ""
 "la creacion de las donadas GPGME d’entrada novèlas a partir de la cadena de "
 "tèxte"
 
-#: src/cryptography.c:273 src/cryptography.c:380 src/cryptography.c:272
-#: src/cryptography.c:386 src/cryptography.c:280 src/cryptography.c:394
+#: src/cryptography.c:272 src/cryptography.c:386
 msgctxt "GPGME Error"
 msgid "create new GPGME output data in memory"
 msgstr "la creacion de las donadas GPGME de sortida en memòria"
 
-#: src/cryptography.c:282 src/cryptography.c:281 src/cryptography.c:289
+#: src/cryptography.c:281
 msgctxt "GPGME Error"
 msgid "encrypt GPGME data from memory"
 msgstr ""
 "la realizacion del chiframent de las donadas GPGME a partir de la memòria"
 
-#: src/cryptography.c:288 src/cryptography.c:296
+#: src/cryptography.c:288
 msgctxt "GPGME Error"
 msgid "decrypt GPGME data from memory"
 msgstr ""
 "la realizacion del dechiframent de las donadas GPGME a partir de la memòria"
 
-#: src/cryptography.c:296 src/cryptography.c:297 src/cryptography.c:305
+#: src/cryptography.c:297
 msgctxt "GPGME Error"
 msgid "sign GPGME data from memory"
 msgstr "la signatura de las donadas GPGME a partir de la memòria"
 
-#: src/cryptography.c:301 src/cryptography.c:304 src/cryptography.c:312
+#: src/cryptography.c:304
 msgctxt "GPGME Error"
 msgid "verify GPGME data from memory"
 msgstr "la verificacion de las donadas GPGME a partir de la memòria"
 
-#: src/cryptography.c:343 src/cryptography.c:347 src/cryptography.c:355
+#: src/cryptography.c:347
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s suprimit per preparar lo subrecargament"
 
-#: src/cryptography.c:366 src/cryptography.c:370 src/cryptography.c:378
+#: src/cryptography.c:370
 msgctxt "GPGME Error"
 msgid "create new GPGME input data from file"
 msgstr ""
 "la creacion de las novèlas donadas GPGME d’entrada a partir del fichièr"
 
-#: src/cryptography.c:373 src/cryptography.c:378 src/cryptography.c:386
+#: src/cryptography.c:378
 msgctxt "GPGME Error"
 msgid "set file name of GPGME input data"
 msgstr "la definicion del nom de fichièr de las donadas GPGME d’entrada"
 
-#: src/cryptography.c:388 src/cryptography.c:394 src/cryptography.c:402
+#: src/cryptography.c:394
 msgctxt "GPGME Error"
 msgid "set file name of GPGME output data"
 msgstr "la definicion del nom de fichièr de las donadas GPGME de sortida"
 
-#: src/cryptography.c:398 src/cryptography.c:405 src/cryptography.c:413
+#: src/cryptography.c:405
 msgctxt "GPGME Error"
 msgid "encrypt GPGME data from file"
 msgstr ""
 "la realizacion del deschiframent de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:403 src/cryptography.c:412 src/cryptography.c:420
+#: src/cryptography.c:412
 msgctxt "GPGME Error"
 msgid "decrypt GPGME data from file"
 msgstr ""
 "la realizacion del chiframent de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:410 src/cryptography.c:421 src/cryptography.c:429
+#: src/cryptography.c:421
 msgctxt "GPGME Error"
 msgid "sign GPGME data from file"
 msgstr "la signatura de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:415 src/cryptography.c:428 src/cryptography.c:436
+#: src/cryptography.c:428
 msgctxt "GPGME Error"
 msgid "verify GPGME data from file"
 msgstr "la verificacion de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:430 src/cryptography.c:445 src/cryptography.c:453
+#: src/cryptography.c:445
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Fracàs de la dobertura del fichièr en sortida : %s"
 
-#: src/threading.c:35 src/threading.c:20
+#: src/threading.c:35
 #, c-format
 msgctxt ""
 "First format specifier is a translation string marked as “Thread Error”"
 msgid "Failed to create %s thread: %s"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
-#: src/threading.c:59 src/threading.c:41
+#: src/threading.c:59
 msgctxt "Thread Error"
 msgid "text encryption"
 msgstr "chifrar lo tèxte"
 
-#: src/threading.c:83 src/threading.c:62
+#: src/threading.c:81
 msgctxt "Thread Error"
 msgid "file encryption"
 msgstr "chifrar lo fichièr"
 
-#: src/threading.c:106 src/threading.c:82
+#: src/threading.c:102
 msgctxt "Thread Error"
 msgid "text decryption"
 msgstr "deschifrar lo tèxte"
 
-#: src/threading.c:124 src/threading.c:97
+#: src/threading.c:120
 msgctxt "Thread Error"
 msgid "file decryption"
 msgstr "deschifrar lo fichièr"
 
-#: src/threading.c:145 src/threading.c:114
+#: src/threading.c:141
 msgctxt "Thread Error"
 msgid "text signing"
 msgstr "signar lo tèxte"
 
-#: src/threading.c:163 src/threading.c:128
+#: src/threading.c:159
 msgctxt "Thread Error"
 msgid "file signing"
 msgstr "signar lo fichièr"
 
-#: src/threading.c:184 src/threading.c:146
+#: src/threading.c:180
 msgctxt "Thread Error"
 msgid "text verification"
 msgstr "verificar lo tèxte"
 
-#: src/threading.c:202 src/threading.c:161
+#: src/threading.c:198
 msgctxt "Thread Error"
 msgid "file verification"
 msgstr "verificar lo fichièr"
 
-#: src/threading.c:217 src/threading.c:173
+#: src/threading.c:213
 msgctxt "Thread Error"
 msgid "key import"
 msgstr "importar la clau"
 
-#: src/threading.c:235 src/threading.c:188
+#: src/threading.c:231
 msgctxt "Thread Error"
 msgid "key generation"
 msgstr "generar la clau"
 
-#: src/threading.c:250 src/threading.c:200
+#: src/threading.c:246
 msgctxt "Thread Error"
 msgid "key export"
 msgstr "exportar la clau"
 
-#: src/threading.c:261 src/threading.c:212
+#: src/threading.c:257
 msgctxt "Thread Error"
 msgid "key removal"
 msgstr "suprimir la clau"
 
 #: data/ui/window.blp:9 data/ui/window.blp:191
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6 data/ui/window.blp:180
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
 msgstr "Verrolhar"
 
@@ -435,56 +418,51 @@ msgstr "Operacions de criptografia"
 msgid "Processing …"
 msgstr "Tractament de fichièr"
 
-#: data/ui/window.blp:55 data/ui/window.blp:45
+#: data/ui/window.blp:55
 msgid "Main Menu"
 msgstr "Menú principal"
 
-#: data/ui/window.blp:66 data/ui/window.blp:55
+#: data/ui/window.blp:66
 msgid "Text"
 msgstr "Tèxte"
 
-#: data/ui/window.blp:84 data/ui/window.blp:73
+#: data/ui/window.blp:84
 msgid "File"
 msgstr "Fichièr"
 
-#: data/ui/window.blp:82
+#: data/ui/window.blp:93
 msgid "No files selected for processing"
 msgstr "Cap de fichièr pas seleccionat pel tractament"
 
-#: data/ui/window.blp:113 data/ui/window.blp:102
+#: data/ui/window.blp:113
 msgid "Input File"
 msgstr "Fichièr en entrada"
 
-#: data/ui/window.blp:128 data/ui/window.blp:117
+#: data/ui/window.blp:128
 msgid "Output File"
 msgstr "Fichièr en sortida"
 
-#: data/ui/window.blp:152 data/ui/window.blp:212 data/ui/window.blp:141
-#: data/ui/window.blp:201
+#: data/ui/window.blp:152 data/ui/window.blp:212
 msgid "Encrypt"
 msgstr "Chifrar"
 
-#: data/ui/window.blp:159 data/ui/window.blp:216 data/ui/window.blp:148
-#: data/ui/window.blp:205
+#: data/ui/window.blp:159 data/ui/window.blp:216
 msgid "Decrypt"
 msgstr "Deschifrar"
 
-#: data/ui/window.blp:166 data/ui/window.blp:222 data/ui/window.blp:155
-#: data/ui/window.blp:211
+#: data/ui/window.blp:166 data/ui/window.blp:222
 msgid "Sign"
 msgstr "Signar"
 
-#: data/ui/window.blp:173 data/ui/window.blp:226 data/ui/window.blp:162
-#: data/ui/window.blp:215
+#: data/ui/window.blp:173 data/ui/window.blp:226
 msgid "Verify"
 msgstr "Verificar"
 
-#: data/ui/window.blp:197 data/ui/keydialog.blp:30 data/ui/window.blp:186
-#: data/ui/keydialog.blp:13
+#: data/ui/window.blp:197 data/ui/keydialog.blp:30
 msgid "Manage keys"
 msgstr "Gerir las claus"
 
-#: data/ui/window.blp:203 data/ui/window.blp:192
+#: data/ui/window.blp:203
 msgid "About Lock"
 msgstr "A prepaus de Lock"
 
@@ -492,91 +470,81 @@ msgstr "A prepaus de Lock"
 msgid "Title"
 msgstr "Títol"
 
-#: data/ui/keydialog.blp:49 data/ui/keydialog.blp:32
+#: data/ui/keydialog.blp:49
 msgid "Refresh keys"
 msgstr "Actualizar las claus"
 
-#: data/ui/keydialog.blp:68 data/ui/keydialog.blp:51
+#: data/ui/keydialog.blp:68
 msgid "No keys available"
 msgstr "Cap de claus pas disponiblas"
 
-#: data/ui/keydialog.blp:69 data/ui/keydialog.blp:52
+#: data/ui/keydialog.blp:69
 msgid "Your GnuPG keyring does not contain any keys."
 msgstr "Vòstre trocèl GnuPG conten pas cap de claus."
 
-#: data/ui/keydialog.blp:88 data/ui/keydialog.blp:71
+#: data/ui/keydialog.blp:88
 msgctxt "Import keys from files"
 msgid "Import"
 msgstr "Importar"
 
-#: data/ui/keydialog.blp:89 data/ui/keydialog.blp:72
+#: data/ui/keydialog.blp:89
 msgid "Import keys from files"
 msgstr "Importar de claus a partir de fichièrs"
 
-#: data/ui/keydialog.blp:96 data/ui/keydialog.blp:79
+#: data/ui/keydialog.blp:96
 msgid "Create a new keypair"
 msgstr "Crear un parelh de claus novèl"
 
-#: data/ui/keydialog.blp:109 data/ui/keydialog.blp:110 data/ui/keydialog.blp:92
+#: data/ui/keydialog.blp:109
 msgid "Generate keypair"
 msgstr "Generar un parelh de claus"
 
-#: data/ui/keydialog.blp:139 data/ui/keydialog.blp:137
-#: data/ui/keydialog.blp:119
+#: data/ui/keydialog.blp:139
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
 msgstr "Nom"
 
-#: data/ui/keydialog.blp:144 data/ui/keydialog.blp:142
-#: data/ui/keydialog.blp:124
+#: data/ui/keydialog.blp:144
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr "Adreça electronica"
 
-#: data/ui/keydialog.blp:149 data/ui/keydialog.blp:147
-#: data/ui/keydialog.blp:129
+#: data/ui/keydialog.blp:149
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr "Algoritme de signatura"
 
-#: data/ui/keydialog.blp:150 data/ui/keydialog.blp:148
-#: data/ui/keydialog.blp:130
+#: data/ui/keydialog.blp:150
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr "Clau"
 
-#: data/ui/keydialog.blp:158 data/ui/keydialog.blp:156
-#: data/ui/keydialog.blp:138
+#: data/ui/keydialog.blp:158
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "Algoritme de chiframent"
 
-#: data/ui/keydialog.blp:159 data/ui/keydialog.blp:157
-#: data/ui/keydialog.blp:139
+#: data/ui/keydialog.blp:159
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr "Sosclau"
 
-#: data/ui/keydialog.blp:167 data/ui/keydialog.blp:165
-#: data/ui/keydialog.blp:147
+#: data/ui/keydialog.blp:167
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr "Expiracion"
 
-#: data/ui/keydialog.blp:168 data/ui/keydialog.blp:166
-#: data/ui/keydialog.blp:148
+#: data/ui/keydialog.blp:168
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr "Meses, desactivar amb zèro"
 
-#: data/ui/keydialog.blp:190 data/ui/keydialog.blp:188
-#: data/ui/keydialog.blp:170
+#: data/ui/keydialog.blp:190
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "Generar"
 
-#: data/ui/keydialog.blp:191 data/ui/keydialog.blp:189
-#: data/ui/keydialog.blp:171
+#: data/ui/keydialog.blp:191
 msgid "Generate a new keypair"
 msgstr "Generar un parelh de claus novèl"
 

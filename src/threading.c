@@ -59,8 +59,6 @@ void thread_encrypt_text(LockEntryDialog *self, const char *uid,
                                  C_("Thread Error", "text encryption"),
                                  lock_window_encrypt_text, window);
 
-    lock_window_set_uid(window, "");
-
     if (success)
         lock_window_cryptography_processing(window, true);
 }
@@ -82,8 +80,6 @@ void thread_encrypt_file(LockEntryDialog *self, const char *uid,
     bool success = thread_create("encrypt_file",
                                  C_("Thread Error", "file encryption"),
                                  lock_window_encrypt_file, window);
-
-    lock_window_set_uid(window, "");
 
     if (success)
         lock_window_cryptography_processing(window, true);
