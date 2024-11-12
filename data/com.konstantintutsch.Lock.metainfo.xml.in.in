@@ -88,6 +88,14 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.0.4" date="2024-11-12">
+            <description translate="no">
+                <ul>
+                    <li>Allow locally untrusted keys to be used for encryption processes</li>
+                    <li>Updated translations available: Hebrew</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.0.3" date="2024-11-10">
             <description translate="no">
                 <ul>
