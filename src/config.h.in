@@ -14,4 +14,6 @@
 #define ROOT_RESOURCE(String) "@project_root@/"String
 #define UI_RESOURCE(String) "@ui_resource@/"String
 
+#define GPGME_REQUIRED_VERSION "@gpgme_required_version@"
+
 #endif // CONFIG_H

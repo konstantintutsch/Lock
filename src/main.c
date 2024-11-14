@@ -23,7 +23,14 @@ int main(int argc, char *argv[])
     textdomain(GETTEXT_PACKAGE);
 
     // GnuPG Made Easy
-    g_message("GnuPG Made Easy %s", gpgme_check_version(NULL));
+    const char *gpgme_version = gpgme_check_version(NULL);
+    g_message("GnuPG Made Easy %s", gpgme_version);
+
+    if (gpgme_check_version(GPGME_REQUIRED_VERSION) == NULL)
+        g_error(C_
+                ("Translators: do NOT translate “GnuPG Made Easy”",
+                 "GnuPG Made Easy %s or greater required. Using %s."),
+                GPGME_REQUIRED_VERSION, gpgme_version);
 
     // GUI
     LockApplication *application = lock_application_new();
