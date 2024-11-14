@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 21:24+0100\n"
+"POT-Creation-Date: 2024-11-14 15:27+0100\n"
 "PO-Revision-Date: 2024-10-30 18:39+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
@@ -43,7 +43,7 @@ msgstr "Konstantin Tutsch <mail@konstantintutsch.com>"
 msgid "Dependencies"
 msgstr "Abhängigkeiten"
 
-#: src/window.c:153 data/ui/entrydialog.blp:33
+#: src/window.c:153 data/ui/encryptiondialog.blp:33
 msgid "Enter text …"
 msgstr "Text eingeben …"
 
@@ -51,24 +51,24 @@ msgstr "Text eingeben …"
 msgid "Text copied"
 msgstr "Text kopiert"
 
-#: src/window.c:617 src/window.c:637
+#: src/window.c:616 src/window.c:637
 msgid "Encrypt for"
 msgstr "Verschlüsseln für"
 
-#: src/window.c:617 src/window.c:637
+#: src/window.c:618 src/window.c:639
 msgid "Enter name or email …"
 msgstr "Namen oder E-Mail eingeben …"
 
-#: src/window.c:708 src/window.c:798
+#: src/window.c:710 src/window.c:800
 #, c-format
 msgid "Failed to find key for User ID “%s”"
 msgstr "Für die Nutzer ID “%s” konnte kein Schlüssel gefunden werden"
 
-#: src/window.c:713 src/window.c:803
+#: src/window.c:715 src/window.c:805
 msgid "Encryption failed"
 msgstr "Verschlüsselung fehlgeschlagen"
 
-#: src/window.c:719
+#: src/window.c:721
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -76,7 +76,7 @@ msgctxt ""
 msgid "Text encrypted for %s"
 msgstr "Text verschlüsselt für %s"
 
-#: src/window.c:809
+#: src/window.c:811
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -84,39 +84,39 @@ msgctxt ""
 msgid "File encrypted for %s"
 msgstr "Datei verschlüsselt für %s"
 
-#: src/window.c:866 src/window.c:924
+#: src/window.c:868 src/window.c:926
 msgid "Decryption failed"
 msgstr "Entschlüsselung fehlgeschlagen"
 
-#: src/window.c:868
+#: src/window.c:870
 msgid "Text decrypted"
 msgstr "Text entschlüsselt"
 
-#: src/window.c:926
+#: src/window.c:928
 msgid "File decrypted"
 msgstr "Datei entschlüsselt"
 
-#: src/window.c:982 src/window.c:1040
+#: src/window.c:984 src/window.c:1042
 msgid "Signing failed"
 msgstr "Signierung fehlgeschlagen"
 
-#: src/window.c:984
+#: src/window.c:986
 msgid "Text signed"
 msgstr "Text signiert"
 
-#: src/window.c:1042
+#: src/window.c:1044
 msgid "File signed"
 msgstr "Datei signiert"
 
-#: src/window.c:1098 src/window.c:1156
+#: src/window.c:1100 src/window.c:1158
 msgid "Verification failed"
 msgstr "Verifikation fehlgeschlagen"
 
-#: src/window.c:1100
+#: src/window.c:1102
 msgid "Text verified"
 msgstr "Text verifiziert"
 
-#: src/window.c:1158
+#: src/window.c:1160
 msgid "File verified"
 msgstr "Datei verifiziert"
 
@@ -465,7 +465,7 @@ msgstr "Schlüssel verwalten"
 msgid "About Lock"
 msgstr "Über Schloss"
 
-#: data/ui/entrydialog.blp:22
+#: data/ui/encryptiondialog.blp:22
 msgid "Title"
 msgstr "Titel"
 

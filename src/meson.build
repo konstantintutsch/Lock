@@ -12,7 +12,7 @@ src = files(
   'main.c',
   'application.c',
   'window.c',
-  'entrydialog.c',
+  'encryptiondialog.c',
   'keydialog.c',
   'keyrow.c',
   'cryptography.c',

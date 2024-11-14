@@ -4,7 +4,7 @@
 #include <glib/gi18n.h>
 #include <locale.h>
 #include "window.h"
-#include "entrydialog.h"
+#include "encryptiondialog.h"
 #include "keydialog.h"
 #include "keyrow.h"
 
@@ -44,11 +44,11 @@ bool thread_create(const gchar *id, const gchar *purpose, gpointer function,
 /**
  * This function creates a new thread for the encryption of the text view of a LockWindow.
  *
- * @param self LockEntryDialog::entered
- * @param email LockEntryDialog::entered
- * @param window LockEntryDialog::entered
+ * @param self LockEncryptionDialog::entered
+ * @param email LockEncryptionDialog::entered
+ * @param window LockEncryptionDialog::entered
  */
-void thread_encrypt_text(LockEntryDialog *self, const char *uid,
+void thread_encrypt_text(LockEncryptionDialog *self, const char *uid,
                          LockWindow *window)
 {
     (void)self;
@@ -66,11 +66,11 @@ void thread_encrypt_text(LockEntryDialog *self, const char *uid,
 /**
  * This function creates a new thread for the encryption of the input file of a LockWindow.
  *
- * @param self LockEntryDialog::entered
- * @param email LockEntryDialog::entered
- * @param window LockEntryDialog::entered
+ * @param self LockEncryptionDialog::entered
+ * @param email LockEncryptionDialog::entered
+ * @param window LockEncryptionDialog::entered
  */
-void thread_encrypt_file(LockEntryDialog *self, const char *uid,
+void thread_encrypt_file(LockEncryptionDialog *self, const char *uid,
                          LockWindow *window)
 {
     (void)self;

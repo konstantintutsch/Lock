@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 21:24+0100\n"
+"POT-Creation-Date: 2024-11-14 15:27+0100\n"
 "PO-Revision-Date: 2024-10-26 21:56+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
@@ -42,7 +42,7 @@ msgstr "Quentin PAGÈS"
 msgid "Dependencies"
 msgstr "Dependéncias"
 
-#: src/window.c:153 data/ui/entrydialog.blp:33
+#: src/window.c:153 data/ui/encryptiondialog.blp:33
 msgid "Enter text …"
 msgstr "Picar de tèxte…"
 
@@ -50,24 +50,24 @@ msgstr "Picar de tèxte…"
 msgid "Text copied"
 msgstr "Tèxte copiat"
 
-#: src/window.c:617 src/window.c:637
+#: src/window.c:616 src/window.c:637
 msgid "Encrypt for"
 msgstr "Chifrar per"
 
-#: src/window.c:617 src/window.c:637
+#: src/window.c:618 src/window.c:639
 msgid "Enter name or email …"
 msgstr "Picatz un nom o email…"
 
-#: src/window.c:708 src/window.c:798
+#: src/window.c:710 src/window.c:800
 #, c-format
 msgid "Failed to find key for User ID “%s”"
 msgstr "Impossible de trobar una clau per l’ID utilizaire « %s »"
 
-#: src/window.c:713 src/window.c:803
+#: src/window.c:715 src/window.c:805
 msgid "Encryption failed"
 msgstr "Fracàs del chiframent"
 
-#: src/window.c:719
+#: src/window.c:721
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -75,7 +75,7 @@ msgctxt ""
 msgid "Text encrypted for %s"
 msgstr "Tèxte chifrat per %s"
 
-#: src/window.c:809
+#: src/window.c:811
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -83,39 +83,39 @@ msgctxt ""
 msgid "File encrypted for %s"
 msgstr "Fichièr chifrat per %s"
 
-#: src/window.c:866 src/window.c:924
+#: src/window.c:868 src/window.c:926
 msgid "Decryption failed"
 msgstr "Fracàs del deschiframent"
 
-#: src/window.c:868
+#: src/window.c:870
 msgid "Text decrypted"
 msgstr "Tèxte deschifrat"
 
-#: src/window.c:926
+#: src/window.c:928
 msgid "File decrypted"
 msgstr "Fichièr deschifrat"
 
-#: src/window.c:982 src/window.c:1040
+#: src/window.c:984 src/window.c:1042
 msgid "Signing failed"
 msgstr "Fracàs de la signatura"
 
-#: src/window.c:984
+#: src/window.c:986
 msgid "Text signed"
 msgstr "Tèxte signat"
 
-#: src/window.c:1042
+#: src/window.c:1044
 msgid "File signed"
 msgstr "Fichièr signat"
 
-#: src/window.c:1098 src/window.c:1156
+#: src/window.c:1100 src/window.c:1158
 msgid "Verification failed"
 msgstr "Verificacion fracassada"
 
-#: src/window.c:1100
+#: src/window.c:1102
 msgid "Text verified"
 msgstr "Tèxte verificat"
 
-#: src/window.c:1158
+#: src/window.c:1160
 msgid "File verified"
 msgstr "Fichièr verificat"
 
@@ -472,7 +472,7 @@ msgstr "Gerir las claus"
 msgid "About Lock"
 msgstr "A prepaus de Lock"
 
-#: data/ui/entrydialog.blp:22
+#: data/ui/encryptiondialog.blp:22
 msgid "Title"
 msgstr "Títol"
 

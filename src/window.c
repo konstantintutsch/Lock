@@ -4,7 +4,7 @@
 #include <glib/gi18n.h>
 #include <locale.h>
 #include "application.h"
-#include "entrydialog.h"
+#include "encryptiondialog.h"
 #include "keydialog.h"
 #include "config.h"
 
@@ -613,9 +613,10 @@ void lock_window_encrypt_text_dialog(GSimpleAction *self, GVariant *parameter,
     (void)self;
     (void)parameter;
 
-    LockEntryDialog *dialog =
-        lock_entry_dialog_new(_("Encrypt for"), _("Enter name or email …"),
-                              GTK_INPUT_PURPOSE_FREE_FORM);
+    LockEncryptionDialog *dialog = lock_encryption_dialog_new(_("Encrypt for"),
+                                                              _
+                                                              ("Enter name or email …"),
+                                                              GTK_INPUT_PURPOSE_FREE_FORM);
 
     g_signal_connect(dialog, "entered", G_CALLBACK(thread_encrypt_text),
                      window);
@@ -633,9 +634,10 @@ void lock_window_encrypt_file_dialog(GtkButton *self, LockWindow *window)
 {
     (void)self;
 
-    LockEntryDialog *dialog =
-        lock_entry_dialog_new(_("Encrypt for"), _("Enter name or email …"),
-                              GTK_INPUT_PURPOSE_EMAIL);
+    LockEncryptionDialog *dialog = lock_encryption_dialog_new(_("Encrypt for"),
+                                                              _
+                                                              ("Enter name or email …"),
+                                                              GTK_INPUT_PURPOSE_EMAIL);
 
     g_signal_connect(dialog, "entered", G_CALLBACK(thread_encrypt_file),
                      window);

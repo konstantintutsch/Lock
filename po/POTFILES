@@ -1,13 +1,13 @@
 src/main.c
 src/application.c
 src/window.c
-src/entrydialog.c
+src/encryptiondialog.c
 src/keydialog.c
 src/keyrow.c
 src/cryptography.c
 src/threading.c
 data/ui/window.blp
-data/ui/entrydialog.blp
+data/ui/encryptiondialog.blp
 data/ui/keydialog.blp
 data/ui/keyrow.blp
 data/com.konstantintutsch.Lock.desktop.in.in

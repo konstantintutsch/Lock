@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 21:24+0100\n"
+"POT-Creation-Date: 2024-11-14 15:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgstr ""
 msgid "Dependencies"
 msgstr ""
 
-#: src/window.c:153 data/ui/entrydialog.blp:33
+#: src/window.c:153 data/ui/encryptiondialog.blp:33
 msgid "Enter text …"
 msgstr ""
 
@@ -49,24 +49,24 @@ msgstr ""
 msgid "Text copied"
 msgstr ""
 
-#: src/window.c:617 src/window.c:637
+#: src/window.c:616 src/window.c:637
 msgid "Encrypt for"
 msgstr ""
 
-#: src/window.c:617 src/window.c:637
+#: src/window.c:618 src/window.c:639
 msgid "Enter name or email …"
 msgstr ""
 
-#: src/window.c:708 src/window.c:798
+#: src/window.c:710 src/window.c:800
 #, c-format
 msgid "Failed to find key for User ID “%s”"
 msgstr ""
 
-#: src/window.c:713 src/window.c:803
+#: src/window.c:715 src/window.c:805
 msgid "Encryption failed"
 msgstr ""
 
-#: src/window.c:719
+#: src/window.c:721
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -74,7 +74,7 @@ msgctxt ""
 msgid "Text encrypted for %s"
 msgstr ""
 
-#: src/window.c:809
+#: src/window.c:811
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -82,39 +82,39 @@ msgctxt ""
 msgid "File encrypted for %s"
 msgstr ""
 
-#: src/window.c:866 src/window.c:924
+#: src/window.c:868 src/window.c:926
 msgid "Decryption failed"
 msgstr ""
 
-#: src/window.c:868
+#: src/window.c:870
 msgid "Text decrypted"
 msgstr ""
 
-#: src/window.c:926
+#: src/window.c:928
 msgid "File decrypted"
 msgstr ""
 
-#: src/window.c:982 src/window.c:1040
+#: src/window.c:984 src/window.c:1042
 msgid "Signing failed"
 msgstr ""
 
-#: src/window.c:984
+#: src/window.c:986
 msgid "Text signed"
 msgstr ""
 
-#: src/window.c:1042
+#: src/window.c:1044
 msgid "File signed"
 msgstr ""
 
-#: src/window.c:1098 src/window.c:1156
+#: src/window.c:1100 src/window.c:1158
 msgid "Verification failed"
 msgstr ""
 
-#: src/window.c:1100
+#: src/window.c:1102
 msgid "Text verified"
 msgstr ""
 
-#: src/window.c:1158
+#: src/window.c:1160
 msgid "File verified"
 msgstr ""
 
@@ -462,7 +462,7 @@ msgstr ""
 msgid "About Lock"
 msgstr ""
 
-#: data/ui/entrydialog.blp:22
+#: data/ui/encryptiondialog.blp:22
 msgid "Title"
 msgstr ""
 

@@ -2,7 +2,7 @@
 <gresources>
     <gresource prefix="@ui_resource@">
         <file preprocess="xml-stripblanks">window.ui</file>
-        <file preprocess="xml-stripblanks">entrydialog.ui</file>
+        <file preprocess="xml-stripblanks">encryptiondialog.ui</file>
         <file preprocess="xml-stripblanks">keydialog.ui</file>
         <file preprocess="xml-stripblanks">keyrow.ui</file>
     </gresource>

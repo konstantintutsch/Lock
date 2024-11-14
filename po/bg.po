@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 21:24+0100\n"
+"POT-Creation-Date: 2024-11-14 15:27+0100\n"
 "PO-Revision-Date: 2024-10-23 00:58+0200\n"
 "Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian <dict-notifications@fsa-bg.org>\n"
@@ -43,7 +43,7 @@ msgstr "twlvnn kraftwerk <kraft_werk@tutanota.com>"
 msgid "Dependencies"
 msgstr "Зависимости"
 
-#: src/window.c:153 data/ui/entrydialog.blp:33
+#: src/window.c:153 data/ui/encryptiondialog.blp:33
 msgid "Enter text …"
 msgstr "Въведете текст …"
 
@@ -51,24 +51,24 @@ msgstr "Въведете текст …"
 msgid "Text copied"
 msgstr "Текстът е копиран"
 
-#: src/window.c:617 src/window.c:637
+#: src/window.c:616 src/window.c:637
 msgid "Encrypt for"
 msgstr "Шифриране за"
 
-#: src/window.c:617 src/window.c:637
+#: src/window.c:618 src/window.c:639
 msgid "Enter name or email …"
 msgstr "Въведете име или е-поща …"
 
-#: src/window.c:708 src/window.c:798
+#: src/window.c:710 src/window.c:800
 #, c-format
 msgid "Failed to find key for User ID “%s”"
 msgstr "Ключ за идентификатор на потребител „%s“ не може да бъде намерен"
 
-#: src/window.c:713 src/window.c:803
+#: src/window.c:715 src/window.c:805
 msgid "Encryption failed"
 msgstr "Шифрирането е неуспешно"
 
-#: src/window.c:719
+#: src/window.c:721
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -76,7 +76,7 @@ msgctxt ""
 msgid "Text encrypted for %s"
 msgstr "Текстът е шифриран за %s"
 
-#: src/window.c:809
+#: src/window.c:811
 #, c-format
 msgctxt ""
 "Formatter is either name, email or fingerprint of the public key used in the "
@@ -84,39 +84,39 @@ msgctxt ""
 msgid "File encrypted for %s"
 msgstr "Файлът е шифриран за %s"
 
-#: src/window.c:866 src/window.c:924
+#: src/window.c:868 src/window.c:926
 msgid "Decryption failed"
 msgstr "Дешифрирането е неуспешно"
 
-#: src/window.c:868
+#: src/window.c:870
 msgid "Text decrypted"
 msgstr "Текстът е дешифриран"
 
-#: src/window.c:926
+#: src/window.c:928
 msgid "File decrypted"
 msgstr "Файлът е дешифриран"
 
-#: src/window.c:982 src/window.c:1040
+#: src/window.c:984 src/window.c:1042
 msgid "Signing failed"
 msgstr "Подписването е неуспешно"
 
-#: src/window.c:984
+#: src/window.c:986
 msgid "Text signed"
 msgstr "Текстът е подписан"
 
-#: src/window.c:1042
+#: src/window.c:1044
 msgid "File signed"
 msgstr "Файлът е подписан"
 
-#: src/window.c:1098 src/window.c:1156
+#: src/window.c:1100 src/window.c:1158
 msgid "Verification failed"
 msgstr "Потвърждаването е неуспешно"
 
-#: src/window.c:1100
+#: src/window.c:1102
 msgid "Text verified"
 msgstr "Текстът е потвърден"
 
-#: src/window.c:1158
+#: src/window.c:1160
 msgid "File verified"
 msgstr "Файлът е потвърден"
 
@@ -473,7 +473,7 @@ msgstr "Управление на ключовете"
 msgid "About Lock"
 msgstr "Относно „Ключалка“"
 
-#: data/ui/entrydialog.blp:22
+#: data/ui/encryptiondialog.blp:22
 msgid "Title"
 msgstr "Заглавие"
 

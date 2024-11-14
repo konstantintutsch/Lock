@@ -3,14 +3,14 @@
 
 #include <adwaita.h>
 #include "window.h"
-#include "entrydialog.h"
+#include "encryptiondialog.h"
 #include "keydialog.h"
 #include "keyrow.h"
 
 /* Encrypt */
-void thread_encrypt_text(LockEntryDialog * self, const char *uid,
+void thread_encrypt_text(LockEncryptionDialog * self, const char *uid,
                          LockWindow * window);
-void thread_encrypt_file(LockEntryDialog * self, const char *uid,
+void thread_encrypt_file(LockEncryptionDialog * self, const char *uid,
                          LockWindow * window);
 
 /* Decrypt */
