@@ -135,6 +135,7 @@ template $LockKeyDialog : Adw.Dialog {
 
                                     Gtk.ListBox {
                                         styles ["boxed-list"]
+                                        selection-mode: none;
 
                                         Adw.EntryRow name_entry {
                                             title: C_("Name of the UID of the new keypair", "Name");

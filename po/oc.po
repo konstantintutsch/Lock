@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-15 14:05+0100\n"
+"POT-Creation-Date: 2024-11-15 14:29+0100\n"
 "PO-Revision-Date: 2024-10-26 21:56+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
@@ -498,52 +498,52 @@ msgstr "Crear un parelh de claus novèl"
 msgid "Generate keypair"
 msgstr "Generar un parelh de claus"
 
-#: data/ui/keydialog.blp:140
+#: data/ui/keydialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
 msgstr "Nom"
 
-#: data/ui/keydialog.blp:145
+#: data/ui/keydialog.blp:146
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr "Adreça electronica"
 
-#: data/ui/keydialog.blp:150
+#: data/ui/keydialog.blp:151
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr "Algoritme de signatura"
 
-#: data/ui/keydialog.blp:151
+#: data/ui/keydialog.blp:152
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr "Clau"
 
-#: data/ui/keydialog.blp:159
+#: data/ui/keydialog.blp:160
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "Algoritme de chiframent"
 
-#: data/ui/keydialog.blp:160
+#: data/ui/keydialog.blp:161
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr "Sosclau"
 
-#: data/ui/keydialog.blp:168
+#: data/ui/keydialog.blp:169
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr "Expiracion"
 
-#: data/ui/keydialog.blp:169
+#: data/ui/keydialog.blp:170
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr "Meses, desactivar amb zèro"
 
-#: data/ui/keydialog.blp:191
+#: data/ui/keydialog.blp:192
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "Generar"
 
-#: data/ui/keydialog.blp:192
+#: data/ui/keydialog.blp:193
 msgid "Generate a new keypair"
 msgstr "Generar un parelh de claus novèl"
 
