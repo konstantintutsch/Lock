@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-15 14:00+0100\n"
+"POT-Creation-Date: 2024-11-15 14:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -468,69 +468,69 @@ msgstr ""
 msgid "Refresh keys"
 msgstr ""
 
-#: data/ui/keydialog.blp:88
+#: data/ui/keydialog.blp:89
 msgctxt "Import keys from files"
 msgid "Import"
 msgstr ""
 
-#: data/ui/keydialog.blp:89
+#: data/ui/keydialog.blp:90
 msgid "Import keys from files"
 msgstr ""
 
-#: data/ui/keydialog.blp:96
+#: data/ui/keydialog.blp:97
 msgid "Create a new keypair"
 msgstr ""
 
-#: data/ui/keydialog.blp:109
+#: data/ui/keydialog.blp:110
 msgid "Generate keypair"
 msgstr ""
 
-#: data/ui/keydialog.blp:139
+#: data/ui/keydialog.blp:140
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
 msgstr ""
 
-#: data/ui/keydialog.blp:144
+#: data/ui/keydialog.blp:145
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr ""
 
-#: data/ui/keydialog.blp:149
+#: data/ui/keydialog.blp:150
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr ""
 
-#: data/ui/keydialog.blp:150
+#: data/ui/keydialog.blp:151
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr ""
 
-#: data/ui/keydialog.blp:158
+#: data/ui/keydialog.blp:159
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr ""
 
-#: data/ui/keydialog.blp:159
+#: data/ui/keydialog.blp:160
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr ""
 
-#: data/ui/keydialog.blp:167
+#: data/ui/keydialog.blp:168
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr ""
 
-#: data/ui/keydialog.blp:168
+#: data/ui/keydialog.blp:169
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr ""
 
-#: data/ui/keydialog.blp:190
+#: data/ui/keydialog.blp:191
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr ""
 
-#: data/ui/keydialog.blp:191
+#: data/ui/keydialog.blp:192
 msgid "Generate a new keypair"
 msgstr ""
 

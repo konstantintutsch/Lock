@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-15 14:00+0100\n"
+"POT-Creation-Date: 2024-11-15 14:01+0100\n"
 "PO-Revision-Date: 2024-11-15 11:25+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
@@ -471,69 +471,69 @@ msgstr "Ihr GnuPG Schlüsselbund enthält keine Schlüssel."
 msgid "Refresh keys"
 msgstr "Schlüssel aktualisieren"
 
-#: data/ui/keydialog.blp:88
+#: data/ui/keydialog.blp:89
 msgctxt "Import keys from files"
 msgid "Import"
 msgstr "Importieren"
 
-#: data/ui/keydialog.blp:89
+#: data/ui/keydialog.blp:90
 msgid "Import keys from files"
 msgstr "Schlüssel aus Dateien importieren"
 
-#: data/ui/keydialog.blp:96
+#: data/ui/keydialog.blp:97
 msgid "Create a new keypair"
 msgstr "Neues Schlüsselpaar erstellen"
 
-#: data/ui/keydialog.blp:109
+#: data/ui/keydialog.blp:110
 msgid "Generate keypair"
 msgstr "Schlüsselpaar generieren"
 
-#: data/ui/keydialog.blp:139
+#: data/ui/keydialog.blp:140
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
 msgstr "Name"
 
-#: data/ui/keydialog.blp:144
+#: data/ui/keydialog.blp:145
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr "E-Mail"
 
-#: data/ui/keydialog.blp:149
+#: data/ui/keydialog.blp:150
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr "Signierungsalgorithmus"
 
-#: data/ui/keydialog.blp:150
+#: data/ui/keydialog.blp:151
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr "Schlüssel"
 
-#: data/ui/keydialog.blp:158
+#: data/ui/keydialog.blp:159
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "Verschlüsselungsalgorithmus"
 
-#: data/ui/keydialog.blp:159
+#: data/ui/keydialog.blp:160
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr "Unterschlüssel"
 
-#: data/ui/keydialog.blp:167
+#: data/ui/keydialog.blp:168
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr "Ablaufdauer"
 
-#: data/ui/keydialog.blp:168
+#: data/ui/keydialog.blp:169
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr "Monate, mit Null ausschalten"
 
-#: data/ui/keydialog.blp:190
+#: data/ui/keydialog.blp:191
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "Generieren"
 
-#: data/ui/keydialog.blp:191
+#: data/ui/keydialog.blp:192
 msgid "Generate a new keypair"
 msgstr "Neues Schlüsselpaar generieren"
 
