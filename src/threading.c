@@ -45,15 +45,15 @@ bool thread_create(const gchar *id, const gchar *purpose, gpointer function,
  * This function creates a new thread for the encryption of the text view of a LockWindow.
  *
  * @param self LockEncryptionDialog::entered
- * @param email LockEncryptionDialog::entered
+ * @param fingerprint LockEncryptionDialog::entered
  * @param window LockEncryptionDialog::entered
  */
-void thread_encrypt_text(LockEncryptionDialog *self, const char *uid,
+void thread_encrypt_text(LockEncryptionDialog *self, const char *fingerprint,
                          LockWindow *window)
 {
     (void)self;
 
-    lock_window_set_uid(window, uid);
+    lock_window_set_fingerprint(window, fingerprint);
 
     bool success = thread_create("encrypt_text",
                                  C_("Thread Error", "text encryption"),
@@ -67,15 +67,15 @@ void thread_encrypt_text(LockEncryptionDialog *self, const char *uid,
  * This function creates a new thread for the encryption of the input file of a LockWindow.
  *
  * @param self LockEncryptionDialog::entered
- * @param email LockEncryptionDialog::entered
+ * @param fingerprint LockEncryptionDialog::entered
  * @param window LockEncryptionDialog::entered
  */
-void thread_encrypt_file(LockEncryptionDialog *self, const char *uid,
+void thread_encrypt_file(LockEncryptionDialog *self, const char *fingerprint,
                          LockWindow *window)
 {
     (void)self;
 
-    lock_window_set_uid(window, uid);
+    lock_window_set_fingerprint(window, fingerprint);
 
     bool success = thread_create("encrypt_file",
                                  C_("Thread Error", "file encryption"),

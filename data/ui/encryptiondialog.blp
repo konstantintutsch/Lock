@@ -3,40 +3,47 @@ using Adw 1;
 
 template $LockEncryptionDialog : Adw.Dialog {
     follows-content-size: false;
-    content-width: 300;
-    content-height: 100;
+    content-width: 500;
+    content-height: 420;
     can-close: true;
 
-    child: Gtk.Box {
-        orientation: vertical;
-        valign: center;
-        halign: center;
-        spacing: 10;
+    child: Adw.ToolbarView {
 
-        Gtk.Box {
-            orientation: horizontal;
-            halign: start;
+        [top]
+        Adw.HeaderBar {
+            styles ["flat"]
 
-            Gtk.Label title_label {
-                styles ["heading"]
-                label: _("Title");
+            [title]
+            Adw.WindowTitle {
+                title: _("Select key");
             }
         }
 
-        Gtk.Box {
-            orientation: horizontal;
-            halign: fill;
-            spacing: 10;
+        content: Gtk.ScrolledWindow {
+            propagate-natural-height: true;
 
-            Gtk.Entry entry {
-                max-width-chars: 22;
-                placeholder-text: _("Enter text …");
-            }
+            child: Adw.Clamp {
+                tightening-threshold: 150;
+                unit: sp;
 
-            Gtk.Button confirm_button {
-                styles ["suggested-action"]
-                icon-name: "object-select-symbolic";
-            }
-        }
+                child: Gtk.Box manage_box {
+                    orientation: vertical;
+                    valign: start;
+                    halign: fill;
+
+                    Adw.StatusPage status_page {
+                        icon-name: "system-lock-screen-symbolic";
+                        title: _("No keys available");
+                        description: _("Your GnuPG keyring does not contain any keys.");
+                    }
+
+                    Gtk.ListBox key_box {
+                        styles ["boxed-list"]
+
+                        margin-top: 20;
+                    }
+                };
+            };
+        };
     };
 }

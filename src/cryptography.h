@@ -19,6 +19,7 @@ typedef enum {
 } key_flags;
 
 // Keys
+gpgme_key_t key_get(const char *fingerprint);
 gpgme_key_t key_search(const char *userid);
 bool key_generate(const char *userid, const char *sign_algorithm,
                   const char *encrypt_algorithm, unsigned long expiry);

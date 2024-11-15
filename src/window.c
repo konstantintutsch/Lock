@@ -15,18 +15,6 @@
 #define ACTION_MODE_TEXT 0
 #define ACTION_MODE_FILE 1
 
-#define HANDLE_ERROR_UID(status, found, key, ui_function, ui_data, memory) if (key == NULL) { \
-        \
-        found = false; \
-        \
-        gpgme_key_release(key); \
-        \
-        memory \
-        \
-        g_idle_add((GSourceFunc) ui_function, ui_data); \
-        return status; \
-    }
-
 /**
  * This structure handles data of a window.
  */
@@ -39,9 +27,7 @@ struct _LockWindow {
     AdwViewStack *stack;
     unsigned int action_mode;
 
-    gboolean uid_found;
-    gchar *uid; /**< Stores the entered UID part for an encryption process. */
-    gchar *uid_used; /**< Stores the UID actually used during an encryption process. */
+    gchar *fingerprint; /**< Stores the selected fingerprint for an encryption process. */
 
     /* Text */
     AdwViewStackPage *text_page;
@@ -128,8 +114,7 @@ static void lock_window_init(LockWindow *window)
 {
     gtk_widget_init_template(GTK_WIDGET(window));
 
-    window->uid = malloc((0 + 1) * sizeof(char));
-    strcpy(window->uid, "");
+    window->fingerprint = malloc((0 + 1) * sizeof(char));
 
     /* UI */
     g_signal_connect(window->stack, "notify::visible-child",
@@ -576,28 +561,16 @@ lock_window_file_save_dialog_present(GtkButton *self, LockWindow *window)
 /**** Encryption ****/
 
 /**
- * This function overwrites the key UID of a LockWindow.
+ * This function overwrites the key fingerprint of a LockWindow.
  *
- * @param window Window to overwrite the key UID of
- * @param uid UID to overwrite with
+ * @param window Window to overwrite the key fingerprint of
+ * @param fingerprint Fingerprint to overwrite with
  */
-void lock_window_set_uid(LockWindow *window, const char *uid)
+void lock_window_set_fingerprint(LockWindow *window, const char *fingerprint)
 {
-    window->uid = realloc(window->uid, (strlen(uid) + 1) * sizeof(char));
-    strcpy(window->uid, uid);
-}
-
-/**
- * This function overwrites the used key UID of a LockWindow.
- *
- * @param window Window to overwrite the used key UID of
- * @param uid UID to overwrite with
- */
-void lock_window_set_uid_used(LockWindow *window, const char *uid)
-{
-    window->uid_used =
-        realloc(window->uid_used, (strlen(uid) + 1) * sizeof(char));
-    strcpy(window->uid_used, uid);
+    window->fingerprint =
+        realloc(window->fingerprint, (strlen(fingerprint) + 1) * sizeof(char));
+    strcpy(window->fingerprint, fingerprint);
 }
 
 /**
@@ -613,10 +586,7 @@ void lock_window_encrypt_text_dialog(GSimpleAction *self, GVariant *parameter,
     (void)self;
     (void)parameter;
 
-    LockEncryptionDialog *dialog = lock_encryption_dialog_new(_("Encrypt for"),
-                                                              _
-                                                              ("Enter name or email …"),
-                                                              GTK_INPUT_PURPOSE_FREE_FORM);
+    LockEncryptionDialog *dialog = lock_encryption_dialog_new();
 
     g_signal_connect(dialog, "entered", G_CALLBACK(thread_encrypt_text),
                      window);
@@ -634,10 +604,7 @@ void lock_window_encrypt_file_dialog(GtkButton *self, LockWindow *window)
 {
     (void)self;
 
-    LockEncryptionDialog *dialog = lock_encryption_dialog_new(_("Encrypt for"),
-                                                              _
-                                                              ("Enter name or email …"),
-                                                              GTK_INPUT_PURPOSE_EMAIL);
+    LockEncryptionDialog *dialog = lock_encryption_dialog_new();
 
     g_signal_connect(dialog, "entered", G_CALLBACK(thread_encrypt_file),
                      window);
@@ -654,19 +621,7 @@ void lock_window_encrypt_text(LockWindow *window)
 {
     gchar *plain = lock_window_text_view_get_text(window);
 
-    gpgme_key_t key = key_search(window->uid);
-    HANDLE_ERROR_UID(, window->uid_found, key,
-                     lock_window_encrypt_text_on_completed, window,
-                     g_free(plain); plain = NULL;);
-
-    window->uid_found = true;
-    if (key->uids->name) {
-        lock_window_set_uid_used(window, key->uids->name);
-    } else if (key->uids->email) {
-        lock_window_set_uid_used(window, key->uids->email);
-    } else {
-        lock_window_set_uid_used(window, key->subkeys->fpr);
-    }
+    gpgme_key_t key = key_get(window->fingerprint);
 
     gchar *armor = process_text(plain, ENCRYPT, key);
     if (armor == NULL) {
@@ -702,21 +657,10 @@ gboolean lock_window_encrypt_text_on_completed(LockWindow *window)
 {
     AdwToast *toast;
 
-    if (!window->uid_found) {
-        toast =
-            adw_toast_new(g_strdup_printf
-                          (_("Failed to find key for User ID “%s”"),
-                           window->uid));
-
-        window->uid_found = true;
-    } else if (!window->text_success) {
+    if (!window->text_success) {
         toast = adw_toast_new(_("Encryption failed"));
     } else {
-        toast =
-            adw_toast_new(g_strdup_printf
-                          (C_
-                           ("Formatter is either name, email or fingerprint of the public key used in the encryption process.",
-                            "Text encrypted for %s"), window->uid_used));
+        toast = adw_toast_new(_("Text encrypted"));
 
         gchar *armor = lock_window_text_queue_get_text(window);
         lock_window_text_view_set_text(window, armor);
@@ -726,7 +670,6 @@ gboolean lock_window_encrypt_text_on_completed(LockWindow *window)
         armor = NULL;
     }
 
-    adw_toast_set_use_markup(toast, false);
     adw_toast_set_timeout(toast, 3);
 
     lock_window_cryptography_processing(window, false);
@@ -746,21 +689,7 @@ void lock_window_encrypt_file(LockWindow *window)
     char *input_path = g_file_get_path(window->file_input);
     char *output_path = g_file_get_path(window->file_output);
 
-    gpgme_key_t key = key_search(window->uid);
-    HANDLE_ERROR_UID(, window->uid_found, key,
-                     lock_window_encrypt_file_on_completed, window,
-                     /* Cleanup */
-                     g_free(input_path); input_path = NULL;
-                     g_free(output_path); output_path = NULL;);
-
-    window->uid_found = true;
-    if (key->uids->name) {
-        lock_window_set_uid_used(window, key->uids->name);
-    } else if (key->uids->email) {
-        lock_window_set_uid_used(window, key->uids->email);
-    } else {
-        lock_window_set_uid_used(window, key->subkeys->fpr);
-    }
+    gpgme_key_t key = key_get(window->fingerprint);
 
     window->file_success = process_file(input_path, output_path, ENCRYPT, key);
 
@@ -790,24 +719,12 @@ gboolean lock_window_encrypt_file_on_completed(LockWindow *window)
 {
     AdwToast *toast;
 
-    if (!window->uid_found) {
-        toast =
-            adw_toast_new(g_strdup_printf
-                          (_("Failed to find key for User ID “%s”"),
-                           window->uid));
-
-        window->uid_found = true;
-    } else if (!window->file_success) {
+    if (!window->file_success) {
         toast = adw_toast_new(_("Encryption failed"));
     } else {
-        toast =
-            adw_toast_new(g_strdup_printf
-                          (C_
-                           ("Formatter is either name, email or fingerprint of the public key used in the encryption process.",
-                            "File encrypted for %s"), window->uid_used));
+        toast = adw_toast_new(_("File encrypted"));
     }
 
-    adw_toast_set_use_markup(toast, false);
     adw_toast_set_timeout(toast, 3);
 
     lock_window_cryptography_processing(window, false);

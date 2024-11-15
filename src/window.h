@@ -19,7 +19,7 @@ void lock_window_cryptography_processing(LockWindow * window,
 /* Cryptography */
 
 // Encryption
-void lock_window_set_uid(LockWindow * window, const char *uid);
+void lock_window_set_fingerprint(LockWindow * window, const char *fingerprint);
 void lock_window_encrypt_text(LockWindow * window);
 void lock_window_encrypt_file(LockWindow * window);
 

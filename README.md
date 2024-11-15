@@ -39,7 +39,7 @@ Manage your GnuPG keyring:
 
 ![Plain text](data/com.konstantintutsch.Lock.Screenshot.Showcase.1Text.png)
 
-![User ID dialog](data/com.konstantintutsch.Lock.Screenshot.Showcase.2UID.png)
+![Key selection dialog](data/com.konstantintutsch.Lock.Screenshot.Showcase.2Select.png)
 
 ![Encryption](data/com.konstantintutsch.Lock.Screenshot.Showcase.3Encrypted.png)
 

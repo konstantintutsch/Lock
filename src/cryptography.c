@@ -25,6 +25,38 @@
 /**** Key ****/
 
 /**
+ * This function returns the key of a fingerprint.
+ *
+ * @param fingerprint Fingerprint of the key to get
+ *
+ * @return Key. Owned by caller
+ */
+gpgme_key_t key_get(const char *fingerprint)
+{
+    gpgme_ctx_t context;
+    gpgme_key_t key;
+    gpgme_error_t error;
+
+    error = gpgme_new(&context);
+    HANDLE_ERROR(NULL, error, C_("GPGME Error", "create new GPGME context"),
+                 context,);
+
+    error = gpgme_set_protocol(context, GPGME_PROTOCOL_OpenPGP);
+    HANDLE_ERROR(NULL, error,
+                 C_("GPGME Error", "set protocol of GPGME context to OpenPGP"),
+                 context,);
+
+    error = gpgme_get_key(context, fingerprint, &key, 0);
+    HANDLE_ERROR(NULL, error, C_("GPGME Error", "obtain key by fingerprint"),
+                 context, gpgme_key_release(key););
+
+    /* Cleanup */
+    gpgme_release(context);
+
+    return key;
+}
+
+/**
  * This function returns a key with matching UID.
  *
  * @param userid UID of the key
