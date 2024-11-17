@@ -7,44 +7,77 @@ template $LockEncryptionDialog : Adw.Dialog {
     content-height: 420;
     can-close: true;
 
-    child: Adw.ToolbarView {
+    child: Gtk.Box {
+        orientation: vertical;
+        halign: fill;
+        hexpand: true;
+        valign: fill;
+        vexpand: true;
 
-        [top]
-        Adw.HeaderBar {
-            styles ["flat"]
+        Adw.Spinner spinner {
+            halign: center;
+            hexpand: true;
+            valign: center;
+            vexpand: true;
 
-            [title]
-            Adw.WindowTitle {
-                title: _("Select key");
-            }
+            width-request: 64;
+            height-request: 64;
         }
 
-        content: Gtk.ScrolledWindow {
-            propagate-natural-height: true;
+        Adw.ToolbarView view {
 
-            child: Adw.Clamp {
-                tightening-threshold: 150;
-                unit: sp;
+            [top]
+            Adw.HeaderBar {
+                styles ["flat"]
 
-                child: Gtk.Box manage_box {
-                    orientation: vertical;
-                    valign: start;
-                    halign: fill;
+                [title]
+                Adw.WindowTitle {
+                    title: _("Select key");
+                }
 
-                    Adw.StatusPage status_page {
-                        icon-name: "system-lock-screen-symbolic";
-                        title: _("No keys available");
-                        description: _("Your GnuPG keyring does not contain any keys.");
+                [start]
+                Gtk.Box {
+                    orientation: horizontal;
+                    valign: center;
+                    halign: start;
+
+                    Gtk.Button refresh_button {
+                        styles ["flat"]
+
+                        icon-name: "view-refresh-symbolic";
+                        tooltip-text: _("Refresh keys");
                     }
+                }
+            }
 
-                    Gtk.ListBox key_box {
-                        styles ["boxed-list"]
-                        selection-mode: none;
+            content: Gtk.ScrolledWindow {
+                propagate-natural-height: true;
 
-                        margin-top: 20;
-                    }
+                child: Adw.Clamp {
+                    tightening-threshold: 150;
+                    unit: sp;
+
+                    child: Gtk.Box manage_box {
+                        orientation: vertical;
+                        vexpand: true;
+                        valign: start;
+                        halign: fill;
+
+                        Adw.StatusPage status_page {
+                            icon-name: "system-lock-screen-symbolic";
+                            title: _("No keys available");
+                            description: _("Your GnuPG keyring does not contain any keys.");
+                        }
+
+                        Gtk.ListBox key_box {
+                            styles ["boxed-list"]
+                            selection-mode: none;
+
+                            margin-top: 20;
+                        }
+                    };
                 };
             };
-        };
+        }
     };
 }
