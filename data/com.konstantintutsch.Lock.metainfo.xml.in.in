@@ -88,6 +88,15 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.1.1" date="2024-11-18">
+            <description translate="no">
+                <ul>
+                    <li>A refresh button is now available during key selection</li>
+                    <li>Non-interactable rows are not highlightable/selectable anymore</li>
+                    <li>The fingerprint of keys is now accessed directly</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.1.0" date="2024-11-15">
             <description translate="no">
                 <ul>
