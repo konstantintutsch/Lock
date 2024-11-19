@@ -73,10 +73,6 @@
             <image>https://github.com/konstantintutsch/Lock/raw/refs/heads/main/data/com.konstantintutsch.Lock.Screenshot.Showcase.3Encrypted.png</image>
             <caption>Encryption</caption>
         </screenshot>
-        <screenshot>
-            <image>https://github.com/konstantintutsch/Lock/raw/refs/heads/main/data/com.konstantintutsch.Lock.Screenshot.Showcase.4Decrypted.png</image>
-            <caption>Decryption</caption>
-        </screenshot>
     </screenshots>
     <recommends>
         <display_length compare="ge">500</display_length>

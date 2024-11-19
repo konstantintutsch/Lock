@@ -42,5 +42,3 @@ Manage your GnuPG keyring:
 ![Key selection dialog](data/com.konstantintutsch.Lock.Screenshot.Showcase.2Select.png)
 
 ![Encryption](data/com.konstantintutsch.Lock.Screenshot.Showcase.3Encrypted.png)
-
-![Decryption](data/com.konstantintutsch.Lock.Screenshot.Showcase.4Decrypted.png)
