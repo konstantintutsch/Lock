@@ -29,6 +29,8 @@ struct _LockKeyRow {
 
 G_DEFINE_TYPE(LockKeyRow, lock_key_row, ADW_TYPE_ACTION_ROW);
 
+void lock_key_row_copy_fingerprint(AdwActionRow * self, LockKeyRow * row);
+
 /* Export */
 static void lock_key_row_export_file_present(GtkButton * self,
                                              LockKeyRow * row);
@@ -46,9 +48,11 @@ static void lock_key_row_init(LockKeyRow *row)
 {
     gtk_widget_init_template(GTK_WIDGET(row));
 
+    g_signal_connect(row, "activated",
+                     G_CALLBACK(lock_key_row_copy_fingerprint), row);
+
     g_signal_connect(row->remove_button, "clicked",
                      G_CALLBACK(lock_key_row_remove_confirm), row);
-
     g_signal_connect(row->export_button, "clicked",
                      G_CALLBACK(lock_key_row_export_file_present), row);
 }
@@ -104,6 +108,28 @@ LockKeyRow *lock_key_row_new(LockKeyDialog *dialog,
     row->dialog = dialog;
 
     return row;
+}
+
+/**
+ * This function copies the fingerprint of the key of a LockKeyRow.
+ *
+ * @param self https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/signal.ActionRow.activated.html
+ * @param row https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/signal.ActionRow.activated.html
+ */
+void lock_key_row_copy_fingerprint(AdwActionRow *self, LockKeyRow *row)
+{
+    (void)self;
+
+    GdkClipboard *active_clipboard =
+        gdk_display_get_clipboard(gdk_display_get_default());
+
+    AdwToast *toast = adw_toast_new(_("Fingerprint copied"));
+    adw_toast_set_timeout(toast, 2);
+
+    const gchar *fingerprint = adw_action_row_get_subtitle(ADW_ACTION_ROW(row));
+    gdk_clipboard_set_text(active_clipboard, fingerprint);
+
+    lock_key_dialog_add_toast(row->dialog, toast);
 }
 
 /**** Export ****/
