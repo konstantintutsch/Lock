@@ -6,164 +6,167 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2024-11-19 10:51+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-11-20 18:01+0000\n"
+"Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
+"Application/et/>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: src/main.c:32
 #, c-format
 msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
 msgid "GnuPG Made Easy %s or greater required. Using %s."
-msgstr ""
+msgstr "GnuPG Made Easy - nõutav on %s või suurem. Kasutusel on %s."
 
 #. Details
 #: src/application.c:132 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
-msgstr ""
+msgstr "Töötle andmeid GnuPG abil"
 
 #: src/application.c:134
 msgctxt "Button linking to translations"
 msgid "Translate"
-msgstr ""
+msgstr "Tõlgi"
 
 #: src/application.c:137
 msgctxt "Button linking to source code"
 msgid "Develop"
-msgstr ""
+msgstr "Arenda"
 
 #: src/application.c:149
 msgid "translator-credits"
-msgstr ""
+msgstr "Priit Jõerüüt"
 
 #: src/application.c:154
 msgid "Dependencies"
-msgstr ""
+msgstr "Sõltuvused"
 
 #: src/window.c:138
 msgid "Enter text …"
-msgstr ""
+msgstr "Sisesta tekst…"
 
 #: src/window.c:410
 msgid "Text copied"
-msgstr ""
+msgstr "Tekst on kopeeritud"
 
 #: src/window.c:661 src/window.c:723
 msgid "Encryption failed"
-msgstr ""
+msgstr "Krüptimine ei õnnestunud"
 
 #: src/window.c:663
 msgid "Text encrypted"
-msgstr ""
+msgstr "Tekst on krüptitud"
 
 #: src/window.c:725
 msgid "File encrypted"
-msgstr ""
+msgstr "Fail on krüptitud"
 
 #: src/window.c:781 src/window.c:839
 msgid "Decryption failed"
-msgstr ""
+msgstr "Dekrüptimine ei õnnestunud"
 
 #: src/window.c:783
 msgid "Text decrypted"
-msgstr ""
+msgstr "Tekst on dekrüptitud"
 
 #: src/window.c:841
 msgid "File decrypted"
-msgstr ""
+msgstr "Fail on dekrüptitud"
 
 #: src/window.c:897 src/window.c:955
 msgid "Signing failed"
-msgstr ""
+msgstr "Allkirjastamine ei õnnestunud"
 
 #: src/window.c:899
 msgid "Text signed"
-msgstr ""
+msgstr "Tekst on allkirjastatud"
 
 #: src/window.c:957
 msgid "File signed"
-msgstr ""
+msgstr "Fail on allkirjastatud"
 
 #: src/window.c:1013 src/window.c:1071
 msgid "Verification failed"
-msgstr ""
+msgstr "Verifitseerimine ei õnnestunud"
 
 #: src/window.c:1015
 msgid "Text verified"
-msgstr ""
+msgstr "Tekst on verifitseeritud"
 
 #: src/window.c:1073
 msgid "File verified"
-msgstr ""
+msgstr "Fail on verifitseeritud"
 
 #: src/keydialog.c:350
 msgid "Import failed"
-msgstr ""
+msgstr "Importimine ei õnnestunud"
 
 #: src/keydialog.c:352
 msgid "Keys imported"
-msgstr ""
+msgstr "Võtmed on imporditud"
 
 #: src/keydialog.c:421
 msgid "Generation failed"
-msgstr ""
+msgstr "Võtmete loomine ei õnnestunud"
 
 #: src/keydialog.c:423
 msgid "Keypair generated"
-msgstr ""
+msgstr "Võtmepaar on loodud"
 
 #: src/keyrow.c:95
 msgid "Key does not expire"
-msgstr ""
+msgstr "Võti ei aegu"
 
 #: src/keyrow.c:99
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
-msgstr ""
+msgstr "Aegub %s %s"
 
 #: src/keyrow.c:126
 msgid "Fingerprint copied"
-msgstr ""
+msgstr "Sõrmejälg on kopeeritud"
 
 #: src/keyrow.c:220
 msgid "Export failed"
-msgstr ""
+msgstr "Eksportimine ei õnnestunud"
 
 #: src/keyrow.c:222
 msgid "Key exported"
-msgstr ""
+msgstr "Võti on eksporditud"
 
 #: src/keyrow.c:268
 msgid "Remove key and subkeys?"
-msgstr ""
+msgstr "Kas eemaldame võtme koos alamvõtmetega?"
 
 #: src/keyrow.c:271
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
-msgstr ""
+msgstr "%s võtme eemaldamist ei saa tagasi pöörata!"
 
 #: src/keyrow.c:274
 msgid "_Cancel"
-msgstr ""
+msgstr "_Katkesta"
 
 #: src/keyrow.c:275
 msgid "_Remove"
-msgstr ""
+msgstr "_Eemalda"
 
 #: src/keyrow.c:316
 msgid "Removal failed"
-msgstr ""
+msgstr "Eemaldamine ei õnnestunud"
 
 #: src/keyrow.c:318
 msgid "Key removed"
-msgstr ""
+msgstr "Võti on eemaldatud"
 
 #: src/cryptography.c:16
 #, c-format
