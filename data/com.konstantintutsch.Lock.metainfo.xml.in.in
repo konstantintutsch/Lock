@@ -84,6 +84,13 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.1.2" date="2024-11-19">
+            <description translate="no">
+                <ul>
+                    <li>Key fingerprints can now be copied by clicking on a row in the management dialog</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.1.1" date="2024-11-18">
             <description translate="no">
                 <ul>
