@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-23 14:59+0100\n"
+"POT-Creation-Date: 2024-11-23 15:32+0100\n"
 "PO-Revision-Date: 2024-10-28 09:07+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: \n"
@@ -169,15 +169,15 @@ msgstr "ההסרה נכשלה"
 msgid "Key removed"
 msgstr "המפתח הוסר"
 
-#: src/cryptography.c:42 src/cryptography.c:78 src/cryptography.c:124
-#: src/cryptography.c:185 src/cryptography.c:302 src/cryptography.c:416
+#: src/cryptography.c:42 src/cryptography.c:77 src/cryptography.c:122
+#: src/cryptography.c:181 src/cryptography.c:303 src/cryptography.c:415
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME context"
 msgstr "יצירת הקשר GPGME חדש"
 
-#: src/cryptography.c:48 src/cryptography.c:84 src/cryptography.c:130
-#: src/cryptography.c:191 src/cryptography.c:308 src/cryptography.c:422
+#: src/cryptography.c:48 src/cryptography.c:83 src/cryptography.c:128
+#: src/cryptography.c:187 src/cryptography.c:309 src/cryptography.c:421
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set protocol of GPGME context to OpenPGP"
@@ -188,43 +188,43 @@ msgctxt "GPGME Error"
 msgid "Failed to obtain key by fingerprint"
 msgstr ""
 
-#: src/cryptography.c:98
+#: src/cryptography.c:97
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to find key matching User ID"
 msgstr "איתור מפתח שתואם למזהה המשתמש"
 
-#: src/cryptography.c:142 src/cryptography.c:151
+#: src/cryptography.c:140 src/cryptography.c:149
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to generate new GPG key for signing"
 msgstr "יצירת מפתח GPG חדש לחתימה"
 
-#: src/cryptography.c:158
+#: src/cryptography.c:156
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to delete unfinished, generated key"
 msgstr "מחיקת מפתח ECC חלקי שנוצר"
 
-#: src/cryptography.c:198
+#: src/cryptography.c:194
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to load GPGME key data from file"
 msgstr "טעינת נתוני מפתח GPG מקובץ"
 
-#: src/cryptography.c:203
+#: src/cryptography.c:200
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to import GPG key from file"
 msgstr "ייבוא מפתח GPG מקובץ"
 
-#: src/cryptography.c:214
+#: src/cryptography.c:212
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create GPGME key data in memory"
 msgstr "יצירת נתוני מפתח GPGME בזיכרון"
 
-#: src/cryptography.c:219
+#: src/cryptography.c:218
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to export GPG key(s) to file"
@@ -247,19 +247,19 @@ msgctxt "GPGME Error"
 msgid "Failed to remove GPG key"
 msgstr "הסרת מפתח GPG"
 
-#: src/cryptography.c:314 src/cryptography.c:428
+#: src/cryptography.c:315 src/cryptography.c:427
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "הגדרת הפרוטוקול של הקשר GPGME ל־OpenPGP"
 
-#: src/cryptography.c:322
+#: src/cryptography.c:323
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from string"
 msgstr "יצירת נתוני קלט חדשים ל־GPGME ממחרוזת"
 
-#: src/cryptography.c:329 src/cryptography.c:452
+#: src/cryptography.c:329 src/cryptography.c:450
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME output data in memory"
@@ -283,60 +283,60 @@ msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from memory"
 msgstr "חתימת נתוני GPGME מהזיכרון"
 
-#: src/cryptography.c:362
+#: src/cryptography.c:361
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from memory"
 msgstr "אימות נתוני GPGME מהזיכרון"
 
-#: src/cryptography.c:404
+#: src/cryptography.c:403
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s הוסר כדי להתכונן לשכתוב"
 
-#: src/cryptography.c:435
+#: src/cryptography.c:434
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from file"
 msgstr "יצירת נתוני קלט ל־GPGME מקובץ"
 
-#: src/cryptography.c:444
+#: src/cryptography.c:442
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME input data"
 msgstr "הגדרת שם קובץ לנתוני קלט ל־GPGME"
 
-#: src/cryptography.c:461
+#: src/cryptography.c:459
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME output data"
 msgstr "הגדרת שם קובץ לנתוני פלט מ־GPGME"
 
-#: src/cryptography.c:473
+#: src/cryptography.c:470
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from file"
 msgstr "הצפנת נתוני GPGME מקובץ"
 
-#: src/cryptography.c:481
+#: src/cryptography.c:476
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from file"
 msgstr "פענוח נתוני GPGME מקובץ"
 
-#: src/cryptography.c:490
+#: src/cryptography.c:483
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from file"
 msgstr "חתימת נתוני GPG מקובץ"
 
-#: src/cryptography.c:497
+#: src/cryptography.c:489
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from file"
 msgstr "אימות נתוני GPGME מקובץ"
 
-#: src/cryptography.c:514
+#: src/cryptography.c:505
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "פתיחת קובץ הפלט נכשלה: %s"
