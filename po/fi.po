@@ -1,7 +1,7 @@
-# Occitan translation file for Lock
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.konstantintutsch.Lock package.
-# Quentin PAGÈS, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
@@ -9,702 +9,630 @@ msgstr ""
 "Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2024-11-23 15:32+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
-"Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
-"Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
-"oc/>\n"
-"Language: oc\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
+"fi/>\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.9-dev\n"
 
 #: src/main.c:32
 #, c-format
 msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
 msgid "GnuPG Made Easy %s or greater required. Using %s."
-msgstr "GnuPG Made Easy %s o superior es requerit. Utilizacion de %s."
+msgstr ""
 
 #. Details
 #: src/application.c:132 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
-msgstr "Tractar las donadas amb GnuPG"
+msgstr ""
 
 #: src/application.c:134
 msgctxt "Button linking to translations"
 msgid "Translate"
-msgstr "Traduire"
+msgstr ""
 
 #: src/application.c:137
 msgctxt "Button linking to source code"
 msgid "Develop"
-msgstr "Desvolopar"
+msgstr ""
 
 #: src/application.c:149
 msgid "translator-credits"
-msgstr "Quentin PAGÈS"
+msgstr ""
 
 #: src/application.c:154
 msgid "Dependencies"
-msgstr "Dependéncias"
+msgstr ""
 
 #: src/window.c:138
 msgid "Enter text …"
-msgstr "Picar de tèxte…"
+msgstr ""
 
 #: src/window.c:410
 msgid "Text copied"
-msgstr "Tèxte copiat"
+msgstr ""
 
 #: src/window.c:661 src/window.c:723
 msgid "Encryption failed"
-msgstr "Fracàs del chiframent"
+msgstr ""
 
 #: src/window.c:663
 msgid "Text encrypted"
-msgstr "Tèxte deschifrat"
+msgstr ""
 
 #: src/window.c:725
 msgid "File encrypted"
-msgstr "Fichièr deschifrat"
+msgstr ""
 
 #: src/window.c:781 src/window.c:839
 msgid "Decryption failed"
-msgstr "Fracàs del deschiframent"
+msgstr ""
 
 #: src/window.c:783
 msgid "Text decrypted"
-msgstr "Tèxte deschifrat"
+msgstr ""
 
 #: src/window.c:841
 msgid "File decrypted"
-msgstr "Fichièr deschifrat"
+msgstr ""
 
 #: src/window.c:897 src/window.c:955
 msgid "Signing failed"
-msgstr "Fracàs de la signatura"
+msgstr ""
 
 #: src/window.c:899
 msgid "Text signed"
-msgstr "Tèxte signat"
+msgstr ""
 
 #: src/window.c:957
 msgid "File signed"
-msgstr "Fichièr signat"
+msgstr ""
 
 #: src/window.c:1013 src/window.c:1071
 msgid "Verification failed"
-msgstr "Verificacion fracassada"
+msgstr ""
 
 #: src/window.c:1015
 msgid "Text verified"
-msgstr "Tèxte verificat"
+msgstr ""
 
 #: src/window.c:1073
 msgid "File verified"
-msgstr "Fichièr verificat"
+msgstr ""
 
 #: src/keydialog.c:350
 msgid "Import failed"
-msgstr "Fracàs de l'importacion"
+msgstr ""
 
 #: src/keydialog.c:352
 msgid "Keys imported"
-msgstr "Claus importadas"
+msgstr ""
 
 #: src/keydialog.c:421
 msgid "Generation failed"
-msgstr "Fracàs de generacion"
+msgstr ""
 
 #: src/keydialog.c:423
 msgid "Keypair generated"
-msgstr "Parelh de claus generat"
+msgstr ""
 
 #: src/keyrow.c:95
 msgid "Key does not expire"
-msgstr "La clau expira pas"
+msgstr ""
 
 #: src/keyrow.c:99
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
-msgstr "Expira lo %s a %s"
+msgstr ""
 
 #: src/keyrow.c:126
 msgid "Fingerprint copied"
-msgstr "Emprenta digital copiada"
+msgstr ""
 
 #: src/keyrow.c:220
 msgid "Export failed"
-msgstr "L'exportacion a fracassat"
+msgstr ""
 
 #: src/keyrow.c:222
 msgid "Key exported"
-msgstr "Clau exportada"
+msgstr ""
 
 #: src/keyrow.c:268
 msgid "Remove key and subkeys?"
-msgstr "Suprimir las claus e las sosclaus ?"
+msgstr ""
 
 #: src/keyrow.c:271
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
-msgstr "La supression de la clau %s se pòt desfar !"
+msgstr ""
 
 #: src/keyrow.c:274
 msgid "_Cancel"
-msgstr "_Anullar"
+msgstr ""
 
 #: src/keyrow.c:275
 msgid "_Remove"
-msgstr "_Levar"
+msgstr ""
 
 #: src/keyrow.c:316
 msgid "Removal failed"
-msgstr "Fracàs de la supression"
+msgstr ""
 
 #: src/keyrow.c:318
 msgid "Key removed"
-msgstr "Clau suprimida"
+msgstr ""
 
 #: src/cryptography.c:42 src/cryptography.c:77 src/cryptography.c:122
 #: src/cryptography.c:181 src/cryptography.c:303 src/cryptography.c:415
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME context"
-msgstr "la creacion d’un conèxte GPGME nòu"
+msgstr ""
 
 #: src/cryptography.c:48 src/cryptography.c:83 src/cryptography.c:128
 #: src/cryptography.c:187 src/cryptography.c:309 src/cryptography.c:421
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set protocol of GPGME context to OpenPGP"
-msgstr "la definicion del protocòl del contèxte GPGME per OpenPGP"
+msgstr ""
 
 #: src/cryptography.c:53
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to obtain key by fingerprint"
-msgstr "obténer la clau per emprenta digitala"
+msgstr ""
 
 #: src/cryptography.c:97
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to find key matching User ID"
-msgstr "la trobada d’una clau correspondenta a l’ID utilizaire"
+msgstr ""
 
 #: src/cryptography.c:140 src/cryptography.c:149
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to generate new GPG key for signing"
-msgstr "la generacion de la clau GPG novèla per signar"
+msgstr ""
 
 #: src/cryptography.c:156
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to delete unfinished, generated key"
-msgstr "la supression de la clau ECC generada non acabada"
+msgstr ""
 
 #: src/cryptography.c:194
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to load GPGME key data from file"
-msgstr "la mesa en memòria de las donadas clau GPGME a partir del fichièr"
+msgstr ""
 
 #: src/cryptography.c:200
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to import GPG key from file"
-msgstr "l’importacion de la clau GPG a partir del fichièr"
+msgstr ""
 
 #: src/cryptography.c:212
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create GPGME key data in memory"
-msgstr "la creacion de las donadas de la clau GPGME en memòria"
+msgstr ""
 
 #: src/cryptography.c:218
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to export GPG key(s) to file"
-msgstr "de l’exportacion de la(s) clau(s) dins un fichièr"
+msgstr ""
 
 #: src/cryptography.c:233
 #, c-format
 msgid "Failed to open export file: %s"
-msgstr "Fracàs de la dobertura del fichièr d’exportacion : %s"
+msgstr ""
 
 #: src/cryptography.c:263
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to get GPG key for removal"
-msgstr "obténer la clau GPG de suprimir"
+msgstr ""
 
 #: src/cryptography.c:268
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to remove GPG key"
-msgstr "la supression de la clau GPG"
+msgstr ""
 
 #: src/cryptography.c:315 src/cryptography.c:427
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set pinentry mode of GPGME context to ask"
-msgstr "la definicion del protocòl del contèxte GPGME per OpenPGP"
+msgstr ""
 
 #: src/cryptography.c:323
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from string"
 msgstr ""
-"la creacion de las donadas GPGME d’entrada novèlas a partir de la cadena de "
-"tèxte"
 
 #: src/cryptography.c:329 src/cryptography.c:450
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME output data in memory"
-msgstr "la creacion de las donadas GPGME de sortida en memòria"
+msgstr ""
 
 #: src/cryptography.c:339
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from memory"
 msgstr ""
-"la realizacion del chiframent de las donadas GPGME a partir de la memòria"
 
 #: src/cryptography.c:346
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from memory"
 msgstr ""
-"la realizacion del dechiframent de las donadas GPGME a partir de la memòria"
 
 #: src/cryptography.c:354
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from memory"
-msgstr "la signatura de las donadas GPGME a partir de la memòria"
+msgstr ""
 
 #: src/cryptography.c:361
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from memory"
-msgstr "la verificacion de las donadas GPGME a partir de la memòria"
+msgstr ""
 
 #: src/cryptography.c:403
 #, c-format
 msgid "Removed %s to prepare overwriting"
-msgstr "%s suprimit per preparar lo subrecargament"
+msgstr ""
 
 #: src/cryptography.c:434
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from file"
-msgstr "la creacion de las novèlas donadas GPGME d’entrada a partir del fichièr"
+msgstr ""
 
 #: src/cryptography.c:442
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME input data"
-msgstr "la definicion del nom de fichièr de las donadas GPGME d’entrada"
+msgstr ""
 
 #: src/cryptography.c:459
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME output data"
-msgstr "la definicion del nom de fichièr de las donadas GPGME de sortida"
+msgstr ""
 
 #: src/cryptography.c:470
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from file"
 msgstr ""
-"la realizacion del deschiframent de las donadas GPGME a partir del fichièr"
 
 #: src/cryptography.c:476
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from file"
-msgstr "la realizacion del chiframent de las donadas GPGME a partir del fichièr"
+msgstr ""
 
 #: src/cryptography.c:483
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from file"
-msgstr "la signatura de las donadas GPGME a partir del fichièr"
+msgstr ""
 
 #: src/cryptography.c:489
-#, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from file"
-msgstr "la verificacion de las donadas GPGME a partir del fichièr"
+msgstr ""
 
 #: src/cryptography.c:505
 #, c-format
 msgid "Failed to open output file: %s"
-msgstr "Fracàs de la dobertura del fichièr en sortida : %s"
+msgstr ""
 
 #: src/threading.c:35
 #, c-format
 msgctxt ""
 "First format specifier is a translation string marked as “Thread Error”"
 msgid "Failed to create %s thread: %s"
-msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
+msgstr ""
 
 #: src/threading.c:59
 msgctxt "Thread Error"
 msgid "text encryption"
-msgstr "chifrar lo tèxte"
+msgstr ""
 
 #: src/threading.c:81
 msgctxt "Thread Error"
 msgid "file encryption"
-msgstr "chifrar lo fichièr"
+msgstr ""
 
 #: src/threading.c:102
 msgctxt "Thread Error"
 msgid "text decryption"
-msgstr "deschifrar lo tèxte"
+msgstr ""
 
 #: src/threading.c:120
 msgctxt "Thread Error"
 msgid "file decryption"
-msgstr "deschifrar lo fichièr"
+msgstr ""
 
 #: src/threading.c:141
 msgctxt "Thread Error"
 msgid "text signing"
-msgstr "signar lo tèxte"
+msgstr ""
 
 #: src/threading.c:159
 msgctxt "Thread Error"
 msgid "file signing"
-msgstr "signar lo fichièr"
+msgstr ""
 
 #: src/threading.c:180
 msgctxt "Thread Error"
 msgid "text verification"
-msgstr "verificar lo tèxte"
+msgstr ""
 
 #: src/threading.c:198
 msgctxt "Thread Error"
 msgid "file verification"
-msgstr "verificar lo fichièr"
+msgstr ""
 
 #: src/threading.c:213
 msgctxt "Thread Error"
 msgid "key import"
-msgstr "importar la clau"
+msgstr ""
 
 #: src/threading.c:231
 msgctxt "Thread Error"
 msgid "key generation"
-msgstr "generar la clau"
+msgstr ""
 
 #: src/threading.c:246
 msgctxt "Thread Error"
 msgid "key export"
-msgstr "exportar la clau"
+msgstr ""
 
 #: src/threading.c:257
 msgctxt "Thread Error"
 msgid "key removal"
-msgstr "suprimir la clau"
+msgstr ""
 
 #: data/ui/window.blp:9 data/ui/window.blp:192
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
-msgstr "Verrolhar"
+msgstr ""
 
 #: data/ui/window.blp:29
 msgid "Copy"
-msgstr "Copiar"
+msgstr ""
 
 #: data/ui/window.blp:30
 msgid "Copy the text"
-msgstr "Copiar lo tèxte"
+msgstr ""
 
 #: data/ui/window.blp:33
 msgid "Cryptography operations"
-msgstr "Operacions de criptografia"
+msgstr ""
 
 #: data/ui/window.blp:50
 msgid "Processing …"
-msgstr "Tractament…"
+msgstr ""
 
 #: data/ui/window.blp:55
 msgid "Main Menu"
-msgstr "Menú principal"
+msgstr ""
 
 #: data/ui/window.blp:66
 msgid "Text"
-msgstr "Tèxte"
+msgstr ""
 
 #: data/ui/window.blp:84
 msgid "File"
-msgstr "Fichièr"
+msgstr ""
 
 #: data/ui/window.blp:93
 msgid "No files selected for processing"
-msgstr "Cap de fichièr pas seleccionat pel tractament"
+msgstr ""
 
 #: data/ui/window.blp:114
 msgid "Input File"
-msgstr "Fichièr en entrada"
+msgstr ""
 
 #: data/ui/window.blp:129
 msgid "Output File"
-msgstr "Fichièr en sortida"
+msgstr ""
 
 #: data/ui/window.blp:153 data/ui/window.blp:213
 msgid "Encrypt"
-msgstr "Chifrar"
+msgstr ""
 
 #: data/ui/window.blp:160 data/ui/window.blp:217
 msgid "Decrypt"
-msgstr "Deschifrar"
+msgstr ""
 
 #: data/ui/window.blp:167 data/ui/window.blp:223
 msgid "Sign"
-msgstr "Signar"
+msgstr ""
 
 #: data/ui/window.blp:174 data/ui/window.blp:227
 msgid "Verify"
-msgstr "Verificar"
+msgstr ""
 
 #: data/ui/window.blp:198 data/ui/keydialog.blp:30
 msgid "Manage keys"
-msgstr "Gerir las claus"
+msgstr ""
 
 #: data/ui/window.blp:204
 msgid "About Lock"
-msgstr "A prepaus de Lock"
+msgstr ""
 
 #: data/ui/encryptiondialog.blp:35
 msgid "Select key"
-msgstr "Seleccionar la clau"
+msgstr ""
 
 #: data/ui/encryptiondialog.blp:48 data/ui/keydialog.blp:49
 msgid "Refresh keys"
-msgstr "Actualizar las claus"
+msgstr ""
 
 #: data/ui/encryptiondialog.blp:68 data/ui/keydialog.blp:68
 msgid "No keys available"
-msgstr "Cap de claus pas disponiblas"
+msgstr ""
 
 #: data/ui/encryptiondialog.blp:69 data/ui/keydialog.blp:69
 msgid "Your GnuPG keyring does not contain any keys."
-msgstr "Vòstre trocèl GnuPG conten pas cap de claus."
+msgstr ""
 
 #: data/ui/keydialog.blp:89
 msgctxt "Import keys from files"
 msgid "Import"
-msgstr "Importar"
+msgstr ""
 
 #: data/ui/keydialog.blp:90
 msgid "Import keys from files"
-msgstr "Importar de claus a partir de fichièrs"
+msgstr ""
 
 #: data/ui/keydialog.blp:97
 msgid "Create a new keypair"
-msgstr "Crear un parelh de claus novèl"
+msgstr ""
 
 #: data/ui/keydialog.blp:110
 msgid "Generate keypair"
-msgstr "Generar un parelh de claus"
+msgstr ""
 
 #: data/ui/keydialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
-msgstr "Nom"
+msgstr ""
 
 #: data/ui/keydialog.blp:146
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
-msgstr "Adreça electronica"
+msgstr ""
 
 #: data/ui/keydialog.blp:151
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
-msgstr "Algoritme de signatura"
+msgstr ""
 
 #: data/ui/keydialog.blp:152
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
-msgstr "Clau"
+msgstr ""
 
 #: data/ui/keydialog.blp:160
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
-msgstr "Algoritme de chiframent"
+msgstr ""
 
 #: data/ui/keydialog.blp:161
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
-msgstr "Sosclau"
+msgstr ""
 
 #: data/ui/keydialog.blp:169
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
-msgstr "Expiracion"
+msgstr ""
 
 #: data/ui/keydialog.blp:170
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
-msgstr "Meses, desactivar amb zèro"
+msgstr ""
 
 #: data/ui/keydialog.blp:192
 msgctxt "Generate a new keypair"
 msgid "Generate"
-msgstr "Generar"
+msgstr ""
 
 #: data/ui/keydialog.blp:193
 msgid "Generate a new keypair"
-msgstr "Generar un parelh de claus novèl"
+msgstr ""
 
 #: data/ui/keyrow.blp:5
 msgid "User ID"
-msgstr "ID de l’utilizaire"
+msgstr ""
 
 #: data/ui/keyrow.blp:6
 msgid "Fingerprint"
-msgstr "Emprenta digitala"
+msgstr ""
 
 #: data/ui/keyrow.blp:7
 msgid "Expiry"
-msgstr "Expiracion"
+msgstr ""
 
 #: data/ui/keyrow.blp:20
 msgid "Remove key"
-msgstr "Levar la clau"
+msgstr ""
 
 #: data/ui/keyrow.blp:27
 msgid "Export public key to file"
-msgstr "Exportar la clau publica dins un fichièr"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
-msgstr "gpg;gnupg;criptografia;openpgp;chifrar;deschifrar;signar;verificar;"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
 msgid ""
 "Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
 "LibAdwaita GUI."
 msgstr ""
-"Lock es una interfàcia grafica per GnuPG (GPG) qu’utiliza una polida "
-"interfàcia utilizaire LibAdwaita."
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
 msgid "Process text and files:"
-msgstr "Tractar tèxte e fichièrs :"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:74
 msgid "Encryption"
-msgstr "Chiframent"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
 msgid "Decryption"
-msgstr "Deschiframent"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:14
 msgid "Signing"
-msgstr "Signatura"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:15
 msgid "Verification"
-msgstr "Verificacion"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:17
 msgid "Manage your GnuPG keyring:"
-msgstr "Gerissètz vòstre trocèl GnuPG :"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
 msgid "Generate new keypairs"
-msgstr "Generar un parelh de claus novèl"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
 msgid "Import keys"
-msgstr "Importar las claus"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:21
 msgid "Export public keys"
-msgstr "Exportar las claus publicas"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
 msgid "View expiry dates"
-msgstr "Afichar las datas d'expiracion"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
 msgid "Remove keys"
-msgstr "Suprimir las claus"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:46
 msgid "Light Appearance"
-msgstr "Aparéncia clara"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:50
 msgid "Dark Appearance"
-msgstr "Aparéncia escura"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:54
 msgid "Key Management"
-msgstr "Gestion de claus"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:58
 msgid "Keypair Generation"
-msgstr "Generacion del parelh de claus"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:62
 msgid "File processing"
-msgstr "Tractament de fichièr"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:66
 msgid "Plain text"
-msgstr "Tèxte brut"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "Key selection dialog"
-msgstr "Fenèstra de seleccion de clau"
-
-#, c-format
-#~ msgctxt "Error message constructor for failed GPGME operations"
-#~ msgid "Failed to %s: %s"
-#~ msgstr "Fracàs de %s : %s"
-
-#~ msgid "User ID dialog"
-#~ msgstr "Fenèstra ID utilizaire"
-
-#~ msgid "Title"
-#~ msgstr "Títol"
-
-#~ msgid "Encrypt for"
-#~ msgstr "Chifrar per"
-
-#~ msgid "Enter name or email …"
-#~ msgstr "Picatz un nom o email…"
-
-#, c-format
-#~ msgid "Failed to find key for User ID “%s”"
-#~ msgstr "Impossible de trobar una clau per l’ID utilizaire « %s »"
-
-#, c-format
-#~ msgctxt ""
-#~ "Formatter is either name, email or fingerprint of the public key used in "
-#~ "the encryption process."
-#~ msgid "Text encrypted for %s"
-#~ msgstr "Tèxte chifrat per %s"
-
-#, c-format
-#~ msgctxt ""
-#~ "Formatter is either name, email or fingerprint of the public key used in "
-#~ "the encryption process."
-#~ msgid "File encrypted for %s"
-#~ msgstr "Fichièr chifrat per %s"
-
-#, fuzzy, c-format
-#~ msgid "Could not find key for fingerprint %s to remove."
-#~ msgstr "Impossible de trobar la clau per l’ID utilizaire %s per supression."
+msgstr ""

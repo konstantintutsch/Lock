@@ -1,22 +1,22 @@
-# Chinese translation for Lock.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.konstantintutsch.Lock package.
-# lumingzh <lumingzh@qq.com>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
-"POT-Creation-Date: 2024-11-23 15:32+0100\n"
+"POT-Creation-Date: 2024-11-23 07:58+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
-"projects/Lock/Application/zh_Hans/>\n"
-"Language: zh_CN\n"
+"Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/Lock/Application/"
+"tr/>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.9-dev\n"
 
 #: src/main.c:32
@@ -29,681 +29,616 @@ msgstr ""
 #: src/application.c:132 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
-msgstr "使用 GnuPG 处理数据"
+msgstr ""
 
 #: src/application.c:134
 msgctxt "Button linking to translations"
 msgid "Translate"
-msgstr "翻译"
+msgstr "Çevir"
 
 #: src/application.c:137
 msgctxt "Button linking to source code"
 msgid "Develop"
-msgstr "开发"
+msgstr "Geliştir"
 
 #: src/application.c:149
 msgid "translator-credits"
-msgstr "lumingzh <lumingzh@qq.com>, 2024"
+msgstr ""
 
 #: src/application.c:154
 msgid "Dependencies"
-msgstr "依赖"
+msgstr "Bağımlılıklar"
 
 #: src/window.c:138
 msgid "Enter text …"
-msgstr "输入文本…"
+msgstr "Metin girin…"
 
 #: src/window.c:410
 msgid "Text copied"
-msgstr "文本已复制"
+msgstr "Metin kopyalandı"
 
 #: src/window.c:661 src/window.c:723
 msgid "Encryption failed"
-msgstr "加密失败"
+msgstr "Şifrelenemedi"
 
 #: src/window.c:663
-#, fuzzy
 msgid "Text encrypted"
-msgstr "文本已解密"
+msgstr "Metin şifrelendi"
 
 #: src/window.c:725
-#, fuzzy
 msgid "File encrypted"
-msgstr "文件已解密"
+msgstr "Dosya şifrelendi"
 
 #: src/window.c:781 src/window.c:839
 msgid "Decryption failed"
-msgstr "解密失败"
+msgstr "Şifre çözülemedi"
 
 #: src/window.c:783
 msgid "Text decrypted"
-msgstr "文本已解密"
+msgstr "Metin şifresi çözüldü"
 
 #: src/window.c:841
 msgid "File decrypted"
-msgstr "文件已解密"
+msgstr "Dosya şifresi çözüldü"
 
 #: src/window.c:897 src/window.c:955
 msgid "Signing failed"
-msgstr "签署失败"
+msgstr "İmzalanamadı"
 
 #: src/window.c:899
 msgid "Text signed"
-msgstr "文本已签署"
+msgstr "Metin imzalandı"
 
 #: src/window.c:957
 msgid "File signed"
-msgstr "文件已签署"
+msgstr "Dosya imzalandı"
 
 #: src/window.c:1013 src/window.c:1071
 msgid "Verification failed"
-msgstr "校验失败"
+msgstr "Doğrulanamadı"
 
 #: src/window.c:1015
 msgid "Text verified"
-msgstr "文本已校验"
+msgstr "Metin doğrulandı"
 
 #: src/window.c:1073
 msgid "File verified"
-msgstr "文件已校验"
+msgstr "Dosya doğrulandı"
 
 #: src/keydialog.c:350
 msgid "Import failed"
-msgstr "导入失败"
+msgstr "İçe aktarılamadı"
 
 #: src/keydialog.c:352
 msgid "Keys imported"
-msgstr "密钥已导入"
+msgstr "Anahtarlar içe aktarıldı"
 
 #: src/keydialog.c:421
 msgid "Generation failed"
-msgstr "生成失败"
+msgstr "Oluşturulamadı"
 
 #: src/keydialog.c:423
 msgid "Keypair generated"
-msgstr "密钥对已生成"
+msgstr "Anahtar eşi oluşturuldu"
 
 #: src/keyrow.c:95
 msgid "Key does not expire"
-msgstr "密钥未到期"
+msgstr "Anahtar yok"
 
 #: src/keyrow.c:99
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
-msgstr "到期时间 %s %s"
+msgstr "Son kullanım süresi: %s saat %s"
 
 #: src/keyrow.c:126
-#, fuzzy
 msgid "Fingerprint copied"
-msgstr "指纹"
+msgstr "Parmak izi kopyalandı"
 
 #: src/keyrow.c:220
 msgid "Export failed"
-msgstr "导出失败"
+msgstr "Dışa aktarılamadı"
 
 #: src/keyrow.c:222
 msgid "Key exported"
-msgstr "密钥已导出"
+msgstr "Anahtar dışa aktarıldı"
 
 #: src/keyrow.c:268
 msgid "Remove key and subkeys?"
-msgstr "移除密钥和子密钥吗？"
+msgstr "Anahtar ve alt anahtarlar kaldırılsın mı?"
 
 #: src/keyrow.c:271
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
-msgstr "对 %s 密钥的移除无法撤消！"
+msgstr "%s anahtarının kaldırılması geri alınamaz!"
 
 #: src/keyrow.c:274
 msgid "_Cancel"
-msgstr "取消(_C)"
+msgstr "İ_ptal"
 
 #: src/keyrow.c:275
 msgid "_Remove"
-msgstr "移除(_R)"
+msgstr "_Kaldır"
 
 #: src/keyrow.c:316
 msgid "Removal failed"
-msgstr "移除失败"
+msgstr "Kaldırılamadı"
 
 #: src/keyrow.c:318
 msgid "Key removed"
-msgstr "密钥已移除"
+msgstr "Anahtar silindi"
 
-#: src/cryptography.c:42 src/cryptography.c:77 src/cryptography.c:122
-#: src/cryptography.c:181 src/cryptography.c:303 src/cryptography.c:415
-#, fuzzy
-msgctxt "GPGME Error"
-msgid "Failed to create new GPGME context"
-msgstr "创建新 GPGME 上下文"
+#: src/cryptography.c:16
+#, c-format
+msgctxt "Error message constructor for failed GPGME operations"
+msgid "Failed to %s: %s"
+msgstr "%s başarısız oldu: %s"
 
-#: src/cryptography.c:48 src/cryptography.c:83 src/cryptography.c:128
-#: src/cryptography.c:187 src/cryptography.c:309 src/cryptography.c:421
-#, fuzzy
+#: src/cryptography.c:41 src/cryptography.c:73 src/cryptography.c:115
+#: src/cryptography.c:171 src/cryptography.c:287 src/cryptography.c:391
 msgctxt "GPGME Error"
-msgid "Failed to set protocol of GPGME context to OpenPGP"
-msgstr "设置 GPGME 上下文协议为 OpenPGP"
-
-#: src/cryptography.c:53
-msgctxt "GPGME Error"
-msgid "Failed to obtain key by fingerprint"
+msgid "create new GPGME context"
 msgstr ""
 
-#: src/cryptography.c:97
-#, fuzzy
+#: src/cryptography.c:46 src/cryptography.c:78 src/cryptography.c:120
+#: src/cryptography.c:176 src/cryptography.c:292 src/cryptography.c:396
 msgctxt "GPGME Error"
-msgid "Failed to find key matching User ID"
-msgstr "查找匹配用户标识的密钥"
+msgid "set protocol of GPGME context to OpenPGP"
+msgstr ""
 
-#: src/cryptography.c:140 src/cryptography.c:149
-#, fuzzy
+#: src/cryptography.c:50
 msgctxt "GPGME Error"
-msgid "Failed to generate new GPG key for signing"
-msgstr "生成用于签署的新 GPG 密钥"
+msgid "obtain key by fingerprint"
+msgstr ""
 
-#: src/cryptography.c:156
-#, fuzzy
+#: src/cryptography.c:91
 msgctxt "GPGME Error"
-msgid "Failed to delete unfinished, generated key"
-msgstr "删除未完成，已生成 ECC 密钥"
+msgid "find key matching User ID"
+msgstr ""
 
-#: src/cryptography.c:194
-#, fuzzy
+#: src/cryptography.c:131 src/cryptography.c:140
 msgctxt "GPGME Error"
-msgid "Failed to load GPGME key data from file"
-msgstr "从文件加载 GPGME 密钥数据"
+msgid "generate new GPG key for signing"
+msgstr ""
 
-#: src/cryptography.c:200
-#, fuzzy
+#: src/cryptography.c:147
 msgctxt "GPGME Error"
-msgid "Failed to import GPG key from file"
-msgstr "从文件导入 GPG 密钥"
+msgid "delete unfinished, generated ECC key"
+msgstr ""
 
-#: src/cryptography.c:212
-#, fuzzy
+#: src/cryptography.c:182
 msgctxt "GPGME Error"
-msgid "Failed to create GPGME key data in memory"
-msgstr "在内存中创建 GPGME 密钥数据"
+msgid "load GPGME key data from file"
+msgstr ""
 
-#: src/cryptography.c:218
-#, fuzzy
+#: src/cryptography.c:188
 msgctxt "GPGME Error"
-msgid "Failed to export GPG key(s) to file"
-msgstr "导出 GPG 密钥至文件"
+msgid "import GPG key from file"
+msgstr ""
 
-#: src/cryptography.c:233
+#: src/cryptography.c:199
+msgctxt "GPGME Error"
+msgid "create GPGME key data in memory"
+msgstr ""
+
+#: src/cryptography.c:205
+msgctxt "GPGME Error"
+msgid "export GPG key(s) to file"
+msgstr ""
+
+#: src/cryptography.c:220
 #, c-format
 msgid "Failed to open export file: %s"
-msgstr "打开导出文件失败：%s"
+msgstr ""
 
-#: src/cryptography.c:263
-#, fuzzy
+#: src/cryptography.c:249
 msgctxt "GPGME Error"
-msgid "Failed to get GPG key for removal"
-msgstr "获取 GPG 密钥来移除"
+msgid "get GPG key for removal"
+msgstr ""
 
-#: src/cryptography.c:268
-#, fuzzy
+#: src/cryptography.c:253
 msgctxt "GPGME Error"
-msgid "Failed to remove GPG key"
-msgstr "移除 GPG 密钥"
+msgid "remove GPG key"
+msgstr ""
 
-#: src/cryptography.c:315 src/cryptography.c:427
-#, fuzzy
+#: src/cryptography.c:297 src/cryptography.c:401
 msgctxt "GPGME Error"
-msgid "Failed to set pinentry mode of GPGME context to ask"
-msgstr "设置 GPGME 上下文协议为 OpenPGP"
+msgid "set pinentry mode of GPGME context to ask"
+msgstr ""
 
-#: src/cryptography.c:323
-#, fuzzy
+#: src/cryptography.c:305
 msgctxt "GPGME Error"
-msgid "Failed to create new GPGME input data from string"
-msgstr "从字符串创建新 GPGME 输入数据"
+msgid "create new GPGME input data from string"
+msgstr ""
 
-#: src/cryptography.c:329 src/cryptography.c:450
-#, fuzzy
+#: src/cryptography.c:310 src/cryptography.c:422
 msgctxt "GPGME Error"
-msgid "Failed to create new GPGME output data in memory"
-msgstr "在内存中创建新 GPGME 输出数据"
+msgid "create new GPGME output data in memory"
+msgstr ""
 
-#: src/cryptography.c:339
-#, fuzzy
+#: src/cryptography.c:319
 msgctxt "GPGME Error"
-msgid "Failed to encrypt GPGME data from memory"
-msgstr "从内存加密 GPGME 数据"
+msgid "encrypt GPGME data from memory"
+msgstr ""
 
-#: src/cryptography.c:346
-#, fuzzy
+#: src/cryptography.c:325
 msgctxt "GPGME Error"
-msgid "Failed to decrypt GPGME data from memory"
-msgstr "从内存解密 GPGME 数据"
+msgid "decrypt GPGME data from memory"
+msgstr ""
 
-#: src/cryptography.c:354
-#, fuzzy
+#: src/cryptography.c:333
 msgctxt "GPGME Error"
-msgid "Failed to sign GPGME data from memory"
-msgstr "从内存签署 GPGME 数据"
+msgid "sign GPGME data from memory"
+msgstr ""
 
-#: src/cryptography.c:361
-#, fuzzy
+#: src/cryptography.c:338
 msgctxt "GPGME Error"
-msgid "Failed to verify GPGME data from memory"
-msgstr "从内存校验 GPGME 数据"
+msgid "verify GPGME data from memory"
+msgstr ""
 
-#: src/cryptography.c:403
+#: src/cryptography.c:380
 #, c-format
 msgid "Removed %s to prepare overwriting"
-msgstr "已移除 %s 来准备覆盖"
+msgstr ""
 
-#: src/cryptography.c:434
-#, fuzzy
+#: src/cryptography.c:408
 msgctxt "GPGME Error"
-msgid "Failed to create new GPGME input data from file"
-msgstr "从文件创建新 GPGME 输入数据"
+msgid "create new GPGME input data from file"
+msgstr ""
 
-#: src/cryptography.c:442
-#, fuzzy
+#: src/cryptography.c:415
 msgctxt "GPGME Error"
-msgid "Failed to set file name of GPGME input data"
-msgstr "设置 GPGME 输入数据的文件名"
+msgid "set file name of GPGME input data"
+msgstr ""
 
-#: src/cryptography.c:459
-#, fuzzy
+#: src/cryptography.c:430
 msgctxt "GPGME Error"
-msgid "Failed to set file name of GPGME output data"
-msgstr "设置 GPGME 输出数据的文件名"
+msgid "set file name of GPGME output data"
+msgstr ""
 
-#: src/cryptography.c:470
-#, fuzzy
+#: src/cryptography.c:440
 msgctxt "GPGME Error"
-msgid "Failed to encrypt GPGME data from file"
-msgstr "从文件加密 GPGME 数据"
+msgid "encrypt GPGME data from file"
+msgstr ""
 
-#: src/cryptography.c:476
-#, fuzzy
+#: src/cryptography.c:445
 msgctxt "GPGME Error"
-msgid "Failed to decrypt GPGME data from file"
-msgstr "从文件解密 GPGME 数据"
+msgid "decrypt GPGME data from file"
+msgstr ""
 
-#: src/cryptography.c:483
-#, fuzzy
+#: src/cryptography.c:452
 msgctxt "GPGME Error"
-msgid "Failed to sign GPGME data from file"
-msgstr "从文件签署 GPGME 数据"
+msgid "sign GPGME data from file"
+msgstr ""
 
-#: src/cryptography.c:489
-#, fuzzy
+#: src/cryptography.c:457
 msgctxt "GPGME Error"
-msgid "Failed to verify GPGME data from file"
-msgstr "从文件校验 GPGME 数据"
+msgid "verify GPGME data from file"
+msgstr ""
 
-#: src/cryptography.c:505
+#: src/cryptography.c:472
 #, c-format
 msgid "Failed to open output file: %s"
-msgstr "打开输出文件失败：%s"
+msgstr ""
 
 #: src/threading.c:35
 #, c-format
 msgctxt ""
 "First format specifier is a translation string marked as “Thread Error”"
 msgid "Failed to create %s thread: %s"
-msgstr "创建 %s 线程失败：%s"
+msgstr ""
 
 #: src/threading.c:59
 msgctxt "Thread Error"
 msgid "text encryption"
-msgstr "文本加密"
+msgstr ""
 
 #: src/threading.c:81
 msgctxt "Thread Error"
 msgid "file encryption"
-msgstr "文件加密"
+msgstr ""
 
 #: src/threading.c:102
 msgctxt "Thread Error"
 msgid "text decryption"
-msgstr "文本解密"
+msgstr ""
 
 #: src/threading.c:120
 msgctxt "Thread Error"
 msgid "file decryption"
-msgstr "文件解密"
+msgstr ""
 
 #: src/threading.c:141
 msgctxt "Thread Error"
 msgid "text signing"
-msgstr "文本签署"
+msgstr ""
 
 #: src/threading.c:159
 msgctxt "Thread Error"
 msgid "file signing"
-msgstr "文件签署"
+msgstr ""
 
 #: src/threading.c:180
 msgctxt "Thread Error"
 msgid "text verification"
-msgstr "文本校验"
+msgstr ""
 
 #: src/threading.c:198
 msgctxt "Thread Error"
 msgid "file verification"
-msgstr "文件校验"
+msgstr ""
 
 #: src/threading.c:213
 msgctxt "Thread Error"
 msgid "key import"
-msgstr "密钥导入"
+msgstr ""
 
 #: src/threading.c:231
 msgctxt "Thread Error"
 msgid "key generation"
-msgstr "密钥生成"
+msgstr ""
 
 #: src/threading.c:246
 msgctxt "Thread Error"
 msgid "key export"
-msgstr "密钥导出"
+msgstr ""
 
 #: src/threading.c:257
 msgctxt "Thread Error"
 msgid "key removal"
-msgstr "密钥移除"
+msgstr ""
 
 #: data/ui/window.blp:9 data/ui/window.blp:192
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
-msgstr "Lock"
+msgstr ""
 
 #: data/ui/window.blp:29
 msgid "Copy"
-msgstr "复制"
+msgstr ""
 
 #: data/ui/window.blp:30
 msgid "Copy the text"
-msgstr "复制文本"
+msgstr ""
 
 #: data/ui/window.blp:33
 msgid "Cryptography operations"
-msgstr "加密操作"
+msgstr ""
 
 #: data/ui/window.blp:50
-#, fuzzy
 msgid "Processing …"
-msgstr "文件处理"
+msgstr ""
 
 #: data/ui/window.blp:55
 msgid "Main Menu"
-msgstr "主菜单"
+msgstr ""
 
 #: data/ui/window.blp:66
 msgid "Text"
-msgstr "文本"
+msgstr ""
 
 #: data/ui/window.blp:84
 msgid "File"
-msgstr "文件"
+msgstr ""
 
 #: data/ui/window.blp:93
 msgid "No files selected for processing"
-msgstr "未选择要处理的文件"
+msgstr ""
 
 #: data/ui/window.blp:114
 msgid "Input File"
-msgstr "输入文件"
+msgstr ""
 
 #: data/ui/window.blp:129
 msgid "Output File"
-msgstr "输出文件"
+msgstr ""
 
 #: data/ui/window.blp:153 data/ui/window.blp:213
 msgid "Encrypt"
-msgstr "加密"
+msgstr ""
 
 #: data/ui/window.blp:160 data/ui/window.blp:217
 msgid "Decrypt"
-msgstr "解密"
+msgstr ""
 
 #: data/ui/window.blp:167 data/ui/window.blp:223
 msgid "Sign"
-msgstr "签署"
+msgstr ""
 
 #: data/ui/window.blp:174 data/ui/window.blp:227
 msgid "Verify"
-msgstr "校验"
+msgstr ""
 
 #: data/ui/window.blp:198 data/ui/keydialog.blp:30
 msgid "Manage keys"
-msgstr "管理密钥"
+msgstr ""
 
 #: data/ui/window.blp:204
 msgid "About Lock"
-msgstr "关于 Lock"
+msgstr ""
 
 #: data/ui/encryptiondialog.blp:35
-#, fuzzy
 msgid "Select key"
-msgstr "移除密钥"
+msgstr ""
 
 #: data/ui/encryptiondialog.blp:48 data/ui/keydialog.blp:49
 msgid "Refresh keys"
-msgstr "刷新密钥"
+msgstr ""
 
 #: data/ui/encryptiondialog.blp:68 data/ui/keydialog.blp:68
 msgid "No keys available"
-msgstr "无可用密钥"
+msgstr ""
 
 #: data/ui/encryptiondialog.blp:69 data/ui/keydialog.blp:69
 msgid "Your GnuPG keyring does not contain any keys."
-msgstr "您的 GnuPG 密钥串不包含任何密钥。"
+msgstr ""
 
 #: data/ui/keydialog.blp:89
 msgctxt "Import keys from files"
 msgid "Import"
-msgstr "导入"
+msgstr ""
 
 #: data/ui/keydialog.blp:90
 msgid "Import keys from files"
-msgstr "从文件导入密钥"
+msgstr ""
 
 #: data/ui/keydialog.blp:97
 msgid "Create a new keypair"
-msgstr "创建密钥对"
+msgstr ""
 
 #: data/ui/keydialog.blp:110
 msgid "Generate keypair"
-msgstr "生成密钥对"
+msgstr ""
 
 #: data/ui/keydialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
-msgstr "姓名"
+msgstr ""
 
 #: data/ui/keydialog.blp:146
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
-msgstr "电子邮箱"
+msgstr ""
 
 #: data/ui/keydialog.blp:151
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
-msgstr "签署算法"
+msgstr ""
 
 #: data/ui/keydialog.blp:152
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
-msgstr "密钥"
+msgstr ""
 
 #: data/ui/keydialog.blp:160
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
-msgstr "加密算法"
+msgstr ""
 
 #: data/ui/keydialog.blp:161
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
-msgstr "子密钥"
+msgstr ""
 
 #: data/ui/keydialog.blp:169
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
-msgstr "到期"
+msgstr ""
 
 #: data/ui/keydialog.blp:170
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
-msgstr "单位为月，输入 0 可禁用"
+msgstr ""
 
 #: data/ui/keydialog.blp:192
 msgctxt "Generate a new keypair"
 msgid "Generate"
-msgstr "生成"
+msgstr ""
 
 #: data/ui/keydialog.blp:193
 msgid "Generate a new keypair"
-msgstr "生成密钥对"
+msgstr ""
 
 #: data/ui/keyrow.blp:5
 msgid "User ID"
-msgstr "用户标识"
+msgstr ""
 
 #: data/ui/keyrow.blp:6
 msgid "Fingerprint"
-msgstr "指纹"
+msgstr ""
 
 #: data/ui/keyrow.blp:7
 msgid "Expiry"
-msgstr "到期"
+msgstr ""
 
 #: data/ui/keyrow.blp:20
 msgid "Remove key"
-msgstr "移除密钥"
+msgstr ""
 
 #: data/ui/keyrow.blp:27
 msgid "Export public key to file"
-msgstr "导出公钥至文件"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr ""
-"gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;密码学;加密;解密;"
-"签名;签署;校验;验证;"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
 msgid ""
 "Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
 "LibAdwaita GUI."
-msgstr "Lock 是使用了漂亮的 LibAdwaita 图形用户界面用于 GnuPG（GPG）的图形前端。"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
 msgid "Process text and files:"
-msgstr "处理文本和文件："
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:74
 msgid "Encryption"
-msgstr "加密"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
 msgid "Decryption"
-msgstr "解密"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:14
 msgid "Signing"
-msgstr "签署"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:15
 msgid "Verification"
-msgstr "校验"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:17
 msgid "Manage your GnuPG keyring:"
-msgstr "管理您的 GnuPG 密钥串："
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
 msgid "Generate new keypairs"
-msgstr "生成密钥对"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
 msgid "Import keys"
-msgstr "导入密钥"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:21
 msgid "Export public keys"
-msgstr "导出公钥"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
 msgid "View expiry dates"
-msgstr "查看到期日期"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
 msgid "Remove keys"
-msgstr "移除密钥"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:46
 msgid "Light Appearance"
-msgstr "亮色外观"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:50
 msgid "Dark Appearance"
-msgstr "暗色外观"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:54
 msgid "Key Management"
-msgstr "密钥管理"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:58
 msgid "Keypair Generation"
-msgstr "密钥对生成"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:62
 msgid "File processing"
-msgstr "文件处理"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:66
 msgid "Plain text"
-msgstr "纯文本"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "Key selection dialog"
 msgstr ""
-
-#, c-format
-#~ msgctxt "Error message constructor for failed GPGME operations"
-#~ msgid "Failed to %s: %s"
-#~ msgstr "%s 失败：%s"
-
-#~ msgid "User ID dialog"
-#~ msgstr "用户标识对话框"
-
-#~ msgid "Title"
-#~ msgstr "标题"
-
-#~ msgid "Encrypt for"
-#~ msgstr "加密用于"
-
-#~ msgid "Enter name or email …"
-#~ msgstr "输入姓名或电子邮箱…"
-
-#, c-format
-#~ msgid "Failed to find key for User ID “%s”"
-#~ msgstr "查找用于用户标识“%s”的密钥失败"
-
-#, c-format
-#~ msgctxt ""
-#~ "Formatter is either name, email or fingerprint of the public key used in "
-#~ "the encryption process."
-#~ msgid "Text encrypted for %s"
-#~ msgstr "文本已为 %s 加密"
-
-#, c-format
-#~ msgctxt ""
-#~ "Formatter is either name, email or fingerprint of the public key used in "
-#~ "the encryption process."
-#~ msgid "File encrypted for %s"
-#~ msgstr "文件已为 %s 加密"
-
-#, fuzzy, c-format
-#~ msgid "Could not find key for fingerprint %s to remove."
-#~ msgstr "无法找到用户标识 %s 的密钥来移除。"
