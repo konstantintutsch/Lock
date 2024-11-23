@@ -6,17 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2024-11-23 15:32+0100\n"
-"PO-Revision-Date: 2024-10-29 19:06+0800\n"
-"Last-Translator: lumingzh <lumingzh@qq.com>\n"
-"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
+"PO-Revision-Date: 2024-11-23 17:35+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/Lock/Application/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Gtranslator 47.0\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -593,8 +594,7 @@ msgstr ""
 msgid ""
 "Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
 "LibAdwaita GUI."
-msgstr ""
-"Lock 是使用了漂亮的 LibAdwaita 图形用户界面用于 GnuPG（GPG）的图形前端。"
+msgstr "Lock 是使用了漂亮的 LibAdwaita 图形用户界面用于 GnuPG（GPG）的图形前端。"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
 msgid "Process text and files:"
