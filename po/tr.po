@@ -6,15 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2024-11-23 07:58+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-11-23 14:03+0000\n"
+"Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/Lock/Application/"
+"tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -31,12 +34,12 @@ msgstr ""
 #: src/application.c:134
 msgctxt "Button linking to translations"
 msgid "Translate"
-msgstr ""
+msgstr "Çevir"
 
 #: src/application.c:137
 msgctxt "Button linking to source code"
 msgid "Develop"
-msgstr ""
+msgstr "Geliştir"
 
 #: src/application.c:149
 msgid "translator-credits"
@@ -44,132 +47,132 @@ msgstr ""
 
 #: src/application.c:154
 msgid "Dependencies"
-msgstr ""
+msgstr "Bağımlılıklar"
 
 #: src/window.c:138
 msgid "Enter text …"
-msgstr ""
+msgstr "Metin girin…"
 
 #: src/window.c:410
 msgid "Text copied"
-msgstr ""
+msgstr "Metin kopyalandı"
 
 #: src/window.c:661 src/window.c:723
 msgid "Encryption failed"
-msgstr ""
+msgstr "Şifrelenemedi"
 
 #: src/window.c:663
 msgid "Text encrypted"
-msgstr ""
+msgstr "Metin şifrelendi"
 
 #: src/window.c:725
 msgid "File encrypted"
-msgstr ""
+msgstr "Dosya şifrelendi"
 
 #: src/window.c:781 src/window.c:839
 msgid "Decryption failed"
-msgstr ""
+msgstr "Şifre çözülemedi"
 
 #: src/window.c:783
 msgid "Text decrypted"
-msgstr ""
+msgstr "Metin şifresi çözüldü"
 
 #: src/window.c:841
 msgid "File decrypted"
-msgstr ""
+msgstr "Dosya şifresi çözüldü"
 
 #: src/window.c:897 src/window.c:955
 msgid "Signing failed"
-msgstr ""
+msgstr "İmzalanamadı"
 
 #: src/window.c:899
 msgid "Text signed"
-msgstr ""
+msgstr "Metin imzalandı"
 
 #: src/window.c:957
 msgid "File signed"
-msgstr ""
+msgstr "Dosya imzalandı"
 
 #: src/window.c:1013 src/window.c:1071
 msgid "Verification failed"
-msgstr ""
+msgstr "Doğrulanamadı"
 
 #: src/window.c:1015
 msgid "Text verified"
-msgstr ""
+msgstr "Metin doğrulandı"
 
 #: src/window.c:1073
 msgid "File verified"
-msgstr ""
+msgstr "Dosya doğrulandı"
 
 #: src/keydialog.c:350
 msgid "Import failed"
-msgstr ""
+msgstr "İçe aktarılamadı"
 
 #: src/keydialog.c:352
 msgid "Keys imported"
-msgstr ""
+msgstr "Anahtarlar içe aktarıldı"
 
 #: src/keydialog.c:421
 msgid "Generation failed"
-msgstr ""
+msgstr "Oluşturulamadı"
 
 #: src/keydialog.c:423
 msgid "Keypair generated"
-msgstr ""
+msgstr "Anahtar eşi oluşturuldu"
 
 #: src/keyrow.c:95
 msgid "Key does not expire"
-msgstr ""
+msgstr "Anahtar yok"
 
 #: src/keyrow.c:99
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
-msgstr ""
+msgstr "Son kullanım süresi: %s saat %s"
 
 #: src/keyrow.c:126
 msgid "Fingerprint copied"
-msgstr ""
+msgstr "Parmak izi kopyalandı"
 
 #: src/keyrow.c:220
 msgid "Export failed"
-msgstr ""
+msgstr "Dışa aktarılamadı"
 
 #: src/keyrow.c:222
 msgid "Key exported"
-msgstr ""
+msgstr "Anahtar dışa aktarıldı"
 
 #: src/keyrow.c:268
 msgid "Remove key and subkeys?"
-msgstr ""
+msgstr "Anahtar ve alt anahtarlar kaldırılsın mı?"
 
 #: src/keyrow.c:271
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
-msgstr ""
+msgstr "%s anahtarının kaldırılması geri alınamaz!"
 
 #: src/keyrow.c:274
 msgid "_Cancel"
-msgstr ""
+msgstr "İ_ptal"
 
 #: src/keyrow.c:275
 msgid "_Remove"
-msgstr ""
+msgstr "_Kaldır"
 
 #: src/keyrow.c:316
 msgid "Removal failed"
-msgstr ""
+msgstr "Kaldırılamadı"
 
 #: src/keyrow.c:318
 msgid "Key removed"
-msgstr ""
+msgstr "Anahtar silindi"
 
 #: src/cryptography.c:16
 #, c-format
 msgctxt "Error message constructor for failed GPGME operations"
 msgid "Failed to %s: %s"
-msgstr ""
+msgstr "%s başarısız oldu: %s"
 
 #: src/cryptography.c:41 src/cryptography.c:73 src/cryptography.c:115
 #: src/cryptography.c:171 src/cryptography.c:287 src/cryptography.c:391
