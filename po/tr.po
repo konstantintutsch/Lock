@@ -23,13 +23,13 @@ msgstr ""
 #, c-format
 msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
 msgid "GnuPG Made Easy %s or greater required. Using %s."
-msgstr ""
+msgstr "GnuPG Made Easy için %s veya üstü gereklidir. %s kullanarak."
 
 #. Details
 #: src/application.c:132 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
-msgstr ""
+msgstr "GnuPG ile veri işleme"
 
 #: src/application.c:134
 msgctxt "Button linking to translations"
@@ -43,81 +43,85 @@ msgstr "Geliştir"
 
 #: src/application.c:149
 msgid "translator-credits"
-msgstr ""
+msgstr "Sabri Ünal <yakushabb@gmail.com>"
 
 #: src/application.c:154
 msgid "Dependencies"
 msgstr "Bağımlılıklar"
 
-#: src/window.c:144
+#: src/window.c:144 src/window.c:139 src/window.c:138
 msgid "Enter text …"
 msgstr "Metin girin…"
 
-#: src/window.c:417
+#: src/window.c:417 src/window.c:412 src/window.c:410
 msgid "Text copied"
 msgstr "Metin kopyalandı"
 
-#: src/window.c:670 src/window.c:732
+#: src/window.c:670 src/window.c:732 src/window.c:663 src/window.c:725
+#: src/window.c:661 src/window.c:723
 msgid "Encryption failed"
 msgstr "Şifrelenemedi"
 
-#: src/window.c:672
+#: src/window.c:672 src/window.c:665 src/window.c:663
 msgid "Text encrypted"
 msgstr "Metin şifrelendi"
 
-#: src/window.c:734
+#: src/window.c:734 src/window.c:727 src/window.c:725
 msgid "File encrypted"
 msgstr "Dosya şifrelendi"
 
-#: src/window.c:790 src/window.c:848
+#: src/window.c:790 src/window.c:848 src/window.c:783 src/window.c:841
+#: src/window.c:781 src/window.c:839
 msgid "Decryption failed"
 msgstr "Şifre çözülemedi"
 
-#: src/window.c:792
+#: src/window.c:792 src/window.c:785 src/window.c:783
 msgid "Text decrypted"
 msgstr "Metin şifresi çözüldü"
 
-#: src/window.c:850
+#: src/window.c:850 src/window.c:843 src/window.c:841
 msgid "File decrypted"
 msgstr "Dosya şifresi çözüldü"
 
-#: src/window.c:947 src/window.c:1009
+#: src/window.c:947 src/window.c:1009 src/window.c:899 src/window.c:957
+#: src/window.c:897 src/window.c:955
 msgid "Signing failed"
 msgstr "İmzalanamadı"
 
-#: src/window.c:949
+#: src/window.c:949 src/window.c:901 src/window.c:899
 msgid "Text signed"
 msgstr "Metin imzalandı"
 
-#: src/window.c:1011
+#: src/window.c:1011 src/window.c:959 src/window.c:957
 msgid "File signed"
 msgstr "Dosya imzalandı"
 
-#: src/window.c:1067 src/window.c:1125
+#: src/window.c:1067 src/window.c:1125 src/window.c:1015 src/window.c:1073
+#: src/window.c:1013 src/window.c:1071
 msgid "Verification failed"
 msgstr "Doğrulanamadı"
 
-#: src/window.c:1069
+#: src/window.c:1069 src/window.c:1017 src/window.c:1015
 msgid "Text verified"
 msgstr "Metin doğrulandı"
 
-#: src/window.c:1127
+#: src/window.c:1127 src/window.c:1075 src/window.c:1073
 msgid "File verified"
 msgstr "Dosya doğrulandı"
 
-#: src/managementdialog.c:364
+#: src/managementdialog.c:364 src/keydialog.c:350
 msgid "Import failed"
 msgstr "İçe aktarılamadı"
 
-#: src/managementdialog.c:366
+#: src/managementdialog.c:366 src/keydialog.c:352
 msgid "Keys imported"
 msgstr "Anahtarlar içe aktarıldı"
 
-#: src/managementdialog.c:437
+#: src/managementdialog.c:437 src/keydialog.c:421
 msgid "Generation failed"
 msgstr "Oluşturulamadı"
 
-#: src/managementdialog.c:439
+#: src/managementdialog.c:439 src/keydialog.c:423
 msgid "Keypair generated"
 msgstr "Anahtar eşi oluşturuldu"
 
@@ -129,7 +133,7 @@ msgstr "Anahtar yok"
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
-msgstr "Son kullanım süresi: %s saat %s"
+msgstr "Geçerlilik sonu: %s saat %s"
 
 #: src/keyrow.c:126
 msgid "Fingerprint copied"
@@ -168,479 +172,483 @@ msgstr "Kaldırılamadı"
 msgid "Key removed"
 msgstr "Anahtar silindi"
 
-#: src/cryptography.c:42 src/cryptography.c:78 src/cryptography.c:124
-#: src/cryptography.c:185 src/cryptography.c:302 src/cryptography.c:422
+#: src/cryptography.c:42 src/cryptography.c:77 src/cryptography.c:122
+#: src/cryptography.c:181 src/cryptography.c:303 src/cryptography.c:415
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME context"
-msgstr ""
+msgstr "Yeni GPGME bağlamı oluşturulamadı"
 
-#: src/cryptography.c:48 src/cryptography.c:84 src/cryptography.c:130
-#: src/cryptography.c:191 src/cryptography.c:308 src/cryptography.c:428
+#: src/cryptography.c:48 src/cryptography.c:83 src/cryptography.c:128
+#: src/cryptography.c:187 src/cryptography.c:309 src/cryptography.c:421
 msgctxt "GPGME Error"
 msgid "Failed to set protocol of GPGME context to OpenPGP"
-msgstr ""
+msgstr "GPGME bağlamının protokolü OpenPGP olarak ayarlanamadı"
 
 #: src/cryptography.c:53
 msgctxt "GPGME Error"
 msgid "Failed to obtain key by fingerprint"
-msgstr ""
+msgstr "Parmak izi ile anahtar alınamadı"
 
-#: src/cryptography.c:98
+#: src/cryptography.c:97
 msgctxt "GPGME Error"
 msgid "Failed to find key matching User ID"
-msgstr ""
+msgstr "Kullanıcı Kimliği ile eşleşen anahtar bulunamadı"
 
-#: src/cryptography.c:142 src/cryptography.c:151
+#: src/cryptography.c:140 src/cryptography.c:149
 msgctxt "GPGME Error"
 msgid "Failed to generate new GPG key for signing"
-msgstr ""
+msgstr "İmzalama için yeni GPG anahtarı oluşturulamadı"
 
-#: src/cryptography.c:158
+#: src/cryptography.c:156
 msgctxt "GPGME Error"
 msgid "Failed to delete unfinished, generated key"
-msgstr ""
+msgstr "Tamamlanmamış, oluşturulmuş anahtar silinemedi"
 
-#: src/cryptography.c:198
+#: src/cryptography.c:194
 msgctxt "GPGME Error"
 msgid "Failed to load GPGME key data from file"
-msgstr ""
+msgstr "GPGME anahtar verileri dosyadan yüklenemedi"
 
-#: src/cryptography.c:203
+#: src/cryptography.c:200
 msgctxt "GPGME Error"
 msgid "Failed to import GPG key from file"
-msgstr ""
+msgstr "GPG anahtarı dosyadan içe aktarılamadı"
 
-#: src/cryptography.c:214
+#: src/cryptography.c:212
 msgctxt "GPGME Error"
 msgid "Failed to create GPGME key data in memory"
-msgstr ""
+msgstr "GPGME anahtar verileri bellekte oluşturulamadı"
 
-#: src/cryptography.c:219
+#: src/cryptography.c:218
 msgctxt "GPGME Error"
 msgid "Failed to export GPG key(s) to file"
-msgstr ""
+msgstr "GPG anahtar(lar)ı dosyaya aktarılamadı"
 
 #: src/cryptography.c:233
 #, c-format
 msgid "Failed to open export file: %s"
-msgstr ""
+msgstr "Dışa aktarma dosyası açılamadı: %s"
 
 #: src/cryptography.c:263
 msgctxt "GPGME Error"
 msgid "Failed to get GPG key for removal"
-msgstr ""
+msgstr "Kaldırma için GPG anahtarı alınamadı"
 
 #: src/cryptography.c:268
 msgctxt "GPGME Error"
 msgid "Failed to remove GPG key"
-msgstr ""
+msgstr "GPG anahtarı kaldırılamadı"
 
-#: src/cryptography.c:314 src/cryptography.c:434
+#: src/cryptography.c:315 src/cryptography.c:427
 msgctxt "GPGME Error"
 msgid "Failed to set pinentry mode of GPGME context to ask"
-msgstr ""
+msgstr "GPGME bağlamının pinentry kipi sorulacak şekilde ayarlanamadı"
 
-#: src/cryptography.c:322
+#: src/cryptography.c:323
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from string"
-msgstr ""
+msgstr "Yeni GPGME girdi verisi dizgeden oluşturulamadı"
 
-#: src/cryptography.c:329 src/cryptography.c:458
+#: src/cryptography.c:329 src/cryptography.c:450
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME output data in memory"
-msgstr ""
+msgstr "Yeni GPGME çıktı verisi bellekte oluşturulamadı"
 
 #: src/cryptography.c:339
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from memory"
-msgstr ""
+msgstr "GPGME verileri bellekten şifrelenemedi"
 
 #: src/cryptography.c:346
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from memory"
-msgstr ""
+msgstr "GPGME verilerinin şifresi bellekten çözülemedi"
 
 #: src/cryptography.c:355
 msgctxt "GPGME Error"
 msgid "Failed to add signing key to GPGME context"
 msgstr ""
 
-#: src/cryptography.c:360
+#: src/cryptography.c:354
 msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from memory"
-msgstr ""
+msgstr "GPGME verileri bellekten imzalanamadı"
 
-#: src/cryptography.c:368
+#: src/cryptography.c:361
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from memory"
-msgstr ""
+msgstr "GPGME verileri bellekten doğrulanamadı"
 
-#: src/cryptography.c:410
+#: src/cryptography.c:403
 #, c-format
 msgid "Removed %s to prepare overwriting"
-msgstr ""
+msgstr "Üzerine yazmaya hazırlanmak için %s kaldırıldı"
 
-#: src/cryptography.c:441
+#: src/cryptography.c:434
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from file"
-msgstr ""
+msgstr "Yeni GPGME girdi verileri dosyadan oluşturulamadı"
 
-#: src/cryptography.c:450
+#: src/cryptography.c:442
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME input data"
-msgstr ""
+msgstr "GPGME girdi verilerinin dosya adı ayarlanamadı"
 
-#: src/cryptography.c:467
+#: src/cryptography.c:459
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME output data"
-msgstr ""
+msgstr "GPGME çıktı verilerinin dosya adı ayarlanamadı"
 
-#: src/cryptography.c:479
+#: src/cryptography.c:470
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from file"
-msgstr ""
+msgstr "GPGME verileri dosyadan şifrelenemedi"
 
-#: src/cryptography.c:487
+#: src/cryptography.c:476
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from file"
-msgstr ""
+msgstr "GPGME verilerinin şifresi dosyadan çözülemedi"
 
-#: src/cryptography.c:496
+#: src/cryptography.c:483
 msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from file"
-msgstr ""
+msgstr "GPGME verileri dosyadan imzalanamadı"
 
-#: src/cryptography.c:503
+#: src/cryptography.c:489
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from file"
-msgstr ""
+msgstr "GPGME verileri dosyadan doğrulanamadı"
 
-#: src/cryptography.c:520
+#: src/cryptography.c:505
 #, c-format
 msgid "Failed to open output file: %s"
-msgstr ""
+msgstr "Çıktı dosyası açılamadı: %s"
 
 #: src/threading.c:35
 #, c-format
 msgctxt ""
 "First format specifier is a translation string marked as “Thread Error”"
 msgid "Failed to create %s thread: %s"
-msgstr ""
+msgstr "%s iş parçacığı oluşturulamadı: %s"
 
 #: src/threading.c:59
 msgctxt "Thread Error"
 msgid "text encryption"
-msgstr ""
+msgstr "metin şifreleme"
 
 #: src/threading.c:81
 msgctxt "Thread Error"
 msgid "file encryption"
-msgstr ""
+msgstr "dosya şifreleme"
 
 #: src/threading.c:102
 msgctxt "Thread Error"
 msgid "text decryption"
-msgstr ""
+msgstr "metin şifre çözme"
 
 #: src/threading.c:120
 msgctxt "Thread Error"
 msgid "file decryption"
-msgstr ""
+msgstr "dosya şifre çözme"
 
-#: src/threading.c:142
+#: src/threading.c:141
 msgctxt "Thread Error"
 msgid "text signing"
-msgstr ""
+msgstr "metin imzalama"
 
-#: src/threading.c:164
+#: src/threading.c:159
 msgctxt "Thread Error"
 msgid "file signing"
-msgstr ""
+msgstr "dosya imzalama"
 
-#: src/threading.c:185
+#: src/threading.c:180
 msgctxt "Thread Error"
 msgid "text verification"
-msgstr ""
+msgstr "metin doğrulama"
 
-#: src/threading.c:203
+#: src/threading.c:198
 msgctxt "Thread Error"
 msgid "file verification"
-msgstr ""
+msgstr "dosya doğrulama"
 
-#: src/threading.c:218
+#: src/threading.c:213
 msgctxt "Thread Error"
 msgid "key import"
-msgstr ""
+msgstr "anahtar içe aktarma"
 
-#: src/threading.c:236
+#: src/threading.c:231
 msgctxt "Thread Error"
 msgid "key generation"
-msgstr ""
+msgstr "anahtar oluşturma"
 
-#: src/threading.c:251
+#: src/threading.c:246
 msgctxt "Thread Error"
 msgid "key export"
-msgstr ""
+msgstr "anahtar dışa aktarma"
 
-#: src/threading.c:262
+#: src/threading.c:257
 msgctxt "Thread Error"
 msgid "key removal"
-msgstr ""
+msgstr "anahtar kaldırma"
 
 #: data/ui/window.blp:9 data/ui/window.blp:192
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
-msgstr ""
+msgstr "Kilitle"
 
 #: data/ui/window.blp:29
 msgid "Copy"
-msgstr ""
+msgstr "Kopyala"
 
 #: data/ui/window.blp:30
 msgid "Copy the text"
-msgstr ""
+msgstr "Metni kopyala"
 
 #: data/ui/window.blp:33
 msgid "Cryptography operations"
-msgstr ""
+msgstr "Şifreleme işlemleri"
 
 #: data/ui/window.blp:50
 msgid "Processing …"
-msgstr ""
+msgstr "İşleniyor…"
 
 #: data/ui/window.blp:55
 msgid "Main Menu"
-msgstr ""
+msgstr "Ana Menü"
 
 #: data/ui/window.blp:66
 msgid "Text"
-msgstr ""
+msgstr "Metin"
 
 #: data/ui/window.blp:84
 msgid "File"
-msgstr ""
+msgstr "Dosya"
 
 #: data/ui/window.blp:93
 msgid "No files selected for processing"
-msgstr ""
+msgstr "İşlenmek için dosya seçilmedi"
 
 #: data/ui/window.blp:114
 msgid "Input File"
-msgstr ""
+msgstr "Girdi Dosyası"
 
 #: data/ui/window.blp:129
 msgid "Output File"
-msgstr ""
+msgstr "Çıktı Dosyası"
 
 #: data/ui/window.blp:153 data/ui/window.blp:213
 msgid "Encrypt"
-msgstr ""
+msgstr "Şifrele"
 
 #: data/ui/window.blp:160 data/ui/window.blp:217
 msgid "Decrypt"
-msgstr ""
+msgstr "Şifre çöz"
 
 #: data/ui/window.blp:167 data/ui/window.blp:223
 msgid "Sign"
-msgstr ""
+msgstr "İmzala"
 
 #: data/ui/window.blp:174 data/ui/window.blp:227
 msgid "Verify"
-msgstr ""
+msgstr "Doğrula"
 
-#: data/ui/window.blp:198 data/ui/managementdialog.blp:30
+#: data/ui/window.blp:198 data/ui/keydialog.blp:30
 msgid "Manage keys"
-msgstr ""
+msgstr "Anahtarları yönet"
 
 #: data/ui/window.blp:204
 msgid "About Lock"
-msgstr ""
+msgstr "Kilitle Hakkında"
 
-#: data/ui/selectiondialog.blp:35
+#: data/ui/encryptiondialog.blp:35
 msgid "Select key"
-msgstr ""
+msgstr "Anahtar seç"
 
-#: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
+#: data/ui/encryptiondialog.blp:48 data/ui/keydialog.blp:49
 msgid "Refresh keys"
-msgstr ""
+msgstr "Yenileme tuşları"
 
-#: data/ui/selectiondialog.blp:68 data/ui/managementdialog.blp:68
+#: data/ui/encryptiondialog.blp:68 data/ui/keydialog.blp:68
 msgid "No keys available"
-msgstr ""
+msgstr "Anahtar yok"
 
-#: data/ui/selectiondialog.blp:69 data/ui/managementdialog.blp:69
+#: data/ui/encryptiondialog.blp:69 data/ui/keydialog.blp:69
 msgid "Your GnuPG keyring does not contain any keys."
-msgstr ""
+msgstr "GnuPG anahtarlığınızda anahtar yok."
 
-#: data/ui/managementdialog.blp:89
+#: data/ui/keydialog.blp:89
 msgctxt "Import keys from files"
 msgid "Import"
-msgstr ""
+msgstr "İçe Aktar"
 
-#: data/ui/managementdialog.blp:90
+#: data/ui/keydialog.blp:90
 msgid "Import keys from files"
-msgstr ""
+msgstr "Anahtarları dosyalardan içe aktar"
 
-#: data/ui/managementdialog.blp:97
+#: data/ui/keydialog.blp:97
 msgid "Create a new keypair"
-msgstr ""
+msgstr "Yeni anahtar çifti oluştur"
 
-#: data/ui/managementdialog.blp:110
+#: data/ui/keydialog.blp:110
 msgid "Generate keypair"
-msgstr ""
+msgstr "Anahtar çifti oluştur"
 
-#: data/ui/managementdialog.blp:141
+#: data/ui/keydialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
-#: data/ui/managementdialog.blp:146
+#: data/ui/keydialog.blp:146
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
-msgstr ""
+msgstr "E-posta"
 
-#: data/ui/managementdialog.blp:151
+#: data/ui/keydialog.blp:151
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
-msgstr ""
+msgstr "İmzalama Algoritması"
 
-#: data/ui/managementdialog.blp:152
+#: data/ui/keydialog.blp:152
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
-msgstr ""
+msgstr "Anahtar"
 
-#: data/ui/managementdialog.blp:160
+#: data/ui/keydialog.blp:160
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
-msgstr ""
+msgstr "Şifreleme Algoritması"
 
-#: data/ui/managementdialog.blp:161
+#: data/ui/keydialog.blp:161
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
-msgstr ""
+msgstr "Alt anahtar"
 
-#: data/ui/managementdialog.blp:169
+#: data/ui/keydialog.blp:169
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
-msgstr ""
+msgstr "Geçerlilik Sonu"
 
-#: data/ui/managementdialog.blp:170
+#: data/ui/keydialog.blp:170
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
-msgstr ""
+msgstr "Aylar, sıfır ile devre dışı bırak"
 
-#: data/ui/managementdialog.blp:192
+#: data/ui/keydialog.blp:192
 msgctxt "Generate a new keypair"
 msgid "Generate"
-msgstr ""
+msgstr "Oluştur"
 
-#: data/ui/managementdialog.blp:193
+#: data/ui/keydialog.blp:193
 msgid "Generate a new keypair"
-msgstr ""
+msgstr "Yeni anahtar çifti oluştur"
 
 #: data/ui/keyrow.blp:5
 msgid "User ID"
-msgstr ""
+msgstr "Kullanıcı Kimliği"
 
 #: data/ui/keyrow.blp:6
 msgid "Fingerprint"
-msgstr ""
+msgstr "Parmak İzi"
 
 #: data/ui/keyrow.blp:7
 msgid "Expiry"
-msgstr ""
+msgstr "Geçerlilik Sonu"
 
 #: data/ui/keyrow.blp:20
 msgid "Remove key"
-msgstr ""
+msgstr "Anahtarı kaldır"
 
 #: data/ui/keyrow.blp:27
 msgid "Export public key to file"
-msgstr ""
+msgstr "Genel anahtarı dosyaya aktar"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr ""
+"gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;şifreleme;"
+"kriptografi;şirfele;şifre çöz;imza;imzala;doğrula;"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
 msgid ""
 "Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
 "LibAdwaita GUI."
 msgstr ""
+"Lock, GnuPG (GPG) için güzel LibAdwaita ara yüzünü kullanan grafiksel bir ön "
+"uçtur."
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
 msgid "Process text and files:"
-msgstr ""
+msgstr "Metin ve dosyaları işle:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:74
 msgid "Encryption"
-msgstr ""
+msgstr "Şifreleme"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
 msgid "Decryption"
-msgstr ""
+msgstr "Şifre Çözme"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:14
 msgid "Signing"
-msgstr ""
+msgstr "İmzalama"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:15
 msgid "Verification"
-msgstr ""
+msgstr "Doğrulama"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:17
 msgid "Manage your GnuPG keyring:"
-msgstr ""
+msgstr "GnuPG anahtarlığınızı yönetin:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
 msgid "Generate new keypairs"
-msgstr ""
+msgstr "Yeni anahtar çiftleri oluşturun"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
 msgid "Import keys"
-msgstr ""
+msgstr "Anahtarları içe aktarın"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:21
 msgid "Export public keys"
-msgstr ""
+msgstr "Genel anahtarları dışa aktarın"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
 msgid "View expiry dates"
-msgstr ""
+msgstr "Son geçerlilik tarihlerini görüntüleyin"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
 msgid "Remove keys"
-msgstr ""
+msgstr "Anahtarları kaldırın"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:46
 msgid "Light Appearance"
-msgstr ""
+msgstr "Açık Görünüm"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:50
 msgid "Dark Appearance"
-msgstr ""
+msgstr "Koyu Görünüm"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:54
 msgid "Key Management"
-msgstr ""
+msgstr "Anahtar Yönetimi"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:58
 msgid "Keypair Generation"
-msgstr ""
+msgstr "Anahtar Çifti Oluşturma"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:62
 msgid "File processing"
-msgstr ""
+msgstr "Dosya işleme"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:66
 msgid "Plain text"
-msgstr ""
+msgstr "Düz metin"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "Key selection dialog"
-msgstr ""
+msgstr "Anahtar seçimi iletişim kutusu"
 
 #, c-format
 #~ msgctxt "Error message constructor for failed GPGME operations"
