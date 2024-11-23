@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
-"POT-Creation-Date: 2024-11-23 15:32+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-23 18:37+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -302,7 +302,8 @@ msgstr "%s suprimit per preparar lo subrecargament"
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from file"
-msgstr "la creacion de las novèlas donadas GPGME d’entrada a partir del fichièr"
+msgstr ""
+"la creacion de las novèlas donadas GPGME d’entrada a partir del fichièr"
 
 #: src/cryptography.c:442
 #, fuzzy
@@ -327,7 +328,8 @@ msgstr ""
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from file"
-msgstr "la realizacion del chiframent de las donadas GPGME a partir del fichièr"
+msgstr ""
+"la realizacion del chiframent de las donadas GPGME a partir del fichièr"
 
 #: src/cryptography.c:483
 #, fuzzy
