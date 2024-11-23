@@ -43,3 +43,17 @@ body:
       render: shell
     validations:
       required: true
+  - type: textarea
+    attributes:
+      label: ~/.gnupg/gpg.conf
+      description: The contents of the GPG configuration file (~/.gnupg/gpg.conf)
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: ~/.gnupg/gpg-agent.conf
+      description: The contents of the GPG Agent configuration file (~/.gnupg/gpg-agent.conf)
+      render: shell
+    validations:
+      required: true
