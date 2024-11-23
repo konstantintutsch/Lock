@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-23 07:58+0100\n"
+"POT-Creation-Date: 2024-11-23 14:59+0100\n"
 "PO-Revision-Date: 2024-11-19 10:50+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
@@ -169,155 +169,175 @@ msgstr "Entfernung fehlgeschlagen"
 msgid "Key removed"
 msgstr "Schlüssel entfernt"
 
-#: src/cryptography.c:16
-#, c-format
-msgctxt "Error message constructor for failed GPGME operations"
-msgid "Failed to %s: %s"
-msgstr "Fehler beim %s: %s"
-
-#: src/cryptography.c:41 src/cryptography.c:73 src/cryptography.c:115
-#: src/cryptography.c:171 src/cryptography.c:287 src/cryptography.c:391
+#: src/cryptography.c:42 src/cryptography.c:78 src/cryptography.c:124
+#: src/cryptography.c:185 src/cryptography.c:302 src/cryptography.c:416
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "create new GPGME context"
+msgid "Failed to create new GPGME context"
 msgstr "Erstellen eines neuen GPGME Kontexts"
 
-#: src/cryptography.c:46 src/cryptography.c:78 src/cryptography.c:120
-#: src/cryptography.c:176 src/cryptography.c:292 src/cryptography.c:396
+#: src/cryptography.c:48 src/cryptography.c:84 src/cryptography.c:130
+#: src/cryptography.c:191 src/cryptography.c:308 src/cryptography.c:422
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "set protocol of GPGME context to OpenPGP"
+msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "Festlegen des Protokolls des GPGME Kontexts auf OpenPGP"
 
-#: src/cryptography.c:50
+#: src/cryptography.c:53
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "obtain key by fingerprint"
+msgid "Failed to obtain key by fingerprint"
 msgstr "Erhalten des Schlüssels aus dessen Fingerabdruck"
 
-#: src/cryptography.c:91
+#: src/cryptography.c:98
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "find key matching User ID"
+msgid "Failed to find key matching User ID"
 msgstr "Finden eines Schlüssels mit passender Nutzer ID"
 
-#: src/cryptography.c:131 src/cryptography.c:140
+#: src/cryptography.c:142 src/cryptography.c:151
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "generate new GPG key for signing"
+msgid "Failed to generate new GPG key for signing"
 msgstr "Generieren eines neuen Schlüssels für Signierung"
 
-#: src/cryptography.c:147
+#: src/cryptography.c:158
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "delete unfinished, generated ECC key"
+msgid "Failed to delete unfinished, generated key"
 msgstr "Löschen des unfertigen, generierten ECC Schlüssels"
 
-#: src/cryptography.c:182
+#: src/cryptography.c:198
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "load GPGME key data from file"
+msgid "Failed to load GPGME key data from file"
 msgstr "Laden von GPGME Schlüsseldaten aus einer Datei"
 
-#: src/cryptography.c:188
+#: src/cryptography.c:203
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "import GPG key from file"
+msgid "Failed to import GPG key from file"
 msgstr "Importieren von einem GPG Schlüssel aus einer Datei"
 
-#: src/cryptography.c:199
+#: src/cryptography.c:214
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "create GPGME key data in memory"
+msgid "Failed to create GPGME key data in memory"
 msgstr "Erstellen von GPGME Schlüsseldaten im Hauptspeicher"
 
-#: src/cryptography.c:205
+#: src/cryptography.c:219
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "export GPG key(s) to file"
+msgid "Failed to export GPG key(s) to file"
 msgstr "Exportieren von GPG Schlüssel(n) in eine Datei"
 
-#: src/cryptography.c:220
+#: src/cryptography.c:233
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr "Fehler beim Öffnen der Export-Datei: %s"
 
-#: src/cryptography.c:249
+#: src/cryptography.c:263
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "get GPG key for removal"
+msgid "Failed to get GPG key for removal"
 msgstr "Erhalten eines GPG Schlüssels zur Entfernung"
 
-#: src/cryptography.c:253
+#: src/cryptography.c:268
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "remove GPG key"
+msgid "Failed to remove GPG key"
 msgstr "Entfernen eines GPG Schlüssels"
 
-#: src/cryptography.c:297 src/cryptography.c:401
+#: src/cryptography.c:314 src/cryptography.c:428
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "set pinentry mode of GPGME context to ask"
+msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "Festlegen des Pinentry Modus des GPGME Kontexts auf Fragen"
 
-#: src/cryptography.c:305
+#: src/cryptography.c:322
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "create new GPGME input data from string"
+msgid "Failed to create new GPGME input data from string"
 msgstr "Erstellen von GPGME Eingangsdaten aus einer Zeichenkette"
 
-#: src/cryptography.c:310 src/cryptography.c:422
+#: src/cryptography.c:329 src/cryptography.c:452
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "create new GPGME output data in memory"
+msgid "Failed to create new GPGME output data in memory"
 msgstr "Erstellen von GPGME Ausgangsdaten im Hauptspeicher"
 
-#: src/cryptography.c:319
+#: src/cryptography.c:339
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "encrypt GPGME data from memory"
+msgid "Failed to encrypt GPGME data from memory"
 msgstr "Verschlüsseln von GPGME Daten aus dem Hauptspeicher"
 
-#: src/cryptography.c:325
+#: src/cryptography.c:346
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "decrypt GPGME data from memory"
+msgid "Failed to decrypt GPGME data from memory"
 msgstr "Entschlüsseln von GPGME Daten aus dem Hauptspeicher"
 
-#: src/cryptography.c:333
+#: src/cryptography.c:354
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "sign GPGME data from memory"
+msgid "Failed to sign GPGME data from memory"
 msgstr "Signieren von GPGME Daten aus dem Hauptspeicher"
 
-#: src/cryptography.c:338
+#: src/cryptography.c:362
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "verify GPGME data from memory"
+msgid "Failed to verify GPGME data from memory"
 msgstr "Verifizieren von GPGME Daten aus dem Hauptspeicher"
 
-#: src/cryptography.c:380
+#: src/cryptography.c:404
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s entfernt, um Überschreiben vorzubereiten"
 
-#: src/cryptography.c:408
+#: src/cryptography.c:435
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "create new GPGME input data from file"
+msgid "Failed to create new GPGME input data from file"
 msgstr "Erstellen von GPGME Eingangsdaten aus einer Datei"
 
-#: src/cryptography.c:415
+#: src/cryptography.c:444
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "set file name of GPGME input data"
+msgid "Failed to set file name of GPGME input data"
 msgstr "Setzen des Dateipfades von GPGME Eingangsdaten"
 
-#: src/cryptography.c:430
+#: src/cryptography.c:461
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "set file name of GPGME output data"
+msgid "Failed to set file name of GPGME output data"
 msgstr "Setzen des Dateipfades von GPGME Ausgangsdaten"
 
-#: src/cryptography.c:440
+#: src/cryptography.c:473
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "encrypt GPGME data from file"
+msgid "Failed to encrypt GPGME data from file"
 msgstr "Verschlüsseln von GPGME Daten aus Datei"
 
-#: src/cryptography.c:445
+#: src/cryptography.c:481
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "decrypt GPGME data from file"
+msgid "Failed to decrypt GPGME data from file"
 msgstr "Entschlüsseln von GPGME Daten aus Datei"
 
-#: src/cryptography.c:452
+#: src/cryptography.c:490
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "sign GPGME data from file"
+msgid "Failed to sign GPGME data from file"
 msgstr "Signieren von GPGME Daten aus einer Datei"
 
-#: src/cryptography.c:457
+#: src/cryptography.c:497
+#, fuzzy
 msgctxt "GPGME Error"
-msgid "verify GPGME data from file"
+msgid "Failed to verify GPGME data from file"
 msgstr "Verifiezieren von GPGME Daten aus einer Datei"
 
-#: src/cryptography.c:472
+#: src/cryptography.c:514
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Fehler beim Öffnen der Ausgabedatei: %s"
@@ -647,6 +667,11 @@ msgstr "Klartext"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "Key selection dialog"
 msgstr "Schlüsselwahl Dialog"
+
+#, c-format
+#~ msgctxt "Error message constructor for failed GPGME operations"
+#~ msgid "Failed to %s: %s"
+#~ msgstr "Fehler beim %s: %s"
 
 #~ msgid "User ID dialog"
 #~ msgstr "Nutzer ID Dialog"
