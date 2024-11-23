@@ -13,6 +13,18 @@ body:
       description: A software version, accessible via the about dialog
     validations:
       required: true
+  - type: input
+    attributes:
+      label: Which version of GnuPG Made Easy is Lock using?
+      description: A software version, accessible via console output of Lock
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Which distribution did this bug occur on?
+      description: A Linux distribution
+    validations:
+      required: true
   - type: dropdown
     attributes:
       label: Source
@@ -26,7 +38,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Relevant log output
+      label: Console Output (stdout)
       description: The output of Lock running in the command line.
       render: shell
     validations:
