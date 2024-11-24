@@ -76,9 +76,9 @@ gdk_dep = dependency('gdk-pixbuf-2.0', version: '>=2.42')
 glib_dep = dependency('glib-2.0', version: '>=2.80')
 gio_dep = dependency('gio-2.0', version: '>=2.80')
 
-gpgme_required_version = '1.23.0'
+gpgme_required_version = '1.24.0'
 conf.set('gpgme_required_version', gpgme_required_version)
-gpgme_dep = dependency('gpgme', version: '>=' + gpgme_required_version)
+gpgme_dep = dependency('gpgme')
 
 #
 # Subdirectories

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 10:12+0100\n"
+"POT-Creation-Date: 2024-11-24 11:12+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -168,15 +168,15 @@ msgstr "Fracàs de la supression"
 msgid "Key removed"
 msgstr "Clau suprimida"
 
-#: src/cryptography.c:42 src/cryptography.c:78 src/cryptography.c:124
-#: src/cryptography.c:185 src/cryptography.c:302 src/cryptography.c:422
+#: src/cryptography.c:42 src/cryptography.c:77 src/cryptography.c:122
+#: src/cryptography.c:181 src/cryptography.c:303 src/cryptography.c:420
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME context"
 msgstr "la creacion d’un conèxte GPGME nòu"
 
-#: src/cryptography.c:48 src/cryptography.c:84 src/cryptography.c:130
-#: src/cryptography.c:191 src/cryptography.c:308 src/cryptography.c:428
+#: src/cryptography.c:48 src/cryptography.c:83 src/cryptography.c:128
+#: src/cryptography.c:187 src/cryptography.c:309 src/cryptography.c:426
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set protocol of GPGME context to OpenPGP"
@@ -188,43 +188,43 @@ msgctxt "GPGME Error"
 msgid "Failed to obtain key by fingerprint"
 msgstr "obténer la clau per emprenta digitala"
 
-#: src/cryptography.c:98
+#: src/cryptography.c:97
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to find key matching User ID"
 msgstr "la trobada d’una clau correspondenta a l’ID utilizaire"
 
-#: src/cryptography.c:142 src/cryptography.c:151
+#: src/cryptography.c:140 src/cryptography.c:149
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to generate new GPG key for signing"
 msgstr "la generacion de la clau GPG novèla per signar"
 
-#: src/cryptography.c:158
+#: src/cryptography.c:156
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to delete unfinished, generated key"
 msgstr "la supression de la clau ECC generada non acabada"
 
-#: src/cryptography.c:198
+#: src/cryptography.c:194
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to load GPGME key data from file"
 msgstr "la mesa en memòria de las donadas clau GPGME a partir del fichièr"
 
-#: src/cryptography.c:203
+#: src/cryptography.c:200
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to import GPG key from file"
 msgstr "l’importacion de la clau GPG a partir del fichièr"
 
-#: src/cryptography.c:214
+#: src/cryptography.c:212
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create GPGME key data in memory"
 msgstr "la creacion de las donadas de la clau GPGME en memòria"
 
-#: src/cryptography.c:219
+#: src/cryptography.c:218
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to export GPG key(s) to file"
@@ -247,13 +247,13 @@ msgctxt "GPGME Error"
 msgid "Failed to remove GPG key"
 msgstr "la supression de la clau GPG"
 
-#: src/cryptography.c:314 src/cryptography.c:434
+#: src/cryptography.c:315 src/cryptography.c:432
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "la definicion del protocòl del contèxte GPGME per OpenPGP"
 
-#: src/cryptography.c:322
+#: src/cryptography.c:323
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from string"
@@ -261,7 +261,7 @@ msgstr ""
 "la creacion de las donadas GPGME d’entrada novèlas a partir de la cadena de "
 "tèxte"
 
-#: src/cryptography.c:329 src/cryptography.c:458
+#: src/cryptography.c:329 src/cryptography.c:452
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME output data in memory"
@@ -287,72 +287,67 @@ msgctxt "GPGME Error"
 msgid "Failed to add signing key to GPGME context"
 msgstr "la creacion d’un conèxte GPGME nòu"
 
-#: src/cryptography.c:360
+#: src/cryptography.c:362
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from memory"
 msgstr "la signatura de las donadas GPGME a partir de la memòria"
 
-#: src/cryptography.c:368
+#: src/cryptography.c:369
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from memory"
 msgstr "la verificacion de las donadas GPGME a partir de la memòria"
 
-#: src/cryptography.c:410
+#: src/cryptography.c:409
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s suprimit per preparar lo subrecargament"
 
-#: src/cryptography.c:441
+#: src/cryptography.c:439
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from file"
 msgstr ""
 "la creacion de las novèlas donadas GPGME d’entrada a partir del fichièr"
 
-#: src/cryptography.c:450
+#: src/cryptography.c:445
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME input data"
 msgstr "la definicion del nom de fichièr de las donadas GPGME d’entrada"
 
-#: src/cryptography.c:467
+#: src/cryptography.c:459
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME output data"
 msgstr "la definicion del nom de fichièr de las donadas GPGME de sortida"
 
-#: src/cryptography.c:479
+#: src/cryptography.c:469
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from file"
 msgstr ""
 "la realizacion del deschiframent de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:487
+#: src/cryptography.c:475
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from file"
 msgstr ""
 "la realizacion del chiframent de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:496
+#: src/cryptography.c:482
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from file"
 msgstr "la signatura de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:503
+#: src/cryptography.c:488
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from file"
 msgstr "la verificacion de las donadas GPGME a partir del fichièr"
-
-#: src/cryptography.c:520
-#, c-format
-msgid "Failed to open output file: %s"
-msgstr "Fracàs de la dobertura del fichièr en sortida : %s"
 
 #: src/threading.c:35
 #, c-format
@@ -677,6 +672,10 @@ msgstr "Tèxte brut"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "Key selection dialog"
 msgstr "Fenèstra de seleccion de clau"
+
+#, c-format
+#~ msgid "Failed to open output file: %s"
+#~ msgstr "Fracàs de la dobertura del fichièr en sortida : %s"
 
 #, c-format
 #~ msgctxt "Error message constructor for failed GPGME operations"
