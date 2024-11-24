@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2024-11-24 14:21+0100\n"
-"PO-Revision-Date: 2024-11-23 17:35+0000\n"
+"PO-Revision-Date: 2024-11-24 19:01+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/Lock/Application/"
 "he/>\n"
@@ -170,23 +170,19 @@ msgstr "המפתח הוסר"
 
 #: src/cryptography.c:42 src/cryptography.c:76 src/cryptography.c:120
 #: src/cryptography.c:176 src/cryptography.c:288 src/cryptography.c:399
-#, fuzzy
 msgid "Failed to create new GPGME context"
 msgstr "יצירת הקשר GPGME חדש נכשלה"
 
 #: src/cryptography.c:46 src/cryptography.c:80 src/cryptography.c:124
 #: src/cryptography.c:180 src/cryptography.c:292 src/cryptography.c:403
-#, fuzzy
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "הגדרת הפרוטוקול של הקשר GPGME ל־OpenPGP נכשלה"
 
 #: src/cryptography.c:51
-#, fuzzy
 msgid "Failed to obtain key by fingerprint"
 msgstr "משיכת מפתח לפי טביעת אצבע נכשלה"
 
 #: src/cryptography.c:94
-#, fuzzy
 msgid "Failed to find key matching User ID"
 msgstr "איתור מפתח שתואם למזהה המשתמש נכשל"
 
@@ -366,19 +362,16 @@ msgid "Failed to create key import thread"
 msgstr "יצירת תהליכון %s נכשלה: %s"
 
 #: src/threading.c:234
-#, fuzzy
 msgid "Failed to create key generation thread"
-msgstr "יצירת תהליכון %s נכשלה: %s"
+msgstr "יצירת תהליכון יצירת מפתח נכשלה"
 
 #: src/threading.c:249
-#, fuzzy
 msgid "Failed to create key export thread"
-msgstr "יצירת תהליכון %s נכשלה: %s"
+msgstr "יצירת תהליכון יצירת ייצוא מפתח נכשלה"
 
 #: src/threading.c:261
-#, fuzzy
 msgid "Failed to create key removal thread"
-msgstr "יצירת תהליכון %s נכשלה: %s"
+msgstr "יצירת תהליכון הסרת מפתח נכשלה"
 
 #: data/ui/window.blp:9 data/ui/window.blp:192
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -459,15 +452,13 @@ msgid "Refresh keys"
 msgstr "רענון מפתחות"
 
 #: data/ui/selectiondialog.blp:68
-#, fuzzy
 msgid "No capable keys available"
-msgstr "אין מפתחות זמינים"
+msgstr "אין מפתחות תואמים זמינים"
 
 #: data/ui/selectiondialog.blp:69
-#, fuzzy
 msgid ""
 "Your GnuPG keyring does not contain any keys that support this functionality."
-msgstr "צרור מפתחות ה־GnuPG שלך לא מכיל מפתחות."
+msgstr "צרור מפתחות ה־GnuPG שלך לא מכיל מפתחות שתומכים ביכולת הזאת."
 
 #: data/ui/managementdialog.blp:68
 msgid "No keys available"
