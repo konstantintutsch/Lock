@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 14:02+0100\n"
+"POT-Creation-Date: 2024-11-24 14:14+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/Lock/Application/"
@@ -177,248 +177,243 @@ msgstr "Import selhal"
 msgid "Key removed"
 msgstr "Klíč exportován"
 
-#: src/cryptography.c:42 src/cryptography.c:77 src/cryptography.c:122
-#: src/cryptography.c:181 src/cryptography.c:303 src/cryptography.c:423
+#: src/cryptography.c:42 src/cryptography.c:76 src/cryptography.c:120
+#: src/cryptography.c:178 src/cryptography.c:298 src/cryptography.c:417
 #, fuzzy
-msgctxt "GPGME Error"
 msgid "Failed to create new GPGME context"
 msgstr "vytvoření nového GPGME kontextu"
 
-#: src/cryptography.c:48 src/cryptography.c:83 src/cryptography.c:128
-#: src/cryptography.c:187 src/cryptography.c:309 src/cryptography.c:429
+#: src/cryptography.c:47 src/cryptography.c:81 src/cryptography.c:125
+#: src/cryptography.c:183 src/cryptography.c:303 src/cryptography.c:422
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "nastavení protokolu GPGME kontextu na OpenPGP"
 
-#: src/cryptography.c:53
-msgctxt "GPGME Error"
-msgid "Failed to obtain key by fingerprint"
-msgstr ""
-
-#: src/cryptography.c:97
+#: src/cryptography.c:52
 #, fuzzy
-msgctxt "GPGME Error"
+msgid "Failed to obtain key by fingerprint"
+msgstr "nalezení klíče odpovídající ID Uživatele"
+
+#: src/cryptography.c:95
+#, fuzzy
 msgid "Failed to find key matching User ID"
 msgstr "nalezení klíče odpovídající ID Uživatele"
 
-#: src/cryptography.c:140 src/cryptography.c:149
+#: src/cryptography.c:137 src/cryptography.c:146
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to generate new GPG key for signing"
 msgstr "Spravovat klíče"
 
-#: src/cryptography.c:156
+#: src/cryptography.c:153
 msgctxt "GPGME Error"
 msgid "Failed to delete unfinished, generated key"
 msgstr ""
 
-#: src/cryptography.c:194
+#: src/cryptography.c:190
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to load GPGME key data from file"
 msgstr "načtení GPGME dat klíče ze souboru"
 
-#: src/cryptography.c:200
+#: src/cryptography.c:196
 #, fuzzy
-msgctxt "GPGME Error"
 msgid "Failed to import GPG key from file"
 msgstr "importování GPG klíče ze souboru"
 
-#: src/cryptography.c:212
+#: src/cryptography.c:208
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create GPGME key data in memory"
 msgstr "vytvoření GPGME dat klíče v paměti"
 
-#: src/cryptography.c:218
+#: src/cryptography.c:214
 #, fuzzy
-msgctxt "GPGME Error"
 msgid "Failed to export GPG key(s) to file"
 msgstr "importování GPG klíče ze souboru"
 
-#: src/cryptography.c:233
+#: src/cryptography.c:229
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr "Selhalo otevření exportního souboru: %s"
 
-#: src/cryptography.c:263
-msgctxt "GPGME Error"
+#: src/cryptography.c:259
+#, fuzzy
 msgid "Failed to get GPG key for removal"
-msgstr ""
+msgstr "importování GPG klíče ze souboru"
 
-#: src/cryptography.c:268
-msgctxt "GPGME Error"
+#: src/cryptography.c:263
+#, fuzzy
 msgid "Failed to remove GPG key"
-msgstr ""
+msgstr "importování GPG klíče ze souboru"
 
-#: src/cryptography.c:315 src/cryptography.c:435
+#: src/cryptography.c:309 src/cryptography.c:428
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "nastavení pinentry módu GPGME kontextu na zeptání se"
 
-#: src/cryptography.c:323
+#: src/cryptography.c:317
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from string"
 msgstr "vytvoření nových podepsaných GPGME dat z řetězce"
 
-#: src/cryptography.c:329 src/cryptography.c:458
+#: src/cryptography.c:323 src/cryptography.c:451
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME output data in memory"
 msgstr "vytvoření GPGME dat klíče v paměti"
 
-#: src/cryptography.c:339
+#: src/cryptography.c:333
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from memory"
 msgstr "zašifrování GPGME dat z paměti"
 
-#: src/cryptography.c:346
+#: src/cryptography.c:340
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "rozšifrovat GPGME dat z paměti"
 
-#: src/cryptography.c:355
+#: src/cryptography.c:349
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to add signing key to GPGME context"
 msgstr "vytvoření nového GPGME kontextu"
 
-#: src/cryptography.c:362
+#: src/cryptography.c:356
 #, fuzzy
-msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from memory"
 msgstr "podepsání GPGME dat z paměti"
 
-#: src/cryptography.c:369
+#: src/cryptography.c:363
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from memory"
 msgstr "ověření GPGME dat z paměti"
 
-#: src/cryptography.c:411
+#: src/cryptography.c:405
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "Odstraněno %s pro přípravu přepsání"
 
-#: src/cryptography.c:442
+#: src/cryptography.c:435
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from file"
 msgstr "vytvoření nových podepsaných GPGME dat z řetězce"
 
-#: src/cryptography.c:450
+#: src/cryptography.c:443
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME input data"
 msgstr "nastavení cesty souboru podepsaných GPGME dat"
 
-#: src/cryptography.c:467
+#: src/cryptography.c:460
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME output data"
 msgstr "nastavení cesty souboru podepsaných GPGME dat"
 
-#: src/cryptography.c:478
+#: src/cryptography.c:471
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from file"
 msgstr "šifrování GPGME dat ze souboru"
 
-#: src/cryptography.c:484
+#: src/cryptography.c:477
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from file"
 msgstr "rozšifrování GPGME dat ze souboru"
 
-#: src/cryptography.c:491
+#: src/cryptography.c:484
 #, fuzzy
-msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from file"
 msgstr "podepsání GPGME dat ze souboru"
 
-#: src/cryptography.c:497
+#: src/cryptography.c:490
 #, fuzzy
-msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from file"
 msgstr "ověření GPGME dat ze souboru"
 
-#: src/cryptography.c:513
+#: src/cryptography.c:506
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Selhalo otevření výstupního souboru: %s"
 
-#: src/threading.c:35
-#, c-format
-msgctxt ""
-"First format specifier is a translation string marked as “Thread Error”"
-msgid "Failed to create %s thread: %s"
-msgstr "Selhalo vytvoření vlákna %s: %s"
-
-#: src/threading.c:59
-msgctxt "Thread Error"
-msgid "text encryption"
-msgstr "šifrování textu"
-
-#: src/threading.c:81
-msgctxt "Thread Error"
-msgid "file encryption"
-msgstr "šifrování souboru"
-
-#: src/threading.c:102
-msgctxt "Thread Error"
-msgid "text decryption"
-msgstr "rozšifrování textu"
-
-#: src/threading.c:120
-msgctxt "Thread Error"
-msgid "file decryption"
-msgstr "rozšifrování souboru"
-
-#: src/threading.c:142
-msgctxt "Thread Error"
-msgid "text signing"
-msgstr "podepisování textu"
-
-#: src/threading.c:164
-msgctxt "Thread Error"
-msgid "file signing"
-msgstr "podepisování souboru"
-
-#: src/threading.c:185
-msgctxt "Thread Error"
-msgid "text verification"
-msgstr "ověření textu"
-
-#: src/threading.c:203
-msgctxt "Thread Error"
-msgid "file verification"
-msgstr "ověření souboru"
-
-#: src/threading.c:218
-msgctxt "Thread Error"
-msgid "key import"
-msgstr "importování klíče"
-
-#: src/threading.c:236
+#: src/threading.c:58
 #, fuzzy
 msgctxt "Thread Error"
-msgid "key generation"
-msgstr "šifrování textu"
+msgid "Failed to create text encryption thread"
+msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:251
+#: src/threading.c:81
+#, fuzzy
 msgctxt "Thread Error"
-msgid "key export"
-msgstr "exportování klíče"
+msgid "Failed to create file encryption thread"
+msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:262
+#: src/threading.c:103
+#, fuzzy
 msgctxt "Thread Error"
-msgid "key removal"
-msgstr ""
+msgid "Failed to create text decryption thread"
+msgstr "Selhalo vytvoření vlákna %s: %s"
+
+#: src/threading.c:122
+#, fuzzy
+msgctxt "Thread Error"
+msgid "Failed to create file decryption thread"
+msgstr "Selhalo vytvoření vlákna %s: %s"
+
+#: src/threading.c:145
+#, fuzzy
+msgctxt "Thread Error"
+msgid "Failed to create text signing thread"
+msgstr "Selhalo vytvoření vlákna %s: %s"
+
+#: src/threading.c:168
+#, fuzzy
+msgctxt "Thread Error"
+msgid "Failed to create file signing thread"
+msgstr "Selhalo vytvoření vlákna %s: %s"
+
+#: src/threading.c:190
+#, fuzzy
+msgctxt "Thread Error"
+msgid "Failed to create text verification thread"
+msgstr "Selhalo vytvoření vlákna %s: %s"
+
+#: src/threading.c:209
+#, fuzzy
+msgctxt "Thread Error"
+msgid "Failed to create file verification thread"
+msgstr "Selhalo vytvoření vlákna %s: %s"
+
+#: src/threading.c:225
+#, fuzzy
+msgctxt "Thread Error"
+msgid "Failed to create key import thread"
+msgstr "Selhalo vytvoření vlákna %s: %s"
+
+#: src/threading.c:244
+#, fuzzy
+msgctxt "Thread Error"
+msgid "Failed to create key generation thread"
+msgstr "Selhalo vytvoření vlákna %s: %s"
+
+#: src/threading.c:259
+#, fuzzy
+msgid "Failed to create key export thread"
+msgstr "Selhalo vytvoření vlákna %s: %s"
+
+#: src/threading.c:271
+#, fuzzy
+msgid "Failed to create key removal thread"
+msgstr "Selhalo vytvoření vlákna %s: %s"
 
 #: data/ui/window.blp:9 data/ui/window.blp:192
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -699,6 +694,51 @@ msgstr "Holý text"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "Key selection dialog"
 msgstr ""
+
+#~ msgctxt "Thread Error"
+#~ msgid "text encryption"
+#~ msgstr "šifrování textu"
+
+#~ msgctxt "Thread Error"
+#~ msgid "file encryption"
+#~ msgstr "šifrování souboru"
+
+#~ msgctxt "Thread Error"
+#~ msgid "text decryption"
+#~ msgstr "rozšifrování textu"
+
+#~ msgctxt "Thread Error"
+#~ msgid "file decryption"
+#~ msgstr "rozšifrování souboru"
+
+#~ msgctxt "Thread Error"
+#~ msgid "text signing"
+#~ msgstr "podepisování textu"
+
+#~ msgctxt "Thread Error"
+#~ msgid "file signing"
+#~ msgstr "podepisování souboru"
+
+#~ msgctxt "Thread Error"
+#~ msgid "text verification"
+#~ msgstr "ověření textu"
+
+#~ msgctxt "Thread Error"
+#~ msgid "file verification"
+#~ msgstr "ověření souboru"
+
+#~ msgctxt "Thread Error"
+#~ msgid "key import"
+#~ msgstr "importování klíče"
+
+#, fuzzy
+#~ msgctxt "Thread Error"
+#~ msgid "key generation"
+#~ msgstr "šifrování textu"
+
+#~ msgctxt "Thread Error"
+#~ msgid "key export"
+#~ msgstr "exportování klíče"
 
 #, c-format
 #~ msgctxt "Error message constructor for failed GPGME operations"

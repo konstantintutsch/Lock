@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 14:02+0100\n"
+"POT-Creation-Date: 2024-11-24 14:14+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -168,224 +168,227 @@ msgstr "Kaldırılamadı"
 msgid "Key removed"
 msgstr "Anahtar silindi"
 
-#: src/cryptography.c:42 src/cryptography.c:77 src/cryptography.c:122
-#: src/cryptography.c:181 src/cryptography.c:303 src/cryptography.c:423
-msgctxt "GPGME Error"
+#: src/cryptography.c:42 src/cryptography.c:76 src/cryptography.c:120
+#: src/cryptography.c:178 src/cryptography.c:298 src/cryptography.c:417
+#, fuzzy
 msgid "Failed to create new GPGME context"
 msgstr "Yeni GPGME bağlamı oluşturulamadı"
 
-#: src/cryptography.c:48 src/cryptography.c:83 src/cryptography.c:128
-#: src/cryptography.c:187 src/cryptography.c:309 src/cryptography.c:429
+#: src/cryptography.c:47 src/cryptography.c:81 src/cryptography.c:125
+#: src/cryptography.c:183 src/cryptography.c:303 src/cryptography.c:422
 msgctxt "GPGME Error"
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "GPGME bağlamının protokolü OpenPGP olarak ayarlanamadı"
 
-#: src/cryptography.c:53
-msgctxt "GPGME Error"
+#: src/cryptography.c:52
+#, fuzzy
 msgid "Failed to obtain key by fingerprint"
 msgstr "Parmak izi ile anahtar alınamadı"
 
-#: src/cryptography.c:97
-msgctxt "GPGME Error"
+#: src/cryptography.c:95
+#, fuzzy
 msgid "Failed to find key matching User ID"
 msgstr "Kullanıcı Kimliği ile eşleşen anahtar bulunamadı"
 
-#: src/cryptography.c:140 src/cryptography.c:149
+#: src/cryptography.c:137 src/cryptography.c:146
 msgctxt "GPGME Error"
 msgid "Failed to generate new GPG key for signing"
 msgstr "İmzalama için yeni GPG anahtarı oluşturulamadı"
 
-#: src/cryptography.c:156
+#: src/cryptography.c:153
 msgctxt "GPGME Error"
 msgid "Failed to delete unfinished, generated key"
 msgstr "Tamamlanmamış, oluşturulmuş anahtar silinemedi"
 
-#: src/cryptography.c:194
+#: src/cryptography.c:190
 msgctxt "GPGME Error"
 msgid "Failed to load GPGME key data from file"
 msgstr "GPGME anahtar verileri dosyadan yüklenemedi"
 
-#: src/cryptography.c:200
-msgctxt "GPGME Error"
+#: src/cryptography.c:196
+#, fuzzy
 msgid "Failed to import GPG key from file"
 msgstr "GPG anahtarı dosyadan içe aktarılamadı"
 
-#: src/cryptography.c:212
+#: src/cryptography.c:208
 msgctxt "GPGME Error"
 msgid "Failed to create GPGME key data in memory"
 msgstr "GPGME anahtar verileri bellekte oluşturulamadı"
 
-#: src/cryptography.c:218
-msgctxt "GPGME Error"
+#: src/cryptography.c:214
+#, fuzzy
 msgid "Failed to export GPG key(s) to file"
 msgstr "GPG anahtar(lar)ı dosyaya aktarılamadı"
 
-#: src/cryptography.c:233
+#: src/cryptography.c:229
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr "Dışa aktarma dosyası açılamadı: %s"
 
-#: src/cryptography.c:263
-msgctxt "GPGME Error"
+#: src/cryptography.c:259
+#, fuzzy
 msgid "Failed to get GPG key for removal"
 msgstr "Kaldırma için GPG anahtarı alınamadı"
 
-#: src/cryptography.c:268
-msgctxt "GPGME Error"
+#: src/cryptography.c:263
+#, fuzzy
 msgid "Failed to remove GPG key"
 msgstr "GPG anahtarı kaldırılamadı"
 
-#: src/cryptography.c:315 src/cryptography.c:435
+#: src/cryptography.c:309 src/cryptography.c:428
 msgctxt "GPGME Error"
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "GPGME bağlamının pinentry kipi sorulacak şekilde ayarlanamadı"
 
-#: src/cryptography.c:323
+#: src/cryptography.c:317
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from string"
 msgstr "Yeni GPGME girdi verisi dizgeden oluşturulamadı"
 
-#: src/cryptography.c:329 src/cryptography.c:458
+#: src/cryptography.c:323 src/cryptography.c:451
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME output data in memory"
 msgstr "Yeni GPGME çıktı verisi bellekte oluşturulamadı"
 
-#: src/cryptography.c:339
+#: src/cryptography.c:333
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from memory"
 msgstr "GPGME verileri bellekten şifrelenemedi"
 
-#: src/cryptography.c:346
+#: src/cryptography.c:340
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "GPGME verilerinin şifresi bellekten çözülemedi"
 
-#: src/cryptography.c:355
+#: src/cryptography.c:349
 msgctxt "GPGME Error"
 msgid "Failed to add signing key to GPGME context"
 msgstr ""
 
-#: src/cryptography.c:362
-msgctxt "GPGME Error"
+#: src/cryptography.c:356
+#, fuzzy
 msgid "Failed to sign GPGME data from memory"
 msgstr "GPGME verileri bellekten imzalanamadı"
 
-#: src/cryptography.c:369
+#: src/cryptography.c:363
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from memory"
 msgstr "GPGME verileri bellekten doğrulanamadı"
 
-#: src/cryptography.c:411
+#: src/cryptography.c:405
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "Üzerine yazmaya hazırlanmak için %s kaldırıldı"
 
-#: src/cryptography.c:442
+#: src/cryptography.c:435
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from file"
 msgstr "Yeni GPGME girdi verileri dosyadan oluşturulamadı"
 
-#: src/cryptography.c:450
+#: src/cryptography.c:443
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME input data"
 msgstr "GPGME girdi verilerinin dosya adı ayarlanamadı"
 
-#: src/cryptography.c:467
+#: src/cryptography.c:460
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME output data"
 msgstr "GPGME çıktı verilerinin dosya adı ayarlanamadı"
 
-#: src/cryptography.c:478
+#: src/cryptography.c:471
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from file"
 msgstr "GPGME verileri dosyadan şifrelenemedi"
 
-#: src/cryptography.c:484
+#: src/cryptography.c:477
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from file"
 msgstr "GPGME verilerinin şifresi dosyadan çözülemedi"
 
-#: src/cryptography.c:491
-msgctxt "GPGME Error"
+#: src/cryptography.c:484
+#, fuzzy
 msgid "Failed to sign GPGME data from file"
 msgstr "GPGME verileri dosyadan imzalanamadı"
 
-#: src/cryptography.c:497
-msgctxt "GPGME Error"
+#: src/cryptography.c:490
+#, fuzzy
 msgid "Failed to verify GPGME data from file"
 msgstr "GPGME verileri dosyadan doğrulanamadı"
 
-#: src/cryptography.c:513
+#: src/cryptography.c:506
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Çıktı dosyası açılamadı: %s"
 
-#: src/threading.c:35
-#, c-format
-msgctxt ""
-"First format specifier is a translation string marked as “Thread Error”"
-msgid "Failed to create %s thread: %s"
+#: src/threading.c:58
+#, fuzzy
+msgctxt "Thread Error"
+msgid "Failed to create text encryption thread"
 msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/threading.c:59
-msgctxt "Thread Error"
-msgid "text encryption"
-msgstr "metin şifreleme"
-
 #: src/threading.c:81
+#, fuzzy
 msgctxt "Thread Error"
-msgid "file encryption"
-msgstr "dosya şifreleme"
+msgid "Failed to create file encryption thread"
+msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/threading.c:102
+#: src/threading.c:103
+#, fuzzy
 msgctxt "Thread Error"
-msgid "text decryption"
-msgstr "metin şifre çözme"
+msgid "Failed to create text decryption thread"
+msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/threading.c:120
+#: src/threading.c:122
+#, fuzzy
 msgctxt "Thread Error"
-msgid "file decryption"
-msgstr "dosya şifre çözme"
+msgid "Failed to create file decryption thread"
+msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/threading.c:142
+#: src/threading.c:145
+#, fuzzy
 msgctxt "Thread Error"
-msgid "text signing"
-msgstr "metin imzalama"
+msgid "Failed to create text signing thread"
+msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/threading.c:164
+#: src/threading.c:168
+#, fuzzy
 msgctxt "Thread Error"
-msgid "file signing"
-msgstr "dosya imzalama"
+msgid "Failed to create file signing thread"
+msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/threading.c:185
+#: src/threading.c:190
+#, fuzzy
 msgctxt "Thread Error"
-msgid "text verification"
-msgstr "metin doğrulama"
+msgid "Failed to create text verification thread"
+msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/threading.c:203
+#: src/threading.c:209
+#, fuzzy
 msgctxt "Thread Error"
-msgid "file verification"
-msgstr "dosya doğrulama"
+msgid "Failed to create file verification thread"
+msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/threading.c:218
+#: src/threading.c:225
+#, fuzzy
 msgctxt "Thread Error"
-msgid "key import"
-msgstr "anahtar içe aktarma"
+msgid "Failed to create key import thread"
+msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/threading.c:236
+#: src/threading.c:244
+#, fuzzy
 msgctxt "Thread Error"
-msgid "key generation"
-msgstr "anahtar oluşturma"
+msgid "Failed to create key generation thread"
+msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/threading.c:251
-msgctxt "Thread Error"
-msgid "key export"
-msgstr "anahtar dışa aktarma"
+#: src/threading.c:259
+#, fuzzy
+msgid "Failed to create key export thread"
+msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/threading.c:262
-msgctxt "Thread Error"
-msgid "key removal"
-msgstr "anahtar kaldırma"
+#: src/threading.c:271
+#, fuzzy
+msgid "Failed to create key removal thread"
+msgstr "%s iş parçacığı oluşturulamadı: %s"
 
 #: data/ui/window.blp:9 data/ui/window.blp:192
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -656,6 +659,54 @@ msgstr "Düz metin"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "Key selection dialog"
 msgstr "Anahtar seçimi iletişim kutusu"
+
+#~ msgctxt "Thread Error"
+#~ msgid "text encryption"
+#~ msgstr "metin şifreleme"
+
+#~ msgctxt "Thread Error"
+#~ msgid "file encryption"
+#~ msgstr "dosya şifreleme"
+
+#~ msgctxt "Thread Error"
+#~ msgid "text decryption"
+#~ msgstr "metin şifre çözme"
+
+#~ msgctxt "Thread Error"
+#~ msgid "file decryption"
+#~ msgstr "dosya şifre çözme"
+
+#~ msgctxt "Thread Error"
+#~ msgid "text signing"
+#~ msgstr "metin imzalama"
+
+#~ msgctxt "Thread Error"
+#~ msgid "file signing"
+#~ msgstr "dosya imzalama"
+
+#~ msgctxt "Thread Error"
+#~ msgid "text verification"
+#~ msgstr "metin doğrulama"
+
+#~ msgctxt "Thread Error"
+#~ msgid "file verification"
+#~ msgstr "dosya doğrulama"
+
+#~ msgctxt "Thread Error"
+#~ msgid "key import"
+#~ msgstr "anahtar içe aktarma"
+
+#~ msgctxt "Thread Error"
+#~ msgid "key generation"
+#~ msgstr "anahtar oluşturma"
+
+#~ msgctxt "Thread Error"
+#~ msgid "key export"
+#~ msgstr "anahtar dışa aktarma"
+
+#~ msgctxt "Thread Error"
+#~ msgid "key removal"
+#~ msgstr "anahtar kaldırma"
 
 #, c-format
 #~ msgctxt "Error message constructor for failed GPGME operations"

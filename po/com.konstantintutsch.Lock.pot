@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 14:02+0100\n"
+"POT-Creation-Date: 2024-11-24 14:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -166,223 +166,204 @@ msgstr ""
 msgid "Key removed"
 msgstr ""
 
-#: src/cryptography.c:42 src/cryptography.c:77 src/cryptography.c:122
-#: src/cryptography.c:181 src/cryptography.c:303 src/cryptography.c:423
-msgctxt "GPGME Error"
+#: src/cryptography.c:42 src/cryptography.c:76 src/cryptography.c:120
+#: src/cryptography.c:178 src/cryptography.c:298 src/cryptography.c:417
 msgid "Failed to create new GPGME context"
 msgstr ""
 
-#: src/cryptography.c:48 src/cryptography.c:83 src/cryptography.c:128
-#: src/cryptography.c:187 src/cryptography.c:309 src/cryptography.c:429
+#: src/cryptography.c:47 src/cryptography.c:81 src/cryptography.c:125
+#: src/cryptography.c:183 src/cryptography.c:303 src/cryptography.c:422
 msgctxt "GPGME Error"
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr ""
 
-#: src/cryptography.c:53
-msgctxt "GPGME Error"
+#: src/cryptography.c:52
 msgid "Failed to obtain key by fingerprint"
 msgstr ""
 
-#: src/cryptography.c:97
-msgctxt "GPGME Error"
+#: src/cryptography.c:95
 msgid "Failed to find key matching User ID"
 msgstr ""
 
-#: src/cryptography.c:140 src/cryptography.c:149
+#: src/cryptography.c:137 src/cryptography.c:146
 msgctxt "GPGME Error"
 msgid "Failed to generate new GPG key for signing"
 msgstr ""
 
-#: src/cryptography.c:156
+#: src/cryptography.c:153
 msgctxt "GPGME Error"
 msgid "Failed to delete unfinished, generated key"
 msgstr ""
 
-#: src/cryptography.c:194
+#: src/cryptography.c:190
 msgctxt "GPGME Error"
 msgid "Failed to load GPGME key data from file"
 msgstr ""
 
-#: src/cryptography.c:200
-msgctxt "GPGME Error"
+#: src/cryptography.c:196
 msgid "Failed to import GPG key from file"
 msgstr ""
 
-#: src/cryptography.c:212
+#: src/cryptography.c:208
 msgctxt "GPGME Error"
 msgid "Failed to create GPGME key data in memory"
 msgstr ""
 
-#: src/cryptography.c:218
-msgctxt "GPGME Error"
+#: src/cryptography.c:214
 msgid "Failed to export GPG key(s) to file"
 msgstr ""
 
-#: src/cryptography.c:233
+#: src/cryptography.c:229
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr ""
 
-#: src/cryptography.c:263
-msgctxt "GPGME Error"
+#: src/cryptography.c:259
 msgid "Failed to get GPG key for removal"
 msgstr ""
 
-#: src/cryptography.c:268
-msgctxt "GPGME Error"
+#: src/cryptography.c:263
 msgid "Failed to remove GPG key"
 msgstr ""
 
-#: src/cryptography.c:315 src/cryptography.c:435
+#: src/cryptography.c:309 src/cryptography.c:428
 msgctxt "GPGME Error"
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr ""
 
-#: src/cryptography.c:323
+#: src/cryptography.c:317
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from string"
 msgstr ""
 
-#: src/cryptography.c:329 src/cryptography.c:458
+#: src/cryptography.c:323 src/cryptography.c:451
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME output data in memory"
 msgstr ""
 
-#: src/cryptography.c:339
+#: src/cryptography.c:333
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:346
+#: src/cryptography.c:340
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:355
+#: src/cryptography.c:349
 msgctxt "GPGME Error"
 msgid "Failed to add signing key to GPGME context"
 msgstr ""
 
-#: src/cryptography.c:362
-msgctxt "GPGME Error"
+#: src/cryptography.c:356
 msgid "Failed to sign GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:369
+#: src/cryptography.c:363
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:411
+#: src/cryptography.c:405
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr ""
 
-#: src/cryptography.c:442
+#: src/cryptography.c:435
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from file"
 msgstr ""
 
-#: src/cryptography.c:450
+#: src/cryptography.c:443
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME input data"
 msgstr ""
 
-#: src/cryptography.c:467
+#: src/cryptography.c:460
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME output data"
 msgstr ""
 
-#: src/cryptography.c:478
+#: src/cryptography.c:471
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:484
+#: src/cryptography.c:477
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:491
-msgctxt "GPGME Error"
+#: src/cryptography.c:484
 msgid "Failed to sign GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:497
-msgctxt "GPGME Error"
+#: src/cryptography.c:490
 msgid "Failed to verify GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:513
+#: src/cryptography.c:506
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr ""
 
-#: src/threading.c:35
-#, c-format
-msgctxt ""
-"First format specifier is a translation string marked as “Thread Error”"
-msgid "Failed to create %s thread: %s"
-msgstr ""
-
-#: src/threading.c:59
+#: src/threading.c:58
 msgctxt "Thread Error"
-msgid "text encryption"
+msgid "Failed to create text encryption thread"
 msgstr ""
 
 #: src/threading.c:81
 msgctxt "Thread Error"
-msgid "file encryption"
+msgid "Failed to create file encryption thread"
 msgstr ""
 
-#: src/threading.c:102
+#: src/threading.c:103
 msgctxt "Thread Error"
-msgid "text decryption"
+msgid "Failed to create text decryption thread"
 msgstr ""
 
-#: src/threading.c:120
+#: src/threading.c:122
 msgctxt "Thread Error"
-msgid "file decryption"
+msgid "Failed to create file decryption thread"
 msgstr ""
 
-#: src/threading.c:142
+#: src/threading.c:145
 msgctxt "Thread Error"
-msgid "text signing"
+msgid "Failed to create text signing thread"
 msgstr ""
 
-#: src/threading.c:164
+#: src/threading.c:168
 msgctxt "Thread Error"
-msgid "file signing"
+msgid "Failed to create file signing thread"
 msgstr ""
 
-#: src/threading.c:185
+#: src/threading.c:190
 msgctxt "Thread Error"
-msgid "text verification"
+msgid "Failed to create text verification thread"
 msgstr ""
 
-#: src/threading.c:203
+#: src/threading.c:209
 msgctxt "Thread Error"
-msgid "file verification"
+msgid "Failed to create file verification thread"
 msgstr ""
 
-#: src/threading.c:218
+#: src/threading.c:225
 msgctxt "Thread Error"
-msgid "key import"
+msgid "Failed to create key import thread"
 msgstr ""
 
-#: src/threading.c:236
+#: src/threading.c:244
 msgctxt "Thread Error"
-msgid "key generation"
+msgid "Failed to create key generation thread"
 msgstr ""
 
-#: src/threading.c:251
-msgctxt "Thread Error"
-msgid "key export"
+#: src/threading.c:259
+msgid "Failed to create key export thread"
 msgstr ""
 
-#: src/threading.c:262
-msgctxt "Thread Error"
-msgid "key removal"
+#: src/threading.c:271
+msgid "Failed to create key removal thread"
 msgstr ""
 
 #: data/ui/window.blp:9 data/ui/window.blp:192

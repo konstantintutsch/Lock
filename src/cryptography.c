@@ -39,8 +39,7 @@ gpgme_key_t key_get(const char *fingerprint)
 
     error = gpgme_new(&context);
     HANDLE_ERROR(NULL, error,
-                 C_("GPGME Error", "Failed to create new GPGME context"),
-                 context,);
+                 _("Failed to create new GPGME context"), context,);
 
     error = gpgme_set_protocol(context, GPGME_PROTOCOL_OpenPGP);
     HANDLE_ERROR(NULL, error,
@@ -50,7 +49,7 @@ gpgme_key_t key_get(const char *fingerprint)
 
     error = gpgme_get_key(context, fingerprint, &key, 0);
     HANDLE_ERROR(NULL, error,
-                 C_("GPGME Error", "Failed to obtain key by fingerprint"),
+                 _("Failed to obtain key by fingerprint"),
                  context, gpgme_key_release(key););
 
     /* Cleanup */
@@ -74,8 +73,7 @@ gpgme_key_t key_search(const char *userid)
 
     error = gpgme_new(&context);
     HANDLE_ERROR(NULL, error,
-                 C_("GPGME Error", "Failed to create new GPGME context"),
-                 context,);
+                 _("Failed to create new GPGME context"), context,);
 
     error = gpgme_set_protocol(context, GPGME_PROTOCOL_OpenPGP);
     HANDLE_ERROR(NULL, error,
@@ -94,7 +92,7 @@ gpgme_key_t key_search(const char *userid)
             break;
     }
     HANDLE_ERROR(NULL, error,
-                 C_("GPGME Error", "Failed to find key matching User ID"),
+                 _("Failed to find key matching User ID"),
                  context, gpgme_key_release(key););
 
     /* Cleanup */
@@ -119,8 +117,7 @@ bool key_generate(const char *userid, const char *sign_algorithm,
 
     error = gpgme_new(&context);
     HANDLE_ERROR(false, error,
-                 C_("GPGME Error", "Failed to create new GPGME context"),
-                 context,);
+                 _("Failed to create new GPGME context"), context,);
 
     error = gpgme_set_protocol(context, GPGME_PROTOCOL_OpenPGP);
     HANDLE_ERROR(false, error,
@@ -178,8 +175,7 @@ bool key_manage(const char *path, const char *fingerprint, key_flags flags)
 
     error = gpgme_new(&context);
     HANDLE_ERROR(false, error,
-                 C_("GPGME Error", "Failed to create new GPGME context"),
-                 context,);
+                 _("Failed to create new GPGME context"), context,);
 
     error = gpgme_set_protocol(context, GPGME_PROTOCOL_OpenPGP);
     HANDLE_ERROR(false, error,
@@ -197,7 +193,7 @@ bool key_manage(const char *path, const char *fingerprint, key_flags flags)
 
         error = gpgme_op_import(context, keydata);
         HANDLE_ERROR(false, error,
-                     C_("GPGME Error", "Failed to import GPG key from file"),
+                     _("Failed to import GPG key from file"),
                      context, gpgme_data_release(keydata);
             );
 
@@ -215,7 +211,7 @@ bool key_manage(const char *path, const char *fingerprint, key_flags flags)
 
         error = gpgme_op_export(context, fingerprint, 0, keydata);
         HANDLE_ERROR(false, error,
-                     C_("GPGME Error", "Failed to export GPG key(s) to file"),
+                     _("Failed to export GPG key(s) to file"),
                      context, gpgme_data_release(keydata);
             );
 
@@ -260,12 +256,11 @@ bool key_manage(const char *path, const char *fingerprint, key_flags flags)
 
         error = gpgme_get_key(context, fingerprint, &key, 0);
         HANDLE_ERROR(false, error,
-                     C_("GPGME Error", "Failed to get GPG key for removal"),
-                     context,);
+                     _("Failed to get GPG key for removal"), context,);
 
         error = gpgme_op_delete(context, key, 1);
         HANDLE_ERROR(false, error,
-                     C_("GPGME Error", "Failed to remove GPG key"), context,
+                     _("Failed to remove GPG key"), context,
                      gpgme_key_release(key);
             );
 
@@ -300,8 +295,7 @@ char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key)
 
     error = gpgme_new(&context);
     HANDLE_ERROR(NULL, error,
-                 C_("GPGME Error", "Failed to create new GPGME context"),
-                 context,);
+                 _("Failed to create new GPGME context"), context,);
 
     error = gpgme_set_protocol(context, GPGME_PROTOCOL_OpenPGP);
     HANDLE_ERROR(NULL, error,
@@ -359,7 +353,7 @@ char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key)
 
         error = gpgme_op_sign(context, input, output, GPGME_SIG_MODE_NORMAL);
         HANDLE_ERROR(NULL, error,
-                     C_("GPGME Error", "Failed to sign GPGME data from memory"),
+                     _("Failed to sign GPGME data from memory"),
                      context, gpgme_data_release(input);
                      gpgme_data_release(output););
     } else if (flags & VERIFY) {
@@ -420,8 +414,7 @@ bool process_file(const char *input_path, const char *output_path,
 
     error = gpgme_new(&context);
     HANDLE_ERROR(false, error,
-                 C_("GPGME Error", "Failed to create new GPGME context"),
-                 context,);
+                 _("Failed to create new GPGME context"), context,);
 
     error = gpgme_set_protocol(context, GPGME_PROTOCOL_OpenPGP);
     HANDLE_ERROR(NULL, error,
@@ -488,13 +481,13 @@ bool process_file(const char *input_path, const char *output_path,
     if (flags & SIGN) {
         error = gpgme_op_sign(context, input, output, GPGME_SIG_MODE_NORMAL);
         HANDLE_ERROR(false, error,
-                     C_("GPGME Error", "Failed to sign GPGME data from file"),
+                     _("Failed to sign GPGME data from file"),
                      context, gpgme_data_release(input);
                      gpgme_data_release(output););
     } else if (flags & VERIFY) {
         error = gpgme_op_verify(context, input, NULL, output);
         HANDLE_ERROR(false, error,
-                     C_("GPGME Error", "Failed to verify GPGME data from file"),
+                     _("Failed to verify GPGME data from file"),
                      context, gpgme_data_release(input);
                      gpgme_data_release(output););
     }
