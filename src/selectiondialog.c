@@ -14,6 +14,8 @@
 struct _LockSelectionDialog {
     AdwDialog parent;
 
+    gboolean target; /**< true: encryption-capable keys; false: signing-capable keys */
+
     AdwSpinner *spinner;
     AdwToolbarView *view;
 
@@ -44,7 +46,6 @@ static void lock_selection_dialog_init(LockSelectionDialog *dialog)
 
     g_signal_connect(dialog->refresh_button, "clicked",
                      G_CALLBACK(lock_selection_dialog_refresh), dialog);
-    lock_selection_dialog_refresh(NULL, dialog);
 
     g_signal_connect(dialog->key_box, "row-activated",
                      G_CALLBACK(lock_selection_dialog_key_selected), dialog);
@@ -84,11 +85,20 @@ static void lock_selection_dialog_class_init(LockSelectionDialogClass *class)
 /**
  * This function creates a new LockSelectionDialog.
  *
+ * @param target Which keys to filter for. Encryption-capable keys if true, signing-capable keys if false
+ *
  * @return LockSelectionDialog
  */
-LockSelectionDialog *lock_selection_dialog_new()
+LockSelectionDialog *lock_selection_dialog_new(gboolean target)
 {
-    return g_object_new(LOCK_TYPE_SELECTION_DIALOG, NULL);
+    LockSelectionDialog *dialog =
+        g_object_new(LOCK_TYPE_SELECTION_DIALOG, NULL);
+
+    /* TODO: implement g_object_class_install_property() */
+    dialog->target = target;
+    lock_selection_dialog_refresh(NULL, dialog);
+
+    return dialog;
 }
 
 /**
@@ -133,8 +143,11 @@ void lock_selection_dialog_refresh(GtkButton *self, LockSelectionDialog *dialog)
         if (error)
             break;
 
-        if (!key->can_encrypt)
+        if (dialog->target && !key->can_encrypt) {
             continue;
+        } else if (!dialog->target && !key->can_sign) { // TODO: key->can_sign and key->has_sign are always true?
+            continue;
+        }
 
         AdwActionRow *row = ADW_ACTION_ROW(adw_action_row_new());
         adw_preferences_row_set_use_markup(ADW_PREFERENCES_ROW(row), false);

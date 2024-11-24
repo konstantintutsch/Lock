@@ -27,7 +27,7 @@ struct _LockWindow {
     AdwViewStack *stack;
     unsigned int action_mode;
 
-    gchar *fingerprint; /**< Stores the selected fingerprint for an encryption process. */
+    gchar *fingerprint; /**< Stores the selected fingerprint for an encryption or signing process. */
 
     /* Text */
     AdwViewStackPage *text_page;
@@ -106,6 +106,11 @@ void lock_window_encrypt_text_dialog(GSimpleAction * self, GVariant * parameter,
                                      LockWindow * window);
 void lock_window_encrypt_file_dialog(GtkButton * self, LockWindow * window);
 
+/* Signing */
+void lock_window_sign_text_dialog(GSimpleAction * self, GVariant * parameter,
+                                  LockWindow * window);
+void lock_window_sign_file_dialog(GtkButton * self, LockWindow * window);
+
 /**
  * This function initializes a LockWindow.
  *
@@ -159,7 +164,7 @@ static void lock_window_init(LockWindow *window)
     g_autoptr(GSimpleAction) sign_text_action =
         g_simple_action_new("sign_text", NULL);
     g_signal_connect(sign_text_action, "activate",
-                     G_CALLBACK(thread_sign_text), window);
+                     G_CALLBACK(lock_window_sign_text_dialog), window);
     g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(sign_text_action));
     // Verify
     g_autoptr(GSimpleAction) verify_text_action =
@@ -184,7 +189,7 @@ static void lock_window_init(LockWindow *window)
                      G_CALLBACK(thread_decrypt_file), window);
     // Sign
     g_signal_connect(window->file_sign_button, "clicked",
-                     G_CALLBACK(thread_sign_file), window);
+                     G_CALLBACK(lock_window_sign_file_dialog), window);
     // Verify
     g_signal_connect(window->file_verify_button, "clicked",
                      G_CALLBACK(thread_verify_file), window);
@@ -560,7 +565,7 @@ lock_window_file_save_dialog_present(GtkButton *self, LockWindow *window)
                          cancel, lock_window_file_save, window);
 }
 
-/**** Encryption ****/
+/****** Cryptography ******/
 
 /**
  * This function overwrites the key fingerprint of a LockWindow.
@@ -575,6 +580,8 @@ void lock_window_set_fingerprint(LockWindow *window, const char *fingerprint)
     strcpy(window->fingerprint, fingerprint);
 }
 
+/**** Encryption ****/
+
 /**
  * This function handles user input to select the target key for a text encryption process of a LockWindow.
  *
@@ -588,7 +595,7 @@ void lock_window_encrypt_text_dialog(GSimpleAction *self, GVariant *parameter,
     (void)self;
     (void)parameter;
 
-    LockSelectionDialog *dialog = lock_selection_dialog_new();
+    LockSelectionDialog *dialog = lock_selection_dialog_new(true);
 
     g_signal_connect(dialog, "entered", G_CALLBACK(thread_encrypt_text),
                      window);
@@ -606,7 +613,7 @@ void lock_window_encrypt_file_dialog(GtkButton *self, LockWindow *window)
 {
     (void)self;
 
-    LockSelectionDialog *dialog = lock_selection_dialog_new();
+    LockSelectionDialog *dialog = lock_selection_dialog_new(true);
 
     g_signal_connect(dialog, "entered", G_CALLBACK(thread_encrypt_file),
                      window);
@@ -855,6 +862,43 @@ gboolean lock_window_decrypt_file_on_completed(LockWindow *window)
 /**** Signing ****/
 
 /**
+ * This function handles user input to select the source key for a text signing process of a LockWindow.
+ *
+ * @param self https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ * @param window https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ */
+void lock_window_sign_text_dialog(GSimpleAction *self, GVariant *parameter,
+                                  LockWindow *window)
+{
+    (void)self;
+    (void)parameter;
+
+    LockSelectionDialog *dialog = lock_selection_dialog_new(false);
+
+    g_signal_connect(dialog, "entered", G_CALLBACK(thread_sign_text), window);
+
+    adw_dialog_present(ADW_DIALOG(dialog), GTK_WIDGET(window));
+}
+
+/**
+ * This function handles user input to select the target key for a file encryption process of a LockWindow.
+ *
+ * @param self https://docs.gtk.org/gtk4/signal.Button.clicked.html
+ * @param window https://docs.gtk.org/gtk4/signal.Button.clicked.html
+ */
+void lock_window_sign_file_dialog(GtkButton *self, LockWindow *window)
+{
+    (void)self;
+
+    LockSelectionDialog *dialog = lock_selection_dialog_new(false);
+
+    g_signal_connect(dialog, "entered", G_CALLBACK(thread_sign_file), window);
+
+    adw_dialog_present(ADW_DIALOG(dialog), GTK_WIDGET(window));
+}
+
+/**
  * This function signs text from the text view of a LockWindow.
  *
  * @param window https://docs.gtk.org/glib/callback.ThreadFunc.html
@@ -863,7 +907,9 @@ void lock_window_sign_text(LockWindow *window)
 {
     gchar *plain = lock_window_text_view_get_text(window);
 
-    gchar *armor = process_text(plain, SIGN, NULL);
+    gpgme_key_t key = key_get(window->fingerprint);
+
+    gchar *armor = process_text(plain, SIGN, key);
     if (armor == NULL) {
         window->text_success = false;
     } else {
@@ -877,6 +923,8 @@ void lock_window_sign_text(LockWindow *window)
 
     g_free(armor);
     armor = NULL;
+
+    gpgme_key_release(key);
 
     /* UI */
     g_idle_add((GSourceFunc) lock_window_sign_text_on_completed, window);
@@ -927,7 +975,9 @@ void lock_window_sign_file(LockWindow *window)
     char *input_path = g_file_get_path(window->file_input);
     char *output_path = g_file_get_path(window->file_output);
 
-    window->file_success = process_file(input_path, output_path, SIGN, NULL);
+    gpgme_key_t key = key_get(window->fingerprint);
+
+    window->file_success = process_file(input_path, output_path, SIGN, key);
 
     /* Cleanup */
     g_free(input_path);
@@ -935,6 +985,8 @@ void lock_window_sign_file(LockWindow *window)
 
     g_free(output_path);
     output_path = NULL;
+
+    gpgme_key_release(key);
 
     /* UI */
     g_idle_add((GSourceFunc) lock_window_sign_file_on_completed, window);

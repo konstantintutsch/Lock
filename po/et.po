@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 08:56+0100\n"
+"POT-Creation-Date: 2024-11-24 10:12+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -49,59 +49,59 @@ msgstr "Priit Jõerüüt"
 msgid "Dependencies"
 msgstr "Sõltuvused"
 
-#: src/window.c:139
+#: src/window.c:144
 msgid "Enter text …"
 msgstr "Sisesta tekst…"
 
-#: src/window.c:412
+#: src/window.c:417
 msgid "Text copied"
 msgstr "Tekst on kopeeritud"
 
-#: src/window.c:663 src/window.c:725
+#: src/window.c:670 src/window.c:732
 msgid "Encryption failed"
 msgstr "Krüptimine ei õnnestunud"
 
-#: src/window.c:665
+#: src/window.c:672
 msgid "Text encrypted"
 msgstr "Tekst on krüptitud"
 
-#: src/window.c:727
+#: src/window.c:734
 msgid "File encrypted"
 msgstr "Fail on krüptitud"
 
-#: src/window.c:783 src/window.c:841
+#: src/window.c:790 src/window.c:848
 msgid "Decryption failed"
 msgstr "Dekrüptimine ei õnnestunud"
 
-#: src/window.c:785
+#: src/window.c:792
 msgid "Text decrypted"
 msgstr "Tekst on dekrüptitud"
 
-#: src/window.c:843
+#: src/window.c:850
 msgid "File decrypted"
 msgstr "Fail on dekrüptitud"
 
-#: src/window.c:899 src/window.c:957
+#: src/window.c:947 src/window.c:1009
 msgid "Signing failed"
 msgstr "Allkirjastamine ei õnnestunud"
 
-#: src/window.c:901
+#: src/window.c:949
 msgid "Text signed"
 msgstr "Tekst on allkirjastatud"
 
-#: src/window.c:959
+#: src/window.c:1011
 msgid "File signed"
 msgstr "Fail on allkirjastatud"
 
-#: src/window.c:1015 src/window.c:1073
+#: src/window.c:1067 src/window.c:1125
 msgid "Verification failed"
 msgstr "Verifitseerimine ei õnnestunud"
 
-#: src/window.c:1017
+#: src/window.c:1069
 msgid "Text verified"
 msgstr "Tekst on verifitseeritud"
 
-#: src/window.c:1075
+#: src/window.c:1127
 msgid "File verified"
 msgstr "Fail on verifitseeritud"
 
@@ -169,13 +169,13 @@ msgid "Key removed"
 msgstr "Võti on eemaldatud"
 
 #: src/cryptography.c:42 src/cryptography.c:78 src/cryptography.c:124
-#: src/cryptography.c:185 src/cryptography.c:302 src/cryptography.c:416
+#: src/cryptography.c:185 src/cryptography.c:302 src/cryptography.c:422
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME context"
 msgstr ""
 
 #: src/cryptography.c:48 src/cryptography.c:84 src/cryptography.c:130
-#: src/cryptography.c:191 src/cryptography.c:308 src/cryptography.c:422
+#: src/cryptography.c:191 src/cryptography.c:308 src/cryptography.c:428
 msgctxt "GPGME Error"
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr ""
@@ -235,7 +235,7 @@ msgctxt "GPGME Error"
 msgid "Failed to remove GPG key"
 msgstr ""
 
-#: src/cryptography.c:314 src/cryptography.c:428
+#: src/cryptography.c:314 src/cryptography.c:434
 msgctxt "GPGME Error"
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr ""
@@ -245,7 +245,7 @@ msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from string"
 msgstr ""
 
-#: src/cryptography.c:329 src/cryptography.c:452
+#: src/cryptography.c:329 src/cryptography.c:458
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME output data in memory"
 msgstr ""
@@ -260,57 +260,62 @@ msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:354
+#: src/cryptography.c:355
+msgctxt "GPGME Error"
+msgid "Failed to add signing key to GPGME context"
+msgstr ""
+
+#: src/cryptography.c:360
 msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:362
+#: src/cryptography.c:368
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:404
+#: src/cryptography.c:410
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr ""
 
-#: src/cryptography.c:435
+#: src/cryptography.c:441
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from file"
 msgstr ""
 
-#: src/cryptography.c:444
+#: src/cryptography.c:450
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME input data"
 msgstr ""
 
-#: src/cryptography.c:461
+#: src/cryptography.c:467
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME output data"
 msgstr ""
 
-#: src/cryptography.c:473
+#: src/cryptography.c:479
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:481
+#: src/cryptography.c:487
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:490
+#: src/cryptography.c:496
 msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:497
+#: src/cryptography.c:503
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:514
+#: src/cryptography.c:520
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr ""
@@ -342,42 +347,42 @@ msgctxt "Thread Error"
 msgid "file decryption"
 msgstr ""
 
-#: src/threading.c:141
+#: src/threading.c:142
 msgctxt "Thread Error"
 msgid "text signing"
 msgstr ""
 
-#: src/threading.c:159
+#: src/threading.c:164
 msgctxt "Thread Error"
 msgid "file signing"
 msgstr ""
 
-#: src/threading.c:180
+#: src/threading.c:185
 msgctxt "Thread Error"
 msgid "text verification"
 msgstr ""
 
-#: src/threading.c:198
+#: src/threading.c:203
 msgctxt "Thread Error"
 msgid "file verification"
 msgstr ""
 
-#: src/threading.c:213
+#: src/threading.c:218
 msgctxt "Thread Error"
 msgid "key import"
 msgstr ""
 
-#: src/threading.c:231
+#: src/threading.c:236
 msgctxt "Thread Error"
 msgid "key generation"
 msgstr ""
 
-#: src/threading.c:246
+#: src/threading.c:251
 msgctxt "Thread Error"
 msgid "key export"
 msgstr ""
 
-#: src/threading.c:257
+#: src/threading.c:262
 msgctxt "Thread Error"
 msgid "key removal"
 msgstr ""

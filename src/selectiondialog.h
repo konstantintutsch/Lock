@@ -9,7 +9,7 @@
 G_DECLARE_FINAL_TYPE(LockSelectionDialog, lock_selection_dialog, LOCK,
                      SELECTION_DIALOG, AdwDialog);
 
-LockSelectionDialog *lock_selection_dialog_new();
+LockSelectionDialog *lock_selection_dialog_new(gboolean target);
 
 const gchar *lock_selection_dialog_get_text(LockSelectionDialog * dialog);
 

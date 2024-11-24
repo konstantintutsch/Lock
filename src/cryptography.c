@@ -349,6 +349,12 @@ char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key)
     }
 
     if (flags & SIGN) {
+        error = gpgme_signers_add(context, key);
+        HANDLE_ERROR(NULL, error,
+                     C_("GPGME Error",
+                        "Failed to add signing key to GPGME context"), context,
+                     gpgme_data_release(input); gpgme_data_release(output););
+
         error = gpgme_op_sign(context, input, output, GPGME_SIG_MODE_NORMAL);
         HANDLE_ERROR(NULL, error,
                      C_("GPGME Error", "Failed to sign GPGME data from memory"),

@@ -127,15 +127,16 @@ void thread_decrypt_file(GtkButton *self, LockWindow *window)
 /**
  * This function creates a new thread for the signing of the text view of a LockWindow.
  *
- * @param self https://docs.gtk.org/gio/signal.SimpleAction.activate.html
- * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
- * @param window https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ * @param self LockSelectionDialog::entered
+ * @param fingerprint LockSelectionDialog::entered
+ * @param window LockSelectionDialog::entered
  */
-void thread_sign_text(GSimpleAction *self, GVariant *parameter,
+void thread_sign_text(LockSelectionDialog *self, const char *fingerprint,
                       LockWindow *window)
 {
     (void)self;
-    (void)parameter;
+
+    lock_window_set_fingerprint(window, fingerprint);
 
     bool success =
         thread_create("sign_text", C_("Thread Error", "text signing"),
@@ -148,12 +149,16 @@ void thread_sign_text(GSimpleAction *self, GVariant *parameter,
 /**
  * This function creates a new thread for the signing of the input file of a LockWindow.
  *
- * @param self https://docs.gtk.org/gtk4/signal.Button.clicked.html
- * @param window https://docs.gtk.org/gtk4/signal.Button.clicked.html
+ * @param self LockSelectionDialog::entered
+ * @param fingerprint LockSelectionDialog::entered
+ * @param window LockSelectionDialog::entered
  */
-void thread_sign_file(GtkButton *self, LockWindow *window)
+void thread_sign_file(LockSelectionDialog *self, const char *fingerprint,
+                      LockWindow *window)
 {
     (void)self;
+
+    lock_window_set_fingerprint(window, fingerprint);
 
     bool success =
         thread_create("sign_file", C_("Thread Error", "file signing"),

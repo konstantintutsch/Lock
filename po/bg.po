@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 08:56+0100\n"
+"POT-Creation-Date: 2024-11-24 10:12+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/Lock/"
@@ -50,61 +50,61 @@ msgstr "twlvnn kraftwerk <kraft_werk@tutanota.com>"
 msgid "Dependencies"
 msgstr "Зависимости"
 
-#: src/window.c:139
+#: src/window.c:144
 msgid "Enter text …"
 msgstr "Въведете текст …"
 
-#: src/window.c:412
+#: src/window.c:417
 msgid "Text copied"
 msgstr "Текстът е копиран"
 
-#: src/window.c:663 src/window.c:725
+#: src/window.c:670 src/window.c:732
 msgid "Encryption failed"
 msgstr "Шифрирането е неуспешно"
 
-#: src/window.c:665
+#: src/window.c:672
 #, fuzzy
 msgid "Text encrypted"
 msgstr "Текстът е дешифриран"
 
-#: src/window.c:727
+#: src/window.c:734
 #, fuzzy
 msgid "File encrypted"
 msgstr "Файлът е дешифриран"
 
-#: src/window.c:783 src/window.c:841
+#: src/window.c:790 src/window.c:848
 msgid "Decryption failed"
 msgstr "Дешифрирането е неуспешно"
 
-#: src/window.c:785
+#: src/window.c:792
 msgid "Text decrypted"
 msgstr "Текстът е дешифриран"
 
-#: src/window.c:843
+#: src/window.c:850
 msgid "File decrypted"
 msgstr "Файлът е дешифриран"
 
-#: src/window.c:899 src/window.c:957
+#: src/window.c:947 src/window.c:1009
 msgid "Signing failed"
 msgstr "Подписването е неуспешно"
 
-#: src/window.c:901
+#: src/window.c:949
 msgid "Text signed"
 msgstr "Текстът е подписан"
 
-#: src/window.c:959
+#: src/window.c:1011
 msgid "File signed"
 msgstr "Файлът е подписан"
 
-#: src/window.c:1015 src/window.c:1073
+#: src/window.c:1067 src/window.c:1125
 msgid "Verification failed"
 msgstr "Потвърждаването е неуспешно"
 
-#: src/window.c:1017
+#: src/window.c:1069
 msgid "Text verified"
 msgstr "Текстът е потвърден"
 
-#: src/window.c:1075
+#: src/window.c:1127
 msgid "File verified"
 msgstr "Файлът е потвърден"
 
@@ -174,14 +174,14 @@ msgid "Key removed"
 msgstr "Ключът е премахнат"
 
 #: src/cryptography.c:42 src/cryptography.c:78 src/cryptography.c:124
-#: src/cryptography.c:185 src/cryptography.c:302 src/cryptography.c:416
+#: src/cryptography.c:185 src/cryptography.c:302 src/cryptography.c:422
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME context"
 msgstr "създадане на нов GPGME контекст"
 
 #: src/cryptography.c:48 src/cryptography.c:84 src/cryptography.c:130
-#: src/cryptography.c:191 src/cryptography.c:308 src/cryptography.c:422
+#: src/cryptography.c:191 src/cryptography.c:308 src/cryptography.c:428
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set protocol of GPGME context to OpenPGP"
@@ -251,7 +251,7 @@ msgctxt "GPGME Error"
 msgid "Failed to remove GPG key"
 msgstr "премахване на GPG ключ"
 
-#: src/cryptography.c:314 src/cryptography.c:428
+#: src/cryptography.c:314 src/cryptography.c:434
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set pinentry mode of GPGME context to ask"
@@ -263,7 +263,7 @@ msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from string"
 msgstr "създаване на нови подписани GPGME данни от низ"
 
-#: src/cryptography.c:329 src/cryptography.c:452
+#: src/cryptography.c:329 src/cryptography.c:458
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME output data in memory"
@@ -281,66 +281,72 @@ msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "дешифриране на GPGME данни от паметта"
 
-#: src/cryptography.c:354
+#: src/cryptography.c:355
+#, fuzzy
+msgctxt "GPGME Error"
+msgid "Failed to add signing key to GPGME context"
+msgstr "създадане на нов GPGME контекст"
+
+#: src/cryptography.c:360
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from memory"
 msgstr "подписване на GPGME данни от паметта"
 
-#: src/cryptography.c:362
+#: src/cryptography.c:368
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from memory"
 msgstr "потвърждаване на GPGME данни от паметта"
 
-#: src/cryptography.c:404
+#: src/cryptography.c:410
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s е премахнато, за да се подготви презаписването"
 
-#: src/cryptography.c:435
+#: src/cryptography.c:441
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from file"
 msgstr "създаване на нови подписани GPGME данни от низ"
 
-#: src/cryptography.c:444
+#: src/cryptography.c:450
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME input data"
 msgstr "задаване на местоположението до файла с подписаните GPGME данни"
 
-#: src/cryptography.c:461
+#: src/cryptography.c:467
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME output data"
 msgstr "задаване на местоположението до файла с подписаните GPGME данни"
 
-#: src/cryptography.c:473
+#: src/cryptography.c:479
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from file"
 msgstr "шифриране на GPGME данни от файл"
 
-#: src/cryptography.c:481
+#: src/cryptography.c:487
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from file"
 msgstr "дешифриране на GPGME данни от файл"
 
-#: src/cryptography.c:490
+#: src/cryptography.c:496
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from file"
 msgstr "подписване на GPGME данни от файл"
 
-#: src/cryptography.c:497
+#: src/cryptography.c:503
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from file"
 msgstr "потвърждаване на GPGME данни от файл"
 
-#: src/cryptography.c:514
+#: src/cryptography.c:520
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Изходният файл не може да бъде отворен: %s"
@@ -372,42 +378,42 @@ msgctxt "Thread Error"
 msgid "file decryption"
 msgstr "дешифриране на файл"
 
-#: src/threading.c:141
+#: src/threading.c:142
 msgctxt "Thread Error"
 msgid "text signing"
 msgstr "подписване на текст"
 
-#: src/threading.c:159
+#: src/threading.c:164
 msgctxt "Thread Error"
 msgid "file signing"
 msgstr "подписване на файл"
 
-#: src/threading.c:180
+#: src/threading.c:185
 msgctxt "Thread Error"
 msgid "text verification"
 msgstr "потвърждаване на текст"
 
-#: src/threading.c:198
+#: src/threading.c:203
 msgctxt "Thread Error"
 msgid "file verification"
 msgstr "потвърждаване на файл"
 
-#: src/threading.c:213
+#: src/threading.c:218
 msgctxt "Thread Error"
 msgid "key import"
 msgstr "внасяне на ключ"
 
-#: src/threading.c:231
+#: src/threading.c:236
 msgctxt "Thread Error"
 msgid "key generation"
 msgstr "генериране на ключ"
 
-#: src/threading.c:246
+#: src/threading.c:251
 msgctxt "Thread Error"
 msgid "key export"
 msgstr "изнасяне на ключ"
 
-#: src/threading.c:257
+#: src/threading.c:262
 msgctxt "Thread Error"
 msgid "key removal"
 msgstr "премахване на ключ"

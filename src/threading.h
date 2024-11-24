@@ -19,9 +19,10 @@ void thread_decrypt_text(GSimpleAction * self, GVariant * parameter,
 void thread_decrypt_file(GtkButton * self, LockWindow * window);
 
 /* Sign */
-void thread_sign_text(GSimpleAction * self, GVariant * parameter,
+void thread_sign_text(LockSelectionDialog * self, const char *fingerprint,
                       LockWindow * window);
-void thread_sign_file(GtkButton * self, LockWindow * window);
+void thread_sign_file(LockSelectionDialog * self, const char *fingerprint,
+                      LockWindow * window);
 
 /* Verify */
 void thread_verify_text(GSimpleAction * self, GVariant * parameter,
