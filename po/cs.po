@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-23 18:37+0100\n"
+"POT-Creation-Date: 2024-11-24 08:56+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/Lock/Application/"
@@ -49,79 +49,79 @@ msgstr "Michael Kováč"
 msgid "Dependencies"
 msgstr "Závislosti"
 
-#: src/window.c:138
+#: src/window.c:139
 msgid "Enter text …"
 msgstr "Zadejte text …"
 
-#: src/window.c:410
+#: src/window.c:412
 msgid "Text copied"
 msgstr "Text zkopírován"
 
-#: src/window.c:661 src/window.c:723
+#: src/window.c:663 src/window.c:725
 msgid "Encryption failed"
 msgstr "Zašifrování selhalo"
 
-#: src/window.c:663
+#: src/window.c:665
 #, fuzzy
 msgid "Text encrypted"
 msgstr "Text rozšifrován"
 
-#: src/window.c:725
+#: src/window.c:727
 #, fuzzy
 msgid "File encrypted"
 msgstr "Soubor rozšifrován"
 
-#: src/window.c:781 src/window.c:839
+#: src/window.c:783 src/window.c:841
 msgid "Decryption failed"
 msgstr "Rozšifrování selhalo"
 
-#: src/window.c:783
+#: src/window.c:785
 msgid "Text decrypted"
 msgstr "Text rozšifrován"
 
-#: src/window.c:841
+#: src/window.c:843
 msgid "File decrypted"
 msgstr "Soubor rozšifrován"
 
-#: src/window.c:897 src/window.c:955
+#: src/window.c:899 src/window.c:957
 msgid "Signing failed"
 msgstr "Podepisování selhalo"
 
-#: src/window.c:899
+#: src/window.c:901
 msgid "Text signed"
 msgstr "Text podepsán"
 
-#: src/window.c:957
+#: src/window.c:959
 msgid "File signed"
 msgstr "Soubor podepsán"
 
-#: src/window.c:1013 src/window.c:1071
+#: src/window.c:1015 src/window.c:1073
 msgid "Verification failed"
 msgstr "Ověření selhalo"
 
-#: src/window.c:1015
+#: src/window.c:1017
 msgid "Text verified"
 msgstr "Text ověřen"
 
-#: src/window.c:1073
+#: src/window.c:1075
 msgid "File verified"
 msgstr "Soubor ověřen"
 
-#: src/keydialog.c:350
+#: src/managementdialog.c:364
 msgid "Import failed"
 msgstr "Import selhal"
 
-#: src/keydialog.c:352
+#: src/managementdialog.c:366
 #, fuzzy
 msgid "Keys imported"
 msgstr "Klíč(e) importován(y)"
 
-#: src/keydialog.c:421
+#: src/managementdialog.c:437
 #, fuzzy
 msgid "Generation failed"
 msgstr "Ověření selhalo"
 
-#: src/keydialog.c:423
+#: src/managementdialog.c:439
 msgid "Keypair generated"
 msgstr ""
 
@@ -177,15 +177,15 @@ msgstr "Import selhal"
 msgid "Key removed"
 msgstr "Klíč exportován"
 
-#: src/cryptography.c:42 src/cryptography.c:77 src/cryptography.c:122
-#: src/cryptography.c:181 src/cryptography.c:303 src/cryptography.c:415
+#: src/cryptography.c:42 src/cryptography.c:78 src/cryptography.c:124
+#: src/cryptography.c:185 src/cryptography.c:302 src/cryptography.c:416
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME context"
 msgstr "vytvoření nového GPGME kontextu"
 
-#: src/cryptography.c:48 src/cryptography.c:83 src/cryptography.c:128
-#: src/cryptography.c:187 src/cryptography.c:309 src/cryptography.c:421
+#: src/cryptography.c:48 src/cryptography.c:84 src/cryptography.c:130
+#: src/cryptography.c:191 src/cryptography.c:308 src/cryptography.c:422
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set protocol of GPGME context to OpenPGP"
@@ -196,42 +196,42 @@ msgctxt "GPGME Error"
 msgid "Failed to obtain key by fingerprint"
 msgstr ""
 
-#: src/cryptography.c:97
+#: src/cryptography.c:98
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to find key matching User ID"
 msgstr "nalezení klíče odpovídající ID Uživatele"
 
-#: src/cryptography.c:140 src/cryptography.c:149
+#: src/cryptography.c:142 src/cryptography.c:151
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to generate new GPG key for signing"
 msgstr "Spravovat klíče"
 
-#: src/cryptography.c:156
+#: src/cryptography.c:158
 msgctxt "GPGME Error"
 msgid "Failed to delete unfinished, generated key"
 msgstr ""
 
-#: src/cryptography.c:194
+#: src/cryptography.c:198
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to load GPGME key data from file"
 msgstr "načtení GPGME dat klíče ze souboru"
 
-#: src/cryptography.c:200
+#: src/cryptography.c:203
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to import GPG key from file"
 msgstr "importování GPG klíče ze souboru"
 
-#: src/cryptography.c:212
+#: src/cryptography.c:214
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create GPGME key data in memory"
 msgstr "vytvoření GPGME dat klíče v paměti"
 
-#: src/cryptography.c:218
+#: src/cryptography.c:219
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to export GPG key(s) to file"
@@ -252,19 +252,19 @@ msgctxt "GPGME Error"
 msgid "Failed to remove GPG key"
 msgstr ""
 
-#: src/cryptography.c:315 src/cryptography.c:427
+#: src/cryptography.c:314 src/cryptography.c:428
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "nastavení pinentry módu GPGME kontextu na zeptání se"
 
-#: src/cryptography.c:323
+#: src/cryptography.c:322
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from string"
 msgstr "vytvoření nových podepsaných GPGME dat z řetězce"
 
-#: src/cryptography.c:329 src/cryptography.c:450
+#: src/cryptography.c:329 src/cryptography.c:452
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME output data in memory"
@@ -288,60 +288,60 @@ msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from memory"
 msgstr "podepsání GPGME dat z paměti"
 
-#: src/cryptography.c:361
+#: src/cryptography.c:362
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from memory"
 msgstr "ověření GPGME dat z paměti"
 
-#: src/cryptography.c:403
+#: src/cryptography.c:404
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "Odstraněno %s pro přípravu přepsání"
 
-#: src/cryptography.c:434
+#: src/cryptography.c:435
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from file"
 msgstr "vytvoření nových podepsaných GPGME dat z řetězce"
 
-#: src/cryptography.c:442
+#: src/cryptography.c:444
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME input data"
 msgstr "nastavení cesty souboru podepsaných GPGME dat"
 
-#: src/cryptography.c:459
+#: src/cryptography.c:461
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME output data"
 msgstr "nastavení cesty souboru podepsaných GPGME dat"
 
-#: src/cryptography.c:470
+#: src/cryptography.c:473
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from file"
 msgstr "šifrování GPGME dat ze souboru"
 
-#: src/cryptography.c:476
+#: src/cryptography.c:481
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from file"
 msgstr "rozšifrování GPGME dat ze souboru"
 
-#: src/cryptography.c:483
+#: src/cryptography.c:490
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from file"
 msgstr "podepsání GPGME dat ze souboru"
 
-#: src/cryptography.c:489
+#: src/cryptography.c:497
 #, fuzzy
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from file"
 msgstr "ověření GPGME dat ze souboru"
 
-#: src/cryptography.c:505
+#: src/cryptography.c:514
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Selhalo otevření výstupního souboru: %s"
@@ -477,7 +477,7 @@ msgstr "Podepsat"
 msgid "Verify"
 msgstr "Ověřit"
 
-#: data/ui/window.blp:198 data/ui/keydialog.blp:30
+#: data/ui/window.blp:198 data/ui/managementdialog.blp:30
 msgid "Manage keys"
 msgstr "Spravovat klíče"
 
@@ -485,91 +485,91 @@ msgstr "Spravovat klíče"
 msgid "About Lock"
 msgstr "O Zámku"
 
-#: data/ui/encryptiondialog.blp:35
+#: data/ui/selectiondialog.blp:35
 #, fuzzy
 msgid "Select key"
 msgstr "Obnovit klíče"
 
-#: data/ui/encryptiondialog.blp:48 data/ui/keydialog.blp:49
+#: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
 msgid "Refresh keys"
 msgstr "Obnovit klíče"
 
-#: data/ui/encryptiondialog.blp:68 data/ui/keydialog.blp:68
+#: data/ui/selectiondialog.blp:68 data/ui/managementdialog.blp:68
 msgid "No keys available"
 msgstr "Žádné klíče k dispozici"
 
-#: data/ui/encryptiondialog.blp:69 data/ui/keydialog.blp:69
+#: data/ui/selectiondialog.blp:69 data/ui/managementdialog.blp:69
 #, fuzzy
 msgid "Your GnuPG keyring does not contain any keys."
 msgstr "Ve vašem systému nejsou uloženy žádné GnuPG klíče."
 
-#: data/ui/keydialog.blp:89
+#: data/ui/managementdialog.blp:89
 #, fuzzy
 msgctxt "Import keys from files"
 msgid "Import"
 msgstr "Importovat"
 
-#: data/ui/keydialog.blp:90
+#: data/ui/managementdialog.blp:90
 msgid "Import keys from files"
 msgstr "Importovat klíče ze souborů"
 
-#: data/ui/keydialog.blp:97
+#: data/ui/managementdialog.blp:97
 msgid "Create a new keypair"
 msgstr ""
 
-#: data/ui/keydialog.blp:110
+#: data/ui/managementdialog.blp:110
 #, fuzzy
 msgid "Generate keypair"
 msgstr "Spravovat klíče"
 
-#: data/ui/keydialog.blp:141
+#: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
 msgstr ""
 
-#: data/ui/keydialog.blp:146
+#: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr ""
 
-#: data/ui/keydialog.blp:151
+#: data/ui/managementdialog.blp:151
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr ""
 
-#: data/ui/keydialog.blp:152
+#: data/ui/managementdialog.blp:152
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr ""
 
-#: data/ui/keydialog.blp:160
+#: data/ui/managementdialog.blp:160
 #, fuzzy
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "Šifrovat"
 
-#: data/ui/keydialog.blp:161
+#: data/ui/managementdialog.blp:161
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr ""
 
-#: data/ui/keydialog.blp:169
+#: data/ui/managementdialog.blp:169
 #, fuzzy
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr "Platnost"
 
-#: data/ui/keydialog.blp:170
+#: data/ui/managementdialog.blp:170
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr ""
 
-#: data/ui/keydialog.blp:192
+#: data/ui/managementdialog.blp:192
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr ""
 
-#: data/ui/keydialog.blp:193
+#: data/ui/managementdialog.blp:193
 msgid "Generate a new keypair"
 msgstr ""
 

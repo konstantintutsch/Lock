@@ -4,8 +4,8 @@
 #include <glib/gi18n.h>
 #include <locale.h>
 #include "window.h"
-#include "encryptiondialog.h"
-#include "keydialog.h"
+#include "selectiondialog.h"
+#include "managementdialog.h"
 #include "keyrow.h"
 
 #include <string.h>
@@ -44,11 +44,11 @@ bool thread_create(const gchar *id, const gchar *purpose, gpointer function,
 /**
  * This function creates a new thread for the encryption of the text view of a LockWindow.
  *
- * @param self LockEncryptionDialog::entered
- * @param fingerprint LockEncryptionDialog::entered
- * @param window LockEncryptionDialog::entered
+ * @param self LockSelectionDialog::entered
+ * @param fingerprint LockSelectionDialog::entered
+ * @param window LockSelectionDialog::entered
  */
-void thread_encrypt_text(LockEncryptionDialog *self, const char *fingerprint,
+void thread_encrypt_text(LockSelectionDialog *self, const char *fingerprint,
                          LockWindow *window)
 {
     (void)self;
@@ -66,11 +66,11 @@ void thread_encrypt_text(LockEncryptionDialog *self, const char *fingerprint,
 /**
  * This function creates a new thread for the encryption of the input file of a LockWindow.
  *
- * @param self LockEncryptionDialog::entered
- * @param fingerprint LockEncryptionDialog::entered
- * @param window LockEncryptionDialog::entered
+ * @param self LockSelectionDialog::entered
+ * @param fingerprint LockSelectionDialog::entered
+ * @param window LockSelectionDialog::entered
  */
-void thread_encrypt_file(LockEncryptionDialog *self, const char *fingerprint,
+void thread_encrypt_file(LockSelectionDialog *self, const char *fingerprint,
                          LockWindow *window)
 {
     (void)self;
@@ -203,36 +203,36 @@ void thread_verify_file(GtkButton *self, LockWindow *window)
 }
 
 /**
- * This function creates a new thread for the import of a file as a key of a LockKeyDialog.
+ * This function creates a new thread for the import of a file as a key of a LockManagementDialog.
  *
  * @param dialog Dialog to import the key in
  */
-void thread_import_key(LockKeyDialog *dialog)
+void thread_import_key(LockManagementDialog *dialog)
 {
     bool success = thread_create("import_key",
                                  C_("Thread Error", "key import"),
-                                 lock_key_dialog_import, dialog);
+                                 lock_management_dialog_import, dialog);
 
     if (success)
-        lock_key_dialog_show_spinner(dialog, true);
+        lock_management_dialog_show_spinner(dialog, true);
 }
 
 /**
- * This function creates a new thread for the generation of a new keypair in a LockKeyDialog.
+ * This function creates a new thread for the generation of a new keypair in a LockManagementDialog.
  *
  * @param self https://docs.gtk.org/gtk4/signal.Button.clicked.html
  * @param dialog https://docs.gtk.org/gtk4/signal.Button.clicked.html
  */
-void thread_generate_key(GtkButton *self, LockKeyDialog *dialog)
+void thread_generate_key(GtkButton *self, LockManagementDialog *dialog)
 {
     (void)self;
 
     bool success = thread_create("generate_key",
                                  C_("Thread Error", "key generation"),
-                                 lock_key_dialog_generate, dialog);
+                                 lock_management_dialog_generate, dialog);
 
     if (success)
-        lock_key_dialog_show_spinner(dialog, true);
+        lock_management_dialog_show_spinner(dialog, true);
 }
 
 /**

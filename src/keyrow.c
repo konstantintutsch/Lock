@@ -4,7 +4,7 @@
 #include <glib/gi18n.h>
 #include <locale.h>
 #include "window.h"
-#include "keydialog.h"
+#include "managementdialog.h"
 #include "config.h"
 
 #include <gpgme.h>
@@ -17,7 +17,7 @@
 struct _LockKeyRow {
     AdwActionRow parent;
 
-    LockKeyDialog *dialog;
+    LockManagementDialog *dialog;
 
     gboolean remove_success;
     GtkButton *remove_button;
@@ -86,7 +86,7 @@ static void lock_key_row_class_init(LockKeyRowClass *class)
  *
  * @return LockKeyRow
  */
-LockKeyRow *lock_key_row_new(LockKeyDialog *dialog,
+LockKeyRow *lock_key_row_new(LockManagementDialog *dialog,
                              const gchar *title, const gchar *subtitle,
                              const gchar *expiry_date, const gchar *expiry_time)
 {
@@ -129,7 +129,7 @@ void lock_key_row_copy_fingerprint(AdwActionRow *self, LockKeyRow *row)
     const gchar *fingerprint = adw_action_row_get_subtitle(ADW_ACTION_ROW(row));
     gdk_clipboard_set_text(active_clipboard, fingerprint);
 
-    lock_key_dialog_add_toast(row->dialog, toast);
+    lock_management_dialog_add_toast(row->dialog, toast);
 }
 
 /**** Export ****/
@@ -176,7 +176,7 @@ static void lock_key_row_export_file_present(GtkButton *self, LockKeyRow *row)
     (void)self;
 
     GtkFileDialog *file = gtk_file_dialog_new();
-    LockWindow *window = lock_key_dialog_get_window(row->dialog);
+    LockWindow *window = lock_management_dialog_get_window(row->dialog);
     GCancellable *cancel = g_cancellable_new();
 
     gtk_file_dialog_save(file, GTK_WINDOW(window),
@@ -184,7 +184,7 @@ static void lock_key_row_export_file_present(GtkButton *self, LockKeyRow *row)
 }
 
 /**
- * This function imports a key in a LockKeyDialog.
+ * This function imports a key in a LockManagementDialog.
  *
  * @param row https://docs.gtk.org/glib/callback.ThreadFunc.html
  */
@@ -223,7 +223,7 @@ gboolean lock_key_row_export_on_completed(LockKeyRow *row)
     }
 
     adw_toast_set_timeout(toast, 2);
-    lock_key_dialog_add_toast(row->dialog, toast);
+    lock_management_dialog_add_toast(row->dialog, toast);
 
     /* Only execute once */
     return false;               // https://docs.gtk.org/glib/func.idle_add.html
@@ -251,7 +251,7 @@ static void lock_key_row_remove_confirm_on_responded(AdwAlertDialog *self,
 }
 
 /**
- * This function confirms whether a key should be removed in a LockKeyDialog.
+ * This function confirms whether a key should be removed in a LockManagementDialog.
  *
  * @param self https://docs.gtk.org/gtk4/signal.Button.clicked.html
  * @param row https://docs.gtk.org/gtk4/signal.Button.clicked.html
@@ -260,7 +260,7 @@ static void lock_key_row_remove_confirm(GtkButton *self, LockKeyRow *row)
 {
     (void)self;
 
-    LockWindow *window = lock_key_dialog_get_window(row->dialog);
+    LockWindow *window = lock_management_dialog_get_window(row->dialog);
     const char *uid = adw_preferences_row_get_title(ADW_PREFERENCES_ROW(row));
 
     AdwAlertDialog *confirm =
@@ -318,10 +318,10 @@ gboolean lock_key_row_remove_on_completed(LockKeyRow *row)
         toast = adw_toast_new(_("Key removed"));
     }
 
-    lock_key_dialog_refresh(NULL, row->dialog);
+    lock_management_dialog_refresh(NULL, row->dialog);
 
     adw_toast_set_timeout(toast, 2);
-    lock_key_dialog_add_toast(row->dialog, toast);
+    lock_management_dialog_add_toast(row->dialog, toast);
 
     /* Only execute once */
     return false;               // https://docs.gtk.org/glib/func.idle_add.html

@@ -3,14 +3,14 @@
 
 #include <adwaita.h>
 #include "window.h"
-#include "encryptiondialog.h"
-#include "keydialog.h"
+#include "selectiondialog.h"
+#include "managementdialog.h"
 #include "keyrow.h"
 
 /* Encrypt */
-void thread_encrypt_text(LockEncryptionDialog * self, const char *uid,
+void thread_encrypt_text(LockSelectionDialog * self, const char *uid,
                          LockWindow * window);
-void thread_encrypt_file(LockEncryptionDialog * self, const char *uid,
+void thread_encrypt_file(LockSelectionDialog * self, const char *uid,
                          LockWindow * window);
 
 /* Decrypt */
@@ -29,8 +29,8 @@ void thread_verify_text(GSimpleAction * self, GVariant * parameter,
 void thread_verify_file(GtkButton * self, LockWindow * window);
 
 /* Key */
-void thread_import_key(LockKeyDialog * dialog);
-void thread_generate_key(GtkButton * self, LockKeyDialog * dialog);
+void thread_import_key(LockManagementDialog * dialog);
+void thread_generate_key(GtkButton * self, LockManagementDialog * dialog);
 void thread_export_key(LockKeyRow * row);
 void thread_remove_key(LockKeyRow * row);
 

@@ -12,8 +12,8 @@ src = files(
   'main.c',
   'application.c',
   'window.c',
-  'encryptiondialog.c',
-  'keydialog.c',
+  'selectiondialog.c',
+  'managementdialog.c',
   'keyrow.c',
   'cryptography.c',
   'threading.c'

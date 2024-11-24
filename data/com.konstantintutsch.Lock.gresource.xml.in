@@ -2,8 +2,8 @@
 <gresources>
     <gresource prefix="@ui_resource@">
         <file preprocess="xml-stripblanks">window.ui</file>
-        <file preprocess="xml-stripblanks">encryptiondialog.ui</file>
-        <file preprocess="xml-stripblanks">keydialog.ui</file>
+        <file preprocess="xml-stripblanks">selectiondialog.ui</file>
+        <file preprocess="xml-stripblanks">managementdialog.ui</file>
         <file preprocess="xml-stripblanks">keyrow.ui</file>
     </gresource>
     <gresource prefix="@project_root@">

@@ -4,8 +4,8 @@
 
 blp = files(
   'window.blp',
-  'encryptiondialog.blp',
-  'keydialog.blp',
+  'selectiondialog.blp',
+  'managementdialog.blp',
   'keyrow.blp'
 )
 

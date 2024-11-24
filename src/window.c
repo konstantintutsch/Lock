@@ -4,8 +4,8 @@
 #include <glib/gi18n.h>
 #include <locale.h>
 #include "application.h"
-#include "encryptiondialog.h"
-#include "keydialog.h"
+#include "selectiondialog.h"
+#include "managementdialog.h"
 #include "config.h"
 
 #include <gpgme.h>
@@ -81,8 +81,9 @@ gboolean lock_window_verify_text_on_completed(LockWindow * window);
 gboolean lock_window_verify_file_on_completed(LockWindow * window);
 
 /* Key management */
-static void lock_window_key_dialog(GSimpleAction * action, GVariant * parameter,
-                                   LockWindow * window);
+static void lock_window_management_dialog(GSimpleAction * action,
+                                          GVariant * parameter,
+                                          LockWindow * window);
 
 /* Text */
 static void lock_window_text_view_copy(AdwSplitButton * self,
@@ -128,7 +129,7 @@ static void lock_window_init(LockWindow *window)
     g_autoptr(GSimpleAction) manage_keys_action =
         g_simple_action_new("manage_keys", NULL);
     g_signal_connect(manage_keys_action, "activate",
-                     G_CALLBACK(lock_window_key_dialog), window);
+                     G_CALLBACK(lock_window_management_dialog), window);
     g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(manage_keys_action));
 
     /* Text */
@@ -349,13 +350,14 @@ static void lock_window_on_file_selected(LockWindow *window)
  * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  * @param window https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  */
-static void lock_window_key_dialog(GSimpleAction *action, GVariant *parameter,
-                                   LockWindow *window)
+static void lock_window_management_dialog(GSimpleAction *action,
+                                          GVariant *parameter,
+                                          LockWindow *window)
 {
     (void)action;
     (void)parameter;
 
-    LockKeyDialog *dialog = lock_key_dialog_new(window);
+    LockManagementDialog *dialog = lock_management_dialog_new(window);
 
     adw_dialog_present(ADW_DIALOG(dialog), GTK_WIDGET(window));
 }
@@ -586,7 +588,7 @@ void lock_window_encrypt_text_dialog(GSimpleAction *self, GVariant *parameter,
     (void)self;
     (void)parameter;
 
-    LockEncryptionDialog *dialog = lock_encryption_dialog_new();
+    LockSelectionDialog *dialog = lock_selection_dialog_new();
 
     g_signal_connect(dialog, "entered", G_CALLBACK(thread_encrypt_text),
                      window);
@@ -604,7 +606,7 @@ void lock_window_encrypt_file_dialog(GtkButton *self, LockWindow *window)
 {
     (void)self;
 
-    LockEncryptionDialog *dialog = lock_encryption_dialog_new();
+    LockSelectionDialog *dialog = lock_selection_dialog_new();
 
     g_signal_connect(dialog, "entered", G_CALLBACK(thread_encrypt_file),
                      window);

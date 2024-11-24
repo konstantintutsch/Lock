@@ -2,7 +2,7 @@
 #define KEY_ROW_H
 
 #include <adwaita.h>
-#include "keydialog.h"
+#include "managementdialog.h"
 
 #include <gpgme.h>
 
@@ -10,7 +10,7 @@
 
 G_DECLARE_FINAL_TYPE(LockKeyRow, lock_key_row, LOCK, KEY_ROW, AdwActionRow);
 
-LockKeyRow *lock_key_row_new(LockKeyDialog * dialog,
+LockKeyRow *lock_key_row_new(LockManagementDialog * dialog,
                              const gchar * title, const gchar * subtitle,
                              const gchar * expiry_date,
                              const gchar * expiry_time);
