@@ -84,6 +84,14 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.2.1" date="2024-11-25">
+            <description translate="no">
+                <ul>
+                    <li>Messages displayed when no capable keys are available during selection have been clarified</li>
+                    <li>New and updated translations available: Hebrew, Russian</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.2.0" date="2024-11-24">
             <description translate="no">
                 <ul>
