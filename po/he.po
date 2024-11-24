@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 10:12+0100\n"
+"POT-Creation-Date: 2024-11-24 11:18+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/Lock/Application/"
@@ -49,79 +49,75 @@ msgstr "ירון שהרבני <sh.yaron@gmail.com>"
 msgid "Dependencies"
 msgstr "תלויות"
 
-#: src/window.c:144 src/window.c:139 src/window.c:138
+#: src/window.c:144
 msgid "Enter text …"
 msgstr "נא למלא טקסט…"
 
-#: src/window.c:417 src/window.c:412 src/window.c:410
+#: src/window.c:417
 msgid "Text copied"
 msgstr "הטקסט הועתק"
 
-#: src/window.c:670 src/window.c:732 src/window.c:663 src/window.c:725
-#: src/window.c:661 src/window.c:723
+#: src/window.c:670 src/window.c:732
 msgid "Encryption failed"
 msgstr "ההצפנה נכשלה"
 
-#: src/window.c:663
+#: src/window.c:672
 msgid "Text encrypted"
 msgstr "הטקסט הוצפן"
 
-#: src/window.c:725
+#: src/window.c:734
 msgid "File encrypted"
 msgstr "הקובץ הוצפן"
 
-#: src/window.c:790 src/window.c:848 src/window.c:783 src/window.c:841
-#: src/window.c:781 src/window.c:839
+#: src/window.c:790 src/window.c:848
 msgid "Decryption failed"
 msgstr "הפענוח נכשל"
 
-#: src/window.c:792 src/window.c:785 src/window.c:783
+#: src/window.c:792
 msgid "Text decrypted"
 msgstr "הטקסט פוענח"
 
-#: src/window.c:850 src/window.c:843 src/window.c:841
+#: src/window.c:850
 msgid "File decrypted"
 msgstr "הקובץ פוענח"
 
-#: src/window.c:947 src/window.c:1009 src/window.c:899 src/window.c:957
-#: src/window.c:897 src/window.c:955
+#: src/window.c:947 src/window.c:1009
 msgid "Signing failed"
 msgstr "החתימה נכשלה"
 
-#: src/window.c:949 src/window.c:901 src/window.c:899
+#: src/window.c:949
 msgid "Text signed"
 msgstr "הטקסט נחתם"
 
-#: src/window.c:1011 src/window.c:959 src/window.c:957
+#: src/window.c:1011
 msgid "File signed"
 msgstr "הקובץ נחתם"
 
-#: src/window.c:1067 src/window.c:1125 src/window.c:1015 src/window.c:1073
-#: src/window.c:1013 src/window.c:1071
+#: src/window.c:1067 src/window.c:1125
 msgid "Verification failed"
 msgstr "האימות נכשל"
 
-#: src/window.c:1069 src/window.c:1017 src/window.c:1015
+#: src/window.c:1069
 msgid "Text verified"
 msgstr "הטקסט אומת"
 
-#: src/window.c:1127 src/window.c:1075 src/window.c:1073
+#: src/window.c:1127
 msgid "File verified"
 msgstr "הקובץ אומת"
 
-#: src/managementdialog.c:364 src/keydialog.c:350
+#: src/managementdialog.c:364
 msgid "Import failed"
 msgstr "הייבוא נכשל"
 
-#: src/managementdialog.c:366 src/keydialog.c:352
+#: src/managementdialog.c:366
 msgid "Keys imported"
 msgstr "המפתחות יובאו"
 
-#: src/managementdialog.c:437 src/keydialog.c:421
+#: src/managementdialog.c:437
 msgid "Generation failed"
 msgstr "היצירה נכשלה"
 
-#: src/managementdialog.c:439 src/keydialog.c:423
+#: src/managementdialog.c:439
 msgid "Keypair generated"
 msgstr "נוצר צמד מפתחות"
 
@@ -173,13 +169,13 @@ msgid "Key removed"
 msgstr "המפתח הוסר"
 
 #: src/cryptography.c:42 src/cryptography.c:77 src/cryptography.c:122
-#: src/cryptography.c:181 src/cryptography.c:303 src/cryptography.c:415
+#: src/cryptography.c:181 src/cryptography.c:303 src/cryptography.c:423
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME context"
 msgstr "יצירת הקשר GPGME חדש נכשלה"
 
 #: src/cryptography.c:48 src/cryptography.c:83 src/cryptography.c:128
-#: src/cryptography.c:187 src/cryptography.c:309 src/cryptography.c:421
+#: src/cryptography.c:187 src/cryptography.c:309 src/cryptography.c:429
 msgctxt "GPGME Error"
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "הגדרת הפרוטוקול של הקשר GPGME ל־OpenPGP נכשלה"
@@ -239,7 +235,7 @@ msgctxt "GPGME Error"
 msgid "Failed to remove GPG key"
 msgstr "הסרת מפתח GPG נכשלה"
 
-#: src/cryptography.c:315 src/cryptography.c:427
+#: src/cryptography.c:315 src/cryptography.c:435
 msgctxt "GPGME Error"
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "הגדרת מצב אספקת קוד להקשר GPGME לבקשה נכשלה"
@@ -249,7 +245,7 @@ msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from string"
 msgstr "יצירת נתוני קלט חדשים ל־GPGME ממחרוזת נכשלה"
 
-#: src/cryptography.c:329 src/cryptography.c:450
+#: src/cryptography.c:329 src/cryptography.c:458
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME output data in memory"
 msgstr "יצירת נתוני פלט חדשים בזיכרון מ־GPGME נכשלה"
@@ -270,58 +266,57 @@ msgctxt "GPGME Error"
 msgid "Failed to add signing key to GPGME context"
 msgstr "יצירת הקשר GPGME חדש"
 
-#: src/cryptography.c:354
+#: src/cryptography.c:362
 msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from memory"
 msgstr "חתימת נתוני GPGME מהזיכרון נכשלה"
 
-#: src/cryptography.c:361
+#: src/cryptography.c:369
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from memory"
 msgstr "אימות נתוני GPGME מהזיכרון נכשל"
 
-#: src/cryptography.c:410 src/cryptography.c:409 src/cryptography.c:404
-#: src/cryptography.c:403
+#: src/cryptography.c:411
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s הוסר כדי להתכונן לשכתוב"
 
-#: src/cryptography.c:434
+#: src/cryptography.c:442
 msgctxt "GPGME Error"
 msgid "Failed to create new GPGME input data from file"
 msgstr "יצירת נתוני קלט ל־GPGME מקובץ נכשלה"
 
-#: src/cryptography.c:442
+#: src/cryptography.c:450
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME input data"
 msgstr "הגדרת שם קובץ לנתוני קלט ל־GPGME נכשלה"
 
-#: src/cryptography.c:459
+#: src/cryptography.c:467
 msgctxt "GPGME Error"
 msgid "Failed to set file name of GPGME output data"
 msgstr "הגדרת שם קובץ לנתוני פלט מ־GPGME נכשלה"
 
-#: src/cryptography.c:470
+#: src/cryptography.c:478
 msgctxt "GPGME Error"
 msgid "Failed to encrypt GPGME data from file"
 msgstr "הצפנת נתוני GPGME מקובץ נכשלה"
 
-#: src/cryptography.c:476
+#: src/cryptography.c:484
 msgctxt "GPGME Error"
 msgid "Failed to decrypt GPGME data from file"
 msgstr "פענוח נתוני GPGME מקובץ נכשל"
 
-#: src/cryptography.c:483
+#: src/cryptography.c:491
 msgctxt "GPGME Error"
 msgid "Failed to sign GPGME data from file"
 msgstr "חתימת נתוני GPGME מקובץ נכשלה"
 
-#: src/cryptography.c:489
+#: src/cryptography.c:497
 msgctxt "GPGME Error"
 msgid "Failed to verify GPGME data from file"
 msgstr "אימות נתוני GPGME מקובץ נכשל"
 
-#: src/cryptography.c:520 src/cryptography.c:514 src/cryptography.c:505
+#: src/cryptography.c:513
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "פתיחת קובץ הפלט נכשלה: %s"
@@ -353,42 +348,42 @@ msgctxt "Thread Error"
 msgid "file decryption"
 msgstr "פענוח קובץ"
 
-#: src/threading.c:142 src/threading.c:141
+#: src/threading.c:142
 msgctxt "Thread Error"
 msgid "text signing"
 msgstr "חתימת טקסט"
 
-#: src/threading.c:164 src/threading.c:159
+#: src/threading.c:164
 msgctxt "Thread Error"
 msgid "file signing"
 msgstr "חתימת קובץ"
 
-#: src/threading.c:185 src/threading.c:180
+#: src/threading.c:185
 msgctxt "Thread Error"
 msgid "text verification"
 msgstr "אימות טקסט"
 
-#: src/threading.c:203 src/threading.c:198
+#: src/threading.c:203
 msgctxt "Thread Error"
 msgid "file verification"
 msgstr "אימות קובץ"
 
-#: src/threading.c:218 src/threading.c:213
+#: src/threading.c:218
 msgctxt "Thread Error"
 msgid "key import"
 msgstr "ייבוא מפתח"
 
-#: src/threading.c:236 src/threading.c:231
+#: src/threading.c:236
 msgctxt "Thread Error"
 msgid "key generation"
 msgstr "יצירת מפתח"
 
-#: src/threading.c:251 src/threading.c:246
+#: src/threading.c:251
 msgctxt "Thread Error"
 msgid "key export"
 msgstr "ייצוא מפתח"
 
-#: src/threading.c:262 src/threading.c:257
+#: src/threading.c:262
 msgctxt "Thread Error"
 msgid "key removal"
 msgstr "הסרת מפתח"
@@ -456,7 +451,6 @@ msgid "Verify"
 msgstr "אימות"
 
 #: data/ui/window.blp:198 data/ui/managementdialog.blp:30
-#: data/ui/keydialog.blp:30
 msgid "Manage keys"
 msgstr "ניהול מפתחות"
 
@@ -464,88 +458,85 @@ msgstr "ניהול מפתחות"
 msgid "About Lock"
 msgstr "על מנעול"
 
-#: data/ui/encryptiondialog.blp:35
+#: data/ui/selectiondialog.blp:35
 msgid "Select key"
 msgstr "בחירת מפתח"
 
 #: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
-#: data/ui/encryptiondialog.blp:48 data/ui/keydialog.blp:49
 msgid "Refresh keys"
 msgstr "רענון מפתחות"
 
 #: data/ui/selectiondialog.blp:68 data/ui/managementdialog.blp:68
-#: data/ui/encryptiondialog.blp:68 data/ui/keydialog.blp:68
 msgid "No keys available"
 msgstr "אין מפתחות זמינים"
 
 #: data/ui/selectiondialog.blp:69 data/ui/managementdialog.blp:69
-#: data/ui/encryptiondialog.blp:69 data/ui/keydialog.blp:69
 msgid "Your GnuPG keyring does not contain any keys."
 msgstr "צרור מפתחות ה־GnuPG שלך לא מכיל מפתחות."
 
-#: data/ui/managementdialog.blp:89 data/ui/keydialog.blp:89
+#: data/ui/managementdialog.blp:89
 msgctxt "Import keys from files"
 msgid "Import"
 msgstr "ייבוא"
 
-#: data/ui/managementdialog.blp:90 data/ui/keydialog.blp:90
+#: data/ui/managementdialog.blp:90
 msgid "Import keys from files"
 msgstr "ייבוא מפתחות מקבצים"
 
-#: data/ui/managementdialog.blp:97 data/ui/keydialog.blp:97
+#: data/ui/managementdialog.blp:97
 msgid "Create a new keypair"
 msgstr "יצירת צמד מפתחות חדש"
 
-#: data/ui/managementdialog.blp:110 data/ui/keydialog.blp:110
+#: data/ui/managementdialog.blp:110
 msgid "Generate keypair"
 msgstr "יצירת צמד מפתחות"
 
-#: data/ui/managementdialog.blp:141 data/ui/keydialog.blp:141
+#: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name"
 msgstr "שם"
 
-#: data/ui/managementdialog.blp:146 data/ui/keydialog.blp:146
+#: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr "דוא״ל"
 
-#: data/ui/managementdialog.blp:151 data/ui/keydialog.blp:151
+#: data/ui/managementdialog.blp:151
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr "אלגוריתם חתימה"
 
-#: data/ui/managementdialog.blp:152 data/ui/keydialog.blp:152
+#: data/ui/managementdialog.blp:152
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr "מפתח"
 
-#: data/ui/managementdialog.blp:160 data/ui/keydialog.blp:160
+#: data/ui/managementdialog.blp:160
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "אלגוריתם הצפנה"
 
-#: data/ui/managementdialog.blp:161 data/ui/keydialog.blp:161
+#: data/ui/managementdialog.blp:161
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr "תת־מפתח"
 
-#: data/ui/managementdialog.blp:169 data/ui/keydialog.blp:169
+#: data/ui/managementdialog.blp:169
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr "תפוגת תוקף"
 
-#: data/ui/managementdialog.blp:170 data/ui/keydialog.blp:170
+#: data/ui/managementdialog.blp:170
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr "חודשים, להשבית עם אפס"
 
-#: data/ui/managementdialog.blp:192 data/ui/keydialog.blp:192
+#: data/ui/managementdialog.blp:192
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "יצירה"
 
-#: data/ui/managementdialog.blp:193 data/ui/keydialog.blp:193
+#: data/ui/managementdialog.blp:193
 msgid "Generate a new keypair"
 msgstr "יצירת צמד מפתחות חדש"
 
