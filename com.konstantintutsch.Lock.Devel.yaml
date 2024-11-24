@@ -28,15 +28,6 @@ modules:
         commit: 8e10fcf8692108b9d4ab78f41086c5d7773ef864
     cleanup:
       - '*'
-  - name: gpgme
-    buildsystem: autotools
-    config-opts:
-      - --enable-maintainer-mode
-    sources:
-      - type: git
-        url: https://dev.gnupg.org/source/gpgme.git
-        tag: gpgme-1.24.0
-        commit: 98b10fbc63b323a146e66a2ea8f7ff8f216b31d7
   - name: Lock
     buildsystem: meson
     run-tests: true
