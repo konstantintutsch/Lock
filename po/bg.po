@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 11:18+0100\n"
+"POT-Creation-Date: 2024-11-24 14:02+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/Lock/"
@@ -498,11 +498,22 @@ msgstr "Премахвайте ключове"
 msgid "Refresh keys"
 msgstr "Опресняване на ключовете"
 
-#: data/ui/selectiondialog.blp:68 data/ui/managementdialog.blp:68
+#: data/ui/selectiondialog.blp:68
+#, fuzzy
+msgid "No capable keys available"
+msgstr "Няма налични ключове"
+
+#: data/ui/selectiondialog.blp:69
+#, fuzzy
+msgid ""
+"Your GnuPG keyring does not contain any keys that support this functionality."
+msgstr "Вашата система не съхранява GnuPG ключове."
+
+#: data/ui/managementdialog.blp:68
 msgid "No keys available"
 msgstr "Няма налични ключове"
 
-#: data/ui/selectiondialog.blp:69 data/ui/managementdialog.blp:69
+#: data/ui/managementdialog.blp:69
 #, fuzzy
 msgid "Your GnuPG keyring does not contain any keys."
 msgstr "Вашата система не съхранява GnuPG ключове."

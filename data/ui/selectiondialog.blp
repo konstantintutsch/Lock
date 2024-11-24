@@ -65,8 +65,8 @@ template $LockSelectionDialog : Adw.Dialog {
 
                         Adw.StatusPage status_page {
                             icon-name: "system-lock-screen-symbolic";
-                            title: _("No keys available");
-                            description: _("Your GnuPG keyring does not contain any keys.");
+                            title: _("No capable keys available");
+                            description: _("Your GnuPG keyring does not contain any keys that support this functionality.");
                         }
 
                         Gtk.ListBox key_box {

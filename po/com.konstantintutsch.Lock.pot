@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 11:18+0100\n"
+"POT-Creation-Date: 2024-11-24 14:02+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -463,11 +463,20 @@ msgstr ""
 msgid "Refresh keys"
 msgstr ""
 
-#: data/ui/selectiondialog.blp:68 data/ui/managementdialog.blp:68
+#: data/ui/selectiondialog.blp:68
+msgid "No capable keys available"
+msgstr ""
+
+#: data/ui/selectiondialog.blp:69
+msgid ""
+"Your GnuPG keyring does not contain any keys that support this functionality."
+msgstr ""
+
+#: data/ui/managementdialog.blp:68
 msgid "No keys available"
 msgstr ""
 
-#: data/ui/selectiondialog.blp:69 data/ui/managementdialog.blp:69
+#: data/ui/managementdialog.blp:69
 msgid "Your GnuPG keyring does not contain any keys."
 msgstr ""
 
