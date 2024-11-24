@@ -29,6 +29,10 @@ debug:
         -m $(coredumpctl list -1 --no-pager --no-legend | grep -oE 'CEST ([0-9]+)' | awk '{print $2}') \
         com.konstantintutsch.Lock.Devel
 
+dist:
+    rm --verbose --interactive=never --recursive ./_*
+    rm --verbose --interactive=never --recursive ./.flatpak-builder
+
 setup:
     sudo dnf install -y indent
     sudo dnf install -y meson
