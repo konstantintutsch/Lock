@@ -29,9 +29,14 @@ debug:
         -m $(coredumpctl list -1 --no-pager --no-legend | grep -oE 'CEST ([0-9]+)' | awk '{print $2}') \
         com.konstantintutsch.Lock.Devel
 
+bundle:
+    flatpak build-bundle _repo _com.konstantintutsch.Lock.Devel.flatpak \
+        --runtime-repo=https://flathub.org/repo/flathub.flatpakrepo \
+        com.konstantintutsch.Lock.Devel
+
 dist:
-    rm --verbose --interactive=never --recursive ./_*
-    rm --verbose --interactive=never --recursive ./.flatpak-builder
+    rm --verbose --interactive=never --recursive _*
+    rm --verbose --interactive=never --recursive .flatpak-builder
 
 setup:
     sudo dnf install -y indent
