@@ -9,7 +9,6 @@ finish-args:
   - --socket=wayland
   - --socket=fallback-x11
   - --filesystem=~/.gnupg:create
-  - --socket=gpg-agent
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.gnome.keyring.SystemPrompter
   - --talk-name=org.gtk.vfs.*
