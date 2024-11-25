@@ -39,6 +39,7 @@ struct _LockManagementDialog {
     GtkButton *generate_button;
     AdwEntryRow *name_entry;
     AdwEntryRow *email_entry;
+    AdwEntryRow *comment_entry;
     AdwComboRow *sign_entry;
     AdwComboRow *encrypt_entry;
     AdwSpinRow *expiry_entry;
@@ -116,6 +117,8 @@ static void lock_management_dialog_class_init(LockManagementDialogClass *class)
                                          LockManagementDialog, name_entry);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
                                          LockManagementDialog, email_entry);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
+                                         LockManagementDialog, comment_entry);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
                                          LockManagementDialog, sign_entry);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
@@ -389,7 +392,9 @@ void lock_management_dialog_generate(LockManagementDialog *dialog)
     const gchar *name = gtk_editable_get_text(GTK_EDITABLE(dialog->name_entry));
     const gchar *email =
         gtk_editable_get_text(GTK_EDITABLE(dialog->email_entry));
-    gchar *userid = g_strdup_printf("%s <%s>", name, email);
+    const gchar *comment =
+        gtk_editable_get_text(GTK_EDITABLE(dialog->comment_entry));
+    gchar *userid = g_strdup_printf("%s <%s> (%s)", name, email, comment);
 
     gint sign_selected = adw_combo_row_get_selected(dialog->sign_entry);
     GtkStringList *sign_list =

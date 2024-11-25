@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 14:21+0100\n"
+"POT-Creation-Date: 2024-11-25 15:43+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,19 +103,19 @@ msgstr ""
 msgid "File verified"
 msgstr ""
 
-#: src/managementdialog.c:364
+#: src/managementdialog.c:367
 msgid "Import failed"
 msgstr ""
 
-#: src/managementdialog.c:366
+#: src/managementdialog.c:369
 msgid "Keys imported"
 msgstr ""
 
-#: src/managementdialog.c:437
+#: src/managementdialog.c:442
 msgid "Generation failed"
 msgstr ""
 
-#: src/managementdialog.c:439
+#: src/managementdialog.c:444
 msgid "Keypair generated"
 msgstr ""
 
@@ -462,41 +462,46 @@ msgid "Email"
 msgstr ""
 
 #: data/ui/managementdialog.blp:151
+msgctxt "Comment of the UID of the new keypair"
+msgid "Comment"
+msgstr ""
+
+#: data/ui/managementdialog.blp:156
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr ""
 
-#: data/ui/managementdialog.blp:152
+#: data/ui/managementdialog.blp:157
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr ""
 
-#: data/ui/managementdialog.blp:160
+#: data/ui/managementdialog.blp:165
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr ""
 
-#: data/ui/managementdialog.blp:161
+#: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr ""
 
-#: data/ui/managementdialog.blp:169
+#: data/ui/managementdialog.blp:174
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr ""
 
-#: data/ui/managementdialog.blp:170
+#: data/ui/managementdialog.blp:175
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr ""
 
-#: data/ui/managementdialog.blp:192
+#: data/ui/managementdialog.blp:197
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr ""
 
-#: data/ui/managementdialog.blp:193
+#: data/ui/managementdialog.blp:198
 msgid "Generate a new keypair"
 msgstr ""
 

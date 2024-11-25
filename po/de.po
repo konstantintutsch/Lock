@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 14:21+0100\n"
-"PO-Revision-Date: 2024-11-24 14:23+0100\n"
+"POT-Creation-Date: 2024-11-25 15:43+0100\n"
+"PO-Revision-Date: 2024-11-25 15:32+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -105,19 +105,19 @@ msgstr "Text verifiziert"
 msgid "File verified"
 msgstr "Datei verifiziert"
 
-#: src/managementdialog.c:364
+#: src/managementdialog.c:367
 msgid "Import failed"
 msgstr "Import fehlgeschlagen"
 
-#: src/managementdialog.c:366
+#: src/managementdialog.c:369
 msgid "Keys imported"
 msgstr "Schlüssel importiert"
 
-#: src/managementdialog.c:437
+#: src/managementdialog.c:442
 msgid "Generation failed"
 msgstr "Generierung fehlgeschlagen"
 
-#: src/managementdialog.c:439
+#: src/managementdialog.c:444
 msgid "Keypair generated"
 msgstr "Schlüsselpaar generiert"
 
@@ -467,41 +467,46 @@ msgid "Email"
 msgstr "E-Mail"
 
 #: data/ui/managementdialog.blp:151
+msgctxt "Comment of the UID of the new keypair"
+msgid "Comment"
+msgstr "Kommentar"
+
+#: data/ui/managementdialog.blp:156
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr "Signierungsalgorithmus"
 
-#: data/ui/managementdialog.blp:152
+#: data/ui/managementdialog.blp:157
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr "Schlüssel"
 
-#: data/ui/managementdialog.blp:160
+#: data/ui/managementdialog.blp:165
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "Verschlüsselungsalgorithmus"
 
-#: data/ui/managementdialog.blp:161
+#: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr "Unterschlüssel"
 
-#: data/ui/managementdialog.blp:169
+#: data/ui/managementdialog.blp:174
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr "Ablaufdauer"
 
-#: data/ui/managementdialog.blp:170
+#: data/ui/managementdialog.blp:175
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr "Monate, mit Null ausschalten"
 
-#: data/ui/managementdialog.blp:192
+#: data/ui/managementdialog.blp:197
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "Generieren"
 
-#: data/ui/managementdialog.blp:193
+#: data/ui/managementdialog.blp:198
 msgid "Generate a new keypair"
 msgstr "Neues Schlüsselpaar generieren"
 

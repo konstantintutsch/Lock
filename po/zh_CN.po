@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 14:21+0100\n"
+"POT-Creation-Date: 2024-11-25 15:43+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -107,19 +107,19 @@ msgstr "文本已校验"
 msgid "File verified"
 msgstr "文件已校验"
 
-#: src/managementdialog.c:364
+#: src/managementdialog.c:367
 msgid "Import failed"
 msgstr "导入失败"
 
-#: src/managementdialog.c:366
+#: src/managementdialog.c:369
 msgid "Keys imported"
 msgstr "密钥已导入"
 
-#: src/managementdialog.c:437
+#: src/managementdialog.c:442
 msgid "Generation failed"
 msgstr "生成失败"
 
-#: src/managementdialog.c:439
+#: src/managementdialog.c:444
 msgid "Keypair generated"
 msgstr "密钥对已生成"
 
@@ -510,41 +510,46 @@ msgid "Email"
 msgstr "电子邮箱"
 
 #: data/ui/managementdialog.blp:151
+msgctxt "Comment of the UID of the new keypair"
+msgid "Comment"
+msgstr ""
+
+#: data/ui/managementdialog.blp:156
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr "签署算法"
 
-#: data/ui/managementdialog.blp:152
+#: data/ui/managementdialog.blp:157
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr "密钥"
 
-#: data/ui/managementdialog.blp:160
+#: data/ui/managementdialog.blp:165
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "加密算法"
 
-#: data/ui/managementdialog.blp:161
+#: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr "子密钥"
 
-#: data/ui/managementdialog.blp:169
+#: data/ui/managementdialog.blp:174
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr "到期"
 
-#: data/ui/managementdialog.blp:170
+#: data/ui/managementdialog.blp:175
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr "单位为月，输入 0 可禁用"
 
-#: data/ui/managementdialog.blp:192
+#: data/ui/managementdialog.blp:197
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "生成"
 
-#: data/ui/managementdialog.blp:193
+#: data/ui/managementdialog.blp:198
 msgid "Generate a new keypair"
 msgstr "生成密钥对"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 14:21+0100\n"
+"POT-Creation-Date: 2024-11-25 15:43+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -105,19 +105,19 @@ msgstr "Metin doğrulandı"
 msgid "File verified"
 msgstr "Dosya doğrulandı"
 
-#: src/managementdialog.c:364
+#: src/managementdialog.c:367
 msgid "Import failed"
 msgstr "İçe aktarılamadı"
 
-#: src/managementdialog.c:366
+#: src/managementdialog.c:369
 msgid "Keys imported"
 msgstr "Anahtarlar içe aktarıldı"
 
-#: src/managementdialog.c:437
+#: src/managementdialog.c:442
 msgid "Generation failed"
 msgstr "Oluşturulamadı"
 
-#: src/managementdialog.c:439
+#: src/managementdialog.c:444
 msgid "Keypair generated"
 msgstr "Anahtar eşi oluşturuldu"
 
@@ -505,41 +505,46 @@ msgid "Email"
 msgstr "E-posta"
 
 #: data/ui/managementdialog.blp:151
+msgctxt "Comment of the UID of the new keypair"
+msgid "Comment"
+msgstr ""
+
+#: data/ui/managementdialog.blp:156
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr "İmzalama Algoritması"
 
-#: data/ui/managementdialog.blp:152
+#: data/ui/managementdialog.blp:157
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr "Anahtar"
 
-#: data/ui/managementdialog.blp:160
+#: data/ui/managementdialog.blp:165
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "Şifreleme Algoritması"
 
-#: data/ui/managementdialog.blp:161
+#: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr "Alt anahtar"
 
-#: data/ui/managementdialog.blp:169
+#: data/ui/managementdialog.blp:174
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
 msgstr "Geçerlilik Sonu"
 
-#: data/ui/managementdialog.blp:170
+#: data/ui/managementdialog.blp:175
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
 msgstr "Aylar, sıfır ile devre dışı bırak"
 
-#: data/ui/managementdialog.blp:192
+#: data/ui/managementdialog.blp:197
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "Oluştur"
 
-#: data/ui/managementdialog.blp:193
+#: data/ui/managementdialog.blp:198
 msgid "Generate a new keypair"
 msgstr "Yeni anahtar çifti oluştur"
 

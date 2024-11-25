@@ -147,6 +147,11 @@ template $LockManagementDialog : Adw.Dialog {
                                             input-purpose: email;
                                         }
 
+                                        Adw.EntryRow comment_entry {
+                                            title: C_("Comment of the UID of the new keypair", "Comment");
+                                            input-purpose: free_form;
+                                        }
+
                                         Adw.ComboRow sign_entry {
                                             title: C_("Signing algorithm of the new keypair", "Signing Algorithm");
                                             subtitle: C_("Signing algorithm of the new keypair", "Key");
