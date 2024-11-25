@@ -84,6 +84,18 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.2.2" date="2024-11-26">
+            <description translate="no">
+                <ul>
+                    <li>Text can now be signed as a clear text signature</li>
+                    <li>Text can now be signed as a detached signature</li>
+                    <li>Keys can now be generated with a comment in their user ID</li>
+                    <li>Keys can now only be generated when a name for the user ID has been entered</li>
+                    <li>User IDs of keys generated with an empty email with now not contain empty brackes anymore</li>
+                    <li>New and updated translations available: Russian, Hebrew</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.2.1" date="2024-11-25">
             <description translate="no">
                 <ul>
