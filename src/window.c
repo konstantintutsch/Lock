@@ -28,6 +28,7 @@ struct _LockWindow {
     unsigned int action_mode;
 
     gchar *fingerprint; /**< Stores the selected fingerprint for an encryption or signing process. */
+    gpgme_sig_mode_t signature_mode; /**< Stores the selected signature mode for a signing process. */
 
     /* Text */
     AdwViewStackPage *text_page;
@@ -166,6 +167,21 @@ static void lock_window_init(LockWindow *window)
     g_signal_connect(sign_text_action, "activate",
                      G_CALLBACK(lock_window_sign_text_dialog), window);
     g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(sign_text_action));
+
+    g_autoptr(GSimpleAction) sign_text_clear_action =
+        g_simple_action_new("sign_text_clear", NULL);
+    g_signal_connect(sign_text_clear_action, "activate",
+                     G_CALLBACK(lock_window_sign_text_dialog), window);
+    g_action_map_add_action(G_ACTION_MAP(window),
+                            G_ACTION(sign_text_clear_action));
+
+    g_autoptr(GSimpleAction) sign_text_detach_action =
+        g_simple_action_new("sign_text_detach", NULL);
+    g_signal_connect(sign_text_detach_action, "activate",
+                     G_CALLBACK(lock_window_sign_text_dialog), window);
+    g_action_map_add_action(G_ACTION_MAP(window),
+                            G_ACTION(sign_text_detach_action));
+
     // Verify
     g_autoptr(GSimpleAction) verify_text_action =
         g_simple_action_new("verify_text", NULL);
@@ -632,7 +648,7 @@ void lock_window_encrypt_text(LockWindow *window)
 
     gpgme_key_t key = key_get(window->fingerprint);
 
-    gchar *armor = process_text(plain, ENCRYPT, key);
+    gchar *armor = process_text(plain, ENCRYPT, key, 0);
     if (armor == NULL) {
         window->text_success = false;
     } else {
@@ -754,7 +770,7 @@ void lock_window_decrypt_text(LockWindow *window)
 {
     gchar *armor = lock_window_text_view_get_text(window);
 
-    gchar *plain = process_text(armor, DECRYPT, NULL);
+    gchar *plain = process_text(armor, DECRYPT, NULL, 0);
     if (plain == NULL) {
         window->text_success = false;
     } else {
@@ -874,6 +890,16 @@ void lock_window_sign_text_dialog(GSimpleAction *self, GVariant *parameter,
     (void)self;
     (void)parameter;
 
+    if (strcmp(g_action_get_name(G_ACTION(self)), "sign_text") == 0) {
+        window->signature_mode = GPGME_SIG_MODE_NORMAL;
+    } else if (strcmp(g_action_get_name(G_ACTION(self)), "sign_text_clear") ==
+               0) {
+        window->signature_mode = GPGME_SIG_MODE_CLEAR;
+    } else if (strcmp(g_action_get_name(G_ACTION(self)), "sign_text_detach") ==
+               0) {
+        window->signature_mode = GPGME_SIG_MODE_DETACH;
+    }
+
     LockSelectionDialog *dialog = lock_selection_dialog_new(false);
 
     g_signal_connect(dialog, "entered", G_CALLBACK(thread_sign_text), window);
@@ -909,7 +935,7 @@ void lock_window_sign_text(LockWindow *window)
 
     gpgme_key_t key = key_get(window->fingerprint);
 
-    gchar *armor = process_text(plain, SIGN, key);
+    gchar *armor = process_text(plain, SIGN, key, window->signature_mode);
     if (armor == NULL) {
         window->text_success = false;
     } else {
@@ -1031,7 +1057,7 @@ void lock_window_verify_text(LockWindow *window)
 {
     gchar *armor = lock_window_text_view_get_text(window);
 
-    gchar *plain = process_text(armor, VERIFY, NULL);
+    gchar *plain = process_text(armor, VERIFY, NULL, 0);
     if (plain == NULL) {
         window->text_success = false;
     } else {

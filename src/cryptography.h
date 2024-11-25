@@ -26,7 +26,8 @@ bool key_generate(const char *userid, const char *sign_algorithm,
 bool key_manage(const char *path, const char *fingerprint, key_flags flags);
 
 /* Operations */
-char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key);
+char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key,
+                   gpgme_sig_mode_t signature_mode);
 bool process_file(const char *input_path, const char *output_path,
                   cryptography_flags flags, gpgme_key_t key);
 

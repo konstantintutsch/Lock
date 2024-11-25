@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-25 16:40+0100\n"
+"POT-Creation-Date: 2024-11-25 17:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,59 +47,59 @@ msgstr ""
 msgid "Dependencies"
 msgstr ""
 
-#: src/window.c:144
+#: src/window.c:145
 msgid "Enter text …"
 msgstr ""
 
-#: src/window.c:417
+#: src/window.c:433
 msgid "Text copied"
 msgstr ""
 
-#: src/window.c:670 src/window.c:732
+#: src/window.c:686 src/window.c:748
 msgid "Encryption failed"
 msgstr ""
 
-#: src/window.c:672
+#: src/window.c:688
 msgid "Text encrypted"
 msgstr ""
 
-#: src/window.c:734
+#: src/window.c:750
 msgid "File encrypted"
 msgstr ""
 
-#: src/window.c:790 src/window.c:848
+#: src/window.c:806 src/window.c:864
 msgid "Decryption failed"
 msgstr ""
 
-#: src/window.c:792
+#: src/window.c:808
 msgid "Text decrypted"
 msgstr ""
 
-#: src/window.c:850
+#: src/window.c:866
 msgid "File decrypted"
 msgstr ""
 
-#: src/window.c:947 src/window.c:1009
+#: src/window.c:973 src/window.c:1035
 msgid "Signing failed"
 msgstr ""
 
-#: src/window.c:949
+#: src/window.c:975
 msgid "Text signed"
 msgstr ""
 
-#: src/window.c:1011
+#: src/window.c:1037
 msgid "File signed"
 msgstr ""
 
-#: src/window.c:1067 src/window.c:1125
+#: src/window.c:1093 src/window.c:1151
 msgid "Verification failed"
 msgstr ""
 
-#: src/window.c:1069
+#: src/window.c:1095
 msgid "Text verified"
 msgstr ""
 
-#: src/window.c:1127
+#: src/window.c:1153
 msgid "File verified"
 msgstr ""
 
@@ -166,13 +166,13 @@ msgstr ""
 msgid "Key removed"
 msgstr ""
 
-#: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
-#: src/cryptography.c:172 src/cryptography.c:289 src/cryptography.c:400
+#: src/cryptography.c:42 src/cryptography.c:76 src/cryptography.c:120
+#: src/cryptography.c:176 src/cryptography.c:290 src/cryptography.c:401
 msgid "Failed to create new GPGME context"
 msgstr ""
 
-#: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
-#: src/cryptography.c:176 src/cryptography.c:293 src/cryptography.c:404
+#: src/cryptography.c:46 src/cryptography.c:80 src/cryptography.c:124
+#: src/cryptography.c:180 src/cryptography.c:294 src/cryptography.c:405
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr ""
 
@@ -180,31 +180,31 @@ msgstr ""
 msgid "Failed to obtain key by fingerprint"
 msgstr ""
 
-#: src/cryptography.c:93
+#: src/cryptography.c:94
 msgid "Failed to find key matching User ID"
 msgstr ""
 
-#: src/cryptography.c:133 src/cryptography.c:141
+#: src/cryptography.c:135 src/cryptography.c:143
 msgid "Failed to generate new GPG key for signing"
 msgstr ""
 
-#: src/cryptography.c:147
+#: src/cryptography.c:149
 msgid "Failed to delete unfinished, generated key"
 msgstr ""
 
-#: src/cryptography.c:182
+#: src/cryptography.c:186
 msgid "Failed to load GPGME key data from file"
 msgstr ""
 
-#: src/cryptography.c:188
+#: src/cryptography.c:191
 msgid "Failed to import GPG key from file"
 msgstr ""
 
-#: src/cryptography.c:199
+#: src/cryptography.c:201
 msgid "Failed to create GPGME key data in memory"
 msgstr ""
 
-#: src/cryptography.c:205
+#: src/cryptography.c:206
 msgid "Failed to export GPG key(s) to file"
 msgstr ""
 
@@ -221,27 +221,27 @@ msgstr ""
 msgid "Failed to remove GPG key"
 msgstr ""
 
-#: src/cryptography.c:298 src/cryptography.c:409
+#: src/cryptography.c:299 src/cryptography.c:410
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr ""
 
-#: src/cryptography.c:305
+#: src/cryptography.c:306
 msgid "Failed to create new GPGME input data from string"
 msgstr ""
 
-#: src/cryptography.c:310 src/cryptography.c:429
+#: src/cryptography.c:312 src/cryptography.c:431
 msgid "Failed to create new GPGME output data in memory"
 msgstr ""
 
-#: src/cryptography.c:319
+#: src/cryptography.c:321
 msgid "Failed to encrypt GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:325
+#: src/cryptography.c:327
 msgid "Failed to decrypt GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:333
+#: src/cryptography.c:335
 msgid "Failed to add signing key to GPGME context"
 msgstr ""
 
@@ -249,44 +249,44 @@ msgstr ""
 msgid "Failed to sign GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:346
+#: src/cryptography.c:347
 msgid "Failed to verify GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:388
+#: src/cryptography.c:389
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr ""
 
-#: src/cryptography.c:415
+#: src/cryptography.c:416
 msgid "Failed to create new GPGME input data from file"
 msgstr ""
 
-#: src/cryptography.c:422
+#: src/cryptography.c:424
 msgid "Failed to set file name of GPGME input data"
 msgstr ""
 
-#: src/cryptography.c:437
+#: src/cryptography.c:439
 msgid "Failed to set file name of GPGME output data"
 msgstr ""
 
-#: src/cryptography.c:447
+#: src/cryptography.c:450
 msgid "Failed to encrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:452
+#: src/cryptography.c:457
 msgid "Failed to decrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:459
+#: src/cryptography.c:466
 msgid "Failed to sign GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:465
+#: src/cryptography.c:473
 msgid "Failed to verify GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:481
+#: src/cryptography.c:490
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr ""
@@ -397,7 +397,7 @@ msgstr ""
 msgid "Sign"
 msgstr ""
 
-#: data/ui/window.blp:174 data/ui/window.blp:227
+#: data/ui/window.blp:174 data/ui/window.blp:235
 msgid "Verify"
 msgstr ""
 
@@ -407,6 +407,14 @@ msgstr ""
 
 #: data/ui/window.blp:204
 msgid "About Lock"
+msgstr ""
+
+#: data/ui/window.blp:227
+msgid "Sign (Clear Text)"
+msgstr ""
+
+#: data/ui/window.blp:231
+msgid "Sign (Detached)"
 msgstr ""
 
 #: data/ui/selectiondialog.blp:35
