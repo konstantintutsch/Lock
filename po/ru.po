@@ -472,7 +472,7 @@ msgstr "E-mail"
 #: data/ui/managementdialog.blp:151
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
-msgstr ""
+msgstr "Комментарий"
 
 #: data/ui/managementdialog.blp:151
 msgctxt "Signing algorithm of the new keypair"
