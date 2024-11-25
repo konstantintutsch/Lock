@@ -26,6 +26,7 @@ void lock_management_dialog_add_toast(LockManagementDialog * dialog,
 void lock_management_dialog_import(LockManagementDialog * dialog);
 
 // Generation
+bool lock_management_dialog_generate_ready(LockManagementDialog * dialog);
 void lock_management_dialog_generate(LockManagementDialog * dialog);
 
 #endif                          // MANAGEMENT_DIALOG_H

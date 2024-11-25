@@ -383,6 +383,23 @@ gboolean lock_management_dialog_import_on_completed(LockManagementDialog
 /**** Keypair Generation ****/
 
 /**
+ * This function checks if sufficient information for a successful key generation has been entered.
+ *
+ * @param dialog Dialog to check the generation information of
+ *
+ * @return Success
+ */
+bool lock_management_dialog_generate_ready(LockManagementDialog *dialog)
+{
+    if (strlen(gtk_editable_get_text(GTK_EDITABLE(dialog->name_entry))) == 0) {
+        adw_entry_row_grab_focus_without_selecting(dialog->name_entry);
+        return false;
+    }
+
+    return true;
+}
+
+/**
  * This function generates a new keypair in a LockManagementDialog.
  *
  * @param dialog Dialog to generate the keypair in and from

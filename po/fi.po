@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-25 16:16+0100\n"
+"POT-Creation-Date: 2024-11-25 16:40+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -113,11 +113,11 @@ msgstr "Tuonti epäonnistui"
 msgid "Keys imported"
 msgstr "Avaimet tuotu"
 
-#: src/managementdialog.c:448
+#: src/managementdialog.c:465
 msgid "Generation failed"
 msgstr "Luominen epäonnistui"
 
-#: src/managementdialog.c:450
+#: src/managementdialog.c:467
 msgid "Keypair generated"
 msgstr "Avainpari luotu"
 
@@ -364,17 +364,17 @@ msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 msgid "Failed to create key import thread"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
-#: src/threading.c:234
+#: src/threading.c:237
 #, fuzzy
 msgid "Failed to create key generation thread"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
-#: src/threading.c:249
+#: src/threading.c:252
 #, fuzzy
 msgid "Failed to create key export thread"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
-#: src/threading.c:261
+#: src/threading.c:264
 #, fuzzy
 msgid "Failed to create key removal thread"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
@@ -495,8 +495,8 @@ msgstr "Luo avainpari"
 
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
-msgid "Name"
-msgstr "Nimi"
+msgid "Name (Mandatory)"
+msgstr ""
 
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
@@ -653,3 +653,7 @@ msgstr "Raakateksti"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "Key selection dialog"
 msgstr "Avaimen valinnan ikkuna"
+
+#~ msgctxt "Name of the UID of the new keypair"
+#~ msgid "Name"
+#~ msgstr "Nimi"

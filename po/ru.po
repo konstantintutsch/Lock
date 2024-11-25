@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-25 16:16+0100\n"
+"POT-Creation-Date: 2024-11-25 16:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -110,11 +110,11 @@ msgstr ""
 msgid "Keys imported"
 msgstr ""
 
-#: src/managementdialog.c:448
+#: src/managementdialog.c:465
 msgid "Generation failed"
 msgstr ""
 
-#: src/managementdialog.c:450
+#: src/managementdialog.c:467
 msgid "Keypair generated"
 msgstr ""
 
@@ -326,15 +326,15 @@ msgstr ""
 msgid "Failed to create key import thread"
 msgstr ""
 
-#: src/threading.c:234
+#: src/threading.c:237
 msgid "Failed to create key generation thread"
 msgstr ""
 
-#: src/threading.c:249
+#: src/threading.c:252
 msgid "Failed to create key export thread"
 msgstr ""
 
-#: src/threading.c:261
+#: src/threading.c:264
 msgid "Failed to create key removal thread"
 msgstr ""
 
@@ -452,7 +452,7 @@ msgstr ""
 
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
-msgid "Name"
+msgid "Name (Mandatory)"
 msgstr ""
 
 #: data/ui/managementdialog.blp:146

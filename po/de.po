@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-25 16:16+0100\n"
-"PO-Revision-Date: 2024-11-25 15:32+0100\n"
+"POT-Creation-Date: 2024-11-25 16:40+0100\n"
+"PO-Revision-Date: 2024-11-25 16:40+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -113,11 +113,11 @@ msgstr "Import fehlgeschlagen"
 msgid "Keys imported"
 msgstr "Schlüssel importiert"
 
-#: src/managementdialog.c:448
+#: src/managementdialog.c:465
 msgid "Generation failed"
 msgstr "Generierung fehlgeschlagen"
 
-#: src/managementdialog.c:450
+#: src/managementdialog.c:467
 msgid "Keypair generated"
 msgstr "Schlüsselpaar generiert"
 
@@ -330,15 +330,15 @@ msgstr "Fehler bei der Thread-Erstellung zur Dateiverifikation"
 msgid "Failed to create key import thread"
 msgstr "Fehler bei der Thread-Erstellung zum Schlüsselimport"
 
-#: src/threading.c:234
+#: src/threading.c:237
 msgid "Failed to create key generation thread"
 msgstr "Fehler bei der Thread-Erstellung zur Schlüsselgeneration"
 
-#: src/threading.c:249
+#: src/threading.c:252
 msgid "Failed to create key export thread"
 msgstr "Fehler bei der Thread-Erstellung zum Schlüsselexport"
 
-#: src/threading.c:261
+#: src/threading.c:264
 msgid "Failed to create key removal thread"
 msgstr "Fehler bei der Thread-Erstellung zur Schlüsselentfernung"
 
@@ -458,8 +458,8 @@ msgstr "Schlüsselpaar generieren"
 
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
-msgid "Name"
-msgstr "Name"
+msgid "Name (Mandatory)"
+msgstr "Name (Pflichtfeld)"
 
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
@@ -616,6 +616,14 @@ msgstr "Klartext"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "Key selection dialog"
 msgstr "Schlüsselwahl Dialog"
+
+#~ msgctxt "Name of the UID of the new keypair"
+#~ msgid "Name (Required)"
+#~ msgstr "Name (Pflichtfeld)"
+
+#~ msgctxt "Name of the UID of the new keypair"
+#~ msgid "Name"
+#~ msgstr "Name"
 
 #~ msgctxt "Thread Error"
 #~ msgid "text encryption"

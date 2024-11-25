@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-25 16:16+0100\n"
+"POT-Creation-Date: 2024-11-25 16:40+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -115,11 +115,11 @@ msgstr "导入失败"
 msgid "Keys imported"
 msgstr "密钥已导入"
 
-#: src/managementdialog.c:448
+#: src/managementdialog.c:465
 msgid "Generation failed"
 msgstr "生成失败"
 
-#: src/managementdialog.c:450
+#: src/managementdialog.c:467
 msgid "Keypair generated"
 msgstr "密钥对已生成"
 
@@ -368,17 +368,17 @@ msgstr "创建 %s 线程失败：%s"
 msgid "Failed to create key import thread"
 msgstr "创建 %s 线程失败：%s"
 
-#: src/threading.c:234
+#: src/threading.c:237
 #, fuzzy
 msgid "Failed to create key generation thread"
 msgstr "创建 %s 线程失败：%s"
 
-#: src/threading.c:249
+#: src/threading.c:252
 #, fuzzy
 msgid "Failed to create key export thread"
 msgstr "创建 %s 线程失败：%s"
 
-#: src/threading.c:261
+#: src/threading.c:264
 #, fuzzy
 msgid "Failed to create key removal thread"
 msgstr "创建 %s 线程失败：%s"
@@ -501,8 +501,8 @@ msgstr "生成密钥对"
 
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
-msgid "Name"
-msgstr "姓名"
+msgid "Name (Mandatory)"
+msgstr ""
 
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
@@ -658,6 +658,10 @@ msgstr "纯文本"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "Key selection dialog"
 msgstr ""
+
+#~ msgctxt "Name of the UID of the new keypair"
+#~ msgid "Name"
+#~ msgstr "姓名"
 
 #~ msgctxt "Thread Error"
 #~ msgid "text encryption"

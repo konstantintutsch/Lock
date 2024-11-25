@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-25 16:16+0100\n"
+"POT-Creation-Date: 2024-11-25 16:40+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/Lock/Application/"
@@ -116,12 +116,12 @@ msgstr "Import selhal"
 msgid "Keys imported"
 msgstr "Klíč(e) importován(y)"
 
-#: src/managementdialog.c:448
+#: src/managementdialog.c:465
 #, fuzzy
 msgid "Generation failed"
 msgstr "Ověření selhalo"
 
-#: src/managementdialog.c:450
+#: src/managementdialog.c:467
 msgid "Keypair generated"
 msgstr ""
 
@@ -374,17 +374,17 @@ msgstr "Selhalo vytvoření vlákna %s: %s"
 msgid "Failed to create key import thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:234
+#: src/threading.c:237
 #, fuzzy
 msgid "Failed to create key generation thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:249
+#: src/threading.c:252
 #, fuzzy
 msgid "Failed to create key export thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:261
+#: src/threading.c:264
 #, fuzzy
 msgid "Failed to create key removal thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
@@ -510,7 +510,7 @@ msgstr "Spravovat klíče"
 
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
-msgid "Name"
+msgid "Name (Mandatory)"
 msgstr ""
 
 #: data/ui/managementdialog.blp:146

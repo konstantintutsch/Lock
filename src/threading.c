@@ -230,6 +230,9 @@ void thread_generate_key(GtkButton *self, LockManagementDialog *dialog)
 {
     (void)self;
 
+    if (!lock_management_dialog_generate_ready(dialog))
+        return;
+
     bool success = thread_create("generate_key",
                                  _("Failed to create key generation thread"),
                                  lock_management_dialog_generate, dialog);

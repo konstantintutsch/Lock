@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-25 16:16+0100\n"
+"POT-Creation-Date: 2024-11-25 16:40+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -113,11 +113,11 @@ msgstr "İçe aktarılamadı"
 msgid "Keys imported"
 msgstr "Anahtarlar içe aktarıldı"
 
-#: src/managementdialog.c:448
+#: src/managementdialog.c:465
 msgid "Generation failed"
 msgstr "Oluşturulamadı"
 
-#: src/managementdialog.c:450
+#: src/managementdialog.c:467
 msgid "Keypair generated"
 msgstr "Anahtar eşi oluşturuldu"
 
@@ -365,17 +365,17 @@ msgstr "%s iş parçacığı oluşturulamadı: %s"
 msgid "Failed to create key import thread"
 msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/threading.c:234
+#: src/threading.c:237
 #, fuzzy
 msgid "Failed to create key generation thread"
 msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/threading.c:249
+#: src/threading.c:252
 #, fuzzy
 msgid "Failed to create key export thread"
 msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/threading.c:261
+#: src/threading.c:264
 #, fuzzy
 msgid "Failed to create key removal thread"
 msgstr "%s iş parçacığı oluşturulamadı: %s"
@@ -496,8 +496,8 @@ msgstr "Anahtar çifti oluştur"
 
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
-msgid "Name"
-msgstr "Ad"
+msgid "Name (Mandatory)"
+msgstr ""
 
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
@@ -654,6 +654,10 @@ msgstr "Düz metin"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "Key selection dialog"
 msgstr "Anahtar seçimi iletişim kutusu"
+
+#~ msgctxt "Name of the UID of the new keypair"
+#~ msgid "Name"
+#~ msgstr "Ad"
 
 #~ msgctxt "Thread Error"
 #~ msgid "text encryption"
