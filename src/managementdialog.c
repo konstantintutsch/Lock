@@ -394,7 +394,13 @@ void lock_management_dialog_generate(LockManagementDialog *dialog)
         gtk_editable_get_text(GTK_EDITABLE(dialog->email_entry));
     const gchar *comment =
         gtk_editable_get_text(GTK_EDITABLE(dialog->comment_entry));
-    gchar *userid = g_strdup_printf("%s <%s> (%s)", name, email, comment);
+
+    // Name (Comment) <Email>
+    gchar *userid = g_strdup_printf("%s", name);
+    if (strlen(comment) > 0)
+        userid = g_strdup_printf("%s (%s)", userid, comment);
+    if (strlen(email) > 0)
+        userid = g_strdup_printf("%s <%s>", userid, email);
 
     gint sign_selected = adw_combo_row_get_selected(dialog->sign_entry);
     GtkStringList *sign_list =
