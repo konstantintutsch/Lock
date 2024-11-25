@@ -462,7 +462,7 @@ msgstr "Сгенерировать пару ключей"
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name (Mandatory)"
-msgstr ""
+msgstr "Имя (обязательно)"
 
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
