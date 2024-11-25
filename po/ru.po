@@ -20,393 +20,393 @@ msgstr ""
 #, c-format
 msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
 msgid "GnuPG Made Easy %s or greater required. Using %s."
-msgstr ""
+msgstr "Требуется GnuPG Made Easy %s или выше. Текущая версия %s."
 
 #. Details
 #: src/application.c:132 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
-msgstr ""
+msgstr "Обработка данных с помощью GnuPG"
 
 #: src/application.c:134
 msgctxt "Button linking to translations"
 msgid "Translate"
-msgstr ""
+msgstr "Перевести"
 
 #: src/application.c:137
 msgctxt "Button linking to source code"
 msgid "Develop"
-msgstr ""
+msgstr "Разработка"
 
 #: src/application.c:149
 msgid "translator-credits"
-msgstr ""
+msgstr "Ярослав Пронин <proninyaroslav@mail.ru>"
 
 #: src/application.c:154
 msgid "Dependencies"
-msgstr ""
+msgstr "Зависимости"
 
-#: src/window.c:145
+#: src/window.c:144
 msgid "Enter text …"
-msgstr ""
+msgstr "Введите текст…"
 
-#: src/window.c:433
+#: src/window.c:417
 msgid "Text copied"
-msgstr ""
+msgstr "Текст скопирован"
 
-#: src/window.c:686 src/window.c:748
+#: src/window.c:670 src/window.c:732
 msgid "Encryption failed"
-msgstr ""
+msgstr "Не удалось зашифровать"
 
-#: src/window.c:688
+#: src/window.c:672
 msgid "Text encrypted"
-msgstr ""
+msgstr "Текст зашифрован"
 
-#: src/window.c:750
+#: src/window.c:734
 msgid "File encrypted"
-msgstr ""
+msgstr "Файл зашифрован"
 
-#: src/window.c:806 src/window.c:864
+#: src/window.c:790 src/window.c:848
 msgid "Decryption failed"
-msgstr ""
+msgstr "Не удалось расшифровать"
 
-#: src/window.c:808
+#: src/window.c:792
 msgid "Text decrypted"
-msgstr ""
+msgstr "Текст расшифрован"
 
-#: src/window.c:866
+#: src/window.c:850
 msgid "File decrypted"
-msgstr ""
+msgstr "Файл расшифрован"
 
-#: src/window.c:973 src/window.c:1035
+#: src/window.c:947 src/window.c:1009
 msgid "Signing failed"
-msgstr ""
+msgstr "Не удалось подписать"
 
-#: src/window.c:975
+#: src/window.c:949
 msgid "Text signed"
-msgstr ""
+msgstr "Текст подписан"
 
-#: src/window.c:1037
+#: src/window.c:1011
 msgid "File signed"
-msgstr ""
+msgstr "Файл подписан"
 
-#: src/window.c:1093 src/window.c:1151
+#: src/window.c:1067 src/window.c:1125
 msgid "Verification failed"
-msgstr ""
+msgstr "Проверка не удалась"
 
-#: src/window.c:1095
+#: src/window.c:1069
 msgid "Text verified"
-msgstr ""
+msgstr "Текст проверен"
 
-#: src/window.c:1153
+#: src/window.c:1127
 msgid "File verified"
-msgstr ""
+msgstr "Файл проверен"
 
-#: src/managementdialog.c:367
+#: src/managementdialog.c:364
 msgid "Import failed"
-msgstr ""
+msgstr "Не удалось импортировать"
 
-#: src/managementdialog.c:369
+#: src/managementdialog.c:366
 msgid "Keys imported"
-msgstr ""
+msgstr "Ключи импортированы"
 
-#: src/managementdialog.c:465
+#: src/managementdialog.c:437
 msgid "Generation failed"
-msgstr ""
+msgstr "Генерация не удалась"
 
-#: src/managementdialog.c:467
+#: src/managementdialog.c:439
 msgid "Keypair generated"
-msgstr ""
+msgstr "Пара ключей сгенерирована"
 
 #: src/keyrow.c:95
 msgid "Key does not expire"
-msgstr ""
+msgstr "Срок действия ключа не ограничен"
 
 #: src/keyrow.c:99
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
-msgstr ""
+msgstr "Истекает %s в %s"
 
 #: src/keyrow.c:126
 msgid "Fingerprint copied"
-msgstr ""
+msgstr "Отпечаток скопирован"
 
 #: src/keyrow.c:220
 msgid "Export failed"
-msgstr ""
+msgstr "Не удалось экспортировать"
 
 #: src/keyrow.c:222
 msgid "Key exported"
-msgstr ""
+msgstr "Ключ экспортирован"
 
 #: src/keyrow.c:268
 msgid "Remove key and subkeys?"
-msgstr ""
+msgstr "Удалить ключ и подключи?"
 
 #: src/keyrow.c:271
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
-msgstr ""
+msgstr "Удаление ключа %s не может быть отменено!"
 
 #: src/keyrow.c:274
 msgid "_Cancel"
-msgstr ""
+msgstr "_Отмена"
 
 #: src/keyrow.c:275
 msgid "_Remove"
-msgstr ""
+msgstr "_Удалить"
 
 #: src/keyrow.c:316
 msgid "Removal failed"
-msgstr ""
+msgstr "Не удалось удалить"
 
 #: src/keyrow.c:318
 msgid "Key removed"
-msgstr ""
+msgstr "Ключ удалён"
 
 #: src/cryptography.c:42 src/cryptography.c:76 src/cryptography.c:120
-#: src/cryptography.c:176 src/cryptography.c:290 src/cryptography.c:401
+#: src/cryptography.c:176 src/cryptography.c:288 src/cryptography.c:399
 msgid "Failed to create new GPGME context"
-msgstr ""
+msgstr "Не удалось создать новый контекст GPGME"
 
 #: src/cryptography.c:46 src/cryptography.c:80 src/cryptography.c:124
-#: src/cryptography.c:180 src/cryptography.c:294 src/cryptography.c:405
+#: src/cryptography.c:180 src/cryptography.c:292 src/cryptography.c:403
 msgid "Failed to set protocol of GPGME context to OpenPGP"
-msgstr ""
+msgstr "Не удалось установить протокол контекста GPGME на OpenPGP"
 
 #: src/cryptography.c:51
 msgid "Failed to obtain key by fingerprint"
-msgstr ""
+msgstr "Не удалось получить ключ по отпечатку"
 
 #: src/cryptography.c:94
 msgid "Failed to find key matching User ID"
-msgstr ""
+msgstr "Не удалось найти ключ, соответствующий идентификатору пользователя"
 
 #: src/cryptography.c:135 src/cryptography.c:143
 msgid "Failed to generate new GPG key for signing"
-msgstr ""
+msgstr "Не удалось сгенерировать новый ключ GPG для подписи"
 
 #: src/cryptography.c:149
 msgid "Failed to delete unfinished, generated key"
-msgstr ""
+msgstr "Не удалось удалить незавершенный, сгенерированный ключ"
 
 #: src/cryptography.c:186
 msgid "Failed to load GPGME key data from file"
-msgstr ""
+msgstr "Не удалось загрузить данные ключа GPGME из файла"
 
 #: src/cryptography.c:191
 msgid "Failed to import GPG key from file"
-msgstr ""
+msgstr "Не удалось импортировать ключ GPG из файла"
 
 #: src/cryptography.c:201
 msgid "Failed to create GPGME key data in memory"
-msgstr ""
+msgstr "Не удалось создать данные ключа GPGME в памяти"
 
 #: src/cryptography.c:206
 msgid "Failed to export GPG key(s) to file"
-msgstr ""
+msgstr "Не удалось экспортировать ключ(и) GPG в файл"
 
 #: src/cryptography.c:220
 #, c-format
 msgid "Failed to open export file: %s"
-msgstr ""
+msgstr "Не удалось открыть файл экспорта: %s"
 
 #: src/cryptography.c:250
 msgid "Failed to get GPG key for removal"
-msgstr ""
+msgstr "Не удалось получить GPG ключ для удаления"
 
 #: src/cryptography.c:254
 msgid "Failed to remove GPG key"
-msgstr ""
+msgstr "Не удалось удалить GPG ключ"
 
-#: src/cryptography.c:299 src/cryptography.c:410
+#: src/cryptography.c:297 src/cryptography.c:408
 msgid "Failed to set pinentry mode of GPGME context to ask"
-msgstr ""
+msgstr "Не удалось установить режим запроса ввода PIN-кода для контекста GPGME"
 
-#: src/cryptography.c:306
+#: src/cryptography.c:304
 msgid "Failed to create new GPGME input data from string"
-msgstr ""
+msgstr "Не удалось создать новые входные данные GPGME из строки"
 
-#: src/cryptography.c:312 src/cryptography.c:431
+#: src/cryptography.c:310 src/cryptography.c:429
 msgid "Failed to create new GPGME output data in memory"
-msgstr ""
+msgstr "Не удалось создать новые выходные данные GPGME в памяти"
 
-#: src/cryptography.c:321
+#: src/cryptography.c:319
 msgid "Failed to encrypt GPGME data from memory"
-msgstr ""
+msgstr "Не удалось зашифровать данные GPGME в памяти"
 
-#: src/cryptography.c:327
+#: src/cryptography.c:325
 msgid "Failed to decrypt GPGME data from memory"
-msgstr ""
+msgstr "Не удалось расшифровать данные GPGME в памяти"
 
-#: src/cryptography.c:335
+#: src/cryptography.c:333
 msgid "Failed to add signing key to GPGME context"
-msgstr ""
+msgstr "Не удалось добавить ключ подписи в контекст GPGME"
 
-#: src/cryptography.c:340
+#: src/cryptography.c:338
 msgid "Failed to sign GPGME data from memory"
-msgstr ""
+msgstr "Не удалось подписать данные GPGME в памяти"
 
-#: src/cryptography.c:347
+#: src/cryptography.c:345
 msgid "Failed to verify GPGME data from memory"
-msgstr ""
+msgstr "Не удалось проверить данные GPGME в памяти"
 
-#: src/cryptography.c:389
+#: src/cryptography.c:387
 #, c-format
 msgid "Removed %s to prepare overwriting"
-msgstr ""
+msgstr "%s удалён для подготовки перезаписи"
 
-#: src/cryptography.c:416
+#: src/cryptography.c:414
 msgid "Failed to create new GPGME input data from file"
-msgstr ""
+msgstr "Не удалось создать новые входные данные GPGME из файла"
 
-#: src/cryptography.c:424
+#: src/cryptography.c:422
 msgid "Failed to set file name of GPGME input data"
-msgstr ""
+msgstr "Не удалось задать имя файла входных данных GPGME"
 
-#: src/cryptography.c:439
+#: src/cryptography.c:437
 msgid "Failed to set file name of GPGME output data"
-msgstr ""
+msgstr "Не удалось задать имя файла выходных данных GPGME"
 
-#: src/cryptography.c:450
+#: src/cryptography.c:448
 msgid "Failed to encrypt GPGME data from file"
-msgstr ""
+msgstr "Не удалось зашифровать данные GPGME из файла"
 
-#: src/cryptography.c:457
+#: src/cryptography.c:455
 msgid "Failed to decrypt GPGME data from file"
-msgstr ""
+msgstr "Не удалось расшифровать данные GPGME из файла"
 
-#: src/cryptography.c:466
+#: src/cryptography.c:464
 msgid "Failed to sign GPGME data from file"
-msgstr ""
+msgstr "Не удалось подписать данные GPGME из файла"
 
-#: src/cryptography.c:473
+#: src/cryptography.c:471
 msgid "Failed to verify GPGME data from file"
-msgstr ""
+msgstr "Не удалось проверить данные GPGME из файла"
 
-#: src/cryptography.c:490
+#: src/cryptography.c:488
 #, c-format
 msgid "Failed to open output file: %s"
-msgstr ""
+msgstr "Не удалось открыть выходной файл: %s"
 
 #: src/threading.c:57
 msgid "Failed to create text encryption thread"
-msgstr ""
+msgstr "Не удалось создать поток шифрования текста"
 
 #: src/threading.c:79
 msgid "Failed to create file encryption thread"
-msgstr ""
+msgstr "Не удалось создать поток шифрования файла"
 
 #: src/threading.c:100
 msgid "Failed to create text decryption thread"
-msgstr ""
+msgstr "Не удалось создать поток расшифровки текста"
 
 #: src/threading.c:118
 msgid "Failed to create file decryption thread"
-msgstr ""
+msgstr "Не удалось создать поток расшифровки файла"
 
 #: src/threading.c:140
 msgid "Failed to create text signing thread"
-msgstr ""
+msgstr "Не удалось создать поток подписи текста"
 
 #: src/threading.c:162
 msgid "Failed to create file signing thread"
-msgstr ""
+msgstr "Не удалось создать поток подписи файла"
 
 #: src/threading.c:183
 msgid "Failed to create text verification thread"
-msgstr ""
+msgstr "Не удалось создать поток проверки текста"
 
 #: src/threading.c:201
 msgid "Failed to create file verification thread"
-msgstr ""
+msgstr "Не удалось создать поток проверки файла"
 
 #: src/threading.c:216
 msgid "Failed to create key import thread"
-msgstr ""
+msgstr "Не удалось создать поток импорта ключа"
 
-#: src/threading.c:237
+#: src/threading.c:234
 msgid "Failed to create key generation thread"
-msgstr ""
+msgstr "Не удалось создать поток генерации ключа"
 
-#: src/threading.c:252
+#: src/threading.c:249
 msgid "Failed to create key export thread"
-msgstr ""
+msgstr "Не удалось создать поток экспорта ключа"
 
-#: src/threading.c:264
+#: src/threading.c:261
 msgid "Failed to create key removal thread"
-msgstr ""
+msgstr "Не удалось создать поток удаления ключа"
 
 #: data/ui/window.blp:9 data/ui/window.blp:192
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
-msgstr ""
+msgstr "Замок"
 
 #: data/ui/window.blp:29
 msgid "Copy"
-msgstr ""
+msgstr "Копировать"
 
 #: data/ui/window.blp:30
 msgid "Copy the text"
-msgstr ""
+msgstr "Скопировать текст"
 
 #: data/ui/window.blp:33
 msgid "Cryptography operations"
-msgstr ""
+msgstr "Криптографические операции"
 
 #: data/ui/window.blp:50
 msgid "Processing …"
-msgstr ""
+msgstr "Обработка …"
 
 #: data/ui/window.blp:55
 msgid "Main Menu"
-msgstr ""
+msgstr "Главное меню"
 
 #: data/ui/window.blp:66
 msgid "Text"
-msgstr ""
+msgstr "Текст"
 
 #: data/ui/window.blp:84
 msgid "File"
-msgstr ""
+msgstr "Файл"
 
 #: data/ui/window.blp:93
 msgid "No files selected for processing"
-msgstr ""
+msgstr "Файлы для обработки не выбраны"
 
 #: data/ui/window.blp:114
 msgid "Input File"
-msgstr ""
+msgstr "Входной файл"
 
 #: data/ui/window.blp:129
 msgid "Output File"
-msgstr ""
+msgstr "Выходной файл"
 
 #: data/ui/window.blp:153 data/ui/window.blp:213
 msgid "Encrypt"
-msgstr ""
+msgstr "Зашифровать"
 
 #: data/ui/window.blp:160 data/ui/window.blp:217
 msgid "Decrypt"
-msgstr ""
+msgstr "Расшифровать"
 
 #: data/ui/window.blp:167 data/ui/window.blp:223
 msgid "Sign"
-msgstr ""
+msgstr "Подписать"
 
-#: data/ui/window.blp:174 data/ui/window.blp:235
+#: data/ui/window.blp:174 data/ui/window.blp:227
 msgid "Verify"
-msgstr ""
+msgstr "Проверить"
 
 #: data/ui/window.blp:198 data/ui/managementdialog.blp:30
 msgid "Manage keys"
-msgstr ""
+msgstr "Управление ключами"
 
 #: data/ui/window.blp:204
 msgid "About Lock"
-msgstr ""
+msgstr "О Замке"
 
 #: data/ui/window.blp:227
 msgid "Sign (Clear Text)"
@@ -418,45 +418,46 @@ msgstr ""
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
-msgstr ""
+msgstr "Выбрать ключ"
 
 #: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
 msgid "Refresh keys"
-msgstr ""
+msgstr "Обновить ключи"
 
 #: data/ui/selectiondialog.blp:68
 msgid "No capable keys available"
-msgstr ""
+msgstr "Нет совместимых ключей"
 
 #: data/ui/selectiondialog.blp:69
 msgid ""
 "Your GnuPG keyring does not contain any keys that support this functionality."
 msgstr ""
+"Ваша связка ключей GnuPG не содержит ключи, поддерживающие эту функцию."
 
 #: data/ui/managementdialog.blp:68
 msgid "No keys available"
-msgstr ""
+msgstr "Нет доступных ключей"
 
 #: data/ui/managementdialog.blp:69
 msgid "Your GnuPG keyring does not contain any keys."
-msgstr ""
+msgstr "Ваша связка ключей GnuPG не содержит никаких ключей."
 
 #: data/ui/managementdialog.blp:89
 msgctxt "Import keys from files"
 msgid "Import"
-msgstr ""
+msgstr "Импорт"
 
 #: data/ui/managementdialog.blp:90
 msgid "Import keys from files"
-msgstr ""
+msgstr "Импортировать ключи из файла"
 
 #: data/ui/managementdialog.blp:97
 msgid "Create a new keypair"
-msgstr ""
+msgstr "Создать новую пару ключей"
 
 #: data/ui/managementdialog.blp:110
 msgid "Generate keypair"
-msgstr ""
+msgstr "Сгенерировать пару ключей"
 
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
@@ -466,151 +467,160 @@ msgstr ""
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #: data/ui/managementdialog.blp:151
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
 msgstr ""
 
-#: data/ui/managementdialog.blp:156
+#: data/ui/managementdialog.blp:151
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
-msgstr ""
+msgstr "Алгоритм подписи"
 
-#: data/ui/managementdialog.blp:157
+#: data/ui/managementdialog.blp:152
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
-msgstr ""
+msgstr "Ключ"
 
-#: data/ui/managementdialog.blp:165
+#: data/ui/managementdialog.blp:160
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
-msgstr ""
+msgstr "Алгоритм шифрования"
 
-#: data/ui/managementdialog.blp:166
+#: data/ui/managementdialog.blp:161
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
-msgstr ""
+msgstr "Подключ"
 
-#: data/ui/managementdialog.blp:174
+#: data/ui/managementdialog.blp:169
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
-msgstr ""
+msgstr "Истекает"
 
-#: data/ui/managementdialog.blp:175
+#: data/ui/managementdialog.blp:170
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
-msgstr ""
+msgstr "В месяцах, для отключения 0"
 
-#: data/ui/managementdialog.blp:197
+#: data/ui/managementdialog.blp:192
 msgctxt "Generate a new keypair"
 msgid "Generate"
-msgstr ""
+msgstr "Сгенерировать"
 
-#: data/ui/managementdialog.blp:198
+#: data/ui/managementdialog.blp:193
 msgid "Generate a new keypair"
-msgstr ""
+msgstr "Сгенерировать новую пару ключей"
 
 #: data/ui/keyrow.blp:5
 msgid "User ID"
-msgstr ""
+msgstr "Идентификатор пользователя"
 
 #: data/ui/keyrow.blp:6
 msgid "Fingerprint"
-msgstr ""
+msgstr "Отпечаток"
 
 #: data/ui/keyrow.blp:7
 msgid "Expiry"
-msgstr ""
+msgstr "Истекает"
 
 #: data/ui/keyrow.blp:20
 msgid "Remove key"
-msgstr ""
+msgstr "Удалить ключ"
 
 #: data/ui/keyrow.blp:27
 msgid "Export public key to file"
-msgstr ""
+msgstr "Экспортировать открытый ключ в файл"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr ""
+"gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;криптография;"
+"зашифровать;расшифровать;подписать;проверить;"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
 msgid ""
 "Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
 "LibAdwaita GUI."
 msgstr ""
+"Замок — графический клиент для GnuPG (GPG), использующий прекрасный "
+"LibAdwaita GUI."
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
 msgid "Process text and files:"
-msgstr ""
+msgstr "Обработка текста и файлов:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:74
 msgid "Encryption"
-msgstr ""
+msgstr "Шифрование"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
 msgid "Decryption"
-msgstr ""
+msgstr "Расшифровка"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:14
 msgid "Signing"
-msgstr ""
+msgstr "Подпись"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:15
 msgid "Verification"
-msgstr ""
+msgstr "Проверка"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:17
 msgid "Manage your GnuPG keyring:"
-msgstr ""
+msgstr "Управляйте связкой ключей GnuPG:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
 msgid "Generate new keypairs"
-msgstr ""
+msgstr "Генерация новых пар ключей"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
 msgid "Import keys"
-msgstr ""
+msgstr "Импорт ключей"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:21
 msgid "Export public keys"
-msgstr ""
+msgstr "Экспорт открытых ключей"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
 msgid "View expiry dates"
-msgstr ""
+msgstr "Посмотр дат истечения срока действия"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
 msgid "Remove keys"
-msgstr ""
+msgstr "Удаление ключей"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:46
 msgid "Light Appearance"
-msgstr ""
+msgstr "Светлая тема"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:50
 msgid "Dark Appearance"
-msgstr ""
+msgstr "Тёмная тема"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:54
 msgid "Key Management"
-msgstr ""
+msgstr "Управление ключами"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:58
 msgid "Keypair Generation"
-msgstr ""
+msgstr "Генерация пары ключей"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:62
 msgid "File processing"
-msgstr ""
+msgstr "Обработка файлов"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:66
 msgid "Plain text"
-msgstr ""
+msgstr "Обычный текст"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "Key selection dialog"
-msgstr ""
+msgstr "Диалог выбора ключей"
+
+#: data/ui/managementdialog.blp:141
+msgctxt "Name of the UID of the new keypair"
+msgid "Name"
+msgstr "Имя"
