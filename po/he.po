@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-25 17:28+0100\n"
+"POT-Creation-Date: 2024-11-25 20:16+0100\n"
 "PO-Revision-Date: 2024-11-24 19:01+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/Lock/Application/"
@@ -252,22 +252,18 @@ msgid "Failed to encrypt GPGME data from memory"
 msgstr "הצפנת נתוני GPGME מהזיכרון נכשלה"
 
 #: src/cryptography.c:327
-#, fuzzy
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "פענוח נתוני GPGME מהזיכרון נכשל"
 
 #: src/cryptography.c:335
-#, fuzzy
 msgid "Failed to add signing key to GPGME context"
-msgstr "יצירת הקשר GPGME חדש"
+msgstr "הוספת מפתח חתימה חדש להקשר GPGME נכשלה"
 
 #: src/cryptography.c:340
-#, fuzzy
 msgid "Failed to sign GPGME data from memory"
 msgstr "חתימת נתוני GPGME מהזיכרון נכשלה"
 
 #: src/cryptography.c:347
-#, fuzzy
 msgid "Failed to verify GPGME data from memory"
 msgstr "אימות נתוני GPGME מהזיכרון נכשל"
 
