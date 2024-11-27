@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-27 20:46+0100\n"
+"POT-Creation-Date: 2024-11-27 21:01+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -143,39 +143,40 @@ msgstr "L'exportacion a fracassat"
 msgid "Key exported"
 msgstr "Clau exportada"
 
-#: src/keyrow.c:268
-msgid "Remove key and subkeys?"
-msgstr "Suprimir las claus e las sosclaus ?"
+#: src/keyrow.c:267
+#, fuzzy
+msgid "Remove key?"
+msgstr "Levar la clau"
 
-#: src/keyrow.c:271
+#: src/keyrow.c:270
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr "La supression de la clau %s se pòt desfar !"
 
-#: src/keyrow.c:274
+#: src/keyrow.c:273
 msgid "_Cancel"
 msgstr "_Anullar"
 
-#: src/keyrow.c:275
+#: src/keyrow.c:274
 msgid "_Remove"
 msgstr "_Levar"
 
-#: src/keyrow.c:316
+#: src/keyrow.c:315
 msgid "Removal failed"
 msgstr "Fracàs de la supression"
 
-#: src/keyrow.c:318
+#: src/keyrow.c:317
 msgid "Key removed"
 msgstr "Clau suprimida"
 
-#: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
-#: src/cryptography.c:172 src/cryptography.c:291 src/cryptography.c:402
+#: src/cryptography.c:42 src/cryptography.c:76 src/cryptography.c:120
+#: src/cryptography.c:176 src/cryptography.c:290 src/cryptography.c:401
 #, fuzzy
 msgid "Failed to create new GPGME context"
 msgstr "la creacion d’un conèxte GPGME nòu"
 
-#: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
-#: src/cryptography.c:176 src/cryptography.c:295 src/cryptography.c:406
+#: src/cryptography.c:46 src/cryptography.c:80 src/cryptography.c:124
+#: src/cryptography.c:180 src/cryptography.c:294 src/cryptography.c:405
 #, fuzzy
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "la definicion del protocòl del contèxte GPGME per OpenPGP"
@@ -185,37 +186,37 @@ msgstr "la definicion del protocòl del contèxte GPGME per OpenPGP"
 msgid "Failed to obtain key by fingerprint"
 msgstr "obténer la clau per emprenta digitala"
 
-#: src/cryptography.c:93
+#: src/cryptography.c:94
 #, fuzzy
 msgid "Failed to find key matching User ID"
 msgstr "la trobada d’una clau correspondenta a l’ID utilizaire"
 
-#: src/cryptography.c:133 src/cryptography.c:141
+#: src/cryptography.c:135 src/cryptography.c:143
 #, fuzzy
 msgid "Failed to generate new GPG key for signing"
 msgstr "la generacion de la clau GPG novèla per signar"
 
-#: src/cryptography.c:147
+#: src/cryptography.c:149
 #, fuzzy
 msgid "Failed to delete unfinished, generated key"
 msgstr "la supression de la clau ECC generada non acabada"
 
-#: src/cryptography.c:182
+#: src/cryptography.c:186
 #, fuzzy
 msgid "Failed to load GPGME key data from file"
 msgstr "la mesa en memòria de las donadas clau GPGME a partir del fichièr"
 
-#: src/cryptography.c:188
+#: src/cryptography.c:191
 #, fuzzy
 msgid "Failed to import GPG key from file"
 msgstr "l’importacion de la clau GPG a partir del fichièr"
 
-#: src/cryptography.c:199
+#: src/cryptography.c:201
 #, fuzzy
 msgid "Failed to create GPGME key data in memory"
 msgstr "la creacion de las donadas de la clau GPGME en memòria"
 
-#: src/cryptography.c:205
+#: src/cryptography.c:206
 #, fuzzy
 msgid "Failed to export GPG key(s) to file"
 msgstr "de l’exportacion de la(s) clau(s) dins un fichièr"
@@ -235,12 +236,12 @@ msgstr "obténer la clau GPG de suprimir"
 msgid "Failed to remove GPG key"
 msgstr "la supression de la clau GPG"
 
-#: src/cryptography.c:300 src/cryptography.c:411
+#: src/cryptography.c:299 src/cryptography.c:410
 #, fuzzy
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "la definicion del protocòl del contèxte GPGME per OpenPGP"
 
-#: src/cryptography.c:307
+#: src/cryptography.c:306
 #, fuzzy
 msgid "Failed to create new GPGME input data from string"
 msgstr ""
@@ -269,22 +270,22 @@ msgstr ""
 msgid "Failed to add signing key to GPGME context"
 msgstr "la creacion d’un conèxte GPGME nòu"
 
-#: src/cryptography.c:342
+#: src/cryptography.c:340
 #, fuzzy
 msgid "Failed to sign GPGME data from memory"
 msgstr "la signatura de las donadas GPGME a partir de la memòria"
 
-#: src/cryptography.c:348
+#: src/cryptography.c:347
 #, fuzzy
 msgid "Failed to verify GPGME data from memory"
 msgstr "la verificacion de las donadas GPGME a partir de la memòria"
 
-#: src/cryptography.c:390
+#: src/cryptography.c:389
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s suprimit per preparar lo subrecargament"
 
-#: src/cryptography.c:417
+#: src/cryptography.c:416
 #, fuzzy
 msgid "Failed to create new GPGME input data from file"
 msgstr ""
@@ -300,29 +301,29 @@ msgstr "la definicion del nom de fichièr de las donadas GPGME d’entrada"
 msgid "Failed to set file name of GPGME output data"
 msgstr "la definicion del nom de fichièr de las donadas GPGME de sortida"
 
-#: src/cryptography.c:449
+#: src/cryptography.c:450
 #, fuzzy
 msgid "Failed to encrypt GPGME data from file"
 msgstr ""
 "la realizacion del deschiframent de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:454
+#: src/cryptography.c:457
 #, fuzzy
 msgid "Failed to decrypt GPGME data from file"
 msgstr ""
 "la realizacion del chiframent de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:461
+#: src/cryptography.c:466
 #, fuzzy
 msgid "Failed to sign GPGME data from file"
 msgstr "la signatura de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:467
+#: src/cryptography.c:473
 #, fuzzy
 msgid "Failed to verify GPGME data from file"
 msgstr "la verificacion de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:483
+#: src/cryptography.c:490
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Fracàs de la dobertura del fichièr en sortida : %s"
@@ -667,6 +668,9 @@ msgstr "Tèxte brut"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "Key selection dialog"
 msgstr "Fenèstra de seleccion de clau"
+
+#~ msgid "Remove key and subkeys?"
+#~ msgstr "Suprimir las claus e las sosclaus ?"
 
 #~ msgctxt "Name of the UID of the new keypair"
 #~ msgid "Name"

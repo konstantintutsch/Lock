@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-27 20:46+0100\n"
+"POT-Creation-Date: 2024-11-27 21:01+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -143,38 +143,39 @@ msgstr "Eksportimine ei õnnestunud"
 msgid "Key exported"
 msgstr "Võti on eksporditud"
 
-#: src/keyrow.c:268
-msgid "Remove key and subkeys?"
-msgstr "Kas eemaldame võtme koos alamvõtmetega?"
+#: src/keyrow.c:267
+#, fuzzy
+msgid "Remove key?"
+msgstr "_Eemalda"
 
-#: src/keyrow.c:271
+#: src/keyrow.c:270
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr "%s võtme eemaldamist ei saa tagasi pöörata!"
 
-#: src/keyrow.c:274
+#: src/keyrow.c:273
 msgid "_Cancel"
 msgstr "_Katkesta"
 
-#: src/keyrow.c:275
+#: src/keyrow.c:274
 msgid "_Remove"
 msgstr "_Eemalda"
 
-#: src/keyrow.c:316
+#: src/keyrow.c:315
 msgid "Removal failed"
 msgstr "Eemaldamine ei õnnestunud"
 
-#: src/keyrow.c:318
+#: src/keyrow.c:317
 msgid "Key removed"
 msgstr "Võti on eemaldatud"
 
-#: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
-#: src/cryptography.c:172 src/cryptography.c:291 src/cryptography.c:402
+#: src/cryptography.c:42 src/cryptography.c:76 src/cryptography.c:120
+#: src/cryptography.c:176 src/cryptography.c:290 src/cryptography.c:401
 msgid "Failed to create new GPGME context"
 msgstr ""
 
-#: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
-#: src/cryptography.c:176 src/cryptography.c:295 src/cryptography.c:406
+#: src/cryptography.c:46 src/cryptography.c:80 src/cryptography.c:124
+#: src/cryptography.c:180 src/cryptography.c:294 src/cryptography.c:405
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr ""
 
@@ -182,31 +183,31 @@ msgstr ""
 msgid "Failed to obtain key by fingerprint"
 msgstr ""
 
-#: src/cryptography.c:93
+#: src/cryptography.c:94
 msgid "Failed to find key matching User ID"
 msgstr ""
 
-#: src/cryptography.c:133 src/cryptography.c:141
+#: src/cryptography.c:135 src/cryptography.c:143
 msgid "Failed to generate new GPG key for signing"
 msgstr ""
 
-#: src/cryptography.c:147
+#: src/cryptography.c:149
 msgid "Failed to delete unfinished, generated key"
 msgstr ""
 
-#: src/cryptography.c:182
+#: src/cryptography.c:186
 msgid "Failed to load GPGME key data from file"
 msgstr ""
 
-#: src/cryptography.c:188
+#: src/cryptography.c:191
 msgid "Failed to import GPG key from file"
 msgstr ""
 
-#: src/cryptography.c:199
+#: src/cryptography.c:201
 msgid "Failed to create GPGME key data in memory"
 msgstr ""
 
-#: src/cryptography.c:205
+#: src/cryptography.c:206
 msgid "Failed to export GPG key(s) to file"
 msgstr ""
 
@@ -223,11 +224,11 @@ msgstr ""
 msgid "Failed to remove GPG key"
 msgstr ""
 
-#: src/cryptography.c:300 src/cryptography.c:411
+#: src/cryptography.c:299 src/cryptography.c:410
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr ""
 
-#: src/cryptography.c:307
+#: src/cryptography.c:306
 msgid "Failed to create new GPGME input data from string"
 msgstr ""
 
@@ -247,20 +248,20 @@ msgstr ""
 msgid "Failed to add signing key to GPGME context"
 msgstr ""
 
-#: src/cryptography.c:342
+#: src/cryptography.c:340
 msgid "Failed to sign GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:348
+#: src/cryptography.c:347
 msgid "Failed to verify GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:390
+#: src/cryptography.c:389
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr ""
 
-#: src/cryptography.c:417
+#: src/cryptography.c:416
 msgid "Failed to create new GPGME input data from file"
 msgstr ""
 
@@ -272,23 +273,23 @@ msgstr ""
 msgid "Failed to set file name of GPGME output data"
 msgstr ""
 
-#: src/cryptography.c:449
+#: src/cryptography.c:450
 msgid "Failed to encrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:454
+#: src/cryptography.c:457
 msgid "Failed to decrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:461
+#: src/cryptography.c:466
 msgid "Failed to sign GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:467
+#: src/cryptography.c:473
 msgid "Failed to verify GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:483
+#: src/cryptography.c:490
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr ""
@@ -617,3 +618,6 @@ msgstr ""
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
 msgid "Key selection dialog"
 msgstr ""
+
+#~ msgid "Remove key and subkeys?"
+#~ msgstr "Kas eemaldame võtme koos alamvõtmetega?"

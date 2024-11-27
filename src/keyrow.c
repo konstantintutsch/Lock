@@ -264,8 +264,7 @@ static void lock_key_row_remove_confirm(GtkButton *self, LockKeyRow *row)
     const char *uid = adw_preferences_row_get_title(ADW_PREFERENCES_ROW(row));
 
     AdwAlertDialog *confirm =
-        ADW_ALERT_DIALOG(adw_alert_dialog_new
-                         (_("Remove key and subkeys?"), NULL));
+        ADW_ALERT_DIALOG(adw_alert_dialog_new(_("Remove key?"), NULL));
     adw_alert_dialog_format_body(confirm,
                                  _
                                  ("The removal of the key of %s cannot be undone!"),
