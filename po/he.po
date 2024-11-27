@@ -216,8 +216,7 @@ msgstr "ייבוא מפתח GPG מקובץ נכשל"
 msgid "Failed to create GPGME key data in memory"
 msgstr "יצירת נתוני מפתח GPGME בזיכרון נכשלה"
 
-#: src/cryptography.c:206 src/cryptography.c:205
-#, fuzzy
+#: src/cryptography.c:206
 msgid "Failed to export GPG key(s) to file"
 msgstr "ייצוא מפתח/מפתחות GPG לקובץ נכשל"
 
@@ -227,12 +226,10 @@ msgid "Failed to open export file: %s"
 msgstr "ייצוא קובץ נכשל: %s"
 
 #: src/cryptography.c:250
-#, fuzzy
 msgid "Failed to get GPG key for removal"
 msgstr "קבלת מפתח GPG להסרה נכשלה"
 
 #: src/cryptography.c:254
-#, fuzzy
 msgid "Failed to remove GPG key"
 msgstr "הסרת מפתח GPG נכשלה"
 
