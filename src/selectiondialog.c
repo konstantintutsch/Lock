@@ -136,7 +136,11 @@ void lock_selection_dialog_refresh(GtkButton *self, LockSelectionDialog *dialog)
     if (error)
         return;
 
-    error = gpgme_op_keylist_start(context, NULL, 0);
+    int secret_only = 0;
+    if (!dialog->target)
+        secret_only = 1;
+
+    error = gpgme_op_keylist_start(context, NULL, secret_only);
     while (!error) {
         error = gpgme_op_keylist_next(context, &key);
 
@@ -145,7 +149,7 @@ void lock_selection_dialog_refresh(GtkButton *self, LockSelectionDialog *dialog)
 
         if (dialog->target && !key->can_encrypt) {
             continue;
-        } else if (!dialog->target && !key->can_sign) { // TODO: key->can_sign and key->has_sign are always true?
+        } else if (!dialog->target && !key->can_sign) {
             continue;
         }
 
