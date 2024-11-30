@@ -84,6 +84,18 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.3.0" date="2024-11-30">
+            <description translate="no">
+                <ul>
+                    <li>Text can now be encrypted, decrypted, signed and verified with keyboard shortcuts</li>
+                    <li>The text view can now be copied and pasted to/overwritten with keyboard shortcuts</li>
+                    <li>The key selection for signing now only shows keys with their secret key available</li>
+                    <li>The file selection buttons now show a tooltip on hovering</li>
+                    <li>The title of the key removal dialog is now shorter</li>
+                    <li>Updated translations available: Hebrew, Russian</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.2.2" date="2024-11-26">
             <description translate="no">
                 <ul>
