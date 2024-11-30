@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-30 18:18+0100\n"
+"POT-Creation-Date: 2024-11-30 18:22+0100\n"
 "PO-Revision-Date: 2024-11-24 19:01+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/Lock/Application/"
@@ -193,32 +193,26 @@ msgid "Failed to find key matching User ID"
 msgstr "איתור מפתח שתואם למזהה המשתמש נכשל"
 
 #: src/cryptography.c:135 src/cryptography.c:143
-#, fuzzy
 msgid "Failed to generate new GPG key for signing"
 msgstr "יצירת מפתח GPG חדש לחתימה נכשלה"
 
 #: src/cryptography.c:149
-#, fuzzy
 msgid "Failed to delete unfinished, generated key"
 msgstr "מחיקת מפתח חלקי שנוצר נכשלה"
 
 #: src/cryptography.c:186
-#, fuzzy
 msgid "Failed to load GPGME key data from file"
-msgstr "טעינת נתוני מפתח GPG מקובץ נכשלה"
+msgstr "טעינת נתוני מפתח GPGME מקובץ נכשלה"
 
 #: src/cryptography.c:191
-#, fuzzy
 msgid "Failed to import GPG key from file"
 msgstr "ייבוא מפתח GPG מקובץ נכשל"
 
 #: src/cryptography.c:201
-#, fuzzy
 msgid "Failed to create GPGME key data in memory"
 msgstr "יצירת נתוני מפתח GPGME בזיכרון נכשלה"
 
 #: src/cryptography.c:206
-#, fuzzy
 msgid "Failed to export GPG key(s) to file"
 msgstr "ייצוא מפתח/מפתחות GPG לקובץ נכשל"
 
@@ -228,12 +222,10 @@ msgid "Failed to open export file: %s"
 msgstr "ייצוא קובץ נכשל: %s"
 
 #: src/cryptography.c:250
-#, fuzzy
 msgid "Failed to get GPG key for removal"
 msgstr "קבלת מפתח GPG להסרה נכשלה"
 
 #: src/cryptography.c:254
-#, fuzzy
 msgid "Failed to remove GPG key"
 msgstr "הסרת מפתח GPG נכשלה"
 
@@ -243,17 +235,14 @@ msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "הגדרת מצב אספקת קוד להקשר GPGME לבקשה נכשלה"
 
 #: src/cryptography.c:306
-#, fuzzy
 msgid "Failed to create new GPGME input data from string"
 msgstr "יצירת נתוני קלט חדשים ל־GPGME ממחרוזת נכשלה"
 
 #: src/cryptography.c:312 src/cryptography.c:431
-#, fuzzy
 msgid "Failed to create new GPGME output data in memory"
 msgstr "יצירת נתוני פלט חדשים בזיכרון מ־GPGME נכשלה"
 
 #: src/cryptography.c:321
-#, fuzzy
 msgid "Failed to encrypt GPGME data from memory"
 msgstr "הצפנת נתוני GPGME מהזיכרון נכשלה"
 
@@ -279,37 +268,30 @@ msgid "Removed %s to prepare overwriting"
 msgstr "%s הוסר כדי להתכונן לשכתוב"
 
 #: src/cryptography.c:416
-#, fuzzy
 msgid "Failed to create new GPGME input data from file"
-msgstr "יצירת נתוני קלט ל־GPGME מקובץ נכשלה"
+msgstr "יצירת נתוני קלט חדשים ל־GPGME מקובץ נכשלה"
 
 #: src/cryptography.c:424
-#, fuzzy
 msgid "Failed to set file name of GPGME input data"
 msgstr "הגדרת שם קובץ לנתוני קלט ל־GPGME נכשלה"
 
 #: src/cryptography.c:439
-#, fuzzy
 msgid "Failed to set file name of GPGME output data"
 msgstr "הגדרת שם קובץ לנתוני פלט מ־GPGME נכשלה"
 
 #: src/cryptography.c:450
-#, fuzzy
 msgid "Failed to encrypt GPGME data from file"
 msgstr "הצפנת נתוני GPGME מקובץ נכשלה"
 
 #: src/cryptography.c:457
-#, fuzzy
 msgid "Failed to decrypt GPGME data from file"
 msgstr "פענוח נתוני GPGME מקובץ נכשל"
 
 #: src/cryptography.c:466
-#, fuzzy
 msgid "Failed to sign GPGME data from file"
 msgstr "חתימת נתוני GPGME מקובץ נכשלה"
 
 #: src/cryptography.c:473
-#, fuzzy
 msgid "Failed to verify GPGME data from file"
 msgstr "אימות נתוני GPGME מקובץ נכשל"
 
@@ -319,49 +301,40 @@ msgid "Failed to open output file: %s"
 msgstr "פתיחת קובץ הפלט נכשלה: %s"
 
 #: src/threading.c:57
-#, fuzzy
 msgid "Failed to create text encryption thread"
-msgstr "יצירת תהליכון %s נכשלה: %s"
+msgstr "יצירת תהליכון הצפנת טקסט נכשלה"
 
 #: src/threading.c:79
-#, fuzzy
 msgid "Failed to create file encryption thread"
-msgstr "יצירת תהליכון %s נכשלה: %s"
+msgstr "יצירת תהליכון הצפנת קבצים נכשלה"
 
 #: src/threading.c:100
-#, fuzzy
 msgid "Failed to create text decryption thread"
-msgstr "יצירת תהליכון %s נכשלה: %s"
+msgstr "יצירת תהליכון פענוח טקסט נכשלה"
 
 #: src/threading.c:118
-#, fuzzy
 msgid "Failed to create file decryption thread"
-msgstr "יצירת תהליכון %s נכשלה: %s"
+msgstr "יצירת תהליכון פענוח קבצים נכשלה"
 
 #: src/threading.c:140
-#, fuzzy
 msgid "Failed to create text signing thread"
-msgstr "יצירת תהליכון %s נכשלה: %s"
+msgstr "יצירת תהליכון חתימת טקסט נכשלה"
 
 #: src/threading.c:162
-#, fuzzy
 msgid "Failed to create file signing thread"
-msgstr "יצירת תהליכון %s נכשלה: %s"
+msgstr "יצירת תהליכון חתימה על קבצים"
 
 #: src/threading.c:183
-#, fuzzy
 msgid "Failed to create text verification thread"
-msgstr "יצירת תהליכון %s נכשלה: %s"
+msgstr "יצירת תהליכון אימות טקסט נכשלה"
 
 #: src/threading.c:201
-#, fuzzy
 msgid "Failed to create file verification thread"
-msgstr "יצירת תהליכון %s נכשלה: %s"
+msgstr "יצירת תהליכון אימות קבצים נכשלה"
 
 #: src/threading.c:216
-#, fuzzy
 msgid "Failed to create key import thread"
-msgstr "יצירת תהליכון %s נכשלה: %s"
+msgstr "יצירת תהליכון ייבוא מפתח נכשלה"
 
 #: src/threading.c:237
 msgid "Failed to create key generation thread"
@@ -505,11 +478,11 @@ msgstr "על מנעול"
 
 #: data/ui/window.blp:233
 msgid "Sign (Clear Text)"
-msgstr ""
+msgstr "חתימה (טקסט פשוט)"
 
 #: data/ui/window.blp:237
 msgid "Sign (Detached)"
-msgstr ""
+msgstr "חתימה (מנותקת)"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
@@ -556,7 +529,7 @@ msgstr "יצירת צמד מפתחות"
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name (Mandatory)"
-msgstr ""
+msgstr "שם (חובה)"
 
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
@@ -566,7 +539,7 @@ msgstr "דוא״ל"
 #: data/ui/managementdialog.blp:151
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
-msgstr ""
+msgstr "הערה"
 
 #: data/ui/managementdialog.blp:156
 msgctxt "Signing algorithm of the new keypair"
