@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-30 17:22+0100\n"
+"POT-Creation-Date: 2024-11-30 18:18+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -26,82 +26,87 @@ msgid "GnuPG Made Easy %s or greater required. Using %s."
 msgstr "GnuPG Made Easy %s tai uudempi vaaditaan. Käytössä %s."
 
 #. Details
-#: src/application.c:193 data/com.konstantintutsch.Lock.desktop.in.in:5
+#: src/application.c:203 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "Käsittele tietoja GnuPG:llä"
 
-#: src/application.c:195
+#: src/application.c:205
 msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr "Käännä"
 
-#: src/application.c:198
+#: src/application.c:208
 msgctxt "Button linking to source code"
 msgid "Develop"
 msgstr "Kehitä"
 
-#: src/application.c:210
+#: src/application.c:220
 msgid "translator-credits"
 msgstr "Jiri Grönroos"
 
-#: src/application.c:215
+#: src/application.c:225
 msgid "Dependencies"
 msgstr "Riippuvuudet"
 
-#: src/window.c:145
+#: src/window.c:156
 msgid "Enter text …"
 msgstr "Kirjoita tekstiä…"
 
-#: src/window.c:435
+#: src/window.c:458
 msgid "Text copied"
 msgstr "Teksti kopioitu"
 
-#: src/window.c:688 src/window.c:750
+#: src/window.c:536
+#, fuzzy
+msgid "Text pasted"
+msgstr "Teksti kopioitu"
+
+#: src/window.c:788 src/window.c:850
 msgid "Encryption failed"
 msgstr "Salaaminen epäonnistui"
 
-#: src/window.c:690
+#: src/window.c:790
 msgid "Text encrypted"
 msgstr "Teksti salattu"
 
-#: src/window.c:752
+#: src/window.c:852
 msgid "File encrypted"
 msgstr "Tiedosto salattu"
 
-#: src/window.c:808 src/window.c:866
+#: src/window.c:908 src/window.c:966
 msgid "Decryption failed"
 msgstr "Salauksen purkaminen epäonnistui"
 
-#: src/window.c:810
+#: src/window.c:910
 msgid "Text decrypted"
 msgstr "Tekstin salaus purettu"
 
-#: src/window.c:868
+#: src/window.c:968
 msgid "File decrypted"
 msgstr "Tiedoston salaus purettu"
 
-#: src/window.c:975 src/window.c:1037
+#: src/window.c:1075 src/window.c:1137
 msgid "Signing failed"
 msgstr "Allekirjoittaminen epäonnistui"
 
-#: src/window.c:977
+#: src/window.c:1077
 msgid "Text signed"
 msgstr "Teksti allekirjoitettu"
 
-#: src/window.c:1039
+#: src/window.c:1139
 msgid "File signed"
 msgstr "Tiedosto allekirjoitettu"
 
-#: src/window.c:1095 src/window.c:1153
+#: src/window.c:1195 src/window.c:1253
 msgid "Verification failed"
 msgstr "Vahvistaminen epäonnistui"
 
-#: src/window.c:1097
+#: src/window.c:1197
 msgid "Text verified"
 msgstr "Teksti vahvistettu"
 
-#: src/window.c:1155
+#: src/window.c:1255
 msgid "File verified"
 msgstr "Tiedosto vahvistettu"
 
@@ -391,28 +396,36 @@ msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
 msgstr ""
 
-#: data/ui/shortcuts.blp:21
+#: data/ui/shortcuts.blp:20
+msgid "Copy text view to clipboard"
+msgstr ""
+
+#: data/ui/shortcuts.blp:27
+msgid "Overwrite text view with clipboard"
+msgstr ""
+
+#: data/ui/shortcuts.blp:35
 #, fuzzy
 msgctxt "Shortcuts Group"
 msgid "Cryptography"
 msgstr "Salakirjoituksen toiminnot"
 
-#: data/ui/shortcuts.blp:24
+#: data/ui/shortcuts.blp:38
 #, fuzzy
 msgid "Encrypt text"
 msgstr "Salaa"
 
-#: data/ui/shortcuts.blp:31
+#: data/ui/shortcuts.blp:45
 #, fuzzy
 msgid "Decrypt text"
 msgstr "Pura salaus"
 
-#: data/ui/shortcuts.blp:38
+#: data/ui/shortcuts.blp:52
 #, fuzzy
 msgid "Sign text"
 msgstr "Raakateksti"
 
-#: data/ui/shortcuts.blp:45
+#: data/ui/shortcuts.blp:59
 #, fuzzy
 msgid "Verify text"
 msgstr "Vahvista"

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-30 17:22+0100\n"
-"PO-Revision-Date: 2024-11-30 17:22+0100\n"
+"POT-Creation-Date: 2024-11-30 18:18+0100\n"
+"PO-Revision-Date: 2024-11-30 18:17+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -26,82 +26,86 @@ msgid "GnuPG Made Easy %s or greater required. Using %s."
 msgstr "GnuPG Made Easy %s oder höher benötigt. Nutze %s."
 
 #. Details
-#: src/application.c:193 data/com.konstantintutsch.Lock.desktop.in.in:5
+#: src/application.c:203 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "Verarbeiten Sie Daten mit GnuPG"
 
-#: src/application.c:195
+#: src/application.c:205
 msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr "Übersetzen"
 
-#: src/application.c:198
+#: src/application.c:208
 msgctxt "Button linking to source code"
 msgid "Develop"
 msgstr "Entwickeln"
 
-#: src/application.c:210
+#: src/application.c:220
 msgid "translator-credits"
 msgstr "Konstantin Tutsch <mail@konstantintutsch.com>"
 
-#: src/application.c:215
+#: src/application.c:225
 msgid "Dependencies"
 msgstr "Abhängigkeiten"
 
-#: src/window.c:145
+#: src/window.c:156
 msgid "Enter text …"
 msgstr "Text eingeben …"
 
-#: src/window.c:435
+#: src/window.c:458
 msgid "Text copied"
 msgstr "Text kopiert"
 
-#: src/window.c:688 src/window.c:750
+#: src/window.c:536
+msgid "Text pasted"
+msgstr "Text eingefügt"
+
+#: src/window.c:788 src/window.c:850
 msgid "Encryption failed"
 msgstr "Verschlüsselung fehlgeschlagen"
 
-#: src/window.c:690
+#: src/window.c:790
 msgid "Text encrypted"
 msgstr "Text verschlüsselt"
 
-#: src/window.c:752
+#: src/window.c:852
 msgid "File encrypted"
 msgstr "Datei verschlüsselt"
 
-#: src/window.c:808 src/window.c:866
+#: src/window.c:908 src/window.c:966
 msgid "Decryption failed"
 msgstr "Entschlüsselung fehlgeschlagen"
 
-#: src/window.c:810
+#: src/window.c:910
 msgid "Text decrypted"
 msgstr "Text entschlüsselt"
 
-#: src/window.c:868
+#: src/window.c:968
 msgid "File decrypted"
 msgstr "Datei entschlüsselt"
 
-#: src/window.c:975 src/window.c:1037
+#: src/window.c:1075 src/window.c:1137
 msgid "Signing failed"
 msgstr "Signierung fehlgeschlagen"
 
-#: src/window.c:977
+#: src/window.c:1077
 msgid "Text signed"
 msgstr "Text signiert"
 
-#: src/window.c:1039
+#: src/window.c:1139
 msgid "File signed"
 msgstr "Datei signiert"
 
-#: src/window.c:1095 src/window.c:1153
+#: src/window.c:1195 src/window.c:1253
 msgid "Verification failed"
 msgstr "Verifikation fehlgeschlagen"
 
-#: src/window.c:1097
+#: src/window.c:1197
 msgid "Text verified"
 msgstr "Text verifiziert"
 
-#: src/window.c:1155
+#: src/window.c:1255
 msgid "File verified"
 msgstr "Datei verifiziert"
 
@@ -352,24 +356,32 @@ msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
 msgstr "Tastenkürzel zeigen"
 
-#: data/ui/shortcuts.blp:21
+#: data/ui/shortcuts.blp:20
+msgid "Copy text view to clipboard"
+msgstr "Textfeld in Zwischenablage kopieren"
+
+#: data/ui/shortcuts.blp:27
+msgid "Overwrite text view with clipboard"
+msgstr "Textfeld mit Zwischenablage überschreiben"
+
+#: data/ui/shortcuts.blp:35
 msgctxt "Shortcuts Group"
 msgid "Cryptography"
 msgstr "Kryptographie"
 
-#: data/ui/shortcuts.blp:24
+#: data/ui/shortcuts.blp:38
 msgid "Encrypt text"
 msgstr "Text verschlüsseln"
 
-#: data/ui/shortcuts.blp:31
+#: data/ui/shortcuts.blp:45
 msgid "Decrypt text"
 msgstr "Text entschlüsseln"
 
-#: data/ui/shortcuts.blp:38
+#: data/ui/shortcuts.blp:52
 msgid "Sign text"
 msgstr "Text signieren"
 
-#: data/ui/shortcuts.blp:45
+#: data/ui/shortcuts.blp:59
 msgid "Verify text"
 msgstr "Text verifizieren"
 

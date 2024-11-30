@@ -53,6 +53,16 @@ static void lock_application_init(LockApplication *app)
                                            []) { "<Control>question", NULL });
 
     // Text
+    gtk_application_set_accels_for_action(GTK_APPLICATION(app), "win.copy_text",
+                                          (const gchar *
+                                           []) { "<Control>c", NULL });
+    gtk_application_set_accels_for_action(GTK_APPLICATION(app),
+                                          "win.paste_text",
+                                          (const gchar *[]) { "<Control>v",
+                                          NULL
+                                          });
+
+    // Cryptography
     gtk_application_set_accels_for_action(GTK_APPLICATION(app),
                                           "win.encrypt_text",
                                           (const gchar *[]) { "<Control>e",

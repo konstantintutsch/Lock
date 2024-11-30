@@ -15,6 +15,20 @@ Gtk.ShortcutsWindow shortcuts {
                 //action-name: "app.shortcuts";
                 accelerator: "<Control>question";
             }
+
+            Gtk.ShortcutsShortcut {
+                title: _("Copy text view to clipboard");
+                // TODO: make action-name work
+                //action-name: "win.copy_text";
+                accelerator: "<Control>c";
+            }
+
+            Gtk.ShortcutsShortcut {
+                title: _("Overwrite text view with clipboard");
+                // TODO: make action-name work
+                //action-name: "win.paste_text";
+                accelerator: "<Control>v";
+            }
         }
 
         Gtk.ShortcutsGroup {

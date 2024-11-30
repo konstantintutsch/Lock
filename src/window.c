@@ -89,6 +89,17 @@ static void lock_window_management_dialog(GSimpleAction * action,
 /* Text */
 static void lock_window_text_view_copy(AdwSplitButton * self,
                                        LockWindow * window);
+static void lock_window_text_view_copy_action(GSimpleAction * action,
+                                              GVariant * parameter,
+                                              LockWindow * window);
+
+static void lock_window_text_view_paste(GSimpleAction * action,
+                                        GVariant * parameter,
+                                        LockWindow * window);
+static void lock_window_text_view_paste_finish(GObject * object,
+                                               GAsyncResult * result,
+                                               gpointer data);
+
 static void lock_window_text_queue_set_text(LockWindow * window,
                                             const char *text);
 
@@ -146,6 +157,18 @@ static void lock_window_init(LockWindow *window)
 
     window->text_queue = gtk_text_buffer_new(NULL);
     lock_window_text_queue_set_text(window, "");
+
+    g_autoptr(GSimpleAction) copy_text_action =
+        g_simple_action_new("copy_text", NULL);
+    g_signal_connect(copy_text_action, "activate",
+                     G_CALLBACK(lock_window_text_view_copy_action), window);
+    g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(copy_text_action));
+
+    g_autoptr(GSimpleAction) paste_text_action =
+        g_simple_action_new("paste_text", NULL);
+    g_signal_connect(paste_text_action, "activate",
+                     G_CALLBACK(lock_window_text_view_paste), window);
+    g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(paste_text_action));
 
     // Encrypt
     g_autoptr(GSimpleAction) encrypt_text_action =
@@ -441,6 +464,83 @@ static void lock_window_text_view_copy(AdwSplitButton *self, LockWindow *window)
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
 
     /* Cleanup */
+    g_free(text);
+    text = NULL;
+}
+
+/**
+ * This function wraps text copying from the text view to the simple action API.
+ *
+ * @param self https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ * @param window https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ */
+static void lock_window_text_view_copy_action(GSimpleAction *action,
+                                              GVariant *parameter,
+                                              LockWindow *window)
+{
+    (void)action;
+    (void)parameter;
+
+    lock_window_text_view_copy(NULL, window);
+}
+
+/**
+ * This function overwrites the text view of a LockWindow with the contents of the system clipboard.
+ *
+ * @param self https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ * @param window https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ */
+static void lock_window_text_view_paste(GSimpleAction *action,
+                                        GVariant *parameter, LockWindow *window)
+{
+    (void)action;
+    (void)parameter;
+
+    GdkClipboard *active_clipboard =
+        gdk_display_get_clipboard(gdk_display_get_default());
+
+    gdk_clipboard_read_text_async(active_clipboard, NULL,
+                                  lock_window_text_view_paste_finish, window);
+}
+
+/**
+ * This function finished the overwriting of the text view of a LockWindow.
+ *
+ * @param object https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
+ * @param result https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
+ * @param data https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
+ */
+static void lock_window_text_view_paste_finish(GObject *object,
+                                               GAsyncResult *result,
+                                               gpointer data)
+{
+    GdkClipboard *clipboard = GDK_CLIPBOARD(object);
+    LockWindow *window = LOCK_WINDOW(data);
+
+    GError *error = NULL;
+
+    gchar *text = gdk_clipboard_read_text_finish(clipboard, result, &error);
+
+    if (error != NULL) {
+        g_warning("Could not read text from clipboard: %s", error->message);
+
+        /* Cleanup */
+        g_error_free(error);
+        error = NULL;
+
+        return;
+    }
+
+    AdwToast *toast = adw_toast_new(_("Text pasted"));
+    adw_toast_set_timeout(toast, 2);
+
+    lock_window_text_view_set_text(window, text);
+
+    adw_toast_overlay_add_toast(window->toast_overlay, toast);
+
+    /* Text */
     g_free(text);
     text = NULL;
 }
