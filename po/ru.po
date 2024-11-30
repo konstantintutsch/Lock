@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-30 17:19+0100\n"
+"POT-Creation-Date: 2024-11-30 17:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -376,7 +376,7 @@ msgstr "Обычный текст"
 msgid "Verify text"
 msgstr "Проверить"
 
-#: data/ui/window.blp:9 data/ui/window.blp:192
+#: data/ui/window.blp:9 data/ui/window.blp:194
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
@@ -418,43 +418,52 @@ msgstr "Файлы для обработки не выбраны"
 msgid "Input File"
 msgstr "Входной файл"
 
-#: data/ui/window.blp:129
+#: data/ui/window.blp:123
+msgid "Select input file"
+msgstr ""
+
+#: data/ui/window.blp:130
 msgid "Output File"
 msgstr "Выходной файл"
 
-#: data/ui/window.blp:153 data/ui/window.blp:217
+#: data/ui/window.blp:139
+#, fuzzy
+msgid "Select output file"
+msgstr "Не удалось открыть выходной файл: %s"
+
+#: data/ui/window.blp:155 data/ui/window.blp:219
 msgid "Encrypt"
 msgstr "Зашифровать"
 
-#: data/ui/window.blp:160 data/ui/window.blp:221
+#: data/ui/window.blp:162 data/ui/window.blp:223
 msgid "Decrypt"
 msgstr "Расшифровать"
 
-#: data/ui/window.blp:167 data/ui/window.blp:227
+#: data/ui/window.blp:169 data/ui/window.blp:229
 msgid "Sign"
 msgstr "Подписать"
 
-#: data/ui/window.blp:174 data/ui/window.blp:239
+#: data/ui/window.blp:176 data/ui/window.blp:241
 msgid "Verify"
 msgstr "Проверить"
 
-#: data/ui/window.blp:198 data/ui/managementdialog.blp:30
+#: data/ui/window.blp:200 data/ui/managementdialog.blp:30
 msgid "Manage keys"
 msgstr "Управление ключами"
 
-#: data/ui/window.blp:204
+#: data/ui/window.blp:206
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: data/ui/window.blp:208
+#: data/ui/window.blp:210
 msgid "About Lock"
 msgstr "О Замке"
 
-#: data/ui/window.blp:231
+#: data/ui/window.blp:233
 msgid "Sign (Clear Text)"
 msgstr ""
 
-#: data/ui/window.blp:235
+#: data/ui/window.blp:237
 msgid "Sign (Detached)"
 msgstr ""
 
