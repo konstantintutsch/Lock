@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-27 21:01+0100\n"
-"PO-Revision-Date: 2024-11-27 21:07+0100\n"
+"POT-Creation-Date: 2024-11-30 17:19+0100\n"
+"PO-Revision-Date: 2024-11-30 17:16+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -26,26 +26,26 @@ msgid "GnuPG Made Easy %s or greater required. Using %s."
 msgstr "GnuPG Made Easy %s oder höher benötigt. Nutze %s."
 
 #. Details
-#: src/application.c:132 data/com.konstantintutsch.Lock.desktop.in.in:5
+#: src/application.c:193 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "Verarbeiten Sie Daten mit GnuPG"
 
-#: src/application.c:134
+#: src/application.c:195
 msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr "Übersetzen"
 
-#: src/application.c:137
+#: src/application.c:198
 msgctxt "Button linking to source code"
 msgid "Develop"
 msgstr "Entwickeln"
 
-#: src/application.c:149
+#: src/application.c:210
 msgid "translator-credits"
 msgstr "Konstantin Tutsch <mail@konstantintutsch.com>"
 
-#: src/application.c:154
+#: src/application.c:215
 msgid "Dependencies"
 msgstr "Abhängigkeiten"
 
@@ -53,55 +53,55 @@ msgstr "Abhängigkeiten"
 msgid "Enter text …"
 msgstr "Text eingeben …"
 
-#: src/window.c:433
+#: src/window.c:435
 msgid "Text copied"
 msgstr "Text kopiert"
 
-#: src/window.c:686 src/window.c:748
+#: src/window.c:688 src/window.c:750
 msgid "Encryption failed"
 msgstr "Verschlüsselung fehlgeschlagen"
 
-#: src/window.c:688
+#: src/window.c:690
 msgid "Text encrypted"
 msgstr "Text verschlüsselt"
 
-#: src/window.c:750
+#: src/window.c:752
 msgid "File encrypted"
 msgstr "Datei verschlüsselt"
 
-#: src/window.c:806 src/window.c:864
+#: src/window.c:808 src/window.c:866
 msgid "Decryption failed"
 msgstr "Entschlüsselung fehlgeschlagen"
 
-#: src/window.c:808
+#: src/window.c:810
 msgid "Text decrypted"
 msgstr "Text entschlüsselt"
 
-#: src/window.c:866
+#: src/window.c:868
 msgid "File decrypted"
 msgstr "Datei entschlüsselt"
 
-#: src/window.c:973 src/window.c:1035
+#: src/window.c:975 src/window.c:1037
 msgid "Signing failed"
 msgstr "Signierung fehlgeschlagen"
 
-#: src/window.c:975
+#: src/window.c:977
 msgid "Text signed"
 msgstr "Text signiert"
 
-#: src/window.c:1037
+#: src/window.c:1039
 msgid "File signed"
 msgstr "Datei signiert"
 
-#: src/window.c:1093 src/window.c:1151
+#: src/window.c:1095 src/window.c:1153
 msgid "Verification failed"
 msgstr "Verifikation fehlgeschlagen"
 
-#: src/window.c:1095
+#: src/window.c:1097
 msgid "Text verified"
 msgstr "Text verifiziert"
 
-#: src/window.c:1153
+#: src/window.c:1155
 msgid "File verified"
 msgstr "Datei verifiziert"
 
@@ -342,6 +342,37 @@ msgstr "Fehler bei der Thread-Erstellung zum Schlüsselexport"
 msgid "Failed to create key removal thread"
 msgstr "Fehler bei der Thread-Erstellung zur Schlüsselentfernung"
 
+#: data/ui/shortcuts.blp:10
+msgctxt "Shortcuts Group"
+msgid "General"
+msgstr "Allgemein"
+
+#: data/ui/shortcuts.blp:13
+msgctxt "Shortcut as in keyboard shortcut"
+msgid "Show shortcuts"
+msgstr "Tastenkürzel zeigen"
+
+#: data/ui/shortcuts.blp:21
+msgctxt "Shortcuts Group"
+msgid "Cryptography"
+msgstr "Kryptographie"
+
+#: data/ui/shortcuts.blp:24
+msgid "Encrypt text"
+msgstr "Text verschlüsseln"
+
+#: data/ui/shortcuts.blp:31
+msgid "Decrypt text"
+msgstr "Text entschlüsseln"
+
+#: data/ui/shortcuts.blp:38
+msgid "Sign text"
+msgstr "Text signieren"
+
+#: data/ui/shortcuts.blp:45
+msgid "Verify text"
+msgstr "Text verifizieren"
+
 #: data/ui/window.blp:9 data/ui/window.blp:192
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
@@ -388,19 +419,19 @@ msgstr "Eingabedatei"
 msgid "Output File"
 msgstr "Ausgabedatei"
 
-#: data/ui/window.blp:153 data/ui/window.blp:213
+#: data/ui/window.blp:153 data/ui/window.blp:217
 msgid "Encrypt"
 msgstr "Verschlüsseln"
 
-#: data/ui/window.blp:160 data/ui/window.blp:217
+#: data/ui/window.blp:160 data/ui/window.blp:221
 msgid "Decrypt"
 msgstr "Entschlüsseln"
 
-#: data/ui/window.blp:167 data/ui/window.blp:223
+#: data/ui/window.blp:167 data/ui/window.blp:227
 msgid "Sign"
 msgstr "Signieren"
 
-#: data/ui/window.blp:174 data/ui/window.blp:235
+#: data/ui/window.blp:174 data/ui/window.blp:239
 msgid "Verify"
 msgstr "Verifizieren"
 
@@ -409,14 +440,18 @@ msgid "Manage keys"
 msgstr "Schlüssel verwalten"
 
 #: data/ui/window.blp:204
+msgid "Keyboard Shortcuts"
+msgstr "Tastenkürzel"
+
+#: data/ui/window.blp:208
 msgid "About Lock"
 msgstr "Über Schloss"
 
-#: data/ui/window.blp:227
+#: data/ui/window.blp:231
 msgid "Sign (Clear Text)"
 msgstr "Signieren (Klartext)"
 
-#: data/ui/window.blp:231
+#: data/ui/window.blp:235
 msgid "Sign (Detached)"
 msgstr "Signieren (Getrennt)"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-27 21:01+0100\n"
+"POT-Creation-Date: 2024-11-30 17:19+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -26,26 +26,26 @@ msgid "GnuPG Made Easy %s or greater required. Using %s."
 msgstr "GnuPG Made Easy %s tai uudempi vaaditaan. Käytössä %s."
 
 #. Details
-#: src/application.c:132 data/com.konstantintutsch.Lock.desktop.in.in:5
+#: src/application.c:193 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "Käsittele tietoja GnuPG:llä"
 
-#: src/application.c:134
+#: src/application.c:195
 msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr "Käännä"
 
-#: src/application.c:137
+#: src/application.c:198
 msgctxt "Button linking to source code"
 msgid "Develop"
 msgstr "Kehitä"
 
-#: src/application.c:149
+#: src/application.c:210
 msgid "translator-credits"
 msgstr "Jiri Grönroos"
 
-#: src/application.c:154
+#: src/application.c:215
 msgid "Dependencies"
 msgstr "Riippuvuudet"
 
@@ -53,55 +53,55 @@ msgstr "Riippuvuudet"
 msgid "Enter text …"
 msgstr "Kirjoita tekstiä…"
 
-#: src/window.c:433
+#: src/window.c:435
 msgid "Text copied"
 msgstr "Teksti kopioitu"
 
-#: src/window.c:686 src/window.c:748
+#: src/window.c:688 src/window.c:750
 msgid "Encryption failed"
 msgstr "Salaaminen epäonnistui"
 
-#: src/window.c:688
+#: src/window.c:690
 msgid "Text encrypted"
 msgstr "Teksti salattu"
 
-#: src/window.c:750
+#: src/window.c:752
 msgid "File encrypted"
 msgstr "Tiedosto salattu"
 
-#: src/window.c:806 src/window.c:864
+#: src/window.c:808 src/window.c:866
 msgid "Decryption failed"
 msgstr "Salauksen purkaminen epäonnistui"
 
-#: src/window.c:808
+#: src/window.c:810
 msgid "Text decrypted"
 msgstr "Tekstin salaus purettu"
 
-#: src/window.c:866
+#: src/window.c:868
 msgid "File decrypted"
 msgstr "Tiedoston salaus purettu"
 
-#: src/window.c:973 src/window.c:1035
+#: src/window.c:975 src/window.c:1037
 msgid "Signing failed"
 msgstr "Allekirjoittaminen epäonnistui"
 
-#: src/window.c:975
+#: src/window.c:977
 msgid "Text signed"
 msgstr "Teksti allekirjoitettu"
 
-#: src/window.c:1037
+#: src/window.c:1039
 msgid "File signed"
 msgstr "Tiedosto allekirjoitettu"
 
-#: src/window.c:1093 src/window.c:1151
+#: src/window.c:1095 src/window.c:1153
 msgid "Verification failed"
 msgstr "Vahvistaminen epäonnistui"
 
-#: src/window.c:1095
+#: src/window.c:1097
 msgid "Text verified"
 msgstr "Teksti vahvistettu"
 
-#: src/window.c:1153
+#: src/window.c:1155
 msgid "File verified"
 msgstr "Tiedosto vahvistettu"
 
@@ -380,6 +380,43 @@ msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 msgid "Failed to create key removal thread"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
+#: data/ui/shortcuts.blp:10
+#, fuzzy
+msgctxt "Shortcuts Group"
+msgid "General"
+msgstr "Luo"
+
+#: data/ui/shortcuts.blp:13
+msgctxt "Shortcut as in keyboard shortcut"
+msgid "Show shortcuts"
+msgstr ""
+
+#: data/ui/shortcuts.blp:21
+#, fuzzy
+msgctxt "Shortcuts Group"
+msgid "Cryptography"
+msgstr "Salakirjoituksen toiminnot"
+
+#: data/ui/shortcuts.blp:24
+#, fuzzy
+msgid "Encrypt text"
+msgstr "Salaa"
+
+#: data/ui/shortcuts.blp:31
+#, fuzzy
+msgid "Decrypt text"
+msgstr "Pura salaus"
+
+#: data/ui/shortcuts.blp:38
+#, fuzzy
+msgid "Sign text"
+msgstr "Raakateksti"
+
+#: data/ui/shortcuts.blp:45
+#, fuzzy
+msgid "Verify text"
+msgstr "Vahvista"
+
 #: data/ui/window.blp:9 data/ui/window.blp:192
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
@@ -426,19 +463,19 @@ msgstr "Käsiteltävä tiedosto"
 msgid "Output File"
 msgstr "Käsitelty tiedosto"
 
-#: data/ui/window.blp:153 data/ui/window.blp:213
+#: data/ui/window.blp:153 data/ui/window.blp:217
 msgid "Encrypt"
 msgstr "Salaa"
 
-#: data/ui/window.blp:160 data/ui/window.blp:217
+#: data/ui/window.blp:160 data/ui/window.blp:221
 msgid "Decrypt"
 msgstr "Pura salaus"
 
-#: data/ui/window.blp:167 data/ui/window.blp:223
+#: data/ui/window.blp:167 data/ui/window.blp:227
 msgid "Sign"
 msgstr "Allekirjoita"
 
-#: data/ui/window.blp:174 data/ui/window.blp:235
+#: data/ui/window.blp:174 data/ui/window.blp:239
 msgid "Verify"
 msgstr "Vahvista"
 
@@ -447,14 +484,18 @@ msgid "Manage keys"
 msgstr "Hallitse avaimia"
 
 #: data/ui/window.blp:204
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: data/ui/window.blp:208
 msgid "About Lock"
 msgstr "Tietoja - Lock"
 
-#: data/ui/window.blp:227
+#: data/ui/window.blp:231
 msgid "Sign (Clear Text)"
 msgstr ""
 
-#: data/ui/window.blp:231
+#: data/ui/window.blp:235
 msgid "Sign (Detached)"
 msgstr ""
 

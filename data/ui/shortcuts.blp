@@ -1,0 +1,52 @@
+using Gtk 4.0;
+
+Gtk.ShortcutsWindow shortcuts {
+    modal: true;
+
+    Gtk.ShortcutsSection {
+        section-name: "shortcuts";
+
+        Gtk.ShortcutsGroup {
+            title: C_("Shortcuts Group", "General");
+
+            Gtk.ShortcutsShortcut {
+                title: C_("Shortcut as in keyboard shortcut", "Show shortcuts");
+                // TODO: make action-name work
+                //action-name: "app.shortcuts";
+                accelerator: "<Control>question";
+            }
+        }
+
+        Gtk.ShortcutsGroup {
+            title: C_("Shortcuts Group", "Cryptography");
+
+            Gtk.ShortcutsShortcut {
+                title: _("Encrypt text");
+                // TODO: make action-name work
+                // action-name: "win.encrypt_text";
+                accelerator: "<Control>e";
+            }
+
+            Gtk.ShortcutsShortcut {
+                title: _("Decrypt text");
+                // TODO: make action-name work
+                // action-name: "win.decrypt_text";
+                accelerator: "<Control>d";
+            }
+
+            Gtk.ShortcutsShortcut {
+                title: _("Sign text");
+                // TODO: make action-name work
+                // action-name: "win.sign_text";
+                accelerator: "<Control>s";
+            }
+
+            Gtk.ShortcutsShortcut {
+                title: _("Verify text");
+                // TODO: make action-name work
+                // action-name: "win.verify_text";
+                accelerator: "<Control>ampersand";
+            }
+        }
+    }
+}

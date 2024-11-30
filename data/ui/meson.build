@@ -3,6 +3,7 @@
 #
 
 blp = files(
+  'shortcuts.blp',
   'window.blp',
   'selectiondialog.blp',
   'managementdialog.blp',

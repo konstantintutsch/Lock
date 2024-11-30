@@ -6,6 +6,7 @@ src/managementdialog.c
 src/keyrow.c
 src/cryptography.c
 src/threading.c
+data/ui/shortcuts.blp
 data/ui/window.blp
 data/ui/selectiondialog.blp
 data/ui/managementdialog.blp

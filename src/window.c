@@ -154,6 +154,7 @@ static void lock_window_init(LockWindow *window)
                      G_CALLBACK(lock_window_encrypt_text_dialog), window);
     g_action_map_add_action(G_ACTION_MAP(window),
                             G_ACTION(encrypt_text_action));
+
     // Decrypt
     g_autoptr(GSimpleAction) decrypt_text_action =
         g_simple_action_new("decrypt_text", NULL);
@@ -161,6 +162,7 @@ static void lock_window_init(LockWindow *window)
                      G_CALLBACK(thread_decrypt_text), window);
     g_action_map_add_action(G_ACTION_MAP(window),
                             G_ACTION(decrypt_text_action));
+
     // Sign
     g_autoptr(GSimpleAction) sign_text_action =
         g_simple_action_new("sign_text", NULL);

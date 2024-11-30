@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
     <gresource prefix="@ui_resource@">
+        <file preprocess="xml-stripblanks">shortcuts.ui</file>
         <file preprocess="xml-stripblanks">window.ui</file>
         <file preprocess="xml-stripblanks">selectiondialog.ui</file>
         <file preprocess="xml-stripblanks">managementdialog.ui</file>

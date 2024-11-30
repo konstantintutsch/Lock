@@ -15,9 +15,11 @@ struct _LockApplication {
 
 G_DEFINE_TYPE(LockApplication, lock_application, ADW_TYPE_APPLICATION);
 
-static void lock_application_show_about(GSimpleAction * self,
-                                        GVariant * parameter,
-                                        LockApplication * app);
+void lock_application_show_shortcuts(GSimpleAction * self,
+                                     GVariant * parameter,
+                                     LockApplication * app);
+void lock_application_show_about(GSimpleAction * self,
+                                 GVariant * parameter, LockApplication * app);
 
 /**
  * This function initializes a LockApplication.
@@ -39,6 +41,38 @@ static void lock_application_init(LockApplication *app)
     g_signal_connect(about_action, "activate",
                      G_CALLBACK(lock_application_show_about), app);
     g_action_map_add_action(G_ACTION_MAP(app), G_ACTION(about_action));
+
+    /* Shortcuts */
+    g_autoptr(GSimpleAction) shortcuts_action =
+        g_simple_action_new("shortcuts", NULL);
+    g_signal_connect(shortcuts_action, "activate",
+                     G_CALLBACK(lock_application_show_shortcuts), app);
+    g_action_map_add_action(G_ACTION_MAP(app), G_ACTION(shortcuts_action));
+    gtk_application_set_accels_for_action(GTK_APPLICATION(app), "app.shortcuts",
+                                          (const gchar *
+                                           []) { "<Control>question", NULL });
+
+    // Text
+    gtk_application_set_accels_for_action(GTK_APPLICATION(app),
+                                          "win.encrypt_text",
+                                          (const gchar *[]) { "<Control>e",
+                                          NULL
+                                          });
+    gtk_application_set_accels_for_action(GTK_APPLICATION(app),
+                                          "win.decrypt_text",
+                                          (const gchar *[]) { "<Control>d",
+                                          NULL
+                                          });
+    gtk_application_set_accels_for_action(GTK_APPLICATION(app), "win.sign_text",
+                                          (const gchar *[]) { "<Control>s",
+                                          NULL
+                                          });
+    gtk_application_set_accels_for_action(GTK_APPLICATION(app),
+                                          "win.verify_text",
+                                          (const gchar *
+                                           []) { "<Control>ampersand",
+                                          NULL
+                                          });
 }
 
 /**
@@ -104,15 +138,42 @@ LockApplication *lock_application_new()
 }
 
 /**
+ * This function shows the shortcuts window of an application.
+ *
+ * @param action https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ * @param app https://docs.gtk.org/gio/signal.SimpleAction.activate.html
+ */
+void lock_application_show_shortcuts(GSimpleAction *self,
+                                     GVariant *parameter, LockApplication *app)
+{
+    (void)self;
+    (void)parameter;
+
+    GtkBuilder *builder =
+        gtk_builder_new_from_resource(UI_RESOURCE("shortcuts.ui"));
+    GtkShortcutsWindow *window =
+        GTK_SHORTCUTS_WINDOW(gtk_builder_get_object(builder, "shortcuts"));
+
+    LockWindow *active_window =
+        LOCK_WINDOW(gtk_application_get_active_window(GTK_APPLICATION(app)));
+    gtk_window_set_transient_for(GTK_WINDOW(window), GTK_WINDOW(active_window));
+
+    gtk_window_present(GTK_WINDOW(window));
+
+    /* Cleanup */
+    g_object_unref(builder);
+}
+
+/**
  * This function shows the about dialogue of an application.
  *
  * @param action https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  * @param app https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  */
-static void lock_application_show_about(GSimpleAction *self,
-                                        GVariant *parameter,
-                                        LockApplication *app)
+void lock_application_show_about(GSimpleAction *self,
+                                 GVariant *parameter, LockApplication *app)
 {
     (void)self;
     (void)parameter;
