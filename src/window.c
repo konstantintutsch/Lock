@@ -524,7 +524,7 @@ static void lock_window_text_view_paste_finish(GObject *object,
     gchar *text = gdk_clipboard_read_text_finish(clipboard, result, &error);
 
     if (error != NULL) {
-        g_warning("Could not read text from clipboard: %s", error->message);
+        g_warning(_("Could not read text from clipboard: %s"), error->message);
 
         /* Cleanup */
         g_error_free(error);
