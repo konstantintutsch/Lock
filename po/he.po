@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2024-12-01 13:38+0100\n"
-"PO-Revision-Date: 2024-11-24 19:01+0000\n"
+"PO-Revision-Date: 2024-12-01 16:55+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/Lock/Application/"
 "he/>\n"
@@ -60,7 +60,7 @@ msgstr "הטקסט הועתק"
 #: src/window.c:527
 #, c-format
 msgid "Could not read text from clipboard: %s"
-msgstr ""
+msgstr "לא ניתן לקרוא טקסט מלוח הגזירים: %s"
 
 #: src/window.c:536
 msgid "Text pasted"
