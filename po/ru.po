@@ -6,15 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2024-12-01 13:38+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-12-01 16:55+0000\n"
+"Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
+"ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -57,12 +61,11 @@ msgstr "Текст скопирован"
 #: src/window.c:527
 #, c-format
 msgid "Could not read text from clipboard: %s"
-msgstr ""
+msgstr "Не удалось прочитать текст из буфера обмена: %s"
 
 #: src/window.c:536
-#, fuzzy
 msgid "Text pasted"
-msgstr "Текст скопирован"
+msgstr "Текст вставлен"
 
 #: src/window.c:788 src/window.c:850
 msgid "Encryption failed"
@@ -151,9 +154,8 @@ msgid "Key exported"
 msgstr "Ключ экспортирован"
 
 #: src/keyrow.c:267
-#, fuzzy
 msgid "Remove key?"
-msgstr "Удалить ключ"
+msgstr "Удалить ключ?"
 
 #: src/keyrow.c:270
 #, c-format
@@ -350,49 +352,43 @@ msgid "Failed to create key removal thread"
 msgstr "Не удалось создать поток удаления ключа"
 
 #: data/ui/shortcuts.blp:10
-#, fuzzy
 msgctxt "Shortcuts Group"
 msgid "General"
-msgstr "Сгенерировать"
+msgstr "Основные"
 
 #: data/ui/shortcuts.blp:13
 msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
-msgstr ""
+msgstr "Показать комбинации клавиш"
 
 #: data/ui/shortcuts.blp:20
 msgid "Copy text view to clipboard"
-msgstr ""
+msgstr "Копировать текстовое представление в буфер обмена"
 
 #: data/ui/shortcuts.blp:27
 msgid "Overwrite text view with clipboard"
-msgstr ""
+msgstr "Перезаписать текстовое представление из буфера обмена"
 
 #: data/ui/shortcuts.blp:35
-#, fuzzy
 msgctxt "Shortcuts Group"
 msgid "Cryptography"
-msgstr "Криптографические операции"
+msgstr "Криптография"
 
 #: data/ui/shortcuts.blp:38
-#, fuzzy
 msgid "Encrypt text"
-msgstr "Зашифровать"
+msgstr "Зашифровать текст"
 
 #: data/ui/shortcuts.blp:45
-#, fuzzy
 msgid "Decrypt text"
-msgstr "Расшифровать"
+msgstr "Расшифровать текст"
 
 #: data/ui/shortcuts.blp:52
-#, fuzzy
 msgid "Sign text"
-msgstr "Обычный текст"
+msgstr "Подписать текст"
 
 #: data/ui/shortcuts.blp:59
-#, fuzzy
 msgid "Verify text"
-msgstr "Проверить"
+msgstr "Проверить текст"
 
 #: data/ui/window.blp:9 data/ui/window.blp:194
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -438,16 +434,15 @@ msgstr "Входной файл"
 
 #: data/ui/window.blp:123
 msgid "Select input file"
-msgstr ""
+msgstr "Выбрать входной файл"
 
 #: data/ui/window.blp:130
 msgid "Output File"
 msgstr "Выходной файл"
 
 #: data/ui/window.blp:139
-#, fuzzy
 msgid "Select output file"
-msgstr "Не удалось открыть выходной файл: %s"
+msgstr "Выбрать выходной файл"
 
 #: data/ui/window.blp:155 data/ui/window.blp:219
 msgid "Encrypt"
@@ -471,7 +466,7 @@ msgstr "Управление ключами"
 
 #: data/ui/window.blp:206
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Сочетания клавиш"
 
 #: data/ui/window.blp:210
 msgid "About Lock"
