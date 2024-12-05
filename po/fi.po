@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-05 18:29+0100\n"
+"POT-Creation-Date: 2024-12-05 18:36+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -179,14 +179,14 @@ msgstr "Poistaminen epäonnistui"
 msgid "Key removed"
 msgstr "Avain poistettu"
 
-#: src/cryptography.c:42 src/cryptography.c:76 src/cryptography.c:120
-#: src/cryptography.c:176 src/cryptography.c:290 src/cryptography.c:401
+#: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
+#: src/cryptography.c:172 src/cryptography.c:291 src/cryptography.c:402
 #, fuzzy
 msgid "Failed to create new GPGME context"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
-#: src/cryptography.c:46 src/cryptography.c:80 src/cryptography.c:124
-#: src/cryptography.c:180 src/cryptography.c:294 src/cryptography.c:405
+#: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
+#: src/cryptography.c:176 src/cryptography.c:295 src/cryptography.c:406
 #, fuzzy
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
@@ -196,36 +196,36 @@ msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 msgid "Failed to obtain key by fingerprint"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:94
+#: src/cryptography.c:93
 msgid "Failed to find key matching User ID"
 msgstr ""
 
-#: src/cryptography.c:135 src/cryptography.c:143
+#: src/cryptography.c:133 src/cryptography.c:141
 #, fuzzy
 msgid "Failed to generate new GPG key for signing"
 msgstr "Uuden GPG-avaimen luominen allekirjoitusta varten epäonnistui"
 
-#: src/cryptography.c:149
+#: src/cryptography.c:147
 #, fuzzy
 msgid "Failed to delete unfinished, generated key"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
-#: src/cryptography.c:186
+#: src/cryptography.c:182
 #, fuzzy
 msgid "Failed to load GPGME key data from file"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:191
+#: src/cryptography.c:188
 #, fuzzy
 msgid "Failed to import GPG key from file"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:201
+#: src/cryptography.c:199
 #, fuzzy
 msgid "Failed to create GPGME key data in memory"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:206
+#: src/cryptography.c:205
 #, fuzzy
 msgid "Failed to export GPG key(s) to file"
 msgstr "GPG-avaimen tai -avainten vieminen tiedostoon epäonnistui"
@@ -245,12 +245,12 @@ msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 msgid "Failed to remove GPG key"
 msgstr "GPG-avaimen poistaminen epäonnistui"
 
-#: src/cryptography.c:299 src/cryptography.c:410
+#: src/cryptography.c:300 src/cryptography.c:411
 #, fuzzy
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
-#: src/cryptography.c:306
+#: src/cryptography.c:307
 #, fuzzy
 msgid "Failed to create new GPGME input data from string"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
@@ -275,22 +275,22 @@ msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 msgid "Failed to add signing key to GPGME context"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
-#: src/cryptography.c:340
+#: src/cryptography.c:342
 #, fuzzy
 msgid "Failed to sign GPGME data from memory"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:347
+#: src/cryptography.c:348
 #, fuzzy
 msgid "Failed to verify GPGME data from memory"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:389
+#: src/cryptography.c:390
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr ""
 
-#: src/cryptography.c:416
+#: src/cryptography.c:417
 #, fuzzy
 msgid "Failed to create new GPGME input data from file"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
@@ -305,27 +305,27 @@ msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 msgid "Failed to set file name of GPGME output data"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
-#: src/cryptography.c:450
+#: src/cryptography.c:449
 #, fuzzy
 msgid "Failed to encrypt GPGME data from file"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:457
+#: src/cryptography.c:454
 #, fuzzy
 msgid "Failed to decrypt GPGME data from file"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:466
+#: src/cryptography.c:461
 #, fuzzy
 msgid "Failed to sign GPGME data from file"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:473
+#: src/cryptography.c:467
 #, fuzzy
 msgid "Failed to verify GPGME data from file"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:490
+#: src/cryptography.c:483
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr ""
