@@ -469,6 +469,14 @@ gboolean lock_management_dialog_generate_on_completed(LockManagementDialog
 
     adw_toast_set_timeout(toast, 2);
 
+    // Reset input rows
+    gtk_editable_set_text(GTK_EDITABLE(dialog->name_entry), "");
+    gtk_editable_set_text(GTK_EDITABLE(dialog->email_entry), "");
+    gtk_editable_set_text(GTK_EDITABLE(dialog->comment_entry), "");
+    adw_combo_row_set_selected(dialog->sign_entry, 0);
+    adw_combo_row_set_selected(dialog->encrypt_entry, 0);
+    adw_spin_row_set_value(dialog->expiry_entry, 48);   // also hardcoded in managementdialog.blp
+
     lock_management_dialog_show_spinner(dialog, false);
     adw_toast_overlay_add_toast(dialog->toast_overlay, toast);
 
