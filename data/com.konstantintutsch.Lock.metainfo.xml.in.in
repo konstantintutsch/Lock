@@ -84,6 +84,15 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.3.2" date="2024-12-07">
+            <description translate="no">
+                <ul>
+                    <li>Brainpool algorithms are now available for the key generation</li>
+                    <li>User input is now cleared when a key has been successfully generated</li>
+                    <li>Finnish translation updated</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.3.1" date="2024-12-05">
             <description translate="no">
                 <ul>
