@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-05 18:36+0100\n"
+"POT-Creation-Date: 2024-12-06 19:28+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -60,12 +60,11 @@ msgstr "Teksti kopioitu"
 #: src/window.c:527
 #, c-format
 msgid "Could not read text from clipboard: %s"
-msgstr ""
+msgstr "Ei voitu lukea leikepöydältä: %s"
 
 #: src/window.c:536
-#, fuzzy
 msgid "Text pasted"
-msgstr "Teksti kopioitu"
+msgstr "Teksti liitetty"
 
 #: src/window.c:788 src/window.c:850
 msgid "Encryption failed"
@@ -154,9 +153,8 @@ msgid "Key exported"
 msgstr "Avain viety"
 
 #: src/keyrow.c:267
-#, fuzzy
 msgid "Remove key?"
-msgstr "Poista avain"
+msgstr "Poistetaanko avain?"
 
 #: src/keyrow.c:270
 #, c-format
@@ -181,27 +179,23 @@ msgstr "Avain poistettu"
 
 #: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
 #: src/cryptography.c:172 src/cryptography.c:291 src/cryptography.c:402
-#, fuzzy
 msgid "Failed to create new GPGME context"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
 #: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
 #: src/cryptography.c:176 src/cryptography.c:295 src/cryptography.c:406
-#, fuzzy
 msgid "Failed to set protocol of GPGME context to OpenPGP"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "GPGME-kontekstin protokollan asettaminen OpenPGP:lle epäonnistui"
 
 #: src/cryptography.c:51
-#, fuzzy
 msgid "Failed to obtain key by fingerprint"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "Avainta ei saatu sormenjälkeen perustuen"
 
 #: src/cryptography.c:93
 msgid "Failed to find key matching User ID"
-msgstr ""
+msgstr "Käyttäjätunnistetta vastaavan avaimen löytäminen epäonnistui"
 
 #: src/cryptography.c:133 src/cryptography.c:141
-#, fuzzy
 msgid "Failed to generate new GPG key for signing"
 msgstr "Uuden GPG-avaimen luominen allekirjoitusta varten epäonnistui"
 
@@ -211,12 +205,10 @@ msgid "Failed to delete unfinished, generated key"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
 #: src/cryptography.c:182
-#, fuzzy
 msgid "Failed to load GPGME key data from file"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "GPGME-avaimen lataaminen tiedostosta epäonnistui"
 
 #: src/cryptography.c:188
-#, fuzzy
 msgid "Failed to import GPG key from file"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
@@ -226,14 +218,13 @@ msgid "Failed to create GPGME key data in memory"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
 #: src/cryptography.c:205
-#, fuzzy
 msgid "Failed to export GPG key(s) to file"
 msgstr "GPG-avaimen tai -avainten vieminen tiedostoon epäonnistui"
 
 #: src/cryptography.c:220
 #, c-format
 msgid "Failed to open export file: %s"
-msgstr ""
+msgstr "Vientitiedoston avaaminen epäonnistui: %s"
 
 #: src/cryptography.c:250
 #, fuzzy
@@ -241,7 +232,6 @@ msgid "Failed to get GPG key for removal"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
 #: src/cryptography.c:254
-#, fuzzy
 msgid "Failed to remove GPG key"
 msgstr "GPG-avaimen poistaminen epäonnistui"
 
@@ -271,9 +261,8 @@ msgid "Failed to decrypt GPGME data from memory"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
 #: src/cryptography.c:335
-#, fuzzy
 msgid "Failed to add signing key to GPGME context"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Allekirjoitusavaimen lisääminen GPGME-kontekstiin epäonnistui"
 
 #: src/cryptography.c:342
 #, fuzzy
@@ -331,14 +320,12 @@ msgid "Failed to open output file: %s"
 msgstr ""
 
 #: src/threading.c:57
-#, fuzzy
 msgid "Failed to create text encryption thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Tekstisalauksen säikeen luominen epäonnistui"
 
 #: src/threading.c:79
-#, fuzzy
 msgid "Failed to create file encryption thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Tiedostosalauksen säikeen luominen epäonnistui"
 
 #: src/threading.c:100
 #, fuzzy
@@ -391,49 +378,43 @@ msgid "Failed to create key removal thread"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
 #: data/ui/shortcuts.blp:10
-#, fuzzy
 msgctxt "Shortcuts Group"
 msgid "General"
-msgstr "Luo"
+msgstr "Yleiset"
 
 #: data/ui/shortcuts.blp:13
 msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
-msgstr ""
+msgstr "Näytä pikanäppäimet"
 
 #: data/ui/shortcuts.blp:20
 msgid "Copy text view to clipboard"
-msgstr ""
+msgstr "Kopioi tekstinäkymä leikepöydälle"
 
 #: data/ui/shortcuts.blp:27
 msgid "Overwrite text view with clipboard"
-msgstr ""
+msgstr "Ylikirjoita tekstinäkymä leikepöydän sisällöllä"
 
 #: data/ui/shortcuts.blp:35
-#, fuzzy
 msgctxt "Shortcuts Group"
 msgid "Cryptography"
-msgstr "Salakirjoituksen toiminnot"
+msgstr "Salakirjoitus"
 
 #: data/ui/shortcuts.blp:38
-#, fuzzy
 msgid "Encrypt text"
-msgstr "Salaa"
+msgstr "Salaa teksti"
 
 #: data/ui/shortcuts.blp:45
-#, fuzzy
 msgid "Decrypt text"
-msgstr "Pura salaus"
+msgstr "Pura tekstin salaus"
 
 #: data/ui/shortcuts.blp:52
-#, fuzzy
 msgid "Sign text"
-msgstr "Raakateksti"
+msgstr "Allekirjoita teksti"
 
 #: data/ui/shortcuts.blp:59
-#, fuzzy
 msgid "Verify text"
-msgstr "Vahvista"
+msgstr "Vahvista teksti"
 
 #: data/ui/window.blp:9 data/ui/window.blp:194
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -479,16 +460,15 @@ msgstr "Käsiteltävä tiedosto"
 
 #: data/ui/window.blp:123
 msgid "Select input file"
-msgstr ""
+msgstr "Valitse käsiteltävä tiedosto"
 
 #: data/ui/window.blp:130
 msgid "Output File"
 msgstr "Käsitelty tiedosto"
 
 #: data/ui/window.blp:139
-#, fuzzy
 msgid "Select output file"
-msgstr "Käsitelty tiedosto"
+msgstr "Valitse käsitelty tiedosto"
 
 #: data/ui/window.blp:155 data/ui/window.blp:219
 msgid "Encrypt"
@@ -512,7 +492,7 @@ msgstr "Hallitse avaimia"
 
 #: data/ui/window.blp:206
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Pikanäppäimet"
 
 #: data/ui/window.blp:210
 msgid "About Lock"
@@ -520,7 +500,7 @@ msgstr "Tietoja - Lock"
 
 #: data/ui/window.blp:233
 msgid "Sign (Clear Text)"
-msgstr ""
+msgstr "Allekirjoita (raakateksti)"
 
 #: data/ui/window.blp:237
 msgid "Sign (Detached)"
@@ -535,15 +515,15 @@ msgid "Refresh keys"
 msgstr "Päivitä avaimet"
 
 #: data/ui/selectiondialog.blp:68
-#, fuzzy
 msgid "No capable keys available"
-msgstr "Avaimia ei ole saatavilla"
+msgstr "Kykeneviä avaimia ei ole saatavilla"
 
 #: data/ui/selectiondialog.blp:69
-#, fuzzy
 msgid ""
 "Your GnuPG keyring does not contain any keys that support this functionality."
-msgstr "GnuPG-avainnippusi ei sisällä yhtäkään avainta."
+msgstr ""
+"GnuPG-avainnippusi ei sisällä yhtäkään avainta, joka tukee tätä "
+"toiminnallisuutta."
 
 #: data/ui/managementdialog.blp:68
 msgid "No keys available"
@@ -573,7 +553,7 @@ msgstr "Luo avainpari"
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name (Mandatory)"
-msgstr ""
+msgstr "Nimi (pakollinen)"
 
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
@@ -583,7 +563,7 @@ msgstr "Sähköposti"
 #: data/ui/managementdialog.blp:151
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
-msgstr ""
+msgstr "Kommentti"
 
 #: data/ui/managementdialog.blp:156
 msgctxt "Signing algorithm of the new keypair"
