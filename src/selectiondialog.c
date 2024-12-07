@@ -136,9 +136,7 @@ void lock_selection_dialog_refresh(GtkButton *self, LockSelectionDialog *dialog)
     if (error)
         return;
 
-    int secret_only = (dialog->target) ? 0 : 1;
-
-    error = gpgme_op_keylist_start(context, NULL, secret_only);
+    error = gpgme_op_keylist_start(context, NULL, (dialog->target) ? 0 : 1);
     while (!error) {
         error = gpgme_op_keylist_next(context, &key);
 
