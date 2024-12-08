@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 14:52+0100\n"
+"POT-Creation-Date: 2024-12-08 18:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,80 +112,80 @@ msgstr ""
 msgid "File verified"
 msgstr ""
 
-#: src/managementdialog.c:368
+#: src/managementdialog.c:339
 msgid "Import failed"
 msgstr ""
 
-#: src/managementdialog.c:370
+#: src/managementdialog.c:341
 msgid "Keys imported"
 msgstr ""
 
-#: src/managementdialog.c:466
+#: src/managementdialog.c:437
 msgid "Generation failed"
 msgstr ""
 
-#: src/managementdialog.c:468
+#: src/managementdialog.c:439
 msgid "Keypair generated"
 msgstr ""
 
-#: src/keyrow.c:119
+#: src/keyrow.c:128
 msgid "Key does not expire"
 msgstr ""
 
-#: src/keyrow.c:123
+#: src/keyrow.c:132
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
 msgstr ""
 
-#: src/keyrow.c:125
+#: src/keyrow.c:134
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
 msgstr ""
 
-#: src/keyrow.c:156
+#: src/keyrow.c:174
 msgid "Fingerprint copied"
 msgstr ""
 
-#: src/keyrow.c:250
+#: src/keyrow.c:268
 msgid "Export failed"
 msgstr ""
 
-#: src/keyrow.c:252
+#: src/keyrow.c:270
 msgid "Key exported"
 msgstr ""
 
-#: src/keyrow.c:297
+#: src/keyrow.c:315
 msgid "Remove key?"
 msgstr ""
 
-#: src/keyrow.c:300
+#: src/keyrow.c:318
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr ""
 
-#: src/keyrow.c:303
+#: src/keyrow.c:321
 msgid "_Cancel"
 msgstr ""
 
-#: src/keyrow.c:304
+#: src/keyrow.c:322
 msgid "_Remove"
 msgstr ""
 
-#: src/keyrow.c:345
+#: src/keyrow.c:363
 msgid "Removal failed"
 msgstr ""
 
-#: src/keyrow.c:347
+#: src/keyrow.c:365
 msgid "Key removed"
 msgstr ""
 
-#: src/keyrow.c:397
+#: src/keyrow.c:415
 msgid "Renewal failed"
 msgstr ""
 
-#: src/keyrow.c:399
+#: src/keyrow.c:417
 msgid "Expiry renewed"
 msgstr ""
 

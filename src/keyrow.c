@@ -26,7 +26,6 @@ struct _LockKeyRow {
     GtkButton *export_button;
     GFile *export_file;
 
-    gboolean expired;
     GtkButton *expire_button;
     GtkPopover *expire_popover;
     GtkCalendar *expire_calendar;
@@ -100,25 +99,35 @@ static void lock_key_row_class_init(LockKeyRowClass *class)
  * This function creates a new LockKeyRow.
  *
  * @param dialog Dialog in which the row is presented
- * @param email Email of the key
- * @param title UID of the key
- * @param subtitle Fingerprint of the key
- * @param expiry_date Date of the expiry of the key
- * @param expiry_time Time of the day of the expiry of the key
- * @param expired Has the key of the row expired
+ * @param key Key related to the row
  *
  * @return LockKeyRow
  */
-LockKeyRow *lock_key_row_new(LockManagementDialog *dialog,
-                             const gchar *title, const gchar *subtitle,
-                             const gchar *expiry_date, const gchar *expiry_time,
-                             gboolean expired)
+LockKeyRow *lock_key_row_new(LockManagementDialog *dialog, gpgme_key_t key)
 {
+    /* Key Expiry */
+    size_t expiry_date_length = strlen("YYYY-mm-dd") + 1;
+    gchar *expiry_date = malloc(expiry_date_length * sizeof(char));
+
+    size_t expiry_time_length = strlen("HH:MM") + 1;
+    gchar *expiry_time = malloc(expiry_time_length * sizeof(char));
+
+    if (key->subkeys->expires == 0) {
+        expiry_date = NULL;
+        expiry_time = NULL;
+    } else {
+        time_t expiry_timestamp = (time_t) key->subkeys->expires;
+        struct tm *expiry = localtime(&expiry_timestamp);
+
+        strftime(expiry_date, expiry_date_length, "%Y-%m-%d", expiry);
+        strftime(expiry_time, expiry_time_length, "%H:%M", expiry);
+    }
+
     gchar *tooltip_text;
     if (expiry_date == NULL || expiry_time == NULL) {
         tooltip_text = _("Key does not expire");
     } else {
-        tooltip_text = g_strdup_printf((expired) ? C_
+        tooltip_text = g_strdup_printf((key->expired) ? C_
                                        ("First formatter: YYYY-mm-dd; Second formatter: HH:MM",
                                         "Expired %s at %s") : C_
                                        ("First formatter: YYYY-mm-dd; Second formatter: HH:MM",
@@ -126,16 +135,25 @@ LockKeyRow *lock_key_row_new(LockManagementDialog *dialog,
                                        expiry_time);
     }
 
+    /* Row */
     LockKeyRow *row =
-        g_object_new(LOCK_TYPE_KEY_ROW, "title", title, "subtitle", subtitle,
+        g_object_new(LOCK_TYPE_KEY_ROW, "title", key->uids->uid, "subtitle",
+                     key->fpr,
                      "tooltip-text", tooltip_text, NULL);
+
+    gtk_widget_set_visible(GTK_WIDGET(row->export_button), !key->expired);
+    gtk_widget_set_visible(GTK_WIDGET(row->expire_button), key->expired);
 
     /* TODO: implement g_object_class_install_property() */
     row->dialog = dialog;
+    //memcpy(row->key, key, sizeof(&key));
 
-    row->expired = expired;
-    gtk_widget_set_visible(GTK_WIDGET(row->export_button), !row->expired);
-    gtk_widget_set_visible(GTK_WIDGET(row->expire_button), row->expired);
+    /* Cleanup */
+    g_free(expiry_date);
+    expiry_date = NULL;
+
+    g_free(expiry_time);
+    expiry_time = NULL;
 
     return row;
 }

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 14:52+0100\n"
+"POT-Creation-Date: 2024-12-08 18:22+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -115,82 +115,82 @@ msgstr "Metin doğrulandı"
 msgid "File verified"
 msgstr "Dosya doğrulandı"
 
-#: src/managementdialog.c:368
+#: src/managementdialog.c:339
 msgid "Import failed"
 msgstr "İçe aktarılamadı"
 
-#: src/managementdialog.c:370
+#: src/managementdialog.c:341
 msgid "Keys imported"
 msgstr "Anahtarlar içe aktarıldı"
 
-#: src/managementdialog.c:466
+#: src/managementdialog.c:437
 msgid "Generation failed"
 msgstr "Oluşturulamadı"
 
-#: src/managementdialog.c:468
+#: src/managementdialog.c:439
 msgid "Keypair generated"
 msgstr "Anahtar eşi oluşturuldu"
 
-#: src/keyrow.c:119
+#: src/keyrow.c:128
 msgid "Key does not expire"
 msgstr "Anahtar yok"
 
-#: src/keyrow.c:123
+#: src/keyrow.c:132
 #, fuzzy, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
 msgstr "Geçerlilik sonu: %s saat %s"
 
-#: src/keyrow.c:125
+#: src/keyrow.c:134
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
 msgstr "Geçerlilik sonu: %s saat %s"
 
-#: src/keyrow.c:156
+#: src/keyrow.c:174
 msgid "Fingerprint copied"
 msgstr "Parmak izi kopyalandı"
 
-#: src/keyrow.c:250
+#: src/keyrow.c:268
 msgid "Export failed"
 msgstr "Dışa aktarılamadı"
 
-#: src/keyrow.c:252
+#: src/keyrow.c:270
 msgid "Key exported"
 msgstr "Anahtar dışa aktarıldı"
 
-#: src/keyrow.c:297
+#: src/keyrow.c:315
 #, fuzzy
 msgid "Remove key?"
 msgstr "Anahtarı kaldır"
 
-#: src/keyrow.c:300
+#: src/keyrow.c:318
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr "%s anahtarının kaldırılması geri alınamaz!"
 
-#: src/keyrow.c:303
+#: src/keyrow.c:321
 msgid "_Cancel"
 msgstr "İ_ptal"
 
-#: src/keyrow.c:304
+#: src/keyrow.c:322
 msgid "_Remove"
 msgstr "_Kaldır"
 
-#: src/keyrow.c:345
+#: src/keyrow.c:363
 msgid "Removal failed"
 msgstr "Kaldırılamadı"
 
-#: src/keyrow.c:347
+#: src/keyrow.c:365
 msgid "Key removed"
 msgstr "Anahtar silindi"
 
-#: src/keyrow.c:397
+#: src/keyrow.c:415
 #, fuzzy
 msgid "Renewal failed"
 msgstr "Kaldırılamadı"
 
-#: src/keyrow.c:399
+#: src/keyrow.c:417
 #, fuzzy
 msgid "Expiry renewed"
 msgstr "Son geçerlilik tarihlerini görüntüleyin"

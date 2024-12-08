@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 14:52+0100\n"
+"POT-Creation-Date: 2024-12-08 18:22+0100\n"
 "PO-Revision-Date: 2024-12-01 16:55+0000\n"
 "Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -115,81 +115,81 @@ msgstr "Текст проверен"
 msgid "File verified"
 msgstr "Файл проверен"
 
-#: src/managementdialog.c:368
+#: src/managementdialog.c:339
 msgid "Import failed"
 msgstr "Не удалось импортировать"
 
-#: src/managementdialog.c:370
+#: src/managementdialog.c:341
 msgid "Keys imported"
 msgstr "Ключи импортированы"
 
-#: src/managementdialog.c:466
+#: src/managementdialog.c:437
 msgid "Generation failed"
 msgstr "Генерация не удалась"
 
-#: src/managementdialog.c:468
+#: src/managementdialog.c:439
 msgid "Keypair generated"
 msgstr "Пара ключей сгенерирована"
 
-#: src/keyrow.c:119
+#: src/keyrow.c:128
 msgid "Key does not expire"
 msgstr "Срок действия ключа не ограничен"
 
-#: src/keyrow.c:123
+#: src/keyrow.c:132
 #, fuzzy, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
 msgstr "Истекает %s в %s"
 
-#: src/keyrow.c:125
+#: src/keyrow.c:134
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
 msgstr "Истекает %s в %s"
 
-#: src/keyrow.c:156
+#: src/keyrow.c:174
 msgid "Fingerprint copied"
 msgstr "Отпечаток скопирован"
 
-#: src/keyrow.c:250
+#: src/keyrow.c:268
 msgid "Export failed"
 msgstr "Не удалось экспортировать"
 
-#: src/keyrow.c:252
+#: src/keyrow.c:270
 msgid "Key exported"
 msgstr "Ключ экспортирован"
 
-#: src/keyrow.c:297
+#: src/keyrow.c:315
 msgid "Remove key?"
 msgstr "Удалить ключ?"
 
-#: src/keyrow.c:300
+#: src/keyrow.c:318
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr "Удаление ключа %s не может быть отменено!"
 
-#: src/keyrow.c:303
+#: src/keyrow.c:321
 msgid "_Cancel"
 msgstr "_Отмена"
 
-#: src/keyrow.c:304
+#: src/keyrow.c:322
 msgid "_Remove"
 msgstr "_Удалить"
 
-#: src/keyrow.c:345
+#: src/keyrow.c:363
 msgid "Removal failed"
 msgstr "Не удалось удалить"
 
-#: src/keyrow.c:347
+#: src/keyrow.c:365
 msgid "Key removed"
 msgstr "Ключ удалён"
 
-#: src/keyrow.c:397
+#: src/keyrow.c:415
 #, fuzzy
 msgid "Renewal failed"
 msgstr "Не удалось удалить"
 
-#: src/keyrow.c:399
+#: src/keyrow.c:417
 #, fuzzy
 msgid "Expiry renewed"
 msgstr "Посмотр дат истечения срока действия"

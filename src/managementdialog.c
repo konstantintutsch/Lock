@@ -175,15 +175,6 @@ void lock_management_dialog_refresh(GtkButton *self,
 
     gtk_list_box_remove_all(dialog->key_box);
 
-    size_t expiry_date_length = strlen("YYYY-mm-dd") + 1;
-    gchar *expiry_date = malloc(expiry_date_length * sizeof(char));
-
-    size_t expiry_time_length = strlen("HH:MM") + 1;
-    gchar *expiry_time = malloc(expiry_time_length * sizeof(char));
-
-    time_t expiry_timestamp;
-    struct tm *expiry;
-
     gpgme_ctx_t context;
     gpgme_key_t key;
     gpgme_error_t error;
@@ -199,33 +190,13 @@ void lock_management_dialog_refresh(GtkButton *self,
         if (error)
             break;
 
-        if (key->subkeys->expires == 0) {
-            expiry_date = NULL;
-            expiry_time = NULL;
-        } else {
-            expiry_timestamp = (time_t) key->subkeys->expires;
-            expiry = localtime(&expiry_timestamp);
-
-            strftime(expiry_date, expiry_date_length, "%Y-%m-%d", expiry);
-            strftime(expiry_time, expiry_time_length, "%H:%M", expiry);
-        }
-
         gtk_list_box_append(dialog->key_box,
-                            GTK_WIDGET(lock_key_row_new
-                                       (dialog, key->uids->uid,
-                                        key->fpr, expiry_date, expiry_time,
-                                        (key->expired) ? true : false)));
+                            GTK_WIDGET(lock_key_row_new(dialog, key)));
     }
 
     /* Cleanup */
     gpgme_release(context);
     gpgme_key_release(key);
-
-    g_free(expiry_date);
-    expiry_date = NULL;
-
-    g_free(expiry_time);
-    expiry_time = NULL;
 
     if (gtk_list_box_get_row_at_index(dialog->key_box, 0) == NULL) {
         gtk_widget_set_visible(GTK_WIDGET(dialog->key_box), false);

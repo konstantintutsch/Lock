@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 14:52+0100\n"
+"POT-Creation-Date: 2024-12-08 18:22+0100\n"
 "PO-Revision-Date: 2024-12-01 19:04+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -114,81 +114,81 @@ msgstr "Tèxte verificat"
 msgid "File verified"
 msgstr "Fichièr verificat"
 
-#: src/managementdialog.c:368
+#: src/managementdialog.c:339
 msgid "Import failed"
 msgstr "Fracàs de l'importacion"
 
-#: src/managementdialog.c:370
+#: src/managementdialog.c:341
 msgid "Keys imported"
 msgstr "Claus importadas"
 
-#: src/managementdialog.c:466
+#: src/managementdialog.c:437
 msgid "Generation failed"
 msgstr "Fracàs de generacion"
 
-#: src/managementdialog.c:468
+#: src/managementdialog.c:439
 msgid "Keypair generated"
 msgstr "Parelh de claus generat"
 
-#: src/keyrow.c:119
+#: src/keyrow.c:128
 msgid "Key does not expire"
 msgstr "La clau expira pas"
 
-#: src/keyrow.c:123
+#: src/keyrow.c:132
 #, fuzzy, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
 msgstr "Expira lo %s a %s"
 
-#: src/keyrow.c:125
+#: src/keyrow.c:134
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
 msgstr "Expira lo %s a %s"
 
-#: src/keyrow.c:156
+#: src/keyrow.c:174
 msgid "Fingerprint copied"
 msgstr "Emprenta digital copiada"
 
-#: src/keyrow.c:250
+#: src/keyrow.c:268
 msgid "Export failed"
 msgstr "L'exportacion a fracassat"
 
-#: src/keyrow.c:252
+#: src/keyrow.c:270
 msgid "Key exported"
 msgstr "Clau exportada"
 
-#: src/keyrow.c:297
+#: src/keyrow.c:315
 msgid "Remove key?"
 msgstr "Levar la clau ?"
 
-#: src/keyrow.c:300
+#: src/keyrow.c:318
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr "La supression de la clau %s se pòt desfar !"
 
-#: src/keyrow.c:303
+#: src/keyrow.c:321
 msgid "_Cancel"
 msgstr "_Anullar"
 
-#: src/keyrow.c:304
+#: src/keyrow.c:322
 msgid "_Remove"
 msgstr "_Levar"
 
-#: src/keyrow.c:345
+#: src/keyrow.c:363
 msgid "Removal failed"
 msgstr "Fracàs de la supression"
 
-#: src/keyrow.c:347
+#: src/keyrow.c:365
 msgid "Key removed"
 msgstr "Clau suprimida"
 
-#: src/keyrow.c:397
+#: src/keyrow.c:415
 #, fuzzy
 msgid "Renewal failed"
 msgstr "Fracàs de la supression"
 
-#: src/keyrow.c:399
+#: src/keyrow.c:417
 #, fuzzy
 msgid "Expiry renewed"
 msgstr "Afichar las datas d'expiracion"
