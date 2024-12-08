@@ -13,7 +13,7 @@ G_DECLARE_FINAL_TYPE(LockKeyRow, lock_key_row, LOCK, KEY_ROW, AdwActionRow);
 LockKeyRow *lock_key_row_new(LockManagementDialog * dialog,
                              const gchar * title, const gchar * subtitle,
                              const gchar * expiry_date,
-                             const gchar * expiry_time);
+                             const gchar * expiry_time, gboolean expired);
 
 // Export
 void lock_key_row_export(LockKeyRow * row);

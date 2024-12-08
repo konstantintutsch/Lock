@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-07 12:30+0100\n"
+"POT-Creation-Date: 2024-12-08 14:52+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -117,79 +117,95 @@ msgstr "文本已校验"
 msgid "File verified"
 msgstr "文件已校验"
 
-#: src/managementdialog.c:367
+#: src/managementdialog.c:368
 msgid "Import failed"
 msgstr "导入失败"
 
-#: src/managementdialog.c:369
+#: src/managementdialog.c:370
 msgid "Keys imported"
 msgstr "密钥已导入"
 
-#: src/managementdialog.c:465
+#: src/managementdialog.c:466
 msgid "Generation failed"
 msgstr "生成失败"
 
-#: src/managementdialog.c:467
+#: src/managementdialog.c:468
 msgid "Keypair generated"
 msgstr "密钥对已生成"
 
-#: src/keyrow.c:95
+#: src/keyrow.c:119
 msgid "Key does not expire"
 msgstr "密钥未到期"
 
-#: src/keyrow.c:99
+#: src/keyrow.c:123
+#, fuzzy, c-format
+msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
+msgid "Expired %s at %s"
+msgstr "到期时间 %s %s"
+
+#: src/keyrow.c:125
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
 msgstr "到期时间 %s %s"
 
-#: src/keyrow.c:126
+#: src/keyrow.c:156
 #, fuzzy
 msgid "Fingerprint copied"
 msgstr "指纹"
 
-#: src/keyrow.c:220
+#: src/keyrow.c:250
 msgid "Export failed"
 msgstr "导出失败"
 
-#: src/keyrow.c:222
+#: src/keyrow.c:252
 msgid "Key exported"
 msgstr "密钥已导出"
 
-#: src/keyrow.c:267
+#: src/keyrow.c:297
 #, fuzzy
 msgid "Remove key?"
 msgstr "移除密钥"
 
-#: src/keyrow.c:270
+#: src/keyrow.c:300
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr "对 %s 密钥的移除无法撤消！"
 
-#: src/keyrow.c:273
+#: src/keyrow.c:303
 msgid "_Cancel"
 msgstr "取消(_C)"
 
-#: src/keyrow.c:274
+#: src/keyrow.c:304
 msgid "_Remove"
 msgstr "移除(_R)"
 
-#: src/keyrow.c:315
+#: src/keyrow.c:345
 msgid "Removal failed"
 msgstr "移除失败"
 
-#: src/keyrow.c:317
+#: src/keyrow.c:347
 msgid "Key removed"
 msgstr "密钥已移除"
 
+#: src/keyrow.c:397
+#, fuzzy
+msgid "Renewal failed"
+msgstr "移除失败"
+
+#: src/keyrow.c:399
+#, fuzzy
+msgid "Expiry renewed"
+msgstr "查看到期日期"
+
 #: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
-#: src/cryptography.c:172 src/cryptography.c:291 src/cryptography.c:402
+#: src/cryptography.c:174 src/cryptography.c:309 src/cryptography.c:420
 #, fuzzy
 msgid "Failed to create new GPGME context"
 msgstr "创建新 GPGME 上下文"
 
 #: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
-#: src/cryptography.c:176 src/cryptography.c:295 src/cryptography.c:406
+#: src/cryptography.c:178 src/cryptography.c:313 src/cryptography.c:424
 #, fuzzy
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "设置 GPGME 上下文协议为 OpenPGP"
@@ -214,122 +230,132 @@ msgstr "生成用于签署的新 GPG 密钥"
 msgid "Failed to delete unfinished, generated key"
 msgstr "删除未完成，已生成 ECC 密钥"
 
-#: src/cryptography.c:182
+#: src/cryptography.c:184
 #, fuzzy
 msgid "Failed to load GPGME key data from file"
 msgstr "从文件加载 GPGME 密钥数据"
 
-#: src/cryptography.c:188
+#: src/cryptography.c:190
 #, fuzzy
 msgid "Failed to import GPG key from file"
 msgstr "从文件导入 GPG 密钥"
 
-#: src/cryptography.c:199
+#: src/cryptography.c:201
 #, fuzzy
 msgid "Failed to create GPGME key data in memory"
 msgstr "在内存中创建 GPGME 密钥数据"
 
-#: src/cryptography.c:205
+#: src/cryptography.c:207
 #, fuzzy
 msgid "Failed to export GPG key(s) to file"
 msgstr "导出 GPG 密钥至文件"
 
-#: src/cryptography.c:220
+#: src/cryptography.c:222
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr "打开导出文件失败：%s"
 
-#: src/cryptography.c:250
+#: src/cryptography.c:252
+#, fuzzy
+msgid "Failed to get GPG key for expiry editing"
+msgstr "获取 GPG 密钥来移除"
+
+#: src/cryptography.c:255
+#, fuzzy
+msgid "Failed to update the expiry time"
+msgstr "创建 %s 线程失败：%s"
+
+#: src/cryptography.c:268
 #, fuzzy
 msgid "Failed to get GPG key for removal"
 msgstr "获取 GPG 密钥来移除"
 
-#: src/cryptography.c:254
+#: src/cryptography.c:272
 #, fuzzy
 msgid "Failed to remove GPG key"
 msgstr "移除 GPG 密钥"
 
-#: src/cryptography.c:300 src/cryptography.c:411
+#: src/cryptography.c:318 src/cryptography.c:429
 #, fuzzy
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "设置 GPGME 上下文协议为 OpenPGP"
 
-#: src/cryptography.c:307
+#: src/cryptography.c:325
 #, fuzzy
 msgid "Failed to create new GPGME input data from string"
 msgstr "从字符串创建新 GPGME 输入数据"
 
-#: src/cryptography.c:312 src/cryptography.c:431
+#: src/cryptography.c:330 src/cryptography.c:449
 #, fuzzy
 msgid "Failed to create new GPGME output data in memory"
 msgstr "在内存中创建新 GPGME 输出数据"
 
-#: src/cryptography.c:321
+#: src/cryptography.c:339
 #, fuzzy
 msgid "Failed to encrypt GPGME data from memory"
 msgstr "从内存加密 GPGME 数据"
 
-#: src/cryptography.c:327
+#: src/cryptography.c:345
 #, fuzzy
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "从内存解密 GPGME 数据"
 
-#: src/cryptography.c:335
+#: src/cryptography.c:353
 #, fuzzy
 msgid "Failed to add signing key to GPGME context"
 msgstr "创建新 GPGME 上下文"
 
-#: src/cryptography.c:342
+#: src/cryptography.c:360
 #, fuzzy
 msgid "Failed to sign GPGME data from memory"
 msgstr "从内存签署 GPGME 数据"
 
-#: src/cryptography.c:348
+#: src/cryptography.c:366
 #, fuzzy
 msgid "Failed to verify GPGME data from memory"
 msgstr "从内存校验 GPGME 数据"
 
-#: src/cryptography.c:390
+#: src/cryptography.c:408
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "已移除 %s 来准备覆盖"
 
-#: src/cryptography.c:417
+#: src/cryptography.c:435
 #, fuzzy
 msgid "Failed to create new GPGME input data from file"
 msgstr "从文件创建新 GPGME 输入数据"
 
-#: src/cryptography.c:424
+#: src/cryptography.c:442
 #, fuzzy
 msgid "Failed to set file name of GPGME input data"
 msgstr "设置 GPGME 输入数据的文件名"
 
-#: src/cryptography.c:439
+#: src/cryptography.c:457
 #, fuzzy
 msgid "Failed to set file name of GPGME output data"
 msgstr "设置 GPGME 输出数据的文件名"
 
-#: src/cryptography.c:449
+#: src/cryptography.c:467
 #, fuzzy
 msgid "Failed to encrypt GPGME data from file"
 msgstr "从文件加密 GPGME 数据"
 
-#: src/cryptography.c:454
+#: src/cryptography.c:472
 #, fuzzy
 msgid "Failed to decrypt GPGME data from file"
 msgstr "从文件解密 GPGME 数据"
 
-#: src/cryptography.c:461
+#: src/cryptography.c:479
 #, fuzzy
 msgid "Failed to sign GPGME data from file"
 msgstr "从文件签署 GPGME 数据"
 
-#: src/cryptography.c:467
+#: src/cryptography.c:485
 #, fuzzy
 msgid "Failed to verify GPGME data from file"
 msgstr "从文件校验 GPGME 数据"
 
-#: src/cryptography.c:483
+#: src/cryptography.c:501
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "打开输出文件失败：%s"
@@ -650,6 +676,11 @@ msgstr "移除密钥"
 msgid "Export public key to file"
 msgstr "导出公钥至文件"
 
+#: data/ui/keyrow.blp:38
+#, fuzzy
+msgid "Edit expiry date"
+msgstr "查看到期日期"
+
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr ""
@@ -668,7 +699,7 @@ msgid "Process text and files:"
 msgstr "处理文本和文件："
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:74
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:75
 msgid "Encryption"
 msgstr "加密"
 
@@ -705,36 +736,44 @@ msgid "View expiry dates"
 msgstr "查看到期日期"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
+msgid "Update expiry dates of expired keys"
+msgstr ""
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
 msgstr "移除密钥"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:46
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:47
 msgid "Light Appearance"
 msgstr "亮色外观"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:50
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:51
 msgid "Dark Appearance"
 msgstr "暗色外观"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:54
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:55
 msgid "Key Management"
 msgstr "密钥管理"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:58
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:59
 msgid "Keypair Generation"
 msgstr "密钥对生成"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:62
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:63
 msgid "File processing"
 msgstr "文件处理"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:66
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:67
 msgid "Plain text"
 msgstr "纯文本"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Expiry update failed"
+#~ msgstr "导出失败"
 
 #~ msgid "Remove key and subkeys?"
 #~ msgstr "移除密钥和子密钥吗？"

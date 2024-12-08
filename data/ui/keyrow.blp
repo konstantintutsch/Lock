@@ -26,5 +26,22 @@ template $LockKeyRow : Adw.ActionRow {
             icon-name: "send-to-symbolic";
             tooltip-text: _("Export public key to file");
         }
+
+        Gtk.Box {
+            orientation: horizontal;
+            valign: center;
+
+            Gtk.Button expire_button {
+                styles ["flat"]
+
+                icon-name: "appointment-new-symbolic";
+                tooltip-text: _("Edit expiry date");
+            }
+
+            Gtk.Popover expire_popover {
+                Gtk.Calendar expire_calendar {
+                }
+            }
+        }
     }
 }

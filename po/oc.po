@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-07 12:30+0100\n"
+"POT-Creation-Date: 2024-12-08 14:52+0100\n"
 "PO-Revision-Date: 2024-12-01 19:04+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -114,76 +114,92 @@ msgstr "Tèxte verificat"
 msgid "File verified"
 msgstr "Fichièr verificat"
 
-#: src/managementdialog.c:367
+#: src/managementdialog.c:368
 msgid "Import failed"
 msgstr "Fracàs de l'importacion"
 
-#: src/managementdialog.c:369
+#: src/managementdialog.c:370
 msgid "Keys imported"
 msgstr "Claus importadas"
 
-#: src/managementdialog.c:465
+#: src/managementdialog.c:466
 msgid "Generation failed"
 msgstr "Fracàs de generacion"
 
-#: src/managementdialog.c:467
+#: src/managementdialog.c:468
 msgid "Keypair generated"
 msgstr "Parelh de claus generat"
 
-#: src/keyrow.c:95
+#: src/keyrow.c:119
 msgid "Key does not expire"
 msgstr "La clau expira pas"
 
-#: src/keyrow.c:99
+#: src/keyrow.c:123
+#, fuzzy, c-format
+msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
+msgid "Expired %s at %s"
+msgstr "Expira lo %s a %s"
+
+#: src/keyrow.c:125
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
 msgstr "Expira lo %s a %s"
 
-#: src/keyrow.c:126
+#: src/keyrow.c:156
 msgid "Fingerprint copied"
 msgstr "Emprenta digital copiada"
 
-#: src/keyrow.c:220
+#: src/keyrow.c:250
 msgid "Export failed"
 msgstr "L'exportacion a fracassat"
 
-#: src/keyrow.c:222
+#: src/keyrow.c:252
 msgid "Key exported"
 msgstr "Clau exportada"
 
-#: src/keyrow.c:267
+#: src/keyrow.c:297
 msgid "Remove key?"
 msgstr "Levar la clau ?"
 
-#: src/keyrow.c:270
+#: src/keyrow.c:300
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr "La supression de la clau %s se pòt desfar !"
 
-#: src/keyrow.c:273
+#: src/keyrow.c:303
 msgid "_Cancel"
 msgstr "_Anullar"
 
-#: src/keyrow.c:274
+#: src/keyrow.c:304
 msgid "_Remove"
 msgstr "_Levar"
 
-#: src/keyrow.c:315
+#: src/keyrow.c:345
 msgid "Removal failed"
 msgstr "Fracàs de la supression"
 
-#: src/keyrow.c:317
+#: src/keyrow.c:347
 msgid "Key removed"
 msgstr "Clau suprimida"
 
+#: src/keyrow.c:397
+#, fuzzy
+msgid "Renewal failed"
+msgstr "Fracàs de la supression"
+
+#: src/keyrow.c:399
+#, fuzzy
+msgid "Expiry renewed"
+msgstr "Afichar las datas d'expiracion"
+
 #: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
-#: src/cryptography.c:172 src/cryptography.c:291 src/cryptography.c:402
+#: src/cryptography.c:174 src/cryptography.c:309 src/cryptography.c:420
 msgid "Failed to create new GPGME context"
 msgstr "Fracàs de la creacion d’un contèxte GPGME nòu"
 
 #: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
-#: src/cryptography.c:176 src/cryptography.c:295 src/cryptography.c:406
+#: src/cryptography.c:178 src/cryptography.c:313 src/cryptography.c:424
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "Fracàs de la definicion del protocòl del contèxte GPGME per OpenPGP"
 
@@ -203,116 +219,126 @@ msgstr "Fracàs de la generacion de la clau GPG novèla per signar"
 msgid "Failed to delete unfinished, generated key"
 msgstr "Fracàs de la supression de la clau ECC generada non acabada"
 
-#: src/cryptography.c:182
+#: src/cryptography.c:184
 msgid "Failed to load GPGME key data from file"
 msgstr ""
 "Fracàs de la mesa en memòria de las donadas clau GPGME a partir del fichièr"
 
-#: src/cryptography.c:188
+#: src/cryptography.c:190
 msgid "Failed to import GPG key from file"
 msgstr "Fracàs de l’importacion de la clau GPG a partir del fichièr"
 
-#: src/cryptography.c:199
+#: src/cryptography.c:201
 msgid "Failed to create GPGME key data in memory"
 msgstr "Fracàs de la creacion de las donadas de la clau GPGME en memòria"
 
-#: src/cryptography.c:205
+#: src/cryptography.c:207
 msgid "Failed to export GPG key(s) to file"
 msgstr "Fracàs de l’exportacion de la(s) clau(s) dins un fichièr"
 
-#: src/cryptography.c:220
+#: src/cryptography.c:222
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr "Fracàs de la dobertura del fichièr d’exportacion : %s"
 
-#: src/cryptography.c:250
+#: src/cryptography.c:252
+#, fuzzy
+msgid "Failed to get GPG key for expiry editing"
+msgstr "Fracàs de l’obtencion de la clau GPG de suprimir"
+
+#: src/cryptography.c:255
+#, fuzzy
+msgid "Failed to update the expiry time"
+msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
+
+#: src/cryptography.c:268
 msgid "Failed to get GPG key for removal"
 msgstr "Fracàs de l’obtencion de la clau GPG de suprimir"
 
-#: src/cryptography.c:254
+#: src/cryptography.c:272
 msgid "Failed to remove GPG key"
 msgstr "Fracàs de la supression de la clau GPG"
 
-#: src/cryptography.c:300 src/cryptography.c:411
+#: src/cryptography.c:318 src/cryptography.c:429
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "Fracàs de la definicion del protocòl del contèxte GPGME per OpenPGP"
 
-#: src/cryptography.c:307
+#: src/cryptography.c:325
 msgid "Failed to create new GPGME input data from string"
 msgstr ""
 "Fracàs de la creacion de las donadas GPGME d’entrada novèlas a partir de la "
 "cadena de tèxte"
 
-#: src/cryptography.c:312 src/cryptography.c:431
+#: src/cryptography.c:330 src/cryptography.c:449
 msgid "Failed to create new GPGME output data in memory"
 msgstr "Fracàs de la creacion de las donadas GPGME de sortida en memòria"
 
-#: src/cryptography.c:321
+#: src/cryptography.c:339
 msgid "Failed to encrypt GPGME data from memory"
 msgstr ""
 "Fracàs de la realizacion del chiframent de las donadas GPGME a partir de la "
 "memòria"
 
-#: src/cryptography.c:327
+#: src/cryptography.c:345
 msgid "Failed to decrypt GPGME data from memory"
 msgstr ""
 "Fracàs de la realizacion del deschiframent de las donadas GPGME a partir de "
 "la memòria"
 
-#: src/cryptography.c:335
+#: src/cryptography.c:353
 msgid "Failed to add signing key to GPGME context"
 msgstr "Fracàs de l’apondon de la clau al contèxte GPGME nòu"
 
-#: src/cryptography.c:342
+#: src/cryptography.c:360
 msgid "Failed to sign GPGME data from memory"
 msgstr "Fracàs de la signatura de las donadas GPGME a partir de la memòria"
 
-#: src/cryptography.c:348
+#: src/cryptography.c:366
 msgid "Failed to verify GPGME data from memory"
 msgstr "Fracàs de la verificacion de las donadas GPGME a partir de la memòria"
 
-#: src/cryptography.c:390
+#: src/cryptography.c:408
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s suprimit per preparar lo subrecargament"
 
-#: src/cryptography.c:417
+#: src/cryptography.c:435
 msgid "Failed to create new GPGME input data from file"
 msgstr ""
 "Fracàs de la creacion de las novèlas donadas GPGME d’entrada a partir del "
 "fichièr"
 
-#: src/cryptography.c:424
+#: src/cryptography.c:442
 msgid "Failed to set file name of GPGME input data"
 msgstr ""
 "Fracàs de la definicion del nom de fichièr de las donadas GPGME d’entrada"
 
-#: src/cryptography.c:439
+#: src/cryptography.c:457
 msgid "Failed to set file name of GPGME output data"
 msgstr ""
 "Fracàs de la definicion del nom de fichièr de las donadas GPGME de sortida"
 
-#: src/cryptography.c:449
+#: src/cryptography.c:467
 msgid "Failed to encrypt GPGME data from file"
 msgstr ""
 "Fracàs de la realizacion del deschiframent de las donadas GPGME a partir del "
 "fichièr"
 
-#: src/cryptography.c:454
+#: src/cryptography.c:472
 msgid "Failed to decrypt GPGME data from file"
 msgstr ""
 "Fracàs de la realizacion del chiframent de las donadas GPGME a partir del "
 "fichièr"
 
-#: src/cryptography.c:461
+#: src/cryptography.c:479
 msgid "Failed to sign GPGME data from file"
 msgstr "Fracàs de la signatura de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:467
+#: src/cryptography.c:485
 msgid "Failed to verify GPGME data from file"
 msgstr "Fracàs de la verificacion de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:483
+#: src/cryptography.c:501
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Fracàs de la dobertura del fichièr en sortida : %s"
@@ -619,6 +645,11 @@ msgstr "Levar la clau"
 msgid "Export public key to file"
 msgstr "Exportar la clau publica dins un fichièr"
 
+#: data/ui/keyrow.blp:38
+#, fuzzy
+msgid "Edit expiry date"
+msgstr "Afichar las datas d'expiracion"
+
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr "gpg;gnupg;criptografia;openpgp;chifrar;deschifrar;signar;verificar;"
@@ -636,7 +667,7 @@ msgid "Process text and files:"
 msgstr "Tractar tèxte e fichièrs :"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:74
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:75
 msgid "Encryption"
 msgstr "Chiframent"
 
@@ -673,36 +704,44 @@ msgid "View expiry dates"
 msgstr "Afichar las datas d'expiracion"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
+msgid "Update expiry dates of expired keys"
+msgstr ""
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
 msgstr "Suprimir las claus"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:46
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:47
 msgid "Light Appearance"
 msgstr "Aparéncia clara"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:50
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:51
 msgid "Dark Appearance"
 msgstr "Aparéncia escura"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:54
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:55
 msgid "Key Management"
 msgstr "Gestion de claus"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:58
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:59
 msgid "Keypair Generation"
 msgstr "Generacion del parelh de claus"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:62
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:63
 msgid "File processing"
 msgstr "Tractament de fichièr"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:66
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:67
 msgid "Plain text"
 msgstr "Tèxte brut"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Fenèstra de seleccion de clau"
+
+#, fuzzy
+#~ msgid "Expiry update failed"
+#~ msgstr "L'exportacion a fracassat"
 
 #~ msgid "Remove key and subkeys?"
 #~ msgstr "Suprimir las claus e las sosclaus ?"

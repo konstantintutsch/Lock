@@ -213,7 +213,8 @@ void lock_management_dialog_refresh(GtkButton *self,
         gtk_list_box_append(dialog->key_box,
                             GTK_WIDGET(lock_key_row_new
                                        (dialog, key->uids->uid,
-                                        key->fpr, expiry_date, expiry_time)));
+                                        key->fpr, expiry_date, expiry_time,
+                                        (key->expired) ? true : false)));
     }
 
     /* Cleanup */
@@ -333,7 +334,7 @@ void lock_management_dialog_import(LockManagementDialog *dialog)
     for (guint i = 0; i < g_list_model_get_n_items(dialog->import_file); i++) {
         path = g_file_get_path(g_list_model_get_item(dialog->import_file, i));
 
-        thread_success = key_manage(path, NULL, IMPORT);
+        thread_success = key_manage(path, NULL, 0, IMPORT);
 
         if (!thread_success)
             break;

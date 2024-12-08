@@ -15,7 +15,8 @@ typedef enum {
 typedef enum {
     IMPORT = 1 << 0,
     EXPORT = 1 << 1,
-    REMOVE = 1 << 2
+    REMOVE = 1 << 2,
+    EXPIRE = 1 << 3
 } key_flags;
 
 // Keys
@@ -23,7 +24,8 @@ gpgme_key_t key_get(const char *fingerprint);
 gpgme_key_t key_search(const char *userid);
 bool key_generate(const char *userid, const char *sign_algorithm,
                   const char *encrypt_algorithm, unsigned long expiry);
-bool key_manage(const char *path, const char *fingerprint, key_flags flags);
+bool key_manage(const char *path, const char *fingerprint,
+                const unsigned long expires, key_flags flags);
 
 /* Operations */
 char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key,

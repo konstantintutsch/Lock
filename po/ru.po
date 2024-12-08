@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-07 12:30+0100\n"
+"POT-Creation-Date: 2024-12-08 14:52+0100\n"
 "PO-Revision-Date: 2024-12-01 16:55+0000\n"
 "Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -115,76 +115,92 @@ msgstr "Текст проверен"
 msgid "File verified"
 msgstr "Файл проверен"
 
-#: src/managementdialog.c:367
+#: src/managementdialog.c:368
 msgid "Import failed"
 msgstr "Не удалось импортировать"
 
-#: src/managementdialog.c:369
+#: src/managementdialog.c:370
 msgid "Keys imported"
 msgstr "Ключи импортированы"
 
-#: src/managementdialog.c:465
+#: src/managementdialog.c:466
 msgid "Generation failed"
 msgstr "Генерация не удалась"
 
-#: src/managementdialog.c:467
+#: src/managementdialog.c:468
 msgid "Keypair generated"
 msgstr "Пара ключей сгенерирована"
 
-#: src/keyrow.c:95
+#: src/keyrow.c:119
 msgid "Key does not expire"
 msgstr "Срок действия ключа не ограничен"
 
-#: src/keyrow.c:99
+#: src/keyrow.c:123
+#, fuzzy, c-format
+msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
+msgid "Expired %s at %s"
+msgstr "Истекает %s в %s"
+
+#: src/keyrow.c:125
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
 msgstr "Истекает %s в %s"
 
-#: src/keyrow.c:126
+#: src/keyrow.c:156
 msgid "Fingerprint copied"
 msgstr "Отпечаток скопирован"
 
-#: src/keyrow.c:220
+#: src/keyrow.c:250
 msgid "Export failed"
 msgstr "Не удалось экспортировать"
 
-#: src/keyrow.c:222
+#: src/keyrow.c:252
 msgid "Key exported"
 msgstr "Ключ экспортирован"
 
-#: src/keyrow.c:267
+#: src/keyrow.c:297
 msgid "Remove key?"
 msgstr "Удалить ключ?"
 
-#: src/keyrow.c:270
+#: src/keyrow.c:300
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr "Удаление ключа %s не может быть отменено!"
 
-#: src/keyrow.c:273
+#: src/keyrow.c:303
 msgid "_Cancel"
 msgstr "_Отмена"
 
-#: src/keyrow.c:274
+#: src/keyrow.c:304
 msgid "_Remove"
 msgstr "_Удалить"
 
-#: src/keyrow.c:315
+#: src/keyrow.c:345
 msgid "Removal failed"
 msgstr "Не удалось удалить"
 
-#: src/keyrow.c:317
+#: src/keyrow.c:347
 msgid "Key removed"
 msgstr "Ключ удалён"
 
+#: src/keyrow.c:397
+#, fuzzy
+msgid "Renewal failed"
+msgstr "Не удалось удалить"
+
+#: src/keyrow.c:399
+#, fuzzy
+msgid "Expiry renewed"
+msgstr "Посмотр дат истечения срока действия"
+
 #: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
-#: src/cryptography.c:172 src/cryptography.c:291 src/cryptography.c:402
+#: src/cryptography.c:174 src/cryptography.c:309 src/cryptography.c:420
 msgid "Failed to create new GPGME context"
 msgstr "Не удалось создать новый контекст GPGME"
 
 #: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
-#: src/cryptography.c:176 src/cryptography.c:295 src/cryptography.c:406
+#: src/cryptography.c:178 src/cryptography.c:313 src/cryptography.c:424
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "Не удалось установить протокол контекста GPGME на OpenPGP"
 
@@ -204,101 +220,111 @@ msgstr "Не удалось сгенерировать новый ключ GPG �
 msgid "Failed to delete unfinished, generated key"
 msgstr "Не удалось удалить незавершенный, сгенерированный ключ"
 
-#: src/cryptography.c:182
+#: src/cryptography.c:184
 msgid "Failed to load GPGME key data from file"
 msgstr "Не удалось загрузить данные ключа GPGME из файла"
 
-#: src/cryptography.c:188
+#: src/cryptography.c:190
 msgid "Failed to import GPG key from file"
 msgstr "Не удалось импортировать ключ GPG из файла"
 
-#: src/cryptography.c:199
+#: src/cryptography.c:201
 msgid "Failed to create GPGME key data in memory"
 msgstr "Не удалось создать данные ключа GPGME в памяти"
 
-#: src/cryptography.c:205
+#: src/cryptography.c:207
 msgid "Failed to export GPG key(s) to file"
 msgstr "Не удалось экспортировать ключ(и) GPG в файл"
 
-#: src/cryptography.c:220
+#: src/cryptography.c:222
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr "Не удалось открыть файл экспорта: %s"
 
-#: src/cryptography.c:250
+#: src/cryptography.c:252
+#, fuzzy
+msgid "Failed to get GPG key for expiry editing"
+msgstr "Не удалось получить GPG ключ для удаления"
+
+#: src/cryptography.c:255
+#, fuzzy
+msgid "Failed to update the expiry time"
+msgstr "Не удалось создать поток экспорта ключа"
+
+#: src/cryptography.c:268
 msgid "Failed to get GPG key for removal"
 msgstr "Не удалось получить GPG ключ для удаления"
 
-#: src/cryptography.c:254
+#: src/cryptography.c:272
 msgid "Failed to remove GPG key"
 msgstr "Не удалось удалить GPG ключ"
 
-#: src/cryptography.c:300 src/cryptography.c:411
+#: src/cryptography.c:318 src/cryptography.c:429
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "Не удалось установить режим запроса ввода PIN-кода для контекста GPGME"
 
-#: src/cryptography.c:307
+#: src/cryptography.c:325
 msgid "Failed to create new GPGME input data from string"
 msgstr "Не удалось создать новые входные данные GPGME из строки"
 
-#: src/cryptography.c:312 src/cryptography.c:431
+#: src/cryptography.c:330 src/cryptography.c:449
 msgid "Failed to create new GPGME output data in memory"
 msgstr "Не удалось создать новые выходные данные GPGME в памяти"
 
-#: src/cryptography.c:321
+#: src/cryptography.c:339
 msgid "Failed to encrypt GPGME data from memory"
 msgstr "Не удалось зашифровать данные GPGME в памяти"
 
-#: src/cryptography.c:327
+#: src/cryptography.c:345
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "Не удалось расшифровать данные GPGME в памяти"
 
-#: src/cryptography.c:335
+#: src/cryptography.c:353
 msgid "Failed to add signing key to GPGME context"
 msgstr "Не удалось добавить ключ подписи в контекст GPGME"
 
-#: src/cryptography.c:342
+#: src/cryptography.c:360
 msgid "Failed to sign GPGME data from memory"
 msgstr "Не удалось подписать данные GPGME в памяти"
 
-#: src/cryptography.c:348
+#: src/cryptography.c:366
 msgid "Failed to verify GPGME data from memory"
 msgstr "Не удалось проверить данные GPGME в памяти"
 
-#: src/cryptography.c:390
+#: src/cryptography.c:408
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s удалён для подготовки перезаписи"
 
-#: src/cryptography.c:417
+#: src/cryptography.c:435
 msgid "Failed to create new GPGME input data from file"
 msgstr "Не удалось создать новые входные данные GPGME из файла"
 
-#: src/cryptography.c:424
+#: src/cryptography.c:442
 msgid "Failed to set file name of GPGME input data"
 msgstr "Не удалось задать имя файла входных данных GPGME"
 
-#: src/cryptography.c:439
+#: src/cryptography.c:457
 msgid "Failed to set file name of GPGME output data"
 msgstr "Не удалось задать имя файла выходных данных GPGME"
 
-#: src/cryptography.c:449
+#: src/cryptography.c:467
 msgid "Failed to encrypt GPGME data from file"
 msgstr "Не удалось зашифровать данные GPGME из файла"
 
-#: src/cryptography.c:454
+#: src/cryptography.c:472
 msgid "Failed to decrypt GPGME data from file"
 msgstr "Не удалось расшифровать данные GPGME из файла"
 
-#: src/cryptography.c:461
+#: src/cryptography.c:479
 msgid "Failed to sign GPGME data from file"
 msgstr "Не удалось подписать данные GPGME из файла"
 
-#: src/cryptography.c:467
+#: src/cryptography.c:485
 msgid "Failed to verify GPGME data from file"
 msgstr "Не удалось проверить данные GPGME из файла"
 
-#: src/cryptography.c:483
+#: src/cryptography.c:501
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Не удалось открыть выходной файл: %s"
@@ -597,6 +623,11 @@ msgstr "Удалить ключ"
 msgid "Export public key to file"
 msgstr "Экспортировать открытый ключ в файл"
 
+#: data/ui/keyrow.blp:38
+#, fuzzy
+msgid "Edit expiry date"
+msgstr "Посмотр дат истечения срока действия"
+
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr ""
@@ -616,7 +647,7 @@ msgid "Process text and files:"
 msgstr "Обработка текста и файлов:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:74
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:75
 msgid "Encryption"
 msgstr "Шифрование"
 
@@ -653,36 +684,44 @@ msgid "View expiry dates"
 msgstr "Посмотр дат истечения срока действия"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
+msgid "Update expiry dates of expired keys"
+msgstr ""
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
 msgstr "Удаление ключей"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:46
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:47
 msgid "Light Appearance"
 msgstr "Светлая тема"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:50
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:51
 msgid "Dark Appearance"
 msgstr "Тёмная тема"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:54
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:55
 msgid "Key Management"
 msgstr "Управление ключами"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:58
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:59
 msgid "Keypair Generation"
 msgstr "Генерация пары ключей"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:62
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:63
 msgid "File processing"
 msgstr "Обработка файлов"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:66
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:67
 msgid "Plain text"
 msgstr "Обычный текст"
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Диалог выбора ключей"
+
+#, fuzzy
+#~ msgid "Expiry update failed"
+#~ msgstr "Не удалось экспортировать"
 
 #~ msgid "Remove key and subkeys?"
 #~ msgstr "Удалить ключ и подключи?"

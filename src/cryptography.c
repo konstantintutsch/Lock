@@ -157,11 +157,13 @@ bool key_generate(const char *userid, const char *sign_algorithm,
  *
  * @param path Path of the file to import or export. Can be NULL
  * @param fingerprint Fingerprint of the key to export or remove. Can be NULL
+ * @param expires expires parameter for gpgme_op_setexpire. Can be 0
  * @param flags Processing options
  *
  * @return Success
  */
-bool key_manage(const char *path, const char *fingerprint, key_flags flags)
+bool key_manage(const char *path, const char *fingerprint,
+                const unsigned long expires, key_flags flags)
 {
     gpgme_ctx_t context;
     gpgme_data_t keydata;
@@ -240,6 +242,22 @@ bool key_manage(const char *path, const char *fingerprint, key_flags flags)
 
         free(armor);
         armor = NULL;
+    }
+
+    if (flags & EXPIRE) {
+        gpgme_key_t key;
+
+        error = gpgme_get_key(context, fingerprint, &key, 0);
+        HANDLE_ERROR(false, error,
+                     _("Failed to get GPG key for expiry editing"), context,);
+
+        error = gpgme_op_setexpire(context, key, expires, NULL, 0);
+        HANDLE_ERROR(false, error, _("Failed to update the expiry time"),
+                     context, gpgme_key_release(key);
+            );
+
+        /* Cleanup */
+        gpgme_key_release(key);
     }
 
     if (flags & REMOVE) {

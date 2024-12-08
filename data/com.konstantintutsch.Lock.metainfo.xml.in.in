@@ -20,6 +20,7 @@
             <li>Import keys</li>
             <li>Export public keys</li>
             <li>View expiry dates</li>
+            <li>Update expiry dates of expired keys</li>
             <li>Remove keys</li>
         </ul>
     </description>

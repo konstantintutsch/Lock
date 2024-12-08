@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-07 12:30+0100\n"
+"POT-Creation-Date: 2024-12-08 14:52+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -115,77 +115,92 @@ msgstr "Tekst on verifitseeritud"
 msgid "File verified"
 msgstr "Fail on verifitseeritud"
 
-#: src/managementdialog.c:367
+#: src/managementdialog.c:368
 msgid "Import failed"
 msgstr "Importimine ei õnnestunud"
 
-#: src/managementdialog.c:369
+#: src/managementdialog.c:370
 msgid "Keys imported"
 msgstr "Võtmed on imporditud"
 
-#: src/managementdialog.c:465
+#: src/managementdialog.c:466
 msgid "Generation failed"
 msgstr "Võtmete loomine ei õnnestunud"
 
-#: src/managementdialog.c:467
+#: src/managementdialog.c:468
 msgid "Keypair generated"
 msgstr "Võtmepaar on loodud"
 
-#: src/keyrow.c:95
+#: src/keyrow.c:119
 msgid "Key does not expire"
 msgstr "Võti ei aegu"
 
-#: src/keyrow.c:99
+#: src/keyrow.c:123
+#, fuzzy, c-format
+msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
+msgid "Expired %s at %s"
+msgstr "Aegub %s %s"
+
+#: src/keyrow.c:125
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
 msgstr "Aegub %s %s"
 
-#: src/keyrow.c:126
+#: src/keyrow.c:156
 msgid "Fingerprint copied"
 msgstr "Sõrmejälg on kopeeritud"
 
-#: src/keyrow.c:220
+#: src/keyrow.c:250
 msgid "Export failed"
 msgstr "Eksportimine ei õnnestunud"
 
-#: src/keyrow.c:222
+#: src/keyrow.c:252
 msgid "Key exported"
 msgstr "Võti on eksporditud"
 
-#: src/keyrow.c:267
+#: src/keyrow.c:297
 #, fuzzy
 msgid "Remove key?"
 msgstr "_Eemalda"
 
-#: src/keyrow.c:270
+#: src/keyrow.c:300
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr "%s võtme eemaldamist ei saa tagasi pöörata!"
 
-#: src/keyrow.c:273
+#: src/keyrow.c:303
 msgid "_Cancel"
 msgstr "_Katkesta"
 
-#: src/keyrow.c:274
+#: src/keyrow.c:304
 msgid "_Remove"
 msgstr "_Eemalda"
 
-#: src/keyrow.c:315
+#: src/keyrow.c:345
 msgid "Removal failed"
 msgstr "Eemaldamine ei õnnestunud"
 
-#: src/keyrow.c:317
+#: src/keyrow.c:347
 msgid "Key removed"
 msgstr "Võti on eemaldatud"
 
+#: src/keyrow.c:397
+#, fuzzy
+msgid "Renewal failed"
+msgstr "Eemaldamine ei õnnestunud"
+
+#: src/keyrow.c:399
+msgid "Expiry renewed"
+msgstr ""
+
 #: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
-#: src/cryptography.c:172 src/cryptography.c:291 src/cryptography.c:402
+#: src/cryptography.c:174 src/cryptography.c:309 src/cryptography.c:420
 msgid "Failed to create new GPGME context"
 msgstr ""
 
 #: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
-#: src/cryptography.c:176 src/cryptography.c:295 src/cryptography.c:406
+#: src/cryptography.c:178 src/cryptography.c:313 src/cryptography.c:424
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr ""
 
@@ -205,101 +220,109 @@ msgstr ""
 msgid "Failed to delete unfinished, generated key"
 msgstr ""
 
-#: src/cryptography.c:182
+#: src/cryptography.c:184
 msgid "Failed to load GPGME key data from file"
 msgstr ""
 
-#: src/cryptography.c:188
+#: src/cryptography.c:190
 msgid "Failed to import GPG key from file"
 msgstr ""
 
-#: src/cryptography.c:199
+#: src/cryptography.c:201
 msgid "Failed to create GPGME key data in memory"
 msgstr ""
 
-#: src/cryptography.c:205
+#: src/cryptography.c:207
 msgid "Failed to export GPG key(s) to file"
 msgstr ""
 
-#: src/cryptography.c:220
+#: src/cryptography.c:222
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr ""
 
-#: src/cryptography.c:250
+#: src/cryptography.c:252
+msgid "Failed to get GPG key for expiry editing"
+msgstr ""
+
+#: src/cryptography.c:255
+msgid "Failed to update the expiry time"
+msgstr ""
+
+#: src/cryptography.c:268
 msgid "Failed to get GPG key for removal"
 msgstr ""
 
-#: src/cryptography.c:254
+#: src/cryptography.c:272
 msgid "Failed to remove GPG key"
 msgstr ""
 
-#: src/cryptography.c:300 src/cryptography.c:411
+#: src/cryptography.c:318 src/cryptography.c:429
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr ""
 
-#: src/cryptography.c:307
+#: src/cryptography.c:325
 msgid "Failed to create new GPGME input data from string"
 msgstr ""
 
-#: src/cryptography.c:312 src/cryptography.c:431
+#: src/cryptography.c:330 src/cryptography.c:449
 msgid "Failed to create new GPGME output data in memory"
 msgstr ""
 
-#: src/cryptography.c:321
+#: src/cryptography.c:339
 msgid "Failed to encrypt GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:327
+#: src/cryptography.c:345
 msgid "Failed to decrypt GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:335
+#: src/cryptography.c:353
 msgid "Failed to add signing key to GPGME context"
 msgstr ""
 
-#: src/cryptography.c:342
+#: src/cryptography.c:360
 msgid "Failed to sign GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:348
+#: src/cryptography.c:366
 msgid "Failed to verify GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:390
+#: src/cryptography.c:408
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr ""
 
-#: src/cryptography.c:417
+#: src/cryptography.c:435
 msgid "Failed to create new GPGME input data from file"
 msgstr ""
 
-#: src/cryptography.c:424
+#: src/cryptography.c:442
 msgid "Failed to set file name of GPGME input data"
 msgstr ""
 
-#: src/cryptography.c:439
+#: src/cryptography.c:457
 msgid "Failed to set file name of GPGME output data"
 msgstr ""
 
-#: src/cryptography.c:449
+#: src/cryptography.c:467
 msgid "Failed to encrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:454
+#: src/cryptography.c:472
 msgid "Failed to decrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:461
+#: src/cryptography.c:479
 msgid "Failed to sign GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:467
+#: src/cryptography.c:485
 msgid "Failed to verify GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:483
+#: src/cryptography.c:501
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr ""
@@ -599,6 +622,10 @@ msgstr ""
 msgid "Export public key to file"
 msgstr ""
 
+#: data/ui/keyrow.blp:38
+msgid "Edit expiry date"
+msgstr ""
+
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr ""
@@ -614,7 +641,7 @@ msgid "Process text and files:"
 msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:74
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:75
 msgid "Encryption"
 msgstr ""
 
@@ -651,36 +678,44 @@ msgid "View expiry dates"
 msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
+msgid "Update expiry dates of expired keys"
+msgstr ""
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
 msgstr ""
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:46
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:47
 msgid "Light Appearance"
 msgstr ""
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:50
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:51
 msgid "Dark Appearance"
 msgstr ""
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:54
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:55
 msgid "Key Management"
 msgstr ""
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:58
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:59
 msgid "Keypair Generation"
 msgstr ""
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:62
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:63
 msgid "File processing"
 msgstr ""
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:66
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:67
 msgid "Plain text"
 msgstr ""
 
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:70
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Expiry update failed"
+#~ msgstr "Eksportimine ei õnnestunud"
 
 #~ msgid "Remove key and subkeys?"
 #~ msgstr "Kas eemaldame võtme koos alamvõtmetega?"
