@@ -6,296 +6,282 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-08 18:22+0100\n"
-"PO-Revision-Date: 2024-12-09 13:29+0000\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
-"fi/>\n"
-"Language: fi\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
 
 #: src/main.c:32
 #, c-format
 msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
 msgid "GnuPG Made Easy %s or greater required. Using %s."
-msgstr "GnuPG Made Easy %s tai uudempi vaaditaan. Käytössä %s."
+msgstr ""
 
 #. Details
 #: src/application.c:203 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
-msgstr "Käsittele tietoja GnuPG:llä"
+msgstr ""
 
 #: src/application.c:205
 msgctxt "Button linking to translations"
 msgid "Translate"
-msgstr "Käännä"
+msgstr ""
 
 #: src/application.c:208
 msgctxt "Button linking to source code"
 msgid "Develop"
-msgstr "Kehitä"
+msgstr ""
 
 #: src/application.c:220
 msgid "translator-credits"
-msgstr "Jiri Grönroos"
+msgstr ""
 
 #: src/application.c:225
 msgid "Dependencies"
-msgstr "Riippuvuudet"
+msgstr ""
 
 #: src/window.c:156
 msgid "Enter text …"
-msgstr "Kirjoita tekstiä…"
+msgstr ""
 
 #: src/window.c:458
 msgid "Text copied"
-msgstr "Teksti kopioitu"
+msgstr ""
 
 #: src/window.c:527
 #, c-format
 msgid "Could not read text from clipboard: %s"
-msgstr "Ei voitu lukea leikepöydältä: %s"
+msgstr ""
 
 #: src/window.c:536
 msgid "Text pasted"
-msgstr "Teksti liitetty"
+msgstr ""
 
 #: src/window.c:788 src/window.c:850
 msgid "Encryption failed"
-msgstr "Salaaminen epäonnistui"
+msgstr ""
 
 #: src/window.c:790
 msgid "Text encrypted"
-msgstr "Teksti salattu"
+msgstr ""
 
 #: src/window.c:852
 msgid "File encrypted"
-msgstr "Tiedosto salattu"
+msgstr ""
 
 #: src/window.c:908 src/window.c:966
 msgid "Decryption failed"
-msgstr "Salauksen purkaminen epäonnistui"
+msgstr ""
 
 #: src/window.c:910
 msgid "Text decrypted"
-msgstr "Tekstin salaus purettu"
+msgstr ""
 
 #: src/window.c:968
 msgid "File decrypted"
-msgstr "Tiedoston salaus purettu"
+msgstr ""
 
 #: src/window.c:1075 src/window.c:1137
 msgid "Signing failed"
-msgstr "Allekirjoittaminen epäonnistui"
+msgstr ""
 
 #: src/window.c:1077
 msgid "Text signed"
-msgstr "Teksti allekirjoitettu"
+msgstr ""
 
 #: src/window.c:1139
 msgid "File signed"
-msgstr "Tiedosto allekirjoitettu"
+msgstr ""
 
 #: src/window.c:1195 src/window.c:1253
 msgid "Verification failed"
-msgstr "Vahvistaminen epäonnistui"
+msgstr ""
 
 #: src/window.c:1197
 msgid "Text verified"
-msgstr "Teksti vahvistettu"
+msgstr ""
 
 #: src/window.c:1255
 msgid "File verified"
-msgstr "Tiedosto vahvistettu"
+msgstr ""
 
 #: src/managementdialog.c:339
 msgid "Import failed"
-msgstr "Tuonti epäonnistui"
+msgstr ""
 
 #: src/managementdialog.c:341
 msgid "Keys imported"
-msgstr "Avaimet tuotu"
+msgstr ""
 
 #: src/managementdialog.c:437
 msgid "Generation failed"
-msgstr "Luominen epäonnistui"
+msgstr ""
 
 #: src/managementdialog.c:439
 msgid "Keypair generated"
-msgstr "Avainpari luotu"
+msgstr ""
 
 #: src/keyrow.c:128
 msgid "Key does not expire"
-msgstr "Avain ei vanhene"
+msgstr ""
 
 #: src/keyrow.c:132
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
-msgstr "Vanheni %s klo %s"
+msgstr ""
 
 #: src/keyrow.c:134
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
-msgstr "Vanhenee %s klo %s"
+msgstr ""
 
 #: src/keyrow.c:174
 msgid "Fingerprint copied"
-msgstr "Sormenjälki kopioitu"
+msgstr ""
 
 #: src/keyrow.c:268
 msgid "Export failed"
-msgstr "Vienti epäonnistui"
+msgstr ""
 
 #: src/keyrow.c:270
 msgid "Key exported"
-msgstr "Avain viety"
+msgstr ""
 
 #: src/keyrow.c:315
 msgid "Remove key?"
-msgstr "Poistetaanko avain?"
+msgstr ""
 
 #: src/keyrow.c:318
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
-msgstr "Avaimen %s poistamista ei voi perua!"
+msgstr ""
 
 #: src/keyrow.c:321
 msgid "_Cancel"
-msgstr "_Peru"
+msgstr ""
 
 #: src/keyrow.c:322
 msgid "_Remove"
-msgstr "P_oista"
+msgstr ""
 
 #: src/keyrow.c:363
 msgid "Removal failed"
-msgstr "Poistaminen epäonnistui"
+msgstr ""
 
 #: src/keyrow.c:365
 msgid "Key removed"
-msgstr "Avain poistettu"
+msgstr ""
 
 #: src/keyrow.c:415
 msgid "Renewal failed"
-msgstr "Uusiminen epäonnistui"
+msgstr ""
 
 #: src/keyrow.c:417
 msgid "Expiry renewed"
-msgstr "Vanheneminen uusittiin"
+msgstr ""
 
 #: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
 #: src/cryptography.c:174 src/cryptography.c:309 src/cryptography.c:420
 msgid "Failed to create new GPGME context"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
 #: src/cryptography.c:178 src/cryptography.c:313 src/cryptography.c:424
 msgid "Failed to set protocol of GPGME context to OpenPGP"
-msgstr "GPGME-kontekstin protokollan asettaminen OpenPGP:lle epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:51
 msgid "Failed to obtain key by fingerprint"
-msgstr "Avainta ei saatu sormenjälkeen perustuen"
+msgstr ""
 
 #: src/cryptography.c:93
 msgid "Failed to find key matching User ID"
-msgstr "Käyttäjätunnistetta vastaavan avaimen löytäminen epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:133 src/cryptography.c:141
 msgid "Failed to generate new GPG key for signing"
-msgstr "Uuden GPG-avaimen luominen allekirjoitusta varten epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:147
-#, fuzzy
 msgid "Failed to delete unfinished, generated key"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:184
 msgid "Failed to load GPGME key data from file"
-msgstr "GPGME-avaimen lataaminen tiedostosta epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:190
 msgid "Failed to import GPG key from file"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:201
-#, fuzzy
 msgid "Failed to create GPGME key data in memory"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:207
 msgid "Failed to export GPG key(s) to file"
-msgstr "GPG-avaimen tai -avainten vieminen tiedostoon epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:222
 #, c-format
 msgid "Failed to open export file: %s"
-msgstr "Vientitiedoston avaaminen epäonnistui: %s"
+msgstr ""
 
 #: src/cryptography.c:252
-#, fuzzy
 msgid "Failed to get GPG key for expiry editing"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:255
 msgid "Failed to update the expiry time"
-msgstr "Vanhenemisajan päivittäminen epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:268
-#, fuzzy
 msgid "Failed to get GPG key for removal"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:272
 msgid "Failed to remove GPG key"
-msgstr "GPG-avaimen poistaminen epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:318 src/cryptography.c:429
-#, fuzzy
 msgid "Failed to set pinentry mode of GPGME context to ask"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:325
-#, fuzzy
 msgid "Failed to create new GPGME input data from string"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:330 src/cryptography.c:449
-#, fuzzy
 msgid "Failed to create new GPGME output data in memory"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:339
-#, fuzzy
 msgid "Failed to encrypt GPGME data from memory"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:345
-#, fuzzy
 msgid "Failed to decrypt GPGME data from memory"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:353
 msgid "Failed to add signing key to GPGME context"
-msgstr "Allekirjoitusavaimen lisääminen GPGME-kontekstiin epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:360
-#, fuzzy
 msgid "Failed to sign GPGME data from memory"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:366
-#, fuzzy
 msgid "Failed to verify GPGME data from memory"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:408
 #, c-format
@@ -303,39 +289,32 @@ msgid "Removed %s to prepare overwriting"
 msgstr ""
 
 #: src/cryptography.c:435
-#, fuzzy
 msgid "Failed to create new GPGME input data from file"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:442
-#, fuzzy
 msgid "Failed to set file name of GPGME input data"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:457
-#, fuzzy
 msgid "Failed to set file name of GPGME output data"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:467
-#, fuzzy
 msgid "Failed to encrypt GPGME data from file"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:472
-#, fuzzy
 msgid "Failed to decrypt GPGME data from file"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:479
-#, fuzzy
 msgid "Failed to sign GPGME data from file"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:485
-#, fuzzy
 msgid "Failed to verify GPGME data from file"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr ""
 
 #: src/cryptography.c:501
 #, c-format
@@ -344,411 +323,384 @@ msgstr ""
 
 #: src/threading.c:57
 msgid "Failed to create text encryption thread"
-msgstr "Tekstisalauksen säikeen luominen epäonnistui"
+msgstr ""
 
 #: src/threading.c:79
 msgid "Failed to create file encryption thread"
-msgstr "Tiedostosalauksen säikeen luominen epäonnistui"
+msgstr ""
 
 #: src/threading.c:100
-#, fuzzy
 msgid "Failed to create text decryption thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/threading.c:118
-#, fuzzy
 msgid "Failed to create file decryption thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/threading.c:140
-#, fuzzy
 msgid "Failed to create text signing thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/threading.c:162
-#, fuzzy
 msgid "Failed to create file signing thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/threading.c:183
-#, fuzzy
 msgid "Failed to create text verification thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/threading.c:201
-#, fuzzy
 msgid "Failed to create file verification thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/threading.c:216
-#, fuzzy
 msgid "Failed to create key import thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/threading.c:237
-#, fuzzy
 msgid "Failed to create key generation thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/threading.c:252
-#, fuzzy
 msgid "Failed to create key export thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: src/threading.c:264
-#, fuzzy
 msgid "Failed to create key removal thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr ""
 
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
 msgid "General"
-msgstr "Yleiset"
+msgstr ""
 
 #: data/ui/shortcuts.blp:13
 msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
-msgstr "Näytä pikanäppäimet"
+msgstr ""
 
 #: data/ui/shortcuts.blp:20
 msgid "Copy text view to clipboard"
-msgstr "Kopioi tekstinäkymä leikepöydälle"
+msgstr ""
 
 #: data/ui/shortcuts.blp:27
 msgid "Overwrite text view with clipboard"
-msgstr "Ylikirjoita tekstinäkymä leikepöydän sisällöllä"
+msgstr ""
 
 #: data/ui/shortcuts.blp:35
 msgctxt "Shortcuts Group"
 msgid "Cryptography"
-msgstr "Salakirjoitus"
+msgstr ""
 
 #: data/ui/shortcuts.blp:38
 msgid "Encrypt text"
-msgstr "Salaa teksti"
+msgstr ""
 
 #: data/ui/shortcuts.blp:45
 msgid "Decrypt text"
-msgstr "Pura tekstin salaus"
+msgstr ""
 
 #: data/ui/shortcuts.blp:52
 msgid "Sign text"
-msgstr "Allekirjoita teksti"
+msgstr ""
 
 #: data/ui/shortcuts.blp:59
 msgid "Verify text"
-msgstr "Vahvista teksti"
+msgstr ""
 
 #: data/ui/window.blp:9 data/ui/window.blp:194
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
-msgstr "Lock"
+msgstr ""
 
 #: data/ui/window.blp:29
 msgid "Copy"
-msgstr "Kopioi"
+msgstr ""
 
 #: data/ui/window.blp:30
 msgid "Copy the text"
-msgstr "Kopioi teksti"
+msgstr ""
 
 #: data/ui/window.blp:33
 msgid "Cryptography operations"
-msgstr "Salakirjoituksen toiminnot"
+msgstr ""
 
 #: data/ui/window.blp:50
 msgid "Processing …"
-msgstr "Käsitellään…"
+msgstr ""
 
 #: data/ui/window.blp:55
 msgid "Main Menu"
-msgstr "Päävalikko"
+msgstr ""
 
 #: data/ui/window.blp:66
 msgid "Text"
-msgstr "Teksti"
+msgstr ""
 
 #: data/ui/window.blp:84
 msgid "File"
-msgstr "Tiedosto"
+msgstr ""
 
 #: data/ui/window.blp:93
 msgid "No files selected for processing"
-msgstr "Tiedostoja ei ole valittu käsiteltäväksi"
+msgstr ""
 
 #: data/ui/window.blp:114
 msgid "Input File"
-msgstr "Käsiteltävä tiedosto"
+msgstr ""
 
 #: data/ui/window.blp:123
 msgid "Select input file"
-msgstr "Valitse käsiteltävä tiedosto"
+msgstr ""
 
 #: data/ui/window.blp:130
 msgid "Output File"
-msgstr "Käsitelty tiedosto"
+msgstr ""
 
 #: data/ui/window.blp:139
 msgid "Select output file"
-msgstr "Valitse käsitelty tiedosto"
+msgstr ""
 
 #: data/ui/window.blp:155 data/ui/window.blp:219
 msgid "Encrypt"
-msgstr "Salaa"
+msgstr ""
 
 #: data/ui/window.blp:162 data/ui/window.blp:223
 msgid "Decrypt"
-msgstr "Pura salaus"
+msgstr ""
 
 #: data/ui/window.blp:169 data/ui/window.blp:229
 msgid "Sign"
-msgstr "Allekirjoita"
+msgstr ""
 
 #: data/ui/window.blp:176 data/ui/window.blp:241
 msgid "Verify"
-msgstr "Vahvista"
+msgstr ""
 
 #: data/ui/window.blp:200 data/ui/managementdialog.blp:30
 msgid "Manage keys"
-msgstr "Hallitse avaimia"
+msgstr ""
 
 #: data/ui/window.blp:206
 msgid "Keyboard Shortcuts"
-msgstr "Pikanäppäimet"
+msgstr ""
 
 #: data/ui/window.blp:210
 msgid "About Lock"
-msgstr "Tietoja - Lock"
+msgstr ""
 
 #: data/ui/window.blp:233
 msgid "Sign (Clear Text)"
-msgstr "Allekirjoita (raakateksti)"
+msgstr ""
 
 #: data/ui/window.blp:237
 msgid "Sign (Detached)"
-msgstr "Allekirjoita (erillinen)"
+msgstr ""
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
-msgstr "Valitse avain"
+msgstr ""
 
 #: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
 msgid "Refresh keys"
-msgstr "Päivitä avaimet"
+msgstr ""
 
 #: data/ui/selectiondialog.blp:68
 msgid "No capable keys available"
-msgstr "Kykeneviä avaimia ei ole saatavilla"
+msgstr ""
 
 #: data/ui/selectiondialog.blp:69
 msgid ""
 "Your GnuPG keyring does not contain any keys that support this functionality."
 msgstr ""
-"GnuPG-avainnippusi ei sisällä yhtäkään avainta, joka tukee tätä "
-"toiminnallisuutta."
 
 #: data/ui/managementdialog.blp:68
 msgid "No keys available"
-msgstr "Avaimia ei ole saatavilla"
+msgstr ""
 
 #: data/ui/managementdialog.blp:69
 msgid "Your GnuPG keyring does not contain any keys."
-msgstr "GnuPG-avainnippusi ei sisällä yhtäkään avainta."
+msgstr ""
 
 #: data/ui/managementdialog.blp:89
 msgctxt "Import keys from files"
 msgid "Import"
-msgstr "Tuo"
+msgstr ""
 
 #: data/ui/managementdialog.blp:90
 msgid "Import keys from files"
-msgstr "Tuo avaimet tiedostoista"
+msgstr ""
 
 #: data/ui/managementdialog.blp:97
 msgid "Create a new keypair"
-msgstr "Luo uusi avainpari"
+msgstr ""
 
 #: data/ui/managementdialog.blp:110
 msgid "Generate keypair"
-msgstr "Luo avainpari"
+msgstr ""
 
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name (Mandatory)"
-msgstr "Nimi (pakollinen)"
+msgstr ""
 
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
-msgstr "Sähköposti"
+msgstr ""
 
 #: data/ui/managementdialog.blp:151
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
-msgstr "Kommentti"
+msgstr ""
 
 #: data/ui/managementdialog.blp:156
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
-msgstr "Allekirjoitusalgoritmi"
+msgstr ""
 
 #: data/ui/managementdialog.blp:157
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
-msgstr "Avain"
+msgstr ""
 
 #: data/ui/managementdialog.blp:165
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
-msgstr "Salausalgoritmi"
+msgstr ""
 
 #: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
-msgstr "Aliavain"
+msgstr ""
 
 #: data/ui/managementdialog.blp:174
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
-msgstr "Vanheneminen"
+msgstr ""
 
 #: data/ui/managementdialog.blp:175
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
-msgstr "Kuukaudet, nolla tarkoittaa ei vanhenemista"
+msgstr ""
 
 #: data/ui/managementdialog.blp:197
 msgctxt "Generate a new keypair"
 msgid "Generate"
-msgstr "Luo"
+msgstr ""
 
 #: data/ui/managementdialog.blp:198
 msgid "Generate a new keypair"
-msgstr "Luo uusi avainpari"
+msgstr ""
 
 #: data/ui/keyrow.blp:5
 msgid "User ID"
-msgstr "Käyttäjätunniste"
+msgstr ""
 
 #: data/ui/keyrow.blp:6
 msgid "Fingerprint"
-msgstr "Sormenjälki"
+msgstr ""
 
 #: data/ui/keyrow.blp:7
 msgid "Expiry"
-msgstr "Vanheneminen"
+msgstr ""
 
 #: data/ui/keyrow.blp:20
 msgid "Remove key"
-msgstr "Poista avain"
+msgstr ""
 
 #: data/ui/keyrow.blp:27
 msgid "Export public key to file"
-msgstr "Vie julkinen avain tiedostoon"
+msgstr ""
 
 #: data/ui/keyrow.blp:38
 msgid "Edit expiry date"
-msgstr "Muokkaa vanhenemispäivää"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr ""
-"gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;salaa;salaus;"
-"allekirjoita;allekirjoitus;vahvista;vahvistus;"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
 msgid ""
 "Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
 "LibAdwaita GUI."
 msgstr ""
-"Lock on graafinen käyttöliittymä GnuPG:lle (GPG), joka hyödyntää nättiä "
-"LibAdwaita-käyttöliittymää."
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
 msgid "Process text and files:"
-msgstr "Käsittele tekstiä ja tiedostoja:"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:75
 msgid "Encryption"
-msgstr "Salaus"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
 msgid "Decryption"
-msgstr "Salauksen purku"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:14
 msgid "Signing"
-msgstr "Allekirjoitus"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:15
 msgid "Verification"
-msgstr "Vahvistus"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:17
 msgid "Manage your GnuPG keyring:"
-msgstr "Hallitse GnuPG-avainnippua:"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
 msgid "Generate new keypairs"
-msgstr "Luo uusia avainpareja"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
 msgid "Import keys"
-msgstr "Tuo avaimia"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:21
 msgid "Export public keys"
-msgstr "Vie julkisia avaimia"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
 msgid "View expiry dates"
-msgstr "Näytä vanhenemispäivät"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
 msgid "Update expiry dates of expired keys"
-msgstr "Päivitä vanhentuneiden avainten vanhenemispäivät"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
-msgstr "Poista avaimia"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:47
 msgid "Light Appearance"
-msgstr "Vaalea ulkoasu"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:51
 msgid "Dark Appearance"
-msgstr "Tumma ulkoasu"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:55
 msgid "Key Management"
-msgstr "Avainhallinta"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:59
 msgid "Keypair Generation"
-msgstr "Avainparin luonti"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:63
 msgid "File processing"
-msgstr "Tiedoston käsittely"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:67
 msgid "Plain text"
-msgstr "Raakateksti"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
-msgstr "Avaimen valinnan ikkuna"
-
-#, fuzzy
-#~ msgid "Expiry update failed"
-#~ msgstr "Vienti epäonnistui"
-
-#~ msgid "Remove key and subkeys?"
-#~ msgstr "Poistetaanko avain ja aliavaimet?"
-
-#~ msgctxt "Name of the UID of the new keypair"
-#~ msgid "Name"
-#~ msgstr "Nimi"
+msgstr ""
