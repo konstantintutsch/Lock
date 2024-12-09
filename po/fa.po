@@ -6,15 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2024-12-08 18:22+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-12-10 10:58+0000\n"
+"Last-Translator: Reza Hosseinzadeh <rezahsnzdh@protonmail.com>\n"
+"Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
+"fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -26,17 +29,17 @@ msgstr ""
 #: src/application.c:203 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
-msgstr ""
+msgstr "پردازش داده با گنوپی‌جی"
 
 #: src/application.c:205
 msgctxt "Button linking to translations"
 msgid "Translate"
-msgstr ""
+msgstr "ترجمه کردن"
 
 #: src/application.c:208
 msgctxt "Button linking to source code"
 msgid "Develop"
-msgstr ""
+msgstr "توسعه دادن"
 
 #: src/application.c:220
 msgid "translator-credits"
@@ -44,125 +47,125 @@ msgstr ""
 
 #: src/application.c:225
 msgid "Dependencies"
-msgstr ""
+msgstr "وابستگی‌ها"
 
 #: src/window.c:156
 msgid "Enter text …"
-msgstr ""
+msgstr "متن را وارد کنید…"
 
 #: src/window.c:458
 msgid "Text copied"
-msgstr ""
+msgstr "متن رونوشت شد"
 
 #: src/window.c:527
 #, c-format
 msgid "Could not read text from clipboard: %s"
-msgstr ""
+msgstr "ناتوانی در خواندن متن از تخته‌گیره: %s"
 
 #: src/window.c:536
 msgid "Text pasted"
-msgstr ""
+msgstr "متن چسبانده شد"
 
 #: src/window.c:788 src/window.c:850
 msgid "Encryption failed"
-msgstr ""
+msgstr "رمزنگاری شکست خورد"
 
 #: src/window.c:790
 msgid "Text encrypted"
-msgstr ""
+msgstr "متن رمزنگاری شد"
 
 #: src/window.c:852
 msgid "File encrypted"
-msgstr ""
+msgstr "پرونده رمزنگاری شد"
 
 #: src/window.c:908 src/window.c:966
 msgid "Decryption failed"
-msgstr ""
+msgstr "رمزگشایی شکست خورد"
 
 #: src/window.c:910
 msgid "Text decrypted"
-msgstr ""
+msgstr "متن رمزگشایی شد"
 
 #: src/window.c:968
 msgid "File decrypted"
-msgstr ""
+msgstr "پرونده رمزگشایی شد"
 
 #: src/window.c:1075 src/window.c:1137
 msgid "Signing failed"
-msgstr ""
+msgstr "امضا کردن شکست خورد"
 
 #: src/window.c:1077
 msgid "Text signed"
-msgstr ""
+msgstr "متن امضا شد"
 
 #: src/window.c:1139
 msgid "File signed"
-msgstr ""
+msgstr "پرونده امضا شد"
 
 #: src/window.c:1195 src/window.c:1253
 msgid "Verification failed"
-msgstr ""
+msgstr "اعتبارسنجی شکست خورد"
 
 #: src/window.c:1197
 msgid "Text verified"
-msgstr ""
+msgstr "متن اعتبارسنجی شد"
 
 #: src/window.c:1255
 msgid "File verified"
-msgstr ""
+msgstr "پرونده اعتبارسنجی شد"
 
 #: src/managementdialog.c:339
 msgid "Import failed"
-msgstr ""
+msgstr "ورود شکست خورد"
 
 #: src/managementdialog.c:341
 msgid "Keys imported"
-msgstr ""
+msgstr "کلیدها وارد شدند"
 
 #: src/managementdialog.c:437
 msgid "Generation failed"
-msgstr ""
+msgstr "تولید شکست خورد"
 
 #: src/managementdialog.c:439
 msgid "Keypair generated"
-msgstr ""
+msgstr "جفت‌کلید تولید شد"
 
 #: src/keyrow.c:128
 msgid "Key does not expire"
-msgstr ""
+msgstr "کلید منقضی نمیشود"
 
 #: src/keyrow.c:132
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
-msgstr ""
+msgstr "در ساعت %s تاریخ %s منقضی شد"
 
 #: src/keyrow.c:134
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
-msgstr ""
+msgstr "در ساعت %s تاریخ %s منقضی میشود"
 
 #: src/keyrow.c:174
 msgid "Fingerprint copied"
-msgstr ""
+msgstr "اثر انگشت رونوشت شد"
 
 #: src/keyrow.c:268
 msgid "Export failed"
-msgstr ""
+msgstr "صدور شکست خورد"
 
 #: src/keyrow.c:270
 msgid "Key exported"
-msgstr ""
+msgstr "کلید صادر شد"
 
 #: src/keyrow.c:315
 msgid "Remove key?"
-msgstr ""
+msgstr "کلید را حذف میکنید؟"
 
 #: src/keyrow.c:318
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
-msgstr ""
+msgstr "حذف کردن کلید %s نمیتواند ناتمام بماند!"
 
 #: src/keyrow.c:321
 msgid "_Cancel"
@@ -174,33 +177,33 @@ msgstr ""
 
 #: src/keyrow.c:363
 msgid "Removal failed"
-msgstr ""
+msgstr "حذف کردن شکست خورد"
 
 #: src/keyrow.c:365
 msgid "Key removed"
-msgstr ""
+msgstr "کلید حذف شد"
 
 #: src/keyrow.c:415
 msgid "Renewal failed"
-msgstr ""
+msgstr "تجدید شکست خورد"
 
 #: src/keyrow.c:417
 msgid "Expiry renewed"
-msgstr ""
+msgstr "انقضا تجدید شد"
 
 #: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
 #: src/cryptography.c:174 src/cryptography.c:309 src/cryptography.c:420
 msgid "Failed to create new GPGME context"
-msgstr ""
+msgstr "ساختن محتوای جدید GPGME شکست خورد"
 
 #: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
 #: src/cryptography.c:178 src/cryptography.c:313 src/cryptography.c:424
 msgid "Failed to set protocol of GPGME context to OpenPGP"
-msgstr ""
+msgstr "تنظیم کردن شیوه‌نامهٔ محتوای GPGME به اپن‌پی‌جی‌پی شکست خورد"
 
 #: src/cryptography.c:51
 msgid "Failed to obtain key by fingerprint"
-msgstr ""
+msgstr "گرفتن کلید با اثر انگشت شکست خورد"
 
 #: src/cryptography.c:93
 msgid "Failed to find key matching User ID"
@@ -208,7 +211,7 @@ msgstr ""
 
 #: src/cryptography.c:133 src/cryptography.c:141
 msgid "Failed to generate new GPG key for signing"
-msgstr ""
+msgstr "ساختن کلید جی‌پی‌جی جدید برای امضا کردن شکست خورد"
 
 #: src/cryptography.c:147
 msgid "Failed to delete unfinished, generated key"
@@ -216,19 +219,19 @@ msgstr ""
 
 #: src/cryptography.c:184
 msgid "Failed to load GPGME key data from file"
-msgstr ""
+msgstr "بار کردن دادهٔ کلید GPGME از پرونده شکست خورد"
 
 #: src/cryptography.c:190
 msgid "Failed to import GPG key from file"
-msgstr ""
+msgstr "وارد کردن کلید جی‌پی‌جی از پرونده شکست خورد"
 
 #: src/cryptography.c:201
 msgid "Failed to create GPGME key data in memory"
-msgstr ""
+msgstr "ساختن دادهٔ کلید GPGME در حافظه شکست خورد"
 
 #: src/cryptography.c:207
 msgid "Failed to export GPG key(s) to file"
-msgstr ""
+msgstr "صادر کردن کلید(های) جی‌پی‌جی به پرونده شکست خورد"
 
 #: src/cryptography.c:222
 #, c-format
@@ -265,23 +268,23 @@ msgstr ""
 
 #: src/cryptography.c:339
 msgid "Failed to encrypt GPGME data from memory"
-msgstr ""
+msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
 
 #: src/cryptography.c:345
 msgid "Failed to decrypt GPGME data from memory"
-msgstr ""
+msgstr "رمزگشایی دادهٔ GPGME از حافظه شکست خورد"
 
 #: src/cryptography.c:353
 msgid "Failed to add signing key to GPGME context"
-msgstr ""
+msgstr "اضافه کردن کلید امضا به محتوای GPGME شکست خورد"
 
 #: src/cryptography.c:360
 msgid "Failed to sign GPGME data from memory"
-msgstr ""
+msgstr "امضا کردن دادهٔ GPGME از حافظه شکست خورد"
 
 #: src/cryptography.c:366
 msgid "Failed to verify GPGME data from memory"
-msgstr ""
+msgstr "اعتبارسنجی دادهٔ GPGME از حافظه شکست خورد"
 
 #: src/cryptography.c:408
 #, c-format
@@ -290,11 +293,11 @@ msgstr ""
 
 #: src/cryptography.c:435
 msgid "Failed to create new GPGME input data from file"
-msgstr ""
+msgstr "ساختن دادهٔ ورودی جدید GPGME از پرونده شکست خورد"
 
 #: src/cryptography.c:442
 msgid "Failed to set file name of GPGME input data"
-msgstr ""
+msgstr "تنظیم کردن نام پروندهٔ دادهٔ ورودی GPGME شکست خورد"
 
 #: src/cryptography.c:457
 msgid "Failed to set file name of GPGME output data"
@@ -302,7 +305,7 @@ msgstr ""
 
 #: src/cryptography.c:467
 msgid "Failed to encrypt GPGME data from file"
-msgstr ""
+msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
 
 #: src/cryptography.c:472
 msgid "Failed to decrypt GPGME data from file"
@@ -310,11 +313,11 @@ msgstr ""
 
 #: src/cryptography.c:479
 msgid "Failed to sign GPGME data from file"
-msgstr ""
+msgstr "امضا کردن دادهٔ GPGME از پرونده شکست خورد"
 
 #: src/cryptography.c:485
 msgid "Failed to verify GPGME data from file"
-msgstr ""
+msgstr "اعتبارسنجی دادهٔ GPGME از پرونده شکست خورد"
 
 #: src/cryptography.c:501
 #, c-format
@@ -323,15 +326,15 @@ msgstr ""
 
 #: src/threading.c:57
 msgid "Failed to create text encryption thread"
-msgstr ""
+msgstr "ساختن رشتهٔ رمزنگاری متن شکست خورد"
 
 #: src/threading.c:79
 msgid "Failed to create file encryption thread"
-msgstr ""
+msgstr "ساختن رشتهٔ رمزنگاری پرونده شکست خورد"
 
 #: src/threading.c:100
 msgid "Failed to create text decryption thread"
-msgstr ""
+msgstr "ساختن رشتهٔ رمزگشایی متن شکست خورد"
 
 #: src/threading.c:118
 msgid "Failed to create file decryption thread"
@@ -339,15 +342,15 @@ msgstr ""
 
 #: src/threading.c:140
 msgid "Failed to create text signing thread"
-msgstr ""
+msgstr "ساختن رشتهٔ امضا کردن متن شکست خورد"
 
 #: src/threading.c:162
 msgid "Failed to create file signing thread"
-msgstr ""
+msgstr "ساختن رشتهٔ امضا کردن پرونده شکست خورد"
 
 #: src/threading.c:183
 msgid "Failed to create text verification thread"
-msgstr ""
+msgstr "ساختن رشتهٔ اعتبارسنجی متن شکست خورد"
 
 #: src/threading.c:201
 msgid "Failed to create file verification thread"
@@ -377,7 +380,7 @@ msgstr ""
 #: data/ui/shortcuts.blp:13
 msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
-msgstr ""
+msgstr "نمایش میانبرها"
 
 #: data/ui/shortcuts.blp:20
 msgid "Copy text view to clipboard"
@@ -394,25 +397,25 @@ msgstr ""
 
 #: data/ui/shortcuts.blp:38
 msgid "Encrypt text"
-msgstr ""
+msgstr "رمزنگاری متن"
 
 #: data/ui/shortcuts.blp:45
 msgid "Decrypt text"
-msgstr ""
+msgstr "رمزگشایی متن"
 
 #: data/ui/shortcuts.blp:52
 msgid "Sign text"
-msgstr ""
+msgstr "امضا کردن متن"
 
 #: data/ui/shortcuts.blp:59
 msgid "Verify text"
-msgstr ""
+msgstr "اعتبارسنجی متن"
 
 #: data/ui/window.blp:9 data/ui/window.blp:194
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
-msgstr ""
+msgstr "قفل"
 
 #: data/ui/window.blp:29
 msgid "Copy"
@@ -420,7 +423,7 @@ msgstr ""
 
 #: data/ui/window.blp:30
 msgid "Copy the text"
-msgstr ""
+msgstr "رونوشت کردن متن"
 
 #: data/ui/window.blp:33
 msgid "Cryptography operations"
@@ -436,7 +439,7 @@ msgstr ""
 
 #: data/ui/window.blp:66
 msgid "Text"
-msgstr ""
+msgstr "متن"
 
 #: data/ui/window.blp:84
 msgid "File"
@@ -464,31 +467,31 @@ msgstr ""
 
 #: data/ui/window.blp:155 data/ui/window.blp:219
 msgid "Encrypt"
-msgstr ""
+msgstr "رمزنگاری"
 
 #: data/ui/window.blp:162 data/ui/window.blp:223
 msgid "Decrypt"
-msgstr ""
+msgstr "رمزگشایی"
 
 #: data/ui/window.blp:169 data/ui/window.blp:229
 msgid "Sign"
-msgstr ""
+msgstr "امضا کردن"
 
 #: data/ui/window.blp:176 data/ui/window.blp:241
 msgid "Verify"
-msgstr ""
+msgstr "اعتبارسنجی"
 
 #: data/ui/window.blp:200 data/ui/managementdialog.blp:30
 msgid "Manage keys"
-msgstr ""
+msgstr "مدیریت کلیدها"
 
 #: data/ui/window.blp:206
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "میانبرهای صفحه کلید"
 
 #: data/ui/window.blp:210
 msgid "About Lock"
-msgstr ""
+msgstr "دربارهٔ قفل"
 
 #: data/ui/window.blp:233
 msgid "Sign (Clear Text)"
@@ -504,7 +507,7 @@ msgstr ""
 
 #: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
 msgid "Refresh keys"
-msgstr ""
+msgstr "بازیابی کلیدها"
 
 #: data/ui/selectiondialog.blp:68
 msgid "No capable keys available"
@@ -548,32 +551,32 @@ msgstr ""
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
-msgstr ""
+msgstr "رایانامه"
 
 #: data/ui/managementdialog.blp:151
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
-msgstr ""
+msgstr "نظر"
 
 #: data/ui/managementdialog.blp:156
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
-msgstr ""
+msgstr "الگوریتم امضا"
 
 #: data/ui/managementdialog.blp:157
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
-msgstr ""
+msgstr "کلید"
 
 #: data/ui/managementdialog.blp:165
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
-msgstr ""
+msgstr "الگوریتم رمزنگاری"
 
 #: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
-msgstr ""
+msgstr "زیرکلید"
 
 #: data/ui/managementdialog.blp:174
 msgctxt "Expiry time of the new keypair"
@@ -583,16 +586,16 @@ msgstr ""
 #: data/ui/managementdialog.blp:175
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
-msgstr ""
+msgstr "ماه‌ها، غیرفعال کردن با صفر"
 
 #: data/ui/managementdialog.blp:197
 msgctxt "Generate a new keypair"
 msgid "Generate"
-msgstr ""
+msgstr "تولید کردن"
 
 #: data/ui/managementdialog.blp:198
 msgid "Generate a new keypair"
-msgstr ""
+msgstr "تولید کردن یک جفت‌کلید جدید"
 
 #: data/ui/keyrow.blp:5
 msgid "User ID"
@@ -608,11 +611,11 @@ msgstr ""
 
 #: data/ui/keyrow.blp:20
 msgid "Remove key"
-msgstr ""
+msgstr "حذف کردن کلید"
 
 #: data/ui/keyrow.blp:27
 msgid "Export public key to file"
-msgstr ""
+msgstr "صادر کردن کلید عمومی به پرونده"
 
 #: data/ui/keyrow.blp:38
 msgid "Edit expiry date"
@@ -627,23 +630,25 @@ msgid ""
 "Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
 "LibAdwaita GUI."
 msgstr ""
+"قفل یک پیشینهٔ گرافیکی برای گنوپی‌جی (جی‌پی‌جی) است که با یک رابط کاربری گرافیکی "
+"زیبای LibAdwaita ساخته شده است."
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
 msgid "Process text and files:"
-msgstr ""
+msgstr "پردازش متن و پرونده‌ها:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:75
 msgid "Encryption"
-msgstr ""
+msgstr "رمزنگاری"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
 msgid "Decryption"
-msgstr ""
+msgstr "رمزگشایی"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:14
 msgid "Signing"
-msgstr ""
+msgstr "امضا کردن"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:15
 msgid "Verification"
@@ -655,7 +660,7 @@ msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
 msgid "Generate new keypairs"
-msgstr ""
+msgstr "تولید کردن جفت‌کلیدها"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
 msgid "Import keys"
@@ -663,7 +668,7 @@ msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:21
 msgid "Export public keys"
-msgstr ""
+msgstr "صادر کردن کلیدها"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
 msgid "View expiry dates"
@@ -671,11 +676,11 @@ msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
 msgid "Update expiry dates of expired keys"
-msgstr ""
+msgstr "بروزرسانی تاریخ انقضای کلیدهای منقضی‌شده"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
-msgstr ""
+msgstr "حذف کردن کلیدها"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:47
 msgid "Light Appearance"
@@ -687,7 +692,7 @@ msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:55
 msgid "Key Management"
-msgstr ""
+msgstr "مدیریت کلید"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:59
 msgid "Keypair Generation"
@@ -699,7 +704,7 @@ msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:67
 msgid "Plain text"
-msgstr ""
+msgstr "متن ساده"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
