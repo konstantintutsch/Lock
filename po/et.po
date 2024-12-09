@@ -29,7 +29,7 @@ msgstr "GnuPG Made Easy - nõutav on %s või suurem. Kasutusel on %s."
 #: src/application.c:203 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
-msgstr "Töötle andmeid GnuPG abil"
+msgstr "Krüpti ja dekrüpti andmeid GnuPG-ga"
 
 #: src/application.c:205
 msgctxt "Button linking to translations"
@@ -49,57 +49,56 @@ msgstr "Priit Jõerüüt"
 msgid "Dependencies"
 msgstr "Sõltuvused"
 
-#: src/window.c:157
+#: src/window.c:157 src/window.c:156
 msgid "Enter text …"
 msgstr "Sisesta tekst…"
 
-#: src/window.c:459
+#: src/window.c:459 src/window.c:458
 msgid "Text copied"
 msgstr "Tekst on kopeeritud"
 
-#: src/window.c:528
+#: src/window.c:527
 #, c-format
 msgid "Could not read text from clipboard: %s"
-msgstr ""
+msgstr "Teksti lugemine lõikelaualt ei õnnestunud: %s"
 
-#: src/window.c:537
-#, fuzzy
+#: src/window.c:536
 msgid "Text pasted"
-msgstr "Tekst on kopeeritud"
+msgstr "Tekst on asetatud"
 
-#: src/window.c:789 src/window.c:852
+#: src/window.c:789 src/window.c:852 src/window.c:788 src/window.c:850
 msgid "Encryption failed"
 msgstr "Krüptimine ei õnnestunud"
 
-#: src/window.c:791
+#: src/window.c:791 src/window.c:790
 msgid "Text encrypted"
 msgstr "Tekst on krüptitud"
 
-#: src/window.c:854
+#: src/window.c:854 src/window.c:852
 msgid "File encrypted"
 msgstr "Fail on krüptitud"
 
-#: src/window.c:910 src/window.c:969
+#: src/window.c:910 src/window.c:969 src/window.c:908 src/window.c:966
 msgid "Decryption failed"
 msgstr "Dekrüptimine ei õnnestunud"
 
-#: src/window.c:912
+#: src/window.c:912 src/window.c:910
 msgid "Text decrypted"
 msgstr "Tekst on dekrüptitud"
 
-#: src/window.c:971
+#: src/window.c:971 src/window.c:968
 msgid "File decrypted"
 msgstr "Fail on dekrüptitud"
 
-#: src/window.c:1078 src/window.c:1141
+#: src/window.c:1078 src/window.c:1141 src/window.c:1075 src/window.c:1137
 msgid "Signing failed"
 msgstr "Allkirjastamine ei õnnestunud"
 
-#: src/window.c:1080
+#: src/window.c:1080 src/window.c:1077
 msgid "Text signed"
 msgstr "Tekst on allkirjastatud"
 
-#: src/window.c:1143
+#: src/window.c:1143 src/window.c:1139
 msgid "File signed"
 msgstr "Fail on allkirjastatud"
 
@@ -133,16 +132,16 @@ msgid "Key does not expire"
 msgstr "Võti ei aegu"
 
 #: src/keyrow.c:132
-#, fuzzy, c-format
+#, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
-msgstr "Aegub %s %s"
+msgstr "Aegus %s kell %s"
 
 #: src/keyrow.c:134
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
-msgstr "Aegub %s %s"
+msgstr "Aegub %s kell %s"
 
 #: src/keyrow.c:174
 msgid "Fingerprint copied"
@@ -157,9 +156,8 @@ msgid "Key exported"
 msgstr "Võti on eksporditud"
 
 #: src/keyrow.c:315
-#, fuzzy
 msgid "Remove key?"
-msgstr "_Eemalda"
+msgstr "Kas eemaldame võtme?"
 
 #: src/keyrow.c:318
 #, c-format
@@ -183,545 +181,552 @@ msgid "Key removed"
 msgstr "Võti on eemaldatud"
 
 #: src/keyrow.c:415
-#, fuzzy
 msgid "Renewal failed"
-msgstr "Eemaldamine ei õnnestunud"
+msgstr "Uuendamine ei õnnestunud"
 
 #: src/keyrow.c:417
 msgid "Expiry renewed"
-msgstr ""
+msgstr "Aegumine on uuendatud"
 
 #: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
-#: src/cryptography.c:174 src/cryptography.c:310 src/cryptography.c:440
+#: src/cryptography.c:174 src/cryptography.c:309 src/cryptography.c:420
 msgid "Failed to create new GPGME context"
-msgstr ""
+msgstr "Uue GPGME konteksti loomine ei õnnestunud"
 
 #: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
-#: src/cryptography.c:178 src/cryptography.c:314 src/cryptography.c:444
+#: src/cryptography.c:178 src/cryptography.c:313 src/cryptography.c:424
 msgid "Failed to set protocol of GPGME context to OpenPGP"
-msgstr ""
+msgstr "GPGME protokolli konteksti määramine OpenPGP jaoks ei õnnestunud"
 
 #: src/cryptography.c:51
 msgid "Failed to obtain key by fingerprint"
-msgstr ""
+msgstr "Võtme laadimine sõrmejälje alusel ei õnnestunud"
 
 #: src/cryptography.c:93
 msgid "Failed to find key matching User ID"
-msgstr ""
+msgstr "Võtme leidmine kasutajatunnuse alusel ei õnnestunud"
 
 #: src/cryptography.c:133 src/cryptography.c:141
 msgid "Failed to generate new GPG key for signing"
-msgstr ""
+msgstr "Uue allakirjastamiseks vajaliku GPG võtme loomine ei õmnnestunud"
 
 #: src/cryptography.c:147
 msgid "Failed to delete unfinished, generated key"
-msgstr ""
+msgstr "Loodud, aga lõpetamata võtme kustutamine ei õnnestunud"
 
 #: src/cryptography.c:184
 msgid "Failed to load GPGME key data from file"
-msgstr ""
+msgstr "GPGME võtme andmete laadimine failist ei õnnestunud"
 
 #: src/cryptography.c:190
 msgid "Failed to import GPG key from file"
-msgstr ""
+msgstr "GPG võtme importimine failist ei õnnestunud"
 
 #: src/cryptography.c:201
 msgid "Failed to create GPGME key data in memory"
-msgstr ""
+msgstr "GPGME võtme andmete loomine mälus ei õnnestunud"
 
 #: src/cryptography.c:207
 msgid "Failed to export GPG key(s) to file"
-msgstr ""
+msgstr "GPG võtme(te) eksportimine faili ei õnnestunud"
 
 #: src/cryptography.c:222
 #, c-format
 msgid "Failed to open export file: %s"
-msgstr ""
+msgstr "Ekspordifaili avamine ei õnnestunud: %s"
 
 #: src/cryptography.c:252
 msgid "Failed to get GPG key for expiry editing"
-msgstr ""
+msgstr "GPG võtme laadimine kehtivuse muutmiseks ei õnnestunud"
 
 #: src/cryptography.c:255
 msgid "Failed to update the expiry time"
-msgstr ""
+msgstr "Aegumisaja muutmine ei õnnestunud"
 
 #: src/cryptography.c:268
 msgid "Failed to get GPG key for removal"
-msgstr ""
+msgstr "GPG võtme laadimine kustutamiseks ei õnnestunud"
 
 #: src/cryptography.c:272
 msgid "Failed to remove GPG key"
-msgstr ""
+msgstr "GPG võtme eemaldamine ei õnnestunud"
 
-#: src/cryptography.c:319 src/cryptography.c:449
+#: src/cryptography.c:318 src/cryptography.c:429
 msgid "Failed to set pinentry mode of GPGME context to ask"
-msgstr ""
+msgstr "GPGME kontekstile PIN-koodi küsimise režiimi määramine ei õnnestunud"
 
-#: src/cryptography.c:326
+#: src/cryptography.c:325
 msgid "Failed to create new GPGME input data from string"
-msgstr ""
+msgstr "Sõnest uute GPGME sisendandmete loomine ei õnnestunud"
 
-#: src/cryptography.c:331 src/cryptography.c:469
+#: src/cryptography.c:330 src/cryptography.c:449
 msgid "Failed to create new GPGME output data in memory"
-msgstr ""
+msgstr "Uute GPGME väljundandmete loomine mällu ei õnnestunud"
 
-#: src/cryptography.c:340
+#: src/cryptography.c:339
 msgid "Failed to encrypt GPGME data from memory"
-msgstr ""
+msgstr "GPGME mälus asuvate andmete krüptimine ei õnnestunud"
 
-#: src/cryptography.c:346
+#: src/cryptography.c:345
 msgid "Failed to decrypt GPGME data from memory"
-msgstr ""
+msgstr "GPGME mälus asuvate andmete dekrüptimine ei õnnestunud"
 
-#: src/cryptography.c:354
+#: src/cryptography.c:353
 msgid "Failed to add signing key to GPGME context"
-msgstr ""
+msgstr "Allkirjavõtme lisamine GPGME kontekstile ei õnnestunud"
 
-#: src/cryptography.c:361
+#: src/cryptography.c:360
 msgid "Failed to sign GPGME data from memory"
-msgstr ""
+msgstr "GPGME mälus asuvate andmete allkirjastamine ei õnnestunud"
 
-#: src/cryptography.c:367
+#: src/cryptography.c:366
 msgid "Failed to verify GPGME data from memory"
-msgstr ""
+msgstr "GPGME mälus asuvate andmete verifitseerimine ei õnnestunud"
 
 #: src/cryptography.c:387 src/cryptography.c:525
 msgid "Unknown"
 msgstr ""
 
-#: src/cryptography.c:428
+#: src/cryptography.c:408
 #, c-format
 msgid "Removed %s to prepare overwriting"
-msgstr ""
+msgstr "Ülekirjutamiseks valmistumisel eemaldasime %s"
 
-#: src/cryptography.c:455
+#: src/cryptography.c:435
 msgid "Failed to create new GPGME input data from file"
-msgstr ""
+msgstr "Failist uute GPGME sisendandmete loomine ei õnnestunud"
 
-#: src/cryptography.c:462
+#: src/cryptography.c:442
 msgid "Failed to set file name of GPGME input data"
-msgstr ""
+msgstr "GPGME sisendandmete failinime määramine ei õnnestunud"
 
-#: src/cryptography.c:477
+#: src/cryptography.c:457
 msgid "Failed to set file name of GPGME output data"
-msgstr ""
+msgstr "GPGME väljundandmete failinime määramine ei õnnestunud"
 
-#: src/cryptography.c:487
+#: src/cryptography.c:467
 msgid "Failed to encrypt GPGME data from file"
-msgstr ""
+msgstr "GPGME failis asuvate andmete krüptimine ei õnnestunud"
 
-#: src/cryptography.c:492
+#: src/cryptography.c:472
 msgid "Failed to decrypt GPGME data from file"
-msgstr ""
+msgstr "GPGME failis asuvate andmete dekrüptimine ei õnnestunud"
 
-#: src/cryptography.c:499
+#: src/cryptography.c:479
 msgid "Failed to sign GPGME data from file"
-msgstr ""
+msgstr "GPGME failis asuvate andmete allkirjastamine ei õnnestunud"
 
-#: src/cryptography.c:505
+#: src/cryptography.c:485
 msgid "Failed to verify GPGME data from file"
-msgstr ""
+msgstr "GPGME failis asuvate andmete verifitseerimine ei õnnestunud"
 
-#: src/cryptography.c:539
+#: src/cryptography.c:501
 #, c-format
 msgid "Failed to open output file: %s"
-msgstr ""
+msgstr "Väljundfaili avamine ei õnnestunud: %s"
 
 #: src/threading.c:57
 msgid "Failed to create text encryption thread"
-msgstr ""
+msgstr "Teksti krüptimise lõime loomine ei õnnestunud"
 
 #: src/threading.c:79
 msgid "Failed to create file encryption thread"
-msgstr ""
+msgstr "Faili krüptimise lõime loomine ei õnnestunud"
 
 #: src/threading.c:100
 msgid "Failed to create text decryption thread"
-msgstr ""
+msgstr "Teksti dekrüptimise lõime loomine ei õnnestunud"
 
 #: src/threading.c:118
 msgid "Failed to create file decryption thread"
-msgstr ""
+msgstr "Faili dekrüptimise lõime loomine ei õnnestunud"
 
 #: src/threading.c:140
 msgid "Failed to create text signing thread"
-msgstr ""
+msgstr "Teksti allkirjastamise lõime loomine ei õnnestunud"
 
 #: src/threading.c:162
 msgid "Failed to create file signing thread"
-msgstr ""
+msgstr "Faili allkirjastamise lõime loomine ei õnnestunud"
 
 #: src/threading.c:183
 msgid "Failed to create text verification thread"
-msgstr ""
+msgstr "Teksti verifitseerimise lõime loomine ei õnnestunud"
 
 #: src/threading.c:201
 msgid "Failed to create file verification thread"
-msgstr ""
+msgstr "Faili verifitseerimise lõime loomine ei õnnestunud"
 
 #: src/threading.c:216
 msgid "Failed to create key import thread"
-msgstr ""
+msgstr "Võtme importimise lõime loomine ei õnnestunud"
 
 #: src/threading.c:237
 msgid "Failed to create key generation thread"
-msgstr ""
+msgstr "Võtme loomise lõime loomine ei õnnestunud"
 
 #: src/threading.c:252
 msgid "Failed to create key export thread"
-msgstr ""
+msgstr "Võtme eksportimise lõime loomine ei õnnestunud"
 
 #: src/threading.c:264
 msgid "Failed to create key removal thread"
-msgstr ""
+msgstr "Võtme eemaldamise lõime loomine ei õnnestunud"
 
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
 msgid "General"
-msgstr ""
+msgstr "Üldised"
 
 #: data/ui/shortcuts.blp:13
 msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
-msgstr ""
+msgstr "Näita kiirklahve"
 
 #: data/ui/shortcuts.blp:20
 msgid "Copy text view to clipboard"
-msgstr ""
+msgstr "Kopeeri tekstivaade lõikelauale"
 
 #: data/ui/shortcuts.blp:27
 msgid "Overwrite text view with clipboard"
-msgstr ""
+msgstr "Kirjuta tekstivaade üle väärtusega lõikelaualt"
 
 #: data/ui/shortcuts.blp:35
 msgctxt "Shortcuts Group"
 msgid "Cryptography"
-msgstr ""
+msgstr "Krüptograafia"
 
 #: data/ui/shortcuts.blp:38
-#, fuzzy
 msgid "Encrypt text"
-msgstr "Krüptimine ei õnnestunud"
+msgstr "Krüpti tekst"
 
 #: data/ui/shortcuts.blp:45
-#, fuzzy
 msgid "Decrypt text"
-msgstr "Dekrüptimine ei õnnestunud"
+msgstr "Dekrüpti tekst"
 
 #: data/ui/shortcuts.blp:52
 msgid "Sign text"
-msgstr ""
+msgstr "Allkirjasta tekst"
 
 #: data/ui/shortcuts.blp:59
 msgid "Verify text"
-msgstr ""
+msgstr "Verifitseeri tekst"
 
 #: data/ui/window.blp:9 data/ui/window.blp:194
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
-msgstr ""
+msgstr "Lukusta"
 
 #: data/ui/window.blp:29
 msgid "Copy"
-msgstr ""
+msgstr "Kopeeri"
 
 #: data/ui/window.blp:30
 msgid "Copy the text"
-msgstr ""
+msgstr "Kopeeri tekst"
 
 #: data/ui/window.blp:33
 msgid "Cryptography operations"
-msgstr ""
+msgstr "Krüptotoimingud"
 
 #: data/ui/window.blp:50
 msgid "Processing …"
-msgstr ""
+msgstr "Töötleme…"
 
 #: data/ui/window.blp:55
 msgid "Main Menu"
-msgstr ""
+msgstr "Põhimenüü"
 
 #: data/ui/window.blp:66
 msgid "Text"
-msgstr ""
+msgstr "Tekst"
 
 #: data/ui/window.blp:84
 msgid "File"
-msgstr ""
+msgstr "Fail"
 
 #: data/ui/window.blp:93
 msgid "No files selected for processing"
-msgstr ""
+msgstr "Ühtegi faili pole töötlemiseks valitud"
 
 #: data/ui/window.blp:114
 msgid "Input File"
-msgstr ""
+msgstr "Sisendfail"
 
 #: data/ui/window.blp:123
 msgid "Select input file"
-msgstr ""
+msgstr "Vali sisendfail"
 
 #: data/ui/window.blp:130
 msgid "Output File"
-msgstr ""
+msgstr "Väljundfail"
 
 #: data/ui/window.blp:139
 msgid "Select output file"
-msgstr ""
+msgstr "Vali väljundfail"
 
 #: data/ui/window.blp:155 data/ui/window.blp:219
 msgid "Encrypt"
-msgstr ""
+msgstr "Krüpti"
 
 #: data/ui/window.blp:162 data/ui/window.blp:223
 msgid "Decrypt"
-msgstr ""
+msgstr "Dekrüpti"
 
 #: data/ui/window.blp:169 data/ui/window.blp:229
 msgid "Sign"
-msgstr ""
+msgstr "Allkirjasta"
 
 #: data/ui/window.blp:176 data/ui/window.blp:241
 msgid "Verify"
-msgstr ""
+msgstr "Verifitseeri"
 
 #: data/ui/window.blp:200 data/ui/managementdialog.blp:30
 msgid "Manage keys"
-msgstr ""
+msgstr "Halda võtmeid"
 
 #: data/ui/window.blp:206
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Klaviatuuri kiirklahvid"
 
 #: data/ui/window.blp:210
 msgid "About Lock"
-msgstr ""
+msgstr "Rakenduse teave"
 
 #: data/ui/window.blp:233
 msgid "Sign (Clear Text)"
-msgstr ""
+msgstr "Allkirjasta (vormindamata tekst)"
 
 #: data/ui/window.blp:237
 msgid "Sign (Detached)"
-msgstr ""
+msgstr "Allkirjasta (eraldi tekst)"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
-msgstr ""
+msgstr "Vali võti"
 
 #: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
 msgid "Refresh keys"
-msgstr ""
+msgstr "Värskenda võtmeid"
 
 #: data/ui/selectiondialog.blp:68
 msgid "No capable keys available"
-msgstr ""
+msgstr "Sobilikke võtmeid ei leidu"
 
 #: data/ui/selectiondialog.blp:69
 msgid ""
 "Your GnuPG keyring does not contain any keys that support this functionality."
 msgstr ""
+"Sinu GnuPG võtmerõngas ei sisalda võtmeid, mis võimaldaks seda toimingut "
+"teha."
 
 #: data/ui/managementdialog.blp:68
 msgid "No keys available"
-msgstr ""
+msgstr "Võtmeid pole saadaval"
 
 #: data/ui/managementdialog.blp:69
 msgid "Your GnuPG keyring does not contain any keys."
-msgstr ""
+msgstr "Sinu GnuPG võtmerõngas pole üldse võtmeid."
 
 #: data/ui/managementdialog.blp:89
 msgctxt "Import keys from files"
 msgid "Import"
-msgstr ""
+msgstr "Impordi"
 
 #: data/ui/managementdialog.blp:90
 msgid "Import keys from files"
-msgstr ""
+msgstr "Impordi faili(de)st"
 
 #: data/ui/managementdialog.blp:97
 msgid "Create a new keypair"
-msgstr ""
+msgstr "Loo uus võtmepaar"
 
 #: data/ui/managementdialog.blp:110
 msgid "Generate keypair"
-msgstr ""
+msgstr "Loo võtmepaar"
 
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name (Mandatory)"
-msgstr ""
+msgstr "Nimi (kohustuslik)"
 
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
-msgstr ""
+msgstr "E-posti aadress"
 
 #: data/ui/managementdialog.blp:151
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
-msgstr ""
+msgstr "Kommentaar"
 
 #: data/ui/managementdialog.blp:156
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
-msgstr ""
+msgstr "Allkirjastamise algoritm"
 
 #: data/ui/managementdialog.blp:157
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
-msgstr ""
+msgstr "Võti"
 
 #: data/ui/managementdialog.blp:165
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
-msgstr ""
+msgstr "Krüptoalgoritm"
 
 #: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
-msgstr ""
+msgstr "Alamvõti"
 
 #: data/ui/managementdialog.blp:174
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
-msgstr ""
+msgstr "Aegumine"
 
 #: data/ui/managementdialog.blp:175
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
-msgstr ""
+msgstr "Kuudes, null märgib aegumise puudumist"
 
 #: data/ui/managementdialog.blp:197
 msgctxt "Generate a new keypair"
 msgid "Generate"
-msgstr ""
+msgstr "Loo"
 
 #: data/ui/managementdialog.blp:198
 msgid "Generate a new keypair"
-msgstr ""
+msgstr "Loo uus võtmepaar"
 
 #: data/ui/keyrow.blp:5
 msgid "User ID"
-msgstr ""
+msgstr "Kasutajatunnus"
 
 #: data/ui/keyrow.blp:6
 msgid "Fingerprint"
-msgstr ""
+msgstr "Sõrmejälg"
 
 #: data/ui/keyrow.blp:7
 msgid "Expiry"
-msgstr ""
+msgstr "Aegumine"
 
 #: data/ui/keyrow.blp:20
 msgid "Remove key"
-msgstr ""
+msgstr "Eemalda võti"
 
 #: data/ui/keyrow.blp:27
 msgid "Export public key to file"
-msgstr ""
+msgstr "Ekspordi avalik võti faili"
 
 #: data/ui/keyrow.blp:38
 msgid "Edit expiry date"
-msgstr ""
+msgstr "Muuda aegumise kuupäeva"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr ""
+"gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;krüpti;krüpteeri;"
+"dekrüpti;dekrüpteeri;allkiri;allkirjastamine;kontroll;kontrollimine;"
+"krüptimine;krüpteerimine;dekrüptimine;dekrüpteerimine;verifitseerimine;"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
 msgid ""
 "Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
 "LibAdwaita GUI."
 msgstr ""
+"Lock on GnuPG (GPG) graafiline kasutajaliides, mille aluseks on ilus "
+"LibAdwaita-liidestus."
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
 msgid "Process text and files:"
-msgstr ""
+msgstr "Töötle tekste ja faile:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:75
 msgid "Encryption"
-msgstr ""
+msgstr "Krüptimine"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
 msgid "Decryption"
-msgstr ""
+msgstr "Dekrüptimine"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:14
 msgid "Signing"
-msgstr ""
+msgstr "Allkirjastamine"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:15
 msgid "Verification"
-msgstr ""
+msgstr "Verifitseerimine"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:17
 msgid "Manage your GnuPG keyring:"
-msgstr ""
+msgstr "Halda oma GnuPG võtmerõngast:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
 msgid "Generate new keypairs"
-msgstr ""
+msgstr "Loo uued võtmepaarid"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
 msgid "Import keys"
-msgstr ""
+msgstr "Impordi võtmed"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:21
 msgid "Export public keys"
-msgstr ""
+msgstr "Ekspordi avalikud võtmed"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
 msgid "View expiry dates"
-msgstr ""
+msgstr "Vaata aegumise kuupäevi"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
 msgid "Update expiry dates of expired keys"
-msgstr ""
+msgstr "Uuenda aegunud võtmete aegumise kuupäevi"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
-msgstr ""
+msgstr "Eemalda võtmeid"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:47
 msgid "Light Appearance"
-msgstr ""
+msgstr "Hele kujundus"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:51
 msgid "Dark Appearance"
-msgstr ""
+msgstr "Tume kujundus"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:55
 msgid "Key Management"
-msgstr ""
+msgstr "Võtmehaldus"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:59
 msgid "Keypair Generation"
-msgstr ""
+msgstr "Võtmepaari loomine"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:63
 msgid "File processing"
-msgstr ""
+msgstr "Faili töötlemine"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:67
 msgid "Plain text"
-msgstr ""
+msgstr "Vormindamata tekst"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
-msgstr ""
+msgstr "Võtmevaliku vaade"
 
-#~ msgid "Verification failed"
-#~ msgstr "Verifitseerimine ei õnnestunud"
+#: src/window.c:1195 src/window.c:1253
+msgid "Verification failed"
+msgstr "Verifitseerimine ei õnnestunud"
 
-#~ msgid "Text verified"
-#~ msgstr "Tekst on verifitseeritud"
+#: src/window.c:1197
+msgid "Text verified"
+msgstr "Tekst on verifitseeritud"
 
-#~ msgid "File verified"
-#~ msgstr "Fail on verifitseeritud"
+#: src/window.c:1255
+msgid "File verified"
+msgstr "Fail on verifitseeritud"
 
 #, fuzzy
 #~ msgid "Expiry update failed"
