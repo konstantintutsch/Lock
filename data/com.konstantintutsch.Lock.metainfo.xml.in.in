@@ -85,6 +85,18 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.3.4" date="2024-12-10">
+            <description translate="no">
+                <ul>
+                    <li>Signers identified during verification are now shown</li>
+                    <li>Fixed non-successful verifications being handled as successful</li>
+                    <li>Persian translation added</li>
+                    <li>Finnish translation updated</li>
+                    <li>Estonian translation updated</li>
+                    <li>Russian translation updated</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.3.3" date="2024-12-08">
             <description translate="no">
                 <ul>
