@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-10 11:55+0100\n"
+"POT-Creation-Date: 2024-12-10 16:08+0100\n"
 "PO-Revision-Date: 2024-12-01 16:55+0000\n"
 "Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -133,10 +133,10 @@ msgid "Key does not expire"
 msgstr "Срок действия ключа не ограничен"
 
 #: src/keyrow.c:132
-#, fuzzy, c-format
+#, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
-msgstr "Истекает %s в %s"
+msgstr "Истёк %s в %s"
 
 #: src/keyrow.c:134
 #, c-format
@@ -182,14 +182,12 @@ msgid "Key removed"
 msgstr "Ключ удалён"
 
 #: src/keyrow.c:415
-#, fuzzy
 msgid "Renewal failed"
-msgstr "Не удалось удалить"
+msgstr "Не удалось продлить"
 
 #: src/keyrow.c:417
-#, fuzzy
 msgid "Expiry renewed"
-msgstr "Посмотр дат истечения срока действия"
+msgstr "Срок истечения продлён"
 
 #: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
 #: src/cryptography.c:174 src/cryptography.c:310 src/cryptography.c:440
@@ -239,14 +237,12 @@ msgid "Failed to open export file: %s"
 msgstr "Не удалось открыть файл экспорта: %s"
 
 #: src/cryptography.c:252
-#, fuzzy
 msgid "Failed to get GPG key for expiry editing"
-msgstr "Не удалось получить GPG ключ для удаления"
+msgstr "Не удалось получить ключ GPG для редактирования срока истечения"
 
 #: src/cryptography.c:255
-#, fuzzy
 msgid "Failed to update the expiry time"
-msgstr "Не удалось создать поток экспорта ключа"
+msgstr "Не удалось обновить время истечения срока"
 
 #: src/cryptography.c:268
 msgid "Failed to get GPG key for removal"
@@ -625,9 +621,8 @@ msgid "Export public key to file"
 msgstr "Экспортировать открытый ключ в файл"
 
 #: data/ui/keyrow.blp:38
-#, fuzzy
 msgid "Edit expiry date"
-msgstr "Посмотр дат истечения срока действия"
+msgstr "Редактировать дату истечения"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
@@ -686,7 +681,7 @@ msgstr "Посмотр дат истечения срока действия"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
 msgid "Update expiry dates of expired keys"
-msgstr ""
+msgstr "Обновить даты ключей с истёкшим сроком"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"

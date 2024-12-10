@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-10 16:08+0100\n"
-"PO-Revision-Date: 2024-11-23 17:35+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/Lock/Application/"
-"cs/>\n"
-"Language: cs\n"
+"PO-Revision-Date: 2024-12-10 10:58+0000\n"
+"Last-Translator: Reza Hosseinzadeh <rezahsnzdh@protonmail.com>\n"
+"Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
+"fa/>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 5.9-dev\n"
 
 #: src/main.c:32
@@ -29,81 +29,78 @@ msgstr ""
 #: src/application.c:203 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
-msgstr "Spravujte data s GnuPG"
+msgstr "پردازش داده با گنوپی‌جی"
 
 #: src/application.c:205
 msgctxt "Button linking to translations"
 msgid "Translate"
-msgstr ""
+msgstr "ترجمه کردن"
 
 #: src/application.c:208
 msgctxt "Button linking to source code"
 msgid "Develop"
-msgstr ""
+msgstr "توسعه دادن"
 
 #: src/application.c:220
 msgid "translator-credits"
-msgstr "Michael Kováč"
+msgstr ""
 
 #: src/application.c:225
 msgid "Dependencies"
-msgstr "Závislosti"
+msgstr "وابستگی‌ها"
 
 #: src/window.c:157
 msgid "Enter text …"
-msgstr "Zadejte text …"
+msgstr "متن را وارد کنید…"
 
 #: src/window.c:459
 msgid "Text copied"
-msgstr "Text zkopírován"
+msgstr "متن رونوشت شد"
 
 #: src/window.c:528
 #, c-format
 msgid "Could not read text from clipboard: %s"
-msgstr ""
+msgstr "ناتوانی در خواندن متن از تخته‌گیره: %s"
 
 #: src/window.c:537
-#, fuzzy
 msgid "Text pasted"
-msgstr "Text zkopírován"
+msgstr "متن چسبانده شد"
 
 #: src/window.c:789 src/window.c:852
 msgid "Encryption failed"
-msgstr "Zašifrování selhalo"
+msgstr "رمزنگاری شکست خورد"
 
 #: src/window.c:791
-#, fuzzy
 msgid "Text encrypted"
-msgstr "Text rozšifrován"
+msgstr "متن رمزنگاری شد"
 
 #: src/window.c:854
-#, fuzzy
 msgid "File encrypted"
-msgstr "Soubor rozšifrován"
+msgstr "پرونده رمزنگاری شد"
 
 #: src/window.c:910 src/window.c:969
 msgid "Decryption failed"
-msgstr "Rozšifrování selhalo"
+msgstr "رمزگشایی شکست خورد"
 
 #: src/window.c:912
 msgid "Text decrypted"
-msgstr "Text rozšifrován"
+msgstr "متن رمزگشایی شد"
 
 #: src/window.c:971
 msgid "File decrypted"
-msgstr "Soubor rozšifrován"
+msgstr "پرونده رمزگشایی شد"
 
 #: src/window.c:1078 src/window.c:1141
 msgid "Signing failed"
-msgstr "Podepisování selhalo"
+msgstr "امضا کردن شکست خورد"
 
 #: src/window.c:1080
 msgid "Text signed"
-msgstr "Text podepsán"
+msgstr "متن امضا شد"
 
 #: src/window.c:1143
 msgid "File signed"
-msgstr "Soubor podepsán"
+msgstr "پرونده امضا شد"
 
 #: src/window.c:1199 src/window.c:1260
 msgid "Signature invalid"
@@ -116,206 +113,175 @@ msgstr ""
 
 #: src/managementdialog.c:339
 msgid "Import failed"
-msgstr "Import selhal"
+msgstr "ورود شکست خورد"
 
 #: src/managementdialog.c:341
-#, fuzzy
 msgid "Keys imported"
-msgstr "Klíč(e) importován(y)"
+msgstr "کلیدها وارد شدند"
 
 #: src/managementdialog.c:437
-#, fuzzy
 msgid "Generation failed"
-msgstr "Ověření selhalo"
+msgstr "تولید شکست خورد"
 
 #: src/managementdialog.c:439
 msgid "Keypair generated"
-msgstr ""
+msgstr "جفت‌کلید تولید شد"
 
 #: src/keyrow.c:128
 msgid "Key does not expire"
-msgstr "Platnost klíče nevyprší"
+msgstr "کلید منقضی نمیشود"
 
 #: src/keyrow.c:132
-#, fuzzy, c-format
+#, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
-msgstr "Vyprší %s v %s"
+msgstr "در ساعت %s تاریخ %s منقضی شد"
 
 #: src/keyrow.c:134
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
-msgstr "Vyprší %s v %s"
+msgstr "در ساعت %s تاریخ %s منقضی میشود"
 
 #: src/keyrow.c:174
-#, fuzzy
 msgid "Fingerprint copied"
-msgstr "Otisk"
+msgstr "اثر انگشت رونوشت شد"
 
 #: src/keyrow.c:268
 msgid "Export failed"
-msgstr "Export selhal"
+msgstr "صدور شکست خورد"
 
 #: src/keyrow.c:270
 msgid "Key exported"
-msgstr "Klíč exportován"
+msgstr "کلید صادر شد"
 
 #: src/keyrow.c:315
-#, fuzzy
 msgid "Remove key?"
-msgstr "Obnovit klíče"
+msgstr "کلید را حذف میکنید؟"
 
 #: src/keyrow.c:318
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
-msgstr ""
+msgstr "حذف کردن کلید %s نمیتواند ناتمام بماند!"
 
 #: src/keyrow.c:321
 msgid "_Cancel"
 msgstr ""
 
 #: src/keyrow.c:322
-#, fuzzy
 msgid "_Remove"
-msgstr "Obnovit klíče"
+msgstr ""
 
 #: src/keyrow.c:363
-#, fuzzy
 msgid "Removal failed"
-msgstr "Import selhal"
+msgstr "حذف کردن شکست خورد"
 
 #: src/keyrow.c:365
-#, fuzzy
 msgid "Key removed"
-msgstr "Klíč exportován"
+msgstr "کلید حذف شد"
 
 #: src/keyrow.c:415
-#, fuzzy
 msgid "Renewal failed"
-msgstr "Import selhal"
+msgstr "تجدید شکست خورد"
 
 #: src/keyrow.c:417
-#, fuzzy
 msgid "Expiry renewed"
-msgstr "Zobrazit datum platnosti"
+msgstr "انقضا تجدید شد"
 
 #: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
 #: src/cryptography.c:174 src/cryptography.c:310 src/cryptography.c:440
-#, fuzzy
 msgid "Failed to create new GPGME context"
-msgstr "vytvoření nového GPGME kontextu"
+msgstr "ساختن محتوای جدید GPGME شکست خورد"
 
 #: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
 #: src/cryptography.c:178 src/cryptography.c:314 src/cryptography.c:444
-#, fuzzy
 msgid "Failed to set protocol of GPGME context to OpenPGP"
-msgstr "nastavení protokolu GPGME kontextu na OpenPGP"
+msgstr "تنظیم کردن شیوه‌نامهٔ محتوای GPGME به اپن‌پی‌جی‌پی شکست خورد"
 
 #: src/cryptography.c:51
-#, fuzzy
 msgid "Failed to obtain key by fingerprint"
-msgstr "nalezení klíče odpovídající ID Uživatele"
+msgstr "گرفتن کلید با اثر انگشت شکست خورد"
 
 #: src/cryptography.c:93
-#, fuzzy
 msgid "Failed to find key matching User ID"
-msgstr "nalezení klíče odpovídající ID Uživatele"
+msgstr ""
 
 #: src/cryptography.c:133 src/cryptography.c:141
-#, fuzzy
 msgid "Failed to generate new GPG key for signing"
-msgstr "Spravovat klíče"
+msgstr "ساختن کلید جی‌پی‌جی جدید برای امضا کردن شکست خورد"
 
 #: src/cryptography.c:147
-#, fuzzy
 msgid "Failed to delete unfinished, generated key"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr ""
 
 #: src/cryptography.c:184
-#, fuzzy
 msgid "Failed to load GPGME key data from file"
-msgstr "načtení GPGME dat klíče ze souboru"
+msgstr "بار کردن دادهٔ کلید GPGME از پرونده شکست خورد"
 
 #: src/cryptography.c:190
-#, fuzzy
 msgid "Failed to import GPG key from file"
-msgstr "importování GPG klíče ze souboru"
+msgstr "وارد کردن کلید جی‌پی‌جی از پرونده شکست خورد"
 
 #: src/cryptography.c:201
-#, fuzzy
 msgid "Failed to create GPGME key data in memory"
-msgstr "vytvoření GPGME dat klíče v paměti"
+msgstr "ساختن دادهٔ کلید GPGME در حافظه شکست خورد"
 
 #: src/cryptography.c:207
-#, fuzzy
 msgid "Failed to export GPG key(s) to file"
-msgstr "importování GPG klíče ze souboru"
+msgstr "صادر کردن کلید(های) جی‌پی‌جی به پرونده شکست خورد"
 
 #: src/cryptography.c:222
 #, c-format
 msgid "Failed to open export file: %s"
-msgstr "Selhalo otevření exportního souboru: %s"
+msgstr ""
 
 #: src/cryptography.c:252
-#, fuzzy
 msgid "Failed to get GPG key for expiry editing"
-msgstr "importování GPG klíče ze souboru"
+msgstr ""
 
 #: src/cryptography.c:255
-#, fuzzy
 msgid "Failed to update the expiry time"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr ""
 
 #: src/cryptography.c:268
-#, fuzzy
 msgid "Failed to get GPG key for removal"
-msgstr "importování GPG klíče ze souboru"
+msgstr ""
 
 #: src/cryptography.c:272
-#, fuzzy
 msgid "Failed to remove GPG key"
-msgstr "importování GPG klíče ze souboru"
+msgstr ""
 
 #: src/cryptography.c:319 src/cryptography.c:449
-#, fuzzy
 msgid "Failed to set pinentry mode of GPGME context to ask"
-msgstr "nastavení pinentry módu GPGME kontextu na zeptání se"
+msgstr ""
 
 #: src/cryptography.c:326
-#, fuzzy
 msgid "Failed to create new GPGME input data from string"
-msgstr "vytvoření nových podepsaných GPGME dat z řetězce"
+msgstr ""
 
 #: src/cryptography.c:331 src/cryptography.c:469
-#, fuzzy
 msgid "Failed to create new GPGME output data in memory"
-msgstr "vytvoření GPGME dat klíče v paměti"
+msgstr ""
 
 #: src/cryptography.c:340
-#, fuzzy
 msgid "Failed to encrypt GPGME data from memory"
-msgstr "zašifrování GPGME dat z paměti"
+msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
 
 #: src/cryptography.c:346
-#, fuzzy
 msgid "Failed to decrypt GPGME data from memory"
-msgstr "rozšifrovat GPGME dat z paměti"
+msgstr "رمزگشایی دادهٔ GPGME از حافظه شکست خورد"
 
 #: src/cryptography.c:354
-#, fuzzy
 msgid "Failed to add signing key to GPGME context"
-msgstr "vytvoření nového GPGME kontextu"
+msgstr "اضافه کردن کلید امضا به محتوای GPGME شکست خورد"
 
 #: src/cryptography.c:361
-#, fuzzy
 msgid "Failed to sign GPGME data from memory"
-msgstr "podepsání GPGME dat z paměti"
+msgstr "امضا کردن دادهٔ GPGME از حافظه شکست خورد"
 
 #: src/cryptography.c:367
-#, fuzzy
 msgid "Failed to verify GPGME data from memory"
-msgstr "ověření GPGME dat z paměti"
+msgstr "اعتبارسنجی دادهٔ GPGME از حافظه شکست خورد"
 
 #: src/cryptography.c:387 src/cryptography.c:525
 msgid "Unknown"
@@ -324,107 +290,88 @@ msgstr ""
 #: src/cryptography.c:428
 #, c-format
 msgid "Removed %s to prepare overwriting"
-msgstr "Odstraněno %s pro přípravu přepsání"
+msgstr ""
 
 #: src/cryptography.c:455
-#, fuzzy
 msgid "Failed to create new GPGME input data from file"
-msgstr "vytvoření nových podepsaných GPGME dat z řetězce"
+msgstr "ساختن دادهٔ ورودی جدید GPGME از پرونده شکست خورد"
 
 #: src/cryptography.c:462
-#, fuzzy
 msgid "Failed to set file name of GPGME input data"
-msgstr "nastavení cesty souboru podepsaných GPGME dat"
+msgstr "تنظیم کردن نام پروندهٔ دادهٔ ورودی GPGME شکست خورد"
 
 #: src/cryptography.c:477
-#, fuzzy
 msgid "Failed to set file name of GPGME output data"
-msgstr "nastavení cesty souboru podepsaných GPGME dat"
+msgstr ""
 
 #: src/cryptography.c:487
-#, fuzzy
 msgid "Failed to encrypt GPGME data from file"
-msgstr "šifrování GPGME dat ze souboru"
+msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
 
 #: src/cryptography.c:492
-#, fuzzy
 msgid "Failed to decrypt GPGME data from file"
-msgstr "rozšifrování GPGME dat ze souboru"
+msgstr ""
 
 #: src/cryptography.c:499
-#, fuzzy
 msgid "Failed to sign GPGME data from file"
-msgstr "podepsání GPGME dat ze souboru"
+msgstr "امضا کردن دادهٔ GPGME از پرونده شکست خورد"
 
 #: src/cryptography.c:505
-#, fuzzy
 msgid "Failed to verify GPGME data from file"
-msgstr "ověření GPGME dat ze souboru"
+msgstr "اعتبارسنجی دادهٔ GPGME از پرونده شکست خورد"
 
 #: src/cryptography.c:539
 #, c-format
 msgid "Failed to open output file: %s"
-msgstr "Selhalo otevření výstupního souboru: %s"
+msgstr ""
 
 #: src/threading.c:57
-#, fuzzy
 msgid "Failed to create text encryption thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "ساختن رشتهٔ رمزنگاری متن شکست خورد"
 
 #: src/threading.c:79
-#, fuzzy
 msgid "Failed to create file encryption thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "ساختن رشتهٔ رمزنگاری پرونده شکست خورد"
 
 #: src/threading.c:100
-#, fuzzy
 msgid "Failed to create text decryption thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "ساختن رشتهٔ رمزگشایی متن شکست خورد"
 
 #: src/threading.c:118
-#, fuzzy
 msgid "Failed to create file decryption thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr ""
 
 #: src/threading.c:140
-#, fuzzy
 msgid "Failed to create text signing thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "ساختن رشتهٔ امضا کردن متن شکست خورد"
 
 #: src/threading.c:162
-#, fuzzy
 msgid "Failed to create file signing thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "ساختن رشتهٔ امضا کردن پرونده شکست خورد"
 
 #: src/threading.c:183
-#, fuzzy
 msgid "Failed to create text verification thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "ساختن رشتهٔ اعتبارسنجی متن شکست خورد"
 
 #: src/threading.c:201
-#, fuzzy
 msgid "Failed to create file verification thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr ""
 
 #: src/threading.c:216
-#, fuzzy
 msgid "Failed to create key import thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr ""
 
 #: src/threading.c:237
-#, fuzzy
 msgid "Failed to create key generation thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr ""
 
 #: src/threading.c:252
-#, fuzzy
 msgid "Failed to create key export thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr ""
 
 #: src/threading.c:264
-#, fuzzy
 msgid "Failed to create key removal thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr ""
 
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
@@ -434,7 +381,7 @@ msgstr ""
 #: data/ui/shortcuts.blp:13
 msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
-msgstr ""
+msgstr "نمایش میانبرها"
 
 #: data/ui/shortcuts.blp:20
 msgid "Copy text view to clipboard"
@@ -445,65 +392,59 @@ msgid "Overwrite text view with clipboard"
 msgstr ""
 
 #: data/ui/shortcuts.blp:35
-#, fuzzy
 msgctxt "Shortcuts Group"
 msgid "Cryptography"
-msgstr "Kryptografické operace"
+msgstr ""
 
 #: data/ui/shortcuts.blp:38
-#, fuzzy
 msgid "Encrypt text"
-msgstr "Zašifrovat"
+msgstr "رمزنگاری متن"
 
 #: data/ui/shortcuts.blp:45
-#, fuzzy
 msgid "Decrypt text"
-msgstr "Rozšifrovat"
+msgstr "رمزگشایی متن"
 
 #: data/ui/shortcuts.blp:52
-#, fuzzy
 msgid "Sign text"
-msgstr "Holý text"
+msgstr "امضا کردن متن"
 
 #: data/ui/shortcuts.blp:59
-#, fuzzy
 msgid "Verify text"
-msgstr "Ověřit"
+msgstr "اعتبارسنجی متن"
 
 #: data/ui/window.blp:9 data/ui/window.blp:194
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
-msgstr "Zámek"
+msgstr "قفل"
 
 #: data/ui/window.blp:29
 msgid "Copy"
-msgstr "Kopírovat"
+msgstr ""
 
 #: data/ui/window.blp:30
 msgid "Copy the text"
-msgstr "Kopírovat text"
+msgstr "رونوشت کردن متن"
 
 #: data/ui/window.blp:33
 msgid "Cryptography operations"
-msgstr "Kryptografické operace"
+msgstr ""
 
 #: data/ui/window.blp:50
-#, fuzzy
 msgid "Processing …"
-msgstr "Práce se soubory"
+msgstr ""
 
 #: data/ui/window.blp:55
 msgid "Main Menu"
-msgstr "Hlavní Menu"
+msgstr ""
 
 #: data/ui/window.blp:66
 msgid "Text"
-msgstr "Text"
+msgstr "متن"
 
 #: data/ui/window.blp:84
 msgid "File"
-msgstr "Soubor"
+msgstr ""
 
 #: data/ui/window.blp:93
 msgid "No files selected for processing"
@@ -511,7 +452,7 @@ msgstr ""
 
 #: data/ui/window.blp:114
 msgid "Input File"
-msgstr "Vstupní Soubor"
+msgstr ""
 
 #: data/ui/window.blp:123
 msgid "Select input file"
@@ -519,40 +460,39 @@ msgstr ""
 
 #: data/ui/window.blp:130
 msgid "Output File"
-msgstr "Výstupní Soubor"
+msgstr ""
 
 #: data/ui/window.blp:139
-#, fuzzy
 msgid "Select output file"
-msgstr "Selhalo otevření výstupního souboru: %s"
+msgstr ""
 
 #: data/ui/window.blp:155 data/ui/window.blp:219
 msgid "Encrypt"
-msgstr "Zašifrovat"
+msgstr "رمزنگاری"
 
 #: data/ui/window.blp:162 data/ui/window.blp:223
 msgid "Decrypt"
-msgstr "Rozšifrovat"
+msgstr "رمزگشایی"
 
 #: data/ui/window.blp:169 data/ui/window.blp:229
 msgid "Sign"
-msgstr "Podepsat"
+msgstr "امضا کردن"
 
 #: data/ui/window.blp:176 data/ui/window.blp:241
 msgid "Verify"
-msgstr "Ověřit"
+msgstr "اعتبارسنجی"
 
 #: data/ui/window.blp:200 data/ui/managementdialog.blp:30
 msgid "Manage keys"
-msgstr "Spravovat klíče"
+msgstr "مدیریت کلیدها"
 
 #: data/ui/window.blp:206
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "میانبرهای صفحه کلید"
 
 #: data/ui/window.blp:210
 msgid "About Lock"
-msgstr "O Zámku"
+msgstr "دربارهٔ قفل"
 
 #: data/ui/window.blp:233
 msgid "Sign (Clear Text)"
@@ -563,52 +503,46 @@ msgid "Sign (Detached)"
 msgstr ""
 
 #: data/ui/selectiondialog.blp:35
-#, fuzzy
 msgid "Select key"
-msgstr "Obnovit klíče"
+msgstr ""
 
 #: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
 msgid "Refresh keys"
-msgstr "Obnovit klíče"
+msgstr "بازیابی کلیدها"
 
 #: data/ui/selectiondialog.blp:68
-#, fuzzy
 msgid "No capable keys available"
-msgstr "Žádné klíče k dispozici"
+msgstr ""
 
 #: data/ui/selectiondialog.blp:69
-#, fuzzy
 msgid ""
 "Your GnuPG keyring does not contain any keys that support this functionality."
-msgstr "Ve vašem systému nejsou uloženy žádné GnuPG klíče."
+msgstr ""
 
 #: data/ui/managementdialog.blp:68
 msgid "No keys available"
-msgstr "Žádné klíče k dispozici"
+msgstr ""
 
 #: data/ui/managementdialog.blp:69
-#, fuzzy
 msgid "Your GnuPG keyring does not contain any keys."
-msgstr "Ve vašem systému nejsou uloženy žádné GnuPG klíče."
+msgstr ""
 
 #: data/ui/managementdialog.blp:89
-#, fuzzy
 msgctxt "Import keys from files"
 msgid "Import"
-msgstr "Importovat"
+msgstr ""
 
 #: data/ui/managementdialog.blp:90
 msgid "Import keys from files"
-msgstr "Importovat klíče ze souborů"
+msgstr ""
 
 #: data/ui/managementdialog.blp:97
 msgid "Create a new keypair"
 msgstr ""
 
 #: data/ui/managementdialog.blp:110
-#, fuzzy
 msgid "Generate keypair"
-msgstr "Spravovat klíče"
+msgstr ""
 
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
@@ -618,156 +552,148 @@ msgstr ""
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
-msgstr ""
+msgstr "رایانامه"
 
 #: data/ui/managementdialog.blp:151
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
-msgstr ""
+msgstr "نظر"
 
 #: data/ui/managementdialog.blp:156
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
-msgstr ""
+msgstr "الگوریتم امضا"
 
 #: data/ui/managementdialog.blp:157
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
-msgstr ""
+msgstr "کلید"
 
 #: data/ui/managementdialog.blp:165
-#, fuzzy
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
-msgstr "Šifrovat"
+msgstr "الگوریتم رمزنگاری"
 
 #: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
-msgstr ""
+msgstr "زیرکلید"
 
 #: data/ui/managementdialog.blp:174
-#, fuzzy
 msgctxt "Expiry time of the new keypair"
 msgid "Expiry"
-msgstr "Platnost"
+msgstr ""
 
 #: data/ui/managementdialog.blp:175
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
-msgstr ""
+msgstr "ماه‌ها، غیرفعال کردن با صفر"
 
 #: data/ui/managementdialog.blp:197
 msgctxt "Generate a new keypair"
 msgid "Generate"
-msgstr ""
+msgstr "تولید کردن"
 
 #: data/ui/managementdialog.blp:198
 msgid "Generate a new keypair"
-msgstr ""
+msgstr "تولید کردن یک جفت‌کلید جدید"
 
 #: data/ui/keyrow.blp:5
 msgid "User ID"
-msgstr "ID Uživatele"
+msgstr ""
 
 #: data/ui/keyrow.blp:6
 msgid "Fingerprint"
-msgstr "Otisk"
+msgstr ""
 
 #: data/ui/keyrow.blp:7
 msgid "Expiry"
-msgstr "Platnost"
+msgstr ""
 
 #: data/ui/keyrow.blp:20
-#, fuzzy
 msgid "Remove key"
-msgstr "Obnovit klíče"
+msgstr "حذف کردن کلید"
 
 #: data/ui/keyrow.blp:27
 msgid "Export public key to file"
-msgstr "Exportovat veřejný klíč do souboru"
+msgstr "صادر کردن کلید عمومی به پرونده"
 
 #: data/ui/keyrow.blp:38
-#, fuzzy
 msgid "Edit expiry date"
-msgstr "Zobrazit datum platnosti"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
-msgstr "gpg;gnupg;kryptografie;opengpg;šifrovat;rozšifrovat;podepsat;ověřit;"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
 msgid ""
 "Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
 "LibAdwaita GUI."
 msgstr ""
-"Zámek je grafické rozhraní pro GnuPG (GPG) s využitím krásného LibAdwaita "
-"GUI."
+"قفل یک پیشینهٔ گرافیکی برای گنوپی‌جی (جی‌پی‌جی) است که با یک رابط کاربری گرافیکی "
+"زیبای LibAdwaita ساخته شده است."
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
 msgid "Process text and files:"
-msgstr "Možnost text a soubory:"
+msgstr "پردازش متن و پرونده‌ها:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:75
 msgid "Encryption"
-msgstr "Šifrovat"
+msgstr "رمزنگاری"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
 msgid "Decryption"
-msgstr "Rozšifrovat"
+msgstr "رمزگشایی"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:14
 msgid "Signing"
-msgstr "Podepisovat"
+msgstr "امضا کردن"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:15
 msgid "Verification"
-msgstr "Ověřovat"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:17
 msgid "Manage your GnuPG keyring:"
 msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
-#, fuzzy
 msgid "Generate new keypairs"
-msgstr "Spravovat klíče"
+msgstr "تولید کردن جفت‌کلیدها"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
-#, fuzzy
 msgid "Import keys"
-msgstr "Importovat"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:21
-#, fuzzy
 msgid "Export public keys"
-msgstr "Exportovat veřejné klíče do souborů"
+msgstr "صادر کردن کلیدها"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
 msgid "View expiry dates"
-msgstr "Zobrazit datum platnosti"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
 msgid "Update expiry dates of expired keys"
-msgstr ""
+msgstr "بروزرسانی تاریخ انقضای کلیدهای منقضی‌شده"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
-#, fuzzy
 msgid "Remove keys"
-msgstr "Obnovit klíče"
+msgstr "حذف کردن کلیدها"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:47
 msgid "Light Appearance"
-msgstr "Světlý Vzhled"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:51
 msgid "Dark Appearance"
-msgstr "Tmavý Vzhled"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:55
 msgid "Key Management"
-msgstr "Správa Klíčů"
+msgstr "مدیریت کلید"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:59
 msgid "Keypair Generation"
@@ -775,188 +701,21 @@ msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:63
 msgid "File processing"
-msgstr "Práce se soubory"
+msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:67
 msgid "Plain text"
-msgstr "Holý text"
+msgstr "متن ساده"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr ""
 
 #~ msgid "Verification failed"
-#~ msgstr "Ověření selhalo"
+#~ msgstr "اعتبارسنجی شکست خورد"
 
 #~ msgid "Text verified"
-#~ msgstr "Text ověřen"
+#~ msgstr "متن اعتبارسنجی شد"
 
 #~ msgid "File verified"
-#~ msgstr "Soubor ověřen"
-
-#, fuzzy
-#~ msgid "Expiry update failed"
-#~ msgstr "Export selhal"
-
-#, fuzzy
-#~ msgid "Remove key and subkeys?"
-#~ msgstr "Obnovit klíče"
-
-#~ msgctxt "Thread Error"
-#~ msgid "text encryption"
-#~ msgstr "šifrování textu"
-
-#~ msgctxt "Thread Error"
-#~ msgid "file encryption"
-#~ msgstr "šifrování souboru"
-
-#~ msgctxt "Thread Error"
-#~ msgid "text decryption"
-#~ msgstr "rozšifrování textu"
-
-#~ msgctxt "Thread Error"
-#~ msgid "file decryption"
-#~ msgstr "rozšifrování souboru"
-
-#~ msgctxt "Thread Error"
-#~ msgid "text signing"
-#~ msgstr "podepisování textu"
-
-#~ msgctxt "Thread Error"
-#~ msgid "file signing"
-#~ msgstr "podepisování souboru"
-
-#~ msgctxt "Thread Error"
-#~ msgid "text verification"
-#~ msgstr "ověření textu"
-
-#~ msgctxt "Thread Error"
-#~ msgid "file verification"
-#~ msgstr "ověření souboru"
-
-#~ msgctxt "Thread Error"
-#~ msgid "key import"
-#~ msgstr "importování klíče"
-
-#, fuzzy
-#~ msgctxt "Thread Error"
-#~ msgid "key generation"
-#~ msgstr "šifrování textu"
-
-#~ msgctxt "Thread Error"
-#~ msgid "key export"
-#~ msgstr "exportování klíče"
-
-#, c-format
-#~ msgctxt "Error message constructor for failed GPGME operations"
-#~ msgid "Failed to %s: %s"
-#~ msgstr "Selhalo %s: %s"
-
-#~ msgid "User ID dialog"
-#~ msgstr "Okno s ID uživatele"
-
-#~ msgid "Title"
-#~ msgstr "Nadpis"
-
-#~ msgid "Encrypt for"
-#~ msgstr "Zašifrovat pro"
-
-#~ msgid "Enter name or email …"
-#~ msgstr "Zadejte jméno nebo email …"
-
-#, c-format
-#~ msgid "Failed to find key for User ID “%s”"
-#~ msgstr "Klíč pro ID Uživatele “%s” nebyl nalezen"
-
-#, fuzzy, c-format
-#~ msgctxt ""
-#~ "Formatter is either name, email or fingerprint of the public key used in "
-#~ "the encryption process."
-#~ msgid "Text encrypted for %s"
-#~ msgstr "Text zašifrován"
-
-#, fuzzy, c-format
-#~ msgctxt ""
-#~ "Formatter is either name, email or fingerprint of the public key used in "
-#~ "the encryption process."
-#~ msgid "File encrypted for %s"
-#~ msgstr "Soubor zašifrován"
-
-#, fuzzy, c-format
-#~ msgid "Could not find key for fingerprint %s to remove."
-#~ msgstr "Klíč pro ID Uživatele “%s” nebyl nalezen"
-
-#~ msgctxt "GPGME Error"
-#~ msgid "create new decrypted GPGME data from file"
-#~ msgstr "vytvoření nových rozšifrovaných GPGME dat ze souboru"
-
-#~ msgctxt "GPGME Error"
-#~ msgid "create new encrypted GPGME data"
-#~ msgstr "vytvoření nových zašifrovaných GPGME dat"
-
-#~ msgctxt "GPGME Error"
-#~ msgid "set file path of encrypted GPGME data"
-#~ msgstr "nastavení cesty souboru šifrovaných GPGME dat"
-
-#~ msgctxt "GPGME Error"
-#~ msgid "create new encrypted GPGME data from file"
-#~ msgstr "vytvoření nových šifrovaných GPGME dat ze souboru"
-
-#~ msgctxt "GPGME Error"
-#~ msgid "create new decrypted GPGME data"
-#~ msgstr "vytvoření nových rozšifrovaných GPGME dat"
-
-#~ msgctxt "GPGME Error"
-#~ msgid "set file path of decrypted GPGME data"
-#~ msgstr "nastavení cesty souboru rozšifrovaných GPGME dat"
-
-#~ msgctxt "GPGME Error"
-#~ msgid "create new unsigned GPGME data from file"
-#~ msgstr "vytvoření nových nepodepsaných GPGME dat ze souboru"
-
-#~ msgctxt "GPGME Error"
-#~ msgid "create new signed GPGME data"
-#~ msgstr "vytvoření nových podepsaných GPGME dat"
-
-#~ msgctxt "GPGME Error"
-#~ msgid "create new unsigned GPGME data"
-#~ msgstr "vytvoření nových nepodepsaných GPGME dat"
-
-#~ msgctxt "GPGME Error"
-#~ msgid "set file path of unsigned GPGME data"
-#~ msgstr "nastavení cesty souboru nepodepsaných GPGME dat"
-
-#~ msgctxt "GPGME Error"
-#~ msgid "create new decrypted GPGME data from string"
-#~ msgstr "vytvoření nových rozšifrovaných GPGME dat z řetězce"
-
-#~ msgctxt "GPGME Error"
-#~ msgid "create new encrypted GPGME data from string"
-#~ msgstr "vytvoření nových zašifrovaných GPGME dat z řetězce"
-
-#~ msgctxt "GPGME Error"
-#~ msgid "create new unsigned GPGME data from string"
-#~ msgstr "vytvoření nových nepodepsaných GPGME dat z řetězce"
-
-#~ msgctxt "GPGME Error"
-#~ msgid "create new verified GPGME data"
-#~ msgstr "vytvoření nových ověřených GPGME dat"
-
-#~ msgid "Manage available keys in a list:"
-#~ msgstr "Správa klíčů umožňuje:"
-
-#, fuzzy
-#~ msgid "Remove key including subkeys"
-#~ msgstr "Obnovit klíče"
-
-#, fuzzy
-#~ msgid "Import key(s) from file"
-#~ msgstr "Importovat klíče ze souborů"
-
-#, fuzzy
-#~ msgctxt "GPGME Error"
-#~ msgid "generate new GPG keypair"
-#~ msgstr "Spravovat klíče"
-
-#~ msgid "Import key from file"
-#~ msgstr "Importovat klíč ze souboru"
+#~ msgstr "پرونده اعتبارسنجی شد"

@@ -8,16 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-10 11:55+0100\n"
-"PO-Revision-Date: 2024-12-10 11:47+0100\n"
+"POT-Creation-Date: 2024-12-10 16:08+0100\n"
+"PO-Revision-Date: 2024-12-10 15:02+0000\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
-"Language-Team: German\n"
+"Language-Team: German <https://hosted.weblate.org/projects/Lock/Application/"
+"de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 47.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -287,7 +288,7 @@ msgstr "Fehler beim Verifizieren von GPGME Daten aus dem Hauptspeicher"
 
 #: src/cryptography.c:387 src/cryptography.c:525
 msgid "Unknown"
-msgstr ""
+msgstr "Unbekannt"
 
 #: src/cryptography.c:428
 #, c-format

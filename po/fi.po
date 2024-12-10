@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-10 11:55+0100\n"
+"POT-Creation-Date: 2024-12-10 16:08+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -132,10 +132,10 @@ msgid "Key does not expire"
 msgstr "Avain ei vanhene"
 
 #: src/keyrow.c:132
-#, fuzzy, c-format
+#, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
-msgstr "Vanhenee %s klo %s"
+msgstr "Vanheni %s klo %s"
 
 #: src/keyrow.c:134
 #, c-format
@@ -181,14 +181,12 @@ msgid "Key removed"
 msgstr "Avain poistettu"
 
 #: src/keyrow.c:415
-#, fuzzy
 msgid "Renewal failed"
-msgstr "Poistaminen epäonnistui"
+msgstr "Uusiminen epäonnistui"
 
 #: src/keyrow.c:417
-#, fuzzy
 msgid "Expiry renewed"
-msgstr "Näytä vanhenemispäivät"
+msgstr "Vanheneminen uusittiin"
 
 #: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
 #: src/cryptography.c:174 src/cryptography.c:310 src/cryptography.c:440
@@ -245,9 +243,8 @@ msgid "Failed to get GPG key for expiry editing"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
 #: src/cryptography.c:255
-#, fuzzy
 msgid "Failed to update the expiry time"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Vanhenemisajan päivittäminen epäonnistui"
 
 #: src/cryptography.c:268
 #, fuzzy
@@ -531,7 +528,7 @@ msgstr "Allekirjoita (raakateksti)"
 
 #: data/ui/window.blp:237
 msgid "Sign (Detached)"
-msgstr ""
+msgstr "Allekirjoita (erillinen)"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
@@ -652,9 +649,8 @@ msgid "Export public key to file"
 msgstr "Vie julkinen avain tiedostoon"
 
 #: data/ui/keyrow.blp:38
-#, fuzzy
 msgid "Edit expiry date"
-msgstr "Näytä vanhenemispäivät"
+msgstr "Muokkaa vanhenemispäivää"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
@@ -713,7 +709,7 @@ msgstr "Näytä vanhenemispäivät"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
 msgid "Update expiry dates of expired keys"
-msgstr ""
+msgstr "Päivitä vanhentuneiden avainten vanhenemispäivät"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
