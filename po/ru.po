@@ -50,56 +50,56 @@ msgstr "Ярослав Пронин <proninyaroslav@mail.ru>"
 msgid "Dependencies"
 msgstr "Зависимости"
 
-#: src/window.c:157
+#: src/window.c:157 src/window.c:156
 msgid "Enter text …"
 msgstr "Введите текст…"
 
-#: src/window.c:459
+#: src/window.c:459 src/window.c:458
 msgid "Text copied"
 msgstr "Текст скопирован"
 
-#: src/window.c:528
+#: src/window.c:528 src/window.c:527
 #, c-format
 msgid "Could not read text from clipboard: %s"
 msgstr "Не удалось прочитать текст из буфера обмена: %s"
 
-#: src/window.c:537
+#: src/window.c:537 src/window.c:536
 msgid "Text pasted"
 msgstr "Текст вставлен"
 
-#: src/window.c:789 src/window.c:852
+#: src/window.c:789 src/window.c:852 src/window.c:788 src/window.c:850
 msgid "Encryption failed"
 msgstr "Не удалось зашифровать"
 
-#: src/window.c:791
+#: src/window.c:791 src/window.c:790
 msgid "Text encrypted"
 msgstr "Текст зашифрован"
 
-#: src/window.c:854
+#: src/window.c:854 src/window.c:852
 msgid "File encrypted"
 msgstr "Файл зашифрован"
 
-#: src/window.c:910 src/window.c:969
+#: src/window.c:910 src/window.c:969 src/window.c:908 src/window.c:966
 msgid "Decryption failed"
 msgstr "Не удалось расшифровать"
 
-#: src/window.c:912
+#: src/window.c:912 src/window.c:910
 msgid "Text decrypted"
 msgstr "Текст расшифрован"
 
-#: src/window.c:971
+#: src/window.c:971 src/window.c:968
 msgid "File decrypted"
 msgstr "Файл расшифрован"
 
-#: src/window.c:1078 src/window.c:1141
+#: src/window.c:1078 src/window.c:1141 src/window.c:1075 src/window.c:1137
 msgid "Signing failed"
 msgstr "Не удалось подписать"
 
-#: src/window.c:1080
+#: src/window.c:1080 src/window.c:1077
 msgid "Text signed"
 msgstr "Текст подписан"
 
-#: src/window.c:1143
+#: src/window.c:1143 src/window.c:1139
 msgid "File signed"
 msgstr "Файл подписан"
 
@@ -133,10 +133,10 @@ msgid "Key does not expire"
 msgstr "Срок действия ключа не ограничен"
 
 #: src/keyrow.c:132
-#, fuzzy, c-format
+#, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
-msgstr "Истекает %s в %s"
+msgstr "Истёк %s в %s"
 
 #: src/keyrow.c:134
 #, c-format
@@ -182,22 +182,22 @@ msgid "Key removed"
 msgstr "Ключ удалён"
 
 #: src/keyrow.c:415
-#, fuzzy
 msgid "Renewal failed"
-msgstr "Не удалось удалить"
+msgstr "Не удалось продлить"
 
 #: src/keyrow.c:417
-#, fuzzy
 msgid "Expiry renewed"
-msgstr "Посмотр дат истечения срока действия"
+msgstr "Срок истечения продлён"
 
 #: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
 #: src/cryptography.c:174 src/cryptography.c:310 src/cryptography.c:440
+#: src/cryptography.c:309 src/cryptography.c:420
 msgid "Failed to create new GPGME context"
 msgstr "Не удалось создать новый контекст GPGME"
 
 #: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
 #: src/cryptography.c:178 src/cryptography.c:314 src/cryptography.c:444
+#: src/cryptography.c:313 src/cryptography.c:424
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "Не удалось установить протокол контекста GPGME на OpenPGP"
 
@@ -239,14 +239,12 @@ msgid "Failed to open export file: %s"
 msgstr "Не удалось открыть файл экспорта: %s"
 
 #: src/cryptography.c:252
-#, fuzzy
 msgid "Failed to get GPG key for expiry editing"
-msgstr "Не удалось получить GPG ключ для удаления"
+msgstr "Не удалось получить ключ GPG для редактирования срока истечения"
 
 #: src/cryptography.c:255
-#, fuzzy
 msgid "Failed to update the expiry time"
-msgstr "Не удалось создать поток экспорта ключа"
+msgstr "Не удалось обновить время истечения срока"
 
 #: src/cryptography.c:268
 msgid "Failed to get GPG key for removal"
@@ -256,35 +254,37 @@ msgstr "Не удалось получить GPG ключ для удалени�
 msgid "Failed to remove GPG key"
 msgstr "Не удалось удалить GPG ключ"
 
-#: src/cryptography.c:319 src/cryptography.c:449
+#: src/cryptography.c:319 src/cryptography.c:449 src/cryptography.c:318
+#: src/cryptography.c:429
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "Не удалось установить режим запроса ввода PIN-кода для контекста GPGME"
 
-#: src/cryptography.c:326
+#: src/cryptography.c:326 src/cryptography.c:325
 msgid "Failed to create new GPGME input data from string"
 msgstr "Не удалось создать новые входные данные GPGME из строки"
 
-#: src/cryptography.c:331 src/cryptography.c:469
+#: src/cryptography.c:331 src/cryptography.c:469 src/cryptography.c:330
+#: src/cryptography.c:449
 msgid "Failed to create new GPGME output data in memory"
 msgstr "Не удалось создать новые выходные данные GPGME в памяти"
 
-#: src/cryptography.c:340
+#: src/cryptography.c:340 src/cryptography.c:339
 msgid "Failed to encrypt GPGME data from memory"
 msgstr "Не удалось зашифровать данные GPGME в памяти"
 
-#: src/cryptography.c:346
+#: src/cryptography.c:346 src/cryptography.c:345
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "Не удалось расшифровать данные GPGME в памяти"
 
-#: src/cryptography.c:354
+#: src/cryptography.c:354 src/cryptography.c:353
 msgid "Failed to add signing key to GPGME context"
 msgstr "Не удалось добавить ключ подписи в контекст GPGME"
 
-#: src/cryptography.c:361
+#: src/cryptography.c:361 src/cryptography.c:360
 msgid "Failed to sign GPGME data from memory"
 msgstr "Не удалось подписать данные GPGME в памяти"
 
-#: src/cryptography.c:367
+#: src/cryptography.c:367 src/cryptography.c:366
 msgid "Failed to verify GPGME data from memory"
 msgstr "Не удалось проверить данные GPGME в памяти"
 
@@ -292,40 +292,40 @@ msgstr "Не удалось проверить данные GPGME в памят�
 msgid "Unknown"
 msgstr ""
 
-#: src/cryptography.c:428
+#: src/cryptography.c:428 src/cryptography.c:408
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s удалён для подготовки перезаписи"
 
-#: src/cryptography.c:455
+#: src/cryptography.c:455 src/cryptography.c:435
 msgid "Failed to create new GPGME input data from file"
 msgstr "Не удалось создать новые входные данные GPGME из файла"
 
-#: src/cryptography.c:462
+#: src/cryptography.c:462 src/cryptography.c:442
 msgid "Failed to set file name of GPGME input data"
 msgstr "Не удалось задать имя файла входных данных GPGME"
 
-#: src/cryptography.c:477
+#: src/cryptography.c:477 src/cryptography.c:457
 msgid "Failed to set file name of GPGME output data"
 msgstr "Не удалось задать имя файла выходных данных GPGME"
 
-#: src/cryptography.c:487
+#: src/cryptography.c:487 src/cryptography.c:467
 msgid "Failed to encrypt GPGME data from file"
 msgstr "Не удалось зашифровать данные GPGME из файла"
 
-#: src/cryptography.c:492
+#: src/cryptography.c:492 src/cryptography.c:472
 msgid "Failed to decrypt GPGME data from file"
 msgstr "Не удалось расшифровать данные GPGME из файла"
 
-#: src/cryptography.c:499
+#: src/cryptography.c:499 src/cryptography.c:479
 msgid "Failed to sign GPGME data from file"
 msgstr "Не удалось подписать данные GPGME из файла"
 
-#: src/cryptography.c:505
+#: src/cryptography.c:505 src/cryptography.c:485
 msgid "Failed to verify GPGME data from file"
 msgstr "Не удалось проверить данные GPGME из файла"
 
-#: src/cryptography.c:539
+#: src/cryptography.c:539 src/cryptography.c:501
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Не удалось открыть выходной файл: %s"
@@ -625,9 +625,8 @@ msgid "Export public key to file"
 msgstr "Экспортировать открытый ключ в файл"
 
 #: data/ui/keyrow.blp:38
-#, fuzzy
 msgid "Edit expiry date"
-msgstr "Посмотр дат истечения срока действия"
+msgstr "Редактировать дату истечения"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
@@ -686,7 +685,7 @@ msgstr "Посмотр дат истечения срока действия"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
 msgid "Update expiry dates of expired keys"
-msgstr ""
+msgstr "Обновить даты ключей с истёкшим сроком"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
@@ -720,14 +719,17 @@ msgstr "Обычный текст"
 msgid "Key selection dialog"
 msgstr "Диалог выбора ключей"
 
-#~ msgid "Verification failed"
-#~ msgstr "Проверка не удалась"
+#: src/window.c:1195 src/window.c:1253
+msgid "Verification failed"
+msgstr "Проверка не удалась"
 
-#~ msgid "Text verified"
-#~ msgstr "Текст проверен"
+#: src/window.c:1197
+msgid "Text verified"
+msgstr "Текст проверен"
 
-#~ msgid "File verified"
-#~ msgstr "Файл проверен"
+#: src/window.c:1255
+msgid "File verified"
+msgstr "Файл проверен"
 
 #, fuzzy
 #~ msgid "Expiry update failed"
