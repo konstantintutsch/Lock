@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 18:22+0100\n"
+"POT-Creation-Date: 2024-12-10 11:47+0100\n"
 "PO-Revision-Date: 2024-12-01 16:55+0000\n"
 "Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -50,70 +50,67 @@ msgstr "Ярослав Пронин <proninyaroslav@mail.ru>"
 msgid "Dependencies"
 msgstr "Зависимости"
 
-#: src/window.c:156
+#: src/window.c:157
 msgid "Enter text …"
 msgstr "Введите текст…"
 
-#: src/window.c:458
+#: src/window.c:459
 msgid "Text copied"
 msgstr "Текст скопирован"
 
-#: src/window.c:527
+#: src/window.c:528
 #, c-format
 msgid "Could not read text from clipboard: %s"
 msgstr "Не удалось прочитать текст из буфера обмена: %s"
 
-#: src/window.c:536
+#: src/window.c:537
 msgid "Text pasted"
 msgstr "Текст вставлен"
 
-#: src/window.c:788 src/window.c:850
+#: src/window.c:789 src/window.c:852
 msgid "Encryption failed"
 msgstr "Не удалось зашифровать"
 
-#: src/window.c:790
+#: src/window.c:791
 msgid "Text encrypted"
 msgstr "Текст зашифрован"
 
-#: src/window.c:852
+#: src/window.c:854
 msgid "File encrypted"
 msgstr "Файл зашифрован"
 
-#: src/window.c:908 src/window.c:966
+#: src/window.c:910 src/window.c:969
 msgid "Decryption failed"
 msgstr "Не удалось расшифровать"
 
-#: src/window.c:910
+#: src/window.c:912
 msgid "Text decrypted"
 msgstr "Текст расшифрован"
 
-#: src/window.c:968
+#: src/window.c:971
 msgid "File decrypted"
 msgstr "Файл расшифрован"
 
-#: src/window.c:1075 src/window.c:1137
+#: src/window.c:1078 src/window.c:1141
 msgid "Signing failed"
 msgstr "Не удалось подписать"
 
-#: src/window.c:1077
+#: src/window.c:1080
 msgid "Text signed"
 msgstr "Текст подписан"
 
-#: src/window.c:1139
+#: src/window.c:1143
 msgid "File signed"
 msgstr "Файл подписан"
 
-#: src/window.c:1195 src/window.c:1253
-msgid "Verification failed"
-msgstr "Проверка не удалась"
+#: src/window.c:1199 src/window.c:1260
+msgid "Signature invalid"
+msgstr ""
 
-#: src/window.c:1197
-msgid "Text verified"
-msgstr "Текст проверен"
-
-#: src/window.c:1255
-msgid "File verified"
-msgstr "Файл проверен"
+#: src/window.c:1203 src/window.c:1264
+#, c-format
+msgid "Signature valid - by %s"
+msgstr ""
 
 #: src/managementdialog.c:339
 msgid "Import failed"
@@ -194,13 +191,13 @@ msgstr "Не удалось удалить"
 msgid "Expiry renewed"
 msgstr "Посмотр дат истечения срока действия"
 
-#: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
-#: src/cryptography.c:174 src/cryptography.c:309 src/cryptography.c:420
+#: src/cryptography.c:42 src/cryptography.c:76 src/cryptography.c:120
+#: src/cryptography.c:178 src/cryptography.c:308 src/cryptography.c:428
 msgid "Failed to create new GPGME context"
 msgstr "Не удалось создать новый контекст GPGME"
 
-#: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
-#: src/cryptography.c:178 src/cryptography.c:313 src/cryptography.c:424
+#: src/cryptography.c:46 src/cryptography.c:80 src/cryptography.c:124
+#: src/cryptography.c:182 src/cryptography.c:312 src/cryptography.c:432
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "Не удалось установить протокол контекста GPGME на OpenPGP"
 
@@ -208,31 +205,31 @@ msgstr "Не удалось установить протокол контекс
 msgid "Failed to obtain key by fingerprint"
 msgstr "Не удалось получить ключ по отпечатку"
 
-#: src/cryptography.c:93
+#: src/cryptography.c:94
 msgid "Failed to find key matching User ID"
 msgstr "Не удалось найти ключ, соответствующий идентификатору пользователя"
 
-#: src/cryptography.c:133 src/cryptography.c:141
+#: src/cryptography.c:135 src/cryptography.c:143
 msgid "Failed to generate new GPG key for signing"
 msgstr "Не удалось сгенерировать новый ключ GPG для подписи"
 
-#: src/cryptography.c:147
+#: src/cryptography.c:149
 msgid "Failed to delete unfinished, generated key"
 msgstr "Не удалось удалить незавершенный, сгенерированный ключ"
 
-#: src/cryptography.c:184
+#: src/cryptography.c:188
 msgid "Failed to load GPGME key data from file"
 msgstr "Не удалось загрузить данные ключа GPGME из файла"
 
-#: src/cryptography.c:190
+#: src/cryptography.c:193
 msgid "Failed to import GPG key from file"
 msgstr "Не удалось импортировать ключ GPG из файла"
 
-#: src/cryptography.c:201
+#: src/cryptography.c:203
 msgid "Failed to create GPGME key data in memory"
 msgstr "Не удалось создать данные ключа GPGME в памяти"
 
-#: src/cryptography.c:207
+#: src/cryptography.c:208
 msgid "Failed to export GPG key(s) to file"
 msgstr "Не удалось экспортировать ключ(и) GPG в файл"
 
@@ -251,23 +248,23 @@ msgstr "Не удалось получить GPG ключ для удалени�
 msgid "Failed to update the expiry time"
 msgstr "Не удалось создать поток экспорта ключа"
 
-#: src/cryptography.c:268
+#: src/cryptography.c:267
 msgid "Failed to get GPG key for removal"
 msgstr "Не удалось получить GPG ключ для удаления"
 
-#: src/cryptography.c:272
+#: src/cryptography.c:271
 msgid "Failed to remove GPG key"
 msgstr "Не удалось удалить GPG ключ"
 
-#: src/cryptography.c:318 src/cryptography.c:429
+#: src/cryptography.c:317 src/cryptography.c:437
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "Не удалось установить режим запроса ввода PIN-кода для контекста GPGME"
 
-#: src/cryptography.c:325
+#: src/cryptography.c:324
 msgid "Failed to create new GPGME input data from string"
 msgstr "Не удалось создать новые входные данные GPGME из строки"
 
-#: src/cryptography.c:330 src/cryptography.c:449
+#: src/cryptography.c:330 src/cryptography.c:458
 msgid "Failed to create new GPGME output data in memory"
 msgstr "Не удалось создать новые выходные данные GPGME в памяти"
 
@@ -283,48 +280,52 @@ msgstr "Не удалось расшифровать данные GPGME в па�
 msgid "Failed to add signing key to GPGME context"
 msgstr "Не удалось добавить ключ подписи в контекст GPGME"
 
-#: src/cryptography.c:360
+#: src/cryptography.c:358
 msgid "Failed to sign GPGME data from memory"
 msgstr "Не удалось подписать данные GPGME в памяти"
 
-#: src/cryptography.c:366
+#: src/cryptography.c:365
 msgid "Failed to verify GPGME data from memory"
 msgstr "Не удалось проверить данные GPGME в памяти"
 
-#: src/cryptography.c:408
+#: src/cryptography.c:375 src/cryptography.c:511
+msgid "Unknown"
+msgstr ""
+
+#: src/cryptography.c:416
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s удалён для подготовки перезаписи"
 
-#: src/cryptography.c:435
+#: src/cryptography.c:443
 msgid "Failed to create new GPGME input data from file"
 msgstr "Не удалось создать новые входные данные GPGME из файла"
 
-#: src/cryptography.c:442
+#: src/cryptography.c:451
 msgid "Failed to set file name of GPGME input data"
 msgstr "Не удалось задать имя файла входных данных GPGME"
 
-#: src/cryptography.c:457
+#: src/cryptography.c:466
 msgid "Failed to set file name of GPGME output data"
 msgstr "Не удалось задать имя файла выходных данных GPGME"
 
-#: src/cryptography.c:467
+#: src/cryptography.c:477
 msgid "Failed to encrypt GPGME data from file"
 msgstr "Не удалось зашифровать данные GPGME из файла"
 
-#: src/cryptography.c:472
+#: src/cryptography.c:484
 msgid "Failed to decrypt GPGME data from file"
 msgstr "Не удалось расшифровать данные GPGME из файла"
 
-#: src/cryptography.c:479
+#: src/cryptography.c:493
 msgid "Failed to sign GPGME data from file"
 msgstr "Не удалось подписать данные GPGME из файла"
 
-#: src/cryptography.c:485
+#: src/cryptography.c:500
 msgid "Failed to verify GPGME data from file"
 msgstr "Не удалось проверить данные GPGME из файла"
 
-#: src/cryptography.c:501
+#: src/cryptography.c:525
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Не удалось открыть выходной файл: %s"
@@ -718,6 +719,15 @@ msgstr "Обычный текст"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Диалог выбора ключей"
+
+#~ msgid "Verification failed"
+#~ msgstr "Проверка не удалась"
+
+#~ msgid "Text verified"
+#~ msgstr "Текст проверен"
+
+#~ msgid "File verified"
+#~ msgstr "Файл проверен"
 
 #, fuzzy
 #~ msgid "Expiry update failed"

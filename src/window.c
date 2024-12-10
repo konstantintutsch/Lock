@@ -29,6 +29,7 @@ struct _LockWindow {
 
     gchar *fingerprint; /**< Stores the selected fingerprint for an encryption or signing process. */
     gpgme_sig_mode_t signature_mode; /**< Stores the selected signature mode for a signing process. */
+    gchar *signer; /**< Stores the signer of the verified signature from a verification process. */
 
     /* Text */
     AdwViewStackPage *text_page;
@@ -750,7 +751,7 @@ void lock_window_encrypt_text(LockWindow *window)
 
     gpgme_key_t key = key_get(window->fingerprint);
 
-    gchar *armor = process_text(plain, ENCRYPT, key, 0);
+    gchar *armor = process_text(plain, ENCRYPT, key, 0, NULL);
     if (armor == NULL) {
         window->text_success = false;
     } else {
@@ -818,7 +819,8 @@ void lock_window_encrypt_file(LockWindow *window)
 
     gpgme_key_t key = key_get(window->fingerprint);
 
-    window->file_success = process_file(input_path, output_path, ENCRYPT, key);
+    window->file_success =
+        process_file(input_path, output_path, ENCRYPT, key, NULL);
 
     /* Cleanup */
     g_free(input_path);
@@ -872,7 +874,7 @@ void lock_window_decrypt_text(LockWindow *window)
 {
     gchar *armor = lock_window_text_view_get_text(window);
 
-    gchar *plain = process_text(armor, DECRYPT, NULL, 0);
+    gchar *plain = process_text(armor, DECRYPT, NULL, 0, NULL);
     if (plain == NULL) {
         window->text_success = false;
     } else {
@@ -936,7 +938,8 @@ void lock_window_decrypt_file(LockWindow *window)
     char *input_path = g_file_get_path(window->file_input);
     char *output_path = g_file_get_path(window->file_output);
 
-    window->file_success = process_file(input_path, output_path, DECRYPT, NULL);
+    window->file_success =
+        process_file(input_path, output_path, DECRYPT, NULL, NULL);
 
     /* Cleanup */
     g_free(input_path);
@@ -1037,7 +1040,7 @@ void lock_window_sign_text(LockWindow *window)
 
     gpgme_key_t key = key_get(window->fingerprint);
 
-    gchar *armor = process_text(plain, SIGN, key, window->signature_mode);
+    gchar *armor = process_text(plain, SIGN, key, window->signature_mode, NULL);
     if (armor == NULL) {
         window->text_success = false;
     } else {
@@ -1105,7 +1108,8 @@ void lock_window_sign_file(LockWindow *window)
 
     gpgme_key_t key = key_get(window->fingerprint);
 
-    window->file_success = process_file(input_path, output_path, SIGN, key);
+    window->file_success =
+        process_file(input_path, output_path, SIGN, key, NULL);
 
     /* Cleanup */
     g_free(input_path);
@@ -1159,7 +1163,7 @@ void lock_window_verify_text(LockWindow *window)
 {
     gchar *armor = lock_window_text_view_get_text(window);
 
-    gchar *plain = process_text(armor, VERIFY, NULL, 0);
+    gchar *plain = process_text(armor, VERIFY, NULL, 0, &window->signer);
     if (plain == NULL) {
         window->text_success = false;
     } else {
@@ -1192,9 +1196,11 @@ gboolean lock_window_verify_text_on_completed(LockWindow *window)
     AdwToast *toast;
 
     if (!window->text_success) {
-        toast = adw_toast_new(_("Verification failed"));
+        toast = adw_toast_new(_("Signature invalid"));
     } else {
-        toast = adw_toast_new(_("Text verified"));
+        toast =
+            adw_toast_new(g_strdup_printf
+                          (_("Signature valid - by %s"), window->signer));
 
         gchar *plain = lock_window_text_queue_get_text(window);
         lock_window_text_view_set_text(window, plain);
@@ -1223,7 +1229,8 @@ void lock_window_verify_file(LockWindow *window)
     char *input_path = g_file_get_path(window->file_input);
     char *output_path = g_file_get_path(window->file_output);
 
-    window->file_success = process_file(input_path, output_path, VERIFY, NULL);
+    window->file_success =
+        process_file(input_path, output_path, VERIFY, NULL, &window->signer);
 
     /* Cleanup */
     g_free(input_path);
@@ -1250,9 +1257,11 @@ gboolean lock_window_verify_file_on_completed(LockWindow *window)
     AdwToast *toast;
 
     if (!window->file_success) {
-        toast = adw_toast_new(_("Verification failed"));
+        toast = adw_toast_new(_("Signature invalid"));
     } else {
-        toast = adw_toast_new(_("File verified"));
+        toast =
+            adw_toast_new(g_strdup_printf
+                          (_("Signature valid - by %s"), window->signer));
     }
 
     adw_toast_set_timeout(toast, 3);

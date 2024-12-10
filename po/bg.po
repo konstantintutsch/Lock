@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 18:22+0100\n"
+"POT-Creation-Date: 2024-12-10 11:47+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/Lock/"
@@ -50,73 +50,70 @@ msgstr "twlvnn kraftwerk <kraft_werk@tutanota.com>"
 msgid "Dependencies"
 msgstr "Зависимости"
 
-#: src/window.c:156
+#: src/window.c:157
 msgid "Enter text …"
 msgstr "Въведете текст …"
 
-#: src/window.c:458
+#: src/window.c:459
 msgid "Text copied"
 msgstr "Текстът е копиран"
 
-#: src/window.c:527
+#: src/window.c:528
 #, c-format
 msgid "Could not read text from clipboard: %s"
 msgstr ""
 
-#: src/window.c:536
+#: src/window.c:537
 #, fuzzy
 msgid "Text pasted"
 msgstr "Текстът е копиран"
 
-#: src/window.c:788 src/window.c:850
+#: src/window.c:789 src/window.c:852
 msgid "Encryption failed"
 msgstr "Шифрирането е неуспешно"
 
-#: src/window.c:790
+#: src/window.c:791
 #, fuzzy
 msgid "Text encrypted"
 msgstr "Текстът е дешифриран"
 
-#: src/window.c:852
+#: src/window.c:854
 #, fuzzy
 msgid "File encrypted"
 msgstr "Файлът е дешифриран"
 
-#: src/window.c:908 src/window.c:966
+#: src/window.c:910 src/window.c:969
 msgid "Decryption failed"
 msgstr "Дешифрирането е неуспешно"
 
-#: src/window.c:910
+#: src/window.c:912
 msgid "Text decrypted"
 msgstr "Текстът е дешифриран"
 
-#: src/window.c:968
+#: src/window.c:971
 msgid "File decrypted"
 msgstr "Файлът е дешифриран"
 
-#: src/window.c:1075 src/window.c:1137
+#: src/window.c:1078 src/window.c:1141
 msgid "Signing failed"
 msgstr "Подписването е неуспешно"
 
-#: src/window.c:1077
+#: src/window.c:1080
 msgid "Text signed"
 msgstr "Текстът е подписан"
 
-#: src/window.c:1139
+#: src/window.c:1143
 msgid "File signed"
 msgstr "Файлът е подписан"
 
-#: src/window.c:1195 src/window.c:1253
-msgid "Verification failed"
-msgstr "Потвърждаването е неуспешно"
+#: src/window.c:1199 src/window.c:1260
+msgid "Signature invalid"
+msgstr ""
 
-#: src/window.c:1197
-msgid "Text verified"
-msgstr "Текстът е потвърден"
-
-#: src/window.c:1255
-msgid "File verified"
-msgstr "Файлът е потвърден"
+#: src/window.c:1203 src/window.c:1264
+#, c-format
+msgid "Signature valid - by %s"
+msgstr ""
 
 #: src/managementdialog.c:339
 msgid "Import failed"
@@ -200,14 +197,14 @@ msgstr "Премахването е неуспешно"
 msgid "Expiry renewed"
 msgstr "Преглеждайте датите на изтичане"
 
-#: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
-#: src/cryptography.c:174 src/cryptography.c:309 src/cryptography.c:420
+#: src/cryptography.c:42 src/cryptography.c:76 src/cryptography.c:120
+#: src/cryptography.c:178 src/cryptography.c:308 src/cryptography.c:428
 #, fuzzy
 msgid "Failed to create new GPGME context"
 msgstr "създадане на нов GPGME контекст"
 
-#: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
-#: src/cryptography.c:178 src/cryptography.c:313 src/cryptography.c:424
+#: src/cryptography.c:46 src/cryptography.c:80 src/cryptography.c:124
+#: src/cryptography.c:182 src/cryptography.c:312 src/cryptography.c:432
 #, fuzzy
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "задаване на протокол на GPGME контекста на OpenPGP"
@@ -217,37 +214,37 @@ msgstr "задаване на протокол на GPGME контекста н�
 msgid "Failed to obtain key by fingerprint"
 msgstr "намиране на ключ, съответстващ на идентификатора на потребителя"
 
-#: src/cryptography.c:93
+#: src/cryptography.c:94
 #, fuzzy
 msgid "Failed to find key matching User ID"
 msgstr "намиране на ключ, съответстващ на идентификатора на потребителя"
 
-#: src/cryptography.c:133 src/cryptography.c:141
+#: src/cryptography.c:135 src/cryptography.c:143
 #, fuzzy
 msgid "Failed to generate new GPG key for signing"
 msgstr "генериране на нов GPG ключ за подписване"
 
-#: src/cryptography.c:147
+#: src/cryptography.c:149
 #, fuzzy
 msgid "Failed to delete unfinished, generated key"
 msgstr "изтриване на незавършен, генериран ECC ключ"
 
-#: src/cryptography.c:184
+#: src/cryptography.c:188
 #, fuzzy
 msgid "Failed to load GPGME key data from file"
 msgstr "зареждане на данни за GPGME ключа от файл"
 
-#: src/cryptography.c:190
+#: src/cryptography.c:193
 #, fuzzy
 msgid "Failed to import GPG key from file"
 msgstr "внасяне на GPG ключ от файл"
 
-#: src/cryptography.c:201
+#: src/cryptography.c:203
 #, fuzzy
 msgid "Failed to create GPGME key data in memory"
 msgstr "създаване на данни за GPGME ключ в паметта"
 
-#: src/cryptography.c:207
+#: src/cryptography.c:208
 #, fuzzy
 msgid "Failed to export GPG key(s) to file"
 msgstr "внасяне на GPG ключ от файл"
@@ -267,27 +264,27 @@ msgstr "премахване на ключ"
 msgid "Failed to update the expiry time"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/cryptography.c:268
+#: src/cryptography.c:267
 #, fuzzy
 msgid "Failed to get GPG key for removal"
 msgstr "премахване на ключ"
 
-#: src/cryptography.c:272
+#: src/cryptography.c:271
 #, fuzzy
 msgid "Failed to remove GPG key"
 msgstr "премахване на GPG ключ"
 
-#: src/cryptography.c:318 src/cryptography.c:429
+#: src/cryptography.c:317 src/cryptography.c:437
 #, fuzzy
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "задаване на режим „pinentry“ на GPGME контекста за запитване"
 
-#: src/cryptography.c:325
+#: src/cryptography.c:324
 #, fuzzy
 msgid "Failed to create new GPGME input data from string"
 msgstr "създаване на нови подписани GPGME данни от низ"
 
-#: src/cryptography.c:330 src/cryptography.c:449
+#: src/cryptography.c:330 src/cryptography.c:458
 #, fuzzy
 msgid "Failed to create new GPGME output data in memory"
 msgstr "създаване на данни за GPGME ключ в паметта"
@@ -307,57 +304,61 @@ msgstr "дешифриране на GPGME данни от паметта"
 msgid "Failed to add signing key to GPGME context"
 msgstr "създадане на нов GPGME контекст"
 
-#: src/cryptography.c:360
+#: src/cryptography.c:358
 #, fuzzy
 msgid "Failed to sign GPGME data from memory"
 msgstr "подписване на GPGME данни от паметта"
 
-#: src/cryptography.c:366
+#: src/cryptography.c:365
 #, fuzzy
 msgid "Failed to verify GPGME data from memory"
 msgstr "потвърждаване на GPGME данни от паметта"
 
-#: src/cryptography.c:408
+#: src/cryptography.c:375 src/cryptography.c:511
+msgid "Unknown"
+msgstr ""
+
+#: src/cryptography.c:416
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s е премахнато, за да се подготви презаписването"
 
-#: src/cryptography.c:435
+#: src/cryptography.c:443
 #, fuzzy
 msgid "Failed to create new GPGME input data from file"
 msgstr "създаване на нови подписани GPGME данни от низ"
 
-#: src/cryptography.c:442
+#: src/cryptography.c:451
 #, fuzzy
 msgid "Failed to set file name of GPGME input data"
 msgstr "задаване на местоположението до файла с подписаните GPGME данни"
 
-#: src/cryptography.c:457
+#: src/cryptography.c:466
 #, fuzzy
 msgid "Failed to set file name of GPGME output data"
 msgstr "задаване на местоположението до файла с подписаните GPGME данни"
 
-#: src/cryptography.c:467
+#: src/cryptography.c:477
 #, fuzzy
 msgid "Failed to encrypt GPGME data from file"
 msgstr "шифриране на GPGME данни от файл"
 
-#: src/cryptography.c:472
+#: src/cryptography.c:484
 #, fuzzy
 msgid "Failed to decrypt GPGME data from file"
 msgstr "дешифриране на GPGME данни от файл"
 
-#: src/cryptography.c:479
+#: src/cryptography.c:493
 #, fuzzy
 msgid "Failed to sign GPGME data from file"
 msgstr "подписване на GPGME данни от файл"
 
-#: src/cryptography.c:485
+#: src/cryptography.c:500
 #, fuzzy
 msgid "Failed to verify GPGME data from file"
 msgstr "потвърждаване на GPGME данни от файл"
 
-#: src/cryptography.c:501
+#: src/cryptography.c:525
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Изходният файл не може да бъде отворен: %s"
@@ -776,6 +777,15 @@ msgstr "Обикновен текст"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr ""
+
+#~ msgid "Verification failed"
+#~ msgstr "Потвърждаването е неуспешно"
+
+#~ msgid "Text verified"
+#~ msgstr "Текстът е потвърден"
+
+#~ msgid "File verified"
+#~ msgstr "Файлът е потвърден"
 
 #, fuzzy
 #~ msgid "Expiry update failed"

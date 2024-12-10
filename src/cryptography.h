@@ -1,8 +1,9 @@
 #ifndef CRYPTOGRAPHY_H
 #define CRYPTOGRAPHY_H
 
-#include <gpgme.h>
+#include <adwaita.h>
 
+#include <gpgme.h>
 #include <stdbool.h>
 
 typedef enum {
@@ -29,8 +30,8 @@ bool key_manage(const char *path, const char *fingerprint,
 
 /* Operations */
 char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key,
-                   gpgme_sig_mode_t signature_mode);
+                   gpgme_sig_mode_t signature_mode, gchar ** signer);
 bool process_file(const char *input_path, const char *output_path,
-                  cryptography_flags flags, gpgme_key_t key);
+                  cryptography_flags flags, gpgme_key_t key, gchar ** signer);
 
 #endif                          // CRYPTOGRAPHY_H

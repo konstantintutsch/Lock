@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 18:22+0100\n"
+"POT-Creation-Date: 2024-12-10 11:47+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -49,71 +49,68 @@ msgstr "Sabri Ünal <yakushabb@gmail.com>"
 msgid "Dependencies"
 msgstr "Bağımlılıklar"
 
-#: src/window.c:156
+#: src/window.c:157
 msgid "Enter text …"
 msgstr "Metin girin…"
 
-#: src/window.c:458
+#: src/window.c:459
 msgid "Text copied"
 msgstr "Metin kopyalandı"
 
-#: src/window.c:527
+#: src/window.c:528
 #, c-format
 msgid "Could not read text from clipboard: %s"
 msgstr ""
 
-#: src/window.c:536
+#: src/window.c:537
 #, fuzzy
 msgid "Text pasted"
 msgstr "Metin kopyalandı"
 
-#: src/window.c:788 src/window.c:850
+#: src/window.c:789 src/window.c:852
 msgid "Encryption failed"
 msgstr "Şifrelenemedi"
 
-#: src/window.c:790
+#: src/window.c:791
 msgid "Text encrypted"
 msgstr "Metin şifrelendi"
 
-#: src/window.c:852
+#: src/window.c:854
 msgid "File encrypted"
 msgstr "Dosya şifrelendi"
 
-#: src/window.c:908 src/window.c:966
+#: src/window.c:910 src/window.c:969
 msgid "Decryption failed"
 msgstr "Şifre çözülemedi"
 
-#: src/window.c:910
+#: src/window.c:912
 msgid "Text decrypted"
 msgstr "Metin şifresi çözüldü"
 
-#: src/window.c:968
+#: src/window.c:971
 msgid "File decrypted"
 msgstr "Dosya şifresi çözüldü"
 
-#: src/window.c:1075 src/window.c:1137
+#: src/window.c:1078 src/window.c:1141
 msgid "Signing failed"
 msgstr "İmzalanamadı"
 
-#: src/window.c:1077
+#: src/window.c:1080
 msgid "Text signed"
 msgstr "Metin imzalandı"
 
-#: src/window.c:1139
+#: src/window.c:1143
 msgid "File signed"
 msgstr "Dosya imzalandı"
 
-#: src/window.c:1195 src/window.c:1253
-msgid "Verification failed"
-msgstr "Doğrulanamadı"
+#: src/window.c:1199 src/window.c:1260
+msgid "Signature invalid"
+msgstr ""
 
-#: src/window.c:1197
-msgid "Text verified"
-msgstr "Metin doğrulandı"
-
-#: src/window.c:1255
-msgid "File verified"
-msgstr "Dosya doğrulandı"
+#: src/window.c:1203 src/window.c:1264
+#, c-format
+msgid "Signature valid - by %s"
+msgstr ""
 
 #: src/managementdialog.c:339
 msgid "Import failed"
@@ -195,14 +192,14 @@ msgstr "Kaldırılamadı"
 msgid "Expiry renewed"
 msgstr "Son geçerlilik tarihlerini görüntüleyin"
 
-#: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
-#: src/cryptography.c:174 src/cryptography.c:309 src/cryptography.c:420
+#: src/cryptography.c:42 src/cryptography.c:76 src/cryptography.c:120
+#: src/cryptography.c:178 src/cryptography.c:308 src/cryptography.c:428
 #, fuzzy
 msgid "Failed to create new GPGME context"
 msgstr "Yeni GPGME bağlamı oluşturulamadı"
 
-#: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
-#: src/cryptography.c:178 src/cryptography.c:313 src/cryptography.c:424
+#: src/cryptography.c:46 src/cryptography.c:80 src/cryptography.c:124
+#: src/cryptography.c:182 src/cryptography.c:312 src/cryptography.c:432
 #, fuzzy
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "GPGME bağlamının protokolü OpenPGP olarak ayarlanamadı"
@@ -212,37 +209,37 @@ msgstr "GPGME bağlamının protokolü OpenPGP olarak ayarlanamadı"
 msgid "Failed to obtain key by fingerprint"
 msgstr "Parmak izi ile anahtar alınamadı"
 
-#: src/cryptography.c:93
+#: src/cryptography.c:94
 #, fuzzy
 msgid "Failed to find key matching User ID"
 msgstr "Kullanıcı Kimliği ile eşleşen anahtar bulunamadı"
 
-#: src/cryptography.c:133 src/cryptography.c:141
+#: src/cryptography.c:135 src/cryptography.c:143
 #, fuzzy
 msgid "Failed to generate new GPG key for signing"
 msgstr "İmzalama için yeni GPG anahtarı oluşturulamadı"
 
-#: src/cryptography.c:147
+#: src/cryptography.c:149
 #, fuzzy
 msgid "Failed to delete unfinished, generated key"
 msgstr "Tamamlanmamış, oluşturulmuş anahtar silinemedi"
 
-#: src/cryptography.c:184
+#: src/cryptography.c:188
 #, fuzzy
 msgid "Failed to load GPGME key data from file"
 msgstr "GPGME anahtar verileri dosyadan yüklenemedi"
 
-#: src/cryptography.c:190
+#: src/cryptography.c:193
 #, fuzzy
 msgid "Failed to import GPG key from file"
 msgstr "GPG anahtarı dosyadan içe aktarılamadı"
 
-#: src/cryptography.c:201
+#: src/cryptography.c:203
 #, fuzzy
 msgid "Failed to create GPGME key data in memory"
 msgstr "GPGME anahtar verileri bellekte oluşturulamadı"
 
-#: src/cryptography.c:207
+#: src/cryptography.c:208
 #, fuzzy
 msgid "Failed to export GPG key(s) to file"
 msgstr "GPG anahtar(lar)ı dosyaya aktarılamadı"
@@ -262,27 +259,27 @@ msgstr "Kaldırma için GPG anahtarı alınamadı"
 msgid "Failed to update the expiry time"
 msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/cryptography.c:268
+#: src/cryptography.c:267
 #, fuzzy
 msgid "Failed to get GPG key for removal"
 msgstr "Kaldırma için GPG anahtarı alınamadı"
 
-#: src/cryptography.c:272
+#: src/cryptography.c:271
 #, fuzzy
 msgid "Failed to remove GPG key"
 msgstr "GPG anahtarı kaldırılamadı"
 
-#: src/cryptography.c:318 src/cryptography.c:429
+#: src/cryptography.c:317 src/cryptography.c:437
 #, fuzzy
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "GPGME bağlamının pinentry kipi sorulacak şekilde ayarlanamadı"
 
-#: src/cryptography.c:325
+#: src/cryptography.c:324
 #, fuzzy
 msgid "Failed to create new GPGME input data from string"
 msgstr "Yeni GPGME girdi verisi dizgeden oluşturulamadı"
 
-#: src/cryptography.c:330 src/cryptography.c:449
+#: src/cryptography.c:330 src/cryptography.c:458
 #, fuzzy
 msgid "Failed to create new GPGME output data in memory"
 msgstr "Yeni GPGME çıktı verisi bellekte oluşturulamadı"
@@ -302,57 +299,61 @@ msgstr "GPGME verilerinin şifresi bellekten çözülemedi"
 msgid "Failed to add signing key to GPGME context"
 msgstr "Yeni GPGME bağlamı oluşturulamadı"
 
-#: src/cryptography.c:360
+#: src/cryptography.c:358
 #, fuzzy
 msgid "Failed to sign GPGME data from memory"
 msgstr "GPGME verileri bellekten imzalanamadı"
 
-#: src/cryptography.c:366
+#: src/cryptography.c:365
 #, fuzzy
 msgid "Failed to verify GPGME data from memory"
 msgstr "GPGME verileri bellekten doğrulanamadı"
 
-#: src/cryptography.c:408
+#: src/cryptography.c:375 src/cryptography.c:511
+msgid "Unknown"
+msgstr ""
+
+#: src/cryptography.c:416
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "Üzerine yazmaya hazırlanmak için %s kaldırıldı"
 
-#: src/cryptography.c:435
+#: src/cryptography.c:443
 #, fuzzy
 msgid "Failed to create new GPGME input data from file"
 msgstr "Yeni GPGME girdi verileri dosyadan oluşturulamadı"
 
-#: src/cryptography.c:442
+#: src/cryptography.c:451
 #, fuzzy
 msgid "Failed to set file name of GPGME input data"
 msgstr "GPGME girdi verilerinin dosya adı ayarlanamadı"
 
-#: src/cryptography.c:457
+#: src/cryptography.c:466
 #, fuzzy
 msgid "Failed to set file name of GPGME output data"
 msgstr "GPGME çıktı verilerinin dosya adı ayarlanamadı"
 
-#: src/cryptography.c:467
+#: src/cryptography.c:477
 #, fuzzy
 msgid "Failed to encrypt GPGME data from file"
 msgstr "GPGME verileri dosyadan şifrelenemedi"
 
-#: src/cryptography.c:472
+#: src/cryptography.c:484
 #, fuzzy
 msgid "Failed to decrypt GPGME data from file"
 msgstr "GPGME verilerinin şifresi dosyadan çözülemedi"
 
-#: src/cryptography.c:479
+#: src/cryptography.c:493
 #, fuzzy
 msgid "Failed to sign GPGME data from file"
 msgstr "GPGME verileri dosyadan imzalanamadı"
 
-#: src/cryptography.c:485
+#: src/cryptography.c:500
 #, fuzzy
 msgid "Failed to verify GPGME data from file"
 msgstr "GPGME verileri dosyadan doğrulanamadı"
 
-#: src/cryptography.c:501
+#: src/cryptography.c:525
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Çıktı dosyası açılamadı: %s"
@@ -766,6 +767,15 @@ msgstr "Düz metin"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Anahtar seçimi iletişim kutusu"
+
+#~ msgid "Verification failed"
+#~ msgstr "Doğrulanamadı"
+
+#~ msgid "Text verified"
+#~ msgstr "Metin doğrulandı"
+
+#~ msgid "File verified"
+#~ msgstr "Dosya doğrulandı"
 
 #, fuzzy
 #~ msgid "Expiry update failed"
