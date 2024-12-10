@@ -49,8 +49,7 @@ gpgme_key_t key_get(const char *fingerprint)
     error = gpgme_get_key(context, fingerprint, &key, 0);
     HANDLE_ERROR(NULL, error,
                  _("Failed to obtain key by fingerprint"),
-                 context, gpgme_key_release(key);
-        );
+                 context, gpgme_key_release(key););
 
     /* Cleanup */
     gpgme_release(context);
@@ -92,8 +91,7 @@ gpgme_key_t key_search(const char *userid)
     }
     HANDLE_ERROR(NULL, error,
                  _("Failed to find key matching User ID"),
-                 context, gpgme_key_release(key);
-        );
+                 context, gpgme_key_release(key););
 
     /* Cleanup */
     gpgme_release(context);
@@ -147,9 +145,7 @@ bool key_generate(const char *userid, const char *sign_algorithm,
                                      GPGME_DELETE_FORCE);
                  HANDLE_ERROR(false, error,
                               _("Failed to delete unfinished, generated key"),
-                              context,);
-                 gpgme_key_release(key);
-        );
+                              context,); gpgme_key_release(key););
 
     gpgme_key_release(key);
 
@@ -186,12 +182,14 @@ bool key_manage(const char *path, const char *fingerprint,
         error = gpgme_data_new_from_file(&keydata, path, 1);
         HANDLE_ERROR(false, error,
                      _("Failed to load GPGME key data from file"), context,
-                     gpgme_data_release(keydata););
+                     gpgme_data_release(keydata);
+            );
 
         error = gpgme_op_import(context, keydata);
         HANDLE_ERROR(false, error,
                      _("Failed to import GPG key from file"),
-                     context, gpgme_data_release(keydata););
+                     context, gpgme_data_release(keydata);
+            );
 
         /* Cleanup */
         gpgme_data_release(keydata);
@@ -201,12 +199,14 @@ bool key_manage(const char *path, const char *fingerprint,
         error = gpgme_data_new(&keydata);
         HANDLE_ERROR(false, error,
                      _("Failed to create GPGME key data in memory"), context,
-                     gpgme_data_release(keydata););
+                     gpgme_data_release(keydata);
+            );
 
         error = gpgme_op_export(context, fingerprint, 0, keydata);
         HANDLE_ERROR(false, error,
                      _("Failed to export GPG key(s) to file"),
-                     context, gpgme_data_release(keydata););
+                     context, gpgme_data_release(keydata);
+            );
 
         size_t length;
         char *buffer = gpgme_data_release_and_get_mem(keydata, &length);
@@ -253,7 +253,8 @@ bool key_manage(const char *path, const char *fingerprint,
 
         error = gpgme_op_setexpire(context, key, expires, NULL, 0);
         HANDLE_ERROR(false, error, _("Failed to update the expiry time"),
-                     context, gpgme_key_release(key););
+                     context, gpgme_key_release(key);
+            );
 
         /* Cleanup */
         gpgme_key_release(key);
@@ -269,7 +270,8 @@ bool key_manage(const char *path, const char *fingerprint,
         error = gpgme_op_delete(context, key, 1);
         HANDLE_ERROR(false, error,
                      _("Failed to remove GPG key"), context,
-                     gpgme_key_release(key););
+                     gpgme_key_release(key);
+            );
 
         /* Cleanup */
         gpgme_key_release(key);
@@ -322,14 +324,13 @@ char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key,
     error = gpgme_data_new_from_mem(&input, text, strlen(text), 1);
     HANDLE_ERROR(NULL, error,
                  _("Failed to create new GPGME input data from string"),
-                 context, gpgme_data_release(input);
-        );
+                 context, gpgme_data_release(input););
 
     error = gpgme_data_new(&output);
     HANDLE_ERROR(NULL, error,
                  _("Failed to create new GPGME output data in memory"),
-                 context, gpgme_data_release(input); gpgme_data_release(output);
-        );
+                 context, gpgme_data_release(input);
+                 gpgme_data_release(output););
 
     if (flags & ENCRYPT) {
         error = gpgme_op_encrypt(context, (gpgme_key_t[]) {
@@ -337,42 +338,53 @@ char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key,
                                  , GPGME_ENCRYPT_ALWAYS_TRUST, input, output);
         HANDLE_ERROR(NULL, error,
                      _("Failed to encrypt GPGME data from memory"), context,
-                     gpgme_data_release(input); gpgme_data_release(output);
-            );
+                     gpgme_data_release(input);
+                     gpgme_data_release(output););
     } else if (flags & DECRYPT) {
         error = gpgme_op_decrypt(context, input, output);
         HANDLE_ERROR(NULL, error,
                      _("Failed to decrypt GPGME data from memory"), context,
-                     gpgme_data_release(input); gpgme_data_release(output);
-            );
+                     gpgme_data_release(input);
+                     gpgme_data_release(output););
     }
 
     if (flags & SIGN) {
         error = gpgme_signers_add(context, key);
         HANDLE_ERROR(NULL, error,
                      _("Failed to add signing key to GPGME context"), context,
-                     gpgme_data_release(input); gpgme_data_release(output););
+                     gpgme_data_release(input);
+                     gpgme_data_release(output);
+            );
 
         error = gpgme_op_sign(context, input, output, signature_mode);
         HANDLE_ERROR(NULL, error,
                      _("Failed to sign GPGME data from memory"),
                      context, gpgme_data_release(input);
-                     gpgme_data_release(output);
-            );
+                     gpgme_data_release(output););
     } else if (flags & VERIFY) {
         error = gpgme_op_verify(context, input, NULL, output);
         HANDLE_ERROR(NULL, error,
                      _("Failed to verify GPGME data from memory"), context,
-                     gpgme_data_release(input); gpgme_data_release(output);
-            );
+                     gpgme_data_release(input);
+                     gpgme_data_release(output););
 
         gpgme_verify_result_t verify_result = gpgme_op_verify_result(context);
 
+        if (!(verify_result->signatures->summary & GPGME_SIGSUM_VALID)) {
+            /* Cleanup */
+            gpgme_release(context);
+            gpgme_data_release(input);
+            gpgme_data_release(output);
+
+            return NULL;
+        }
+
         *signer =
             g_strdup((verify_result->signatures->key !=
-                      NULL) ? verify_result->signatures->key->uids->
-                     uid : (strlen(verify_result->signatures->fpr) >
-                            0) ? verify_result->signatures->fpr : _("Unknown"));
+                      NULL) ? verify_result->signatures->key->
+                     uids->uid : (strlen(verify_result->signatures->fpr) >
+                                  0) ? verify_result->signatures->
+                     fpr : _("Unknown"));
     }
 
     size_t length;
@@ -441,23 +453,22 @@ bool process_file(const char *input_path, const char *output_path,
     error = gpgme_data_new_from_file(&input, input_path, 1);
     HANDLE_ERROR(false, error,
                  _("Failed to create new GPGME input data from file"), context,
-                 gpgme_data_release(input);
-        );
+                 gpgme_data_release(input););
 
     // TODO: Always set input file name once GPGME 1.24.0 is released: gpgme_op_encrypt and gpgme_op_sign will be able to read input data directly from files
     if (flags & DECRYPT || flags & VERIFY) {
         error = gpgme_data_set_file_name(input, input_path);
         HANDLE_ERROR(false, error,
                      _("Failed to set file name of GPGME input data"), context,
-                     gpgme_data_release(input); gpgme_data_release(output);
-            );
+                     gpgme_data_release(input);
+                     gpgme_data_release(output););
     }
 
     error = gpgme_data_new(&output);
     HANDLE_ERROR(false, error,
                  _("Failed to create new GPGME output data in memory"),
-                 context, gpgme_data_release(input); gpgme_data_release(output);
-        );
+                 context, gpgme_data_release(input);
+                 gpgme_data_release(output););
 
     // TODO: Always set output file name once GPGME 1.24.0 is released: gpgme_op_decrypt and gpgme_op_verify will be able to write output data directly to files
     if (flags & ENCRYPT || flags & SIGN) {
@@ -465,8 +476,7 @@ bool process_file(const char *input_path, const char *output_path,
         HANDLE_ERROR(false, error,
                      _("Failed to set file name of GPGME output data"),
                      context, gpgme_data_release(input);
-                     gpgme_data_release(output);
-            );
+                     gpgme_data_release(output););
     }
 
     if (flags & ENCRYPT) {
@@ -475,16 +485,12 @@ bool process_file(const char *input_path, const char *output_path,
                                  , GPGME_ENCRYPT_ALWAYS_TRUST, input, output);
         HANDLE_ERROR(false, error,
                      _("Failed to encrypt GPGME data from file"), context,
-                     gpgme_data_release(input);
-                     gpgme_data_release(output);
-            );
+                     gpgme_data_release(input); gpgme_data_release(output););
     } else if (flags & DECRYPT) {
         error = gpgme_op_decrypt(context, input, output);
         HANDLE_ERROR(false, error,
                      _("Failed to decrypt GPGME data from file"), context,
-                     gpgme_data_release(input);
-                     gpgme_data_release(output);
-            );
+                     gpgme_data_release(input); gpgme_data_release(output););
     }
 
     if (flags & SIGN) {
@@ -492,23 +498,31 @@ bool process_file(const char *input_path, const char *output_path,
         HANDLE_ERROR(false, error,
                      _("Failed to sign GPGME data from file"),
                      context, gpgme_data_release(input);
-                     gpgme_data_release(output);
-            );
+                     gpgme_data_release(output););
     } else if (flags & VERIFY) {
         error = gpgme_op_verify(context, input, NULL, output);
         HANDLE_ERROR(false, error,
                      _("Failed to verify GPGME data from file"),
                      context, gpgme_data_release(input);
-                     gpgme_data_release(output);
-            );
+                     gpgme_data_release(output););
 
         gpgme_verify_result_t verify_result = gpgme_op_verify_result(context);
 
+        if (!(verify_result->signatures->summary & GPGME_SIGSUM_VALID)) {
+            /* Cleanup */
+            gpgme_release(context);
+            gpgme_data_release(input);
+            gpgme_data_release(output);
+
+            return NULL;
+        }
+
         *signer =
             g_strdup((verify_result->signatures->key !=
-                      NULL) ? verify_result->signatures->key->uids->
-                     uid : (strlen(verify_result->signatures->fpr) >
-                            0) ? verify_result->signatures->fpr : _("Unknown"));
+                      NULL) ? verify_result->signatures->key->
+                     uids->uid : (strlen(verify_result->signatures->fpr) >
+                                  0) ? verify_result->signatures->
+                     fpr : _("Unknown"));
     }
     // TODO: Do not manually write to files once GPGME 1.24.0 is released: gpgme_op_decrypt and gpgme_op_verify will be able to write output data directly to files
     if (flags & DECRYPT || flags & VERIFY) {
