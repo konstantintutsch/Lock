@@ -67,64 +67,67 @@ msgstr "Не удалось прочитать текст из буфера об
 msgid "Text pasted"
 msgstr "Текст вставлен"
 
-#: src/window.c:775 src/window.c:837
+#: src/window.c:775 src/window.c:837 src/window.c:838 src/window.c:789
+#: src/window.c:852
 msgid "Encryption failed"
 msgstr "Не удалось зашифровать"
 
-#: src/window.c:777
+#: src/window.c:777 src/window.c:791
 msgid "Text encrypted"
 msgstr "Текст зашифрован"
 
-#: src/window.c:839
+#: src/window.c:839 src/window.c:840 src/window.c:854
 msgid "File encrypted"
 msgstr "Файл зашифрован"
 
-#: src/window.c:895 src/window.c:953
+#: src/window.c:895 src/window.c:953 src/window.c:896 src/window.c:955
+#: src/window.c:910 src/window.c:969
 msgid "Decryption failed"
 msgstr "Не удалось расшифровать"
 
-#: src/window.c:897
+#: src/window.c:897 src/window.c:898 src/window.c:912
 msgid "Text decrypted"
 msgstr "Текст расшифрован"
 
-#: src/window.c:955
+#: src/window.c:955 src/window.c:957 src/window.c:971
 msgid "File decrypted"
 msgstr "Файл расшифрован"
 
-#: src/window.c:1062 src/window.c:1124
+#: src/window.c:1062 src/window.c:1124 src/window.c:1064 src/window.c:1127
+#: src/window.c:1078 src/window.c:1141
 msgid "Signing failed"
 msgstr "Не удалось подписать"
 
-#: src/window.c:1064
+#: src/window.c:1064 src/window.c:1066 src/window.c:1080
 msgid "Text signed"
 msgstr "Текст подписан"
 
-#: src/window.c:1126
+#: src/window.c:1126 src/window.c:1129 src/window.c:1143
 msgid "File signed"
 msgstr "Файл подписан"
 
-#: src/window.c:1182 src/window.c:1243
+#: src/window.c:1199 src/window.c:1260
 msgid "Signature invalid"
-msgstr ""
+msgstr "Недействительная подпись"
 
-#: src/window.c:1186 src/window.c:1247
+#: src/window.c:1203 src/window.c:1264
 #, c-format
 msgid "Signature valid - by %s"
-msgstr ""
+msgstr "Действительная подпись - %s"
 
-#: src/managementdialog.c:334
+#: src/managementdialog.c:334 src/managementdialog.c:339
 msgid "Import failed"
 msgstr "Не удалось импортировать"
 
-#: src/managementdialog.c:336
+#: src/managementdialog.c:336 src/managementdialog.c:341
 msgid "Keys imported"
 msgstr "Ключи импортированы"
 
-#: src/managementdialog.c:432
+#: src/managementdialog.c:432 src/managementdialog.c:437
 msgid "Generation failed"
 msgstr "Генерация не удалась"
 
-#: src/managementdialog.c:434
+#: src/managementdialog.c:434 src/managementdialog.c:439
 msgid "Keypair generated"
 msgstr "Пара ключей сгенерирована"
 
@@ -148,44 +151,44 @@ msgstr "Истекает %s в %s"
 msgid "Fingerprint copied"
 msgstr "Отпечаток скопирован"
 
-#: src/keyrow.c:263
+#: src/keyrow.c:263 src/keyrow.c:268
 msgid "Export failed"
 msgstr "Не удалось экспортировать"
 
-#: src/keyrow.c:265
+#: src/keyrow.c:265 src/keyrow.c:270
 msgid "Key exported"
 msgstr "Ключ экспортирован"
 
-#: src/keyrow.c:310
+#: src/keyrow.c:310 src/keyrow.c:315
 msgid "Remove key?"
 msgstr "Удалить ключ?"
 
-#: src/keyrow.c:313
+#: src/keyrow.c:313 src/keyrow.c:318
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr "Удаление ключа %s не может быть отменено!"
 
-#: src/keyrow.c:316
+#: src/keyrow.c:316 src/keyrow.c:321
 msgid "_Cancel"
 msgstr "_Отмена"
 
-#: src/keyrow.c:317
+#: src/keyrow.c:317 src/keyrow.c:322
 msgid "_Remove"
 msgstr "_Удалить"
 
-#: src/keyrow.c:358
+#: src/keyrow.c:358 src/keyrow.c:363
 msgid "Removal failed"
 msgstr "Не удалось удалить"
 
-#: src/keyrow.c:360
+#: src/keyrow.c:360 src/keyrow.c:365
 msgid "Key removed"
 msgstr "Ключ удалён"
 
-#: src/keyrow.c:410
+#: src/keyrow.c:410 src/keyrow.c:415
 msgid "Renewal failed"
 msgstr "Не удалось продлить"
 
-#: src/keyrow.c:412
+#: src/keyrow.c:412 src/keyrow.c:417
 msgid "Expiry renewed"
 msgstr "Срок истечения продлён"
 
@@ -204,12 +207,12 @@ msgstr "Не удалось установить протокол контекс
 msgid "Failed to set pinentry mode of GPGME context to ask: %s"
 msgstr "Не удалось установить режим запроса ввода PIN-кода для контекста GPGME"
 
-#: src/cryptography.c:105
+#: src/cryptography.c:105 src/cryptography.c:109 src/cryptography.c:107
 #, fuzzy, c-format
 msgid "Failed to open file for writing: %s"
 msgstr "Не удалось открыть файл экспорта: %s"
 
-#: src/cryptography.c:113
+#: src/cryptography.c:113 src/cryptography.c:117
 #, fuzzy, c-format
 msgid "Failed to write to file: %s"
 msgstr "Не удалось открыть файл экспорта: %s"
@@ -219,7 +222,9 @@ msgstr "Не удалось открыть файл экспорта: %s"
 msgid "Failed to obtain key by fingerprint: %s"
 msgstr "Не удалось получить ключ по отпечатку"
 
-#: src/cryptography.c:190
+#: src/cryptography.c:190 src/cryptography.c:195 src/cryptography.c:186
+#: src/cryptography.c:112 src/cryptography.c:111 src/cryptography.c:107
+#: src/cryptography.c:94 src/cryptography.c:93
 msgid "Failed to find key matching User ID"
 msgstr "Не удалось найти ключ, соответствующий идентификатору пользователя"
 
@@ -238,42 +243,42 @@ msgstr "Не удалось сгенерировать новый ключ GPG �
 msgid "Failed to delete unfinished, generated key: %s"
 msgstr "Не удалось удалить незавершенный, сгенерированный ключ"
 
-#: src/cryptography.c:288
+#: src/cryptography.c:288 src/cryptography.c:295
 #, fuzzy, c-format
 msgid "Failed to load GPGME key data from file: %s"
 msgstr "Не удалось загрузить данные ключа GPGME из файла"
 
-#: src/cryptography.c:296
+#: src/cryptography.c:296 src/cryptography.c:303
 #, fuzzy, c-format
 msgid "Failed to import GPG key from file: %s"
 msgstr "Не удалось импортировать ключ GPG из файла"
 
-#: src/cryptography.c:333
+#: src/cryptography.c:333 src/cryptography.c:340
 #, fuzzy, c-format
 msgid "Failed to create GPGME key data in memory: %s"
 msgstr "Не удалось создать данные ключа GPGME в памяти"
 
-#: src/cryptography.c:341
+#: src/cryptography.c:341 src/cryptography.c:348
 #, fuzzy, c-format
 msgid "Failed to export GPG key(s) to file: %s"
 msgstr "Не удалось экспортировать ключ(и) GPG в файл"
 
-#: src/cryptography.c:386
+#: src/cryptography.c:386 src/cryptography.c:393
 #, fuzzy, c-format
 msgid "Failed to get GPG key for expiry date update: %s"
 msgstr "Не удалось получить ключ GPG для редактирования срока истечения"
 
-#: src/cryptography.c:394
+#: src/cryptography.c:394 src/cryptography.c:401
 #, fuzzy, c-format
 msgid "Failed to update the expiry date of a key: %s"
 msgstr "Не удалось обновить время истечения срока"
 
-#: src/cryptography.c:428
+#: src/cryptography.c:428 src/cryptography.c:435
 #, fuzzy, c-format
 msgid "Failed to get GPG key for removal: %s"
 msgstr "Не удалось получить GPG ключ для удаления"
 
-#: src/cryptography.c:436
+#: src/cryptography.c:436 src/cryptography.c:443
 #, fuzzy, c-format
 msgid "Failed to remove GPG key: %s"
 msgstr "Не удалось удалить GPG ключ"
@@ -311,11 +316,16 @@ msgstr "Не удалось добавить ключ подписи в конт
 msgid "Failed to sign GPGME data from memory: %s"
 msgstr "Не удалось подписать данные GPGME в памяти"
 
-#: src/cryptography.c:676
+#: src/cryptography.c:676 src/cryptography.c:558 src/cryptography.c:565
+#: src/cryptography.c:513 src/cryptography.c:360 src/cryptography.c:362
+#: src/cryptography.c:365 src/cryptography.c:367
 msgid "Failed to verify GPGME data from memory"
 msgstr "Не удалось проверить данные GPGME в памяти"
 
-#: src/cryptography.c:730 src/cryptography.c:902
+#: src/cryptography.c:730 src/cryptography.c:902 src/cryptography.c:725
+#: src/cryptography.c:613 src/cryptography.c:620 src/cryptography.c:568
+#: src/cryptography.c:419 src/cryptography.c:423 src/cryptography.c:420
+#: src/cryptography.c:425 src/cryptography.c:428
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s удалён для подготовки перезаписи"
@@ -745,12 +755,182 @@ msgstr "Обычный текст"
 msgid "Key selection dialog"
 msgstr "Диалог выбора ключей"
 
-#~ msgid "Failed to create new GPGME output data in memory"
-#~ msgstr "Не удалось создать новые выходные данные GPGME в памяти"
+#: src/cryptography.c:769 src/cryptography.c:493 src/cryptography.c:657
+#: src/cryptography.c:500 src/cryptography.c:664 src/cryptography.c:448
+#: src/cryptography.c:612 src/cryptography.c:325 src/cryptography.c:450
+#: src/cryptography.c:326 src/cryptography.c:453 src/cryptography.c:456
+#: src/cryptography.c:330 src/cryptography.c:467 src/cryptography.c:331
+#: src/cryptography.c:469
+msgid "Failed to create new GPGME output data in memory"
+msgstr "Не удалось создать новые выходные данные GPGME в памяти"
 
+#: src/cryptography.c:525 src/cryptography.c:523 src/cryptography.c:532
+#: src/cryptography.c:543 src/cryptography.c:539
 #, c-format
-#~ msgid "Failed to open output file: %s"
-#~ msgstr "Не удалось открыть выходной файл: %s"
+msgid "Failed to open output file: %s"
+msgstr "Не удалось открыть выходной файл: %s"
+
+#: src/cryptography.c:742 src/cryptography.c:630 src/cryptography.c:637
+#: src/cryptography.c:585 src/cryptography.c:435 src/cryptography.c:439
+#: src/cryptography.c:441 src/cryptography.c:452 src/cryptography.c:455
+msgid "Failed to create new GPGME input data from file"
+msgstr "Не удалось создать новые входные данные GPGME из файла"
+
+#: src/cryptography.c:755 src/cryptography.c:643 src/cryptography.c:650
+#: src/cryptography.c:598 src/cryptography.c:443 src/cryptography.c:446
+#: src/cryptography.c:449 src/cryptography.c:460 src/cryptography.c:462
+msgid "Failed to set file name of GPGME input data"
+msgstr "Не удалось задать имя файла входных данных GPGME"
+
+#: src/cryptography.c:783 src/cryptography.c:671 src/cryptography.c:678
+#: src/cryptography.c:626 src/cryptography.c:458 src/cryptography.c:461
+#: src/cryptography.c:464 src/cryptography.c:475 src/cryptography.c:477
+msgid "Failed to set file name of GPGME output data"
+msgstr "Не удалось задать имя файла выходных данных GPGME"
+
+#: src/cryptography.c:800 src/cryptography.c:688 src/cryptography.c:695
+#: src/cryptography.c:643 src/cryptography.c:469 src/cryptography.c:471
+#: src/cryptography.c:475 src/cryptography.c:486 src/cryptography.c:487
+msgid "Failed to encrypt GPGME data from file"
+msgstr "Не удалось зашифровать данные GPGME из файла"
+
+#: src/cryptography.c:813 src/cryptography.c:701 src/cryptography.c:708
+#: src/cryptography.c:656 src/cryptography.c:476 src/cryptography.c:482
+#: src/cryptography.c:493 src/cryptography.c:492
+msgid "Failed to decrypt GPGME data from file"
+msgstr "Не удалось расшифровать данные GPGME из файла"
+
+#: src/cryptography.c:828 src/cryptography.c:716 src/cryptography.c:723
+#: src/cryptography.c:671 src/cryptography.c:485 src/cryptography.c:483
+#: src/cryptography.c:491 src/cryptography.c:502 src/cryptography.c:499
+msgid "Failed to sign GPGME data from file"
+msgstr "Не удалось подписать данные GPGME из файла"
+
+#: src/cryptography.c:841 src/cryptography.c:729 src/cryptography.c:736
+#: src/cryptography.c:684 src/cryptography.c:492 src/cryptography.c:489
+#: src/cryptography.c:498 src/cryptography.c:509 src/cryptography.c:505
+msgid "Failed to verify GPGME data from file"
+msgstr "Не удалось проверить данные GPGME из файла"
+
+#: src/cryptography.c:481 src/cryptography.c:488 src/cryptography.c:436
+#: src/cryptography.c:319 src/cryptography.c:321 src/cryptography.c:324
+#: src/cryptography.c:326
+msgid "Failed to create new GPGME input data from string"
+msgstr "Не удалось создать новые входные данные GPGME из строки"
+
+#: src/cryptography.c:508 src/cryptography.c:515 src/cryptography.c:463
+#: src/cryptography.c:334 src/cryptography.c:335 src/cryptography.c:339
+#: src/cryptography.c:340
+msgid "Failed to encrypt GPGME data from memory"
+msgstr "Не удалось зашифровать данные GPGME в памяти"
+
+#: src/cryptography.c:520 src/cryptography.c:527 src/cryptography.c:475
+#: src/cryptography.c:340 src/cryptography.c:341 src/cryptography.c:345
+#: src/cryptography.c:346
+msgid "Failed to decrypt GPGME data from memory"
+msgstr "Не удалось расшифровать данные GPGME в памяти"
+
+#: src/cryptography.c:534 src/cryptography.c:541 src/cryptography.c:489
+#: src/cryptography.c:348 src/cryptography.c:349 src/cryptography.c:353
+#: src/cryptography.c:354
+msgid "Failed to add signing key to GPGME context"
+msgstr "Не удалось добавить ключ подписи в контекст GPGME"
+
+#: src/cryptography.c:546 src/cryptography.c:553 src/cryptography.c:501
+#: src/cryptography.c:353 src/cryptography.c:356 src/cryptography.c:358
+#: src/cryptography.c:361
+msgid "Failed to sign GPGME data from memory"
+msgstr "Не удалось подписать данные GPGME в памяти"
+
+#: src/cryptography.c:29 src/cryptography.c:40 src/cryptography.c:42
+#: src/cryptography.c:76 src/cryptography.c:120 src/cryptography.c:178
+#: src/cryptography.c:308 src/cryptography.c:437 src/cryptography.c:75
+#: src/cryptography.c:118 src/cryptography.c:174 src/cryptography.c:310
+#: src/cryptography.c:440
+msgid "Failed to create new GPGME context"
+msgstr "Не удалось создать новый контекст GPGME"
+
+#: src/cryptography.c:40 src/cryptography.c:44 src/cryptography.c:46
+#: src/cryptography.c:80 src/cryptography.c:124 src/cryptography.c:182
+#: src/cryptography.c:312 src/cryptography.c:441 src/cryptography.c:79
+#: src/cryptography.c:122 src/cryptography.c:178 src/cryptography.c:314
+#: src/cryptography.c:444
+msgid "Failed to set protocol of GPGME context to OpenPGP"
+msgstr "Не удалось установить протокол контекста GPGME на OpenPGP"
+
+#: src/cryptography.c:51 src/cryptography.c:49 src/cryptography.c:312
+#: src/cryptography.c:435 src/cryptography.c:317 src/cryptography.c:446
+#: src/cryptography.c:319 src/cryptography.c:449
+msgid "Failed to set pinentry mode of GPGME context to ask"
+msgstr "Не удалось установить режим запроса ввода PIN-кода для контекста GPGME"
+
+#: src/cryptography.c:153 src/cryptography.c:144 src/cryptography.c:75
+#: src/cryptography.c:70 src/cryptography.c:51
+msgid "Failed to obtain key by fingerprint"
+msgstr "Не удалось получить ключ по отпечатку"
+
+#: src/cryptography.c:235 src/cryptography.c:249 src/cryptography.c:226
+#: src/cryptography.c:240 src/cryptography.c:147 src/cryptography.c:155
+#: src/cryptography.c:145 src/cryptography.c:153 src/cryptography.c:142
+#: src/cryptography.c:150 src/cryptography.c:135 src/cryptography.c:143
+#: src/cryptography.c:133 src/cryptography.c:141
+msgid "Failed to generate new GPG key for signing"
+msgstr "Не удалось сгенерировать новый ключ GPG для подписи"
+
+#: src/cryptography.c:257 src/cryptography.c:248 src/cryptography.c:161
+#: src/cryptography.c:159 src/cryptography.c:156 src/cryptography.c:149
+#: src/cryptography.c:147
+msgid "Failed to delete unfinished, generated key"
+msgstr "Не удалось удалить незавершенный, сгенерированный ключ"
+
+#: src/cryptography.c:290 src/cryptography.c:194 src/cryptography.c:190
+#: src/cryptography.c:189 src/cryptography.c:188 src/cryptography.c:184
+msgid "Failed to load GPGME key data from file"
+msgstr "Не удалось загрузить данные ключа GPGME из файла"
+
+#: src/cryptography.c:301 src/cryptography.c:199 src/cryptography.c:196
+#: src/cryptography.c:194 src/cryptography.c:193 src/cryptography.c:190
+msgid "Failed to import GPG key from file"
+msgstr "Не удалось импортировать ключ GPG из файла"
+
+#: src/cryptography.c:317 src/cryptography.c:209 src/cryptography.c:207
+#: src/cryptography.c:204 src/cryptography.c:203 src/cryptography.c:201
+msgid "Failed to create GPGME key data in memory"
+msgstr "Не удалось создать данные ключа GPGME в памяти"
+
+#: src/cryptography.c:328 src/cryptography.c:214 src/cryptography.c:213
+#: src/cryptography.c:209 src/cryptography.c:208 src/cryptography.c:207
+msgid "Failed to export GPG key(s) to file"
+msgstr "Не удалось экспортировать ключ(и) GPG в файл"
+
+#: src/cryptography.c:349 src/cryptography.c:258 src/cryptography.c:253
+#: src/cryptography.c:252
+msgid "Failed to get GPG key for expiry editing"
+msgstr "Не удалось получить ключ GPG для редактирования срока истечения"
+
+#: src/cryptography.c:359 src/cryptography.c:261 src/cryptography.c:256
+#: src/cryptography.c:255
+msgid "Failed to update the expiry time"
+msgstr "Не удалось обновить время истечения срока"
+
+#: src/cryptography.c:377 src/cryptography.c:273 src/cryptography.c:274
+#: src/cryptography.c:268 src/cryptography.c:267
+msgid "Failed to get GPG key for removal"
+msgstr "Не удалось получить GPG ключ для удаления"
+
+#: src/cryptography.c:387 src/cryptography.c:277 src/cryptography.c:278
+#: src/cryptography.c:272 src/cryptography.c:271
+msgid "Failed to remove GPG key"
+msgstr "Не удалось удалить GPG ключ"
+
+#: src/cryptography.c:228 src/cryptography.c:223 src/cryptography.c:222
+#, c-format
+msgid "Failed to open export file: %s"
+msgstr "Не удалось открыть файл экспорта: %s"
+
+#: src/cryptography.c:387 src/cryptography.c:525
+msgid "Unknown"
+msgstr "Неизвестно"
 
 #~ msgid "Verification failed"
 #~ msgstr "Проверка не удалась"
