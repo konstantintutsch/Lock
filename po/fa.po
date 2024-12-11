@@ -23,7 +23,7 @@ msgstr ""
 #, c-format
 msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
 msgid "GnuPG Made Easy %s or greater required. Using %s."
-msgstr ""
+msgstr "GnuPG Made Easy %s یا بالاتر مورد نیاز است. با استفاده از %s."
 
 #. Details
 #: src/application.c:203 data/com.konstantintutsch.Lock.desktop.in.in:5
@@ -43,7 +43,7 @@ msgstr "توسعه دادن"
 
 #: src/application.c:220
 msgid "translator-credits"
-msgstr ""
+msgstr "رضا حسین‌زاده <rezahosseinzadeh@riseup.net>"
 
 #: src/application.c:225
 msgid "Dependencies"
@@ -69,15 +69,15 @@ msgstr "متن چسبانده شد"
 #: src/window.c:775 src/window.c:837 src/window.c:838 src/window.c:789
 #: src/window.c:852
 msgid "Encryption failed"
-msgstr "رمزنگاری شکست خورد"
+msgstr "رمزگذاری شکست خورد"
 
 #: src/window.c:777 src/window.c:791
 msgid "Text encrypted"
-msgstr "متن رمزنگاری شد"
+msgstr "متن رمزگذاری شد"
 
 #: src/window.c:839 src/window.c:840 src/window.c:854
 msgid "File encrypted"
-msgstr "پرونده رمزنگاری شد"
+msgstr "پرونده رمزگذاری شد"
 
 #: src/window.c:895 src/window.c:953 src/window.c:896 src/window.c:955
 #: src/window.c:910 src/window.c:969
@@ -362,11 +362,11 @@ msgstr "اعتبارسنجی دادهٔ GPGME از پرونده شکست خور�
 
 #: src/threading.c:57
 msgid "Failed to create text encryption thread"
-msgstr "ساختن رشتهٔ رمزنگاری متن شکست خورد"
+msgstr "ساختن رشتهٔ رمزگذاری متن شکست خورد"
 
 #: src/threading.c:79
 msgid "Failed to create file encryption thread"
-msgstr "ساختن رشتهٔ رمزنگاری پرونده شکست خورد"
+msgstr "ساختن رشتهٔ رمزگذاری پرونده شکست خورد"
 
 #: src/threading.c:100
 msgid "Failed to create text decryption thread"
@@ -429,11 +429,11 @@ msgstr "بازنویسی کردن نمای متن با تخته‌گیره"
 #: data/ui/shortcuts.blp:35
 msgctxt "Shortcuts Group"
 msgid "Cryptography"
-msgstr ""
+msgstr "رمزنگاری"
 
 #: data/ui/shortcuts.blp:38
 msgid "Encrypt text"
-msgstr "رمزنگاری متن"
+msgstr "رمزگذاری متن"
 
 #: data/ui/shortcuts.blp:45
 msgid "Decrypt text"
@@ -463,7 +463,7 @@ msgstr "رونوشت کردن متن"
 
 #: data/ui/window.blp:33
 msgid "Cryptography operations"
-msgstr ""
+msgstr "فعالیت‌های رمزنگاری"
 
 #: data/ui/window.blp:50
 msgid "Processing …"
@@ -503,7 +503,7 @@ msgstr "پروندهٔ خروجی را انتخاب کنید"
 
 #: data/ui/window.blp:155 data/ui/window.blp:219
 msgid "Encrypt"
-msgstr "رمزنگاری"
+msgstr "رمزگذاری"
 
 #: data/ui/window.blp:162 data/ui/window.blp:223
 msgid "Decrypt"
@@ -531,11 +531,11 @@ msgstr "دربارهٔ قفل"
 
 #: data/ui/window.blp:233
 msgid "Sign (Clear Text)"
-msgstr ""
+msgstr "امضا (متن تمیز)"
 
 #: data/ui/window.blp:237
 msgid "Sign (Detached)"
-msgstr ""
+msgstr "امضا (جداشده)"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
@@ -547,12 +547,12 @@ msgstr "بازیابی کلیدها"
 
 #: data/ui/selectiondialog.blp:68
 msgid "No capable keys available"
-msgstr ""
+msgstr "کلید متناسبی در دسترس نیست"
 
 #: data/ui/selectiondialog.blp:69
 msgid ""
 "Your GnuPG keyring does not contain any keys that support this functionality."
-msgstr ""
+msgstr "دسته کلید گنوپی‌جی شما هیچ کلیدی که از این قابلیت پشتیبانی کند ندارد."
 
 #: data/ui/managementdialog.blp:68
 msgid "No keys available"
@@ -560,7 +560,7 @@ msgstr "کلیدی در دسترس نیست"
 
 #: data/ui/managementdialog.blp:69
 msgid "Your GnuPG keyring does not contain any keys."
-msgstr ""
+msgstr "دسته کلید گنوپی‌جی شما دارای هیچ کلیدی نیست."
 
 #: data/ui/managementdialog.blp:89
 msgctxt "Import keys from files"
@@ -582,7 +582,7 @@ msgstr "تولید کردن جفت‌کلید"
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name (Mandatory)"
-msgstr ""
+msgstr "نام (ضروری)"
 
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
@@ -607,7 +607,7 @@ msgstr "کلید"
 #: data/ui/managementdialog.blp:165
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
-msgstr "الگوریتم رمزنگاری"
+msgstr "الگوریتم رمزگذاری"
 
 #: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
@@ -659,7 +659,7 @@ msgstr "ویرایش تاریخ انقضا"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
-msgstr ""
+msgstr "جی‌پی‌جی;گنوپی‌جی;رمزنگاری;اپن‌پی‌جی‌پی;رمزگذاری;رمزگشایی;امضا;اعتبارسنجی;"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
 msgid ""
@@ -676,7 +676,7 @@ msgstr "پردازش متن و پرونده‌ها:"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:75
 msgid "Encryption"
-msgstr "رمزنگاری"
+msgstr "رمزگذاری"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
 msgid "Decryption"
@@ -744,7 +744,7 @@ msgstr "متن ساده"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
-msgstr ""
+msgstr "محاورهٔ انتخاب کلید"
 
 #: src/cryptography.c:742 src/cryptography.c:630 src/cryptography.c:637
 #: src/cryptography.c:585 src/cryptography.c:435 src/cryptography.c:439
@@ -770,7 +770,7 @@ msgstr "تنظیم کردن نام پروندهٔ دادهٔ خروجی GPGME ش
 #: src/cryptography.c:643 src/cryptography.c:469 src/cryptography.c:471
 #: src/cryptography.c:475 src/cryptography.c:486 src/cryptography.c:487
 msgid "Failed to encrypt GPGME data from file"
-msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
+msgstr "رمزگذاری دادهٔ GPGME از حافظه شکست خورد"
 
 #: src/cryptography.c:492
 msgid "Failed to decrypt GPGME data from file"
@@ -796,7 +796,7 @@ msgstr "ساختن دادهٔ ورودی جدید GPGME از رشته شکست �
 #: src/cryptography.c:334 src/cryptography.c:335 src/cryptography.c:339
 #: src/cryptography.c:340
 msgid "Failed to encrypt GPGME data from memory"
-msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
+msgstr "رمزگذاری دادهٔ GPGME از حافظه شکست خورد"
 
 #: src/cryptography.c:520 src/cryptography.c:527 src/cryptography.c:475
 #: src/cryptography.c:340 src/cryptography.c:341 src/cryptography.c:345
@@ -832,11 +832,10 @@ msgstr "ساختن محتوای جدید GPGME شکست خورد"
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "تنظیم کردن شیوه‌نامهٔ محتوای GPGME به اپن‌پی‌جی‌پی شکست خورد"
 
-#: src/cryptography.c:51 src/cryptography.c:49 src/cryptography.c:312
-#: src/cryptography.c:435 src/cryptography.c:317 src/cryptography.c:446
-#: src/cryptography.c:319 src/cryptography.c:449
+#: src/cryptography.c:317 src/cryptography.c:446 src/cryptography.c:319
+#: src/cryptography.c:449
 msgid "Failed to set pinentry mode of GPGME context to ask"
-msgstr ""
+msgstr "تنظیم کردن حالت پیننتی محتوای GPGME برای پرسیدن شکست خورد"
 
 #: src/cryptography.c:153 src/cryptography.c:144 src/cryptography.c:75
 #: src/cryptography.c:70 src/cryptography.c:51
@@ -851,11 +850,9 @@ msgstr "گرفتن کلید با اثر انگشت شکست خورد"
 msgid "Failed to generate new GPG key for signing"
 msgstr "ساختن کلید جی‌پی‌جی جدید برای امضا کردن شکست خورد"
 
-#: src/cryptography.c:257 src/cryptography.c:248 src/cryptography.c:161
-#: src/cryptography.c:159 src/cryptography.c:156 src/cryptography.c:149
-#: src/cryptography.c:147
+#: src/cryptography.c:149 src/cryptography.c:147
 msgid "Failed to delete unfinished, generated key"
-msgstr ""
+msgstr "حذف کردن کلید تولید شدهٔ ناتمام شکست خورد"
 
 #: src/cryptography.c:290 src/cryptography.c:194 src/cryptography.c:190
 #: src/cryptography.c:189 src/cryptography.c:188 src/cryptography.c:184
