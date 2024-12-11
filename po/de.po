@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-10 16:08+0100\n"
+"POT-Creation-Date: 2024-12-11 16:30+0100\n"
 "PO-Revision-Date: 2024-12-10 15:02+0000\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/Lock/Application/"
@@ -67,64 +67,64 @@ msgstr "Konnte Text nicht aus Zwischenablage lesen: %s"
 msgid "Text pasted"
 msgstr "Text eingefügt"
 
-#: src/window.c:789 src/window.c:852
+#: src/window.c:775 src/window.c:838
 msgid "Encryption failed"
 msgstr "Verschlüsselung fehlgeschlagen"
 
-#: src/window.c:791
+#: src/window.c:777
 msgid "Text encrypted"
 msgstr "Text verschlüsselt"
 
-#: src/window.c:854
+#: src/window.c:840
 msgid "File encrypted"
 msgstr "Datei verschlüsselt"
 
-#: src/window.c:910 src/window.c:969
+#: src/window.c:896 src/window.c:955
 msgid "Decryption failed"
 msgstr "Entschlüsselung fehlgeschlagen"
 
-#: src/window.c:912
+#: src/window.c:898
 msgid "Text decrypted"
 msgstr "Text entschlüsselt"
 
-#: src/window.c:971
+#: src/window.c:957
 msgid "File decrypted"
 msgstr "Datei entschlüsselt"
 
-#: src/window.c:1078 src/window.c:1141
+#: src/window.c:1064 src/window.c:1127
 msgid "Signing failed"
 msgstr "Signierung fehlgeschlagen"
 
-#: src/window.c:1080
+#: src/window.c:1066
 msgid "Text signed"
 msgstr "Text signiert"
 
-#: src/window.c:1143
+#: src/window.c:1129
 msgid "File signed"
 msgstr "Datei signiert"
 
-#: src/window.c:1199 src/window.c:1260
+#: src/window.c:1185 src/window.c:1246
 msgid "Signature invalid"
 msgstr "Signatur ungültig"
 
-#: src/window.c:1203 src/window.c:1264
+#: src/window.c:1189 src/window.c:1250
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Signatur gültig - von %s"
 
-#: src/managementdialog.c:339
+#: src/managementdialog.c:334
 msgid "Import failed"
 msgstr "Import fehlgeschlagen"
 
-#: src/managementdialog.c:341
+#: src/managementdialog.c:336
 msgid "Keys imported"
 msgstr "Schlüssel importiert"
 
-#: src/managementdialog.c:437
+#: src/managementdialog.c:432
 msgid "Generation failed"
 msgstr "Generierung fehlgeschlagen"
 
-#: src/managementdialog.c:439
+#: src/managementdialog.c:434
 msgid "Keypair generated"
 msgstr "Schlüsselpaar generiert"
 
@@ -148,55 +148,55 @@ msgstr "Läuft %s um %s Uhr ab"
 msgid "Fingerprint copied"
 msgstr "Fingerabdruck kopiert"
 
-#: src/keyrow.c:268
+#: src/keyrow.c:263
 msgid "Export failed"
 msgstr "Export fehlgeschlagen"
 
-#: src/keyrow.c:270
+#: src/keyrow.c:265
 msgid "Key exported"
 msgstr "Schlüssel exportiert"
 
-#: src/keyrow.c:315
+#: src/keyrow.c:310
 msgid "Remove key?"
 msgstr "Schlüssel entfernen?"
 
-#: src/keyrow.c:318
+#: src/keyrow.c:313
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr ""
 "Die Entfernung des Schlüssels von %s kann nicht Rückgängig gemacht werden!"
 
-#: src/keyrow.c:321
+#: src/keyrow.c:316
 msgid "_Cancel"
 msgstr "_Abbrechen"
 
-#: src/keyrow.c:322
+#: src/keyrow.c:317
 msgid "_Remove"
 msgstr "_Entfernen"
 
-#: src/keyrow.c:363
+#: src/keyrow.c:358
 msgid "Removal failed"
 msgstr "Entfernung fehlgeschlagen"
 
-#: src/keyrow.c:365
+#: src/keyrow.c:360
 msgid "Key removed"
 msgstr "Schlüssel entfernt"
 
-#: src/keyrow.c:415
+#: src/keyrow.c:410
 msgid "Renewal failed"
 msgstr "Verlängerung fehlgeschlagen"
 
-#: src/keyrow.c:417
+#: src/keyrow.c:412
 msgid "Expiry renewed"
 msgstr "Ablaufzeitpunkt aktualisiert"
 
-#: src/cryptography.c:42 src/cryptography.c:75 src/cryptography.c:118
-#: src/cryptography.c:174 src/cryptography.c:310 src/cryptography.c:440
+#: src/cryptography.c:42 src/cryptography.c:76 src/cryptography.c:120
+#: src/cryptography.c:178 src/cryptography.c:308 src/cryptography.c:437
 msgid "Failed to create new GPGME context"
 msgstr "Fehler beim Erstellen eines neuen GPGME Kontexts"
 
-#: src/cryptography.c:46 src/cryptography.c:79 src/cryptography.c:122
-#: src/cryptography.c:178 src/cryptography.c:314 src/cryptography.c:444
+#: src/cryptography.c:46 src/cryptography.c:80 src/cryptography.c:124
+#: src/cryptography.c:182 src/cryptography.c:312 src/cryptography.c:441
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "Fehler beim Festlegen des Protokolls des GPGME Kontexts auf OpenPGP"
 
@@ -204,31 +204,31 @@ msgstr "Fehler beim Festlegen des Protokolls des GPGME Kontexts auf OpenPGP"
 msgid "Failed to obtain key by fingerprint"
 msgstr "Fehler beim Erhalten des Schlüssels aus dessen Fingerabdruck"
 
-#: src/cryptography.c:93
+#: src/cryptography.c:94
 msgid "Failed to find key matching User ID"
 msgstr "Fehler beim Finden eines Schlüssels mit passender Nutzer ID"
 
-#: src/cryptography.c:133 src/cryptography.c:141
+#: src/cryptography.c:135 src/cryptography.c:143
 msgid "Failed to generate new GPG key for signing"
 msgstr "Fehler beim Generieren eines neuen Schlüssels für Signierung"
 
-#: src/cryptography.c:147
+#: src/cryptography.c:149
 msgid "Failed to delete unfinished, generated key"
 msgstr "Fehler beim Löschen des unfertigen, generierten Schlüssels"
 
-#: src/cryptography.c:184
+#: src/cryptography.c:188
 msgid "Failed to load GPGME key data from file"
 msgstr "Fehler beim Laden von GPGME Schlüsseldaten aus einer Datei"
 
-#: src/cryptography.c:190
+#: src/cryptography.c:193
 msgid "Failed to import GPG key from file"
 msgstr "Fehler beim Importieren von einem GPG Schlüssel aus einer Datei"
 
-#: src/cryptography.c:201
+#: src/cryptography.c:203
 msgid "Failed to create GPGME key data in memory"
 msgstr "Fehler beim Erstellen von GPGME Schlüsseldaten im Hauptspeicher"
 
-#: src/cryptography.c:207
+#: src/cryptography.c:208
 msgid "Failed to export GPG key(s) to file"
 msgstr "Fehler beim Exportieren von GPG Schlüssel(n) in eine Datei"
 
@@ -246,84 +246,84 @@ msgstr ""
 msgid "Failed to update the expiry time"
 msgstr "Fehler bei der Aktualisierung des Ablaufzeitpunkts"
 
-#: src/cryptography.c:268
+#: src/cryptography.c:267
 msgid "Failed to get GPG key for removal"
 msgstr "Fehler beim Erhalten eines GPG Schlüssels zur Entfernung"
 
-#: src/cryptography.c:272
+#: src/cryptography.c:271
 msgid "Failed to remove GPG key"
 msgstr "Fehler beim Entfernen eines GPG Schlüssels"
 
-#: src/cryptography.c:319 src/cryptography.c:449
+#: src/cryptography.c:317 src/cryptography.c:446
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "Fehler beim Festlegen des Pinentry Modus des GPGME Kontexts auf Fragen"
 
-#: src/cryptography.c:326
+#: src/cryptography.c:324
 msgid "Failed to create new GPGME input data from string"
 msgstr "Fehler beim Erstellen von GPGME Eingangsdaten aus einer Zeichenkette"
 
-#: src/cryptography.c:331 src/cryptography.c:469
+#: src/cryptography.c:330 src/cryptography.c:467
 msgid "Failed to create new GPGME output data in memory"
 msgstr "Fehler beim Erstellen von GPGME Ausgangsdaten im Hauptspeicher"
 
-#: src/cryptography.c:340
+#: src/cryptography.c:339
 msgid "Failed to encrypt GPGME data from memory"
 msgstr "Fehler beim Verschlüsseln von GPGME Daten aus dem Hauptspeicher"
 
-#: src/cryptography.c:346
+#: src/cryptography.c:345
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "Fehler beim Entschlüsseln von GPGME Daten aus dem Hauptspeicher"
 
-#: src/cryptography.c:354
+#: src/cryptography.c:353
 msgid "Failed to add signing key to GPGME context"
 msgstr "Fehler beim Hinzufügen des Signierungsschlüssels zum GPGME Kontext"
 
-#: src/cryptography.c:361
+#: src/cryptography.c:358
 msgid "Failed to sign GPGME data from memory"
 msgstr "Fehler beim Signieren von GPGME Daten aus dem Hauptspeicher"
 
-#: src/cryptography.c:367
+#: src/cryptography.c:365
 msgid "Failed to verify GPGME data from memory"
 msgstr "Fehler beim Verifizieren von GPGME Daten aus dem Hauptspeicher"
 
-#: src/cryptography.c:387 src/cryptography.c:525
+#: src/cryptography.c:384 src/cryptography.c:529
 msgid "Unknown"
 msgstr "Unbekannt"
 
-#: src/cryptography.c:428
+#: src/cryptography.c:425
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s entfernt, um Überschreiben vorzubereiten"
 
-#: src/cryptography.c:455
+#: src/cryptography.c:452
 msgid "Failed to create new GPGME input data from file"
 msgstr "Fehler beim Erstellen von GPGME Eingangsdaten aus einer Datei"
 
-#: src/cryptography.c:462
+#: src/cryptography.c:460
 msgid "Failed to set file name of GPGME input data"
 msgstr "Fehler beim Setzen des Dateipfades von GPGME Eingangsdaten"
 
-#: src/cryptography.c:477
+#: src/cryptography.c:475
 msgid "Failed to set file name of GPGME output data"
 msgstr "Fehler beim Setzen des Dateipfades von GPGME Ausgangsdaten"
 
-#: src/cryptography.c:487
+#: src/cryptography.c:486
 msgid "Failed to encrypt GPGME data from file"
 msgstr "Fehler beim Verschlüsseln von GPGME Daten aus Datei"
 
-#: src/cryptography.c:492
+#: src/cryptography.c:493
 msgid "Failed to decrypt GPGME data from file"
 msgstr "Fehler beim Entschlüsseln von GPGME Daten aus Datei"
 
-#: src/cryptography.c:499
+#: src/cryptography.c:502
 msgid "Failed to sign GPGME data from file"
 msgstr "Fehler beim Signieren von GPGME Daten aus einer Datei"
 
-#: src/cryptography.c:505
+#: src/cryptography.c:509
 msgid "Failed to verify GPGME data from file"
 msgstr "Fehler beim Verifizieren von GPGME Daten aus einer Datei"
 
-#: src/cryptography.c:539
+#: src/cryptography.c:543
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Fehler beim Öffnen der Ausgabedatei: %s"

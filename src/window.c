@@ -592,21 +592,14 @@ static void lock_window_file_open(GObject *source_object, GAsyncResult *res,
     LockWindow *window = LOCK_WINDOW(data);
 
     window->file_input = gtk_file_dialog_open_finish(dialog, res, NULL);
-    if (window->file_input == NULL) {
-        /* Cleanup */
-        g_object_unref(dialog);
-        dialog = NULL;
-
-        window = NULL;
-
-        return;
-    }
+    if (window->file_input == NULL)
+        goto cleanup;
 
     adw_action_row_set_subtitle(window->file_input_row,
                                 g_file_get_basename(window->file_input));
     lock_window_on_file_selected(window);
 
-    /* Cleanup */
+ cleanup:
     g_object_unref(dialog);
     dialog = NULL;
 
@@ -627,21 +620,14 @@ static void lock_window_file_save(GObject *source_object,
     LockWindow *window = LOCK_WINDOW(data);
 
     window->file_output = gtk_file_dialog_save_finish(dialog, res, NULL);
-    if (window->file_output == NULL) {
-        /* Cleanup */
-        g_object_unref(dialog);
-        dialog = NULL;
-
-        window = NULL;
-
-        return;
-    }
+    if (window->file_output == NULL)
+        goto cleanup;
 
     adw_action_row_set_subtitle(window->file_output_row,
                                 g_file_get_basename(window->file_output));
     lock_window_on_file_selected(window);
 
-    /* Cleanup */
+ cleanup:
     g_object_unref(dialog);
     dialog = NULL;
 

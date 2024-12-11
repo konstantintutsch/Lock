@@ -255,20 +255,15 @@ static void lock_management_dialog_import_file_open(GObject *source_object,
 
     dialog->import_file = gtk_file_dialog_open_multiple_finish(file, res, NULL);
     if (dialog->import_file == NULL) {
-        /* Cleanup */
-        g_object_unref(file);
-        file = NULL;
-
         dialog = NULL;
-
-        return;
+        goto cleanup;
     }
 
-    /* Cleanup */
+    thread_import_key(dialog);
+
+ cleanup:
     g_object_unref(file);
     file = NULL;
-
-    thread_import_key(dialog);
 }
 
 /**

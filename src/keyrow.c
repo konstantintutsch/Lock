@@ -197,20 +197,15 @@ static void lock_key_row_export_file_save(GObject *source_object,
 
     row->export_file = gtk_file_dialog_save_finish(file, res, NULL);
     if (row->export_file == NULL) {
-        /* Cleanup */
-        g_object_unref(file);
-        file = NULL;
-
         row = NULL;
-
-        return;
+        goto cleanup;
     }
 
-    /* Cleanup */
+    thread_export_key(row);
+
+ cleanup:
     g_object_unref(file);
     file = NULL;
-
-    thread_export_key(row);
 }
 
 /**
