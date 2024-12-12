@@ -22,6 +22,31 @@
         return Return; \
     }
 
+/**** General ****/
+
+/**
+ * This function initializes a GnuPG Made Easy context.
+ *
+ * @param context GnuPG Made Easy context to be initialized
+ *
+ * @return Success
+ */
+bool context_initialize(gpgme_ctx_t *context)
+{
+    gpgme_error_t error;
+
+    error = gpgme_new(context);
+    HANDLE_ERROR(false, error,
+                 _("Failed to create new GPGME context"), *context,);
+
+    error = gpgme_set_protocol(*context, GPGME_PROTOCOL_OpenPGP);
+    HANDLE_ERROR(false, error,
+                 _("Failed to set protocol of GPGME context to OpenPGP"),
+                 *context,);
+
+    return true;
+}
+
 /**** Key ****/
 
 /**
@@ -37,14 +62,8 @@ gpgme_key_t key_get(const char *fingerprint)
     gpgme_key_t key;
     gpgme_error_t error;
 
-    error = gpgme_new(&context);
-    HANDLE_ERROR(NULL, error,
-                 _("Failed to create new GPGME context"), context,);
-
-    error = gpgme_set_protocol(context, GPGME_PROTOCOL_OpenPGP);
-    HANDLE_ERROR(NULL, error,
-                 _("Failed to set protocol of GPGME context to OpenPGP"),
-                 context,);
+    if (!context_initialize(&context))
+        return NULL;
 
     error = gpgme_get_key(context, fingerprint, &key, 0);
     HANDLE_ERROR(NULL, error,
@@ -71,14 +90,8 @@ gpgme_key_t key_search(const char *userid)
     gpgme_key_t key;
     gpgme_error_t error;
 
-    error = gpgme_new(&context);
-    HANDLE_ERROR(NULL, error,
-                 _("Failed to create new GPGME context"), context,);
-
-    error = gpgme_set_protocol(context, GPGME_PROTOCOL_OpenPGP);
-    HANDLE_ERROR(NULL, error,
-                 _("Failed to set protocol of GPGME context to OpenPGP"),
-                 context,);
+    if (!context_initialize(&context))
+        return NULL;
 
     error = gpgme_op_keylist_start(context, userid, 0);
     while (!error) {
@@ -115,14 +128,8 @@ bool key_generate(const char *userid, const char *sign_algorithm,
     gpgme_ctx_t context;
     gpgme_error_t error;
 
-    error = gpgme_new(&context);
-    HANDLE_ERROR(false, error,
-                 _("Failed to create new GPGME context"), context,);
-
-    error = gpgme_set_protocol(context, GPGME_PROTOCOL_OpenPGP);
-    HANDLE_ERROR(false, error,
-                 _("Failed to set protocol of GPGME context to OpenPGP"),
-                 context,);
+    if (!context_initialize(&context))
+        return false;
 
     unsigned int flags = 0;
     if (expiry == 0)
@@ -173,14 +180,8 @@ bool key_manage(const char *path, const char *fingerprint,
     gpgme_data_t keydata;
     gpgme_error_t error;
 
-    error = gpgme_new(&context);
-    HANDLE_ERROR(false, error,
-                 _("Failed to create new GPGME context"), context,);
-
-    error = gpgme_set_protocol(context, GPGME_PROTOCOL_OpenPGP);
-    HANDLE_ERROR(false, error,
-                 _("Failed to set protocol of GPGME context to OpenPGP"),
-                 context,);
+    if (!context_initialize(&context))
+        return false;
 
     if (flags & IMPORT) {
         error = gpgme_data_new_from_file(&keydata, path, 1);
@@ -303,14 +304,8 @@ char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key,
 
     gpgme_error_t error;
 
-    error = gpgme_new(&context);
-    HANDLE_ERROR(NULL, error,
-                 _("Failed to create new GPGME context"), context,);
-
-    error = gpgme_set_protocol(context, GPGME_PROTOCOL_OpenPGP);
-    HANDLE_ERROR(NULL, error,
-                 _("Failed to set protocol of GPGME context to OpenPGP"),
-                 context,);
+    if (!context_initialize(&context))
+        return NULL;
 
     error = gpgme_set_pinentry_mode(context, GPGME_PINENTRY_MODE_ASK);
     HANDLE_ERROR(NULL, error,
@@ -432,14 +427,8 @@ bool process_file(const char *input_path, const char *output_path,
 
     gpgme_error_t error;
 
-    error = gpgme_new(&context);
-    HANDLE_ERROR(false, error,
-                 _("Failed to create new GPGME context"), context,);
-
-    error = gpgme_set_protocol(context, GPGME_PROTOCOL_OpenPGP);
-    HANDLE_ERROR(NULL, error,
-                 _("Failed to set protocol of GPGME context to OpenPGP"),
-                 context,);
+    if (!context_initialize(&context))
+        return false;
 
     error = gpgme_set_pinentry_mode(context, GPGME_PINENTRY_MODE_ASK);
     HANDLE_ERROR(NULL, error,
