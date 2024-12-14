@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-14 18:03+0100\n"
+"POT-Creation-Date: 2024-12-14 18:23+0100\n"
 "PO-Revision-Date: 2024-12-10 10:58+0000\n"
 "Last-Translator: Reza Hosseinzadeh <rezahsnzdh@protonmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -200,124 +200,119 @@ msgstr "تنظیم کردن شیوه‌نامهٔ محتوای GPGME به اپن
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr ""
 
-#: src/cryptography.c:82
+#: src/cryptography.c:107
+#, fuzzy, c-format
+msgid "Failed to open file for writing: %s"
+msgstr "ساختن رشتهٔ امضا کردن پرونده شکست خورد"
+
+#: src/cryptography.c:144
 msgid "Failed to obtain key by fingerprint"
 msgstr "گرفتن کلید با اثر انگشت شکست خورد"
 
-#: src/cryptography.c:124
+#: src/cryptography.c:186
 msgid "Failed to find key matching User ID"
 msgstr ""
 
-#: src/cryptography.c:164 src/cryptography.c:178
+#: src/cryptography.c:226 src/cryptography.c:240
 msgid "Failed to generate new GPG key for signing"
 msgstr "ساختن کلید جی‌پی‌جی جدید برای امضا کردن شکست خورد"
 
-#: src/cryptography.c:186
+#: src/cryptography.c:248
 msgid "Failed to delete unfinished, generated key"
 msgstr ""
 
-#: src/cryptography.c:228
+#: src/cryptography.c:290
 msgid "Failed to load GPGME key data from file"
 msgstr "بار کردن دادهٔ کلید GPGME از پرونده شکست خورد"
 
-#: src/cryptography.c:239
+#: src/cryptography.c:301
 msgid "Failed to import GPG key from file"
 msgstr "وارد کردن کلید جی‌پی‌جی از پرونده شکست خورد"
 
-#: src/cryptography.c:255
+#: src/cryptography.c:317
 msgid "Failed to create GPGME key data in memory"
 msgstr "ساختن دادهٔ کلید GPGME در حافظه شکست خورد"
 
-#: src/cryptography.c:266
+#: src/cryptography.c:328
 msgid "Failed to export GPG key(s) to file"
 msgstr "صادر کردن کلید(های) جی‌پی‌جی به پرونده شکست خورد"
 
-#: src/cryptography.c:286
-#, c-format
-msgid "Failed to open export file: %s"
-msgstr ""
-
-#: src/cryptography.c:316
+#: src/cryptography.c:349
 msgid "Failed to get GPG key for expiry editing"
 msgstr ""
 
-#: src/cryptography.c:326
+#: src/cryptography.c:359
 msgid "Failed to update the expiry time"
 msgstr ""
 
-#: src/cryptography.c:344
+#: src/cryptography.c:377
 msgid "Failed to get GPG key for removal"
 msgstr ""
 
-#: src/cryptography.c:354
+#: src/cryptography.c:387
 msgid "Failed to remove GPG key"
 msgstr ""
 
-#: src/cryptography.c:403
+#: src/cryptography.c:436
 msgid "Failed to create new GPGME input data from string"
 msgstr ""
 
-#: src/cryptography.c:415 src/cryptography.c:589
+#: src/cryptography.c:448 src/cryptography.c:612
 msgid "Failed to create new GPGME output data in memory"
 msgstr ""
 
-#: src/cryptography.c:430
+#: src/cryptography.c:463
 msgid "Failed to encrypt GPGME data from memory"
 msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
 
-#: src/cryptography.c:442
+#: src/cryptography.c:475
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "رمزگشایی دادهٔ GPGME از حافظه شکست خورد"
 
-#: src/cryptography.c:456
+#: src/cryptography.c:489
 msgid "Failed to add signing key to GPGME context"
 msgstr "اضافه کردن کلید امضا به محتوای GPGME شکست خورد"
 
-#: src/cryptography.c:468
+#: src/cryptography.c:501
 msgid "Failed to sign GPGME data from memory"
 msgstr "امضا کردن دادهٔ GPGME از حافظه شکست خورد"
 
-#: src/cryptography.c:480
+#: src/cryptography.c:513
 msgid "Failed to verify GPGME data from memory"
 msgstr "اعتبارسنجی دادهٔ GPGME از حافظه شکست خورد"
 
-#: src/cryptography.c:545
+#: src/cryptography.c:568
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr ""
 
-#: src/cryptography.c:562
+#: src/cryptography.c:585
 msgid "Failed to create new GPGME input data from file"
 msgstr "ساختن دادهٔ ورودی جدید GPGME از پرونده شکست خورد"
 
-#: src/cryptography.c:575
+#: src/cryptography.c:598
 msgid "Failed to set file name of GPGME input data"
 msgstr "تنظیم کردن نام پروندهٔ دادهٔ ورودی GPGME شکست خورد"
 
-#: src/cryptography.c:603
+#: src/cryptography.c:626
 msgid "Failed to set file name of GPGME output data"
 msgstr ""
 
-#: src/cryptography.c:620
+#: src/cryptography.c:643
 msgid "Failed to encrypt GPGME data from file"
 msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
 
-#: src/cryptography.c:633
+#: src/cryptography.c:656
 msgid "Failed to decrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:648
+#: src/cryptography.c:671
 msgid "Failed to sign GPGME data from file"
 msgstr "امضا کردن دادهٔ GPGME از پرونده شکست خورد"
 
-#: src/cryptography.c:661
+#: src/cryptography.c:684
 msgid "Failed to verify GPGME data from file"
 msgstr "اعتبارسنجی دادهٔ GPGME از پرونده شکست خورد"
-
-#: src/cryptography.c:699
-#, c-format
-msgid "Failed to open output file: %s"
-msgstr ""
 
 #: src/threading.c:57
 msgid "Failed to create text encryption thread"

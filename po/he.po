@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-14 18:03+0100\n"
+"POT-Creation-Date: 2024-12-14 18:23+0100\n"
 "PO-Revision-Date: 2024-12-01 16:55+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/Lock/Application/"
@@ -202,126 +202,121 @@ msgstr "הגדרת הפרוטוקול של הקשר GPGME ל־OpenPGP נכשלה
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "הגדרת מצב אספקת קוד להקשר GPGME לבקשה נכשלה"
 
-#: src/cryptography.c:82
+#: src/cryptography.c:107
+#, fuzzy, c-format
+msgid "Failed to open file for writing: %s"
+msgstr "ייצוא קובץ נכשל: %s"
+
+#: src/cryptography.c:144
 msgid "Failed to obtain key by fingerprint"
 msgstr "משיכת מפתח לפי טביעת אצבע נכשלה"
 
-#: src/cryptography.c:124
+#: src/cryptography.c:186
 msgid "Failed to find key matching User ID"
 msgstr "איתור מפתח שתואם למזהה המשתמש נכשל"
 
-#: src/cryptography.c:164 src/cryptography.c:178
+#: src/cryptography.c:226 src/cryptography.c:240
 msgid "Failed to generate new GPG key for signing"
 msgstr "יצירת מפתח GPG חדש לחתימה נכשלה"
 
-#: src/cryptography.c:186
+#: src/cryptography.c:248
 msgid "Failed to delete unfinished, generated key"
 msgstr "מחיקת מפתח חלקי שנוצר נכשלה"
 
-#: src/cryptography.c:228
+#: src/cryptography.c:290
 msgid "Failed to load GPGME key data from file"
 msgstr "טעינת נתוני מפתח GPGME מקובץ נכשלה"
 
-#: src/cryptography.c:239
+#: src/cryptography.c:301
 msgid "Failed to import GPG key from file"
 msgstr "ייבוא מפתח GPG מקובץ נכשל"
 
-#: src/cryptography.c:255
+#: src/cryptography.c:317
 msgid "Failed to create GPGME key data in memory"
 msgstr "יצירת נתוני מפתח GPGME בזיכרון נכשלה"
 
-#: src/cryptography.c:266
+#: src/cryptography.c:328
 msgid "Failed to export GPG key(s) to file"
 msgstr "ייצוא מפתח/מפתחות GPG לקובץ נכשל"
 
-#: src/cryptography.c:286
-#, c-format
-msgid "Failed to open export file: %s"
-msgstr "ייצוא קובץ נכשל: %s"
-
-#: src/cryptography.c:316
+#: src/cryptography.c:349
 #, fuzzy
 msgid "Failed to get GPG key for expiry editing"
 msgstr "קבלת מפתח GPG להסרה נכשלה"
 
-#: src/cryptography.c:326
+#: src/cryptography.c:359
 #, fuzzy
 msgid "Failed to update the expiry time"
 msgstr "יצירת תהליכון יצירת ייצוא מפתח נכשלה"
 
-#: src/cryptography.c:344
+#: src/cryptography.c:377
 msgid "Failed to get GPG key for removal"
 msgstr "קבלת מפתח GPG להסרה נכשלה"
 
-#: src/cryptography.c:354
+#: src/cryptography.c:387
 msgid "Failed to remove GPG key"
 msgstr "הסרת מפתח GPG נכשלה"
 
-#: src/cryptography.c:403
+#: src/cryptography.c:436
 msgid "Failed to create new GPGME input data from string"
 msgstr "יצירת נתוני קלט חדשים ל־GPGME ממחרוזת נכשלה"
 
-#: src/cryptography.c:415 src/cryptography.c:589
+#: src/cryptography.c:448 src/cryptography.c:612
 msgid "Failed to create new GPGME output data in memory"
 msgstr "יצירת נתוני פלט חדשים בזיכרון מ־GPGME נכשלה"
 
-#: src/cryptography.c:430
+#: src/cryptography.c:463
 msgid "Failed to encrypt GPGME data from memory"
 msgstr "הצפנת נתוני GPGME מהזיכרון נכשלה"
 
-#: src/cryptography.c:442
+#: src/cryptography.c:475
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "פענוח נתוני GPGME מהזיכרון נכשל"
 
-#: src/cryptography.c:456
+#: src/cryptography.c:489
 msgid "Failed to add signing key to GPGME context"
 msgstr "הוספת מפתח חתימה חדש להקשר GPGME נכשלה"
 
-#: src/cryptography.c:468
+#: src/cryptography.c:501
 msgid "Failed to sign GPGME data from memory"
 msgstr "חתימת נתוני GPGME מהזיכרון נכשלה"
 
-#: src/cryptography.c:480
+#: src/cryptography.c:513
 msgid "Failed to verify GPGME data from memory"
 msgstr "אימות נתוני GPGME מהזיכרון נכשל"
 
-#: src/cryptography.c:545
+#: src/cryptography.c:568
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s הוסר כדי להתכונן לשכתוב"
 
-#: src/cryptography.c:562
+#: src/cryptography.c:585
 msgid "Failed to create new GPGME input data from file"
 msgstr "יצירת נתוני קלט חדשים ל־GPGME מקובץ נכשלה"
 
-#: src/cryptography.c:575
+#: src/cryptography.c:598
 msgid "Failed to set file name of GPGME input data"
 msgstr "הגדרת שם קובץ לנתוני קלט ל־GPGME נכשלה"
 
-#: src/cryptography.c:603
+#: src/cryptography.c:626
 msgid "Failed to set file name of GPGME output data"
 msgstr "הגדרת שם קובץ לנתוני פלט מ־GPGME נכשלה"
 
-#: src/cryptography.c:620
+#: src/cryptography.c:643
 msgid "Failed to encrypt GPGME data from file"
 msgstr "הצפנת נתוני GPGME מקובץ נכשלה"
 
-#: src/cryptography.c:633
+#: src/cryptography.c:656
 msgid "Failed to decrypt GPGME data from file"
 msgstr "פענוח נתוני GPGME מקובץ נכשל"
 
-#: src/cryptography.c:648
+#: src/cryptography.c:671
 msgid "Failed to sign GPGME data from file"
 msgstr "חתימת נתוני GPGME מקובץ נכשלה"
 
-#: src/cryptography.c:661
+#: src/cryptography.c:684
 msgid "Failed to verify GPGME data from file"
 msgstr "אימות נתוני GPGME מקובץ נכשל"
-
-#: src/cryptography.c:699
-#, c-format
-msgid "Failed to open output file: %s"
-msgstr "פתיחת קובץ הפלט נכשלה: %s"
 
 #: src/threading.c:57
 msgid "Failed to create text encryption thread"
@@ -709,6 +704,14 @@ msgstr "טקסט פשוט"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "חלונית בחירת מפתח"
+
+#, c-format
+#~ msgid "Failed to open export file: %s"
+#~ msgstr "ייצוא קובץ נכשל: %s"
+
+#, c-format
+#~ msgid "Failed to open output file: %s"
+#~ msgstr "פתיחת קובץ הפלט נכשלה: %s"
 
 #~ msgid "Verification failed"
 #~ msgstr "האימות נכשל"

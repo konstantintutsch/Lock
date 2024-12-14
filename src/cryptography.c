@@ -59,6 +59,68 @@ bool context_initialize(gpgme_ctx_t *context)
     return true;
 }
 
+/**
+ * This function extracts data as text from GnuPG Made Easy data.
+ *
+ * @param data gpgme_data_t to extract text from
+ *
+ * @return Text. Owned by caller
+ */
+char *text_extract(gpgme_data_t data)
+{
+    size_t length;
+    char *buffer = gpgme_data_release_and_get_mem(data, &length);
+
+    char *string = malloc(length + 1);
+    memcpy(string, buffer, length);
+    string[length] = '\0';
+
+    gpgme_free(buffer);
+    buffer = NULL;
+
+    return string;
+}
+
+/**
+ * This function extracts raw data from GnuPG Made Easy data.
+ *
+ * @param data gpgme_data_t to extract from
+ * @param path Path to write extracted data to
+ *
+ * @return Success
+ */
+bool raw_extract(gpgme_data_t data, const char *path)
+{
+    size_t length;
+    void *buffer = gpgme_data_release_and_get_mem(data, &length);
+
+    void *raw = malloc(length + 1);
+    memcpy(raw, buffer, length);
+
+    gpgme_free(buffer);
+    buffer = NULL;
+
+    FILE *file;
+
+    file = fopen(path, "w");
+    if (file == NULL) {
+        g_warning(_("Failed to open file for writing: %s"), strerror(errno));
+
+        free(raw);
+        raw = NULL;
+
+        return false;
+    }
+
+    fwrite(raw, length, 1, file);
+    fclose(file);
+
+    free(raw);
+    raw = NULL;
+
+    return true;
+}
+
 /**** Key ****/
 
 /**
@@ -272,40 +334,11 @@ bool key_manage(const char *path, const char *fingerprint,
             return false;
         }
 
-        size_t length;
-        char *buffer = gpgme_data_release_and_get_mem(keydata, &length);
-
-        char *armor = malloc(length + 1);
-        memcpy(armor, buffer, length);
-        armor[length] = '\0';
-
-        FILE *file;
-
-        file = fopen(path, "w");
-        if (file == NULL) {
-            g_warning(_("Failed to open export file: %s"), strerror(errno));
-
-            /* Cleanup */
+        if (!raw_extract(keydata, path)) {
             gpgme_release(context);
-
-            gpgme_free(buffer);
-            buffer = NULL;
-
-            free(armor);
-            armor = NULL;
 
             return false;
         }
-
-        fwrite(armor, length, 1, file);
-        fclose(file);
-
-        /* Cleanup */
-        gpgme_free(buffer);
-        buffer = NULL;
-
-        free(armor);
-        armor = NULL;
     }
 
     if (flags & EXPIRE) {
@@ -504,21 +537,11 @@ char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key,
                      uids->uid : verify_result->signatures->fpr);
     }
 
-    size_t length;
-    char *buffer = gpgme_data_release_and_get_mem(output, &length);
-
-    char *string = malloc(length + 1);
-    memcpy(string, buffer, length);
-    string[length] = '\0';
-
     /* Cleanup */
     gpgme_release(context);
     gpgme_data_release(input);
 
-    gpgme_free(buffer);
-    buffer = NULL;
-
-    return string;
+    return text_extract(output);
 }
 
 /**
@@ -686,40 +709,13 @@ bool process_file(const char *input_path, const char *output_path,
     }
     // TODO: Do not manually write to files once GPGME 1.24.0 is released: gpgme_op_decrypt and gpgme_op_verify will be able to write output data directly to files
     if (flags & DECRYPT || flags & VERIFY) {
-        size_t length;
-        void *buffer = gpgme_data_release_and_get_mem(output, &length);
-
-        void *data = malloc(length + 1);
-        memcpy(data, buffer, length);
-
-        FILE *file;
-
-        file = fopen(output_path, "w");
-        if (file == NULL) {
-            g_warning(_("Failed to open output file: %s"), strerror(errno));
-
+        if (!raw_extract(output, output_path)) {
             /* Cleanup */
             gpgme_release(context);
             gpgme_data_release(input);
 
-            gpgme_free(buffer);
-            buffer = NULL;
-
-            free(data);
-            data = NULL;
-
             return false;
         }
-
-        fwrite(data, length, 1, file);
-        fclose(file);
-
-        /* Cleanup */
-        gpgme_free(buffer);
-        buffer = NULL;
-
-        free(data);
-        data = NULL;
     }
 
     /* Cleanup */
