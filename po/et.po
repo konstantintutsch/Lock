@@ -192,34 +192,35 @@ msgid "Expiry renewed"
 msgstr "Aegumine on uuendatud"
 
 #: src/cryptography.c:29
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME context: %s"
-msgstr "Uue GPGME konteksti loomine ei õnnestunud"
+msgstr "Uue GPGME konteksti loomine ei õnnestunud: %s"
 
 #: src/cryptography.c:37
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
-msgstr "GPGME protokolli konteksti määramine OpenPGP jaoks ei õnnestunud"
+msgstr "GPGME protokolli konteksti määramine OpenPGP jaoks ei õnnestunud: %s"
 
 #: src/cryptography.c:46
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set pinentry mode of GPGME context to ask: %s"
-msgstr "GPGME kontekstile PIN-koodi küsimise režiimi määramine ei õnnestunud"
+msgstr ""
+"GPGME kontekstile PIN-koodi küsimise režiimi määramine ei õnnestunud: %s"
 
 #: src/cryptography.c:105 src/cryptography.c:109 src/cryptography.c:107
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to open file for writing: %s"
-msgstr "Ekspordifaili avamine ei õnnestunud: %s"
+msgstr "Faili kirjutamiseks avamine ei õnnestunud: %s"
 
 #: src/cryptography.c:113 src/cryptography.c:117
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to write to file: %s"
-msgstr "Ekspordifaili avamine ei õnnestunud: %s"
+msgstr "Faili kirjutamine ei õnnestunud: %s"
 
 #: src/cryptography.c:150
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to obtain key by fingerprint: %s"
-msgstr "Võtme laadimine sõrmejälje alusel ei õnnestunud"
+msgstr "Võtme laadimine sõrmejälje alusel ei õnnestunud: %s"
 
 #: src/cryptography.c:190 src/cryptography.c:195 src/cryptography.c:186
 #: src/cryptography.c:112 src/cryptography.c:111 src/cryptography.c:107
@@ -228,59 +229,60 @@ msgid "Failed to find key matching User ID"
 msgstr "Võtme leidmine kasutajatunnuse alusel ei õnnestunud"
 
 #: src/cryptography.c:231
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to generate new GPG key for signing: %s"
-msgstr "Uue allakirjastamiseks vajaliku GPG võtme loomine ei õmnnestunud"
+msgstr "Uue allakirjastamiseks vajaliku GPG võtme loomine ei õnnestunud: %s"
 
 #: src/cryptography.c:243
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to generate new GPG subkey for encryption: %s"
-msgstr "Uue allakirjastamiseks vajaliku GPG võtme loomine ei õmnnestunud"
+msgstr ""
+"Uue allakirjastamiseks vajaliku GPG alamvõtme loomine ei õnnestunud: %s"
 
 #: src/cryptography.c:251
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to delete unfinished, generated key: %s"
-msgstr "Loodud, aga lõpetamata võtme kustutamine ei õnnestunud"
+msgstr "Loodud, aga lõpetamata võtme kustutamine ei õnnestunud: %s"
 
 #: src/cryptography.c:288 src/cryptography.c:295
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to load GPGME key data from file: %s"
-msgstr "GPGME võtme andmete laadimine failist ei õnnestunud"
+msgstr "GPGME võtme andmete laadimine failist ei õnnestunud: %s"
 
 #: src/cryptography.c:296 src/cryptography.c:303
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to import GPG key from file: %s"
-msgstr "GPG võtme importimine failist ei õnnestunud"
+msgstr "GPG võtme importimine failist ei õnnestunud: %s"
 
 #: src/cryptography.c:333 src/cryptography.c:340
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create GPGME key data in memory: %s"
-msgstr "GPGME võtme andmete loomine mälus ei õnnestunud"
+msgstr "GPGME võtme andmete loomine mälus ei õnnestunud: %s"
 
 #: src/cryptography.c:341 src/cryptography.c:348
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to export GPG key(s) to file: %s"
-msgstr "GPG võtme(te) eksportimine faili ei õnnestunud"
+msgstr "GPG võtme(te) eksportimine faili ei õnnestunud: %s"
 
 #: src/cryptography.c:386 src/cryptography.c:393
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for expiry date update: %s"
-msgstr "GPG võtme laadimine kehtivuse muutmiseks ei õnnestunud"
+msgstr "GPG võtme laadimine kehtivuse muutmiseks ei õnnestunud: %s"
 
 #: src/cryptography.c:394 src/cryptography.c:401
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to update the expiry date of a key: %s"
-msgstr "Aegumisaja muutmine ei õnnestunud"
+msgstr "Võtme aegumispäeva muutmine ei õnnestunud: %s"
 
 #: src/cryptography.c:428 src/cryptography.c:435
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for removal: %s"
-msgstr "GPG võtme laadimine kustutamiseks ei õnnestunud"
+msgstr "GPG võtme laadimine kustutamiseks ei õnnestunud: %s"
 
 #: src/cryptography.c:436 src/cryptography.c:443
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to remove GPG key: %s"
-msgstr "GPG võtme eemaldamine ei õnnestunud"
+msgstr "GPG võtme eemaldamine ei õnnestunud: %s"
 
 #: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
 #: src/cryptography.c:659
