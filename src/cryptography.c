@@ -91,10 +91,12 @@ char *text_extract(gpgme_data_t data)
  */
 bool raw_extract(gpgme_data_t data, const char *path)
 {
+    bool status = true;
+
     size_t length;
     void *buffer = gpgme_data_release_and_get_mem(data, &length);
 
-    void *raw = malloc(length + 1);
+    void *raw = malloc(length);
     memcpy(raw, buffer, length);
 
     gpgme_free(buffer);
@@ -106,19 +108,26 @@ bool raw_extract(gpgme_data_t data, const char *path)
     if (file == NULL) {
         g_warning(_("Failed to open file for writing: %s"), strerror(errno));
 
-        free(raw);
-        raw = NULL;
-
-        return false;
+        status = false;
+        goto cleanup;
     }
 
-    fwrite(raw, length, 1, file);
+    size_t written = fwrite(raw, length, 1, file);
+    if (written < 1) {
+        g_warning(_("Failed to write to file: %s"), strerror(errno));
+
+        status = false;
+        // goto cleanup_file;
+        // Necessary when more steps are added behind this call.
+    }
+//cleanup_file:
     fclose(file);
 
+ cleanup:
     free(raw);
     raw = NULL;
 
-    return true;
+    return status;
 }
 
 /**** Key ****/
@@ -265,142 +274,185 @@ bool key_generate(const char *userid, const char *sign_algorithm,
 }
 
 /**
- * This function manages keys.
+ * This function imports keys from a file.
  *
- * @param path Path of the file to import or export. Can be NULL
- * @param fingerprint Fingerprint of the key to export or remove. Can be NULL
- * @param expires expires parameter for gpgme_op_setexpire. Can be 0
- * @param flags Processing options
+ * @param path Path of the file to import
  *
  * @return Success
  */
-bool key_manage(const char *path, const char *fingerprint,
-                const unsigned long expires, key_flags flags)
+bool key_import(const char *path)
 {
     gpgme_ctx_t context;
-    gpgme_data_t keydata;
     gpgme_error_t error;
+
+    gpgme_data_t key_data;
 
     if (!context_initialize(&context))
         return false;
 
-    if (flags & IMPORT) {
-        error = gpgme_data_new_from_file(&keydata, path, 1);
-        if (error) {
-            g_warning("%s: %s", _("Failed to load GPGME key data from file"),
-                      gpgme_strerror(error));
+    error = gpgme_data_new_from_file(&key_data, path, 1);
+    if (error) {
+        g_warning(_("Failed to load GPGME key data from file: %s"),
+                  gpgme_strerror(error));
 
-            gpgme_data_release(keydata);
-            gpgme_release(context);
-
-            return false;
-        }
-
-        error = gpgme_op_import(context, keydata);
-        if (error) {
-            g_warning("%s: %s", _("Failed to import GPG key from file"),
-                      gpgme_strerror(error));
-
-            gpgme_data_release(keydata);
-            gpgme_release(context);
-
-            return false;
-        }
-
-        /* Cleanup */
-        gpgme_data_release(keydata);
-    } else if (flags & EXPORT) {
-        gpgme_set_armor(context, 1);
-
-        error = gpgme_data_new(&keydata);
-        if (error) {
-            g_warning("%s: %s", _("Failed to create GPGME key data in memory"),
-                      gpgme_strerror(error));
-
-            gpgme_data_release(keydata);
-            gpgme_release(context);
-
-            return false;
-        }
-
-        error = gpgme_op_export(context, fingerprint, 0, keydata);
-        if (error) {
-            g_warning("%s: %s", _("Failed to export GPG key(s) to file"),
-                      gpgme_strerror(error));
-
-            gpgme_data_release(keydata);
-            gpgme_release(context);
-
-            return false;
-        }
-
-        if (!raw_extract(keydata, path)) {
-            gpgme_release(context);
-
-            return false;
-        }
+        goto cleanup;
     }
 
-    if (flags & EXPIRE) {
-        gpgme_key_t key;
+    error = gpgme_op_import(context, key_data);
+    if (error) {
+        g_warning(_("Failed to import GPG key from file: %s"),
+                  gpgme_strerror(error));
 
-        error = gpgme_get_key(context, fingerprint, &key, 0);
-        if (error) {
-            g_warning("%s: %s", _("Failed to get GPG key for expiry editing"),
-                      gpgme_strerror(error));
-
-            gpgme_release(context);
-
-            return false;
-        }
-
-        error = gpgme_op_setexpire(context, key, expires, NULL, 0);
-        if (error) {
-            g_warning("%s: %s", _("Failed to update the expiry time"),
-                      gpgme_strerror(error));
-
-            gpgme_key_release(key);
-            gpgme_release(context);
-
-            return false;
-        }
-
-        /* Cleanup */
-        gpgme_key_release(key);
+        // goto cleanup_key_data;
+        // Necessary when more steps are added behind this call.
     }
+    //cleanup_key_data:
+    gpgme_data_release(key_data);
 
-    if (flags & REMOVE) {
-        gpgme_key_t key;
-
-        error = gpgme_get_key(context, fingerprint, &key, 0);
-        if (error) {
-            g_warning("%s: %s", _("Failed to get GPG key for removal"),
-                      gpgme_strerror(error));
-
-            gpgme_release(context);
-
-            return false;
-        }
-
-        error = gpgme_op_delete(context, key, 1);
-        if (error) {
-            g_warning("%s: %s", _("Failed to remove GPG key"),
-                      gpgme_strerror(error));
-
-            gpgme_key_release(key);
-            gpgme_release(context);
-
-            return false;
-        }
-
-        /* Cleanup */
-        gpgme_key_release(key);
-    }
-
-    /* Cleanup */
+ cleanup:
     gpgme_release(context);
 
-    return true;
+    return (error) ? false : true;
+}
+
+/**
+ * This function exports a key to a file.
+ *
+ * @param path Path of the file to export to
+ * @param fingerprint Fingerprint of the key to export
+ *
+ * @return Success
+ */
+bool key_export(const char *path, const char *fingerprint)
+{
+    gpgme_ctx_t context;
+    gpgme_error_t error;
+
+    gpgme_data_t key_data;
+
+    if (!context_initialize(&context))
+        return false;
+
+    gpgme_set_armor(context, 1);
+
+    error = gpgme_data_new(&key_data);
+    if (error) {
+        g_warning(_("Failed to create GPGME key data in memory: %s"),
+                  gpgme_strerror(error));
+
+        goto cleanup;
+    }
+
+    error = gpgme_op_export(context, fingerprint, 0, key_data);
+    if (error) {
+        g_warning(_("Failed to export GPG key(s) to file: %s"),
+                  gpgme_strerror(error));
+
+        goto cleanup_key_data;
+    }
+
+    if (raw_extract(key_data, path)) {
+        goto cleanup;
+    }
+    // else
+    // {
+    //     goto cleanup_key_data;
+    // }
+    //
+    // Necessary when more steps are added behind this call.
+
+ cleanup_key_data:
+    gpgme_data_release(key_data);
+
+ cleanup:
+    gpgme_release(context);
+
+    return (error) ? false : true;
+}
+
+/**
+ * This function updates the expiry date of a key.
+ *
+ * @param fingerprint Fingerprint of the key to edit
+ * @param expire Time in seconds from now to set the expiry date of the key to
+ *
+ * @return Success
+ */
+bool key_expire(const char *fingerprint, const unsigned long int expire)
+{
+    gpgme_ctx_t context;
+    gpgme_error_t error;
+
+    gpgme_key_t key;
+
+    if (!context_initialize(&context))
+        return false;
+
+    error = gpgme_get_key(context, fingerprint, &key, 0);
+    if (error) {
+        g_warning(_("Failed to get GPG key for expiry date update: %s"),
+                  gpgme_strerror(error));
+
+        goto cleanup;
+    }
+
+    error = gpgme_op_setexpire(context, key, expire, NULL, 0);
+    if (error) {
+        g_warning(_("Failed to update the expiry date of a key: %s"),
+                  gpgme_strerror(error));
+
+        // goto cleanup_key;
+        // Necessary when more steps are added behind this call.
+    }
+    //cleanup_key:
+    gpgme_key_release(key);
+
+ cleanup:
+    gpgme_release(context);
+
+    return (error) ? false : true;
+}
+
+/**
+ * This function removes a key.
+ *
+ * @param fingerprint Fingerprint of the key to remove
+ *
+ * @return Success
+ */
+bool key_remove(const char *fingerprint)
+{
+    gpgme_ctx_t context;
+    gpgme_error_t error;
+
+    gpgme_key_t key;
+
+    if (!context_initialize(&context))
+        return false;
+
+    error = gpgme_get_key(context, fingerprint, &key, 0);
+    if (error) {
+        g_warning(_("Failed to get GPG key for removal: %s"),
+                  gpgme_strerror(error));
+
+        goto cleanup;
+    }
+
+    error = gpgme_op_delete(context, key, 1);
+    if (error) {
+        g_warning(_("Failed to remove GPG key: %s"), gpgme_strerror(error));
+
+        // goto cleanup_key;
+        // Necessary when more steps are added behind this call.
+    }
+    //cleanup_key:
+    gpgme_key_release(key);
+
+ cleanup:
+    gpgme_release(context);
+
+    return (error) ? false : true;
+
 }
 
 /**** Operations ****/

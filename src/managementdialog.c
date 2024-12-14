@@ -300,7 +300,7 @@ void lock_management_dialog_import(LockManagementDialog *dialog)
     for (guint i = 0; i < g_list_model_get_n_items(dialog->import_file); i++) {
         path = g_file_get_path(g_list_model_get_item(dialog->import_file, i));
 
-        thread_success = key_manage(path, NULL, 0, IMPORT);
+        thread_success = key_import(path);
 
         if (!thread_success)
             break;

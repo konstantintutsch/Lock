@@ -236,7 +236,7 @@ void lock_key_row_export(LockKeyRow *row)
     char *path = g_file_get_path(row->export_file);
     const char *fingerprint = adw_action_row_get_subtitle(ADW_ACTION_ROW(row));
 
-    row->export_success = key_manage(path, fingerprint, 0, EXPORT);
+    row->export_success = key_export(path, fingerprint);
 
     /* Cleanup */
     g_free(path);
@@ -335,7 +335,7 @@ void lock_key_row_remove(LockKeyRow *row)
 {
     const char *fingerprint = adw_action_row_get_subtitle(ADW_ACTION_ROW(row));
 
-    row->remove_success = key_manage(NULL, fingerprint, 0, REMOVE);
+    row->remove_success = key_remove(fingerprint);
 
     /* UI */
     g_idle_add((GSourceFunc) lock_key_row_remove_on_completed, row);
@@ -404,7 +404,7 @@ void lock_key_row_edit_expiry_finish(GtkCalendar *self, LockKeyRow *row)
     gtk_popover_popdown(row->expire_popover);
 
     gboolean expire_success = (expire_offset >= 0) ?
-        key_manage(NULL, fingerprint, expire_offset, EXPIRE) : false;
+        key_expire(fingerprint, expire_offset) : false;
 
     if (!expire_success) {
         toast = adw_toast_new(_("Renewal failed"));

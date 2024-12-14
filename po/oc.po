@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-14 18:23+0100\n"
+"POT-Creation-Date: 2024-12-14 21:58+0100\n"
 "PO-Revision-Date: 2024-12-01 19:04+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -202,134 +202,145 @@ msgstr "Fracàs de la definicion del protocòl del contèxte GPGME per OpenPGP"
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "Fracàs de la definicion del protocòl del contèxte GPGME per OpenPGP"
 
-#: src/cryptography.c:107
+#: src/cryptography.c:109
 #, fuzzy, c-format
 msgid "Failed to open file for writing: %s"
 msgstr "Fracàs de la dobertura del fichièr d’exportacion : %s"
 
-#: src/cryptography.c:144
+#: src/cryptography.c:117
+#, fuzzy, c-format
+msgid "Failed to write to file: %s"
+msgstr "Fracàs de la dobertura del fichièr d’exportacion : %s"
+
+#: src/cryptography.c:153
 msgid "Failed to obtain key by fingerprint"
 msgstr "Fracàs de l’obtencion de la clau per emprenta digitala"
 
-#: src/cryptography.c:186
+#: src/cryptography.c:195
 msgid "Failed to find key matching User ID"
 msgstr "Fracàs de la trobada d’una clau correspondenta a l’ID utilizaire"
 
-#: src/cryptography.c:226 src/cryptography.c:240
+#: src/cryptography.c:235 src/cryptography.c:249
 msgid "Failed to generate new GPG key for signing"
 msgstr "Fracàs de la generacion de la clau GPG novèla per signar"
 
-#: src/cryptography.c:248
+#: src/cryptography.c:257
 msgid "Failed to delete unfinished, generated key"
 msgstr "Fracàs de la supression de la clau ECC generada non acabada"
 
-#: src/cryptography.c:290
-msgid "Failed to load GPGME key data from file"
+#: src/cryptography.c:295
+#, fuzzy, c-format
+msgid "Failed to load GPGME key data from file: %s"
 msgstr ""
 "Fracàs de la mesa en memòria de las donadas clau GPGME a partir del fichièr"
 
-#: src/cryptography.c:301
-msgid "Failed to import GPG key from file"
+#: src/cryptography.c:303
+#, fuzzy, c-format
+msgid "Failed to import GPG key from file: %s"
 msgstr "Fracàs de l’importacion de la clau GPG a partir del fichièr"
 
-#: src/cryptography.c:317
-msgid "Failed to create GPGME key data in memory"
+#: src/cryptography.c:340
+#, fuzzy, c-format
+msgid "Failed to create GPGME key data in memory: %s"
 msgstr "Fracàs de la creacion de las donadas de la clau GPGME en memòria"
 
-#: src/cryptography.c:328
-msgid "Failed to export GPG key(s) to file"
+#: src/cryptography.c:348
+#, fuzzy, c-format
+msgid "Failed to export GPG key(s) to file: %s"
 msgstr "Fracàs de l’exportacion de la(s) clau(s) dins un fichièr"
 
-#: src/cryptography.c:349
-#, fuzzy
-msgid "Failed to get GPG key for expiry editing"
+#: src/cryptography.c:393
+#, fuzzy, c-format
+msgid "Failed to get GPG key for expiry date update: %s"
 msgstr "Fracàs de l’obtencion de la clau GPG de suprimir"
 
-#: src/cryptography.c:359
-#, fuzzy
-msgid "Failed to update the expiry time"
+#: src/cryptography.c:401
+#, fuzzy, c-format
+msgid "Failed to update the expiry date of a key: %s"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
-#: src/cryptography.c:377
-msgid "Failed to get GPG key for removal"
+#: src/cryptography.c:435
+#, fuzzy, c-format
+msgid "Failed to get GPG key for removal: %s"
 msgstr "Fracàs de l’obtencion de la clau GPG de suprimir"
 
-#: src/cryptography.c:387
-msgid "Failed to remove GPG key"
+#: src/cryptography.c:443
+#, fuzzy, c-format
+msgid "Failed to remove GPG key: %s"
 msgstr "Fracàs de la supression de la clau GPG"
 
-#: src/cryptography.c:436
+#: src/cryptography.c:488
 msgid "Failed to create new GPGME input data from string"
 msgstr ""
 "Fracàs de la creacion de las donadas GPGME d’entrada novèlas a partir de la "
 "cadena de tèxte"
 
-#: src/cryptography.c:448 src/cryptography.c:612
+#: src/cryptography.c:500 src/cryptography.c:664
 msgid "Failed to create new GPGME output data in memory"
 msgstr "Fracàs de la creacion de las donadas GPGME de sortida en memòria"
 
-#: src/cryptography.c:463
+#: src/cryptography.c:515
 msgid "Failed to encrypt GPGME data from memory"
 msgstr ""
 "Fracàs de la realizacion del chiframent de las donadas GPGME a partir de la "
 "memòria"
 
-#: src/cryptography.c:475
+#: src/cryptography.c:527
 msgid "Failed to decrypt GPGME data from memory"
 msgstr ""
 "Fracàs de la realizacion del deschiframent de las donadas GPGME a partir de "
 "la memòria"
 
-#: src/cryptography.c:489
+#: src/cryptography.c:541
 msgid "Failed to add signing key to GPGME context"
 msgstr "Fracàs de l’apondon de la clau al contèxte GPGME nòu"
 
-#: src/cryptography.c:501
+#: src/cryptography.c:553
 msgid "Failed to sign GPGME data from memory"
 msgstr "Fracàs de la signatura de las donadas GPGME a partir de la memòria"
 
-#: src/cryptography.c:513
+#: src/cryptography.c:565
 msgid "Failed to verify GPGME data from memory"
 msgstr "Fracàs de la verificacion de las donadas GPGME a partir de la memòria"
 
-#: src/cryptography.c:568
+#: src/cryptography.c:620
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s suprimit per preparar lo subrecargament"
 
-#: src/cryptography.c:585
+#: src/cryptography.c:637
 msgid "Failed to create new GPGME input data from file"
 msgstr ""
 "Fracàs de la creacion de las novèlas donadas GPGME d’entrada a partir del "
 "fichièr"
 
-#: src/cryptography.c:598
+#: src/cryptography.c:650
 msgid "Failed to set file name of GPGME input data"
 msgstr ""
 "Fracàs de la definicion del nom de fichièr de las donadas GPGME d’entrada"
 
-#: src/cryptography.c:626
+#: src/cryptography.c:678
 msgid "Failed to set file name of GPGME output data"
 msgstr ""
 "Fracàs de la definicion del nom de fichièr de las donadas GPGME de sortida"
 
-#: src/cryptography.c:643
+#: src/cryptography.c:695
 msgid "Failed to encrypt GPGME data from file"
 msgstr ""
 "Fracàs de la realizacion del deschiframent de las donadas GPGME a partir del "
 "fichièr"
 
-#: src/cryptography.c:656
+#: src/cryptography.c:708
 msgid "Failed to decrypt GPGME data from file"
 msgstr ""
 "Fracàs de la realizacion del chiframent de las donadas GPGME a partir del "
 "fichièr"
 
-#: src/cryptography.c:671
+#: src/cryptography.c:723
 msgid "Failed to sign GPGME data from file"
 msgstr "Fracàs de la signatura de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:684
+#: src/cryptography.c:736
 msgid "Failed to verify GPGME data from file"
 msgstr "Fracàs de la verificacion de las donadas GPGME a partir del fichièr"
 
@@ -728,10 +739,6 @@ msgstr "Tèxte brut"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Fenèstra de seleccion de clau"
-
-#, c-format
-#~ msgid "Failed to open export file: %s"
-#~ msgstr "Fracàs de la dobertura del fichièr d’exportacion : %s"
 
 #, c-format
 #~ msgid "Failed to open output file: %s"
