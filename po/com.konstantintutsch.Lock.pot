@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-14 21:58+0100\n"
+"POT-Creation-Date: 2024-12-14 22:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -187,141 +187,152 @@ msgid "Expiry renewed"
 msgstr ""
 
 #: src/cryptography.c:29
-msgid "Failed to create new GPGME context"
+#, c-format
+msgid "Failed to create new GPGME context: %s"
 msgstr ""
 
-#: src/cryptography.c:40
-msgid "Failed to set protocol of GPGME context to OpenPGP"
+#: src/cryptography.c:37
+#, c-format
+msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
 msgstr ""
 
-#: src/cryptography.c:51
-msgid "Failed to set pinentry mode of GPGME context to ask"
+#: src/cryptography.c:46
+#, c-format
+msgid "Failed to set pinentry mode of GPGME context to ask: %s"
 msgstr ""
 
-#: src/cryptography.c:109
+#: src/cryptography.c:105
 #, c-format
 msgid "Failed to open file for writing: %s"
 msgstr ""
 
-#: src/cryptography.c:117
+#: src/cryptography.c:113
 #, c-format
 msgid "Failed to write to file: %s"
 msgstr ""
 
-#: src/cryptography.c:153
-msgid "Failed to obtain key by fingerprint"
+#: src/cryptography.c:150
+#, c-format
+msgid "Failed to obtain key by fingerprint: %s"
 msgstr ""
 
-#: src/cryptography.c:195
+#: src/cryptography.c:190
 msgid "Failed to find key matching User ID"
 msgstr ""
 
-#: src/cryptography.c:235 src/cryptography.c:249
-msgid "Failed to generate new GPG key for signing"
+#: src/cryptography.c:231
+#, c-format
+msgid "Failed to generate new GPG key for signing: %s"
 msgstr ""
 
-#: src/cryptography.c:257
-msgid "Failed to delete unfinished, generated key"
+#: src/cryptography.c:243
+#, c-format
+msgid "Failed to generate new GPG subkey for encryption: %s"
 msgstr ""
 
-#: src/cryptography.c:295
+#: src/cryptography.c:251
+#, c-format
+msgid "Failed to delete unfinished, generated key: %s"
+msgstr ""
+
+#: src/cryptography.c:288
 #, c-format
 msgid "Failed to load GPGME key data from file: %s"
 msgstr ""
 
-#: src/cryptography.c:303
+#: src/cryptography.c:296
 #, c-format
 msgid "Failed to import GPG key from file: %s"
 msgstr ""
 
-#: src/cryptography.c:340
+#: src/cryptography.c:333
 #, c-format
 msgid "Failed to create GPGME key data in memory: %s"
 msgstr ""
 
-#: src/cryptography.c:348
+#: src/cryptography.c:341
 #, c-format
 msgid "Failed to export GPG key(s) to file: %s"
 msgstr ""
 
-#: src/cryptography.c:393
+#: src/cryptography.c:386
 #, c-format
 msgid "Failed to get GPG key for expiry date update: %s"
 msgstr ""
 
-#: src/cryptography.c:401
+#: src/cryptography.c:394
 #, c-format
 msgid "Failed to update the expiry date of a key: %s"
 msgstr ""
 
-#: src/cryptography.c:435
+#: src/cryptography.c:428
 #, c-format
 msgid "Failed to get GPG key for removal: %s"
 msgstr ""
 
-#: src/cryptography.c:443
+#: src/cryptography.c:436
 #, c-format
 msgid "Failed to remove GPG key: %s"
 msgstr ""
 
-#: src/cryptography.c:488
+#: src/cryptography.c:481
 msgid "Failed to create new GPGME input data from string"
 msgstr ""
 
-#: src/cryptography.c:500 src/cryptography.c:664
+#: src/cryptography.c:493 src/cryptography.c:657
 msgid "Failed to create new GPGME output data in memory"
 msgstr ""
 
-#: src/cryptography.c:515
+#: src/cryptography.c:508
 msgid "Failed to encrypt GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:527
+#: src/cryptography.c:520
 msgid "Failed to decrypt GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:541
+#: src/cryptography.c:534
 msgid "Failed to add signing key to GPGME context"
 msgstr ""
 
-#: src/cryptography.c:553
+#: src/cryptography.c:546
 msgid "Failed to sign GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:565
+#: src/cryptography.c:558
 msgid "Failed to verify GPGME data from memory"
 msgstr ""
 
-#: src/cryptography.c:620
+#: src/cryptography.c:613
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr ""
 
-#: src/cryptography.c:637
+#: src/cryptography.c:630
 msgid "Failed to create new GPGME input data from file"
 msgstr ""
 
-#: src/cryptography.c:650
+#: src/cryptography.c:643
 msgid "Failed to set file name of GPGME input data"
 msgstr ""
 
-#: src/cryptography.c:678
+#: src/cryptography.c:671
 msgid "Failed to set file name of GPGME output data"
 msgstr ""
 
-#: src/cryptography.c:695
+#: src/cryptography.c:688
 msgid "Failed to encrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:708
+#: src/cryptography.c:701
 msgid "Failed to decrypt GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:723
+#: src/cryptography.c:716
 msgid "Failed to sign GPGME data from file"
 msgstr ""
 
-#: src/cryptography.c:736
+#: src/cryptography.c:729
 msgid "Failed to verify GPGME data from file"
 msgstr ""
 

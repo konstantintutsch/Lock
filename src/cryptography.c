@@ -26,37 +26,33 @@ bool context_initialize(gpgme_ctx_t *context)
 
     error = gpgme_new(context);
     if (error) {
-        g_warning("%s: %s", _("Failed to create new GPGME context"),
+        g_warning(_("Failed to create new GPGME context: %s"),
                   gpgme_strerror(error));
 
-        gpgme_release(*context);
-
-        return false;
+        goto cleanup;
     }
 
     error = gpgme_set_protocol(*context, GPGME_PROTOCOL_OpenPGP);
     if (error) {
-        g_warning("%s: %s",
-                  _("Failed to set protocol of GPGME context to OpenPGP"),
+        g_warning(_("Failed to set protocol of GPGME context to OpenPGP: %s"),
                   gpgme_strerror(error));
 
         gpgme_release(*context);
-
-        return false;
+        goto cleanup;
     }
 
     error = gpgme_set_pinentry_mode(*context, GPGME_PINENTRY_MODE_ASK);
     if (error) {
-        g_warning("%s: %s",
-                  _("Failed to set pinentry mode of GPGME context to ask"),
+        g_warning(_("Failed to set pinentry mode of GPGME context to ask: %s"),
                   gpgme_strerror(error));
 
         gpgme_release(*context);
-
-        return false;
+        // goto cleanup;
+        // Necessary when more steps are added behind this call.
     }
 
-    return true;
+ cleanup:
+    return (error) ? false : true;
 }
 
 /**
@@ -142,27 +138,25 @@ bool raw_extract(gpgme_data_t data, const char *path)
 gpgme_key_t key_get(const char *fingerprint)
 {
     gpgme_ctx_t context;
-    gpgme_key_t key;
     gpgme_error_t error;
+
+    gpgme_key_t key;
 
     if (!context_initialize(&context))
         return NULL;
 
     error = gpgme_get_key(context, fingerprint, &key, 0);
     if (error) {
-        g_warning("%s: %s", _("Failed to obtain key by fingerprint"),
+        g_warning(_("Failed to obtain key by fingerprint: %s"),
                   gpgme_strerror(error));
 
-        gpgme_key_release(key);
-        gpgme_release(context);
-
-        return NULL;
+        // goto cleanup;
+        // Necessary when more steps are added behind this call.
     }
-
-    /* Cleanup */
+//cleanup:
     gpgme_release(context);
 
-    return key;
+    return (error) ? NULL : key;
 }
 
 /**
@@ -175,8 +169,9 @@ gpgme_key_t key_get(const char *fingerprint)
 gpgme_key_t key_search(const char *userid)
 {
     gpgme_ctx_t context;
-    gpgme_key_t key;
     gpgme_error_t error;
+
+    gpgme_key_t key;
 
     if (!context_initialize(&context))
         return NULL;
@@ -196,15 +191,14 @@ gpgme_key_t key_search(const char *userid)
                   gpgme_strerror(error));
 
         gpgme_key_release(key);
-        gpgme_release(context);
 
-        return NULL;
+        // goto cleanup;
+        // Necessary when more steps are added behind this call.
     }
-
-    /* Cleanup */
+//cleanup:
     gpgme_release(context);
 
-    return key;
+    return (error) ? NULL : key;
 }
 
 /**
@@ -212,11 +206,13 @@ gpgme_key_t key_search(const char *userid)
  *
  * @param userid User ID of the new keypair
  * @param sign_algorithm Algorithm of the signing key of the new keypair
- * @param encrypt_algorithm Algorithm of the encryption key of the new keypair
- * @param expiry Expiry in seconds of the new keypair
+ * @param encrypt_algorithm Algorithm of the encryption subkey of the new keypair
+ * @param expire Expiry date in seconds from now of the new key pair
+ *
+ * @return Success
  */
 bool key_generate(const char *userid, const char *sign_algorithm,
-                  const char *encrypt_algorithm, unsigned long expiry)
+                  const char *encrypt_algorithm, const unsigned long int expire)
 {
     gpgme_ctx_t context;
     gpgme_error_t error;
@@ -225,28 +221,26 @@ bool key_generate(const char *userid, const char *sign_algorithm,
         return false;
 
     unsigned int flags = 0;
-    if (expiry == 0)
+    if (expire == 0)
         flags = GPGME_CREATE_NOEXPIRE;
 
     error =
-        gpgme_op_createkey(context, userid, sign_algorithm, 0, expiry, NULL,
+        gpgme_op_createkey(context, userid, sign_algorithm, 0, expire, NULL,
                            GPGME_CREATE_SIGN | flags);
     if (error) {
-        g_warning("%s: %s", _("Failed to generate new GPG key for signing"),
+        g_warning(_("Failed to generate new GPG key for signing: %s"),
                   gpgme_strerror(error));
 
-        gpgme_release(context);
-
-        return false;
+        goto cleanup;
     }
 
     gpgme_key_t key = key_search(userid);
 
     error =
-        gpgme_op_createsubkey(context, key, encrypt_algorithm, 0, expiry,
+        gpgme_op_createsubkey(context, key, encrypt_algorithm, 0, expire,
                               GPGME_CREATE_ENCR | flags);
     if (error) {
-        g_warning("%s: %s", _("Failed to generate new GPG key for signing"),
+        g_warning(_("Failed to generate new GPG subkey for encryption: %s"),
                   gpgme_strerror(error));
 
         error =
@@ -254,23 +248,22 @@ bool key_generate(const char *userid, const char *sign_algorithm,
                                 GPGME_DELETE_ALLOW_SECRET | GPGME_DELETE_FORCE);
 
         if (error) {
-            g_warning("%s: %s", _("Failed to delete unfinished, generated key"),
+            g_warning(_("Failed to delete unfinished, generated key: %s"),
                       gpgme_strerror(error));
 
-            gpgme_release(context);
-
-            return false;
+            // goto cleanup_key;
+            // Necessary when more steps are added behind this call.
         }
-
-        gpgme_key_release(key);
-        gpgme_release(context);
-
-        return false;
+        // goto cleanup_key;
+        // Necessary when more steps are added behind this call.
     }
-
+//cleanup_key:
     gpgme_key_release(key);
 
-    return true;
+ cleanup:
+    gpgme_release(context);
+
+    return (error) ? false : true;
 }
 
 /**
@@ -585,8 +578,8 @@ char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key,
 
         *signer =
             g_strdup((verify_result->signatures->key !=
-                      NULL) ? verify_result->signatures->key->
-                     uids->uid : verify_result->signatures->fpr);
+                      NULL) ? verify_result->signatures->key->uids->
+                     uid : verify_result->signatures->fpr);
     }
 
     /* Cleanup */
@@ -756,8 +749,8 @@ bool process_file(const char *input_path, const char *output_path,
 
         *signer =
             g_strdup((verify_result->signatures->key !=
-                      NULL) ? verify_result->signatures->key->
-                     uids->uid : verify_result->signatures->fpr);
+                      NULL) ? verify_result->signatures->key->uids->
+                     uid : verify_result->signatures->fpr);
     }
     // TODO: Do not manually write to files once GPGME 1.24.0 is released: gpgme_op_decrypt and gpgme_op_verify will be able to write output data directly to files
     if (flags & DECRYPT || flags & VERIFY) {

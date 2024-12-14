@@ -17,7 +17,8 @@ typedef enum {
 gpgme_key_t key_get(const char *fingerprint);
 gpgme_key_t key_search(const char *userid);
 bool key_generate(const char *userid, const char *sign_algorithm,
-                  const char *encrypt_algorithm, unsigned long expiry);
+                  const char *encrypt_algorithm,
+                  const unsigned long int expire);
 bool key_import(const char *path);
 bool key_export(const char *path, const char *fingerprint);
 bool key_expire(const char *fingerprint, const unsigned long int expire);
