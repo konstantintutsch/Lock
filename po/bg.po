@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-14 12:00+0100\n"
+"POT-Creation-Date: 2024-12-14 12:06+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/Lock/"
@@ -217,37 +217,37 @@ msgstr "задаване на режим „pinentry“ на GPGME контек�
 msgid "Failed to obtain key by fingerprint"
 msgstr "намиране на ключ, съответстващ на идентификатора на потребителя"
 
-#: src/cryptography.c:111
+#: src/cryptography.c:112
 #, fuzzy
 msgid "Failed to find key matching User ID"
 msgstr "намиране на ключ, съответстващ на идентификатора на потребителя"
 
-#: src/cryptography.c:145 src/cryptography.c:153
+#: src/cryptography.c:147 src/cryptography.c:155
 #, fuzzy
 msgid "Failed to generate new GPG key for signing"
 msgstr "генериране на нов GPG ключ за подписване"
 
-#: src/cryptography.c:159
+#: src/cryptography.c:161
 #, fuzzy
 msgid "Failed to delete unfinished, generated key"
 msgstr "изтриване на незавършен, генериран ECC ключ"
 
-#: src/cryptography.c:190
+#: src/cryptography.c:194
 #, fuzzy
 msgid "Failed to load GPGME key data from file"
 msgstr "зареждане на данни за GPGME ключа от файл"
 
-#: src/cryptography.c:196
+#: src/cryptography.c:199
 #, fuzzy
 msgid "Failed to import GPG key from file"
 msgstr "внасяне на GPG ключ от файл"
 
-#: src/cryptography.c:207
+#: src/cryptography.c:209
 #, fuzzy
 msgid "Failed to create GPGME key data in memory"
 msgstr "създаване на данни за GPGME ключ в паметта"
 
-#: src/cryptography.c:213
+#: src/cryptography.c:214
 #, fuzzy
 msgid "Failed to export GPG key(s) to file"
 msgstr "внасяне на GPG ключ от файл"
@@ -267,76 +267,72 @@ msgstr "премахване на ключ"
 msgid "Failed to update the expiry time"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/cryptography.c:274
+#: src/cryptography.c:273
 #, fuzzy
 msgid "Failed to get GPG key for removal"
 msgstr "премахване на ключ"
 
-#: src/cryptography.c:278
+#: src/cryptography.c:277
 #, fuzzy
 msgid "Failed to remove GPG key"
 msgstr "премахване на GPG ключ"
 
-#: src/cryptography.c:321
+#: src/cryptography.c:319
 #, fuzzy
 msgid "Failed to create new GPGME input data from string"
 msgstr "създаване на нови подписани GPGME данни от низ"
 
-#: src/cryptography.c:326 src/cryptography.c:453
+#: src/cryptography.c:325 src/cryptography.c:450
 #, fuzzy
 msgid "Failed to create new GPGME output data in memory"
 msgstr "създаване на данни за GPGME ключ в паметта"
 
-#: src/cryptography.c:335
+#: src/cryptography.c:334
 #, fuzzy
 msgid "Failed to encrypt GPGME data from memory"
 msgstr "шифриране на GPGME данни от паметта"
 
-#: src/cryptography.c:341
+#: src/cryptography.c:340
 #, fuzzy
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "дешифриране на GPGME данни от паметта"
 
-#: src/cryptography.c:349
+#: src/cryptography.c:348
 #, fuzzy
 msgid "Failed to add signing key to GPGME context"
 msgstr "създадане на нов GPGME контекст"
 
-#: src/cryptography.c:356
+#: src/cryptography.c:353
 #, fuzzy
 msgid "Failed to sign GPGME data from memory"
 msgstr "подписване на GPGME данни от паметта"
 
-#: src/cryptography.c:362
+#: src/cryptography.c:360
 #, fuzzy
 msgid "Failed to verify GPGME data from memory"
 msgstr "потвърждаване на GPGME данни от паметта"
 
-#: src/cryptography.c:382 src/cryptography.c:509
-msgid "Unknown"
-msgstr ""
-
-#: src/cryptography.c:423
+#: src/cryptography.c:419
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s е премахнато, за да се подготви презаписването"
 
-#: src/cryptography.c:439
+#: src/cryptography.c:435
 #, fuzzy
 msgid "Failed to create new GPGME input data from file"
 msgstr "създаване на нови подписани GPGME данни от низ"
 
-#: src/cryptography.c:446
+#: src/cryptography.c:443
 #, fuzzy
 msgid "Failed to set file name of GPGME input data"
 msgstr "задаване на местоположението до файла с подписаните GPGME данни"
 
-#: src/cryptography.c:461
+#: src/cryptography.c:458
 #, fuzzy
 msgid "Failed to set file name of GPGME output data"
 msgstr "задаване на местоположението до файла с подписаните GPGME данни"
 
-#: src/cryptography.c:471
+#: src/cryptography.c:469
 #, fuzzy
 msgid "Failed to encrypt GPGME data from file"
 msgstr "шифриране на GPGME данни от файл"
@@ -346,17 +342,17 @@ msgstr "шифриране на GPGME данни от файл"
 msgid "Failed to decrypt GPGME data from file"
 msgstr "дешифриране на GPGME данни от файл"
 
-#: src/cryptography.c:483
+#: src/cryptography.c:485
 #, fuzzy
 msgid "Failed to sign GPGME data from file"
 msgstr "подписване на GPGME данни от файл"
 
-#: src/cryptography.c:489
+#: src/cryptography.c:492
 #, fuzzy
 msgid "Failed to verify GPGME data from file"
 msgstr "потвърждаване на GPGME данни от файл"
 
-#: src/cryptography.c:523
+#: src/cryptography.c:525
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Изходният файл не може да бъде отворен: %s"

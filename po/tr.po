@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-14 12:00+0100\n"
+"POT-Creation-Date: 2024-12-14 12:06+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -212,37 +212,37 @@ msgstr "GPGME bağlamının pinentry kipi sorulacak şekilde ayarlanamadı"
 msgid "Failed to obtain key by fingerprint"
 msgstr "Parmak izi ile anahtar alınamadı"
 
-#: src/cryptography.c:111
+#: src/cryptography.c:112
 #, fuzzy
 msgid "Failed to find key matching User ID"
 msgstr "Kullanıcı Kimliği ile eşleşen anahtar bulunamadı"
 
-#: src/cryptography.c:145 src/cryptography.c:153
+#: src/cryptography.c:147 src/cryptography.c:155
 #, fuzzy
 msgid "Failed to generate new GPG key for signing"
 msgstr "İmzalama için yeni GPG anahtarı oluşturulamadı"
 
-#: src/cryptography.c:159
+#: src/cryptography.c:161
 #, fuzzy
 msgid "Failed to delete unfinished, generated key"
 msgstr "Tamamlanmamış, oluşturulmuş anahtar silinemedi"
 
-#: src/cryptography.c:190
+#: src/cryptography.c:194
 #, fuzzy
 msgid "Failed to load GPGME key data from file"
 msgstr "GPGME anahtar verileri dosyadan yüklenemedi"
 
-#: src/cryptography.c:196
+#: src/cryptography.c:199
 #, fuzzy
 msgid "Failed to import GPG key from file"
 msgstr "GPG anahtarı dosyadan içe aktarılamadı"
 
-#: src/cryptography.c:207
+#: src/cryptography.c:209
 #, fuzzy
 msgid "Failed to create GPGME key data in memory"
 msgstr "GPGME anahtar verileri bellekte oluşturulamadı"
 
-#: src/cryptography.c:213
+#: src/cryptography.c:214
 #, fuzzy
 msgid "Failed to export GPG key(s) to file"
 msgstr "GPG anahtar(lar)ı dosyaya aktarılamadı"
@@ -262,76 +262,72 @@ msgstr "Kaldırma için GPG anahtarı alınamadı"
 msgid "Failed to update the expiry time"
 msgstr "%s iş parçacığı oluşturulamadı: %s"
 
-#: src/cryptography.c:274
+#: src/cryptography.c:273
 #, fuzzy
 msgid "Failed to get GPG key for removal"
 msgstr "Kaldırma için GPG anahtarı alınamadı"
 
-#: src/cryptography.c:278
+#: src/cryptography.c:277
 #, fuzzy
 msgid "Failed to remove GPG key"
 msgstr "GPG anahtarı kaldırılamadı"
 
-#: src/cryptography.c:321
+#: src/cryptography.c:319
 #, fuzzy
 msgid "Failed to create new GPGME input data from string"
 msgstr "Yeni GPGME girdi verisi dizgeden oluşturulamadı"
 
-#: src/cryptography.c:326 src/cryptography.c:453
+#: src/cryptography.c:325 src/cryptography.c:450
 #, fuzzy
 msgid "Failed to create new GPGME output data in memory"
 msgstr "Yeni GPGME çıktı verisi bellekte oluşturulamadı"
 
-#: src/cryptography.c:335
+#: src/cryptography.c:334
 #, fuzzy
 msgid "Failed to encrypt GPGME data from memory"
 msgstr "GPGME verileri bellekten şifrelenemedi"
 
-#: src/cryptography.c:341
+#: src/cryptography.c:340
 #, fuzzy
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "GPGME verilerinin şifresi bellekten çözülemedi"
 
-#: src/cryptography.c:349
+#: src/cryptography.c:348
 #, fuzzy
 msgid "Failed to add signing key to GPGME context"
 msgstr "Yeni GPGME bağlamı oluşturulamadı"
 
-#: src/cryptography.c:356
+#: src/cryptography.c:353
 #, fuzzy
 msgid "Failed to sign GPGME data from memory"
 msgstr "GPGME verileri bellekten imzalanamadı"
 
-#: src/cryptography.c:362
+#: src/cryptography.c:360
 #, fuzzy
 msgid "Failed to verify GPGME data from memory"
 msgstr "GPGME verileri bellekten doğrulanamadı"
 
-#: src/cryptography.c:382 src/cryptography.c:509
-msgid "Unknown"
-msgstr ""
-
-#: src/cryptography.c:423
+#: src/cryptography.c:419
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "Üzerine yazmaya hazırlanmak için %s kaldırıldı"
 
-#: src/cryptography.c:439
+#: src/cryptography.c:435
 #, fuzzy
 msgid "Failed to create new GPGME input data from file"
 msgstr "Yeni GPGME girdi verileri dosyadan oluşturulamadı"
 
-#: src/cryptography.c:446
+#: src/cryptography.c:443
 #, fuzzy
 msgid "Failed to set file name of GPGME input data"
 msgstr "GPGME girdi verilerinin dosya adı ayarlanamadı"
 
-#: src/cryptography.c:461
+#: src/cryptography.c:458
 #, fuzzy
 msgid "Failed to set file name of GPGME output data"
 msgstr "GPGME çıktı verilerinin dosya adı ayarlanamadı"
 
-#: src/cryptography.c:471
+#: src/cryptography.c:469
 #, fuzzy
 msgid "Failed to encrypt GPGME data from file"
 msgstr "GPGME verileri dosyadan şifrelenemedi"
@@ -341,17 +337,17 @@ msgstr "GPGME verileri dosyadan şifrelenemedi"
 msgid "Failed to decrypt GPGME data from file"
 msgstr "GPGME verilerinin şifresi dosyadan çözülemedi"
 
-#: src/cryptography.c:483
+#: src/cryptography.c:485
 #, fuzzy
 msgid "Failed to sign GPGME data from file"
 msgstr "GPGME verileri dosyadan imzalanamadı"
 
-#: src/cryptography.c:489
+#: src/cryptography.c:492
 #, fuzzy
 msgid "Failed to verify GPGME data from file"
 msgstr "GPGME verileri dosyadan doğrulanamadı"
 
-#: src/cryptography.c:523
+#: src/cryptography.c:525
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Çıktı dosyası açılamadı: %s"
