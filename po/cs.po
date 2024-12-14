@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-14 12:06+0100\n"
+"POT-Creation-Date: 2024-12-14 18:03+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/Lock/Application/"
@@ -200,162 +200,162 @@ msgstr "Import selhal"
 msgid "Expiry renewed"
 msgstr "Zobrazit datum platnosti"
 
-#: src/cryptography.c:40
+#: src/cryptography.c:29
 #, fuzzy
 msgid "Failed to create new GPGME context"
 msgstr "vytvoření nového GPGME kontextu"
 
-#: src/cryptography.c:44
+#: src/cryptography.c:40
 #, fuzzy
 msgid "Failed to set protocol of GPGME context to OpenPGP"
 msgstr "nastavení protokolu GPGME kontextu na OpenPGP"
 
-#: src/cryptography.c:49
+#: src/cryptography.c:51
 #, fuzzy
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "nastavení pinentry módu GPGME kontextu na zeptání se"
 
-#: src/cryptography.c:75
+#: src/cryptography.c:82
 #, fuzzy
 msgid "Failed to obtain key by fingerprint"
 msgstr "nalezení klíče odpovídající ID Uživatele"
 
-#: src/cryptography.c:112
+#: src/cryptography.c:124
 #, fuzzy
 msgid "Failed to find key matching User ID"
 msgstr "nalezení klíče odpovídající ID Uživatele"
 
-#: src/cryptography.c:147 src/cryptography.c:155
+#: src/cryptography.c:164 src/cryptography.c:178
 #, fuzzy
 msgid "Failed to generate new GPG key for signing"
 msgstr "Spravovat klíče"
 
-#: src/cryptography.c:161
+#: src/cryptography.c:186
 #, fuzzy
 msgid "Failed to delete unfinished, generated key"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/cryptography.c:194
+#: src/cryptography.c:228
 #, fuzzy
 msgid "Failed to load GPGME key data from file"
 msgstr "načtení GPGME dat klíče ze souboru"
 
-#: src/cryptography.c:199
+#: src/cryptography.c:239
 #, fuzzy
 msgid "Failed to import GPG key from file"
 msgstr "importování GPG klíče ze souboru"
 
-#: src/cryptography.c:209
+#: src/cryptography.c:255
 #, fuzzy
 msgid "Failed to create GPGME key data in memory"
 msgstr "vytvoření GPGME dat klíče v paměti"
 
-#: src/cryptography.c:214
+#: src/cryptography.c:266
 #, fuzzy
 msgid "Failed to export GPG key(s) to file"
 msgstr "importování GPG klíče ze souboru"
 
-#: src/cryptography.c:228
+#: src/cryptography.c:286
 #, c-format
 msgid "Failed to open export file: %s"
 msgstr "Selhalo otevření exportního souboru: %s"
 
-#: src/cryptography.c:258
+#: src/cryptography.c:316
 #, fuzzy
 msgid "Failed to get GPG key for expiry editing"
 msgstr "importování GPG klíče ze souboru"
 
-#: src/cryptography.c:261
+#: src/cryptography.c:326
 #, fuzzy
 msgid "Failed to update the expiry time"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/cryptography.c:273
+#: src/cryptography.c:344
 #, fuzzy
 msgid "Failed to get GPG key for removal"
 msgstr "importování GPG klíče ze souboru"
 
-#: src/cryptography.c:277
+#: src/cryptography.c:354
 #, fuzzy
 msgid "Failed to remove GPG key"
 msgstr "importování GPG klíče ze souboru"
 
-#: src/cryptography.c:319
+#: src/cryptography.c:403
 #, fuzzy
 msgid "Failed to create new GPGME input data from string"
 msgstr "vytvoření nových podepsaných GPGME dat z řetězce"
 
-#: src/cryptography.c:325 src/cryptography.c:450
+#: src/cryptography.c:415 src/cryptography.c:589
 #, fuzzy
 msgid "Failed to create new GPGME output data in memory"
 msgstr "vytvoření GPGME dat klíče v paměti"
 
-#: src/cryptography.c:334
+#: src/cryptography.c:430
 #, fuzzy
 msgid "Failed to encrypt GPGME data from memory"
 msgstr "zašifrování GPGME dat z paměti"
 
-#: src/cryptography.c:340
+#: src/cryptography.c:442
 #, fuzzy
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "rozšifrovat GPGME dat z paměti"
 
-#: src/cryptography.c:348
+#: src/cryptography.c:456
 #, fuzzy
 msgid "Failed to add signing key to GPGME context"
 msgstr "vytvoření nového GPGME kontextu"
 
-#: src/cryptography.c:353
+#: src/cryptography.c:468
 #, fuzzy
 msgid "Failed to sign GPGME data from memory"
 msgstr "podepsání GPGME dat z paměti"
 
-#: src/cryptography.c:360
+#: src/cryptography.c:480
 #, fuzzy
 msgid "Failed to verify GPGME data from memory"
 msgstr "ověření GPGME dat z paměti"
 
-#: src/cryptography.c:419
+#: src/cryptography.c:545
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "Odstraněno %s pro přípravu přepsání"
 
-#: src/cryptography.c:435
+#: src/cryptography.c:562
 #, fuzzy
 msgid "Failed to create new GPGME input data from file"
 msgstr "vytvoření nových podepsaných GPGME dat z řetězce"
 
-#: src/cryptography.c:443
+#: src/cryptography.c:575
 #, fuzzy
 msgid "Failed to set file name of GPGME input data"
 msgstr "nastavení cesty souboru podepsaných GPGME dat"
 
-#: src/cryptography.c:458
+#: src/cryptography.c:603
 #, fuzzy
 msgid "Failed to set file name of GPGME output data"
 msgstr "nastavení cesty souboru podepsaných GPGME dat"
 
-#: src/cryptography.c:469
+#: src/cryptography.c:620
 #, fuzzy
 msgid "Failed to encrypt GPGME data from file"
 msgstr "šifrování GPGME dat ze souboru"
 
-#: src/cryptography.c:476
+#: src/cryptography.c:633
 #, fuzzy
 msgid "Failed to decrypt GPGME data from file"
 msgstr "rozšifrování GPGME dat ze souboru"
 
-#: src/cryptography.c:485
+#: src/cryptography.c:648
 #, fuzzy
 msgid "Failed to sign GPGME data from file"
 msgstr "podepsání GPGME dat ze souboru"
 
-#: src/cryptography.c:492
+#: src/cryptography.c:661
 #, fuzzy
 msgid "Failed to verify GPGME data from file"
 msgstr "ověření GPGME dat ze souboru"
 
-#: src/cryptography.c:525
+#: src/cryptography.c:699
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Selhalo otevření výstupního souboru: %s"
