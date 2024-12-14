@@ -44,6 +44,11 @@ bool context_initialize(gpgme_ctx_t *context)
                  _("Failed to set protocol of GPGME context to OpenPGP"),
                  *context,);
 
+    error = gpgme_set_pinentry_mode(*context, GPGME_PINENTRY_MODE_ASK);
+    HANDLE_ERROR(false, error,
+                 _("Failed to set pinentry mode of GPGME context to ask"),
+                 *context,);
+
     return true;
 }
 
@@ -309,11 +314,6 @@ char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key,
     if (!context_initialize(&context))
         return NULL;
 
-    error = gpgme_set_pinentry_mode(context, GPGME_PINENTRY_MODE_ASK);
-    HANDLE_ERROR(NULL, error,
-                 _("Failed to set pinentry mode of GPGME context to ask"),
-                 context,);
-
     gpgme_set_armor(context, 1);
 
     error = gpgme_data_new_from_mem(&input, text, strlen(text), 1);
@@ -432,11 +432,6 @@ bool process_file(const char *input_path, const char *output_path,
 
     if (!context_initialize(&context))
         return false;
-
-    error = gpgme_set_pinentry_mode(context, GPGME_PINENTRY_MODE_ASK);
-    HANDLE_ERROR(NULL, error,
-                 _("Failed to set pinentry mode of GPGME context to ask"),
-                 context,);
 
     // TODO: Do not copy file data to memory once GPGME supports this behavior
     error = gpgme_data_new_from_file(&input, input_path, 1);
