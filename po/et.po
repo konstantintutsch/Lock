@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-12 19:00+0100\n"
+"POT-Creation-Date: 2024-12-14 11:56+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -200,31 +200,31 @@ msgstr "GPGME protokolli konteksti määramine OpenPGP jaoks ei õnnestunud"
 msgid "Failed to obtain key by fingerprint"
 msgstr "Võtme laadimine sõrmejälje alusel ei õnnestunud"
 
-#: src/cryptography.c:107
+#: src/cryptography.c:106
 msgid "Failed to find key matching User ID"
 msgstr "Võtme leidmine kasutajatunnuse alusel ei õnnestunud"
 
-#: src/cryptography.c:142 src/cryptography.c:150
+#: src/cryptography.c:140 src/cryptography.c:148
 msgid "Failed to generate new GPG key for signing"
 msgstr "Uue allakirjastamiseks vajaliku GPG võtme loomine ei õmnnestunud"
 
-#: src/cryptography.c:156
+#: src/cryptography.c:154
 msgid "Failed to delete unfinished, generated key"
 msgstr "Loodud, aga lõpetamata võtme kustutamine ei õnnestunud"
 
-#: src/cryptography.c:189
+#: src/cryptography.c:185
 msgid "Failed to load GPGME key data from file"
 msgstr "GPGME võtme andmete laadimine failist ei õnnestunud"
 
-#: src/cryptography.c:194
+#: src/cryptography.c:191
 msgid "Failed to import GPG key from file"
 msgstr "GPG võtme importimine failist ei õnnestunud"
 
-#: src/cryptography.c:204
+#: src/cryptography.c:202
 msgid "Failed to create GPGME key data in memory"
 msgstr "GPGME võtme andmete loomine mälus ei õnnestunud"
 
-#: src/cryptography.c:209
+#: src/cryptography.c:208
 msgid "Failed to export GPG key(s) to file"
 msgstr "GPG võtme(te) eksportimine faili ei õnnestunud"
 
@@ -241,84 +241,84 @@ msgstr "GPG võtme laadimine kehtivuse muutmiseks ei õnnestunud"
 msgid "Failed to update the expiry time"
 msgstr "Aegumisaja muutmine ei õnnestunud"
 
-#: src/cryptography.c:268
+#: src/cryptography.c:269
 msgid "Failed to get GPG key for removal"
 msgstr "GPG võtme laadimine kustutamiseks ei õnnestunud"
 
-#: src/cryptography.c:272
+#: src/cryptography.c:273
 msgid "Failed to remove GPG key"
 msgstr "GPG võtme eemaldamine ei õnnestunud"
 
-#: src/cryptography.c:312 src/cryptography.c:435
+#: src/cryptography.c:314 src/cryptography.c:438
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "GPGME kontekstile PIN-koodi küsimise režiimi määramine ei õnnestunud"
 
-#: src/cryptography.c:319
+#: src/cryptography.c:321
 msgid "Failed to create new GPGME input data from string"
 msgstr "Sõnest uute GPGME sisendandmete loomine ei õnnestunud"
 
-#: src/cryptography.c:325 src/cryptography.c:456
+#: src/cryptography.c:326 src/cryptography.c:458
 msgid "Failed to create new GPGME output data in memory"
 msgstr "Uute GPGME väljundandmete loomine mällu ei õnnestunud"
 
-#: src/cryptography.c:334
+#: src/cryptography.c:335
 msgid "Failed to encrypt GPGME data from memory"
 msgstr "GPGME mälus asuvate andmete krüptimine ei õnnestunud"
 
-#: src/cryptography.c:340
+#: src/cryptography.c:341
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "GPGME mälus asuvate andmete dekrüptimine ei õnnestunud"
 
-#: src/cryptography.c:348
+#: src/cryptography.c:349
 msgid "Failed to add signing key to GPGME context"
 msgstr "Allkirjavõtme lisamine GPGME kontekstile ei õnnestunud"
 
-#: src/cryptography.c:353
+#: src/cryptography.c:356
 msgid "Failed to sign GPGME data from memory"
 msgstr "GPGME mälus asuvate andmete allkirjastamine ei õnnestunud"
 
-#: src/cryptography.c:360
+#: src/cryptography.c:362
 msgid "Failed to verify GPGME data from memory"
 msgstr "GPGME mälus asuvate andmete verifitseerimine ei õnnestunud"
 
-#: src/cryptography.c:379 src/cryptography.c:518
+#: src/cryptography.c:382 src/cryptography.c:514
 msgid "Unknown"
 msgstr ""
 
-#: src/cryptography.c:420
+#: src/cryptography.c:423
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "Ülekirjutamiseks valmistumisel eemaldasime %s"
 
-#: src/cryptography.c:441
+#: src/cryptography.c:444
 msgid "Failed to create new GPGME input data from file"
 msgstr "Failist uute GPGME sisendandmete loomine ei õnnestunud"
 
-#: src/cryptography.c:449
+#: src/cryptography.c:451
 msgid "Failed to set file name of GPGME input data"
 msgstr "GPGME sisendandmete failinime määramine ei õnnestunud"
 
-#: src/cryptography.c:464
+#: src/cryptography.c:466
 msgid "Failed to set file name of GPGME output data"
 msgstr "GPGME väljundandmete failinime määramine ei õnnestunud"
 
-#: src/cryptography.c:475
+#: src/cryptography.c:476
 msgid "Failed to encrypt GPGME data from file"
 msgstr "GPGME failis asuvate andmete krüptimine ei õnnestunud"
 
-#: src/cryptography.c:482
+#: src/cryptography.c:481
 msgid "Failed to decrypt GPGME data from file"
 msgstr "GPGME failis asuvate andmete dekrüptimine ei õnnestunud"
 
-#: src/cryptography.c:491
+#: src/cryptography.c:488
 msgid "Failed to sign GPGME data from file"
 msgstr "GPGME failis asuvate andmete allkirjastamine ei õnnestunud"
 
-#: src/cryptography.c:498
+#: src/cryptography.c:494
 msgid "Failed to verify GPGME data from file"
 msgstr "GPGME failis asuvate andmete verifitseerimine ei õnnestunud"
 
-#: src/cryptography.c:532
+#: src/cryptography.c:528
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "Väljundfaili avamine ei õnnestunud: %s"

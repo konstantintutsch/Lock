@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-12 19:00+0100\n"
+"POT-Creation-Date: 2024-12-14 11:56+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -210,37 +210,37 @@ msgstr "设置 GPGME 上下文协议为 OpenPGP"
 msgid "Failed to obtain key by fingerprint"
 msgstr "查找匹配用户标识的密钥"
 
-#: src/cryptography.c:107
+#: src/cryptography.c:106
 #, fuzzy
 msgid "Failed to find key matching User ID"
 msgstr "查找匹配用户标识的密钥"
 
-#: src/cryptography.c:142 src/cryptography.c:150
+#: src/cryptography.c:140 src/cryptography.c:148
 #, fuzzy
 msgid "Failed to generate new GPG key for signing"
 msgstr "生成用于签署的新 GPG 密钥"
 
-#: src/cryptography.c:156
+#: src/cryptography.c:154
 #, fuzzy
 msgid "Failed to delete unfinished, generated key"
 msgstr "删除未完成，已生成 ECC 密钥"
 
-#: src/cryptography.c:189
+#: src/cryptography.c:185
 #, fuzzy
 msgid "Failed to load GPGME key data from file"
 msgstr "从文件加载 GPGME 密钥数据"
 
-#: src/cryptography.c:194
+#: src/cryptography.c:191
 #, fuzzy
 msgid "Failed to import GPG key from file"
 msgstr "从文件导入 GPG 密钥"
 
-#: src/cryptography.c:204
+#: src/cryptography.c:202
 #, fuzzy
 msgid "Failed to create GPGME key data in memory"
 msgstr "在内存中创建 GPGME 密钥数据"
 
-#: src/cryptography.c:209
+#: src/cryptography.c:208
 #, fuzzy
 msgid "Failed to export GPG key(s) to file"
 msgstr "导出 GPG 密钥至文件"
@@ -260,101 +260,101 @@ msgstr "获取 GPG 密钥来移除"
 msgid "Failed to update the expiry time"
 msgstr "创建 %s 线程失败：%s"
 
-#: src/cryptography.c:268
+#: src/cryptography.c:269
 #, fuzzy
 msgid "Failed to get GPG key for removal"
 msgstr "获取 GPG 密钥来移除"
 
-#: src/cryptography.c:272
+#: src/cryptography.c:273
 #, fuzzy
 msgid "Failed to remove GPG key"
 msgstr "移除 GPG 密钥"
 
-#: src/cryptography.c:312 src/cryptography.c:435
+#: src/cryptography.c:314 src/cryptography.c:438
 #, fuzzy
 msgid "Failed to set pinentry mode of GPGME context to ask"
 msgstr "设置 GPGME 上下文协议为 OpenPGP"
 
-#: src/cryptography.c:319
+#: src/cryptography.c:321
 #, fuzzy
 msgid "Failed to create new GPGME input data from string"
 msgstr "从字符串创建新 GPGME 输入数据"
 
-#: src/cryptography.c:325 src/cryptography.c:456
+#: src/cryptography.c:326 src/cryptography.c:458
 #, fuzzy
 msgid "Failed to create new GPGME output data in memory"
 msgstr "在内存中创建新 GPGME 输出数据"
 
-#: src/cryptography.c:334
+#: src/cryptography.c:335
 #, fuzzy
 msgid "Failed to encrypt GPGME data from memory"
 msgstr "从内存加密 GPGME 数据"
 
-#: src/cryptography.c:340
+#: src/cryptography.c:341
 #, fuzzy
 msgid "Failed to decrypt GPGME data from memory"
 msgstr "从内存解密 GPGME 数据"
 
-#: src/cryptography.c:348
+#: src/cryptography.c:349
 #, fuzzy
 msgid "Failed to add signing key to GPGME context"
 msgstr "创建新 GPGME 上下文"
 
-#: src/cryptography.c:353
+#: src/cryptography.c:356
 #, fuzzy
 msgid "Failed to sign GPGME data from memory"
 msgstr "从内存签署 GPGME 数据"
 
-#: src/cryptography.c:360
+#: src/cryptography.c:362
 #, fuzzy
 msgid "Failed to verify GPGME data from memory"
 msgstr "从内存校验 GPGME 数据"
 
-#: src/cryptography.c:379 src/cryptography.c:518
+#: src/cryptography.c:382 src/cryptography.c:514
 msgid "Unknown"
 msgstr ""
 
-#: src/cryptography.c:420
+#: src/cryptography.c:423
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "已移除 %s 来准备覆盖"
 
-#: src/cryptography.c:441
+#: src/cryptography.c:444
 #, fuzzy
 msgid "Failed to create new GPGME input data from file"
 msgstr "从文件创建新 GPGME 输入数据"
 
-#: src/cryptography.c:449
+#: src/cryptography.c:451
 #, fuzzy
 msgid "Failed to set file name of GPGME input data"
 msgstr "设置 GPGME 输入数据的文件名"
 
-#: src/cryptography.c:464
+#: src/cryptography.c:466
 #, fuzzy
 msgid "Failed to set file name of GPGME output data"
 msgstr "设置 GPGME 输出数据的文件名"
 
-#: src/cryptography.c:475
+#: src/cryptography.c:476
 #, fuzzy
 msgid "Failed to encrypt GPGME data from file"
 msgstr "从文件加密 GPGME 数据"
 
-#: src/cryptography.c:482
+#: src/cryptography.c:481
 #, fuzzy
 msgid "Failed to decrypt GPGME data from file"
 msgstr "从文件解密 GPGME 数据"
 
-#: src/cryptography.c:491
+#: src/cryptography.c:488
 #, fuzzy
 msgid "Failed to sign GPGME data from file"
 msgstr "从文件签署 GPGME 数据"
 
-#: src/cryptography.c:498
+#: src/cryptography.c:494
 #, fuzzy
 msgid "Failed to verify GPGME data from file"
 msgstr "从文件校验 GPGME 数据"
 
-#: src/cryptography.c:532
+#: src/cryptography.c:528
 #, c-format
 msgid "Failed to open output file: %s"
 msgstr "打开输出文件失败：%s"
