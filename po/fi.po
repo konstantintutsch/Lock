@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 15:31+0100\n"
+"POT-Creation-Date: 2024-12-15 16:07+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -66,7 +66,7 @@ msgstr "Ei voitu lukea leikepöydältä: %s"
 msgid "Text pasted"
 msgstr "Teksti liitetty"
 
-#: src/window.c:775 src/window.c:838
+#: src/window.c:775 src/window.c:837
 msgid "Encryption failed"
 msgstr "Salaaminen epäonnistui"
 
@@ -74,39 +74,39 @@ msgstr "Salaaminen epäonnistui"
 msgid "Text encrypted"
 msgstr "Teksti salattu"
 
-#: src/window.c:840
+#: src/window.c:839
 msgid "File encrypted"
 msgstr "Tiedosto salattu"
 
-#: src/window.c:896 src/window.c:955
+#: src/window.c:895 src/window.c:953
 msgid "Decryption failed"
 msgstr "Salauksen purkaminen epäonnistui"
 
-#: src/window.c:898
+#: src/window.c:897
 msgid "Text decrypted"
 msgstr "Tekstin salaus purettu"
 
-#: src/window.c:957
+#: src/window.c:955
 msgid "File decrypted"
 msgstr "Tiedoston salaus purettu"
 
-#: src/window.c:1064 src/window.c:1127
+#: src/window.c:1062 src/window.c:1124
 msgid "Signing failed"
 msgstr "Allekirjoittaminen epäonnistui"
 
-#: src/window.c:1066
+#: src/window.c:1064
 msgid "Text signed"
 msgstr "Teksti allekirjoitettu"
 
-#: src/window.c:1129
+#: src/window.c:1126
 msgid "File signed"
 msgstr "Tiedosto allekirjoitettu"
 
-#: src/window.c:1185 src/window.c:1246
+#: src/window.c:1182 src/window.c:1243
 msgid "Signature invalid"
 msgstr ""
 
-#: src/window.c:1189 src/window.c:1250
+#: src/window.c:1186 src/window.c:1247
 #, c-format
 msgid "Signature valid - by %s"
 msgstr ""
@@ -284,7 +284,8 @@ msgid "Failed to create new GPGME input data from string: %s"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
-#: src/cryptography.c:667
+#: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:837
+#: src/cryptography.c:924 src/cryptography.c:1017
 #, fuzzy, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
@@ -299,7 +300,7 @@ msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 msgid "Failed to decrypt GPGME data from memory: %s"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:610
+#: src/cryptography.c:610 src/cryptography.c:942
 #, fuzzy, c-format
 msgid "Failed to add signing key to GPGME context: %s"
 msgstr "Allekirjoitusavaimen lisääminen GPGME-kontekstiin epäonnistui"
@@ -314,49 +315,45 @@ msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 msgid "Failed to verify GPGME data from memory"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:725
+#: src/cryptography.c:730 src/cryptography.c:902
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr ""
 
-#: src/cryptography.c:742
-#, fuzzy
-msgid "Failed to create new GPGME input data from file"
+#: src/cryptography.c:735 src/cryptography.c:820 src/cryptography.c:907
+#: src/cryptography.c:1000
+#, fuzzy, c-format
+msgid "Failed to create new GPGME input data from file: %s"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:755
-#, fuzzy
-msgid "Failed to set file name of GPGME input data"
+#: src/cryptography.c:761 src/cryptography.c:933
+#, fuzzy, c-format
+msgid "Failed to set file name of GPGME output data: %s"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
-#: src/cryptography.c:769
-#, fuzzy
-msgid "Failed to create new GPGME output data in memory"
+#: src/cryptography.c:772
+#, fuzzy, c-format
+msgid "Failed to encrypt GPGME data from file: %s"
+msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+
+#: src/cryptography.c:828 src/cryptography.c:1008
+#, fuzzy, c-format
+msgid "Failed to set file name of GPGME input data: %s"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
-#: src/cryptography.c:783
-#, fuzzy
-msgid "Failed to set file name of GPGME output data"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
-
-#: src/cryptography.c:800
-#, fuzzy
-msgid "Failed to encrypt GPGME data from file"
+#: src/cryptography.c:855
+#, fuzzy, c-format
+msgid "Failed to decrypt GPGME data from file: %s"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:813
-#, fuzzy
-msgid "Failed to decrypt GPGME data from file"
+#: src/cryptography.c:951
+#, fuzzy, c-format
+msgid "Failed to sign GPGME data from file: %s"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
-#: src/cryptography.c:828
-#, fuzzy
-msgid "Failed to sign GPGME data from file"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
-
-#: src/cryptography.c:841
-#, fuzzy
-msgid "Failed to verify GPGME data from file"
+#: src/cryptography.c:1035
+#, fuzzy, c-format
+msgid "Failed to verify GPGME data from file: %s"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
 #: src/threading.c:57
@@ -758,6 +755,10 @@ msgstr "Raakateksti"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Avaimen valinnan ikkuna"
+
+#, fuzzy
+#~ msgid "Failed to create new GPGME output data in memory"
+#~ msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
 #~ msgid "Verification failed"
 #~ msgstr "Vahvistaminen epäonnistui"

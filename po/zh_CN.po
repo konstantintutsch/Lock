@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 15:31+0100\n"
+"POT-Creation-Date: 2024-12-15 16:07+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -67,7 +67,7 @@ msgstr ""
 msgid "Text pasted"
 msgstr "文本已复制"
 
-#: src/window.c:775 src/window.c:838
+#: src/window.c:775 src/window.c:837
 msgid "Encryption failed"
 msgstr "加密失败"
 
@@ -76,40 +76,40 @@ msgstr "加密失败"
 msgid "Text encrypted"
 msgstr "文本已解密"
 
-#: src/window.c:840
+#: src/window.c:839
 #, fuzzy
 msgid "File encrypted"
 msgstr "文件已解密"
 
-#: src/window.c:896 src/window.c:955
+#: src/window.c:895 src/window.c:953
 msgid "Decryption failed"
 msgstr "解密失败"
 
-#: src/window.c:898
+#: src/window.c:897
 msgid "Text decrypted"
 msgstr "文本已解密"
 
-#: src/window.c:957
+#: src/window.c:955
 msgid "File decrypted"
 msgstr "文件已解密"
 
-#: src/window.c:1064 src/window.c:1127
+#: src/window.c:1062 src/window.c:1124
 msgid "Signing failed"
 msgstr "签署失败"
 
-#: src/window.c:1066
+#: src/window.c:1064
 msgid "Text signed"
 msgstr "文本已签署"
 
-#: src/window.c:1129
+#: src/window.c:1126
 msgid "File signed"
 msgstr "文件已签署"
 
-#: src/window.c:1185 src/window.c:1246
+#: src/window.c:1182 src/window.c:1243
 msgid "Signature invalid"
 msgstr ""
 
-#: src/window.c:1189 src/window.c:1250
+#: src/window.c:1186 src/window.c:1247
 #, c-format
 msgid "Signature valid - by %s"
 msgstr ""
@@ -292,7 +292,8 @@ msgid "Failed to create new GPGME input data from string: %s"
 msgstr "从字符串创建新 GPGME 输入数据"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
-#: src/cryptography.c:667
+#: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:837
+#: src/cryptography.c:924 src/cryptography.c:1017
 #, fuzzy, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
 msgstr "在内存中创建新 GPGME 输出数据"
@@ -307,7 +308,7 @@ msgstr "从内存加密 GPGME 数据"
 msgid "Failed to decrypt GPGME data from memory: %s"
 msgstr "从内存解密 GPGME 数据"
 
-#: src/cryptography.c:610
+#: src/cryptography.c:610 src/cryptography.c:942
 #, fuzzy, c-format
 msgid "Failed to add signing key to GPGME context: %s"
 msgstr "创建新 GPGME 上下文"
@@ -322,49 +323,45 @@ msgstr "从内存签署 GPGME 数据"
 msgid "Failed to verify GPGME data from memory"
 msgstr "从内存校验 GPGME 数据"
 
-#: src/cryptography.c:725
+#: src/cryptography.c:730 src/cryptography.c:902
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "已移除 %s 来准备覆盖"
 
-#: src/cryptography.c:742
-#, fuzzy
-msgid "Failed to create new GPGME input data from file"
+#: src/cryptography.c:735 src/cryptography.c:820 src/cryptography.c:907
+#: src/cryptography.c:1000
+#, fuzzy, c-format
+msgid "Failed to create new GPGME input data from file: %s"
 msgstr "从文件创建新 GPGME 输入数据"
 
-#: src/cryptography.c:755
-#, fuzzy
-msgid "Failed to set file name of GPGME input data"
-msgstr "设置 GPGME 输入数据的文件名"
-
-#: src/cryptography.c:769
-#, fuzzy
-msgid "Failed to create new GPGME output data in memory"
-msgstr "在内存中创建新 GPGME 输出数据"
-
-#: src/cryptography.c:783
-#, fuzzy
-msgid "Failed to set file name of GPGME output data"
+#: src/cryptography.c:761 src/cryptography.c:933
+#, fuzzy, c-format
+msgid "Failed to set file name of GPGME output data: %s"
 msgstr "设置 GPGME 输出数据的文件名"
 
-#: src/cryptography.c:800
-#, fuzzy
-msgid "Failed to encrypt GPGME data from file"
+#: src/cryptography.c:772
+#, fuzzy, c-format
+msgid "Failed to encrypt GPGME data from file: %s"
 msgstr "从文件加密 GPGME 数据"
 
-#: src/cryptography.c:813
-#, fuzzy
-msgid "Failed to decrypt GPGME data from file"
+#: src/cryptography.c:828 src/cryptography.c:1008
+#, fuzzy, c-format
+msgid "Failed to set file name of GPGME input data: %s"
+msgstr "设置 GPGME 输入数据的文件名"
+
+#: src/cryptography.c:855
+#, fuzzy, c-format
+msgid "Failed to decrypt GPGME data from file: %s"
 msgstr "从文件解密 GPGME 数据"
 
-#: src/cryptography.c:828
-#, fuzzy
-msgid "Failed to sign GPGME data from file"
+#: src/cryptography.c:951
+#, fuzzy, c-format
+msgid "Failed to sign GPGME data from file: %s"
 msgstr "从文件签署 GPGME 数据"
 
-#: src/cryptography.c:841
-#, fuzzy
-msgid "Failed to verify GPGME data from file"
+#: src/cryptography.c:1035
+#, fuzzy, c-format
+msgid "Failed to verify GPGME data from file: %s"
 msgstr "从文件校验 GPGME 数据"
 
 #: src/threading.c:57
@@ -777,6 +774,10 @@ msgstr "纯文本"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Failed to create new GPGME output data in memory"
+#~ msgstr "在内存中创建新 GPGME 输出数据"
 
 #, c-format
 #~ msgid "Failed to open output file: %s"

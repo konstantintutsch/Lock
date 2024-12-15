@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 15:31+0100\n"
+"POT-Creation-Date: 2024-12-15 16:07+0100\n"
 "PO-Revision-Date: 2024-12-10 10:58+0000\n"
 "Last-Translator: Reza Hosseinzadeh <rezahsnzdh@protonmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -66,7 +66,7 @@ msgstr "ناتوانی در خواندن متن از تخته‌گیره: %s"
 msgid "Text pasted"
 msgstr "متن چسبانده شد"
 
-#: src/window.c:775 src/window.c:838
+#: src/window.c:775 src/window.c:837
 msgid "Encryption failed"
 msgstr "رمزنگاری شکست خورد"
 
@@ -74,39 +74,39 @@ msgstr "رمزنگاری شکست خورد"
 msgid "Text encrypted"
 msgstr "متن رمزنگاری شد"
 
-#: src/window.c:840
+#: src/window.c:839
 msgid "File encrypted"
 msgstr "پرونده رمزنگاری شد"
 
-#: src/window.c:896 src/window.c:955
+#: src/window.c:895 src/window.c:953
 msgid "Decryption failed"
 msgstr "رمزگشایی شکست خورد"
 
-#: src/window.c:898
+#: src/window.c:897
 msgid "Text decrypted"
 msgstr "متن رمزگشایی شد"
 
-#: src/window.c:957
+#: src/window.c:955
 msgid "File decrypted"
 msgstr "پرونده رمزگشایی شد"
 
-#: src/window.c:1064 src/window.c:1127
+#: src/window.c:1062 src/window.c:1124
 msgid "Signing failed"
 msgstr "امضا کردن شکست خورد"
 
-#: src/window.c:1066
+#: src/window.c:1064
 msgid "Text signed"
 msgstr "متن امضا شد"
 
-#: src/window.c:1129
+#: src/window.c:1126
 msgid "File signed"
 msgstr "پرونده امضا شد"
 
-#: src/window.c:1185 src/window.c:1246
+#: src/window.c:1182 src/window.c:1243
 msgid "Signature invalid"
 msgstr ""
 
-#: src/window.c:1189 src/window.c:1250
+#: src/window.c:1186 src/window.c:1247
 #, c-format
 msgid "Signature valid - by %s"
 msgstr ""
@@ -284,7 +284,8 @@ msgid "Failed to create new GPGME input data from string: %s"
 msgstr "ساختن دادهٔ ورودی جدید GPGME از پرونده شکست خورد"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
-#: src/cryptography.c:667
+#: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:837
+#: src/cryptography.c:924 src/cryptography.c:1017
 #, fuzzy, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
 msgstr "ساختن دادهٔ کلید GPGME در حافظه شکست خورد"
@@ -299,7 +300,7 @@ msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
 msgid "Failed to decrypt GPGME data from memory: %s"
 msgstr "رمزگشایی دادهٔ GPGME از حافظه شکست خورد"
 
-#: src/cryptography.c:610
+#: src/cryptography.c:610 src/cryptography.c:942
 #, fuzzy, c-format
 msgid "Failed to add signing key to GPGME context: %s"
 msgstr "اضافه کردن کلید امضا به محتوای GPGME شکست خورد"
@@ -313,41 +314,45 @@ msgstr "امضا کردن دادهٔ GPGME از حافظه شکست خورد"
 msgid "Failed to verify GPGME data from memory"
 msgstr "اعتبارسنجی دادهٔ GPGME از حافظه شکست خورد"
 
-#: src/cryptography.c:725
+#: src/cryptography.c:730 src/cryptography.c:902
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr ""
 
-#: src/cryptography.c:742
-msgid "Failed to create new GPGME input data from file"
+#: src/cryptography.c:735 src/cryptography.c:820 src/cryptography.c:907
+#: src/cryptography.c:1000
+#, fuzzy, c-format
+msgid "Failed to create new GPGME input data from file: %s"
 msgstr "ساختن دادهٔ ورودی جدید GPGME از پرونده شکست خورد"
 
-#: src/cryptography.c:755
-msgid "Failed to set file name of GPGME input data"
+#: src/cryptography.c:761 src/cryptography.c:933
+#, fuzzy, c-format
+msgid "Failed to set file name of GPGME output data: %s"
 msgstr "تنظیم کردن نام پروندهٔ دادهٔ ورودی GPGME شکست خورد"
 
-#: src/cryptography.c:769
-msgid "Failed to create new GPGME output data in memory"
-msgstr ""
-
-#: src/cryptography.c:783
-msgid "Failed to set file name of GPGME output data"
-msgstr ""
-
-#: src/cryptography.c:800
-msgid "Failed to encrypt GPGME data from file"
+#: src/cryptography.c:772
+#, fuzzy, c-format
+msgid "Failed to encrypt GPGME data from file: %s"
 msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
 
-#: src/cryptography.c:813
-msgid "Failed to decrypt GPGME data from file"
-msgstr ""
+#: src/cryptography.c:828 src/cryptography.c:1008
+#, fuzzy, c-format
+msgid "Failed to set file name of GPGME input data: %s"
+msgstr "تنظیم کردن نام پروندهٔ دادهٔ ورودی GPGME شکست خورد"
 
-#: src/cryptography.c:828
-msgid "Failed to sign GPGME data from file"
+#: src/cryptography.c:855
+#, fuzzy, c-format
+msgid "Failed to decrypt GPGME data from file: %s"
+msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
+
+#: src/cryptography.c:951
+#, fuzzy, c-format
+msgid "Failed to sign GPGME data from file: %s"
 msgstr "امضا کردن دادهٔ GPGME از پرونده شکست خورد"
 
-#: src/cryptography.c:841
-msgid "Failed to verify GPGME data from file"
+#: src/cryptography.c:1035
+#, fuzzy, c-format
+msgid "Failed to verify GPGME data from file: %s"
 msgstr "اعتبارسنجی دادهٔ GPGME از پرونده شکست خورد"
 
 #: src/threading.c:57

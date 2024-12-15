@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 15:31+0100\n"
+"POT-Creation-Date: 2024-12-15 16:07+0100\n"
 "PO-Revision-Date: 2024-12-01 16:55+0000\n"
 "Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -67,7 +67,7 @@ msgstr "Не удалось прочитать текст из буфера об
 msgid "Text pasted"
 msgstr "Текст вставлен"
 
-#: src/window.c:775 src/window.c:838
+#: src/window.c:775 src/window.c:837
 msgid "Encryption failed"
 msgstr "Не удалось зашифровать"
 
@@ -75,39 +75,39 @@ msgstr "Не удалось зашифровать"
 msgid "Text encrypted"
 msgstr "Текст зашифрован"
 
-#: src/window.c:840
+#: src/window.c:839
 msgid "File encrypted"
 msgstr "Файл зашифрован"
 
-#: src/window.c:896 src/window.c:955
+#: src/window.c:895 src/window.c:953
 msgid "Decryption failed"
 msgstr "Не удалось расшифровать"
 
-#: src/window.c:898
+#: src/window.c:897
 msgid "Text decrypted"
 msgstr "Текст расшифрован"
 
-#: src/window.c:957
+#: src/window.c:955
 msgid "File decrypted"
 msgstr "Файл расшифрован"
 
-#: src/window.c:1064 src/window.c:1127
+#: src/window.c:1062 src/window.c:1124
 msgid "Signing failed"
 msgstr "Не удалось подписать"
 
-#: src/window.c:1066
+#: src/window.c:1064
 msgid "Text signed"
 msgstr "Текст подписан"
 
-#: src/window.c:1129
+#: src/window.c:1126
 msgid "File signed"
 msgstr "Файл подписан"
 
-#: src/window.c:1185 src/window.c:1246
+#: src/window.c:1182 src/window.c:1243
 msgid "Signature invalid"
 msgstr ""
 
-#: src/window.c:1189 src/window.c:1250
+#: src/window.c:1186 src/window.c:1247
 #, c-format
 msgid "Signature valid - by %s"
 msgstr ""
@@ -285,7 +285,8 @@ msgid "Failed to create new GPGME input data from string: %s"
 msgstr "Не удалось создать новые входные данные GPGME из строки"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
-#: src/cryptography.c:667
+#: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:837
+#: src/cryptography.c:924 src/cryptography.c:1017
 #, fuzzy, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
 msgstr "Не удалось создать новые выходные данные GPGME в памяти"
@@ -300,7 +301,7 @@ msgstr "Не удалось зашифровать данные GPGME в пам�
 msgid "Failed to decrypt GPGME data from memory: %s"
 msgstr "Не удалось расшифровать данные GPGME в памяти"
 
-#: src/cryptography.c:610
+#: src/cryptography.c:610 src/cryptography.c:942
 #, fuzzy, c-format
 msgid "Failed to add signing key to GPGME context: %s"
 msgstr "Не удалось добавить ключ подписи в контекст GPGME"
@@ -314,41 +315,45 @@ msgstr "Не удалось подписать данные GPGME в памят�
 msgid "Failed to verify GPGME data from memory"
 msgstr "Не удалось проверить данные GPGME в памяти"
 
-#: src/cryptography.c:725
+#: src/cryptography.c:730 src/cryptography.c:902
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s удалён для подготовки перезаписи"
 
-#: src/cryptography.c:742
-msgid "Failed to create new GPGME input data from file"
+#: src/cryptography.c:735 src/cryptography.c:820 src/cryptography.c:907
+#: src/cryptography.c:1000
+#, fuzzy, c-format
+msgid "Failed to create new GPGME input data from file: %s"
 msgstr "Не удалось создать новые входные данные GPGME из файла"
 
-#: src/cryptography.c:755
-msgid "Failed to set file name of GPGME input data"
-msgstr "Не удалось задать имя файла входных данных GPGME"
-
-#: src/cryptography.c:769
-msgid "Failed to create new GPGME output data in memory"
-msgstr "Не удалось создать новые выходные данные GPGME в памяти"
-
-#: src/cryptography.c:783
-msgid "Failed to set file name of GPGME output data"
+#: src/cryptography.c:761 src/cryptography.c:933
+#, fuzzy, c-format
+msgid "Failed to set file name of GPGME output data: %s"
 msgstr "Не удалось задать имя файла выходных данных GPGME"
 
-#: src/cryptography.c:800
-msgid "Failed to encrypt GPGME data from file"
+#: src/cryptography.c:772
+#, fuzzy, c-format
+msgid "Failed to encrypt GPGME data from file: %s"
 msgstr "Не удалось зашифровать данные GPGME из файла"
 
-#: src/cryptography.c:813
-msgid "Failed to decrypt GPGME data from file"
+#: src/cryptography.c:828 src/cryptography.c:1008
+#, fuzzy, c-format
+msgid "Failed to set file name of GPGME input data: %s"
+msgstr "Не удалось задать имя файла входных данных GPGME"
+
+#: src/cryptography.c:855
+#, fuzzy, c-format
+msgid "Failed to decrypt GPGME data from file: %s"
 msgstr "Не удалось расшифровать данные GPGME из файла"
 
-#: src/cryptography.c:828
-msgid "Failed to sign GPGME data from file"
+#: src/cryptography.c:951
+#, fuzzy, c-format
+msgid "Failed to sign GPGME data from file: %s"
 msgstr "Не удалось подписать данные GPGME из файла"
 
-#: src/cryptography.c:841
-msgid "Failed to verify GPGME data from file"
+#: src/cryptography.c:1035
+#, fuzzy, c-format
+msgid "Failed to verify GPGME data from file: %s"
 msgstr "Не удалось проверить данные GPGME из файла"
 
 #: src/threading.c:57
@@ -739,6 +744,9 @@ msgstr "Обычный текст"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Диалог выбора ключей"
+
+#~ msgid "Failed to create new GPGME output data in memory"
+#~ msgstr "Не удалось создать новые выходные данные GPGME в памяти"
 
 #, c-format
 #~ msgid "Failed to open output file: %s"

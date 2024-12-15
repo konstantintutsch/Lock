@@ -31,7 +31,12 @@ char *text_sign(const char *text, gpgme_key_t key,
                 gpgme_sig_mode_t signature_mode);
 char *text_verify(const char *text, char **signer);
 
-bool process_file(const char *input_path, const char *output_path,
-                  cryptography_flags flags, gpgme_key_t key, gchar ** signer);
+bool file_encrypt(const char *input_path, const char *output_path,
+                  gpgme_key_t key);
+bool file_decrypt(const char *input_path, const char *output_path);
+bool file_sign(const char *input_path, const char *output_path,
+               gpgme_key_t key);
+bool file_verify(const char *input_path, const char *output_path,
+                 char **signer);
 
 #endif                          // CRYPTOGRAPHY_H

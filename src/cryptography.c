@@ -637,7 +637,7 @@ char *text_sign(const char *text, gpgme_key_t key,
  * This function verifies text signatures.
  *
  * @param text Signature text to verify
- * @param Write location for signer from signature
+ * @param signer Write location for signer from signature
  *
  * @return Extracted text from signature. Owned by caller
  */
@@ -689,8 +689,8 @@ char *text_verify(const char *text, char **signer)
 
     *signer =
         g_strdup((verify_result->signatures->key !=
-                  NULL) ? verify_result->signatures->key->
-                 uids->uid : verify_result->signatures->fpr);
+                  NULL) ? verify_result->signatures->key->uids->
+                 uid : verify_result->signatures->fpr);
 
  cleanup_input:
     gpgme_data_release(input);
@@ -702,185 +702,367 @@ char *text_verify(const char *text, char **signer)
 }
 
 /**
- * This function processes a file.
+ * This function encrypts a file.
  *
- * @param input_path Path to the file to process
- * @param output_path Path to write the processed file to
- * @param flags Processing options
- * @param key Key to encrypt for. Can be NULL
- * @param signer Write location for signer from verification. Can be NULL
+ * @param input_path Path of the file to encrypt
+ * @param output_path Path to write the encrypted file to
+ * @param key Key to encrypt for
  *
  * @return Success
  */
-bool process_file(const char *input_path, const char *output_path,
-                  cryptography_flags flags, gpgme_key_t key, gchar **signer)
+bool file_encrypt(const char *input_path, const char *output_path,
+                  gpgme_key_t key)
 {
-    // TODO: Remove flag condition once GPGME 1.24.0 is release: gpgme_op_decrypt and gpgme_op_verify will support writing directly files
-    if (flags & ENCRYPT || flags & SIGN) {
-        /* Overwriting */
-        FILE *file = fopen(output_path, "r");
-        if (file != NULL) {
-            fclose(file);
-            remove(output_path);
-            g_message(_("Removed %s to prepare overwriting"), output_path);
-        }
-    }
-
     gpgme_ctx_t context;
+    gpgme_error_t error;
+
     gpgme_data_t input;
     gpgme_data_t output;
-
-    gpgme_error_t error;
 
     if (!context_initialize(&context))
         return false;
 
+    /* Overwriting */
+    FILE *file = fopen(output_path, "r");
+    if (file != NULL) {
+        fclose(file);
+        remove(output_path);
+        g_message(_("Removed %s to prepare overwriting"), output_path);
+    }
     // TODO: Do not copy file data to memory once GPGME supports this behavior
     error = gpgme_data_new_from_file(&input, input_path, 1);
     if (error) {
-        g_warning("%s: %s",
-                  _("Failed to create new GPGME input data from file"),
+        g_warning(_("Failed to create new GPGME input data from file: %s"),
                   gpgme_strerror(error));
 
-        gpgme_data_release(input);
-        gpgme_release(context);
-
-        return false;
+        goto cleanup;
     }
-    // TODO: Always set input file name once GPGME 1.24.0 is released: gpgme_op_encrypt and gpgme_op_sign will be able to read input data directly from files
-    if (flags & DECRYPT || flags & VERIFY) {
-        error = gpgme_data_set_file_name(input, input_path);
-        if (error) {
-            g_warning("%s: %s",
-                      _("Failed to set file name of GPGME input data"),
-                      gpgme_strerror(error));
+    // TODO: Set input file name once GPGME 1.24.0 is released: gpgme_op_encrypt will be able to read input data directly from files
+    // error = gpgme_data_set_file_name(input, input_path);
+    // if (error) {
+    //     g_warning(_("Failed to set file name of GPGME input data: %s"),
+    //               gpgme_strerror(error));
+    //
+    //     gpgme_data_release(output);
+    //     goto cleanup_input;
+    // }
 
-            gpgme_data_release(input);
-            gpgme_data_release(output);
-            gpgme_release(context);
+    error = gpgme_data_new(&output);
+    if (error) {
+        g_warning(_("Failed to create new GPGME output data in memory: %s"),
+                  gpgme_strerror(error));
 
-            return false;
-        }
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
+    error = gpgme_data_set_file_name(output, output_path);
+    if (error) {
+        g_warning(_("Failed to set file name of GPGME output data: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
+    error = gpgme_op_encrypt(context, (gpgme_key_t[]) {
+                             key, NULL}
+                             , GPGME_ENCRYPT_ALWAYS_TRUST, input, output);
+    if (error) {
+        g_warning(_("Failed to encrypt GPGME data from file: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        // goto cleanup_input;
+        // Necessary when more steps are added behind this call.
+    }
+
+ cleanup_input:
+    gpgme_data_release(input);
+
+ cleanup:
+    gpgme_release(context);
+
+    return (error) ? false : true;
+}
+
+/**
+ * This function decrypts a file.
+ *
+ * @param input_path Path of the file to decrypt
+ * @param output_path Path to write the decrypted file to
+ *
+ * @return Success
+ */
+bool file_decrypt(const char *input_path, const char *output_path)
+{
+    gpgme_ctx_t context;
+    gpgme_error_t error;
+
+    gpgme_data_t input;
+    gpgme_data_t output;
+
+    if (!context_initialize(&context))
+        return false;
+
+    // TODO: Add once GPGME 1.24.0 is released: gpgme_op_decrypt will support writing directly files and therefore fail if the file already exists
+    /* Overwriting */
+    // FILE *file = fopen(output_path, "r");
+    // if (file != NULL) {
+    //     fclose(file);
+    //     remove(output_path);
+    //     g_message(_("Removed %s to prepare overwriting"), output_path);
+    // }
+
+    // TODO: Do not copy file data to memory once GPGME supports this behavior
+    error = gpgme_data_new_from_file(&input, input_path, 1);
+    if (error) {
+        g_warning(_("Failed to create new GPGME input data from file: %s"),
+                  gpgme_strerror(error));
+
+        goto cleanup;
+    }
+
+    error = gpgme_data_set_file_name(input, input_path);
+    if (error) {
+        g_warning(_("Failed to set file name of GPGME input data: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        goto cleanup_input;
     }
 
     error = gpgme_data_new(&output);
     if (error) {
-        g_warning("%s: %s",
-                  _("Failed to create new GPGME output data in memory"),
+        g_warning(_("Failed to create new GPGME output data in memory: %s"),
                   gpgme_strerror(error));
 
-        gpgme_data_release(input);
         gpgme_data_release(output);
-        gpgme_release(context);
-
-        return false;
+        goto cleanup_input;
     }
-    // TODO: Always set output file name once GPGME 1.24.0 is released: gpgme_op_decrypt and gpgme_op_verify will be able to write output data directly to files
-    if (flags & ENCRYPT || flags & SIGN) {
-        error = gpgme_data_set_file_name(output, output_path);
-        if (error) {
-            g_warning("%s: %s",
-                      _("Failed to set file name of GPGME output data"),
-                      gpgme_strerror(error));
+    // TODO: Add once GPGME 1.24.0 is released: gpgme_op_decrypt will be able to write output data directly to files
+    // error = gpgme_data_set_file_name(output, output_path);
+    // if (error) {
+    //     g_warning(_("Failed to set file name of GPGME output data: %s"),
+    //               gpgme_strerror(error));
+    //
+    //     gpgme_data_release(output);
+    //     goto cleanup_input;
+    // }
 
-            gpgme_data_release(input);
-            gpgme_data_release(output);
-            gpgme_release(context);
+    error = gpgme_op_decrypt(context, input, output);
+    if (error) {
+        g_warning(_("Failed to decrypt GPGME data from file: %s"),
+                  gpgme_strerror(error));
 
-            return false;
-        }
-
+        gpgme_data_release(output);
+        goto cleanup_input;
     }
-
-    if (flags & ENCRYPT) {
-        error = gpgme_op_encrypt(context, (gpgme_key_t[]) {
-                                 key, NULL}
-                                 , GPGME_ENCRYPT_ALWAYS_TRUST, input, output);
-        if (error) {
-            g_warning("%s: %s", _("Failed to encrypt GPGME data from file"),
-                      gpgme_strerror(error));
-
-            gpgme_data_release(input);
-            gpgme_data_release(output);
-            gpgme_release(context);
-
-            return false;
-        }
-
-    } else if (flags & DECRYPT) {
-        error = gpgme_op_decrypt(context, input, output);
-        if (error) {
-            g_warning("%s: %s", _("Failed to decrypt GPGME data from file"),
-                      gpgme_strerror(error));
-
-            gpgme_data_release(input);
-            gpgme_data_release(output);
-            gpgme_release(context);
-
-            return false;
-        }
-
+    // TODO: Do not manually write to files once GPGME 1.24.0 is released: gpgme_op_decrypt will be able to write output data directly to files
+    if (!raw_extract(output, output_path)) {
+        gpgme_data_release(output);
+        // goto cleanup_input;
+        // Necessary when more steps are added behind this call.
     }
 
-    if (flags & SIGN) {
-        error = gpgme_op_sign(context, input, output, GPGME_SIG_MODE_NORMAL);
-        if (error) {
-            g_warning("%s: %s", _("Failed to sign GPGME data from file"),
-                      gpgme_strerror(error));
-
-            gpgme_data_release(input);
-            gpgme_data_release(output);
-            gpgme_release(context);
-
-            return false;
-        }
-
-    } else if (flags & VERIFY) {
-        error = gpgme_op_verify(context, input, NULL, output);
-        if (error) {
-            g_warning("%s: %s", _("Failed to verify GPGME data from file"),
-                      gpgme_strerror(error));
-
-            gpgme_data_release(input);
-            gpgme_data_release(output);
-            gpgme_release(context);
-
-            return false;
-        }
-
-        gpgme_verify_result_t verify_result = gpgme_op_verify_result(context);
-
-        if (!(verify_result->signatures->summary & GPGME_SIGSUM_VALID)) {
-            /* Cleanup */
-            gpgme_release(context);
-            gpgme_data_release(input);
-            gpgme_data_release(output);
-
-            return NULL;
-        }
-
-        *signer =
-            g_strdup((verify_result->signatures->key !=
-                      NULL) ? verify_result->signatures->key->
-                     uids->uid : verify_result->signatures->fpr);
-    }
-    // TODO: Do not manually write to files once GPGME 1.24.0 is released: gpgme_op_decrypt and gpgme_op_verify will be able to write output data directly to files
-    if (flags & DECRYPT || flags & VERIFY) {
-        if (!raw_extract(output, output_path)) {
-            /* Cleanup */
-            gpgme_release(context);
-            gpgme_data_release(input);
-
-            return false;
-        }
-    }
-
-    /* Cleanup */
-    gpgme_release(context);
+ cleanup_input:
     gpgme_data_release(input);
-    // TODO: Remove free condition once GPGME 1.24.0 is released: gpgme_op_decrypt and gpgme_op_verify will be able to write output data directly to files
-    if (flags & ENCRYPT || flags & SIGN)
-        gpgme_data_release(output);
 
-    return true;
+ cleanup:
+    gpgme_release(context);
+
+    return (error) ? false : true;
+}
+
+/**
+ * This function signs a file.
+ *
+ * @param input_path Path of the file to sign
+ * @param output_path Path to write the signed file to
+ * @param key Key to sign with
+ *
+ * @return Success
+ */
+bool file_sign(const char *input_path, const char *output_path, gpgme_key_t key)
+{
+    gpgme_ctx_t context;
+    gpgme_error_t error;
+
+    gpgme_data_t input;
+    gpgme_data_t output;
+
+    if (!context_initialize(&context))
+        return false;
+
+    /* Overwriting */
+    FILE *file = fopen(output_path, "r");
+    if (file != NULL) {
+        fclose(file);
+        remove(output_path);
+        g_message(_("Removed %s to prepare overwriting"), output_path);
+    }
+    // TODO: Do not copy file data to memory once GPGME supports this behavior
+    error = gpgme_data_new_from_file(&input, input_path, 1);
+    if (error) {
+        g_warning(_("Failed to create new GPGME input data from file: %s"),
+                  gpgme_strerror(error));
+
+        goto cleanup;
+    }
+    // TODO: Set input file name once GPGME 1.24.0 is released: gpgme_op_sign will be able to read input data directly from files
+    // error = gpgme_data_set_file_name(input, input_path);
+    // if (error) {
+    //     g_warning(_("Failed to set file name of GPGME input data: %s"),
+    //               gpgme_strerror(error));
+    //
+    //     gpgme_data_release(output);
+    //     goto cleanup_input;
+    // }
+
+    error = gpgme_data_new(&output);
+    if (error) {
+        g_warning(_("Failed to create new GPGME output data in memory: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
+    error = gpgme_data_set_file_name(output, output_path);
+    if (error) {
+        g_warning(_("Failed to set file name of GPGME output data: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
+    error = gpgme_signers_add(context, key);
+    if (error) {
+        g_warning(_("Failed to add signing key to GPGME context: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
+    error = gpgme_op_sign(context, input, output, GPGME_SIG_MODE_NORMAL);
+    if (error) {
+        g_warning(_("Failed to sign GPGME data from file: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        // goto cleanup_input;
+        // Necessary when more steps are added behind this call.
+    }
+
+ cleanup_input:
+    gpgme_data_release(input);
+
+ cleanup:
+    gpgme_release(context);
+
+    return (error) ? false : true;
+}
+
+/**
+ * This function verifies a file.
+ *
+ * @param input_path Path of the file to verifies
+ * @param output_path Path to write the file extracted from the signature to
+ * @param signer Write location for signer from signature
+ *
+ * @return Success
+ */
+bool file_verify(const char *input_path, const char *output_path, char **signer)
+{
+    gpgme_ctx_t context;
+    gpgme_error_t error;
+
+    gpgme_data_t input;
+    gpgme_data_t output;
+
+    if (!context_initialize(&context))
+        return false;
+
+    // TODO: Add once GPGME 1.24.0 is released: gpgme_op_verify will support writing directly files and therefore fail if the file already exists
+    /* Overwriting */
+    // FILE *file = fopen(output_path, "r");
+    // if (file != NULL) {
+    //     fclose(file);
+    //     remove(output_path);
+    //     g_message(_("Removed %s to prepare overwriting"), output_path);
+    // }
+
+    // TODO: Do not copy file data to memory once GPGME supports this behavior
+    error = gpgme_data_new_from_file(&input, input_path, 1);
+    if (error) {
+        g_warning(_("Failed to create new GPGME input data from file: %s"),
+                  gpgme_strerror(error));
+
+        goto cleanup;
+    }
+
+    error = gpgme_data_set_file_name(input, input_path);
+    if (error) {
+        g_warning(_("Failed to set file name of GPGME input data: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
+    error = gpgme_data_new(&output);
+    if (error) {
+        g_warning(_("Failed to create new GPGME output data in memory: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+    // TODO: Add once GPGME 1.24.0 is released: gpgme_op_verify will be able to write output data directly to files
+    // error = gpgme_data_set_file_name(output, output_path);
+    // if (error) {
+    //     g_warning(_("Failed to set file name of GPGME output data: %s"),
+    //               gpgme_strerror(error));
+    //
+    //     gpgme_data_release(output);
+    //     goto cleanup_input;
+    // }
+
+    error = gpgme_op_verify(context, input, NULL, output);
+    if (error) {
+        g_warning(_("Failed to verify GPGME data from file: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
+    gpgme_verify_result_t verify_result = gpgme_op_verify_result(context);
+
+    if (!(verify_result->signatures->summary & GPGME_SIGSUM_VALID)) {
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
+    *signer =
+        g_strdup((verify_result->signatures->key !=
+                  NULL) ? verify_result->signatures->key->uids->
+                 uid : verify_result->signatures->fpr);
+
+    // TODO: Do not manually write to files once GPGME 1.24.0 is released: gpgme_op_verify will be able to write output data directly to files
+    if (!raw_extract(output, output_path)) {
+        gpgme_data_release(output);
+        // goto cleanup_input;
+        // Necessary when more steps are added behind this call.
+    }
+
+ cleanup_input:
+    gpgme_data_release(input);
+
+ cleanup:
+    gpgme_release(context);
+
+    return (error) ? false : true;
 }

@@ -805,8 +805,7 @@ void lock_window_encrypt_file(LockWindow *window)
 
     gpgme_key_t key = key_get(window->fingerprint);
 
-    window->file_success =
-        process_file(input_path, output_path, ENCRYPT, key, NULL);
+    window->file_success = file_encrypt(input_path, output_path, key);
 
     /* Cleanup */
     g_free(input_path);
@@ -924,8 +923,7 @@ void lock_window_decrypt_file(LockWindow *window)
     char *input_path = g_file_get_path(window->file_input);
     char *output_path = g_file_get_path(window->file_output);
 
-    window->file_success =
-        process_file(input_path, output_path, DECRYPT, NULL, NULL);
+    window->file_success = file_decrypt(input_path, output_path);
 
     /* Cleanup */
     g_free(input_path);
@@ -1094,8 +1092,7 @@ void lock_window_sign_file(LockWindow *window)
 
     gpgme_key_t key = key_get(window->fingerprint);
 
-    window->file_success =
-        process_file(input_path, output_path, SIGN, key, NULL);
+    window->file_success = file_sign(input_path, output_path, key);
 
     /* Cleanup */
     g_free(input_path);
@@ -1216,7 +1213,7 @@ void lock_window_verify_file(LockWindow *window)
     char *output_path = g_file_get_path(window->file_output);
 
     window->file_success =
-        process_file(input_path, output_path, VERIFY, NULL, &window->signer);
+        file_verify(input_path, output_path, &window->signer);
 
     /* Cleanup */
     g_free(input_path);
