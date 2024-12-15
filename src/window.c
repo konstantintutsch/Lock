@@ -737,7 +737,7 @@ void lock_window_encrypt_text(LockWindow *window)
 
     gpgme_key_t key = key_get(window->fingerprint);
 
-    gchar *armor = process_text(plain, ENCRYPT, key, 0, NULL);
+    gchar *armor = text_encrypt(plain, key);
     if (armor == NULL) {
         window->text_success = false;
     } else {
@@ -860,7 +860,7 @@ void lock_window_decrypt_text(LockWindow *window)
 {
     gchar *armor = lock_window_text_view_get_text(window);
 
-    gchar *plain = process_text(armor, DECRYPT, NULL, 0, NULL);
+    gchar *plain = text_decrypt(armor);
     if (plain == NULL) {
         window->text_success = false;
     } else {
@@ -1026,7 +1026,7 @@ void lock_window_sign_text(LockWindow *window)
 
     gpgme_key_t key = key_get(window->fingerprint);
 
-    gchar *armor = process_text(plain, SIGN, key, window->signature_mode, NULL);
+    gchar *armor = text_sign(plain, key, window->signature_mode);
     if (armor == NULL) {
         window->text_success = false;
     } else {
@@ -1149,7 +1149,7 @@ void lock_window_verify_text(LockWindow *window)
 {
     gchar *armor = lock_window_text_view_get_text(window);
 
-    gchar *plain = process_text(armor, VERIFY, NULL, 0, &window->signer);
+    gchar *plain = text_verify(armor, &window->signer);
     if (plain == NULL) {
         window->text_success = false;
     } else {

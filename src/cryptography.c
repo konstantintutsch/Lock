@@ -451,24 +451,20 @@ bool key_remove(const char *fingerprint)
 /**** Operations ****/
 
 /**
- * This function processes text.
+ * This function encrypts text.
  *
- * @param text Text to process
- * @param flags Processing options
- * @param key Key to encrypt for. Can be NULL
- * @param signature_mode Mode of signing operations. Can be 0
- * @param signer Write location for signer from verification. Can be NULL
+ * @param text Text to encrypt
+ * @param key Key to encrypt text with
  *
- * @return Processed text as an OpenPGP ASCII armor. Owned by caller
+ * @return Encrypted text in an OpenPGP ASCII armor. Owned by caller
  */
-char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key,
-                   gpgme_sig_mode_t signature_mode, gchar **signer)
+char *text_encrypt(const char *text, gpgme_key_t key)
 {
     gpgme_ctx_t context;
+    gpgme_error_t error;
+
     gpgme_data_t input;
     gpgme_data_t output;
-
-    gpgme_error_t error;
 
     if (!context_initialize(&context))
         return NULL;
@@ -477,116 +473,232 @@ char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key,
 
     error = gpgme_data_new_from_mem(&input, text, strlen(text), 1);
     if (error) {
-        g_warning("%s: %s",
-                  _("Failed to create new GPGME input data from string"),
+        g_warning(_("Failed to create new GPGME input data from string: %s"),
                   gpgme_strerror(error));
 
-        gpgme_data_release(input);
-        gpgme_release(context);
-
-        return NULL;
+        goto cleanup;
     }
 
     error = gpgme_data_new(&output);
     if (error) {
-        g_warning("%s: %s",
-                  _("Failed to create new GPGME output data in memory"),
+        g_warning(_("Failed to create new GPGME output data in memory: %s"),
                   gpgme_strerror(error));
 
-        gpgme_data_release(input);
         gpgme_data_release(output);
-        gpgme_release(context);
-
-        return NULL;
+        goto cleanup_input;
     }
 
-    if (flags & ENCRYPT) {
-        error = gpgme_op_encrypt(context, (gpgme_key_t[]) {
-                                 key, NULL}
-                                 , GPGME_ENCRYPT_ALWAYS_TRUST, input, output);
-        if (error) {
-            g_warning("%s: %s", _("Failed to encrypt GPGME data from memory"),
-                      gpgme_strerror(error));
+    error = gpgme_op_encrypt(context, (gpgme_key_t[]) {
+                             key, NULL}
+                             , GPGME_ENCRYPT_ALWAYS_TRUST, input, output);
+    if (error) {
+        g_warning(_("Failed to encrypt GPGME data from memory: %s"),
+                  gpgme_strerror(error));
 
-            gpgme_data_release(input);
-            gpgme_data_release(output);
-            gpgme_release(context);
-
-            return NULL;
-        }
-    } else if (flags & DECRYPT) {
-        error = gpgme_op_decrypt(context, input, output);
-        if (error) {
-            g_warning("%s: %s", _("Failed to decrypt GPGME data from memory"),
-                      gpgme_strerror(error));
-
-            gpgme_data_release(input);
-            gpgme_data_release(output);
-            gpgme_release(context);
-
-            return NULL;
-        }
+        gpgme_data_release(output);
+        // goto cleanup_input;
+        // Necessary when more steps are added behind this call.
     }
 
-    if (flags & SIGN) {
-        error = gpgme_signers_add(context, key);
-        if (error) {
-            g_warning("%s: %s", _("Failed to add signing key to GPGME context"),
-                      gpgme_strerror(error));
-
-            gpgme_data_release(input);
-            gpgme_data_release(output);
-            gpgme_release(context);
-
-            return NULL;
-        }
-
-        error = gpgme_op_sign(context, input, output, signature_mode);
-        if (error) {
-            g_warning("%s: %s", _("Failed to sign GPGME data from memory"),
-                      gpgme_strerror(error));
-
-            gpgme_data_release(input);
-            gpgme_data_release(output);
-            gpgme_release(context);
-
-            return NULL;
-        }
-    } else if (flags & VERIFY) {
-        error = gpgme_op_verify(context, input, NULL, output);
-        if (error) {
-            g_warning("%s: %s", _("Failed to verify GPGME data from memory"),
-                      gpgme_strerror(error));
-
-            gpgme_data_release(input);
-            gpgme_data_release(output);
-            gpgme_release(context);
-
-            return NULL;
-        }
-
-        gpgme_verify_result_t verify_result = gpgme_op_verify_result(context);
-
-        if (!(verify_result->signatures->summary & GPGME_SIGSUM_VALID)) {
-            /* Cleanup */
-            gpgme_release(context);
-            gpgme_data_release(input);
-            gpgme_data_release(output);
-
-            return NULL;
-        }
-
-        *signer =
-            g_strdup((verify_result->signatures->key !=
-                      NULL) ? verify_result->signatures->key->uids->
-                     uid : verify_result->signatures->fpr);
-    }
-
-    /* Cleanup */
-    gpgme_release(context);
+ cleanup_input:
     gpgme_data_release(input);
 
-    return text_extract(output);
+ cleanup:
+    gpgme_release(context);
+
+    return (error) ? NULL : text_extract(output);
+}
+
+/**
+ * This function decrypts text.
+ *
+ * @param text Text to decrypt
+ *
+ * @return Decrypted text. Owned by caller
+ */
+char *text_decrypt(const char *text)
+{
+    gpgme_ctx_t context;
+    gpgme_error_t error;
+
+    gpgme_data_t input;
+    gpgme_data_t output;
+
+    if (!context_initialize(&context))
+        return NULL;
+
+    gpgme_set_armor(context, 1);
+
+    error = gpgme_data_new_from_mem(&input, text, strlen(text), 1);
+    if (error) {
+        g_warning(_("Failed to create new GPGME input data from string: %s"),
+                  gpgme_strerror(error));
+
+        goto cleanup;
+    }
+
+    error = gpgme_data_new(&output);
+    if (error) {
+        g_warning(_("Failed to create new GPGME output data in memory: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
+    error = gpgme_op_decrypt(context, input, output);
+    if (error) {
+        g_warning(_("Failed to decrypt GPGME data from memory: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        // goto cleanup_input;
+        // Necessary when more steps are added behind this call.
+    }
+
+ cleanup_input:
+    gpgme_data_release(input);
+
+ cleanup:
+    gpgme_release(context);
+
+    return (error) ? NULL : text_extract(output);
+}
+
+/**
+ * This function signs text.
+ *
+ * @param text Text to sign
+ * @param key Key to sign text with
+ * @param signature_mode Signature mode
+ *
+ * @return Signed text in an OpenPGP ASCII armor. Owned by caller
+ */
+char *text_sign(const char *text, gpgme_key_t key,
+                gpgme_sig_mode_t signature_mode)
+{
+    gpgme_ctx_t context;
+    gpgme_error_t error;
+
+    gpgme_data_t input;
+    gpgme_data_t output;
+
+    if (!context_initialize(&context))
+        return NULL;
+
+    gpgme_set_armor(context, 1);
+
+    error = gpgme_data_new_from_mem(&input, text, strlen(text), 1);
+    if (error) {
+        g_warning(_("Failed to create new GPGME input data from string: %s"),
+                  gpgme_strerror(error));
+
+        goto cleanup;
+    }
+
+    error = gpgme_data_new(&output);
+    if (error) {
+        g_warning(_("Failed to create new GPGME output data in memory: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
+    error = gpgme_signers_add(context, key);
+    if (error) {
+        g_warning(_("Failed to add signing key to GPGME context: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
+    error = gpgme_op_sign(context, input, output, signature_mode);
+    if (error) {
+        g_warning(_("Failed to sign GPGME data from memory: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        // goto cleanup_input;
+        // Necessary when more steps are added behind this call.
+    }
+
+ cleanup_input:
+    gpgme_data_release(input);
+
+ cleanup:
+    gpgme_release(context);
+
+    return (error) ? NULL : text_extract(output);
+}
+
+/**
+ * This function verifies text signatures.
+ *
+ * @param text Signature text to verify
+ * @param Write location for signer from signature
+ *
+ * @return Extracted text from signature. Owned by caller
+ */
+char *text_verify(const char *text, char **signer)
+{
+    gpgme_ctx_t context;
+    gpgme_error_t error;
+
+    gpgme_data_t input;
+    gpgme_data_t output;
+
+    if (!context_initialize(&context))
+        return NULL;
+
+    gpgme_set_armor(context, 1);
+
+    error = gpgme_data_new_from_mem(&input, text, strlen(text), 1);
+    if (error) {
+        g_warning(_("Failed to create new GPGME input data from string: %s"),
+                  gpgme_strerror(error));
+
+        goto cleanup;
+    }
+
+    error = gpgme_data_new(&output);
+    if (error) {
+        g_warning(_("Failed to create new GPGME output data in memory: %s"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
+    error = gpgme_op_verify(context, input, NULL, output);
+    if (error) {
+        g_warning("%s: %s", _("Failed to verify GPGME data from memory"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
+    gpgme_verify_result_t verify_result = gpgme_op_verify_result(context);
+
+    if (!(verify_result->signatures->summary & GPGME_SIGSUM_VALID)) {
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
+    *signer =
+        g_strdup((verify_result->signatures->key !=
+                  NULL) ? verify_result->signatures->key->
+                 uids->uid : verify_result->signatures->fpr);
+
+ cleanup_input:
+    gpgme_data_release(input);
+
+ cleanup:
+    gpgme_release(context);
+
+    return (error) ? NULL : text_extract(output);
 }
 
 /**
@@ -749,8 +861,8 @@ bool process_file(const char *input_path, const char *output_path,
 
         *signer =
             g_strdup((verify_result->signatures->key !=
-                      NULL) ? verify_result->signatures->key->uids->
-                     uid : verify_result->signatures->fpr);
+                      NULL) ? verify_result->signatures->key->
+                     uids->uid : verify_result->signatures->fpr);
     }
     // TODO: Do not manually write to files once GPGME 1.24.0 is released: gpgme_op_decrypt and gpgme_op_verify will be able to write output data directly to files
     if (flags & DECRYPT || flags & VERIFY) {

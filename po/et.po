@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-14 22:28+0100\n"
+"POT-Creation-Date: 2024-12-15 15:31+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -277,64 +277,76 @@ msgstr "GPG võtme laadimine kustutamiseks ei õnnestunud"
 msgid "Failed to remove GPG key: %s"
 msgstr "GPG võtme eemaldamine ei õnnestunud"
 
-#: src/cryptography.c:481
-msgid "Failed to create new GPGME input data from string"
+#: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
+#: src/cryptography.c:659
+#, fuzzy, c-format
+msgid "Failed to create new GPGME input data from string: %s"
 msgstr "Sõnest uute GPGME sisendandmete loomine ei õnnestunud"
 
-#: src/cryptography.c:493 src/cryptography.c:657
-msgid "Failed to create new GPGME output data in memory"
+#: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
+#: src/cryptography.c:667
+#, fuzzy, c-format
+msgid "Failed to create new GPGME output data in memory: %s"
 msgstr "Uute GPGME väljundandmete loomine mällu ei õnnestunud"
 
-#: src/cryptography.c:508
-msgid "Failed to encrypt GPGME data from memory"
+#: src/cryptography.c:495
+#, fuzzy, c-format
+msgid "Failed to encrypt GPGME data from memory: %s"
 msgstr "GPGME mälus asuvate andmete krüptimine ei õnnestunud"
 
-#: src/cryptography.c:520
-msgid "Failed to decrypt GPGME data from memory"
+#: src/cryptography.c:551
+#, fuzzy, c-format
+msgid "Failed to decrypt GPGME data from memory: %s"
 msgstr "GPGME mälus asuvate andmete dekrüptimine ei õnnestunud"
 
-#: src/cryptography.c:534
-msgid "Failed to add signing key to GPGME context"
+#: src/cryptography.c:610
+#, fuzzy, c-format
+msgid "Failed to add signing key to GPGME context: %s"
 msgstr "Allkirjavõtme lisamine GPGME kontekstile ei õnnestunud"
 
-#: src/cryptography.c:546
-msgid "Failed to sign GPGME data from memory"
+#: src/cryptography.c:619
+#, fuzzy, c-format
+msgid "Failed to sign GPGME data from memory: %s"
 msgstr "GPGME mälus asuvate andmete allkirjastamine ei õnnestunud"
 
-#: src/cryptography.c:558
+#: src/cryptography.c:676
 msgid "Failed to verify GPGME data from memory"
 msgstr "GPGME mälus asuvate andmete verifitseerimine ei õnnestunud"
 
-#: src/cryptography.c:613
+#: src/cryptography.c:725
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "Ülekirjutamiseks valmistumisel eemaldasime %s"
 
-#: src/cryptography.c:630
+#: src/cryptography.c:742
 msgid "Failed to create new GPGME input data from file"
 msgstr "Failist uute GPGME sisendandmete loomine ei õnnestunud"
 
-#: src/cryptography.c:643
+#: src/cryptography.c:755
 msgid "Failed to set file name of GPGME input data"
 msgstr "GPGME sisendandmete failinime määramine ei õnnestunud"
 
-#: src/cryptography.c:671
+#: src/cryptography.c:769
+msgid "Failed to create new GPGME output data in memory"
+msgstr "Uute GPGME väljundandmete loomine mällu ei õnnestunud"
+
+#: src/cryptography.c:783
 msgid "Failed to set file name of GPGME output data"
 msgstr "GPGME väljundandmete failinime määramine ei õnnestunud"
 
-#: src/cryptography.c:688
+#: src/cryptography.c:800
 msgid "Failed to encrypt GPGME data from file"
 msgstr "GPGME failis asuvate andmete krüptimine ei õnnestunud"
 
-#: src/cryptography.c:701
+#: src/cryptography.c:813
 msgid "Failed to decrypt GPGME data from file"
 msgstr "GPGME failis asuvate andmete dekrüptimine ei õnnestunud"
 
-#: src/cryptography.c:716
+#: src/cryptography.c:828
 msgid "Failed to sign GPGME data from file"
 msgstr "GPGME failis asuvate andmete allkirjastamine ei õnnestunud"
 
-#: src/cryptography.c:729
+#: src/cryptography.c:841
 msgid "Failed to verify GPGME data from file"
 msgstr "GPGME failis asuvate andmete verifitseerimine ei õnnestunud"
 

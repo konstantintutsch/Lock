@@ -25,8 +25,12 @@ bool key_expire(const char *fingerprint, const unsigned long int expire);
 bool key_remove(const char *fingerprint);
 
 /* Operations */
-char *process_text(const char *text, cryptography_flags flags, gpgme_key_t key,
-                   gpgme_sig_mode_t signature_mode, gchar ** signer);
+char *text_encrypt(const char *text, gpgme_key_t key);
+char *text_decrypt(const char *text);
+char *text_sign(const char *text, gpgme_key_t key,
+                gpgme_sig_mode_t signature_mode);
+char *text_verify(const char *text, char **signer);
+
 bool process_file(const char *input_path, const char *output_path,
                   cryptography_flags flags, gpgme_key_t key, gchar ** signer);
 
