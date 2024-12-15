@@ -6,13 +6,6 @@
 #include <gpgme.h>
 #include <stdbool.h>
 
-typedef enum {
-    ENCRYPT = 1 << 0,
-    DECRYPT = 1 << 1,
-    SIGN = 1 << 2,
-    VERIFY = 1 << 3
-} cryptography_flags;
-
 // Keys
 gpgme_key_t key_get(const char *fingerprint);
 gpgme_key_t key_search(const char *userid);
