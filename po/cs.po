@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 15:53+0100\n"
+"POT-Creation-Date: 2024-12-16 15:55+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/Lock/Application/"
@@ -23,7 +23,7 @@ msgstr ""
 #, c-format
 msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
 msgid "GnuPG Made Easy %s or greater required. Using %s."
-msgstr ""
+msgstr "Je vyžadována verze %s nebo novější GnuPG Made Easy. Používá se %s."
 
 #. Details
 #: src/application.c:203 data/com.konstantintutsch.Lock.desktop.in.in:5
@@ -34,12 +34,12 @@ msgstr "Spravujte data s GnuPG"
 #: src/application.c:205
 msgctxt "Button linking to translations"
 msgid "Translate"
-msgstr ""
+msgstr "Přeložit"
 
 #: src/application.c:208
 msgctxt "Button linking to source code"
 msgid "Develop"
-msgstr ""
+msgstr "Vyvíjet"
 
 #: src/application.c:220
 msgid "translator-credits"
@@ -60,7 +60,7 @@ msgstr "Text zkopírován"
 #: src/window.c:528
 #, c-format
 msgid "Could not read text from clipboard: %s"
-msgstr ""
+msgstr "Nepodařilo se přečíst text ze schránky: %s"
 
 #: src/window.c:537
 #, fuzzy
@@ -107,12 +107,12 @@ msgstr "Soubor podepsán"
 
 #: src/window.c:1182 src/window.c:1243
 msgid "Signature invalid"
-msgstr ""
+msgstr "Neplatný podpis"
 
 #: src/window.c:1186 src/window.c:1247
 #, c-format
 msgid "Signature valid - by %s"
-msgstr ""
+msgstr "Platný podpis od - %s"
 
 #: src/managementdialog.c:334
 msgid "Import failed"
@@ -130,7 +130,7 @@ msgstr "Ověření selhalo"
 
 #: src/managementdialog.c:434
 msgid "Keypair generated"
-msgstr ""
+msgstr "Pár klíčů vygenerován"
 
 #: src/keyrow.c:128
 msgid "Key does not expire"
@@ -169,11 +169,11 @@ msgstr "Obnovit klíče"
 #: src/keyrow.c:313
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
-msgstr ""
+msgstr "Odstranění klíče %s se nedá vrátit!"
 
 #: src/keyrow.c:316
 msgid "_Cancel"
-msgstr ""
+msgstr "_Zrušit"
 
 #: src/keyrow.c:317
 #, fuzzy
@@ -432,20 +432,20 @@ msgstr "Selhalo vytvoření vlákna %s: %s"
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
 msgid "General"
-msgstr ""
+msgstr "Běžné"
 
 #: data/ui/shortcuts.blp:13
 msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
-msgstr ""
+msgstr "Ukázat zkraty"
 
 #: data/ui/shortcuts.blp:20
 msgid "Copy text view to clipboard"
-msgstr ""
+msgstr "Kopírovat textové pole do schránky"
 
 #: data/ui/shortcuts.blp:27
 msgid "Overwrite text view with clipboard"
-msgstr ""
+msgstr "Přepsat textové pole obsahem schránky"
 
 #: data/ui/shortcuts.blp:35
 #, fuzzy
@@ -510,7 +510,7 @@ msgstr "Soubor"
 
 #: data/ui/window.blp:93
 msgid "No files selected for processing"
-msgstr ""
+msgstr "Nejsou vybrány žádné soubory pro zpracování"
 
 #: data/ui/window.blp:114
 msgid "Input File"
@@ -518,7 +518,7 @@ msgstr "Vstupní Soubor"
 
 #: data/ui/window.blp:123
 msgid "Select input file"
-msgstr ""
+msgstr "Vybrat vstupní soubor"
 
 #: data/ui/window.blp:130
 msgid "Output File"
@@ -551,7 +551,7 @@ msgstr "Spravovat klíče"
 
 #: data/ui/window.blp:206
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Klávesové Zkratky"
 
 #: data/ui/window.blp:210
 msgid "About Lock"
@@ -559,11 +559,11 @@ msgstr "O Zámku"
 
 #: data/ui/window.blp:233
 msgid "Sign (Clear Text)"
-msgstr ""
+msgstr "Podepsat (Holý Text)"
 
 #: data/ui/window.blp:237
 msgid "Sign (Detached)"
-msgstr ""
+msgstr "Podepsat (Přiložený Soubor)"
 
 #: data/ui/selectiondialog.blp:35
 #, fuzzy
@@ -606,7 +606,7 @@ msgstr "Importovat klíče ze souborů"
 
 #: data/ui/managementdialog.blp:97
 msgid "Create a new keypair"
-msgstr ""
+msgstr "Vytvořit nový pár klíčů"
 
 #: data/ui/managementdialog.blp:110
 #, fuzzy
@@ -616,27 +616,27 @@ msgstr "Spravovat klíče"
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name (Mandatory)"
-msgstr ""
+msgstr "Název (Povinné)"
 
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #: data/ui/managementdialog.blp:151
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
-msgstr ""
+msgstr "Komentář"
 
 #: data/ui/managementdialog.blp:156
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
-msgstr ""
+msgstr "Podepisovací Algoritmus"
 
 #: data/ui/managementdialog.blp:157
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
-msgstr ""
+msgstr "Klíč"
 
 #: data/ui/managementdialog.blp:165
 #, fuzzy
@@ -647,7 +647,7 @@ msgstr "Šifrovat"
 #: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
-msgstr ""
+msgstr "Podklíč"
 
 #: data/ui/managementdialog.blp:174
 #, fuzzy
@@ -658,16 +658,16 @@ msgstr "Platnost"
 #: data/ui/managementdialog.blp:175
 msgctxt "Expiry unit of the new keypair"
 msgid "Months, disable with zero"
-msgstr ""
+msgstr "Měsíce, nulou vypnete"
 
 #: data/ui/managementdialog.blp:197
 msgctxt "Generate a new keypair"
 msgid "Generate"
-msgstr ""
+msgstr "Generovat"
 
 #: data/ui/managementdialog.blp:198
 msgid "Generate a new keypair"
-msgstr ""
+msgstr "Generovat nový pár klíčů"
 
 #: data/ui/keyrow.blp:5
 msgid "User ID"
@@ -730,7 +730,7 @@ msgstr "Ověřovat"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:17
 msgid "Manage your GnuPG keyring:"
-msgstr ""
+msgstr "Spravujte vaši GnuPG klíčenku:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
 #, fuzzy
@@ -753,7 +753,7 @@ msgstr "Zobrazit datum platnosti"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
 msgid "Update expiry dates of expired keys"
-msgstr ""
+msgstr "Aktualizovat dobu platnosti prošlých klíčů"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 #, fuzzy
@@ -774,7 +774,7 @@ msgstr "Správa Klíčů"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:59
 msgid "Keypair Generation"
-msgstr ""
+msgstr "Generování Párů Klíčů"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:63
 msgid "File processing"
@@ -786,7 +786,7 @@ msgstr "Holý text"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
-msgstr ""
+msgstr "Okno pro vybírání klíče"
 
 #, fuzzy
 #~ msgid "Failed to create new GPGME output data in memory"

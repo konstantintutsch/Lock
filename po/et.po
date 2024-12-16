@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 15:53+0100\n"
+"POT-Creation-Date: 2024-12-16 15:55+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -281,36 +281,36 @@ msgstr "GPG võtme eemaldamine ei õnnestunud: %s"
 
 #: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
 #: src/cryptography.c:659
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME input data from string: %s"
-msgstr "Sõnest uute GPGME sisendandmete loomine ei õnnestunud"
+msgstr "Sõnest uute GPGME sisendandmete loomine ei õnnestunud: %s"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
 #: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:837
 #: src/cryptography.c:924 src/cryptography.c:1017
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
-msgstr "Uute GPGME väljundandmete loomine mällu ei õnnestunud"
+msgstr "Uute GPGME väljundandmete loomine mällu ei õnnestunud: %s"
 
 #: src/cryptography.c:495
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to encrypt GPGME data from memory: %s"
-msgstr "GPGME mälus asuvate andmete krüptimine ei õnnestunud"
+msgstr "GPGME mälus asuvate andmete krüptimine ei õnnestunud: %s"
 
 #: src/cryptography.c:551
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to decrypt GPGME data from memory: %s"
-msgstr "GPGME mälus asuvate andmete dekrüptimine ei õnnestunud"
+msgstr "GPGME mälus asuvate andmete dekrüptimine ei õnnestunud: %s"
 
 #: src/cryptography.c:610 src/cryptography.c:942
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to add signing key to GPGME context: %s"
-msgstr "Allkirjavõtme lisamine GPGME kontekstile ei õnnestunud"
+msgstr "Allkirjavõtme lisamine GPGME kontekstile ei õnnestunud: %s"
 
 #: src/cryptography.c:619
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to sign GPGME data from memory: %s"
-msgstr "GPGME mälus asuvate andmete allkirjastamine ei õnnestunud"
+msgstr "GPGME mälus asuvate andmete allkirjastamine ei õnnestunud: %s"
 
 #: src/cryptography.c:676
 msgid "Failed to verify GPGME data from memory"
@@ -323,39 +323,39 @@ msgstr "Ülekirjutamiseks valmistumisel eemaldasime %s"
 
 #: src/cryptography.c:735 src/cryptography.c:820 src/cryptography.c:907
 #: src/cryptography.c:1000
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME input data from file: %s"
-msgstr "Failist uute GPGME sisendandmete loomine ei õnnestunud"
+msgstr "Failist uute GPGME sisendandmete loomine ei õnnestunud: %s"
 
 #: src/cryptography.c:761 src/cryptography.c:933
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set file name of GPGME output data: %s"
-msgstr "GPGME väljundandmete failinime määramine ei õnnestunud"
+msgstr "GPGME väljundandmete failinime määramine ei õnnestunud: %s"
 
 #: src/cryptography.c:772
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to encrypt GPGME data from file: %s"
-msgstr "GPGME failis asuvate andmete krüptimine ei õnnestunud"
+msgstr "GPGME failis asuvate andmete krüptimine ei õnnestunud: %s"
 
 #: src/cryptography.c:828 src/cryptography.c:1008
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set file name of GPGME input data: %s"
-msgstr "GPGME sisendandmete failinime määramine ei õnnestunud"
+msgstr "GPGME sisendandmete failinime määramine ei õnnestunud: %s"
 
 #: src/cryptography.c:855
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to decrypt GPGME data from file: %s"
-msgstr "GPGME failis asuvate andmete dekrüptimine ei õnnestunud"
+msgstr "GPGME failis asuvate andmete dekrüptimine ei õnnestunud: %s"
 
 #: src/cryptography.c:951
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to sign GPGME data from file: %s"
-msgstr "GPGME failis asuvate andmete allkirjastamine ei õnnestunud"
+msgstr "GPGME failis asuvate andmete allkirjastamine ei õnnestunud: %s"
 
 #: src/cryptography.c:1035
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to verify GPGME data from file: %s"
-msgstr "GPGME failis asuvate andmete verifitseerimine ei õnnestunud"
+msgstr "GPGME failis asuvate andmete verifitseerimine ei õnnestunud: %s"
 
 #: src/threading.c:57
 msgid "Failed to create text encryption thread"
