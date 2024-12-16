@@ -490,7 +490,7 @@ msgstr "Fail"
 
 #: data/ui/window.blp:93
 msgid "No files selected for processing"
-msgstr "Ühtegi faili pole töötlemiseks valitud"
+msgstr "Sa pole valinud töötlemiseks ühtegi faili"
 
 #: data/ui/window.blp:114
 msgid "Input File"
@@ -765,6 +765,20 @@ msgstr "Vormindamata tekst"
 msgid "Key selection dialog"
 msgstr "Võtmevaliku vaade"
 
+#: data/ui/managementdialog.blp:174
+msgctxt "Expiry time of the new keypair"
+msgid "Expiry"
+msgstr "Aegumine"
+
+#: data/ui/managementdialog.blp:175
+msgctxt "Expiry unit of the new keypair"
+msgid "Months, disable with zero"
+msgstr "Kuudes, null märgib aegumise puudumist"
+
+#: data/ui/keyrow.blp:38
+msgid "Edit expiry date"
+msgstr "Muuda aegumise kuupäeva"
+
 #, fuzzy
 #~ msgctxt "Expire date unit of the new key pair"
 #~ msgid "Months, disable with zero"
@@ -772,10 +786,6 @@ msgstr "Võtmevaliku vaade"
 
 #, fuzzy
 #~ msgctxt "Expire date of the new key pair"
-#~ msgid "Expiry"
-#~ msgstr "Aegumine"
-
-#~ msgctxt "Expiry time of the new keypair"
 #~ msgid "Expiry"
 #~ msgstr "Aegumine"
 
