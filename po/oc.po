@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 16:07+0100\n"
+"POT-Creation-Date: 2024-12-16 15:53+0100\n"
 "PO-Revision-Date: 2024-12-01 19:04+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -104,12 +104,12 @@ msgstr "Fichièr signat"
 
 #: src/window.c:1182 src/window.c:1243
 msgid "Signature invalid"
-msgstr ""
+msgstr "Signatura invalida"
 
 #: src/window.c:1186 src/window.c:1247
 #, c-format
 msgid "Signature valid - by %s"
-msgstr ""
+msgstr "Signatura valida – per %s"
 
 #: src/managementdialog.c:334
 msgid "Import failed"
@@ -132,10 +132,10 @@ msgid "Key does not expire"
 msgstr "La clau expira pas"
 
 #: src/keyrow.c:132
-#, fuzzy, c-format
+#, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
-msgstr "Expira lo %s a %s"
+msgstr "Expirat lo %s a %s"
 
 #: src/keyrow.c:134
 #, c-format
@@ -181,9 +181,8 @@ msgid "Key removed"
 msgstr "Clau suprimida"
 
 #: src/keyrow.c:410
-#, fuzzy
 msgid "Renewal failed"
-msgstr "Fracàs de la supression"
+msgstr "Fracàs de la renovacion"
 
 #: src/keyrow.c:412
 #, fuzzy
@@ -774,6 +773,106 @@ msgstr "Fenèstra de seleccion de clau"
 #, c-format
 #~ msgid "Failed to open output file: %s"
 #~ msgstr "Fracàs de la dobertura del fichièr en sortida : %s"
+
+#~ msgid "Failed to create new GPGME input data from file"
+#~ msgstr ""
+#~ "Fracàs de la creacion de las novèlas donadas GPGME d’entrada a partir del "
+#~ "fichièr"
+
+#~ msgid "Failed to set file name of GPGME input data"
+#~ msgstr ""
+#~ "Fracàs de la definicion del nom de fichièr de las donadas GPGME d’entrada"
+
+#~ msgid "Failed to set file name of GPGME output data"
+#~ msgstr ""
+#~ "Fracàs de la definicion del nom de fichièr de las donadas GPGME de sortida"
+
+#~ msgid "Failed to encrypt GPGME data from file"
+#~ msgstr ""
+#~ "Fracàs de la realizacion del deschiframent de las donadas GPGME a partir "
+#~ "del fichièr"
+
+#~ msgid "Failed to decrypt GPGME data from file"
+#~ msgstr ""
+#~ "Fracàs de la realizacion del chiframent de las donadas GPGME a partir del "
+#~ "fichièr"
+
+#~ msgid "Failed to sign GPGME data from file"
+#~ msgstr "Fracàs de la signatura de las donadas GPGME a partir del fichièr"
+
+#~ msgid "Failed to verify GPGME data from file"
+#~ msgstr "Fracàs de la verificacion de las donadas GPGME a partir del fichièr"
+
+#~ msgid "Failed to create new GPGME input data from string"
+#~ msgstr ""
+#~ "Fracàs de la creacion de las donadas GPGME d’entrada novèlas a partir de "
+#~ "la cadena de tèxte"
+
+#~ msgid "Failed to encrypt GPGME data from memory"
+#~ msgstr ""
+#~ "Fracàs de la realizacion del chiframent de las donadas GPGME a partir de "
+#~ "la memòria"
+
+#~ msgid "Failed to decrypt GPGME data from memory"
+#~ msgstr ""
+#~ "Fracàs de la realizacion del deschiframent de las donadas GPGME a partir "
+#~ "de la memòria"
+
+#~ msgid "Failed to add signing key to GPGME context"
+#~ msgstr "Fracàs de l’apondon de la clau al contèxte GPGME nòu"
+
+#~ msgid "Failed to sign GPGME data from memory"
+#~ msgstr "Fracàs de la signatura de las donadas GPGME a partir de la memòria"
+
+#~ msgid "Failed to create new GPGME context"
+#~ msgstr "Fracàs de la creacion d’un contèxte GPGME nòu"
+
+#~ msgid "Failed to set protocol of GPGME context to OpenPGP"
+#~ msgstr "Fracàs de la definicion del protocòl del contèxte GPGME per OpenPGP"
+
+#~ msgid "Failed to set pinentry mode of GPGME context to ask"
+#~ msgstr "Fracàs de la definicion del protocòl del contèxte GPGME per OpenPGP"
+
+#~ msgid "Failed to obtain key by fingerprint"
+#~ msgstr "Fracàs de l’obtencion de la clau per emprenta digitala"
+
+#~ msgid "Failed to generate new GPG key for signing"
+#~ msgstr "Fracàs de la generacion de la clau GPG novèla per signar"
+
+#~ msgid "Failed to delete unfinished, generated key"
+#~ msgstr "Fracàs de la supression de la clau ECC generada non acabada"
+
+#~ msgid "Failed to load GPGME key data from file"
+#~ msgstr ""
+#~ "Fracàs de la mesa en memòria de las donadas clau GPGME a partir del "
+#~ "fichièr"
+
+#~ msgid "Failed to import GPG key from file"
+#~ msgstr "Fracàs de l’importacion de la clau GPG a partir del fichièr"
+
+#~ msgid "Failed to create GPGME key data in memory"
+#~ msgstr "Fracàs de la creacion de las donadas de la clau GPGME en memòria"
+
+#~ msgid "Failed to export GPG key(s) to file"
+#~ msgstr "Fracàs de l’exportacion de la(s) clau(s) dins un fichièr"
+
+#, fuzzy
+#~ msgid "Failed to get GPG key for expiry editing"
+#~ msgstr "Fracàs de l’obtencion de la clau GPG de suprimir"
+
+#, fuzzy
+#~ msgid "Failed to update the expiry time"
+#~ msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
+
+#~ msgid "Failed to get GPG key for removal"
+#~ msgstr "Fracàs de l’obtencion de la clau GPG de suprimir"
+
+#~ msgid "Failed to remove GPG key"
+#~ msgstr "Fracàs de la supression de la clau GPG"
+
+#, c-format
+#~ msgid "Failed to open export file: %s"
+#~ msgstr "Fracàs de la dobertura del fichièr d’exportacion : %s"
 
 #~ msgid "Verification failed"
 #~ msgstr "Verificacion fracassada"

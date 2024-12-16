@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 16:07+0100\n"
+"POT-Creation-Date: 2024-12-16 15:53+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -104,12 +104,12 @@ msgstr "Fail on allkirjastatud"
 
 #: src/window.c:1182 src/window.c:1243
 msgid "Signature invalid"
-msgstr ""
+msgstr "Allkiri on vigane"
 
 #: src/window.c:1186 src/window.c:1247
 #, c-format
 msgid "Signature valid - by %s"
-msgstr ""
+msgstr "Allkiri kehtib - allkirjastaja %s"
 
 #: src/managementdialog.c:334
 msgid "Import failed"
@@ -189,93 +189,95 @@ msgid "Expiry renewed"
 msgstr "Aegumine on uuendatud"
 
 #: src/cryptography.c:29
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME context: %s"
-msgstr "Uue GPGME konteksti loomine ei õnnestunud"
+msgstr "Uue GPGME konteksti loomine ei õnnestunud: %s"
 
 #: src/cryptography.c:37
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
-msgstr "GPGME protokolli konteksti määramine OpenPGP jaoks ei õnnestunud"
+msgstr "GPGME protokolli konteksti määramine OpenPGP jaoks ei õnnestunud: %s"
 
 #: src/cryptography.c:46
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set pinentry mode of GPGME context to ask: %s"
-msgstr "GPGME kontekstile PIN-koodi küsimise režiimi määramine ei õnnestunud"
+msgstr ""
+"GPGME kontekstile PIN-koodi küsimise režiimi määramine ei õnnestunud: %s"
 
 #: src/cryptography.c:105
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to open file for writing: %s"
-msgstr "Ekspordifaili avamine ei õnnestunud: %s"
+msgstr "Faili kirjutamiseks avamine ei õnnestunud: %s"
 
 #: src/cryptography.c:113
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to write to file: %s"
-msgstr "Ekspordifaili avamine ei õnnestunud: %s"
+msgstr "Faili kirjutamine ei õnnestunud: %s"
 
 #: src/cryptography.c:150
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to obtain key by fingerprint: %s"
-msgstr "Võtme laadimine sõrmejälje alusel ei õnnestunud"
+msgstr "Võtme laadimine sõrmejälje alusel ei õnnestunud: %s"
 
 #: src/cryptography.c:190
 msgid "Failed to find key matching User ID"
 msgstr "Võtme leidmine kasutajatunnuse alusel ei õnnestunud"
 
 #: src/cryptography.c:231
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to generate new GPG key for signing: %s"
-msgstr "Uue allakirjastamiseks vajaliku GPG võtme loomine ei õmnnestunud"
+msgstr "Uue allakirjastamiseks vajaliku GPG võtme loomine ei õnnestunud: %s"
 
 #: src/cryptography.c:243
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to generate new GPG subkey for encryption: %s"
-msgstr "Uue allakirjastamiseks vajaliku GPG võtme loomine ei õmnnestunud"
+msgstr ""
+"Uue allakirjastamiseks vajaliku GPG alamvõtme loomine ei õnnestunud: %s"
 
 #: src/cryptography.c:251
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to delete unfinished, generated key: %s"
-msgstr "Loodud, aga lõpetamata võtme kustutamine ei õnnestunud"
+msgstr "Loodud, aga lõpetamata võtme kustutamine ei õnnestunud: %s"
 
 #: src/cryptography.c:288
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to load GPGME key data from file: %s"
-msgstr "GPGME võtme andmete laadimine failist ei õnnestunud"
+msgstr "GPGME võtme andmete laadimine failist ei õnnestunud: %s"
 
 #: src/cryptography.c:296
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to import GPG key from file: %s"
-msgstr "GPG võtme importimine failist ei õnnestunud"
+msgstr "GPG võtme importimine failist ei õnnestunud: %s"
 
 #: src/cryptography.c:333
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create GPGME key data in memory: %s"
-msgstr "GPGME võtme andmete loomine mälus ei õnnestunud"
+msgstr "GPGME võtme andmete loomine mälus ei õnnestunud: %s"
 
 #: src/cryptography.c:341
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to export GPG key(s) to file: %s"
-msgstr "GPG võtme(te) eksportimine faili ei õnnestunud"
+msgstr "GPG võtme(te) eksportimine faili ei õnnestunud: %s"
 
 #: src/cryptography.c:386
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for expiry date update: %s"
-msgstr "GPG võtme laadimine kehtivuse muutmiseks ei õnnestunud"
+msgstr "GPG võtme laadimine kehtivuse muutmiseks ei õnnestunud: %s"
 
 #: src/cryptography.c:394
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to update the expiry date of a key: %s"
-msgstr "Aegumisaja muutmine ei õnnestunud"
+msgstr "Võtme aegumispäeva muutmine ei õnnestunud: %s"
 
 #: src/cryptography.c:428
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for removal: %s"
-msgstr "GPG võtme laadimine kustutamiseks ei õnnestunud"
+msgstr "GPG võtme laadimine kustutamiseks ei õnnestunud: %s"
 
 #: src/cryptography.c:436
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to remove GPG key: %s"
-msgstr "GPG võtme eemaldamine ei õnnestunud"
+msgstr "GPG võtme eemaldamine ei õnnestunud: %s"
 
 #: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
 #: src/cryptography.c:659
@@ -446,7 +448,7 @@ msgstr "Verifitseeri tekst"
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
-msgstr "Lukusta"
+msgstr "Lukk"
 
 #: data/ui/window.blp:29
 msgid "Copy"
@@ -666,7 +668,7 @@ msgid ""
 "Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
 "LibAdwaita GUI."
 msgstr ""
-"Lock on GnuPG (GPG) graafiline kasutajaliides, mille aluseks on ilus "
+"Lukk (Lock) on GnuPG (GPG) graafiline kasutajaliides, mille aluseks on ilus "
 "LibAdwaita-liidestus."
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
@@ -752,6 +754,92 @@ msgstr "Võtmevaliku vaade"
 #, c-format
 #~ msgid "Failed to open output file: %s"
 #~ msgstr "Väljundfaili avamine ei õnnestunud: %s"
+
+#~ msgid "Failed to create new GPGME input data from file"
+#~ msgstr "Failist uute GPGME sisendandmete loomine ei õnnestunud"
+
+#~ msgid "Failed to set file name of GPGME input data"
+#~ msgstr "GPGME sisendandmete failinime määramine ei õnnestunud"
+
+#~ msgid "Failed to set file name of GPGME output data"
+#~ msgstr "GPGME väljundandmete failinime määramine ei õnnestunud"
+
+#~ msgid "Failed to encrypt GPGME data from file"
+#~ msgstr "GPGME failis asuvate andmete krüptimine ei õnnestunud"
+
+#~ msgid "Failed to decrypt GPGME data from file"
+#~ msgstr "GPGME failis asuvate andmete dekrüptimine ei õnnestunud"
+
+#~ msgid "Failed to sign GPGME data from file"
+#~ msgstr "GPGME failis asuvate andmete allkirjastamine ei õnnestunud"
+
+#~ msgid "Failed to verify GPGME data from file"
+#~ msgstr "GPGME failis asuvate andmete verifitseerimine ei õnnestunud"
+
+#~ msgid "Failed to create new GPGME input data from string"
+#~ msgstr "Sõnest uute GPGME sisendandmete loomine ei õnnestunud"
+
+#~ msgid "Failed to encrypt GPGME data from memory"
+#~ msgstr "GPGME mälus asuvate andmete krüptimine ei õnnestunud"
+
+#~ msgid "Failed to decrypt GPGME data from memory"
+#~ msgstr "GPGME mälus asuvate andmete dekrüptimine ei õnnestunud"
+
+#~ msgid "Failed to add signing key to GPGME context"
+#~ msgstr "Allkirjavõtme lisamine GPGME kontekstile ei õnnestunud"
+
+#~ msgid "Failed to sign GPGME data from memory"
+#~ msgstr "GPGME mälus asuvate andmete allkirjastamine ei õnnestunud"
+
+#~ msgid "Failed to create new GPGME context"
+#~ msgstr "Uue GPGME konteksti loomine ei õnnestunud"
+
+#~ msgid "Failed to set protocol of GPGME context to OpenPGP"
+#~ msgstr "GPGME protokolli konteksti määramine OpenPGP jaoks ei õnnestunud"
+
+#~ msgid "Failed to set pinentry mode of GPGME context to ask"
+#~ msgstr ""
+#~ "GPGME kontekstile PIN-koodi küsimise režiimi määramine ei õnnestunud"
+
+#~ msgid "Failed to obtain key by fingerprint"
+#~ msgstr "Võtme laadimine sõrmejälje alusel ei õnnestunud"
+
+#~ msgid "Failed to generate new GPG key for signing"
+#~ msgstr "Uue allakirjastamiseks vajaliku GPG võtme loomine ei õmnnestunud"
+
+#~ msgid "Failed to delete unfinished, generated key"
+#~ msgstr "Loodud, aga lõpetamata võtme kustutamine ei õnnestunud"
+
+#~ msgid "Failed to load GPGME key data from file"
+#~ msgstr "GPGME võtme andmete laadimine failist ei õnnestunud"
+
+#~ msgid "Failed to import GPG key from file"
+#~ msgstr "GPG võtme importimine failist ei õnnestunud"
+
+#~ msgid "Failed to create GPGME key data in memory"
+#~ msgstr "GPGME võtme andmete loomine mälus ei õnnestunud"
+
+#~ msgid "Failed to export GPG key(s) to file"
+#~ msgstr "GPG võtme(te) eksportimine faili ei õnnestunud"
+
+#~ msgid "Failed to get GPG key for expiry editing"
+#~ msgstr "GPG võtme laadimine kehtivuse muutmiseks ei õnnestunud"
+
+#~ msgid "Failed to update the expiry time"
+#~ msgstr "Aegumisaja muutmine ei õnnestunud"
+
+#~ msgid "Failed to get GPG key for removal"
+#~ msgstr "GPG võtme laadimine kustutamiseks ei õnnestunud"
+
+#~ msgid "Failed to remove GPG key"
+#~ msgstr "GPG võtme eemaldamine ei õnnestunud"
+
+#, c-format
+#~ msgid "Failed to open export file: %s"
+#~ msgstr "Ekspordifaili avamine ei õnnestunud: %s"
+
+#~ msgid "Unknown"
+#~ msgstr "Teadmata"
 
 #~ msgid "Verification failed"
 #~ msgstr "Verifitseerimine ei õnnestunud"

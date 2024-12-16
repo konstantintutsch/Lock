@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 16:07+0100\n"
+"POT-Creation-Date: 2024-12-16 15:53+0100\n"
 "PO-Revision-Date: 2024-12-01 16:55+0000\n"
 "Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -105,12 +105,12 @@ msgstr "Файл подписан"
 
 #: src/window.c:1182 src/window.c:1243
 msgid "Signature invalid"
-msgstr ""
+msgstr "Недействительная подпись"
 
 #: src/window.c:1186 src/window.c:1247
 #, c-format
 msgid "Signature valid - by %s"
-msgstr ""
+msgstr "Действительная подпись - %s"
 
 #: src/managementdialog.c:334
 msgid "Import failed"
@@ -751,6 +751,92 @@ msgstr "Диалог выбора ключей"
 #, c-format
 #~ msgid "Failed to open output file: %s"
 #~ msgstr "Не удалось открыть выходной файл: %s"
+
+#~ msgid "Failed to create new GPGME input data from file"
+#~ msgstr "Не удалось создать новые входные данные GPGME из файла"
+
+#~ msgid "Failed to set file name of GPGME input data"
+#~ msgstr "Не удалось задать имя файла входных данных GPGME"
+
+#~ msgid "Failed to set file name of GPGME output data"
+#~ msgstr "Не удалось задать имя файла выходных данных GPGME"
+
+#~ msgid "Failed to encrypt GPGME data from file"
+#~ msgstr "Не удалось зашифровать данные GPGME из файла"
+
+#~ msgid "Failed to decrypt GPGME data from file"
+#~ msgstr "Не удалось расшифровать данные GPGME из файла"
+
+#~ msgid "Failed to sign GPGME data from file"
+#~ msgstr "Не удалось подписать данные GPGME из файла"
+
+#~ msgid "Failed to verify GPGME data from file"
+#~ msgstr "Не удалось проверить данные GPGME из файла"
+
+#~ msgid "Failed to create new GPGME input data from string"
+#~ msgstr "Не удалось создать новые входные данные GPGME из строки"
+
+#~ msgid "Failed to encrypt GPGME data from memory"
+#~ msgstr "Не удалось зашифровать данные GPGME в памяти"
+
+#~ msgid "Failed to decrypt GPGME data from memory"
+#~ msgstr "Не удалось расшифровать данные GPGME в памяти"
+
+#~ msgid "Failed to add signing key to GPGME context"
+#~ msgstr "Не удалось добавить ключ подписи в контекст GPGME"
+
+#~ msgid "Failed to sign GPGME data from memory"
+#~ msgstr "Не удалось подписать данные GPGME в памяти"
+
+#~ msgid "Failed to create new GPGME context"
+#~ msgstr "Не удалось создать новый контекст GPGME"
+
+#~ msgid "Failed to set protocol of GPGME context to OpenPGP"
+#~ msgstr "Не удалось установить протокол контекста GPGME на OpenPGP"
+
+#~ msgid "Failed to set pinentry mode of GPGME context to ask"
+#~ msgstr ""
+#~ "Не удалось установить режим запроса ввода PIN-кода для контекста GPGME"
+
+#~ msgid "Failed to obtain key by fingerprint"
+#~ msgstr "Не удалось получить ключ по отпечатку"
+
+#~ msgid "Failed to generate new GPG key for signing"
+#~ msgstr "Не удалось сгенерировать новый ключ GPG для подписи"
+
+#~ msgid "Failed to delete unfinished, generated key"
+#~ msgstr "Не удалось удалить незавершенный, сгенерированный ключ"
+
+#~ msgid "Failed to load GPGME key data from file"
+#~ msgstr "Не удалось загрузить данные ключа GPGME из файла"
+
+#~ msgid "Failed to import GPG key from file"
+#~ msgstr "Не удалось импортировать ключ GPG из файла"
+
+#~ msgid "Failed to create GPGME key data in memory"
+#~ msgstr "Не удалось создать данные ключа GPGME в памяти"
+
+#~ msgid "Failed to export GPG key(s) to file"
+#~ msgstr "Не удалось экспортировать ключ(и) GPG в файл"
+
+#~ msgid "Failed to get GPG key for expiry editing"
+#~ msgstr "Не удалось получить ключ GPG для редактирования срока истечения"
+
+#~ msgid "Failed to update the expiry time"
+#~ msgstr "Не удалось обновить время истечения срока"
+
+#~ msgid "Failed to get GPG key for removal"
+#~ msgstr "Не удалось получить GPG ключ для удаления"
+
+#~ msgid "Failed to remove GPG key"
+#~ msgstr "Не удалось удалить GPG ключ"
+
+#, c-format
+#~ msgid "Failed to open export file: %s"
+#~ msgstr "Не удалось открыть файл экспорта: %s"
+
+#~ msgid "Unknown"
+#~ msgstr "Неизвестно"
 
 #~ msgid "Verification failed"
 #~ msgstr "Проверка не удалась"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 16:07+0100\n"
+"POT-Creation-Date: 2024-12-16 15:53+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -104,12 +104,12 @@ msgstr "Tiedosto allekirjoitettu"
 
 #: src/window.c:1182 src/window.c:1243
 msgid "Signature invalid"
-msgstr ""
+msgstr "Virheellinen allekirjoitus"
 
 #: src/window.c:1186 src/window.c:1247
 #, c-format
 msgid "Signature valid - by %s"
-msgstr ""
+msgstr "Kelvollinen allekirjoitus - suorittanut %s"
 
 #: src/managementdialog.c:334
 msgid "Import failed"
@@ -311,14 +311,13 @@ msgid "Failed to sign GPGME data from memory: %s"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
 #: src/cryptography.c:676
-#, fuzzy
 msgid "Failed to verify GPGME data from memory"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "GPGME-tietojen tarkistaminen muistista epäonnistui"
 
 #: src/cryptography.c:730 src/cryptography.c:902
 #, c-format
 msgid "Removed %s to prepare overwriting"
-msgstr ""
+msgstr "%s poistettu päällekirjoituksen valmistelemiseksi"
 
 #: src/cryptography.c:735 src/cryptography.c:820 src/cryptography.c:907
 #: src/cryptography.c:1000
@@ -365,54 +364,44 @@ msgid "Failed to create file encryption thread"
 msgstr "Tiedostosalauksen säikeen luominen epäonnistui"
 
 #: src/threading.c:100
-#, fuzzy
 msgid "Failed to create text decryption thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Tekstin salauksenpurkuketjun luominen epäonnistui"
 
 #: src/threading.c:118
-#, fuzzy
 msgid "Failed to create file decryption thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Tiedoston salauksenpurkuketjun luominen epäonnistui"
 
 #: src/threading.c:140
-#, fuzzy
 msgid "Failed to create text signing thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Tekstin allekirjoitussäikeen luominen epäonnistui"
 
 #: src/threading.c:162
-#, fuzzy
 msgid "Failed to create file signing thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Tiedoston allekirjoitussäikeen luominen epäonnistui"
 
 #: src/threading.c:183
-#, fuzzy
 msgid "Failed to create text verification thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Tekstin vahvistussäikeen luominen epäonnistui"
 
 #: src/threading.c:201
-#, fuzzy
 msgid "Failed to create file verification thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Tiedoston vahvistussäikeen luominen epäonnistui"
 
 #: src/threading.c:216
-#, fuzzy
 msgid "Failed to create key import thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Avaimen tuontisäikeen luominen epäonnistui"
 
 #: src/threading.c:237
-#, fuzzy
 msgid "Failed to create key generation thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Avaimen luontisäikeen luominen epäonnistui"
 
 #: src/threading.c:252
-#, fuzzy
 msgid "Failed to create key export thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Avaimen vientisäikeen luominen epäonnistui"
 
 #: src/threading.c:264
-#, fuzzy
 msgid "Failed to create key removal thread"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Avaimen poistonsäikeen luominen epäonnistui"
 
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
@@ -756,9 +745,98 @@ msgstr "Raakateksti"
 msgid "Key selection dialog"
 msgstr "Avaimen valinnan ikkuna"
 
-#, fuzzy
 #~ msgid "Failed to create new GPGME output data in memory"
+#~ msgstr "Uuden GPGME-lähtödatan luominen muistiin epäonnistui"
+
+#~ msgid "Failed to create new GPGME input data from file"
+#~ msgstr "Uuden GPGME-syöttödatan luominen tiedostosta epäonnistui"
+
+#~ msgid "Failed to set file name of GPGME input data"
+#~ msgstr "GPGME-syötetietojen tiedostonimen asettaminen epäonnistui"
+
+#~ msgid "Failed to set file name of GPGME output data"
+#~ msgstr "GPGME-lähtötietojen tiedostonimen asettaminen epäonnistui"
+
+#~ msgid "Failed to encrypt GPGME data from file"
+#~ msgstr "GPGME-tietojen salaaminen tiedostosta epäonnistui"
+
+#~ msgid "Failed to decrypt GPGME data from file"
+#~ msgstr "GPGME-tietojen salauksen purkaminen tiedostosta epäonnistui"
+
+#~ msgid "Failed to sign GPGME data from file"
+#~ msgstr "GPGME-tietojen allekirjoittaminen tiedostosta epäonnistui"
+
+#~ msgid "Failed to verify GPGME data from file"
+#~ msgstr "GPGME-tietojen vahvistaminen tiedostosta epäonnistui"
+
+#~ msgid "Failed to create new GPGME input data from string"
+#~ msgstr "Uusien GPGME-syöttötietojen luominen merkkijonosta epäonnistui"
+
+#~ msgid "Failed to encrypt GPGME data from memory"
+#~ msgstr "GPGME-tietojen salaus muistista epäonnistui"
+
+#~ msgid "Failed to decrypt GPGME data from memory"
+#~ msgstr "GPGME-tietojen salauksen purkaminen muistista epäonnistui"
+
+#~ msgid "Failed to add signing key to GPGME context"
+#~ msgstr "Allekirjoitusavaimen lisääminen GPGME-kontekstiin epäonnistui"
+
+#~ msgid "Failed to sign GPGME data from memory"
+#~ msgstr "GPGME-tietojen allekirjoittaminen muistista epäonnistui"
+
+#~ msgid "Failed to create new GPGME context"
 #~ msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+
+#~ msgid "Failed to set protocol of GPGME context to OpenPGP"
+#~ msgstr "GPGME-kontekstin protokollan asettaminen OpenPGP:lle epäonnistui"
+
+#~ msgid "Failed to set pinentry mode of GPGME context to ask"
+#~ msgstr ""
+#~ "GPGME-kontekstin pinentry-tilan asettaminen kysyttäväksi epäonnistui"
+
+#~ msgid "Failed to obtain key by fingerprint"
+#~ msgstr "Avainta ei saatu sormenjälkeen perustuen"
+
+#~ msgid "Failed to generate new GPG key for signing"
+#~ msgstr "Uuden GPG-avaimen luominen allekirjoitusta varten epäonnistui"
+
+#~ msgid "Failed to delete unfinished, generated key"
+#~ msgstr "Keskeneräisen luodun avaimen poistaminen epäonnistui"
+
+#~ msgid "Failed to load GPGME key data from file"
+#~ msgstr "GPGME-avaimen lataaminen tiedostosta epäonnistui"
+
+#~ msgid "Failed to import GPG key from file"
+#~ msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+
+#~ msgid "Failed to create GPGME key data in memory"
+#~ msgstr "GPGME-avaintietojen luominen muistiin epäonnistui"
+
+#~ msgid "Failed to export GPG key(s) to file"
+#~ msgstr "GPG-avaimen tai -avainten vieminen tiedostoon epäonnistui"
+
+#~ msgid "Failed to get GPG key for expiry editing"
+#~ msgstr "GPG-avaimen saaminen vanhenemisen muokkausta varten epäonnistui"
+
+#~ msgid "Failed to update the expiry time"
+#~ msgstr "Vanhenemisajan päivittäminen epäonnistui"
+
+#~ msgid "Failed to get GPG key for removal"
+#~ msgstr "GPG-avaimen saaminen poistettavaksi epäonnistui"
+
+#~ msgid "Failed to remove GPG key"
+#~ msgstr "GPG-avaimen poistaminen epäonnistui"
+
+#, c-format
+#~ msgid "Failed to open export file: %s"
+#~ msgstr "Vientitiedoston avaaminen epäonnistui: %s"
+
+#, c-format
+#~ msgid "Failed to open output file: %s"
+#~ msgstr "Lähtötiedoston avaaminen epäonnistui: %s"
+
+#~ msgid "Unknown"
+#~ msgstr "Tuntematon"
 
 #~ msgid "Verification failed"
 #~ msgstr "Vahvistaminen epäonnistui"
