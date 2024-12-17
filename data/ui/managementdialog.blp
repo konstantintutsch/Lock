@@ -170,18 +170,28 @@ template $LockManagementDialog : Adw.Dialog {
                                             };
                                         }
 
-                                        Adw.SpinRow expire_entry {
+                                        Adw.ActionRow expire_entry {
                                             title: C_("Expire date of the new key pair", "Expire Date");
-                                            subtitle: C_("Expire date unit of the new key pair", "Months, disable with zero");
+                                            subtitle: _("No expire date");
 
-                                            adjustment: Gtk.Adjustment {
-                                                lower: 0;
-                                                upper: 240;
-                                                value: 48; // also hardcoded in managementdialog.c
+                                            Gtk.Box {
+                                                orientation: horizontal;
+                                                valign: center;
 
-                                                page-increment: 12;
-                                                step-increment: 1;
-                                            };
+                                                Gtk.Box {
+                                                    Gtk.Button expire_button {
+                                                        styles ["flat"]
+
+                                                        icon-name: "document-open-recent-symbolic";
+                                                        tooltip-text: _("Select expire date of the new key pair");
+                                                    }
+
+                                                    Gtk.Popover expire_popover {
+                                                        Gtk.Calendar expire_calendar {
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
 

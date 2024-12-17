@@ -42,7 +42,11 @@ struct _LockManagementDialog {
     AdwEntryRow *comment_entry;
     AdwComboRow *sign_entry;
     AdwComboRow *encrypt_entry;
-    AdwSpinRow *expire_entry;
+    gboolean generate_expire;
+    AdwActionRow *expire_entry;
+    GtkButton *expire_button;
+    GtkPopover *expire_popover;
+    GtkCalendar *expire_calendar;
 };
 
 G_DEFINE_TYPE(LockManagementDialog, lock_management_dialog, ADW_TYPE_DIALOG);
@@ -57,6 +61,12 @@ gboolean lock_management_dialog_generate_on_completed(LockManagementDialog *
 static void lock_management_dialog_import_file_present(GtkButton * self,
                                                        LockManagementDialog *
                                                        dialog);
+
+/* Expire */
+void lock_management_dialog_select_expire(GtkButton * self,
+                                          LockManagementDialog * dialog);
+void lock_management_dialog_select_expire_finish(GtkCalendar * self,
+                                                 LockManagementDialog * dialog);
 
 /**
  * This function initializes a LockManagementDialog.
@@ -75,6 +85,12 @@ static void lock_management_dialog_init(LockManagementDialog *dialog)
                      G_CALLBACK(lock_management_dialog_import_file_present),
                      dialog);
 
+    dialog->generate_expire = false;
+    g_signal_connect(dialog->expire_button, "clicked",
+                     G_CALLBACK(lock_management_dialog_select_expire), dialog);
+    g_signal_connect(dialog->expire_calendar, "day-selected",
+                     G_CALLBACK(lock_management_dialog_select_expire_finish),
+                     dialog);
     g_signal_connect(dialog->generate_button, "clicked",
                      G_CALLBACK(thread_generate_key), dialog);
 }
@@ -125,6 +141,12 @@ static void lock_management_dialog_class_init(LockManagementDialogClass *class)
                                          LockManagementDialog, encrypt_entry);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
                                          LockManagementDialog, expire_entry);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
+                                         LockManagementDialog, expire_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
+                                         LockManagementDialog, expire_popover);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
+                                         LockManagementDialog, expire_calendar);
 }
 
 /**
@@ -350,6 +372,42 @@ gboolean lock_management_dialog_import_on_completed(LockManagementDialog
 /**** Keypair Generation ****/
 
 /**
+ * This function lets the user select the expire date for key pair generation.
+ *
+ * @param self Gtk.Button::clicked
+ * @param row Gtk.Button::clicked
+ */
+void lock_management_dialog_select_expire(GtkButton *self,
+                                          LockManagementDialog *dialog)
+{
+    (void)self;
+
+    gtk_popover_popup(dialog->expire_popover);
+}
+
+/**
+ * This function handles expire date selection for key pair generations.
+ *
+ * @param self Gtk.Calendar::day-selected
+ * @param row Gtk.Calendar::day-selected
+ */
+void lock_management_dialog_select_expire_finish(GtkCalendar *self,
+                                                 LockManagementDialog *dialog)
+{
+    GDateTime *expire = gtk_calendar_get_date(self);
+
+    dialog->generate_expire = true;
+    adw_action_row_set_subtitle(dialog->expire_entry,
+                                g_date_time_format(expire,
+                                                   C_
+                                                   ("Expire date format for key pair generation (see GLib.DateTime.format)",
+                                                    "%B %e, %Y")));
+
+    /* Cleanup */
+    g_date_time_unref(expire);
+}
+
+/**
  * This function checks if sufficient information for a successful key generation has been entered.
  *
  * @param dialog Dialog to check the generation information of
@@ -398,16 +456,20 @@ void lock_management_dialog_generate(LockManagementDialog *dialog)
     const gchar *encrypt_algorithm =
         gtk_string_list_get_string(encrypt_list, encrypt_selected);
 
-    gint expire_months = (gint) adw_spin_row_get_value(dialog->expire_entry);
-    unsigned long expire_seconds =
-        ((expire_months / 2) * 31 + (expire_months / 2) * 30) * 24 * 60 * 60;
+    GDateTime *expire = gtk_calendar_get_date(dialog->expire_calendar);
+    GDateTime *now = g_date_time_new_now_local();
+    const gint64 expire_offset = (dialog->generate_expire) ?
+        g_date_time_to_unix(expire) - g_date_time_to_unix(now) : 0;
 
     dialog->generate_success =
-        key_generate(userid, sign_algorithm, encrypt_algorithm, expire_seconds);
+        key_generate(userid, sign_algorithm, encrypt_algorithm, expire_offset);
 
     /* Cleanup */
     g_free(userid);
     userid = NULL;
+
+    g_date_time_unref(expire);
+    g_date_time_unref(now);
 
     /* UI */
     g_idle_add((GSourceFunc) lock_management_dialog_generate_on_completed,
@@ -439,7 +501,8 @@ gboolean lock_management_dialog_generate_on_completed(LockManagementDialog
         gtk_editable_set_text(GTK_EDITABLE(dialog->comment_entry), "");
         adw_combo_row_set_selected(dialog->sign_entry, 0);
         adw_combo_row_set_selected(dialog->encrypt_entry, 0);
-        adw_spin_row_set_value(dialog->expire_entry, 48);       // also hardcoded in managementdialog.blp
+        adw_action_row_set_subtitle(dialog->expire_entry, _("No expire date"));
+        dialog->generate_expire = false;
     }
 
     adw_toast_set_timeout(toast, 2);

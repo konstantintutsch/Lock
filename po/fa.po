@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 19:45+0100\n"
+"POT-Creation-Date: 2024-12-17 20:19+0100\n"
 "PO-Revision-Date: 2024-12-10 10:58+0000\n"
 "Last-Translator: Reza Hosseinzadeh <rezahsnzdh@protonmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -111,21 +111,31 @@ msgstr "امضا نامعتبر است"
 msgid "Signature valid - by %s"
 msgstr "امضا معتبر است - توسط %s"
 
-#: src/managementdialog.c:334
+#: src/managementdialog.c:356
 msgid "Import failed"
 msgstr "ورود شکست خورد"
 
-#: src/managementdialog.c:336
+#: src/managementdialog.c:358
 msgid "Keys imported"
 msgstr "کلیدها وارد شدند"
 
-#: src/managementdialog.c:432
+#: src/managementdialog.c:404
+msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
+msgid "%B %e, %Y"
+msgstr ""
+
+#: src/managementdialog.c:494
 msgid "Generation failed"
 msgstr "تولید شکست خورد"
 
-#: src/managementdialog.c:434
+#: src/managementdialog.c:496
 msgid "Keypair generated"
 msgstr "جفت‌کلید تولید شد"
+
+#: src/managementdialog.c:504 data/ui/managementdialog.blp:175
+#, fuzzy
+msgid "No expire date"
+msgstr "ویرایش تاریخ انقضا"
 
 #: src/keyrow.c:128
 msgid "Key does not expire"
@@ -615,18 +625,17 @@ msgctxt "Expire date of the new key pair"
 msgid "Expire Date"
 msgstr "ویرایش تاریخ انقضا"
 
-#: data/ui/managementdialog.blp:175
+#: data/ui/managementdialog.blp:186
 #, fuzzy
-msgctxt "Expire date unit of the new key pair"
-msgid "Months, disable with zero"
-msgstr "ماه، غیرفعال کردن با صفر"
+msgid "Select expire date of the new key pair"
+msgstr "تولید کردن یک جفت‌کلید جدید"
 
-#: data/ui/managementdialog.blp:197
+#: data/ui/managementdialog.blp:207
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "تولید کردن"
 
-#: data/ui/managementdialog.blp:198
+#: data/ui/managementdialog.blp:208
 msgid "Generate a new keypair"
 msgstr "تولید کردن یک جفت‌کلید جدید"
 
@@ -743,6 +752,11 @@ msgstr "متن ساده"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "محاورهٔ انتخاب کلید"
+
+#, fuzzy
+#~ msgctxt "Expire date unit of the new key pair"
+#~ msgid "Months, disable with zero"
+#~ msgstr "ماه، غیرفعال کردن با صفر"
 
 #, fuzzy
 #~ msgctxt "Expire date of the new key pair"

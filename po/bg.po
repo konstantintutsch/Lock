@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 19:45+0100\n"
+"POT-Creation-Date: 2024-12-17 20:19+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/Lock/"
@@ -115,22 +115,32 @@ msgstr ""
 msgid "Signature valid - by %s"
 msgstr ""
 
-#: src/managementdialog.c:334
+#: src/managementdialog.c:356
 msgid "Import failed"
 msgstr "Внасянето е неуспешно"
 
-#: src/managementdialog.c:336
+#: src/managementdialog.c:358
 #, fuzzy
 msgid "Keys imported"
 msgstr "Внесено"
 
-#: src/managementdialog.c:432
+#: src/managementdialog.c:404
+msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
+msgid "%B %e, %Y"
+msgstr ""
+
+#: src/managementdialog.c:494
 msgid "Generation failed"
 msgstr "Генерирането е неуспешно"
 
-#: src/managementdialog.c:434
+#: src/managementdialog.c:496
 msgid "Keypair generated"
 msgstr "Двойката ключове е генерирана"
+
+#: src/managementdialog.c:504 data/ui/managementdialog.blp:175
+#, fuzzy
+msgid "No expire date"
+msgstr "Преглеждайте датите на изтичане"
 
 #: src/keyrow.c:128
 msgid "Key does not expire"
@@ -651,18 +661,17 @@ msgctxt "Expire date of the new key pair"
 msgid "Expire Date"
 msgstr "Преглеждайте датите на изтичане"
 
-#: data/ui/managementdialog.blp:175
+#: data/ui/managementdialog.blp:186
 #, fuzzy
-msgctxt "Expire date unit of the new key pair"
-msgid "Months, disable with zero"
-msgstr "Месеци, изключва се с нула"
+msgid "Select expire date of the new key pair"
+msgstr "Генериране на нова двойка ключове"
 
-#: data/ui/managementdialog.blp:197
+#: data/ui/managementdialog.blp:207
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "Генериране"
 
-#: data/ui/managementdialog.blp:198
+#: data/ui/managementdialog.blp:208
 msgid "Generate a new keypair"
 msgstr "Генериране на нова двойка ключове"
 
@@ -782,6 +791,11 @@ msgstr "Обикновен текст"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "Expire date unit of the new key pair"
+#~ msgid "Months, disable with zero"
+#~ msgstr "Месеци, изключва се с нула"
 
 #, fuzzy
 #~ msgctxt "Expire date of the new key pair"

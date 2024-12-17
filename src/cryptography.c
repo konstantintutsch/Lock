@@ -689,8 +689,8 @@ char *text_verify(const char *text, char **signer)
 
     *signer =
         g_strdup((verify_result->signatures->key !=
-                  NULL) ? verify_result->signatures->key->
-                 uids->uid : verify_result->signatures->fpr);
+                  NULL) ? verify_result->signatures->key->uids->
+                 uid : verify_result->signatures->fpr);
 
  cleanup_input:
     gpgme_data_release(input);
@@ -1048,8 +1048,8 @@ bool file_verify(const char *input_path, const char *output_path, char **signer)
 
     *signer =
         g_strdup((verify_result->signatures->key !=
-                  NULL) ? verify_result->signatures->key->
-                 uids->uid : verify_result->signatures->fpr);
+                  NULL) ? verify_result->signatures->key->uids->
+                 uid : verify_result->signatures->fpr);
 
     // TODO: Do not manually write to files once GPGME 1.24.0 is released: gpgme_op_verify will be able to write output data directly to files
     if (!raw_extract(output, output_path)) {
