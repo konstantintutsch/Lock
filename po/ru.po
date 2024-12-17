@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 15:55+0100\n"
+"POT-Creation-Date: 2024-12-17 19:45+0100\n"
 "PO-Revision-Date: 2024-12-01 16:55+0000\n"
 "Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -612,12 +612,14 @@ msgid "Subkey"
 msgstr "Подключ"
 
 #: data/ui/managementdialog.blp:174
-msgctxt "Expiry time of the new keypair"
-msgid "Expiry"
-msgstr "Истекает"
+#, fuzzy
+msgctxt "Expire date of the new key pair"
+msgid "Expire Date"
+msgstr "Редактировать дату истечения"
 
 #: data/ui/managementdialog.blp:175
-msgctxt "Expiry unit of the new keypair"
+#, fuzzy
+msgctxt "Expire date unit of the new key pair"
 msgid "Months, disable with zero"
 msgstr "В месяцах, для отключения 0"
 
@@ -651,7 +653,8 @@ msgid "Export public key to file"
 msgstr "Экспортировать открытый ключ в файл"
 
 #: data/ui/keyrow.blp:38
-msgid "Edit expiry date"
+#, fuzzy
+msgid "Edit expire date"
 msgstr "Редактировать дату истечения"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
@@ -744,6 +747,15 @@ msgstr "Обычный текст"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Диалог выбора ключей"
+
+#, fuzzy
+#~ msgctxt "Expire date of the new key pair"
+#~ msgid "Expiry"
+#~ msgstr "Истекает"
+
+#~ msgctxt "Expiry time of the new keypair"
+#~ msgid "Expiry"
+#~ msgstr "Истекает"
 
 #~ msgid "Failed to create new GPGME output data in memory"
 #~ msgstr "Не удалось создать новые выходные данные GPGME в памяти"

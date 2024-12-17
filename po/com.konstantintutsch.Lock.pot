@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 15:55+0100\n"
+"POT-Creation-Date: 2024-12-17 19:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -608,12 +608,12 @@ msgid "Subkey"
 msgstr ""
 
 #: data/ui/managementdialog.blp:174
-msgctxt "Expiry time of the new keypair"
-msgid "Expiry"
+msgctxt "Expire date of the new key pair"
+msgid "Expire Date"
 msgstr ""
 
 #: data/ui/managementdialog.blp:175
-msgctxt "Expiry unit of the new keypair"
+msgctxt "Expire date unit of the new key pair"
 msgid "Months, disable with zero"
 msgstr ""
 
@@ -647,7 +647,7 @@ msgid "Export public key to file"
 msgstr ""
 
 #: data/ui/keyrow.blp:38
-msgid "Edit expiry date"
+msgid "Edit expire date"
 msgstr ""
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11

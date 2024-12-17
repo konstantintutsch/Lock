@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 15:55+0100\n"
+"POT-Creation-Date: 2024-12-17 19:45+0100\n"
 "PO-Revision-Date: 2024-12-10 10:58+0000\n"
 "Last-Translator: Reza Hosseinzadeh <rezahsnzdh@protonmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -610,12 +610,14 @@ msgid "Subkey"
 msgstr "زیرکلید"
 
 #: data/ui/managementdialog.blp:174
-msgctxt "Expiry time of the new keypair"
-msgid "Expiry"
-msgstr "انقضا"
+#, fuzzy
+msgctxt "Expire date of the new key pair"
+msgid "Expire Date"
+msgstr "ویرایش تاریخ انقضا"
 
 #: data/ui/managementdialog.blp:175
-msgctxt "Expiry unit of the new keypair"
+#, fuzzy
+msgctxt "Expire date unit of the new key pair"
 msgid "Months, disable with zero"
 msgstr "ماه، غیرفعال کردن با صفر"
 
@@ -649,7 +651,8 @@ msgid "Export public key to file"
 msgstr "صادر کردن کلید عمومی به پرونده"
 
 #: data/ui/keyrow.blp:38
-msgid "Edit expiry date"
+#, fuzzy
+msgid "Edit expire date"
 msgstr "ویرایش تاریخ انقضا"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
@@ -740,6 +743,15 @@ msgstr "متن ساده"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "محاورهٔ انتخاب کلید"
+
+#, fuzzy
+#~ msgctxt "Expire date of the new key pair"
+#~ msgid "Expiry"
+#~ msgstr "انقضا"
+
+#~ msgctxt "Expiry time of the new keypair"
+#~ msgid "Expiry"
+#~ msgstr "انقضا"
 
 #~ msgid "Failed to create new GPGME input data from file"
 #~ msgstr "ساختن دادهٔ ورودی جدید GPGME از پرونده شکست خورد"

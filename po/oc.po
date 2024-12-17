@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 15:55+0100\n"
+"POT-Creation-Date: 2024-12-17 19:45+0100\n"
 "PO-Revision-Date: 2024-12-01 19:04+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -635,12 +635,14 @@ msgid "Subkey"
 msgstr "Sosclau"
 
 #: data/ui/managementdialog.blp:174
-msgctxt "Expiry time of the new keypair"
-msgid "Expiry"
-msgstr "Expiracion"
+#, fuzzy
+msgctxt "Expire date of the new key pair"
+msgid "Expire Date"
+msgstr "Afichar las datas d'expiracion"
 
 #: data/ui/managementdialog.blp:175
-msgctxt "Expiry unit of the new keypair"
+#, fuzzy
+msgctxt "Expire date unit of the new key pair"
 msgid "Months, disable with zero"
 msgstr "Meses, desactivar amb zèro"
 
@@ -675,7 +677,7 @@ msgstr "Exportar la clau publica dins un fichièr"
 
 #: data/ui/keyrow.blp:38
 #, fuzzy
-msgid "Edit expiry date"
+msgid "Edit expire date"
 msgstr "Afichar las datas d'expiracion"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
@@ -766,6 +768,15 @@ msgstr "Tèxte brut"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Fenèstra de seleccion de clau"
+
+#, fuzzy
+#~ msgctxt "Expire date of the new key pair"
+#~ msgid "Expiry"
+#~ msgstr "Expiracion"
+
+#~ msgctxt "Expiry time of the new keypair"
+#~ msgid "Expiry"
+#~ msgstr "Expiracion"
 
 #~ msgid "Failed to create new GPGME output data in memory"
 #~ msgstr "Fracàs de la creacion de las donadas GPGME de sortida en memòria"

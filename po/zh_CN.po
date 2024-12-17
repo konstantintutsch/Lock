@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 15:55+0100\n"
+"POT-Creation-Date: 2024-12-17 19:45+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -642,12 +642,14 @@ msgid "Subkey"
 msgstr "子密钥"
 
 #: data/ui/managementdialog.blp:174
-msgctxt "Expiry time of the new keypair"
-msgid "Expiry"
-msgstr "到期"
+#, fuzzy
+msgctxt "Expire date of the new key pair"
+msgid "Expire Date"
+msgstr "查看到期日期"
 
 #: data/ui/managementdialog.blp:175
-msgctxt "Expiry unit of the new keypair"
+#, fuzzy
+msgctxt "Expire date unit of the new key pair"
 msgid "Months, disable with zero"
 msgstr "单位为月，输入 0 可禁用"
 
@@ -682,7 +684,7 @@ msgstr "导出公钥至文件"
 
 #: data/ui/keyrow.blp:38
 #, fuzzy
-msgid "Edit expiry date"
+msgid "Edit expire date"
 msgstr "查看到期日期"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
@@ -774,6 +776,15 @@ msgstr "纯文本"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "Expire date of the new key pair"
+#~ msgid "Expiry"
+#~ msgstr "到期"
+
+#~ msgctxt "Expiry time of the new keypair"
+#~ msgid "Expiry"
+#~ msgstr "到期"
 
 #, fuzzy
 #~ msgid "Failed to create new GPGME output data in memory"

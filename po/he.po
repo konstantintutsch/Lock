@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 15:55+0100\n"
+"POT-Creation-Date: 2024-12-17 19:45+0100\n"
 "PO-Revision-Date: 2024-12-01 16:55+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/Lock/Application/"
@@ -612,12 +612,14 @@ msgid "Subkey"
 msgstr "תת־מפתח"
 
 #: data/ui/managementdialog.blp:174
-msgctxt "Expiry time of the new keypair"
-msgid "Expiry"
-msgstr "תפוגת תוקף"
+#, fuzzy
+msgctxt "Expire date of the new key pair"
+msgid "Expire Date"
+msgstr "הצגת תאריכי תפוגת תוקף"
 
 #: data/ui/managementdialog.blp:175
-msgctxt "Expiry unit of the new keypair"
+#, fuzzy
+msgctxt "Expire date unit of the new key pair"
 msgid "Months, disable with zero"
 msgstr "חודשים, להשבית עם אפס"
 
@@ -652,7 +654,7 @@ msgstr "ייצוא מפתח ציבורי לקובץ"
 
 #: data/ui/keyrow.blp:38
 #, fuzzy
-msgid "Edit expiry date"
+msgid "Edit expire date"
 msgstr "הצגת תאריכי תפוגת תוקף"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
@@ -743,6 +745,15 @@ msgstr "טקסט פשוט"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "חלונית בחירת מפתח"
+
+#, fuzzy
+#~ msgctxt "Expire date of the new key pair"
+#~ msgid "Expiry"
+#~ msgstr "תפוגת תוקף"
+
+#~ msgctxt "Expiry time of the new keypair"
+#~ msgid "Expiry"
+#~ msgstr "תפוגת תוקף"
 
 #~ msgid "Failed to create new GPGME output data in memory"
 #~ msgstr "יצירת נתוני פלט חדשים בזיכרון מ־GPGME נכשלה"

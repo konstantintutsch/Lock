@@ -44,8 +44,8 @@ gboolean lock_key_row_export_on_completed(LockKeyRow * row);
 gboolean lock_key_row_remove_on_completed(LockKeyRow * row);
 
 /* Expire */
-void lock_key_row_edit_expiry(GtkButton * self, LockKeyRow * row);
-void lock_key_row_edit_expiry_finish(GtkCalendar * self, LockKeyRow * row);
+void lock_key_row_edit_expire(GtkButton * self, LockKeyRow * row);
+void lock_key_row_edit_expire_finish(GtkCalendar * self, LockKeyRow * row);
 
 /**
  * This function initializes a LockKeyRow.
@@ -66,9 +66,9 @@ static void lock_key_row_init(LockKeyRow *row)
                      G_CALLBACK(lock_key_row_export_file_present), row);
 
     g_signal_connect(row->expire_button, "clicked",
-                     G_CALLBACK(lock_key_row_edit_expiry), row);
+                     G_CALLBACK(lock_key_row_edit_expire), row);
     g_signal_connect(row->expire_calendar, "day-selected",
-                     G_CALLBACK(lock_key_row_edit_expiry_finish), row);
+                     G_CALLBACK(lock_key_row_edit_expire_finish), row);
 }
 
 /**
@@ -106,33 +106,33 @@ static void lock_key_row_class_init(LockKeyRowClass *class)
 LockKeyRow *lock_key_row_new(LockManagementDialog *dialog, gpgme_key_t key)
 {
     /* Key Expiry */
-    size_t expiry_date_length = strlen("YYYY-mm-dd") + 1;
-    gchar *expiry_date = malloc(expiry_date_length * sizeof(char));
+    size_t expire_date_length = strlen("YYYY-mm-dd") + 1;
+    gchar *expire_date = malloc(expire_date_length * sizeof(char));
 
-    size_t expiry_time_length = strlen("HH:MM") + 1;
-    gchar *expiry_time = malloc(expiry_time_length * sizeof(char));
+    size_t expire_time_length = strlen("HH:MM") + 1;
+    gchar *expire_time = malloc(expire_time_length * sizeof(char));
 
     if (key->subkeys->expires == 0) {
-        expiry_date = NULL;
-        expiry_time = NULL;
+        expire_date = NULL;
+        expire_time = NULL;
     } else {
-        time_t expiry_timestamp = (time_t) key->subkeys->expires;
-        struct tm *expiry = localtime(&expiry_timestamp);
+        time_t expire_timestamp = (time_t) key->subkeys->expires;
+        struct tm *expire = localtime(&expire_timestamp);
 
-        strftime(expiry_date, expiry_date_length, "%Y-%m-%d", expiry);
-        strftime(expiry_time, expiry_time_length, "%H:%M", expiry);
+        strftime(expire_date, expire_date_length, "%Y-%m-%d", expire);
+        strftime(expire_time, expire_time_length, "%H:%M", expire);
     }
 
     gchar *tooltip_text;
-    if (expiry_date == NULL || expiry_time == NULL) {
+    if (expire_date == NULL || expire_time == NULL) {
         tooltip_text = _("Key does not expire");
     } else {
         tooltip_text = g_strdup_printf((key->expired) ? C_
                                        ("First formatter: YYYY-mm-dd; Second formatter: HH:MM",
                                         "Expired %s at %s") : C_
                                        ("First formatter: YYYY-mm-dd; Second formatter: HH:MM",
-                                        "Expires %s at %s"), expiry_date,
-                                       expiry_time);
+                                        "Expires %s at %s"), expire_date,
+                                       expire_time);
     }
 
     /* Row */
@@ -149,11 +149,11 @@ LockKeyRow *lock_key_row_new(LockManagementDialog *dialog, gpgme_key_t key)
     //memcpy(row->key, key, sizeof(&key));
 
     /* Cleanup */
-    g_free(expiry_date);
-    expiry_date = NULL;
+    g_free(expire_date);
+    expire_date = NULL;
 
-    g_free(expiry_time);
-    expiry_time = NULL;
+    g_free(expire_time);
+    expire_time = NULL;
 
     return row;
 }
@@ -372,12 +372,12 @@ gboolean lock_key_row_remove_on_completed(LockKeyRow *row)
 /**** Expiry ****/
 
 /**
- * This function lets the user update the expiry time of a key.
+ * This function lets the user update the expire time of a key.
  *
  * @param self Gtk.Button::clicked
  * @param row Gtk.Button::clicked
  */
-void lock_key_row_edit_expiry(GtkButton *self, LockKeyRow *row)
+void lock_key_row_edit_expire(GtkButton *self, LockKeyRow *row)
 {
     (void)self;
 
@@ -385,12 +385,12 @@ void lock_key_row_edit_expiry(GtkButton *self, LockKeyRow *row)
 }
 
 /**
- * This function applies the user-selected expiry time to a key.
+ * This function applies the user-selected expire time to a key.
  *
  * @param self Gtk.Calendar::day-selected
  * @param row Gtk.Calendar::day-selected
  */
-void lock_key_row_edit_expiry_finish(GtkCalendar *self, LockKeyRow *row)
+void lock_key_row_edit_expire_finish(GtkCalendar *self, LockKeyRow *row)
 {
     AdwToast *toast;
 

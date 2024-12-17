@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 15:55+0100\n"
+"POT-Creation-Date: 2024-12-17 19:45+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -612,12 +612,14 @@ msgid "Subkey"
 msgstr "Aliavain"
 
 #: data/ui/managementdialog.blp:174
-msgctxt "Expiry time of the new keypair"
-msgid "Expiry"
-msgstr "Vanheneminen"
+#, fuzzy
+msgctxt "Expire date of the new key pair"
+msgid "Expire Date"
+msgstr "Muokkaa vanhenemispäivää"
 
 #: data/ui/managementdialog.blp:175
-msgctxt "Expiry unit of the new keypair"
+#, fuzzy
+msgctxt "Expire date unit of the new key pair"
 msgid "Months, disable with zero"
 msgstr "Kuukaudet, nolla tarkoittaa ei vanhenemista"
 
@@ -651,7 +653,8 @@ msgid "Export public key to file"
 msgstr "Vie julkinen avain tiedostoon"
 
 #: data/ui/keyrow.blp:38
-msgid "Edit expiry date"
+#, fuzzy
+msgid "Edit expire date"
 msgstr "Muokkaa vanhenemispäivää"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
@@ -744,6 +747,15 @@ msgstr "Raakateksti"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Avaimen valinnan ikkuna"
+
+#, fuzzy
+#~ msgctxt "Expire date of the new key pair"
+#~ msgid "Expiry"
+#~ msgstr "Vanheneminen"
+
+#~ msgctxt "Expiry time of the new keypair"
+#~ msgid "Expiry"
+#~ msgstr "Vanheneminen"
 
 #~ msgid "Failed to create new GPGME output data in memory"
 #~ msgstr "Uuden GPGME-lähtödatan luominen muistiin epäonnistui"

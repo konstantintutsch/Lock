@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 15:55+0100\n"
+"POT-Creation-Date: 2024-12-17 19:45+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -614,12 +614,14 @@ msgid "Subkey"
 msgstr "Alamvõti"
 
 #: data/ui/managementdialog.blp:174
-msgctxt "Expiry time of the new keypair"
-msgid "Expiry"
-msgstr "Aegumine"
+#, fuzzy
+msgctxt "Expire date of the new key pair"
+msgid "Expire Date"
+msgstr "Muuda aegumise kuupäeva"
 
 #: data/ui/managementdialog.blp:175
-msgctxt "Expiry unit of the new keypair"
+#, fuzzy
+msgctxt "Expire date unit of the new key pair"
 msgid "Months, disable with zero"
 msgstr "Kuudes, null märgib aegumise puudumist"
 
@@ -653,7 +655,8 @@ msgid "Export public key to file"
 msgstr "Ekspordi avalik võti faili"
 
 #: data/ui/keyrow.blp:38
-msgid "Edit expiry date"
+#, fuzzy
+msgid "Edit expire date"
 msgstr "Muuda aegumise kuupäeva"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
@@ -747,6 +750,15 @@ msgstr "Vormindamata tekst"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Võtmevaliku vaade"
+
+#, fuzzy
+#~ msgctxt "Expire date of the new key pair"
+#~ msgid "Expiry"
+#~ msgstr "Aegumine"
+
+#~ msgctxt "Expiry time of the new keypair"
+#~ msgid "Expiry"
+#~ msgstr "Aegumine"
 
 #~ msgid "Failed to create new GPGME output data in memory"
 #~ msgstr "Uute GPGME väljundandmete loomine mällu ei õnnestunud"

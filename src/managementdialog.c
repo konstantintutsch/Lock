@@ -42,7 +42,7 @@ struct _LockManagementDialog {
     AdwEntryRow *comment_entry;
     AdwComboRow *sign_entry;
     AdwComboRow *encrypt_entry;
-    AdwSpinRow *expiry_entry;
+    AdwSpinRow *expire_entry;
 };
 
 G_DEFINE_TYPE(LockManagementDialog, lock_management_dialog, ADW_TYPE_DIALOG);
@@ -124,7 +124,7 @@ static void lock_management_dialog_class_init(LockManagementDialogClass *class)
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
                                          LockManagementDialog, encrypt_entry);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, expiry_entry);
+                                         LockManagementDialog, expire_entry);
 }
 
 /**
@@ -398,12 +398,12 @@ void lock_management_dialog_generate(LockManagementDialog *dialog)
     const gchar *encrypt_algorithm =
         gtk_string_list_get_string(encrypt_list, encrypt_selected);
 
-    gint expiry_months = (gint) adw_spin_row_get_value(dialog->expiry_entry);
-    unsigned long expiry_seconds =
-        ((expiry_months / 2) * 31 + (expiry_months / 2) * 30) * 24 * 60 * 60;
+    gint expire_months = (gint) adw_spin_row_get_value(dialog->expire_entry);
+    unsigned long expire_seconds =
+        ((expire_months / 2) * 31 + (expire_months / 2) * 30) * 24 * 60 * 60;
 
     dialog->generate_success =
-        key_generate(userid, sign_algorithm, encrypt_algorithm, expiry_seconds);
+        key_generate(userid, sign_algorithm, encrypt_algorithm, expire_seconds);
 
     /* Cleanup */
     g_free(userid);
@@ -439,7 +439,7 @@ gboolean lock_management_dialog_generate_on_completed(LockManagementDialog
         gtk_editable_set_text(GTK_EDITABLE(dialog->comment_entry), "");
         adw_combo_row_set_selected(dialog->sign_entry, 0);
         adw_combo_row_set_selected(dialog->encrypt_entry, 0);
-        adw_spin_row_set_value(dialog->expiry_entry, 48);       // also hardcoded in managementdialog.blp
+        adw_spin_row_set_value(dialog->expire_entry, 48);       // also hardcoded in managementdialog.blp
     }
 
     adw_toast_set_timeout(toast, 2);

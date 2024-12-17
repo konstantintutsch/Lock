@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 15:55+0100\n"
+"POT-Creation-Date: 2024-12-17 19:45+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -637,12 +637,14 @@ msgid "Subkey"
 msgstr "Alt anahtar"
 
 #: data/ui/managementdialog.blp:174
-msgctxt "Expiry time of the new keypair"
-msgid "Expiry"
-msgstr "Geçerlilik Sonu"
+#, fuzzy
+msgctxt "Expire date of the new key pair"
+msgid "Expire Date"
+msgstr "Son geçerlilik tarihlerini görüntüleyin"
 
 #: data/ui/managementdialog.blp:175
-msgctxt "Expiry unit of the new keypair"
+#, fuzzy
+msgctxt "Expire date unit of the new key pair"
 msgid "Months, disable with zero"
 msgstr "Aylar, sıfır ile devre dışı bırak"
 
@@ -677,7 +679,7 @@ msgstr "Genel anahtarı dosyaya aktar"
 
 #: data/ui/keyrow.blp:38
 #, fuzzy
-msgid "Edit expiry date"
+msgid "Edit expire date"
 msgstr "Son geçerlilik tarihlerini görüntüleyin"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
@@ -770,6 +772,15 @@ msgstr "Düz metin"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Anahtar seçimi iletişim kutusu"
+
+#, fuzzy
+#~ msgctxt "Expire date of the new key pair"
+#~ msgid "Expiry"
+#~ msgstr "Geçerlilik Sonu"
+
+#~ msgctxt "Expiry time of the new keypair"
+#~ msgid "Expiry"
+#~ msgstr "Geçerlilik Sonu"
 
 #, fuzzy
 #~ msgid "Failed to create new GPGME output data in memory"

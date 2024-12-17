@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 15:55+0100\n"
-"PO-Revision-Date: 2024-12-15 16:07+0100\n"
+"POT-Creation-Date: 2024-12-17 19:45+0100\n"
+"PO-Revision-Date: 2024-12-17 19:45+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -620,12 +620,12 @@ msgid "Subkey"
 msgstr "Unterschlüssel"
 
 #: data/ui/managementdialog.blp:174
-msgctxt "Expiry time of the new keypair"
-msgid "Expiry"
-msgstr "Ablaufdauer"
+msgctxt "Expire date of the new key pair"
+msgid "Expire Date"
+msgstr "Ablaufzeitpunkt"
 
 #: data/ui/managementdialog.blp:175
-msgctxt "Expiry unit of the new keypair"
+msgctxt "Expire date unit of the new key pair"
 msgid "Months, disable with zero"
 msgstr "Monate, mit Null ausschalten"
 
@@ -659,7 +659,7 @@ msgid "Export public key to file"
 msgstr "Öffentlichen Schlüssel in Datei exportieren"
 
 #: data/ui/keyrow.blp:38
-msgid "Edit expiry date"
+msgid "Edit expire date"
 msgstr "Ablaufzeitpunkt bearbeiten"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
@@ -752,6 +752,14 @@ msgstr "Klartext"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Schlüsselwahl Dialog"
+
+#~ msgctxt "Expire date of the new key pair"
+#~ msgid "Expiry"
+#~ msgstr "Ablauf"
+
+#~ msgctxt "Expiry time of the new keypair"
+#~ msgid "Expiry"
+#~ msgstr "Ablaufdauer"
 
 #~ msgid "Failed to create new GPGME output data in memory"
 #~ msgstr "Fehler beim Erstellen von GPGME Ausgangsdaten im Hauptspeicher"

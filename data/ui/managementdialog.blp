@@ -170,9 +170,9 @@ template $LockManagementDialog : Adw.Dialog {
                                             };
                                         }
 
-                                        Adw.SpinRow expiry_entry {
-                                            title: C_("Expiry time of the new keypair", "Expiry");
-                                            subtitle: C_("Expiry unit of the new keypair", "Months, disable with zero");
+                                        Adw.SpinRow expire_entry {
+                                            title: C_("Expire date of the new key pair", "Expire Date");
+                                            subtitle: C_("Expire date unit of the new key pair", "Months, disable with zero");
 
                                             adjustment: Gtk.Adjustment {
                                                 lower: 0;
