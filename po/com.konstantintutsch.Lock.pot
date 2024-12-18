@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 20:19+0100\n"
+"POT-Creation-Date: 2024-12-18 15:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,29 +109,29 @@ msgstr ""
 msgid "Signature valid - by %s"
 msgstr ""
 
-#: src/managementdialog.c:356
+#: src/managementdialog.c:364
 msgid "Import failed"
 msgstr ""
 
-#: src/managementdialog.c:358
+#: src/managementdialog.c:366
 msgid "Keys imported"
 msgstr ""
 
-#: src/managementdialog.c:404
+#: src/managementdialog.c:412
 msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
 msgid "%B %e, %Y"
 msgstr ""
 
-#: src/managementdialog.c:494
+#: src/managementdialog.c:429
+msgid "No expire date"
+msgstr ""
+
+#: src/managementdialog.c:517
 msgid "Generation failed"
 msgstr ""
 
-#: src/managementdialog.c:496
+#: src/managementdialog.c:519
 msgid "Keypair generated"
-msgstr ""
-
-#: src/managementdialog.c:504 data/ui/managementdialog.blp:175
-msgid "No expire date"
 msgstr ""
 
 #: src/keyrow.c:128
@@ -621,16 +621,20 @@ msgctxt "Expire date of the new key pair"
 msgid "Expire Date"
 msgstr ""
 
-#: data/ui/managementdialog.blp:186
+#: data/ui/managementdialog.blp:184
+msgid "Remove expire date"
+msgstr ""
+
+#: data/ui/managementdialog.blp:192
 msgid "Select expire date of the new key pair"
 msgstr ""
 
-#: data/ui/managementdialog.blp:207
+#: data/ui/managementdialog.blp:213
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr ""
 
-#: data/ui/managementdialog.blp:208
+#: data/ui/managementdialog.blp:214
 msgid "Generate a new keypair"
 msgstr ""
 

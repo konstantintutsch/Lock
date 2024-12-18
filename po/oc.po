@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 20:19+0100\n"
+"POT-Creation-Date: 2024-12-18 15:14+0100\n"
 "PO-Revision-Date: 2024-12-01 19:04+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -111,31 +111,31 @@ msgstr "Signatura invalida"
 msgid "Signature valid - by %s"
 msgstr "Signatura valida – per %s"
 
-#: src/managementdialog.c:356
+#: src/managementdialog.c:364
 msgid "Import failed"
 msgstr "Fracàs de l'importacion"
 
-#: src/managementdialog.c:358
+#: src/managementdialog.c:366
 msgid "Keys imported"
 msgstr "Claus importadas"
 
-#: src/managementdialog.c:404
+#: src/managementdialog.c:412
 msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
 msgid "%B %e, %Y"
 msgstr ""
 
-#: src/managementdialog.c:494
-msgid "Generation failed"
-msgstr "Fracàs de generacion"
-
-#: src/managementdialog.c:496
-msgid "Keypair generated"
-msgstr "Parelh de claus generat"
-
-#: src/managementdialog.c:504 data/ui/managementdialog.blp:175
+#: src/managementdialog.c:429
 #, fuzzy
 msgid "No expire date"
 msgstr "Afichar las datas d'expiracion"
+
+#: src/managementdialog.c:517
+msgid "Generation failed"
+msgstr "Fracàs de generacion"
+
+#: src/managementdialog.c:519
+msgid "Keypair generated"
+msgstr "Parelh de claus generat"
 
 #: src/keyrow.c:128
 msgid "Key does not expire"
@@ -650,17 +650,22 @@ msgctxt "Expire date of the new key pair"
 msgid "Expire Date"
 msgstr "Afichar las datas d'expiracion"
 
-#: data/ui/managementdialog.blp:186
+#: data/ui/managementdialog.blp:184
+#, fuzzy
+msgid "Remove expire date"
+msgstr "Afichar las datas d'expiracion"
+
+#: data/ui/managementdialog.blp:192
 #, fuzzy
 msgid "Select expire date of the new key pair"
 msgstr "Generar un parelh de claus novèl"
 
-#: data/ui/managementdialog.blp:207
+#: data/ui/managementdialog.blp:213
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "Generar"
 
-#: data/ui/managementdialog.blp:208
+#: data/ui/managementdialog.blp:214
 msgid "Generate a new keypair"
 msgstr "Generar un parelh de claus novèl"
 

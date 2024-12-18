@@ -172,11 +172,17 @@ template $LockManagementDialog : Adw.Dialog {
 
                                         Adw.ActionRow expire_entry {
                                             title: C_("Expire date of the new key pair", "Expire Date");
-                                            subtitle: _("No expire date");
 
                                             Gtk.Box {
                                                 orientation: horizontal;
                                                 valign: center;
+
+                                                Gtk.Button expire_reset_button {
+                                                    styles ["flat"]
+
+                                                    icon-name: "edit-clear-symbolic";
+                                                    tooltip-text: _("Remove expire date");
+                                                }
 
                                                 Gtk.Box {
                                                     Gtk.Button expire_button {
