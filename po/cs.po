@@ -39,7 +39,7 @@ msgstr "Přeložit"
 #: src/application.c:208
 msgctxt "Button linking to source code"
 msgid "Develop"
-msgstr "Vyvíjet"
+msgstr "Vývoj"
 
 #: src/application.c:220
 msgid "translator-credits"
@@ -63,23 +63,20 @@ msgid "Could not read text from clipboard: %s"
 msgstr "Nepodařilo se přečíst text ze schránky: %s"
 
 #: src/window.c:537
-#, fuzzy
 msgid "Text pasted"
-msgstr "Text zkopírován"
+msgstr "Text vložen"
 
 #: src/window.c:775 src/window.c:837
 msgid "Encryption failed"
 msgstr "Zašifrování selhalo"
 
 #: src/window.c:777
-#, fuzzy
 msgid "Text encrypted"
-msgstr "Text rozšifrován"
+msgstr "Text zašifrován"
 
 #: src/window.c:839
-#, fuzzy
 msgid "File encrypted"
-msgstr "Soubor rozšifrován"
+msgstr "Soubor zašifrován"
 
 #: src/window.c:895 src/window.c:953
 msgid "Decryption failed"
@@ -114,43 +111,44 @@ msgstr "Neplatný podpis"
 msgid "Signature valid - by %s"
 msgstr "Platný podpis od - %s"
 
-#: src/managementdialog.c:364
+#: src/managementdialog.c:364 src/managementdialog.c:356
+#: src/managementdialog.c:334
 msgid "Import failed"
-msgstr "Import selhal"
+msgstr "Importování selhalo"
 
-#: src/managementdialog.c:366
-#, fuzzy
+#: src/managementdialog.c:336
 msgid "Keys imported"
 msgstr "Klíč(e) importován(y)"
 
-#: src/managementdialog.c:412
+#: src/managementdialog.c:412 src/managementdialog.c:404
 msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
 msgid "%B %e, %Y"
 msgstr ""
 
-#: src/managementdialog.c:429
+#: src/managementdialog.c:429 src/managementdialog.c:504
+#: data/ui/managementdialog.blp:175
 #, fuzzy
 msgid "No expire date"
 msgstr "Zobrazit datum platnosti"
 
-#: src/managementdialog.c:517
-#, fuzzy
+#: src/managementdialog.c:432
 msgid "Generation failed"
-msgstr "Ověření selhalo"
+msgstr "Vytváření selhalo"
 
-#: src/managementdialog.c:519
+#: src/managementdialog.c:519 src/managementdialog.c:496
+#: src/managementdialog.c:434
 msgid "Keypair generated"
-msgstr "Pár klíčů vygenerován"
+msgstr "Pár klíčů vytvořen"
 
 #: src/keyrow.c:128
 msgid "Key does not expire"
 msgstr "Platnost klíče nevyprší"
 
 #: src/keyrow.c:132
-#, fuzzy, c-format
+#, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
-msgstr "Vyprší %s v %s"
+msgstr "Vypršel %s v %s"
 
 #: src/keyrow.c:134
 #, c-format
@@ -159,9 +157,8 @@ msgid "Expires %s at %s"
 msgstr "Vyprší %s v %s"
 
 #: src/keyrow.c:174
-#, fuzzy
 msgid "Fingerprint copied"
-msgstr "Otisk"
+msgstr "Otisk zkopírován"
 
 #: src/keyrow.c:263
 msgid "Export failed"
@@ -172,9 +169,8 @@ msgid "Key exported"
 msgstr "Klíč exportován"
 
 #: src/keyrow.c:310
-#, fuzzy
 msgid "Remove key?"
-msgstr "Obnovit klíče"
+msgstr "Odstranit klíč?"
 
 #: src/keyrow.c:313
 #, c-format
@@ -186,34 +182,29 @@ msgid "_Cancel"
 msgstr "_Zrušit"
 
 #: src/keyrow.c:317
-#, fuzzy
 msgid "_Remove"
-msgstr "Obnovit klíče"
+msgstr "_Odstranit"
 
 #: src/keyrow.c:358
-#, fuzzy
 msgid "Removal failed"
-msgstr "Import selhal"
+msgstr "Odstranění selhalo"
 
 #: src/keyrow.c:360
-#, fuzzy
 msgid "Key removed"
-msgstr "Klíč exportován"
+msgstr "Klíč odstraněn"
 
 #: src/keyrow.c:410
-#, fuzzy
 msgid "Renewal failed"
-msgstr "Import selhal"
+msgstr "Obnovení selhalo"
 
 #: src/keyrow.c:412
-#, fuzzy
 msgid "Expiry renewed"
-msgstr "Zobrazit datum platnosti"
+msgstr "Platnost obnovena"
 
 #: src/cryptography.c:29
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME context: %s"
-msgstr "vytvoření nového GPGME kontextu"
+msgstr "Selhalo vytvoření nového GPGME kontextu: %s"
 
 #: src/cryptography.c:37
 #, fuzzy, c-format
@@ -226,14 +217,14 @@ msgid "Failed to set pinentry mode of GPGME context to ask: %s"
 msgstr "nastavení pinentry módu GPGME kontextu na zeptání se"
 
 #: src/cryptography.c:105
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to open file for writing: %s"
-msgstr "Selhalo otevření exportního souboru: %s"
+msgstr "Selhalo otevření souboru pro zapisování: %s"
 
 #: src/cryptography.c:113
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to write to file: %s"
-msgstr "Selhalo otevření exportního souboru: %s"
+msgstr "Selhal zápis do souboru: %s"
 
 #: src/cryptography.c:150
 #, fuzzy, c-format
@@ -266,9 +257,9 @@ msgid "Failed to load GPGME key data from file: %s"
 msgstr "načtení GPGME dat klíče ze souboru"
 
 #: src/cryptography.c:296
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to import GPG key from file: %s"
-msgstr "importování GPG klíče ze souboru"
+msgstr "Selhalo importování GPG klíče ze souboru: %s"
 
 #: src/cryptography.c:333
 #, fuzzy, c-format
@@ -276,14 +267,14 @@ msgid "Failed to create GPGME key data in memory: %s"
 msgstr "vytvoření GPGME dat klíče v paměti"
 
 #: src/cryptography.c:341
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to export GPG key(s) to file: %s"
-msgstr "importování GPG klíče ze souboru"
+msgstr "Selhalo exportování GPG klíče do souboru: %s"
 
 #: src/cryptography.c:386
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for expiry date update: %s"
-msgstr "importování GPG klíče ze souboru"
+msgstr "Selhalo získání GPG klíče k upravení platnosti: %s"
 
 #: src/cryptography.c:394
 #, fuzzy, c-format
@@ -291,14 +282,14 @@ msgid "Failed to update the expiry date of a key: %s"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
 #: src/cryptography.c:428
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for removal: %s"
-msgstr "importování GPG klíče ze souboru"
+msgstr "Selhalo získání GPG klíče k odstranění: %s"
 
 #: src/cryptography.c:436
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to remove GPG key: %s"
-msgstr "importování GPG klíče ze souboru"
+msgstr "Selhalo odstranění GPG klíče: %s"
 
 #: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
 #: src/cryptography.c:659
@@ -420,9 +411,8 @@ msgid "Failed to create file verification thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
 #: src/threading.c:216
-#, fuzzy
 msgid "Failed to create key import thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Selhalo vytvoření threadu pro importování klíče"
 
 #: src/threading.c:237
 #, fuzzy
@@ -605,7 +595,6 @@ msgid "Your GnuPG keyring does not contain any keys."
 msgstr "Ve vašem systému nejsou uloženy žádné GnuPG klíče."
 
 #: data/ui/managementdialog.blp:89
-#, fuzzy
 msgctxt "Import keys from files"
 msgid "Import"
 msgstr "Importovat"
@@ -670,17 +659,19 @@ msgstr "Zobrazit datum platnosti"
 msgid "Remove expire date"
 msgstr "Zobrazit datum platnosti"
 
-#: data/ui/managementdialog.blp:192
+#: data/ui/managementdialog.blp:192 data/ui/managementdialog.blp:186
 #, fuzzy
 msgid "Select expire date of the new key pair"
 msgstr "Generovat nový pár klíčů"
 
-#: data/ui/managementdialog.blp:213
+#: data/ui/managementdialog.blp:213 data/ui/managementdialog.blp:207
+#: data/ui/managementdialog.blp:197
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "Generovat"
 
-#: data/ui/managementdialog.blp:214
+#: data/ui/managementdialog.blp:214 data/ui/managementdialog.blp:208
+#: data/ui/managementdialog.blp:198
 msgid "Generate a new keypair"
 msgstr "Generovat nový pár klíčů"
 
@@ -697,9 +688,8 @@ msgid "Expiry"
 msgstr "Platnost"
 
 #: data/ui/keyrow.blp:20
-#, fuzzy
 msgid "Remove key"
-msgstr "Obnovit klíče"
+msgstr "Odstranit klíč"
 
 #: data/ui/keyrow.blp:27
 msgid "Export public key to file"
@@ -753,9 +743,8 @@ msgid "Generate new keypairs"
 msgstr "Spravovat klíče"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
-#, fuzzy
 msgid "Import keys"
-msgstr "Importovat"
+msgstr "Importovat klíče"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:21
 #, fuzzy
@@ -771,9 +760,8 @@ msgid "Update expiry dates of expired keys"
 msgstr "Aktualizovat dobu platnosti prošlých klíčů"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
-#, fuzzy
 msgid "Remove keys"
-msgstr "Obnovit klíče"
+msgstr "Odstranit klíče"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:47
 msgid "Light Appearance"
@@ -803,18 +791,30 @@ msgstr "Holý text"
 msgid "Key selection dialog"
 msgstr "Okno pro vybírání klíče"
 
+#: data/ui/managementdialog.blp:175
 #, fuzzy
-#~ msgctxt "Expire date unit of the new key pair"
-#~ msgid "Months, disable with zero"
-#~ msgstr "Měsíce, nulou vypnete"
+msgctxt "Expire date unit of the new key pair"
+msgid "Months, disable with zero"
+msgstr "Měsíce, nulou vypnete"
+
+#: data/ui/managementdialog.blp:174
+#, fuzzy
+msgctxt "Expiry time of the new keypair"
+msgid "Expiry"
+msgstr "Platnost"
+
+#: data/ui/managementdialog.blp:175
+msgctxt "Expiry unit of the new keypair"
+msgid "Months, disable with zero"
+msgstr "Měsíce, nulou vypnete"
+
+#: data/ui/keyrow.blp:38
+#, fuzzy
+msgid "Edit expiry date"
+msgstr "Zobrazit datum platnosti"
 
 #, fuzzy
 #~ msgctxt "Expire date of the new key pair"
-#~ msgid "Expiry"
-#~ msgstr "Platnost"
-
-#, fuzzy
-#~ msgctxt "Expiry time of the new keypair"
 #~ msgid "Expiry"
 #~ msgstr "Platnost"
 

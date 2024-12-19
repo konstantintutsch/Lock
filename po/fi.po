@@ -214,14 +214,14 @@ msgid "Failed to set pinentry mode of GPGME context to ask: %s"
 msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
 
 #: src/cryptography.c:105
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to open file for writing: %s"
-msgstr "Vientitiedoston avaaminen epäonnistui: %s"
+msgstr "Tiedoston avaaminen kirjoitusta varten epäonnistui: %s"
 
 #: src/cryptography.c:113
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to write to file: %s"
-msgstr "Vientitiedoston avaaminen epäonnistui: %s"
+msgstr "Tiedostoon kirjoittaminen epäonnistui: %s"
 
 #: src/cryptography.c:150
 #, fuzzy, c-format
@@ -253,9 +253,9 @@ msgid "Failed to load GPGME key data from file: %s"
 msgstr "GPGME-avaimen lataaminen tiedostosta epäonnistui"
 
 #: src/cryptography.c:296
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to import GPG key from file: %s"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "GPG-avaimen tuominen tiedostosta epäonnistui: %s"
 
 #: src/cryptography.c:333
 #, fuzzy, c-format
@@ -263,9 +263,9 @@ msgid "Failed to create GPGME key data in memory: %s"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
 #: src/cryptography.c:341
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to export GPG key(s) to file: %s"
-msgstr "GPG-avaimen tai -avainten vieminen tiedostoon epäonnistui"
+msgstr "GPG-avaimen tai -avainten vieminen tiedostoon epäonnistui: %s"
 
 #: src/cryptography.c:386
 #, fuzzy, c-format
@@ -273,9 +273,9 @@ msgid "Failed to get GPG key for expiry date update: %s"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
 #: src/cryptography.c:394
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to update the expiry date of a key: %s"
-msgstr "Vanhenemisajan päivittäminen epäonnistui"
+msgstr "Avaimen vanhenemisajan päivittäminen epäonnistui: %s"
 
 #: src/cryptography.c:428
 #, fuzzy, c-format
@@ -283,9 +283,9 @@ msgid "Failed to get GPG key for removal: %s"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
 #: src/cryptography.c:436
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to remove GPG key: %s"
-msgstr "GPG-avaimen poistaminen epäonnistui"
+msgstr "GPG-avaimen poistaminen epäonnistui: %s"
 
 #: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
 #: src/cryptography.c:659
@@ -762,6 +762,20 @@ msgstr "Raakateksti"
 msgid "Key selection dialog"
 msgstr "Avaimen valinnan ikkuna"
 
+#: data/ui/managementdialog.blp:174
+msgctxt "Expiry time of the new keypair"
+msgid "Expiry"
+msgstr "Vanheneminen"
+
+#: data/ui/managementdialog.blp:175
+msgctxt "Expiry unit of the new keypair"
+msgid "Months, disable with zero"
+msgstr "Kuukaudet, nolla tarkoittaa ei vanhenemista"
+
+#: data/ui/keyrow.blp:38
+msgid "Edit expiry date"
+msgstr "Muokkaa vanhenemispäivää"
+
 #, fuzzy
 #~ msgctxt "Expire date unit of the new key pair"
 #~ msgid "Months, disable with zero"
@@ -769,10 +783,6 @@ msgstr "Avaimen valinnan ikkuna"
 
 #, fuzzy
 #~ msgctxt "Expire date of the new key pair"
-#~ msgid "Expiry"
-#~ msgstr "Vanheneminen"
-
-#~ msgctxt "Expiry time of the new keypair"
 #~ msgid "Expiry"
 #~ msgstr "Vanheneminen"
 
