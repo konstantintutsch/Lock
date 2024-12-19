@@ -369,7 +369,7 @@ gboolean lock_key_row_remove_on_completed(LockKeyRow *row)
     return false;               // https://docs.gtk.org/glib/func.idle_add.html
 }
 
-/**** Expiry ****/
+/**** Expire ****/
 
 /**
  * This function lets the user update the expire time of a key.
@@ -409,7 +409,7 @@ void lock_key_row_edit_expire_finish(GtkCalendar *self, LockKeyRow *row)
     if (!expire_success) {
         toast = adw_toast_new(_("Renewal failed"));
     } else {
-        toast = adw_toast_new(_("Expiry renewed"));
+        toast = adw_toast_new(_("Expire date renewed"));
 
         lock_management_dialog_refresh(NULL, row->dialog);
     }

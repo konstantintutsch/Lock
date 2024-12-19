@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 08:13+0100\n"
+"POT-Creation-Date: 2024-12-19 08:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,7 +131,7 @@ msgid "Generation failed"
 msgstr ""
 
 #: src/managementdialog.c:519
-msgid "Keypair generated"
+msgid "Key pair generated"
 msgstr ""
 
 #: src/keyrow.c:128
@@ -192,7 +192,7 @@ msgid "Renewal failed"
 msgstr ""
 
 #: src/keyrow.c:412
-msgid "Expiry renewed"
+msgid "Expire date renewed"
 msgstr ""
 
 #: src/cryptography.c:29
@@ -266,12 +266,12 @@ msgstr ""
 
 #: src/cryptography.c:386
 #, c-format
-msgid "Failed to get GPG key for expiry date update: %s"
+msgid "Failed to get GPG key for expire date renewal: %s"
 msgstr ""
 
 #: src/cryptography.c:394
 #, c-format
-msgid "Failed to update the expiry date of a key: %s"
+msgid "Failed to renew the expire date of a key: %s"
 msgstr ""
 
 #: src/cryptography.c:428
@@ -398,15 +398,15 @@ msgstr ""
 msgid "Failed to create key import thread"
 msgstr ""
 
-#: src/threading.c:237
-msgid "Failed to create key generation thread"
+#: src/threading.c:238
+msgid "Failed to create key pair generation thread"
 msgstr ""
 
-#: src/threading.c:252
+#: src/threading.c:253
 msgid "Failed to create key export thread"
 msgstr ""
 
-#: src/threading.c:264
+#: src/threading.c:265
 msgid "Failed to create key removal thread"
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 08:13+0100\n"
+"POT-Creation-Date: 2024-12-19 08:41+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/Lock/Application/"
@@ -134,7 +134,8 @@ msgid "Generation failed"
 msgstr "Vytváření selhalo"
 
 #: src/managementdialog.c:519
-msgid "Keypair generated"
+#, fuzzy
+msgid "Key pair generated"
 msgstr "Pár klíčů vytvořen"
 
 #: src/keyrow.c:128
@@ -195,7 +196,8 @@ msgid "Renewal failed"
 msgstr "Obnovení selhalo"
 
 #: src/keyrow.c:412
-msgid "Expiry renewed"
+#, fuzzy
+msgid "Expire date renewed"
 msgstr "Platnost obnovena"
 
 #: src/cryptography.c:29
@@ -269,13 +271,13 @@ msgid "Failed to export GPG key(s) to file: %s"
 msgstr "Selhalo exportování GPG klíče do souboru: %s"
 
 #: src/cryptography.c:386
-#, c-format
-msgid "Failed to get GPG key for expiry date update: %s"
+#, fuzzy, c-format
+msgid "Failed to get GPG key for expire date renewal: %s"
 msgstr "Selhalo získání GPG klíče k upravení platnosti: %s"
 
 #: src/cryptography.c:394
 #, fuzzy, c-format
-msgid "Failed to update the expiry date of a key: %s"
+msgid "Failed to renew the expire date of a key: %s"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
 #: src/cryptography.c:428
@@ -411,17 +413,17 @@ msgstr "Selhalo vytvoření vlákna %s: %s"
 msgid "Failed to create key import thread"
 msgstr "Selhalo vytvoření threadu pro importování klíče"
 
-#: src/threading.c:237
+#: src/threading.c:238
 #, fuzzy
-msgid "Failed to create key generation thread"
+msgid "Failed to create key pair generation thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:252
+#: src/threading.c:253
 #, fuzzy
 msgid "Failed to create key export thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:264
+#: src/threading.c:265
 #, fuzzy
 msgid "Failed to create key removal thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 08:13+0100\n"
+"POT-Creation-Date: 2024-12-19 08:41+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -134,7 +134,8 @@ msgid "Generation failed"
 msgstr "Luominen epäonnistui"
 
 #: src/managementdialog.c:519
-msgid "Keypair generated"
+#, fuzzy
+msgid "Key pair generated"
 msgstr "Avainpari luotu"
 
 #: src/keyrow.c:128
@@ -195,7 +196,8 @@ msgid "Renewal failed"
 msgstr "Uusiminen epäonnistui"
 
 #: src/keyrow.c:412
-msgid "Expiry renewed"
+#, fuzzy
+msgid "Expire date renewed"
 msgstr "Vanheneminen uusittiin"
 
 #: src/cryptography.c:29
@@ -269,12 +271,12 @@ msgstr "GPG-avaimen tai -avainten vieminen tiedostoon epäonnistui: %s"
 
 #: src/cryptography.c:386
 #, fuzzy, c-format
-msgid "Failed to get GPG key for expiry date update: %s"
+msgid "Failed to get GPG key for expire date renewal: %s"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
 
 #: src/cryptography.c:394
-#, c-format
-msgid "Failed to update the expiry date of a key: %s"
+#, fuzzy, c-format
+msgid "Failed to renew the expire date of a key: %s"
 msgstr "Avaimen vanhenemisajan päivittäminen epäonnistui: %s"
 
 #: src/cryptography.c:428
@@ -401,15 +403,16 @@ msgstr "Tiedoston vahvistussäikeen luominen epäonnistui"
 msgid "Failed to create key import thread"
 msgstr "Avaimen tuontisäikeen luominen epäonnistui"
 
-#: src/threading.c:237
-msgid "Failed to create key generation thread"
+#: src/threading.c:238
+#, fuzzy
+msgid "Failed to create key pair generation thread"
 msgstr "Avaimen luontisäikeen luominen epäonnistui"
 
-#: src/threading.c:252
+#: src/threading.c:253
 msgid "Failed to create key export thread"
 msgstr "Avaimen vientisäikeen luominen epäonnistui"
 
-#: src/threading.c:264
+#: src/threading.c:265
 msgid "Failed to create key removal thread"
 msgstr "Avaimen poistonsäikeen luominen epäonnistui"
 

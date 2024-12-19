@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 08:13+0100\n"
+"POT-Creation-Date: 2024-12-19 08:41+0100\n"
 "PO-Revision-Date: 2024-12-19 08:13+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
@@ -133,7 +133,8 @@ msgid "Generation failed"
 msgstr "Generierung fehlgeschlagen"
 
 #: src/managementdialog.c:519
-msgid "Keypair generated"
+#, fuzzy
+msgid "Key pair generated"
 msgstr "Schlüsselpaar generiert"
 
 #: src/keyrow.c:128
@@ -195,7 +196,8 @@ msgid "Renewal failed"
 msgstr "Verlängerung fehlgeschlagen"
 
 #: src/keyrow.c:412
-msgid "Expiry renewed"
+#, fuzzy
+msgid "Expire date renewed"
 msgstr "Ablaufzeitpunkt aktualisiert"
 
 #: src/cryptography.c:29
@@ -271,15 +273,15 @@ msgid "Failed to export GPG key(s) to file: %s"
 msgstr "Fehler beim Exportieren von GPG Schlüssel(n) in eine Datei: %s"
 
 #: src/cryptography.c:386
-#, c-format
-msgid "Failed to get GPG key for expiry date update: %s"
+#, fuzzy, c-format
+msgid "Failed to get GPG key for expire date renewal: %s"
 msgstr ""
 "Fehler beim Erhalten eines GPG Schlüssels zur Ablaufzeitpunktaktualisierung: "
 "%s"
 
 #: src/cryptography.c:394
-#, c-format
-msgid "Failed to update the expiry date of a key: %s"
+#, fuzzy, c-format
+msgid "Failed to renew the expire date of a key: %s"
 msgstr ""
 "Fehler bei der Aktualisierung des Ablaufzeitpunkts eines Schlüssels: %s"
 
@@ -408,15 +410,16 @@ msgstr "Fehler bei der Thread-Erstellung zur Dateiverifikation"
 msgid "Failed to create key import thread"
 msgstr "Fehler bei der Thread-Erstellung zum Schlüsselimport"
 
-#: src/threading.c:237
-msgid "Failed to create key generation thread"
+#: src/threading.c:238
+#, fuzzy
+msgid "Failed to create key pair generation thread"
 msgstr "Fehler bei der Thread-Erstellung zur Schlüsselgeneration"
 
-#: src/threading.c:252
+#: src/threading.c:253
 msgid "Failed to create key export thread"
 msgstr "Fehler bei der Thread-Erstellung zum Schlüsselexport"
 
-#: src/threading.c:264
+#: src/threading.c:265
 msgid "Failed to create key removal thread"
 msgstr "Fehler bei der Thread-Erstellung zur Schlüsselentfernung"
 

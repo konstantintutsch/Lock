@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 08:13+0100\n"
+"POT-Creation-Date: 2024-12-19 08:41+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -133,7 +133,8 @@ msgid "Generation failed"
 msgstr "Võtmete loomine ei õnnestunud"
 
 #: src/managementdialog.c:519
-msgid "Keypair generated"
+#, fuzzy
+msgid "Key pair generated"
 msgstr "Võtmepaar on loodud"
 
 #: src/keyrow.c:128
@@ -194,7 +195,8 @@ msgid "Renewal failed"
 msgstr "Uuendamine ei õnnestunud"
 
 #: src/keyrow.c:412
-msgid "Expiry renewed"
+#, fuzzy
+msgid "Expire date renewed"
 msgstr "Aegumine on uuendatud"
 
 #: src/cryptography.c:29
@@ -269,13 +271,13 @@ msgid "Failed to export GPG key(s) to file: %s"
 msgstr "GPG võtme(te) eksportimine faili ei õnnestunud: %s"
 
 #: src/cryptography.c:386
-#, c-format
-msgid "Failed to get GPG key for expiry date update: %s"
+#, fuzzy, c-format
+msgid "Failed to get GPG key for expire date renewal: %s"
 msgstr "GPG võtme laadimine kehtivuse muutmiseks ei õnnestunud: %s"
 
 #: src/cryptography.c:394
-#, c-format
-msgid "Failed to update the expiry date of a key: %s"
+#, fuzzy, c-format
+msgid "Failed to renew the expire date of a key: %s"
 msgstr "Võtme aegumispäeva muutmine ei õnnestunud: %s"
 
 #: src/cryptography.c:428
@@ -402,15 +404,16 @@ msgstr "Faili verifitseerimise lõime loomine ei õnnestunud"
 msgid "Failed to create key import thread"
 msgstr "Võtme importimise lõime loomine ei õnnestunud"
 
-#: src/threading.c:237
-msgid "Failed to create key generation thread"
+#: src/threading.c:238
+#, fuzzy
+msgid "Failed to create key pair generation thread"
 msgstr "Võtme loomise lõime loomine ei õnnestunud"
 
-#: src/threading.c:252
+#: src/threading.c:253
 msgid "Failed to create key export thread"
 msgstr "Võtme eksportimise lõime loomine ei õnnestunud"
 
-#: src/threading.c:264
+#: src/threading.c:265
 msgid "Failed to create key removal thread"
 msgstr "Võtme eemaldamise lõime loomine ei õnnestunud"
 

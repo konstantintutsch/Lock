@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 08:13+0100\n"
+"POT-Creation-Date: 2024-12-19 08:41+0100\n"
 "PO-Revision-Date: 2024-12-01 16:55+0000\n"
 "Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -135,7 +135,8 @@ msgid "Generation failed"
 msgstr "Генерация не удалась"
 
 #: src/managementdialog.c:519
-msgid "Keypair generated"
+#, fuzzy
+msgid "Key pair generated"
 msgstr "Пара ключей сгенерирована"
 
 #: src/keyrow.c:128
@@ -196,7 +197,8 @@ msgid "Renewal failed"
 msgstr "Не удалось продлить"
 
 #: src/keyrow.c:412
-msgid "Expiry renewed"
+#, fuzzy
+msgid "Expire date renewed"
 msgstr "Срок истечения продлён"
 
 #: src/cryptography.c:29
@@ -270,13 +272,13 @@ msgid "Failed to export GPG key(s) to file: %s"
 msgstr "Не удалось экспортировать ключ(и) GPG в файл: %s"
 
 #: src/cryptography.c:386
-#, c-format
-msgid "Failed to get GPG key for expiry date update: %s"
+#, fuzzy, c-format
+msgid "Failed to get GPG key for expire date renewal: %s"
 msgstr "Не удалось получить ключ GPG для редактирования срока истечения: %s"
 
 #: src/cryptography.c:394
-#, c-format
-msgid "Failed to update the expiry date of a key: %s"
+#, fuzzy, c-format
+msgid "Failed to renew the expire date of a key: %s"
 msgstr "Не удалось обновить время истечения срока: %s"
 
 #: src/cryptography.c:428
@@ -403,15 +405,16 @@ msgstr "Не удалось создать поток проверки файл�
 msgid "Failed to create key import thread"
 msgstr "Не удалось создать поток импорта ключа"
 
-#: src/threading.c:237
-msgid "Failed to create key generation thread"
+#: src/threading.c:238
+#, fuzzy
+msgid "Failed to create key pair generation thread"
 msgstr "Не удалось создать поток генерации ключа"
 
-#: src/threading.c:252
+#: src/threading.c:253
 msgid "Failed to create key export thread"
 msgstr "Не удалось создать поток экспорта ключа"
 
-#: src/threading.c:264
+#: src/threading.c:265
 msgid "Failed to create key removal thread"
 msgstr "Не удалось создать поток удаления ключа"
 

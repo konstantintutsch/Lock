@@ -202,12 +202,12 @@ gpgme_key_t key_search(const char *userid)
 }
 
 /**
- * This function generates a new GPG keypair.
+ * This function generates a new GPG key pair.
  *
- * @param userid User ID of the new keypair
- * @param sign_algorithm Algorithm of the signing key of the new keypair
- * @param encrypt_algorithm Algorithm of the encryption subkey of the new keypair
- * @param expire Expiry date in seconds from now of the new key pair
+ * @param userid User ID of the new key pair
+ * @param sign_algorithm Algorithm of the signing key of the new key pair
+ * @param encrypt_algorithm Algorithm of the encryption subkey of the new key pair
+ * @param expire Expire date in seconds from now of the new key pair
  *
  * @return Success
  */
@@ -364,10 +364,10 @@ bool key_export(const char *path, const char *fingerprint)
 }
 
 /**
- * This function updates the expiry date of a key.
+ * This function updates the expire date of a key.
  *
  * @param fingerprint Fingerprint of the key to edit
- * @param expire Time in seconds from now to set the expiry date of the key to
+ * @param expire Time in seconds from now to set the expire date of the key to
  *
  * @return Success
  */
@@ -383,7 +383,7 @@ bool key_expire(const char *fingerprint, const unsigned long int expire)
 
     error = gpgme_get_key(context, fingerprint, &key, 0);
     if (error) {
-        g_warning(_("Failed to get GPG key for expiry date update: %s"),
+        g_warning(_("Failed to get GPG key for expire date renewal: %s"),
                   gpgme_strerror(error));
 
         goto cleanup;
@@ -391,7 +391,7 @@ bool key_expire(const char *fingerprint, const unsigned long int expire)
 
     error = gpgme_op_setexpire(context, key, expire, NULL, 0);
     if (error) {
-        g_warning(_("Failed to update the expiry date of a key: %s"),
+        g_warning(_("Failed to renew the expire date of a key: %s"),
                   gpgme_strerror(error));
 
         // goto cleanup_key;
@@ -689,8 +689,8 @@ char *text_verify(const char *text, char **signer)
 
     *signer =
         g_strdup((verify_result->signatures->key !=
-                  NULL) ? verify_result->signatures->key->
-                 uids->uid : verify_result->signatures->fpr);
+                  NULL) ? verify_result->signatures->key->uids->
+                 uid : verify_result->signatures->fpr);
 
  cleanup_input:
     gpgme_data_release(input);
@@ -1048,8 +1048,8 @@ bool file_verify(const char *input_path, const char *output_path, char **signer)
 
     *signer =
         g_strdup((verify_result->signatures->key !=
-                  NULL) ? verify_result->signatures->key->
-                 uids->uid : verify_result->signatures->fpr);
+                  NULL) ? verify_result->signatures->key->uids->
+                 uid : verify_result->signatures->fpr);
 
     // TODO: Do not manually write to files once GPGME 1.24.0 is released: gpgme_op_verify will be able to write output data directly to files
     if (!raw_extract(output, output_path)) {

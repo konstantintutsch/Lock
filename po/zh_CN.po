@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 08:13+0100\n"
+"POT-Creation-Date: 2024-12-19 08:41+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -137,7 +137,8 @@ msgid "Generation failed"
 msgstr "生成失败"
 
 #: src/managementdialog.c:519
-msgid "Keypair generated"
+#, fuzzy
+msgid "Key pair generated"
 msgstr "密钥对已生成"
 
 #: src/keyrow.c:128
@@ -202,7 +203,7 @@ msgstr "移除失败"
 
 #: src/keyrow.c:412
 #, fuzzy
-msgid "Expiry renewed"
+msgid "Expire date renewed"
 msgstr "查看到期日期"
 
 #: src/cryptography.c:29
@@ -277,12 +278,12 @@ msgstr "导出 GPG 密钥至文件"
 
 #: src/cryptography.c:386
 #, fuzzy, c-format
-msgid "Failed to get GPG key for expiry date update: %s"
+msgid "Failed to get GPG key for expire date renewal: %s"
 msgstr "获取 GPG 密钥来移除"
 
 #: src/cryptography.c:394
 #, fuzzy, c-format
-msgid "Failed to update the expiry date of a key: %s"
+msgid "Failed to renew the expire date of a key: %s"
 msgstr "创建 %s 线程失败：%s"
 
 #: src/cryptography.c:428
@@ -419,17 +420,17 @@ msgstr "创建 %s 线程失败：%s"
 msgid "Failed to create key import thread"
 msgstr "创建 %s 线程失败：%s"
 
-#: src/threading.c:237
+#: src/threading.c:238
 #, fuzzy
-msgid "Failed to create key generation thread"
+msgid "Failed to create key pair generation thread"
 msgstr "创建 %s 线程失败：%s"
 
-#: src/threading.c:252
+#: src/threading.c:253
 #, fuzzy
 msgid "Failed to create key export thread"
 msgstr "创建 %s 线程失败：%s"
 
-#: src/threading.c:264
+#: src/threading.c:265
 #, fuzzy
 msgid "Failed to create key removal thread"
 msgstr "创建 %s 线程失败：%s"

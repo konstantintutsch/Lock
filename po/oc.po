@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 08:13+0100\n"
+"POT-Creation-Date: 2024-12-19 08:41+0100\n"
 "PO-Revision-Date: 2024-12-01 19:04+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -134,7 +134,8 @@ msgid "Generation failed"
 msgstr "Fracàs de generacion"
 
 #: src/managementdialog.c:519
-msgid "Keypair generated"
+#, fuzzy
+msgid "Key pair generated"
 msgstr "Parelh de claus generat"
 
 #: src/keyrow.c:128
@@ -196,7 +197,7 @@ msgstr "Fracàs de la renovacion"
 
 #: src/keyrow.c:412
 #, fuzzy
-msgid "Expiry renewed"
+msgid "Expire date renewed"
 msgstr "Afichar las datas d'expiracion"
 
 #: src/cryptography.c:29
@@ -271,12 +272,12 @@ msgstr "Fracàs de l’exportacion de la(s) clau(s) dins un fichièr"
 
 #: src/cryptography.c:386
 #, fuzzy, c-format
-msgid "Failed to get GPG key for expiry date update: %s"
+msgid "Failed to get GPG key for expire date renewal: %s"
 msgstr "Fracàs de l’obtencion de la clau GPG de suprimir"
 
 #: src/cryptography.c:394
 #, fuzzy, c-format
-msgid "Failed to update the expiry date of a key: %s"
+msgid "Failed to renew the expire date of a key: %s"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
 #: src/cryptography.c:428
@@ -421,17 +422,17 @@ msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 msgid "Failed to create key import thread"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
-#: src/threading.c:237
+#: src/threading.c:238
 #, fuzzy
-msgid "Failed to create key generation thread"
+msgid "Failed to create key pair generation thread"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
-#: src/threading.c:252
+#: src/threading.c:253
 #, fuzzy
 msgid "Failed to create key export thread"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
-#: src/threading.c:264
+#: src/threading.c:265
 #, fuzzy
 msgid "Failed to create key removal thread"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"

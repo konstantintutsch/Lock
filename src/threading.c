@@ -221,7 +221,7 @@ void thread_import_key(LockManagementDialog *dialog)
 }
 
 /**
- * This function creates a new thread for the generation of a new keypair in a LockManagementDialog.
+ * This function creates a new thread for the generation of a new key pair in a LockManagementDialog.
  *
  * @param self https://docs.gtk.org/gtk4/signal.Button.clicked.html
  * @param dialog https://docs.gtk.org/gtk4/signal.Button.clicked.html
@@ -234,7 +234,8 @@ void thread_generate_key(GtkButton *self, LockManagementDialog *dialog)
         return;
 
     bool success = thread_create("generate_key",
-                                 _("Failed to create key generation thread"),
+                                 _
+                                 ("Failed to create key pair generation thread"),
                                  lock_management_dialog_generate, dialog);
 
     if (success)

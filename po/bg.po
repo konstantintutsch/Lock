@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 08:13+0100\n"
+"POT-Creation-Date: 2024-12-19 08:41+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/Lock/"
@@ -139,7 +139,8 @@ msgid "Generation failed"
 msgstr "Генерирането е неуспешно"
 
 #: src/managementdialog.c:519
-msgid "Keypair generated"
+#, fuzzy
+msgid "Key pair generated"
 msgstr "Двойката ключове е генерирана"
 
 #: src/keyrow.c:128
@@ -204,7 +205,7 @@ msgstr "Премахването е неуспешно"
 
 #: src/keyrow.c:412
 #, fuzzy
-msgid "Expiry renewed"
+msgid "Expire date renewed"
 msgstr "Преглеждайте датите на изтичане"
 
 #: src/cryptography.c:29
@@ -279,12 +280,12 @@ msgstr "внасяне на GPG ключ от файл"
 
 #: src/cryptography.c:386
 #, fuzzy, c-format
-msgid "Failed to get GPG key for expiry date update: %s"
+msgid "Failed to get GPG key for expire date renewal: %s"
 msgstr "премахване на ключ"
 
 #: src/cryptography.c:394
 #, fuzzy, c-format
-msgid "Failed to update the expiry date of a key: %s"
+msgid "Failed to renew the expire date of a key: %s"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
 #: src/cryptography.c:428
@@ -421,17 +422,17 @@ msgstr "Създаване на нишка %s е неуспешно: %s"
 msgid "Failed to create key import thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:237
+#: src/threading.c:238
 #, fuzzy
-msgid "Failed to create key generation thread"
+msgid "Failed to create key pair generation thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:252
+#: src/threading.c:253
 #, fuzzy
 msgid "Failed to create key export thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:264
+#: src/threading.c:265
 #, fuzzy
 msgid "Failed to create key removal thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"

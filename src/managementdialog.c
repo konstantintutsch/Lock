@@ -377,7 +377,7 @@ gboolean lock_management_dialog_import_on_completed(LockManagementDialog
     return false;               // https://docs.gtk.org/glib/func.idle_add.html
 }
 
-/**** Keypair Generation ****/
+/**** Generation ****/
 
 /**
  * This function lets the user select the expire date for key pair generation.
@@ -448,9 +448,9 @@ bool lock_management_dialog_generate_ready(LockManagementDialog *dialog)
 }
 
 /**
- * This function generates a new keypair in a LockManagementDialog.
+ * This function generates a new key pair in a LockManagementDialog.
  *
- * @param dialog Dialog to generate the keypair in and from
+ * @param dialog Dialog to generate the key pair in and from
  */
 void lock_management_dialog_generate(LockManagementDialog *dialog)
 {
@@ -502,7 +502,7 @@ void lock_management_dialog_generate(LockManagementDialog *dialog)
 }
 
 /**
- * This function handles UI updates for keypair generation and is supposed to be called via g_idle_add().
+ * This function handles UI updates for key pair generation and is supposed to be called via g_idle_add().
  *
  * @param dialog https://docs.gtk.org/glib/callback.SourceFunc.html
  *
@@ -516,7 +516,7 @@ gboolean lock_management_dialog_generate_on_completed(LockManagementDialog
     if (!dialog->generate_success) {
         toast = adw_toast_new(_("Generation failed"));
     } else {
-        toast = adw_toast_new(_("Keypair generated"));
+        toast = adw_toast_new(_("Key pair generated"));
 
         // Reset input rows
         gtk_editable_set_text(GTK_EDITABLE(dialog->name_entry), "");
