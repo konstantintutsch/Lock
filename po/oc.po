@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-18 15:14+0100\n"
+"POT-Creation-Date: 2024-12-19 08:13+0100\n"
 "PO-Revision-Date: 2024-12-01 19:04+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -732,7 +732,8 @@ msgid "Manage your GnuPG keyring:"
 msgstr "Gerissètz vòstre trocèl GnuPG :"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
-msgid "Generate new keypairs"
+#, fuzzy
+msgid "Generate new key pairs"
 msgstr "Generar un parelh de claus novèl"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
@@ -744,12 +745,14 @@ msgid "Export public keys"
 msgstr "Exportar las claus publicas"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
-msgid "View expiry dates"
+#, fuzzy
+msgid "View expire dates"
 msgstr "Afichar las datas d'expiracion"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
-msgid "Update expiry dates of expired keys"
-msgstr ""
+#, fuzzy
+msgid "Update expire dates of expired keys"
+msgstr "Generar un parelh de claus novèl"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-18 15:14+0100\n"
+"POT-Creation-Date: 2024-12-19 08:13+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/Lock/"
@@ -744,7 +744,8 @@ msgid "Manage your GnuPG keyring:"
 msgstr ""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
-msgid "Generate new keypairs"
+#, fuzzy
+msgid "Generate new key pairs"
 msgstr "Генерирайте нови ключове"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
@@ -758,12 +759,14 @@ msgid "Export public keys"
 msgstr "Изнасяйте публични ключове от файлове"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
-msgid "View expiry dates"
+#, fuzzy
+msgid "View expire dates"
 msgstr "Преглеждайте датите на изтичане"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
-msgid "Update expiry dates of expired keys"
-msgstr ""
+#, fuzzy
+msgid "Update expire dates of expired keys"
+msgstr "Генериране на нова двойка ключове"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"

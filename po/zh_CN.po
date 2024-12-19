@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-18 15:14+0100\n"
+"POT-Creation-Date: 2024-12-19 08:13+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -740,7 +740,8 @@ msgid "Manage your GnuPG keyring:"
 msgstr "管理您的 GnuPG 密钥串："
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
-msgid "Generate new keypairs"
+#, fuzzy
+msgid "Generate new key pairs"
 msgstr "生成密钥对"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
@@ -752,12 +753,14 @@ msgid "Export public keys"
 msgstr "导出公钥"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
-msgid "View expiry dates"
+#, fuzzy
+msgid "View expire dates"
 msgstr "查看到期日期"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
-msgid "Update expiry dates of expired keys"
-msgstr ""
+#, fuzzy
+msgid "Update expire dates of expired keys"
+msgstr "生成密钥对"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"

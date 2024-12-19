@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-18 15:14+0100\n"
+"POT-Creation-Date: 2024-12-19 08:13+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -111,28 +111,28 @@ msgstr "Allkiri on vigane"
 msgid "Signature valid - by %s"
 msgstr "Allkiri kehtib - allkirjastaja %s"
 
-#: src/managementdialog.c:364 src/managementdialog.c:356
+#: src/managementdialog.c:364
 msgid "Import failed"
 msgstr "Importimine ei õnnestunud"
 
-#: src/managementdialog.c:366 src/managementdialog.c:358
+#: src/managementdialog.c:366
 msgid "Keys imported"
 msgstr "Võtmed on imporditud"
 
-#: src/managementdialog.c:404
+#: src/managementdialog.c:412
 msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
 msgid "%B %e, %Y"
 msgstr "%e.%b.%y"
 
-#: src/managementdialog.c:504 data/ui/managementdialog.blp:175
+#: src/managementdialog.c:429
 msgid "No expire date"
 msgstr "Aegumise kuupäeva pole"
 
-#: src/managementdialog.c:517 src/managementdialog.c:494
+#: src/managementdialog.c:517
 msgid "Generation failed"
 msgstr "Võtmete loomine ei õnnestunud"
 
-#: src/managementdialog.c:519 src/managementdialog.c:496
+#: src/managementdialog.c:519
 msgid "Keypair generated"
 msgstr "Võtmepaar on loodud"
 
@@ -632,16 +632,16 @@ msgstr "Aegumise kuupäev"
 msgid "Remove expire date"
 msgstr "Muuda aegumise kuupäeva"
 
-#: data/ui/managementdialog.blp:186
+#: data/ui/managementdialog.blp:192
 msgid "Select expire date of the new key pair"
 msgstr "Vali uue võtmepaari jaoks aegumise kuupäev"
 
-#: data/ui/managementdialog.blp:213 data/ui/managementdialog.blp:207
+#: data/ui/managementdialog.blp:213
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "Loo"
 
-#: data/ui/managementdialog.blp:214 data/ui/managementdialog.blp:208
+#: data/ui/managementdialog.blp:214
 msgid "Generate a new keypair"
 msgstr "Loo uus võtmepaar"
 
@@ -710,7 +710,8 @@ msgid "Manage your GnuPG keyring:"
 msgstr "Halda oma GnuPG võtmerõngast:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
-msgid "Generate new keypairs"
+#, fuzzy
+msgid "Generate new key pairs"
 msgstr "Loo uued võtmepaarid"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
@@ -722,11 +723,13 @@ msgid "Export public keys"
 msgstr "Ekspordi avalikud võtmed"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
-msgid "View expiry dates"
+#, fuzzy
+msgid "View expire dates"
 msgstr "Vaata aegumise kuupäevi"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
-msgid "Update expiry dates of expired keys"
+#, fuzzy
+msgid "Update expire dates of expired keys"
 msgstr "Uuenda aegunud võtmete aegumise kuupäevi"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
@@ -761,19 +764,16 @@ msgstr "Vormindamata tekst"
 msgid "Key selection dialog"
 msgstr "Võtmevaliku vaade"
 
-#: data/ui/managementdialog.blp:174
-msgctxt "Expiry time of the new keypair"
-msgid "Expiry"
-msgstr "Aegumine"
+#~ msgctxt "Expiry time of the new keypair"
+#~ msgid "Expiry"
+#~ msgstr "Aegumine"
 
-#: data/ui/managementdialog.blp:175
-msgctxt "Expiry unit of the new keypair"
-msgid "Months, disable with zero"
-msgstr "Kuudes, null märgib aegumise puudumist"
+#~ msgctxt "Expiry unit of the new keypair"
+#~ msgid "Months, disable with zero"
+#~ msgstr "Kuudes, null märgib aegumise puudumist"
 
-#: data/ui/keyrow.blp:38
-msgid "Edit expiry date"
-msgstr "Muuda aegumise kuupäeva"
+#~ msgid "Edit expiry date"
+#~ msgstr "Muuda aegumise kuupäeva"
 
 #, fuzzy
 #~ msgctxt "Expire date unit of the new key pair"

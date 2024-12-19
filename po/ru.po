@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-18 15:14+0100\n"
+"POT-Creation-Date: 2024-12-19 08:13+0100\n"
 "PO-Revision-Date: 2024-12-01 16:55+0000\n"
 "Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -712,7 +712,8 @@ msgid "Manage your GnuPG keyring:"
 msgstr "Управляйте связкой ключей GnuPG:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
-msgid "Generate new keypairs"
+#, fuzzy
+msgid "Generate new key pairs"
 msgstr "Генерация новых пар ключей"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
@@ -724,11 +725,13 @@ msgid "Export public keys"
 msgstr "Экспорт открытых ключей"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
-msgid "View expiry dates"
+#, fuzzy
+msgid "View expire dates"
 msgstr "Посмотр дат истечения срока действия"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
-msgid "Update expiry dates of expired keys"
+#, fuzzy
+msgid "Update expire dates of expired keys"
 msgstr "Обновить даты ключей с истёкшим сроком"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
@@ -763,19 +766,16 @@ msgstr "Обычный текст"
 msgid "Key selection dialog"
 msgstr "Диалог выбора ключей"
 
-#: data/ui/managementdialog.blp:174
-msgctxt "Expiry time of the new keypair"
-msgid "Expiry"
-msgstr "Истекает"
+#~ msgctxt "Expiry time of the new keypair"
+#~ msgid "Expiry"
+#~ msgstr "Истекает"
 
-#: data/ui/managementdialog.blp:175
-msgctxt "Expiry unit of the new keypair"
-msgid "Months, disable with zero"
-msgstr "В месяцах, для отключения 0"
+#~ msgctxt "Expiry unit of the new keypair"
+#~ msgid "Months, disable with zero"
+#~ msgstr "В месяцах, для отключения 0"
 
-#: data/ui/keyrow.blp:38
-msgid "Edit expiry date"
-msgstr "Редактировать дату истечения"
+#~ msgid "Edit expiry date"
+#~ msgstr "Редактировать дату истечения"
 
 #, fuzzy
 #~ msgctxt "Expire date unit of the new key pair"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-18 15:14+0100\n"
+"POT-Creation-Date: 2024-12-19 08:13+0100\n"
 "PO-Revision-Date: 2024-12-01 16:55+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/Lock/Application/"
@@ -111,34 +111,29 @@ msgstr "החתימה שגויה"
 msgid "Signature valid - by %s"
 msgstr "החתימה שגויה - מאת %s"
 
-#: src/managementdialog.c:364 src/managementdialog.c:356
-#: src/managementdialog.c:334
+#: src/managementdialog.c:364
 msgid "Import failed"
 msgstr "הייבוא נכשל"
 
-#: src/managementdialog.c:366 src/managementdialog.c:358
-#: src/managementdialog.c:336
+#: src/managementdialog.c:366
 msgid "Keys imported"
 msgstr "המפתחות יובאו"
 
-#: src/managementdialog.c:412 src/managementdialog.c:404
+#: src/managementdialog.c:412
 msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
 msgid "%B %e, %Y"
 msgstr ""
 
-#: src/managementdialog.c:429 src/managementdialog.c:504
-#: data/ui/managementdialog.blp:175
+#: src/managementdialog.c:429
 #, fuzzy
 msgid "No expire date"
 msgstr "הצגת תאריכי תפוגת תוקף"
 
-#: src/managementdialog.c:517 src/managementdialog.c:494
-#: src/managementdialog.c:432
+#: src/managementdialog.c:517
 msgid "Generation failed"
 msgstr "היצירה נכשלה"
 
-#: src/managementdialog.c:519 src/managementdialog.c:496
-#: src/managementdialog.c:434
+#: src/managementdialog.c:519
 msgid "Keypair generated"
 msgstr "נוצר צמד מפתחות"
 
@@ -635,19 +630,17 @@ msgstr "הצגת תאריכי תפוגת תוקף"
 msgid "Remove expire date"
 msgstr "הצגת תאריכי תפוגת תוקף"
 
-#: data/ui/managementdialog.blp:192 data/ui/managementdialog.blp:186
+#: data/ui/managementdialog.blp:192
 #, fuzzy
 msgid "Select expire date of the new key pair"
 msgstr "יצירת צמד מפתחות חדש"
 
-#: data/ui/managementdialog.blp:213 data/ui/managementdialog.blp:207
-#: data/ui/managementdialog.blp:197
+#: data/ui/managementdialog.blp:213
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "יצירה"
 
-#: data/ui/managementdialog.blp:214 data/ui/managementdialog.blp:208
-#: data/ui/managementdialog.blp:198
+#: data/ui/managementdialog.blp:214
 msgid "Generate a new keypair"
 msgstr "יצירת צמד מפתחות חדש"
 
@@ -714,7 +707,8 @@ msgid "Manage your GnuPG keyring:"
 msgstr "ניהול צרור מפתחות ה־GnuPG שלך:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
-msgid "Generate new keypairs"
+#, fuzzy
+msgid "Generate new key pairs"
 msgstr "יצירת צמדי מפתחות חדשים"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
@@ -726,12 +720,14 @@ msgid "Export public keys"
 msgstr "ייצוא מפתחות ציבוריים"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
-msgid "View expiry dates"
+#, fuzzy
+msgid "View expire dates"
 msgstr "הצגת תאריכי תפוגת תוקף"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
-msgid "Update expiry dates of expired keys"
-msgstr ""
+#, fuzzy
+msgid "Update expire dates of expired keys"
+msgstr "יצירת צמד מפתחות חדש"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
@@ -765,26 +761,22 @@ msgstr "טקסט פשוט"
 msgid "Key selection dialog"
 msgstr "חלונית בחירת מפתח"
 
-#: data/ui/managementdialog.blp:175
 #, fuzzy
-msgctxt "Expire date unit of the new key pair"
-msgid "Months, disable with zero"
-msgstr "חודשים, להשבית עם אפס"
+#~ msgctxt "Expire date unit of the new key pair"
+#~ msgid "Months, disable with zero"
+#~ msgstr "חודשים, להשבית עם אפס"
 
-#: data/ui/managementdialog.blp:174
-msgctxt "Expiry time of the new keypair"
-msgid "Expiry"
-msgstr "תפוגת תוקף"
+#~ msgctxt "Expiry time of the new keypair"
+#~ msgid "Expiry"
+#~ msgstr "תפוגת תוקף"
 
-#: data/ui/managementdialog.blp:175
-msgctxt "Expiry unit of the new keypair"
-msgid "Months, disable with zero"
-msgstr "חודשים, להשבית עם אפס"
+#~ msgctxt "Expiry unit of the new keypair"
+#~ msgid "Months, disable with zero"
+#~ msgstr "חודשים, להשבית עם אפס"
 
-#: data/ui/keyrow.blp:38
 #, fuzzy
-msgid "Edit expiry date"
-msgstr "הצגת תאריכי תפוגת תוקף"
+#~ msgid "Edit expiry date"
+#~ msgstr "הצגת תאריכי תפוגת תוקף"
 
 #, fuzzy
 #~ msgctxt "Expire date of the new key pair"

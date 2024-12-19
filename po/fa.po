@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-18 15:14+0100\n"
+"POT-Creation-Date: 2024-12-19 08:13+0100\n"
 "PO-Revision-Date: 2024-12-10 10:58+0000\n"
 "Last-Translator: Reza Hosseinzadeh <rezahsnzdh@protonmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -707,7 +707,8 @@ msgid "Manage your GnuPG keyring:"
 msgstr "مدیریت کردن دسته‌کلیدتان:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
-msgid "Generate new keypairs"
+#, fuzzy
+msgid "Generate new key pairs"
 msgstr "تولید کردن جفت‌کلیدها"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
@@ -719,11 +720,13 @@ msgid "Export public keys"
 msgstr "صادر کردن کلیدها"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
-msgid "View expiry dates"
+#, fuzzy
+msgid "View expire dates"
 msgstr "نمایش تاریخ‌های انقضا"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
-msgid "Update expiry dates of expired keys"
+#, fuzzy
+msgid "Update expire dates of expired keys"
 msgstr "بروزرسانی تاریخ انقضای کلیدهای منقضی‌شده"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24

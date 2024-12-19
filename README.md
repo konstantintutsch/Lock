@@ -15,11 +15,11 @@ Process text and files:
 
 Manage your GnuPG keyring:
 
-- Generate new keypairs
+- Generate new key pairs
 - Import keys
 - Export public keys
-- View expiry dates
-- Update expiry dates of expired keys
+- View expire dates
+- Update expire dates of expired keys
 - Remove keys
 
 <a href="https://flathub.org/apps/com.konstantintutsch.Lock"><img width="240" alt="Get it on Flathub" src="https://flathub.org/api/badge?locale=en"></a>

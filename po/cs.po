@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-18 15:14+0100\n"
+"POT-Creation-Date: 2024-12-19 08:13+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/Lock/Application/"
@@ -111,32 +111,29 @@ msgstr "Neplatný podpis"
 msgid "Signature valid - by %s"
 msgstr "Platný podpis od - %s"
 
-#: src/managementdialog.c:364 src/managementdialog.c:356
-#: src/managementdialog.c:334
+#: src/managementdialog.c:364
 msgid "Import failed"
 msgstr "Importování selhalo"
 
-#: src/managementdialog.c:336
+#: src/managementdialog.c:366
 msgid "Keys imported"
 msgstr "Klíč(e) importován(y)"
 
-#: src/managementdialog.c:412 src/managementdialog.c:404
+#: src/managementdialog.c:412
 msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
 msgid "%B %e, %Y"
 msgstr ""
 
-#: src/managementdialog.c:429 src/managementdialog.c:504
-#: data/ui/managementdialog.blp:175
+#: src/managementdialog.c:429
 #, fuzzy
 msgid "No expire date"
 msgstr "Zobrazit datum platnosti"
 
-#: src/managementdialog.c:432
+#: src/managementdialog.c:517
 msgid "Generation failed"
 msgstr "Vytváření selhalo"
 
-#: src/managementdialog.c:519 src/managementdialog.c:496
-#: src/managementdialog.c:434
+#: src/managementdialog.c:519
 msgid "Keypair generated"
 msgstr "Pár klíčů vytvořen"
 
@@ -659,19 +656,17 @@ msgstr "Zobrazit datum platnosti"
 msgid "Remove expire date"
 msgstr "Zobrazit datum platnosti"
 
-#: data/ui/managementdialog.blp:192 data/ui/managementdialog.blp:186
+#: data/ui/managementdialog.blp:192
 #, fuzzy
 msgid "Select expire date of the new key pair"
 msgstr "Generovat nový pár klíčů"
 
-#: data/ui/managementdialog.blp:213 data/ui/managementdialog.blp:207
-#: data/ui/managementdialog.blp:197
+#: data/ui/managementdialog.blp:213
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "Generovat"
 
-#: data/ui/managementdialog.blp:214 data/ui/managementdialog.blp:208
-#: data/ui/managementdialog.blp:198
+#: data/ui/managementdialog.blp:214
 msgid "Generate a new keypair"
 msgstr "Generovat nový pár klíčů"
 
@@ -739,7 +734,7 @@ msgstr "Spravujte vaši GnuPG klíčenku:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
 #, fuzzy
-msgid "Generate new keypairs"
+msgid "Generate new key pairs"
 msgstr "Spravovat klíče"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
@@ -752,11 +747,13 @@ msgid "Export public keys"
 msgstr "Exportovat veřejné klíče do souborů"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
-msgid "View expiry dates"
+#, fuzzy
+msgid "View expire dates"
 msgstr "Zobrazit datum platnosti"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
-msgid "Update expiry dates of expired keys"
+#, fuzzy
+msgid "Update expire dates of expired keys"
 msgstr "Aktualizovat dobu platnosti prošlých klíčů"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
@@ -791,27 +788,23 @@ msgstr "Holý text"
 msgid "Key selection dialog"
 msgstr "Okno pro vybírání klíče"
 
-#: data/ui/managementdialog.blp:175
 #, fuzzy
-msgctxt "Expire date unit of the new key pair"
-msgid "Months, disable with zero"
-msgstr "Měsíce, nulou vypnete"
+#~ msgctxt "Expire date unit of the new key pair"
+#~ msgid "Months, disable with zero"
+#~ msgstr "Měsíce, nulou vypnete"
 
-#: data/ui/managementdialog.blp:174
 #, fuzzy
-msgctxt "Expiry time of the new keypair"
-msgid "Expiry"
-msgstr "Platnost"
+#~ msgctxt "Expiry time of the new keypair"
+#~ msgid "Expiry"
+#~ msgstr "Platnost"
 
-#: data/ui/managementdialog.blp:175
-msgctxt "Expiry unit of the new keypair"
-msgid "Months, disable with zero"
-msgstr "Měsíce, nulou vypnete"
+#~ msgctxt "Expiry unit of the new keypair"
+#~ msgid "Months, disable with zero"
+#~ msgstr "Měsíce, nulou vypnete"
 
-#: data/ui/keyrow.blp:38
 #, fuzzy
-msgid "Edit expiry date"
-msgstr "Zobrazit datum platnosti"
+#~ msgid "Edit expiry date"
+#~ msgstr "Zobrazit datum platnosti"
 
 #, fuzzy
 #~ msgctxt "Expire date of the new key pair"
