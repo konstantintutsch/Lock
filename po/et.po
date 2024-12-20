@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2024-12-19 08:41+0100\n"
-"PO-Revision-Date: 2024-11-23 17:35+0000\n"
+"PO-Revision-Date: 2024-12-20 08:03+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
 "Application/et/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.9.2-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -133,7 +133,6 @@ msgid "Generation failed"
 msgstr "Võtmete loomine ei õnnestunud"
 
 #: src/managementdialog.c:519
-#, fuzzy
 msgid "Key pair generated"
 msgstr "Võtmepaar on loodud"
 
@@ -195,9 +194,8 @@ msgid "Renewal failed"
 msgstr "Uuendamine ei õnnestunud"
 
 #: src/keyrow.c:412
-#, fuzzy
 msgid "Expire date renewed"
-msgstr "Aegumine on uuendatud"
+msgstr "Aegumiskuupäev on uuendatud"
 
 #: src/cryptography.c:29
 #, c-format
@@ -271,12 +269,12 @@ msgid "Failed to export GPG key(s) to file: %s"
 msgstr "GPG võtme(te) eksportimine faili ei õnnestunud: %s"
 
 #: src/cryptography.c:386
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for expire date renewal: %s"
-msgstr "GPG võtme laadimine kehtivuse muutmiseks ei õnnestunud: %s"
+msgstr "GPG võtme laadimine kehtivuse kuupäeva uuendamiseks ei õnnestunud: %s"
 
 #: src/cryptography.c:394
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to renew the expire date of a key: %s"
 msgstr "Võtme aegumispäeva muutmine ei õnnestunud: %s"
 
@@ -405,7 +403,6 @@ msgid "Failed to create key import thread"
 msgstr "Võtme importimise lõime loomine ei õnnestunud"
 
 #: src/threading.c:238
-#, fuzzy
 msgid "Failed to create key pair generation thread"
 msgstr "Võtme loomise lõime loomine ei õnnestunud"
 
@@ -631,9 +628,8 @@ msgid "Expire Date"
 msgstr "Aegumise kuupäev"
 
 #: data/ui/managementdialog.blp:184
-#, fuzzy
 msgid "Remove expire date"
-msgstr "Muuda aegumise kuupäeva"
+msgstr "Eemalda aegumise kuupäev"
 
 #: data/ui/managementdialog.blp:192
 msgid "Select expire date of the new key pair"
@@ -713,7 +709,6 @@ msgid "Manage your GnuPG keyring:"
 msgstr "Halda oma GnuPG võtmerõngast:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
-#, fuzzy
 msgid "Generate new key pairs"
 msgstr "Loo uued võtmepaarid"
 
@@ -726,12 +721,10 @@ msgid "Export public keys"
 msgstr "Ekspordi avalikud võtmed"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
-#, fuzzy
 msgid "View expire dates"
 msgstr "Vaata aegumise kuupäevi"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
-#, fuzzy
 msgid "Update expire dates of expired keys"
 msgstr "Uuenda aegunud võtmete aegumise kuupäevi"
 

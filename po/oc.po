@@ -120,14 +120,14 @@ msgid "Keys imported"
 msgstr "Claus importadas"
 
 #: src/managementdialog.c:412
+#, fuzzy
 msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
 msgid "%B %e, %Y"
-msgstr ""
+msgstr "%e %B de %Y"
 
 #: src/managementdialog.c:429
-#, fuzzy
 msgid "No expire date"
-msgstr "Afichar las datas d'expiracion"
+msgstr "Cap de data d'expiracion"
 
 #: src/managementdialog.c:517
 msgid "Generation failed"
@@ -427,12 +427,12 @@ msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 msgid "Failed to create key pair generation thread"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
-#: src/threading.c:253
+#: src/threading.c:253 src/threading.c:252
 #, fuzzy
 msgid "Failed to create key export thread"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
-#: src/threading.c:265
+#: src/threading.c:265 src/threading.c:264
 #, fuzzy
 msgid "Failed to create key removal thread"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
@@ -786,6 +786,41 @@ msgstr "Tèxte brut"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Fenèstra de seleccion de clau"
+
+#: src/managementdialog.c:519
+msgid "Keypair generated"
+msgstr "Parelh de claus generat"
+
+#: src/keyrow.c:412
+msgid "Expiry renewed"
+msgstr "Expiracion renovada"
+
+#: src/cryptography.c:386
+#, fuzzy, c-format
+msgid "Failed to get GPG key for expiry date update: %s"
+msgstr "Fracàs de l’obtencion de la clau GPG de suprimir"
+
+#: src/cryptography.c:394
+#, fuzzy, c-format
+msgid "Failed to update the expiry date of a key: %s"
+msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
+
+#: src/threading.c:237
+#, fuzzy
+msgid "Failed to create key generation thread"
+msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
+msgid "Generate new keypairs"
+msgstr "Generar un parelh de claus novèl"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
+msgid "View expiry dates"
+msgstr "Afichar las datas d'expiracion"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
+msgid "Update expiry dates of expired keys"
+msgstr ""
 
 #, fuzzy
 #~ msgctxt "Expire date unit of the new key pair"

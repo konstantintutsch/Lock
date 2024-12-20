@@ -7,17 +7,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2024-12-19 08:41+0100\n"
-"PO-Revision-Date: 2024-12-19 08:13+0100\n"
+"PO-Revision-Date: 2024-12-20 08:03+0000\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
-"Language-Team: German\n"
+"Language-Team: German <https://hosted.weblate.org/projects/Lock/Application/"
+"de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 47.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9.2-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -133,7 +134,6 @@ msgid "Generation failed"
 msgstr "Generierung fehlgeschlagen"
 
 #: src/managementdialog.c:519
-#, fuzzy
 msgid "Key pair generated"
 msgstr "Schlüsselpaar generiert"
 
@@ -196,7 +196,6 @@ msgid "Renewal failed"
 msgstr "Verlängerung fehlgeschlagen"
 
 #: src/keyrow.c:412
-#, fuzzy
 msgid "Expire date renewed"
 msgstr "Ablaufzeitpunkt aktualisiert"
 
@@ -273,17 +272,16 @@ msgid "Failed to export GPG key(s) to file: %s"
 msgstr "Fehler beim Exportieren von GPG Schlüssel(n) in eine Datei: %s"
 
 #: src/cryptography.c:386
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for expire date renewal: %s"
 msgstr ""
 "Fehler beim Erhalten eines GPG Schlüssels zur Ablaufzeitpunktaktualisierung: "
 "%s"
 
 #: src/cryptography.c:394
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to renew the expire date of a key: %s"
-msgstr ""
-"Fehler bei der Aktualisierung des Ablaufzeitpunkts eines Schlüssels: %s"
+msgstr "Fehler bei der Erneuerung des Ablaufzeitpunkts eines Schlüssels: %s"
 
 #: src/cryptography.c:428
 #, c-format
@@ -411,9 +409,8 @@ msgid "Failed to create key import thread"
 msgstr "Fehler bei der Thread-Erstellung zum Schlüsselimport"
 
 #: src/threading.c:238
-#, fuzzy
 msgid "Failed to create key pair generation thread"
-msgstr "Fehler bei der Thread-Erstellung zur Schlüsselgeneration"
+msgstr "Fehler bei der Thread-Erstellung zur Schlüsselpaargeneration"
 
 #: src/threading.c:253
 msgid "Failed to create key export thread"
