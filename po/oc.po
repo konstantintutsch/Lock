@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 08:41+0100\n"
+"POT-Creation-Date: 2024-12-21 09:44+0100\n"
 "PO-Revision-Date: 2024-12-01 19:04+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -120,14 +120,14 @@ msgid "Keys imported"
 msgstr "Claus importadas"
 
 #: src/managementdialog.c:412
+#, fuzzy
 msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
 msgid "%B %e, %Y"
-msgstr ""
+msgstr "%e %B de %Y"
 
 #: src/managementdialog.c:429
-#, fuzzy
 msgid "No expire date"
-msgstr "Afichar las datas d'expiracion"
+msgstr "Cap de data d'expiracion"
 
 #: src/managementdialog.c:517
 msgid "Generation failed"
@@ -786,6 +786,30 @@ msgstr "Tèxte brut"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Fenèstra de seleccion de clau"
+
+#~ msgid "Keypair generated"
+#~ msgstr "Parelh de claus generat"
+
+#~ msgid "Expiry renewed"
+#~ msgstr "Expiracion renovada"
+
+#, fuzzy, c-format
+#~ msgid "Failed to get GPG key for expiry date update: %s"
+#~ msgstr "Fracàs de l’obtencion de la clau GPG de suprimir"
+
+#, fuzzy, c-format
+#~ msgid "Failed to update the expiry date of a key: %s"
+#~ msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
+
+#, fuzzy
+#~ msgid "Failed to create key generation thread"
+#~ msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
+
+#~ msgid "Generate new keypairs"
+#~ msgstr "Generar un parelh de claus novèl"
+
+#~ msgid "View expiry dates"
+#~ msgstr "Afichar las datas d'expiracion"
 
 #, fuzzy
 #~ msgctxt "Expire date unit of the new key pair"

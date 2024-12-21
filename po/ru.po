@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 08:41+0100\n"
+"POT-Creation-Date: 2024-12-21 09:44+0100\n"
 "PO-Revision-Date: 2024-12-01 16:55+0000\n"
 "Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -123,12 +123,11 @@ msgstr "Ключи импортированы"
 #: src/managementdialog.c:412
 msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
 msgid "%B %e, %Y"
-msgstr ""
+msgstr "%e %B %Y"
 
 #: src/managementdialog.c:429
-#, fuzzy
 msgid "No expire date"
-msgstr "Редактировать дату истечения"
+msgstr "Нет даты истечения"
 
 #: src/managementdialog.c:517
 msgid "Generation failed"
@@ -626,20 +625,17 @@ msgid "Subkey"
 msgstr "Подключ"
 
 #: data/ui/managementdialog.blp:174
-#, fuzzy
 msgctxt "Expire date of the new key pair"
 msgid "Expire Date"
-msgstr "Редактировать дату истечения"
+msgstr "Дата истечения"
 
 #: data/ui/managementdialog.blp:184
-#, fuzzy
 msgid "Remove expire date"
-msgstr "Редактировать дату истечения"
+msgstr "Удалить дату истечения"
 
 #: data/ui/managementdialog.blp:192
-#, fuzzy
 msgid "Select expire date of the new key pair"
-msgstr "Сгенерировать новую пару ключей"
+msgstr "Выберите дату истечения срока действия новой пары ключей"
 
 #: data/ui/managementdialog.blp:213
 msgctxt "Generate a new keypair"
@@ -671,7 +667,6 @@ msgid "Export public key to file"
 msgstr "Экспортировать открытый ключ в файл"
 
 #: data/ui/keyrow.blp:38
-#, fuzzy
 msgid "Edit expire date"
 msgstr "Редактировать дату истечения"
 
@@ -715,7 +710,6 @@ msgid "Manage your GnuPG keyring:"
 msgstr "Управляйте связкой ключей GnuPG:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
-#, fuzzy
 msgid "Generate new key pairs"
 msgstr "Генерация новых пар ключей"
 
@@ -728,12 +722,10 @@ msgid "Export public keys"
 msgstr "Экспорт открытых ключей"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
-#, fuzzy
 msgid "View expire dates"
-msgstr "Посмотр дат истечения срока действия"
+msgstr "Просмотр дат истечения срока действия"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
-#, fuzzy
 msgid "Update expire dates of expired keys"
 msgstr "Обновить даты ключей с истёкшим сроком"
 
@@ -768,6 +760,23 @@ msgstr "Обычный текст"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Диалог выбора ключей"
+
+#~ msgid "Keypair generated"
+#~ msgstr "Пара ключей сгенерирована"
+
+#~ msgid "Expiry renewed"
+#~ msgstr "Срок истечения продлён"
+
+#, c-format
+#~ msgid "Failed to get GPG key for expiry date update: %s"
+#~ msgstr "Не удалось получить ключ GPG для редактирования срока истечения: %s"
+
+#, c-format
+#~ msgid "Failed to update the expiry date of a key: %s"
+#~ msgstr "Не удалось обновить время истечения срока: %s"
+
+#~ msgid "Failed to create key generation thread"
+#~ msgstr "Не удалось создать поток генерации ключа"
 
 #~ msgctxt "Expiry time of the new keypair"
 #~ msgid "Expiry"

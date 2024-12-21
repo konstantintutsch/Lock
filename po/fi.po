@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 08:41+0100\n"
-"PO-Revision-Date: 2024-11-23 17:35+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2024-12-21 09:44+0100\n"
+"PO-Revision-Date: 2024-12-20 08:03+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
 "fi/>\n"
 "Language: fi\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.9.2-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -125,16 +125,14 @@ msgid "%B %e, %Y"
 msgstr ""
 
 #: src/managementdialog.c:429
-#, fuzzy
 msgid "No expire date"
-msgstr "Muokkaa vanhenemispäivää"
+msgstr "Ei vanhenemispäivää"
 
 #: src/managementdialog.c:517
 msgid "Generation failed"
 msgstr "Luominen epäonnistui"
 
 #: src/managementdialog.c:519
-#, fuzzy
 msgid "Key pair generated"
 msgstr "Avainpari luotu"
 
@@ -196,7 +194,6 @@ msgid "Renewal failed"
 msgstr "Uusiminen epäonnistui"
 
 #: src/keyrow.c:412
-#, fuzzy
 msgid "Expire date renewed"
 msgstr "Vanheneminen uusittiin"
 
@@ -625,20 +622,17 @@ msgid "Subkey"
 msgstr "Aliavain"
 
 #: data/ui/managementdialog.blp:174
-#, fuzzy
 msgctxt "Expire date of the new key pair"
 msgid "Expire Date"
-msgstr "Muokkaa vanhenemispäivää"
+msgstr "Vanhenemispäivä"
 
 #: data/ui/managementdialog.blp:184
-#, fuzzy
 msgid "Remove expire date"
-msgstr "Muokkaa vanhenemispäivää"
+msgstr "Poista vanhenemispäivä"
 
 #: data/ui/managementdialog.blp:192
-#, fuzzy
 msgid "Select expire date of the new key pair"
-msgstr "Luo uusi avainpari"
+msgstr "Valitse vanhenemispäivä uudelle avainparille"
 
 #: data/ui/managementdialog.blp:213
 msgctxt "Generate a new keypair"
@@ -670,7 +664,6 @@ msgid "Export public key to file"
 msgstr "Vie julkinen avain tiedostoon"
 
 #: data/ui/keyrow.blp:38
-#, fuzzy
 msgid "Edit expire date"
 msgstr "Muokkaa vanhenemispäivää"
 
@@ -714,7 +707,6 @@ msgid "Manage your GnuPG keyring:"
 msgstr "Hallitse GnuPG-avainnippua:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
-#, fuzzy
 msgid "Generate new key pairs"
 msgstr "Luo uusia avainpareja"
 
@@ -727,12 +719,10 @@ msgid "Export public keys"
 msgstr "Vie julkisia avaimia"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
-#, fuzzy
 msgid "View expire dates"
 msgstr "Näytä vanhenemispäivät"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
-#, fuzzy
 msgid "Update expire dates of expired keys"
 msgstr "Päivitä vanhentuneiden avainten vanhenemispäivät"
 
