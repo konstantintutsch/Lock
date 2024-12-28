@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2024-12-21 09:44+0100\n"
-"PO-Revision-Date: 2024-12-01 16:55+0000\n"
+"PO-Revision-Date: 2024-12-29 07:58+0000\n"
 "Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
 "ru/>\n"
@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -134,7 +134,6 @@ msgid "Generation failed"
 msgstr "Генерация не удалась"
 
 #: src/managementdialog.c:519
-#, fuzzy
 msgid "Key pair generated"
 msgstr "Пара ключей сгенерирована"
 
@@ -196,7 +195,6 @@ msgid "Renewal failed"
 msgstr "Не удалось продлить"
 
 #: src/keyrow.c:412
-#, fuzzy
 msgid "Expire date renewed"
 msgstr "Срок истечения продлён"
 
@@ -271,14 +269,14 @@ msgid "Failed to export GPG key(s) to file: %s"
 msgstr "Не удалось экспортировать ключ(и) GPG в файл: %s"
 
 #: src/cryptography.c:386
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for expire date renewal: %s"
-msgstr "Не удалось получить ключ GPG для редактирования срока истечения: %s"
+msgstr "Не удалось получить ключ GPG для обновления срока истечения: %s"
 
 #: src/cryptography.c:394
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to renew the expire date of a key: %s"
-msgstr "Не удалось обновить время истечения срока: %s"
+msgstr "Не удалось обновить время истечения срока ключа: %s"
 
 #: src/cryptography.c:428
 #, c-format
@@ -405,9 +403,8 @@ msgid "Failed to create key import thread"
 msgstr "Не удалось создать поток импорта ключа"
 
 #: src/threading.c:238
-#, fuzzy
 msgid "Failed to create key pair generation thread"
-msgstr "Не удалось создать поток генерации ключа"
+msgstr "Не удалось создать поток генерации пары ключей"
 
 #: src/threading.c:253
 msgid "Failed to create key export thread"
