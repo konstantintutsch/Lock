@@ -85,6 +85,17 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.3.7" date="2024-12-29">
+            <description translate="no">
+                <ul>
+                    <li>Russian translation updated</li>
+                    <li>Czech translation updated</li>
+                    <li>Finnish translation updated</li>
+                    <li>Estonian translation updated</li>
+                    <li>Occitan translation updated</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.3.6" date="2024-12-19">
             <description translate="no">
                 <ul>
