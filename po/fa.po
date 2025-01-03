@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2024-12-21 09:44+0100\n"
-"PO-Revision-Date: 2024-12-10 10:58+0000\n"
-"Last-Translator: Reza Hosseinzadeh <rezahsnzdh@protonmail.com>\n"
+"PO-Revision-Date: 2024-12-31 09:00+0000\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
 "fa/>\n"
 "Language: fa\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -125,16 +125,14 @@ msgid "%B %e, %Y"
 msgstr ""
 
 #: src/managementdialog.c:429
-#, fuzzy
 msgid "No expire date"
-msgstr "ویرایش تاریخ انقضا"
+msgstr "بدون تاریخ انقضا"
 
 #: src/managementdialog.c:517
 msgid "Generation failed"
 msgstr "تولید شکست خورد"
 
 #: src/managementdialog.c:519
-#, fuzzy
 msgid "Key pair generated"
 msgstr "جفت‌کلید تولید شد"
 
@@ -196,9 +194,8 @@ msgid "Renewal failed"
 msgstr "تجدید شکست خورد"
 
 #: src/keyrow.c:412
-#, fuzzy
 msgid "Expire date renewed"
-msgstr "انقضا تجدید شد"
+msgstr "تاریخ انقضا تجدید شد"
 
 #: src/cryptography.c:29
 #, fuzzy, c-format
@@ -221,9 +218,9 @@ msgid "Failed to open file for writing: %s"
 msgstr "ساختن رشتهٔ امضا کردن پرونده شکست خورد"
 
 #: src/cryptography.c:113
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to write to file: %s"
-msgstr "صادر کردن کلید(های) جی‌پی‌جی به پرونده شکست خورد"
+msgstr "شکست در نوشتن روی پرونده: %s"
 
 #: src/cryptography.c:150
 #, fuzzy, c-format
@@ -285,9 +282,9 @@ msgid "Failed to get GPG key for removal: %s"
 msgstr "ساختن کلید جی‌پی‌جی جدید برای امضا کردن شکست خورد"
 
 #: src/cryptography.c:436
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to remove GPG key: %s"
-msgstr "وارد کردن کلید جی‌پی‌جی از پرونده شکست خورد"
+msgstr "شکست در برداشتن کلید جی‌پی‌جی: %s"
 
 #: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
 #: src/cryptography.c:659
@@ -519,7 +516,7 @@ msgstr "رمزگشایی"
 
 #: data/ui/window.blp:169 data/ui/window.blp:229
 msgid "Sign"
-msgstr "امضا کردن"
+msgstr "امضا"
 
 #: data/ui/window.blp:176 data/ui/window.blp:241
 msgid "Verify"
@@ -623,15 +620,13 @@ msgid "Subkey"
 msgstr "زیرکلید"
 
 #: data/ui/managementdialog.blp:174
-#, fuzzy
 msgctxt "Expire date of the new key pair"
 msgid "Expire Date"
-msgstr "ویرایش تاریخ انقضا"
+msgstr "تاریخ انقضا"
 
 #: data/ui/managementdialog.blp:184
-#, fuzzy
 msgid "Remove expire date"
-msgstr "ویرایش تاریخ انقضا"
+msgstr "برداشتن تاریخ انقضا"
 
 #: data/ui/managementdialog.blp:192
 #, fuzzy
@@ -668,7 +663,6 @@ msgid "Export public key to file"
 msgstr "صادر کردن کلید عمومی به پرونده"
 
 #: data/ui/keyrow.blp:38
-#, fuzzy
 msgid "Edit expire date"
 msgstr "ویرایش تاریخ انقضا"
 
@@ -710,9 +704,8 @@ msgid "Manage your GnuPG keyring:"
 msgstr "مدیریت کردن دسته‌کلیدتان:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
-#, fuzzy
 msgid "Generate new key pairs"
-msgstr "تولید کردن جفت‌کلیدها"
+msgstr "تولید جفت‌کلیدهای جدید"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
 msgid "Import keys"
@@ -723,7 +716,6 @@ msgid "Export public keys"
 msgstr "صادر کردن کلیدها"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
-#, fuzzy
 msgid "View expire dates"
 msgstr "نمایش تاریخ‌های انقضا"
 
