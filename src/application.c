@@ -226,7 +226,7 @@ void lock_application_show_about(GSimpleAction *self,
                                                  libraries);
 
     // Legal
-    adw_about_dialog_set_copyright(about, "© 2024 Konstantin Tutsch");
+    adw_about_dialog_set_copyright(about, "© 2024-2025 Konstantin Tutsch");
 
     adw_dialog_present(ADW_DIALOG(about), GTK_WIDGET(active_window));
 }
