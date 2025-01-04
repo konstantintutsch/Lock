@@ -85,6 +85,15 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.3.8" date="2025-01-04">
+            <description translate="no">
+                <p>Happy New Year! 🥳</p>
+                <ul>
+                    <li>Turkish translation updated</li>
+                    <li>Persian translation updated</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.3.7" date="2024-12-29">
             <description translate="no">
                 <ul>
