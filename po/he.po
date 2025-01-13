@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2024-12-21 09:44+0100\n"
-"PO-Revision-Date: 2024-12-01 16:55+0000\n"
+"PO-Revision-Date: 2025-01-14 12:01+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/Lock/Application/"
 "he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -270,14 +270,14 @@ msgid "Failed to export GPG key(s) to file: %s"
 msgstr "ייצוא מפתח/מפתחות GPG לקובץ נכשל"
 
 #: src/cryptography.c:386
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for expire date renewal: %s"
-msgstr "קבלת מפתח GPG להסרה נכשלה"
+msgstr "קבלת מפתח GPG להסרה נכשלה: %s"
 
 #: src/cryptography.c:394
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to renew the expire date of a key: %s"
-msgstr "יצירת תהליכון יצירת ייצוא מפתח נכשלה"
+msgstr "חידוש תאריך התפוגה של מפתח נכשל: %s"
 
 #: src/cryptography.c:428
 #, fuzzy, c-format
