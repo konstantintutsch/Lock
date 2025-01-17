@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2024-12-21 09:44+0100\n"
-"PO-Revision-Date: 2024-12-20 08:03+0000\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"PO-Revision-Date: 2025-01-18 10:00+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
 "fi/>\n"
 "Language: fi\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9.2-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -198,19 +198,19 @@ msgid "Expire date renewed"
 msgstr "Vanheneminen uusittiin"
 
 #: src/cryptography.c:29
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME context: %s"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Uuden GPGME-kontekstin luominen epäonnistui.: %s"
 
 #: src/cryptography.c:37
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
-msgstr "GPGME-kontekstin protokollan asettaminen OpenPGP:lle epäonnistui"
+msgstr "GPGME-kontekstin protokollan asettaminen OpenPGP:lle epäonnistui: %s"
 
 #: src/cryptography.c:46
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set pinentry mode of GPGME context to ask: %s"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "GPGME-kontekstin pinentry-tilan asettaminen kysymään epäonnistui: %s"
 
 #: src/cryptography.c:105
 #, c-format
@@ -223,33 +223,33 @@ msgid "Failed to write to file: %s"
 msgstr "Tiedostoon kirjoittaminen epäonnistui: %s"
 
 #: src/cryptography.c:150
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to obtain key by fingerprint: %s"
-msgstr "Avainta ei saatu sormenjälkeen perustuen"
+msgstr "Avaimen saaminen sormenjäljellä epäonnistui: %s"
 
 #: src/cryptography.c:190
 msgid "Failed to find key matching User ID"
 msgstr "Käyttäjätunnistetta vastaavan avaimen löytäminen epäonnistui"
 
 #: src/cryptography.c:231
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to generate new GPG key for signing: %s"
-msgstr "Uuden GPG-avaimen luominen allekirjoitusta varten epäonnistui"
+msgstr "Uuden GPG-avaimen luominen allekirjoitusta varten epäonnistui: %s"
 
 #: src/cryptography.c:243
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to generate new GPG subkey for encryption: %s"
-msgstr "Uuden GPG-avaimen luominen allekirjoitusta varten epäonnistui"
+msgstr "Uuden GPG-aliavaimen luominen salausta varten epäonnistui: %s"
 
 #: src/cryptography.c:251
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to delete unfinished, generated key: %s"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Keskeneräisen luodun avaimen poistaminen epäonnistui: %s"
 
 #: src/cryptography.c:288
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to load GPGME key data from file: %s"
-msgstr "GPGME-avaimen lataaminen tiedostosta epäonnistui"
+msgstr "GPGME-avaintietojen lataaminen tiedostosta %s epäonnistui"
 
 #: src/cryptography.c:296
 #, c-format
@@ -257,9 +257,9 @@ msgid "Failed to import GPG key from file: %s"
 msgstr "GPG-avaimen tuominen tiedostosta epäonnistui: %s"
 
 #: src/cryptography.c:333
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create GPGME key data in memory: %s"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "GPGME-avaintietojen luominen muistiin epäonnistui: %s"
 
 #: src/cryptography.c:341
 #, c-format
@@ -267,9 +267,9 @@ msgid "Failed to export GPG key(s) to file: %s"
 msgstr "GPG-avaimen tai -avainten vieminen tiedostoon epäonnistui: %s"
 
 #: src/cryptography.c:386
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for expire date renewal: %s"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "GPG-avaimen saaminen vanhentumispäivän uusimista varten epäonnistui: %s"
 
 #: src/cryptography.c:394
 #, fuzzy, c-format
@@ -277,9 +277,9 @@ msgid "Failed to renew the expire date of a key: %s"
 msgstr "Avaimen vanhenemisajan päivittäminen epäonnistui: %s"
 
 #: src/cryptography.c:428
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for removal: %s"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "GPG-avaimen saaminen poistettaviksi epäonnistui: %s"
 
 #: src/cryptography.c:436
 #, c-format
@@ -288,36 +288,36 @@ msgstr "GPG-avaimen poistaminen epäonnistui: %s"
 
 #: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
 #: src/cryptography.c:659
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME input data from string: %s"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Uusien GPGME-syöttötietojen luominen merkkijonosta epäonnistui: %s"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
 #: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:837
 #: src/cryptography.c:924 src/cryptography.c:1017
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "Uusien GPGME-lähtötietojen luominen muistiin epäonnistui: %s"
 
 #: src/cryptography.c:495
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to encrypt GPGME data from memory: %s"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "GPGME-tietojen salaus muistista epäonnistui: %s"
 
 #: src/cryptography.c:551
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to decrypt GPGME data from memory: %s"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "GPGME-tietojen salauksen purkaminen muistista epäonnistui: %s"
 
 #: src/cryptography.c:610 src/cryptography.c:942
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to add signing key to GPGME context: %s"
-msgstr "Allekirjoitusavaimen lisääminen GPGME-kontekstiin epäonnistui"
+msgstr "Allekirjoitusavaimen lisääminen GPGME-kontekstiin epäonnistui: %s"
 
 #: src/cryptography.c:619
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to sign GPGME data from memory: %s"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "GPGME-tietojen allekirjoittaminen muistista epäonnistui: %s"
 
 #: src/cryptography.c:676
 msgid "Failed to verify GPGME data from memory"
@@ -330,39 +330,39 @@ msgstr "%s poistettu päällekirjoituksen valmistelemiseksi"
 
 #: src/cryptography.c:735 src/cryptography.c:820 src/cryptography.c:907
 #: src/cryptography.c:1000
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME input data from file: %s"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "Uuden GPGME-syöttödatan luominen tiedostosta epäonnistui: %s"
 
 #: src/cryptography.c:761 src/cryptography.c:933
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set file name of GPGME output data: %s"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "GPGME-lähtötietojen tiedostonimen asettaminen epäonnistui: %s"
 
 #: src/cryptography.c:772
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to encrypt GPGME data from file: %s"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "GPGME-tietojen salaus tiedostosta epäonnistui: %s"
 
 #: src/cryptography.c:828 src/cryptography.c:1008
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set file name of GPGME input data: %s"
-msgstr "Uuden GPGME-kontekstin luominen epäonnistui"
+msgstr "GPGME-syöttötietojen tiedostonimen asettaminen epäonnistui: %s"
 
 #: src/cryptography.c:855
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to decrypt GPGME data from file: %s"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "GPGME-tietojen salauksen purkaminen tiedostosta epäonnistui: %s"
 
 #: src/cryptography.c:951
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to sign GPGME data from file: %s"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "GPGME-tietojen allekirjoittaminen tiedostosta epäonnistui: %s"
 
 #: src/cryptography.c:1035
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to verify GPGME data from file: %s"
-msgstr "GPG-avaimen tuominen tiedostosta epäonnistui"
+msgstr "GPGME-tietojen vahvistaminen tiedostosta epäonnistui: %s"
 
 #: src/threading.c:57
 msgid "Failed to create text encryption thread"
