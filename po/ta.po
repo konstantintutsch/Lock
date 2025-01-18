@@ -1,0 +1,760 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.konstantintutsch.Lock package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.konstantintutsch.Lock\n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
+"POT-Creation-Date: 2024-12-21 09:44+0100\n"
+"PO-Revision-Date: 2025-01-13 07:01+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/Lock/Application/"
+"ta/>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10-dev\n"
+
+#: src/main.c:32
+#, c-format
+msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
+msgid "GnuPG Made Easy %s or greater required. Using %s."
+msgstr ""
+"GNUPG எளிதான %s அல்லது அதற்கு மேற்பட்ட தேவைகளை உருவாக்கியது. %s ஐப் பயன்படுத்துதல்."
+
+#. Details
+#: src/application.c:203 data/com.konstantintutsch.Lock.desktop.in.in:5
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
+msgid "Process data with GnuPG"
+msgstr "GNUPG உடன் தரவை செயலாக்கவும்"
+
+#: src/application.c:205
+msgctxt "Button linking to translations"
+msgid "Translate"
+msgstr "மொழிபெயர்த்திடு"
+
+#: src/application.c:208
+msgctxt "Button linking to source code"
+msgid "Develop"
+msgstr "உருவாக்கு"
+
+#: src/application.c:220
+msgid "translator-credits"
+msgstr "மொழிபெயர்ப்பாளர்-வரவு"
+
+#: src/application.c:225
+msgid "Dependencies"
+msgstr "சார்புநிலைகள்"
+
+#: src/window.c:157
+msgid "Enter text …"
+msgstr "உரையை உள்ளிடவும்…"
+
+#: src/window.c:459
+msgid "Text copied"
+msgstr "உரை நகலெடுக்கப்பட்டது"
+
+#: src/window.c:528
+#, c-format
+msgid "Could not read text from clipboard: %s"
+msgstr "கிளிப்போர்டில் இருந்து உரையைப் படிக்க முடியவில்லை: %s"
+
+#: src/window.c:537
+msgid "Text pasted"
+msgstr "உரை ஒட்டப்பட்டது"
+
+#: src/window.c:775 src/window.c:837
+msgid "Encryption failed"
+msgstr "குறியாக்கம் தோல்வியடைந்தது"
+
+#: src/window.c:777
+msgid "Text encrypted"
+msgstr "உரை குறியாக்கம்"
+
+#: src/window.c:839
+msgid "File encrypted"
+msgstr "கோப்பு குறியாக்கம் செய்யப்பட்டது"
+
+#: src/window.c:895 src/window.c:953
+msgid "Decryption failed"
+msgstr "மறைகுறியாக்கம் தோல்வியடைந்தது"
+
+#: src/window.c:897
+msgid "Text decrypted"
+msgstr "உரை மறைகுறியாக்கப்பட்டது"
+
+#: src/window.c:955
+msgid "File decrypted"
+msgstr "கோப்பு மறைகுறியாக்கப்பட்டது"
+
+#: src/window.c:1062 src/window.c:1124
+msgid "Signing failed"
+msgstr "கையொப்பமிடுவது தோல்வியடைந்தது"
+
+#: src/window.c:1064
+msgid "Text signed"
+msgstr "உரை கையொப்பமிடப்பட்டது"
+
+#: src/window.c:1126
+msgid "File signed"
+msgstr "கோப்பு கையொப்பமிடப்பட்டது"
+
+#: src/window.c:1182 src/window.c:1243
+msgid "Signature invalid"
+msgstr "கையொப்பம் தவறானது"
+
+#: src/window.c:1186 src/window.c:1247
+#, c-format
+msgid "Signature valid - by %s"
+msgstr "கையொப்பம் செல்லுபடியாகும் - %s ஆல்"
+
+#: src/managementdialog.c:364
+msgid "Import failed"
+msgstr "இறக்குமதி தோல்வியடைந்தது"
+
+#: src/managementdialog.c:366
+msgid "Keys imported"
+msgstr "விசைகள் இறக்குமதி செய்யப்பட்டன"
+
+#: src/managementdialog.c:412
+msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
+msgid "%B %e, %Y"
+msgstr "%B %e, %y"
+
+#: src/managementdialog.c:429
+msgid "No expire date"
+msgstr "காலாவதியான தேதி இல்லை"
+
+#: src/managementdialog.c:517
+msgid "Generation failed"
+msgstr "தலைமுறை தோல்வியடைந்தது"
+
+#: src/managementdialog.c:519
+msgid "Key pair generated"
+msgstr "முக்கிய இணை உருவாக்கப்பட்டது"
+
+#: src/keyrow.c:128
+msgid "Key does not expire"
+msgstr "விசை காலாவதியாகாது"
+
+#: src/keyrow.c:132
+#, c-format
+msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
+msgid "Expired %s at %s"
+msgstr "%s காலாவதியானது"
+
+#: src/keyrow.c:134
+#, c-format
+msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
+msgid "Expires %s at %s"
+msgstr "%s இல் %s இல் காலாவதியாகிறது"
+
+#: src/keyrow.c:174
+msgid "Fingerprint copied"
+msgstr "கைரேகை நகலெடுக்கப்பட்டது"
+
+#: src/keyrow.c:263
+msgid "Export failed"
+msgstr "ஏற்றுமதி தோல்வியடைந்தது"
+
+#: src/keyrow.c:265
+msgid "Key exported"
+msgstr "ஏற்றுமதி விசை"
+
+#: src/keyrow.c:310
+msgid "Remove key?"
+msgstr "விசையை அகற்றவா?"
+
+#: src/keyrow.c:313
+#, c-format
+msgid "The removal of the key of %s cannot be undone!"
+msgstr "%s விசையை அகற்றுவதை செயல்தவிர்க்க முடியாது!"
+
+#: src/keyrow.c:316
+msgid "_Cancel"
+msgstr "_CANCEL"
+
+#: src/keyrow.c:317
+msgid "_Remove"
+msgstr "_ அகற்று"
+
+#: src/keyrow.c:358
+msgid "Removal failed"
+msgstr "அகற்றுதல் தோல்வியடைந்தது"
+
+#: src/keyrow.c:360
+msgid "Key removed"
+msgstr "விசை அகற்றப்பட்டது"
+
+#: src/keyrow.c:410
+msgid "Renewal failed"
+msgstr "புதுப்பித்தல் தோல்வியடைந்தது"
+
+#: src/keyrow.c:412
+msgid "Expire date renewed"
+msgstr "காலாவதியான தேதி புதுப்பிக்கப்பட்டது"
+
+#: src/cryptography.c:29
+#, c-format
+msgid "Failed to create new GPGME context: %s"
+msgstr "புதிய GPGME சூழலை உருவாக்குவதில் தோல்வி: %s"
+
+#: src/cryptography.c:37
+#, c-format
+msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
+msgstr "GPGME சூழலின் நெறிமுறையை OpenPGP க்கு அமைப்பதில் தோல்வி: %s"
+
+#: src/cryptography.c:46
+#, c-format
+msgid "Failed to set pinentry mode of GPGME context to ask: %s"
+msgstr ""
+"கேட்க சி.பி.சி.எம்.இ சூழலின் பினென்ட்ரி பயன்முறையை அமைப்பதில் தோல்வி: %s"
+
+#: src/cryptography.c:105
+#, c-format
+msgid "Failed to open file for writing: %s"
+msgstr "எழுதுவதற்கு கோப்பைத் திறக்கத் தவறிவிட்டது: %s"
+
+#: src/cryptography.c:113
+#, c-format
+msgid "Failed to write to file: %s"
+msgstr "கோப்புக்கு எழுதத் தவறிவிட்டது: %s"
+
+#: src/cryptography.c:150
+#, c-format
+msgid "Failed to obtain key by fingerprint: %s"
+msgstr "கைரேகை மூலம் விசையைப் பெறுவதில் தோல்வி: %s"
+
+#: src/cryptography.c:190
+msgid "Failed to find key matching User ID"
+msgstr "பொருந்தக்கூடிய பயனர் ஐடியைக் கண்டுபிடிப்பதில் தோல்வி"
+
+#: src/cryptography.c:231
+#, c-format
+msgid "Failed to generate new GPG key for signing: %s"
+msgstr "கையொப்பமிட புதிய சிபிசி விசையை உருவாக்குவதில் தோல்வி: %s"
+
+#: src/cryptography.c:243
+#, c-format
+msgid "Failed to generate new GPG subkey for encryption: %s"
+msgstr "குறியாக்கத்திற்காக புதிய சிபிசி சப்சியை உருவாக்குவதில் தோல்வி: %s"
+
+#: src/cryptography.c:251
+#, c-format
+msgid "Failed to delete unfinished, generated key: %s"
+msgstr "முடிக்கப்படாத, உருவாக்கப்பட்ட விசையை நீக்குவதில் தோல்வி: %s"
+
+#: src/cryptography.c:288
+#, c-format
+msgid "Failed to load GPGME key data from file: %s"
+msgstr "GPGME முக்கிய தரவை கோப்பிலிருந்து ஏற்றுவதில் தோல்வி: %s"
+
+#: src/cryptography.c:296
+#, c-format
+msgid "Failed to import GPG key from file: %s"
+msgstr "கோப்பிலிருந்து சிபிசி விசையை இறக்குமதி செய்வதில் தோல்வி: %s"
+
+#: src/cryptography.c:333
+#, c-format
+msgid "Failed to create GPGME key data in memory: %s"
+msgstr "நினைவகத்தில் GPGME முக்கிய தரவை உருவாக்குவதில் தோல்வி: %s"
+
+#: src/cryptography.c:341
+#, c-format
+msgid "Failed to export GPG key(s) to file: %s"
+msgstr "கோப்புக்கு சிபிசி விசை (களை) ஏற்றுமதி செய்வதில் தோல்வி: %s"
+
+#: src/cryptography.c:386
+#, c-format
+msgid "Failed to get GPG key for expire date renewal: %s"
+msgstr "காலாவதியான தேதி புதுப்பிப்புக்கு சிபிசி விசையைப் பெறுவதில் தோல்வி: %s"
+
+#: src/cryptography.c:394
+#, c-format
+msgid "Failed to renew the expire date of a key: %s"
+msgstr "ஒரு விசையின் காலாவதியான தேதியை புதுப்பிக்கத் தவறிவிட்டது: %s"
+
+#: src/cryptography.c:428
+#, c-format
+msgid "Failed to get GPG key for removal: %s"
+msgstr "அகற்ற சிபிசி விசையைப் பெறுவதில் தோல்வி: %s"
+
+#: src/cryptography.c:436
+#, c-format
+msgid "Failed to remove GPG key: %s"
+msgstr "சிபிசி விசையை அகற்றுவதில் தோல்வி: %s"
+
+#: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
+#: src/cryptography.c:659
+#, c-format
+msgid "Failed to create new GPGME input data from string: %s"
+msgstr "சரம்: %s புதிய சி.பி.சி.எம்.இ உள்ளீட்டு தரவை உருவாக்குவதில் தோல்வி"
+
+#: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
+#: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:837
+#: src/cryptography.c:924 src/cryptography.c:1017
+#, c-format
+msgid "Failed to create new GPGME output data in memory: %s"
+msgstr ""
+"நினைவகத்தில் புதிய சி.பி.சி.எம்.இ வெளியீட்டு தரவை உருவாக்குவதில் தோல்வி: %s"
+
+#: src/cryptography.c:495
+#, c-format
+msgid "Failed to encrypt GPGME data from memory: %s"
+msgstr "நினைவகத்திலிருந்து GPGME தரவை குறியாக்கத் தவறிவிட்டது: %s"
+
+#: src/cryptography.c:551
+#, c-format
+msgid "Failed to decrypt GPGME data from memory: %s"
+msgstr "நினைவகத்திலிருந்து சி.பி.சி.எம்.இ தரவை மறைகுறியாக்குவதில் தோல்வி: %s"
+
+#: src/cryptography.c:610 src/cryptography.c:942
+#, c-format
+msgid "Failed to add signing key to GPGME context: %s"
+msgstr "GPGME சூழலுக்கு கையொப்பமிடும் விசையைச் சேர்க்கத் தவறிவிட்டது: %s"
+
+#: src/cryptography.c:619
+#, c-format
+msgid "Failed to sign GPGME data from memory: %s"
+msgstr "நினைவகத்திலிருந்து சி.பி.சி.எம்.இ தரவில் கையெழுத்திடுவதில் தோல்வி: %s"
+
+#: src/cryptography.c:676
+msgid "Failed to verify GPGME data from memory"
+msgstr "நினைவகத்திலிருந்து GPGME தரவை சரிபார்க்கத் தவறிவிட்டது"
+
+#: src/cryptography.c:730 src/cryptography.c:902
+#, c-format
+msgid "Removed %s to prepare overwriting"
+msgstr "மேலெழுதலைத் தயாரிக்க %s அகற்றப்பட்டன"
+
+#: src/cryptography.c:735 src/cryptography.c:820 src/cryptography.c:907
+#: src/cryptography.c:1000
+#, c-format
+msgid "Failed to create new GPGME input data from file: %s"
+msgstr ""
+"கோப்பிலிருந்து புதிய சி.பி.சி.எம்.இ உள்ளீட்டு தரவை உருவாக்குவதில் தோல்வி: %s"
+
+#: src/cryptography.c:761 src/cryptography.c:933
+#, c-format
+msgid "Failed to set file name of GPGME output data: %s"
+msgstr "GPGME வெளியீட்டு தரவின் கோப்பு பெயரை அமைப்பதில் தோல்வி: %s"
+
+#: src/cryptography.c:772
+#, c-format
+msgid "Failed to encrypt GPGME data from file: %s"
+msgstr "GPGME தரவை கோப்பிலிருந்து குறியாக்கத் தவறிவிட்டது: %s"
+
+#: src/cryptography.c:828 src/cryptography.c:1008
+#, c-format
+msgid "Failed to set file name of GPGME input data: %s"
+msgstr "GPGME உள்ளீட்டு தரவின் கோப்பு பெயரை அமைப்பதில் தோல்வி: %s"
+
+#: src/cryptography.c:855
+#, c-format
+msgid "Failed to decrypt GPGME data from file: %s"
+msgstr "கோப்பிலிருந்து சி.பி.சி.எம்.இ தரவை மறைகுறியாக்குவதில் தோல்வி: %s"
+
+#: src/cryptography.c:951
+#, c-format
+msgid "Failed to sign GPGME data from file: %s"
+msgstr "கோப்பிலிருந்து GPGME தரவுகளில் கையெழுத்திடுவதில் தோல்வி: %s"
+
+#: src/cryptography.c:1035
+#, c-format
+msgid "Failed to verify GPGME data from file: %s"
+msgstr "கோப்பிலிருந்து GPGME தரவை சரிபார்க்கத் தவறிவிட்டது: %s"
+
+#: src/threading.c:57
+msgid "Failed to create text encryption thread"
+msgstr "உரை குறியாக்க நூலை உருவாக்குவதில் தோல்வி"
+
+#: src/threading.c:79
+msgid "Failed to create file encryption thread"
+msgstr "கோப்பு குறியாக்க நூலை உருவாக்குவதில் தோல்வி"
+
+#: src/threading.c:100
+msgid "Failed to create text decryption thread"
+msgstr "உரை மறைகுறியாக்க நூலை உருவாக்குவதில் தோல்வி"
+
+#: src/threading.c:118
+msgid "Failed to create file decryption thread"
+msgstr "கோப்பு மறைகுறியாக்க நூலை உருவாக்குவதில் தோல்வி"
+
+#: src/threading.c:140
+msgid "Failed to create text signing thread"
+msgstr "உரை கையொப்பமிடும் நூலை உருவாக்குவதில் தோல்வி"
+
+#: src/threading.c:162
+msgid "Failed to create file signing thread"
+msgstr "கோப்பு கையொப்பமிடும் நூலை உருவாக்குவதில் தோல்வி"
+
+#: src/threading.c:183
+msgid "Failed to create text verification thread"
+msgstr "உரை சரிபார்ப்பு நூலை உருவாக்குவதில் தோல்வி"
+
+#: src/threading.c:201
+msgid "Failed to create file verification thread"
+msgstr "கோப்பு சரிபார்ப்பு நூலை உருவாக்குவதில் தோல்வி"
+
+#: src/threading.c:216
+msgid "Failed to create key import thread"
+msgstr "முக்கிய இறக்குமதி நூலை உருவாக்குவதில் தோல்வி"
+
+#: src/threading.c:238
+msgid "Failed to create key pair generation thread"
+msgstr "முக்கிய இணை தலைமுறை நூலை உருவாக்குவதில் தோல்வி"
+
+#: src/threading.c:253
+msgid "Failed to create key export thread"
+msgstr "முக்கிய ஏற்றுமதி நூலை உருவாக்குவதில் தோல்வி"
+
+#: src/threading.c:265
+msgid "Failed to create key removal thread"
+msgstr "விசை அகற்றும் நூலை உருவாக்குவதில் தோல்வி"
+
+#: data/ui/shortcuts.blp:10
+msgctxt "Shortcuts Group"
+msgid "General"
+msgstr "பொது"
+
+#: data/ui/shortcuts.blp:13
+msgctxt "Shortcut as in keyboard shortcut"
+msgid "Show shortcuts"
+msgstr "குறுக்குவழிகளைக் காட்டு"
+
+#: data/ui/shortcuts.blp:20
+msgid "Copy text view to clipboard"
+msgstr "இடைநிலைப்பலகைக்கு உரை காட்சியை நகலெடுக்கவும்"
+
+#: data/ui/shortcuts.blp:27
+msgid "Overwrite text view with clipboard"
+msgstr "கிளிப்போர்டுடன் உரை காட்சியை மேலெழுதவும்"
+
+#: data/ui/shortcuts.blp:35
+msgctxt "Shortcuts Group"
+msgid "Cryptography"
+msgstr "குறியாக்கவியல்"
+
+#: data/ui/shortcuts.blp:38
+msgid "Encrypt text"
+msgstr "உரை குறியாக்கம்"
+
+#: data/ui/shortcuts.blp:45
+msgid "Decrypt text"
+msgstr "உரையை மறைகுறியாக்கவும்"
+
+#: data/ui/shortcuts.blp:52
+msgid "Sign text"
+msgstr "உரையில் கையொப்பமிடுங்கள்"
+
+#: data/ui/shortcuts.blp:59
+msgid "Verify text"
+msgstr "உரையை சரிபார்க்கவும்"
+
+#: data/ui/window.blp:9 data/ui/window.blp:194
+#: data/com.konstantintutsch.Lock.desktop.in.in:4
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
+msgid "Lock"
+msgstr "பூட்டு"
+
+#: data/ui/window.blp:29
+msgid "Copy"
+msgstr "நகலெடு"
+
+#: data/ui/window.blp:30
+msgid "Copy the text"
+msgstr "உரையை நகலெடுக்கவும்"
+
+#: data/ui/window.blp:33
+msgid "Cryptography operations"
+msgstr "குறியாக்கவியல் செயல்பாடுகள்"
+
+#: data/ui/window.blp:50
+msgid "Processing …"
+msgstr "செயலாக்கம்…"
+
+#: data/ui/window.blp:55
+msgid "Main Menu"
+msgstr "பட்டியல் விளையாடுங்கள்"
+
+#: data/ui/window.blp:66
+msgid "Text"
+msgstr "உரை"
+
+#: data/ui/window.blp:84
+msgid "File"
+msgstr "கோப்பு"
+
+#: data/ui/window.blp:93
+msgid "No files selected for processing"
+msgstr "செயலாக்க கோப்புகள் எதுவும் தேர்ந்தெடுக்கப்படவில்லை"
+
+#: data/ui/window.blp:114
+msgid "Input File"
+msgstr "உள்ளீட்டு கோப்பு"
+
+#: data/ui/window.blp:123
+msgid "Select input file"
+msgstr "உள்ளீட்டு கோப்பைத் தேர்ந்தெடுக்கவும்"
+
+#: data/ui/window.blp:130
+msgid "Output File"
+msgstr "வெளியீட்டு கோப்பு"
+
+#: data/ui/window.blp:139
+msgid "Select output file"
+msgstr "வெளியீட்டு கோப்பைத் தேர்ந்தெடுக்கவும்"
+
+#: data/ui/window.blp:155 data/ui/window.blp:219
+msgid "Encrypt"
+msgstr "குறியாக்க"
+
+#: data/ui/window.blp:162 data/ui/window.blp:223
+msgid "Decrypt"
+msgstr "மறைவிலக்கு"
+
+#: data/ui/window.blp:169 data/ui/window.blp:229
+msgid "Sign"
+msgstr "அடையாளம்"
+
+#: data/ui/window.blp:176 data/ui/window.blp:241
+msgid "Verify"
+msgstr "சரிபார்க்கவும்"
+
+#: data/ui/window.blp:200 data/ui/managementdialog.blp:30
+msgid "Manage keys"
+msgstr "விசைகளை நிர்வகிக்கவும்"
+
+#: data/ui/window.blp:206
+msgid "Keyboard Shortcuts"
+msgstr "விசைப்பலகை குறுக்குவழிகள்"
+
+#: data/ui/window.blp:210
+msgid "About Lock"
+msgstr "பூட்டு பற்றி"
+
+#: data/ui/window.blp:233
+msgid "Sign (Clear Text)"
+msgstr "அடையாளம் (தெளிவான உரை)"
+
+#: data/ui/window.blp:237
+msgid "Sign (Detached)"
+msgstr "அடையாளம் (பிரிக்கப்பட்ட)"
+
+#: data/ui/selectiondialog.blp:35
+msgid "Select key"
+msgstr "விசையைத் தேர்ந்தெடுக்கவும்"
+
+#: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
+msgid "Refresh keys"
+msgstr "விசைகளைப் புதுப்பிக்கவும்"
+
+#: data/ui/selectiondialog.blp:68
+msgid "No capable keys available"
+msgstr "திறமையான விசைகள் எதுவும் கிடைக்கவில்லை"
+
+#: data/ui/selectiondialog.blp:69
+msgid ""
+"Your GnuPG keyring does not contain any keys that support this functionality."
+msgstr ""
+"உங்கள் gnupg keiring இந்த செயல்பாட்டை ஆதரிக்கும் எந்த விசைகளையும் கொண்டிருக்கவில்லை."
+
+#: data/ui/managementdialog.blp:68
+msgid "No keys available"
+msgstr "விசைகள் எதுவும் கிடைக்கவில்லை"
+
+#: data/ui/managementdialog.blp:69
+msgid "Your GnuPG keyring does not contain any keys."
+msgstr "உங்கள் க்னப் கீரிங்கில் எந்த விசைகளும் இல்லை."
+
+#: data/ui/managementdialog.blp:89
+msgctxt "Import keys from files"
+msgid "Import"
+msgstr "இறக்குமதி"
+
+#: data/ui/managementdialog.blp:90
+msgid "Import keys from files"
+msgstr "கோப்புகளிலிருந்து விசைகளை இறக்குமதி செய்யுங்கள்"
+
+#: data/ui/managementdialog.blp:97
+msgid "Create a new keypair"
+msgstr "புதிய விசைப்பலகையை உருவாக்கவும்"
+
+#: data/ui/managementdialog.blp:110
+msgid "Generate keypair"
+msgstr "விசைப்பலகையை உருவாக்குங்கள்"
+
+#: data/ui/managementdialog.blp:141
+msgctxt "Name of the UID of the new keypair"
+msgid "Name (Mandatory)"
+msgstr "பெயர் (கட்டாய)"
+
+#: data/ui/managementdialog.blp:146
+msgctxt "Email of the UID of the new keypair"
+msgid "Email"
+msgstr "மின்னஞ்சல்"
+
+#: data/ui/managementdialog.blp:151
+msgctxt "Comment of the UID of the new keypair"
+msgid "Comment"
+msgstr "கருத்து"
+
+#: data/ui/managementdialog.blp:156
+msgctxt "Signing algorithm of the new keypair"
+msgid "Signing Algorithm"
+msgstr "கையொப்பமிடும் வழிமுறை"
+
+#: data/ui/managementdialog.blp:157
+msgctxt "Signing algorithm of the new keypair"
+msgid "Key"
+msgstr "விசை"
+
+#: data/ui/managementdialog.blp:165
+msgctxt "Encryption algorithm of the new keypair"
+msgid "Encryption Algorithm"
+msgstr "குறியாக்க வழிமுறை"
+
+#: data/ui/managementdialog.blp:166
+msgctxt "Encryption algorithm of the new keypair"
+msgid "Subkey"
+msgstr "Subcs"
+
+#: data/ui/managementdialog.blp:174
+msgctxt "Expire date of the new key pair"
+msgid "Expire Date"
+msgstr "காலாவதியாகும் தேதி"
+
+#: data/ui/managementdialog.blp:184
+msgid "Remove expire date"
+msgstr "காலாவதியான தேதியை அகற்று"
+
+#: data/ui/managementdialog.blp:192
+msgid "Select expire date of the new key pair"
+msgstr "புதிய விசை சோடியின் காலாவதியான தேதியைத் தேர்ந்தெடுக்கவும்"
+
+#: data/ui/managementdialog.blp:213
+msgctxt "Generate a new keypair"
+msgid "Generate"
+msgstr "உருவாக்கு"
+
+#: data/ui/managementdialog.blp:214
+msgid "Generate a new keypair"
+msgstr "புதிய விசைப்பலகையை உருவாக்குங்கள்"
+
+#: data/ui/keyrow.blp:5
+msgid "User ID"
+msgstr "பயனர் ஐடி"
+
+#: data/ui/keyrow.blp:6
+msgid "Fingerprint"
+msgstr "கைரேகை"
+
+#: data/ui/keyrow.blp:7
+msgid "Expiry"
+msgstr "காலாவதி"
+
+#: data/ui/keyrow.blp:20
+msgid "Remove key"
+msgstr "விசையை அகற்று"
+
+#: data/ui/keyrow.blp:27
+msgid "Export public key to file"
+msgstr "தாக்கல் செய்ய பொது விசையை ஏற்றுமதி செய்யுங்கள்"
+
+#: data/ui/keyrow.blp:38
+msgid "Edit expire date"
+msgstr "காலாவதியான தேதியைத் திருத்து"
+
+#: data/com.konstantintutsch.Lock.desktop.in.in:11
+msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
+msgstr ""
+"gpg; gnupg; குறியாக்கவியல்; OpenPGP; குறியாக்க; டிக்ரிப்ட்; அடையாளம்; சரிபார்க்கவும்;"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
+msgid ""
+"Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
+"LibAdwaita GUI."
+msgstr ""
+"பூட்டு என்பது ஒரு அழகான லிபாட்வைட்டா குயியைப் பயன்படுத்தும் க்னப் (சிபிசி) ஒரு வரைகலை "
+"முன் இறுதியில் உள்ளது."
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
+msgid "Process text and files:"
+msgstr "உரை மற்றும் கோப்புகளை செயலாக்குங்கள்:"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:75
+msgid "Encryption"
+msgstr "குறியாக்கம்"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
+msgid "Decryption"
+msgstr "மறைகுறியாக்கம்"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:14
+msgid "Signing"
+msgstr "கையொப்பமிடுதல்"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:15
+msgid "Verification"
+msgstr "சரிபார்ப்பு"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:17
+msgid "Manage your GnuPG keyring:"
+msgstr "உங்கள் க்னப் கீரிங்கை நிர்வகிக்கவும்:"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
+msgid "Generate new key pairs"
+msgstr "புதிய முக்கிய சோடிகளை உருவாக்குங்கள்"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
+msgid "Import keys"
+msgstr "விசைகளை இறக்குமதி செய்யுங்கள்"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:21
+msgid "Export public keys"
+msgstr "பொது விசைகளை ஏற்றுமதி செய்யுங்கள்"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
+msgid "View expire dates"
+msgstr "காலாவதியான தேதிகளைக் காண்க"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
+msgid "Update expire dates of expired keys"
+msgstr "காலாவதியான விசைகளின் காலாவதியான தேதிகள் புதுப்பிப்பு"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
+msgid "Remove keys"
+msgstr "விசைகளை அகற்று"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:47
+msgid "Light Appearance"
+msgstr "ஒளி தோற்றம்"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:51
+msgid "Dark Appearance"
+msgstr "இருண்ட தோற்றம்"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:55
+msgid "Key Management"
+msgstr "முக்கிய மேலாண்மை"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:59
+msgid "Keypair Generation"
+msgstr "கீபேர் தலைமுறை"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:63
+msgid "File processing"
+msgstr "கோப்பு செயலாக்கம்"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:67
+msgid "Plain text"
+msgstr "சாதாரண எழுத்து"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
+msgid "Key selection dialog"
+msgstr "முக்கிய தேர்வு உரையாடல்"
