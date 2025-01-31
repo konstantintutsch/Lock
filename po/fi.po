@@ -43,13 +43,13 @@ msgstr "Kehitä"
 
 #: src/application.c:220
 msgid "translator-credits"
-msgstr "Jiri Grönroos"
+msgstr "kääntäjien ansiot"
 
 #: src/application.c:225
 msgid "Dependencies"
 msgstr "Riippuvuudet"
 
-#: src/window.c:155
+#: src/window.c:155 src/window.c:157
 msgid "Enter text …"
 msgstr "Kirjoita tekstiä…"
 
@@ -66,11 +66,11 @@ msgstr "Ei voitu lukea leikepöydältä: %s"
 msgid "Text pasted"
 msgstr "Teksti liitetty"
 
-#: src/window.c:801 src/window.c:878
+#: src/window.c:801 src/window.c:878 src/window.c:775 src/window.c:837
 msgid "Encryption failed"
 msgstr "Salaaminen epäonnistui"
 
-#: src/window.c:803
+#: src/window.c:803 src/window.c:777
 msgid "Text encrypted"
 msgstr "Teksti salattu"
 
@@ -79,11 +79,11 @@ msgstr "Teksti salattu"
 msgid "Files encrypted"
 msgstr "Tiedosto salattu"
 
-#: src/window.c:936 src/window.c:1016
+#: src/window.c:936 src/window.c:1016 src/window.c:895 src/window.c:953
 msgid "Decryption failed"
 msgstr "Salauksen purkaminen epäonnistui"
 
-#: src/window.c:938
+#: src/window.c:938 src/window.c:897
 msgid "Text decrypted"
 msgstr "Tekstin salaus purettu"
 
@@ -92,11 +92,11 @@ msgstr "Tekstin salaus purettu"
 msgid "Files decrypted"
 msgstr "Tiedoston salaus purettu"
 
-#: src/window.c:1125 src/window.c:1203
+#: src/window.c:1125 src/window.c:1203 src/window.c:1062 src/window.c:1124
 msgid "Signing failed"
 msgstr "Allekirjoittaminen epäonnistui"
 
-#: src/window.c:1127
+#: src/window.c:1127 src/window.c:1064
 msgid "Text signed"
 msgstr "Teksti allekirjoitettu"
 
@@ -105,11 +105,11 @@ msgstr "Teksti allekirjoitettu"
 msgid "Files signed"
 msgstr "Tiedosto allekirjoitettu"
 
-#: src/window.c:1261
+#: src/window.c:1261 src/window.c:1182 src/window.c:1243
 msgid "Signature invalid"
 msgstr "Virheellinen allekirjoitus"
 
-#: src/window.c:1265
+#: src/window.c:1265 src/window.c:1186 src/window.c:1247
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Kelvollinen allekirjoitus - suorittanut %s"
@@ -389,48 +389,48 @@ msgstr "GPGME-tietojen vahvistaminen tiedostosta epäonnistui: %s"
 msgid "Failed to create text encryption thread"
 msgstr "Tekstisalauksen säikeen luominen epäonnistui"
 
-#: src/threading.c:80
+#: src/threading.c:80 src/threading.c:79
 msgid "Failed to create file encryption thread"
 msgstr "Tiedostosalauksen säikeen luominen epäonnistui"
 
-#: src/threading.c:101
+#: src/threading.c:101 src/threading.c:100
 msgid "Failed to create text decryption thread"
 msgstr "Tekstin salauksenpurkuketjun luominen epäonnistui"
 
-#: src/threading.c:121
+#: src/threading.c:121 src/threading.c:118
 msgid "Failed to create file decryption thread"
 msgstr "Tiedoston salauksenpurkuketjun luominen epäonnistui"
 
-#: src/threading.c:143
+#: src/threading.c:143 src/threading.c:140
 msgid "Failed to create text signing thread"
 msgstr "Tekstin allekirjoitussäikeen luominen epäonnistui"
 
-#: src/threading.c:166
+#: src/threading.c:166 src/threading.c:162
 msgid "Failed to create file signing thread"
 msgstr "Tiedoston allekirjoitussäikeen luominen epäonnistui"
 
-#: src/threading.c:187
+#: src/threading.c:187 src/threading.c:183
 msgid "Failed to create text verification thread"
 msgstr "Tekstin vahvistussäikeen luominen epäonnistui"
 
-#: src/threading.c:207
+#: src/threading.c:207 src/threading.c:201
 msgid "Failed to create file verification thread"
 msgstr "Tiedoston vahvistussäikeen luominen epäonnistui"
 
-#: src/threading.c:222
+#: src/threading.c:222 src/threading.c:216
 msgid "Failed to create key import thread"
 msgstr "Avaimen tuontisäikeen luominen epäonnistui"
 
-#: src/threading.c:244
+#: src/threading.c:244 src/threading.c:238
 #, fuzzy
 msgid "Failed to create key pair generation thread"
 msgstr "Avaimen luontisäikeen luominen epäonnistui"
 
-#: src/threading.c:259
+#: src/threading.c:259 src/threading.c:253
 msgid "Failed to create key export thread"
 msgstr "Avaimen vientisäikeen luominen epäonnistui"
 
-#: src/threading.c:271
+#: src/threading.c:271 src/threading.c:265
 msgid "Failed to create key removal thread"
 msgstr "Avaimen poistonsäikeen luominen epäonnistui"
 
@@ -475,7 +475,7 @@ msgstr "Vahvista teksti"
 
 #: data/ui/window.blp:9 data/ui/window.blp:197
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
-#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6 data/ui/window.blp:194
 msgid "Lock"
 msgstr "Lock"
 
@@ -533,39 +533,44 @@ msgstr ""
 msgid "Close all open files"
 msgstr ""
 
-#: data/ui/window.blp:157 data/ui/window.blp:222
+#: data/ui/window.blp:157 data/ui/window.blp:222 data/ui/window.blp:155
+#: data/ui/window.blp:219
 msgid "Encrypt"
 msgstr "Salaa"
 
-#: data/ui/window.blp:164 data/ui/window.blp:226
+#: data/ui/window.blp:164 data/ui/window.blp:226 data/ui/window.blp:162
+#: data/ui/window.blp:223
 msgid "Decrypt"
 msgstr "Pura salaus"
 
-#: data/ui/window.blp:171 data/ui/window.blp:232
+#: data/ui/window.blp:171 data/ui/window.blp:232 data/ui/window.blp:169
+#: data/ui/window.blp:229
 msgid "Sign"
 msgstr "Allekirjoita"
 
-#: data/ui/window.blp:178 data/ui/window.blp:244
+#: data/ui/window.blp:178 data/ui/window.blp:244 data/ui/window.blp:176
+#: data/ui/window.blp:241
 msgid "Verify"
 msgstr "Vahvista"
 
 #: data/ui/window.blp:203 data/ui/managementdialog.blp:30
+#: data/ui/window.blp:200
 msgid "Manage keys"
 msgstr "Hallitse avaimia"
 
-#: data/ui/window.blp:209
+#: data/ui/window.blp:209 data/ui/window.blp:206
 msgid "Keyboard Shortcuts"
 msgstr "Pikanäppäimet"
 
-#: data/ui/window.blp:213
+#: data/ui/window.blp:213 data/ui/window.blp:210
 msgid "About Lock"
 msgstr "Tietoja - Lock"
 
-#: data/ui/window.blp:236
+#: data/ui/window.blp:236 data/ui/window.blp:233
 msgid "Sign (Clear Text)"
 msgstr "Allekirjoita (raakateksti)"
 
-#: data/ui/window.blp:240
+#: data/ui/window.blp:240 data/ui/window.blp:237
 msgid "Sign (Detached)"
 msgstr "Allekirjoita (erillinen)"
 
@@ -789,21 +794,41 @@ msgstr "Raakateksti"
 msgid "Key selection dialog"
 msgstr "Avaimen valinnan ikkuna"
 
+#: data/ui/window.blp:114
+msgid "Input File"
+msgstr "Käsiteltävä tiedosto"
+
+#: data/ui/window.blp:123
+msgid "Select input file"
+msgstr "Valitse käsiteltävä tiedosto"
+
+#: data/ui/window.blp:130
+msgid "Output File"
+msgstr "Käsitelty tiedosto"
+
+#: data/ui/window.blp:139
+msgid "Select output file"
+msgstr "Valitse käsitelty tiedosto"
+
+#: src/window.c:839
+msgid "File encrypted"
+msgstr "Tiedosto salattu"
+
+#: src/window.c:955
+msgid "File decrypted"
+msgstr "Tiedoston salaus purettu"
+
+#: src/window.c:1126
+msgid "File signed"
+msgstr "Tiedosto allekirjoitettu"
+
+#: data/ui/window.blp:93
+msgid "No files selected for processing"
+msgstr "Tiedostoja ei ole valittu käsiteltäväksi"
+
 #, fuzzy
 #~ msgid "All signatures valid"
 #~ msgstr "Virheellinen allekirjoitus"
-
-#~ msgid "Input File"
-#~ msgstr "Käsiteltävä tiedosto"
-
-#~ msgid "Select input file"
-#~ msgstr "Valitse käsiteltävä tiedosto"
-
-#~ msgid "Output File"
-#~ msgstr "Käsitelty tiedosto"
-
-#~ msgid "Select output file"
-#~ msgstr "Valitse käsitelty tiedosto"
 
 #~ msgctxt "Expiry time of the new keypair"
 #~ msgid "Expiry"
