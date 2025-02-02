@@ -85,6 +85,16 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.4.0" date="2025-02-02">
+            <description translate="no">
+                <p>File Batch Processing! 🗄️</p>
+                <ul>
+                    <li>Multiple files can now be processed in a single cryptography operation</li>
+                    <li>Simplified Chinese translation updated</li>
+                    <li>Finnish translation updated</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.3.9" date="2025-01-18">
             <description translate="no">
                 <ul>
