@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
-"POT-Creation-Date: 2024-12-21 09:44+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-02 16:12+0100\n"
 "PO-Revision-Date: 2024-12-31 09:00+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -49,7 +49,7 @@ msgstr "رضا حسین‌زاده <rezahosseinzadeh@riseup.net>"
 msgid "Dependencies"
 msgstr "وابستگی‌ها"
 
-#: src/window.c:157
+#: src/window.c:155
 msgid "Enter text …"
 msgstr "متن را وارد کنید…"
 
@@ -66,50 +66,70 @@ msgstr "ناتوانی در خواندن متن از تخته‌گیره: %s"
 msgid "Text pasted"
 msgstr "متن چسبانده شد"
 
-#: src/window.c:775 src/window.c:837
+#: src/window.c:801 src/window.c:878
 msgid "Encryption failed"
 msgstr "رمزگذاری شکست خورد"
 
-#: src/window.c:777
+#: src/window.c:803
 msgid "Text encrypted"
 msgstr "متن رمزگذاری شد"
 
-#: src/window.c:839
-msgid "File encrypted"
+#: src/window.c:880
+#, fuzzy
+msgid "Files encrypted"
 msgstr "پرونده رمزگذاری شد"
 
-#: src/window.c:895 src/window.c:953
+#: src/window.c:936 src/window.c:1016
 msgid "Decryption failed"
 msgstr "رمزگشایی شکست خورد"
 
-#: src/window.c:897
+#: src/window.c:938
 msgid "Text decrypted"
 msgstr "متن رمزگشایی شد"
 
-#: src/window.c:955
-msgid "File decrypted"
+#: src/window.c:1018
+#, fuzzy
+msgid "Files decrypted"
 msgstr "پرونده رمزگشایی شد"
 
-#: src/window.c:1062 src/window.c:1124
+#: src/window.c:1125 src/window.c:1203
 msgid "Signing failed"
 msgstr "امضا کردن شکست خورد"
 
-#: src/window.c:1064
+#: src/window.c:1127
 msgid "Text signed"
 msgstr "متن امضا شد"
 
-#: src/window.c:1126
-msgid "File signed"
+#: src/window.c:1205
+#, fuzzy
+msgid "Files signed"
 msgstr "پرونده امضا شد"
 
-#: src/window.c:1182 src/window.c:1243
+#: src/window.c:1261
 msgid "Signature invalid"
 msgstr "امضا نامعتبر است"
 
-#: src/window.c:1186 src/window.c:1247
+#: src/window.c:1265
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "امضا معتبر است - توسط %s"
+
+#: src/window.c:1320
+msgid "valid"
+msgstr ""
+
+#: src/window.c:1320
+msgid "invalid"
+msgstr ""
+
+#: src/window.c:1352
+msgid "At least one invalid signature"
+msgstr ""
+
+#: src/window.c:1354
+#, fuzzy
+msgid "Signatures valid"
+msgstr "امضا نامعتبر است"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
@@ -368,48 +388,48 @@ msgstr "اعتبارسنجی دادهٔ GPGME از پرونده شکست خور�
 msgid "Failed to create text encryption thread"
 msgstr "ساختن رشتهٔ رمزگذاری متن شکست خورد"
 
-#: src/threading.c:79
+#: src/threading.c:80
 msgid "Failed to create file encryption thread"
 msgstr "ساختن رشتهٔ رمزگذاری پرونده شکست خورد"
 
-#: src/threading.c:100
+#: src/threading.c:101
 msgid "Failed to create text decryption thread"
 msgstr "ساختن رشتهٔ رمزگشایی متن شکست خورد"
 
-#: src/threading.c:118
+#: src/threading.c:121
 msgid "Failed to create file decryption thread"
 msgstr "ساختن رشتهٔ رمزگشایی پرونده شکست خورد"
 
-#: src/threading.c:140
+#: src/threading.c:143
 msgid "Failed to create text signing thread"
 msgstr "ساختن رشتهٔ امضا کردن متن شکست خورد"
 
-#: src/threading.c:162
+#: src/threading.c:166
 msgid "Failed to create file signing thread"
 msgstr "ساختن رشتهٔ امضا کردن پرونده شکست خورد"
 
-#: src/threading.c:183
+#: src/threading.c:187
 msgid "Failed to create text verification thread"
 msgstr "ساختن رشتهٔ اعتبارسنجی متن شکست خورد"
 
-#: src/threading.c:201
+#: src/threading.c:207
 msgid "Failed to create file verification thread"
 msgstr "ساختن رشتهٔ اعتبارسنجی پرونده شکست خورد"
 
-#: src/threading.c:216
+#: src/threading.c:222
 msgid "Failed to create key import thread"
 msgstr "ساختن رشتهٔ وارد کردن کلید شکست خورد"
 
-#: src/threading.c:238
+#: src/threading.c:244
 #, fuzzy
 msgid "Failed to create key pair generation thread"
 msgstr "ساختن رشتهٔ تولید کلید شکست خورد"
 
-#: src/threading.c:253
+#: src/threading.c:259
 msgid "Failed to create key export thread"
 msgstr "ساختن رشتهٔ صادر کردن کلید شکست خورد"
 
-#: src/threading.c:265
+#: src/threading.c:271
 msgid "Failed to create key removal thread"
 msgstr "ساختن رشتهٔ حذف کلید شکست خورد"
 
@@ -452,7 +472,7 @@ msgstr "امضا کردن متن"
 msgid "Verify text"
 msgstr "اعتبارسنجی متن"
 
-#: data/ui/window.blp:9 data/ui/window.blp:194
+#: data/ui/window.blp:9 data/ui/window.blp:197
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
@@ -482,65 +502,75 @@ msgstr "فهرست اصلی"
 msgid "Text"
 msgstr "متن"
 
-#: data/ui/window.blp:84
+#: data/ui/window.blp:84 data/ui/filerow.blp:5
 msgid "File"
 msgstr "پرونده"
 
-#: data/ui/window.blp:93
-msgid "No files selected for processing"
+#: data/ui/window.blp:109
+msgid "No open files"
+msgstr ""
+
+#: data/ui/window.blp:110
+#, fuzzy
+msgid "No files have been opened for processing"
 msgstr "پرونده‌ای برای پردازش انتخاب نشده است"
 
-#: data/ui/window.blp:114
-msgid "Input File"
-msgstr "پروندهٔ ورودی"
-
-#: data/ui/window.blp:123
-msgid "Select input file"
-msgstr "پروندهٔ ورودی را انتخاب کنید"
-
 #: data/ui/window.blp:130
-msgid "Output File"
-msgstr "پروندهٔ خروجی"
+msgid "Open"
+msgstr ""
 
-#: data/ui/window.blp:139
-msgid "Select output file"
-msgstr "پروندهٔ خروجی را انتخاب کنید"
+#: data/ui/window.blp:131
+#, fuzzy
+msgid "Open files for processing"
+msgstr "پرونده‌ای برای پردازش انتخاب نشده است"
 
-#: data/ui/window.blp:155 data/ui/window.blp:219
+#: data/ui/window.blp:141
+msgid "Clear"
+msgstr ""
+
+#: data/ui/window.blp:142
+msgid "Close all open files"
+msgstr ""
+
+#: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
 msgstr "رمزگذاری"
 
-#: data/ui/window.blp:162 data/ui/window.blp:223
+#: data/ui/window.blp:164 data/ui/window.blp:226
 msgid "Decrypt"
 msgstr "رمزگشایی"
 
-#: data/ui/window.blp:169 data/ui/window.blp:229
+#: data/ui/window.blp:171 data/ui/window.blp:232
 msgid "Sign"
 msgstr "امضا"
 
-#: data/ui/window.blp:176 data/ui/window.blp:241
+#: data/ui/window.blp:178 data/ui/window.blp:244
 msgid "Verify"
 msgstr "اعتبارسنجی"
 
-#: data/ui/window.blp:200 data/ui/managementdialog.blp:30
+#: data/ui/window.blp:203 data/ui/managementdialog.blp:30
 msgid "Manage keys"
 msgstr "مدیریت کلیدها"
 
-#: data/ui/window.blp:206
+#: data/ui/window.blp:209
 msgid "Keyboard Shortcuts"
 msgstr "میانبرهای صفحه کلید"
 
-#: data/ui/window.blp:210
+#: data/ui/window.blp:213
 msgid "About Lock"
 msgstr "دربارهٔ قفل"
 
-#: data/ui/window.blp:233
+#: data/ui/window.blp:236
 msgid "Sign (Clear Text)"
 msgstr "امضا (متن تمیز)"
 
-#: data/ui/window.blp:237
+#: data/ui/window.blp:240
 msgid "Sign (Detached)"
 msgstr "امضا (جداشده)"
+
+#: data/ui/filerow.blp:18
+msgid "Close file"
+msgstr ""
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
@@ -755,6 +785,22 @@ msgstr "متن ساده"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "محاورهٔ انتخاب کلید"
+
+#, fuzzy
+#~ msgid "All signatures valid"
+#~ msgstr "امضا نامعتبر است"
+
+#~ msgid "Input File"
+#~ msgstr "پروندهٔ ورودی"
+
+#~ msgid "Select input file"
+#~ msgstr "پروندهٔ ورودی را انتخاب کنید"
+
+#~ msgid "Output File"
+#~ msgstr "پروندهٔ خروجی"
+
+#~ msgid "Select output file"
+#~ msgstr "پروندهٔ خروجی را انتخاب کنید"
 
 #, fuzzy
 #~ msgctxt "Expire date unit of the new key pair"

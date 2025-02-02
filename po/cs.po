@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
-"POT-Creation-Date: 2024-12-21 09:44+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-02 16:12+0100\n"
 "PO-Revision-Date: 2024-12-24 09:00+0000\n"
 "Last-Translator: Klára Holubová <witt087@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/Lock/Application/"
@@ -49,7 +49,7 @@ msgstr "Michael Kováč"
 msgid "Dependencies"
 msgstr "Závislosti"
 
-#: src/window.c:157
+#: src/window.c:155
 msgid "Enter text …"
 msgstr "Zadejte text …"
 
@@ -66,50 +66,70 @@ msgstr "Nepodařilo se přečíst text ze schránky: %s"
 msgid "Text pasted"
 msgstr "Text vložen"
 
-#: src/window.c:775 src/window.c:837
+#: src/window.c:801 src/window.c:878
 msgid "Encryption failed"
 msgstr "Zašifrování selhalo"
 
-#: src/window.c:777
+#: src/window.c:803
 msgid "Text encrypted"
 msgstr "Text zašifrován"
 
-#: src/window.c:839
-msgid "File encrypted"
+#: src/window.c:880
+#, fuzzy
+msgid "Files encrypted"
 msgstr "Soubor zašifrován"
 
-#: src/window.c:895 src/window.c:953
+#: src/window.c:936 src/window.c:1016
 msgid "Decryption failed"
 msgstr "Rozšifrování selhalo"
 
-#: src/window.c:897
+#: src/window.c:938
 msgid "Text decrypted"
 msgstr "Text rozšifrován"
 
-#: src/window.c:955
-msgid "File decrypted"
+#: src/window.c:1018
+#, fuzzy
+msgid "Files decrypted"
 msgstr "Soubor rozšifrován"
 
-#: src/window.c:1062 src/window.c:1124
+#: src/window.c:1125 src/window.c:1203
 msgid "Signing failed"
 msgstr "Podepisování selhalo"
 
-#: src/window.c:1064
+#: src/window.c:1127
 msgid "Text signed"
 msgstr "Text podepsán"
 
-#: src/window.c:1126
-msgid "File signed"
+#: src/window.c:1205
+#, fuzzy
+msgid "Files signed"
 msgstr "Soubor podepsán"
 
-#: src/window.c:1182 src/window.c:1243
+#: src/window.c:1261
 msgid "Signature invalid"
 msgstr "Neplatný podpis"
 
-#: src/window.c:1186 src/window.c:1247
+#: src/window.c:1265
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Platný podpis od - %s"
+
+#: src/window.c:1320
+msgid "valid"
+msgstr ""
+
+#: src/window.c:1320
+msgid "invalid"
+msgstr ""
+
+#: src/window.c:1352
+msgid "At least one invalid signature"
+msgstr ""
+
+#: src/window.c:1354
+#, fuzzy
+msgid "Signatures valid"
+msgstr "Neplatný podpis"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
@@ -371,56 +391,56 @@ msgstr "ověření GPGME dat ze souboru"
 msgid "Failed to create text encryption thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:79
+#: src/threading.c:80
 #, fuzzy
 msgid "Failed to create file encryption thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:100
+#: src/threading.c:101
 #, fuzzy
 msgid "Failed to create text decryption thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:118
+#: src/threading.c:121
 #, fuzzy
 msgid "Failed to create file decryption thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:140
+#: src/threading.c:143
 #, fuzzy
 msgid "Failed to create text signing thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:162
+#: src/threading.c:166
 #, fuzzy
 msgid "Failed to create file signing thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:183
+#: src/threading.c:187
 #, fuzzy
 msgid "Failed to create text verification thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:201
+#: src/threading.c:207
 #, fuzzy
 msgid "Failed to create file verification thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:216
+#: src/threading.c:222
 msgid "Failed to create key import thread"
 msgstr "Selhalo vytvoření threadu pro importování klíče"
 
-#: src/threading.c:238
+#: src/threading.c:244
 #, fuzzy
 msgid "Failed to create key pair generation thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:253
+#: src/threading.c:259
 #, fuzzy
 msgid "Failed to create key export thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
 
-#: src/threading.c:265
+#: src/threading.c:271
 #, fuzzy
 msgid "Failed to create key removal thread"
 msgstr "Selhalo vytvoření vlákna %s: %s"
@@ -469,7 +489,7 @@ msgstr "Holý text"
 msgid "Verify text"
 msgstr "Ověřit"
 
-#: data/ui/window.blp:9 data/ui/window.blp:194
+#: data/ui/window.blp:9 data/ui/window.blp:197
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
@@ -500,66 +520,75 @@ msgstr "Hlavní Menu"
 msgid "Text"
 msgstr "Text"
 
-#: data/ui/window.blp:84
+#: data/ui/window.blp:84 data/ui/filerow.blp:5
 msgid "File"
 msgstr "Soubor"
 
-#: data/ui/window.blp:93
-msgid "No files selected for processing"
+#: data/ui/window.blp:109
+msgid "No open files"
+msgstr ""
+
+#: data/ui/window.blp:110
+#, fuzzy
+msgid "No files have been opened for processing"
 msgstr "Nejsou vybrány žádné soubory pro zpracování"
 
-#: data/ui/window.blp:114
-msgid "Input File"
-msgstr "Vstupní Soubor"
-
-#: data/ui/window.blp:123
-msgid "Select input file"
-msgstr "Vybrat vstupní soubor"
-
 #: data/ui/window.blp:130
-msgid "Output File"
-msgstr "Výstupní Soubor"
+msgid "Open"
+msgstr ""
 
-#: data/ui/window.blp:139
+#: data/ui/window.blp:131
 #, fuzzy
-msgid "Select output file"
-msgstr "Selhalo otevření výstupního souboru: %s"
+msgid "Open files for processing"
+msgstr "Nejsou vybrány žádné soubory pro zpracování"
 
-#: data/ui/window.blp:155 data/ui/window.blp:219
+#: data/ui/window.blp:141
+msgid "Clear"
+msgstr ""
+
+#: data/ui/window.blp:142
+msgid "Close all open files"
+msgstr ""
+
+#: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
 msgstr "Zašifrovat"
 
-#: data/ui/window.blp:162 data/ui/window.blp:223
+#: data/ui/window.blp:164 data/ui/window.blp:226
 msgid "Decrypt"
 msgstr "Rozšifrovat"
 
-#: data/ui/window.blp:169 data/ui/window.blp:229
+#: data/ui/window.blp:171 data/ui/window.blp:232
 msgid "Sign"
 msgstr "Podepsat"
 
-#: data/ui/window.blp:176 data/ui/window.blp:241
+#: data/ui/window.blp:178 data/ui/window.blp:244
 msgid "Verify"
 msgstr "Ověřit"
 
-#: data/ui/window.blp:200 data/ui/managementdialog.blp:30
+#: data/ui/window.blp:203 data/ui/managementdialog.blp:30
 msgid "Manage keys"
 msgstr "Spravovat klíče"
 
-#: data/ui/window.blp:206
+#: data/ui/window.blp:209
 msgid "Keyboard Shortcuts"
 msgstr "Klávesové Zkratky"
 
-#: data/ui/window.blp:210
+#: data/ui/window.blp:213
 msgid "About Lock"
 msgstr "O Zámku"
 
-#: data/ui/window.blp:233
+#: data/ui/window.blp:236
 msgid "Sign (Clear Text)"
 msgstr "Podepsat (Holý Text)"
 
-#: data/ui/window.blp:237
+#: data/ui/window.blp:240
 msgid "Sign (Detached)"
 msgstr "Podepsat (Přiložený Soubor)"
+
+#: data/ui/filerow.blp:18
+msgid "Close file"
+msgstr ""
 
 #: data/ui/selectiondialog.blp:35
 #, fuzzy
@@ -776,6 +805,23 @@ msgstr "Holý text"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Okno pro vybírání klíče"
+
+#, fuzzy
+#~ msgid "All signatures valid"
+#~ msgstr "Neplatný podpis"
+
+#~ msgid "Input File"
+#~ msgstr "Vstupní Soubor"
+
+#~ msgid "Select input file"
+#~ msgstr "Vybrat vstupní soubor"
+
+#~ msgid "Output File"
+#~ msgstr "Výstupní Soubor"
+
+#, fuzzy
+#~ msgid "Select output file"
+#~ msgstr "Selhalo otevření výstupního souboru: %s"
 
 #, fuzzy
 #~ msgctxt "Expire date unit of the new key pair"

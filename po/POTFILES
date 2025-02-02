@@ -1,13 +1,16 @@
 src/main.c
 src/application.c
 src/window.c
+src/filerow.c
 src/selectiondialog.c
 src/managementdialog.c
 src/keyrow.c
 src/cryptography.c
 src/threading.c
+src/text.c
 data/ui/shortcuts.blp
 data/ui/window.blp
+data/ui/filerow.blp
 data/ui/selectiondialog.blp
 data/ui/managementdialog.blp
 data/ui/keyrow.blp

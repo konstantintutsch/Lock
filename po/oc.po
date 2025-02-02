@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-21 09:44+0100\n"
+"POT-Creation-Date: 2025-02-02 16:12+0100\n"
 "PO-Revision-Date: 2024-12-01 19:04+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -49,7 +49,7 @@ msgstr "Quentin PAGÈS"
 msgid "Dependencies"
 msgstr "Dependéncias"
 
-#: src/window.c:157
+#: src/window.c:155
 msgid "Enter text …"
 msgstr "Picar de tèxte…"
 
@@ -66,50 +66,70 @@ msgstr "Lectura impossibla del tèxte del quichapapièrs : %s"
 msgid "Text pasted"
 msgstr "Tèxte pegat"
 
-#: src/window.c:775 src/window.c:837
+#: src/window.c:801 src/window.c:878
 msgid "Encryption failed"
 msgstr "Fracàs del chiframent"
 
-#: src/window.c:777
+#: src/window.c:803
 msgid "Text encrypted"
 msgstr "Tèxte deschifrat"
 
-#: src/window.c:839
-msgid "File encrypted"
+#: src/window.c:880
+#, fuzzy
+msgid "Files encrypted"
 msgstr "Fichièr deschifrat"
 
-#: src/window.c:895 src/window.c:953
+#: src/window.c:936 src/window.c:1016
 msgid "Decryption failed"
 msgstr "Fracàs del deschiframent"
 
-#: src/window.c:897
+#: src/window.c:938
 msgid "Text decrypted"
 msgstr "Tèxte deschifrat"
 
-#: src/window.c:955
-msgid "File decrypted"
+#: src/window.c:1018
+#, fuzzy
+msgid "Files decrypted"
 msgstr "Fichièr deschifrat"
 
-#: src/window.c:1062 src/window.c:1124
+#: src/window.c:1125 src/window.c:1203
 msgid "Signing failed"
 msgstr "Fracàs de la signatura"
 
-#: src/window.c:1064
+#: src/window.c:1127
 msgid "Text signed"
 msgstr "Tèxte signat"
 
-#: src/window.c:1126
-msgid "File signed"
+#: src/window.c:1205
+#, fuzzy
+msgid "Files signed"
 msgstr "Fichièr signat"
 
-#: src/window.c:1182 src/window.c:1243
+#: src/window.c:1261
 msgid "Signature invalid"
 msgstr "Signatura invalida"
 
-#: src/window.c:1186 src/window.c:1247
+#: src/window.c:1265
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Signatura valida – per %s"
+
+#: src/window.c:1320
+msgid "valid"
+msgstr ""
+
+#: src/window.c:1320
+msgid "invalid"
+msgstr ""
+
+#: src/window.c:1352
+msgid "At least one invalid signature"
+msgstr ""
+
+#: src/window.c:1354
+#, fuzzy
+msgid "Signatures valid"
+msgstr "Signatura invalida"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
@@ -386,53 +406,53 @@ msgstr "Fracàs de la verificacion de las donadas GPGME a partir del fichièr"
 msgid "Failed to create text encryption thread"
 msgstr "Fracàs de la creacion del fil d’execucion tèxte"
 
-#: src/threading.c:79
+#: src/threading.c:80
 msgid "Failed to create file encryption thread"
 msgstr "Fracàs de la creacion del fichièr del fil d’execucion"
 
-#: src/threading.c:100
+#: src/threading.c:101
 msgid "Failed to create text decryption thread"
 msgstr "Fracàs de la creacion del fil d’execucion tèxte"
 
-#: src/threading.c:118
+#: src/threading.c:121
 msgid "Failed to create file decryption thread"
 msgstr "Fracàs de la creacion del fichièr del fil d’execucion"
 
-#: src/threading.c:140
+#: src/threading.c:143
 msgid "Failed to create text signing thread"
 msgstr "Fracàs de la creacion del fil d’execucion tèxte"
 
-#: src/threading.c:162
+#: src/threading.c:166
 #, fuzzy
 msgid "Failed to create file signing thread"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
-#: src/threading.c:183
+#: src/threading.c:187
 #, fuzzy
 msgid "Failed to create text verification thread"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
-#: src/threading.c:201
+#: src/threading.c:207
 #, fuzzy
 msgid "Failed to create file verification thread"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
-#: src/threading.c:216
+#: src/threading.c:222
 #, fuzzy
 msgid "Failed to create key import thread"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
-#: src/threading.c:238
+#: src/threading.c:244
 #, fuzzy
 msgid "Failed to create key pair generation thread"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
-#: src/threading.c:253
+#: src/threading.c:259
 #, fuzzy
 msgid "Failed to create key export thread"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
-#: src/threading.c:265
+#: src/threading.c:271
 #, fuzzy
 msgid "Failed to create key removal thread"
 msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
@@ -476,7 +496,7 @@ msgstr "Signar un tèxte"
 msgid "Verify text"
 msgstr "Verificar un tèxte"
 
-#: data/ui/window.blp:9 data/ui/window.blp:194
+#: data/ui/window.blp:9 data/ui/window.blp:197
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
@@ -506,64 +526,74 @@ msgstr "Menú principal"
 msgid "Text"
 msgstr "Tèxte"
 
-#: data/ui/window.blp:84
+#: data/ui/window.blp:84 data/ui/filerow.blp:5
 msgid "File"
 msgstr "Fichièr"
 
-#: data/ui/window.blp:93
-msgid "No files selected for processing"
+#: data/ui/window.blp:109
+msgid "No open files"
+msgstr ""
+
+#: data/ui/window.blp:110
+#, fuzzy
+msgid "No files have been opened for processing"
 msgstr "Cap de fichièr pas seleccionat pel tractament"
 
-#: data/ui/window.blp:114
-msgid "Input File"
-msgstr "Fichièr en entrada"
-
-#: data/ui/window.blp:123
-msgid "Select input file"
-msgstr "Seleccionar fichièr d’entrada"
-
 #: data/ui/window.blp:130
-msgid "Output File"
-msgstr "Fichièr en sortida"
+msgid "Open"
+msgstr ""
 
-#: data/ui/window.blp:139
-msgid "Select output file"
-msgstr "Seleccionar fichièr en sortida"
+#: data/ui/window.blp:131
+#, fuzzy
+msgid "Open files for processing"
+msgstr "Cap de fichièr pas seleccionat pel tractament"
 
-#: data/ui/window.blp:155 data/ui/window.blp:219
+#: data/ui/window.blp:141
+msgid "Clear"
+msgstr ""
+
+#: data/ui/window.blp:142
+msgid "Close all open files"
+msgstr ""
+
+#: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
 msgstr "Chifrar"
 
-#: data/ui/window.blp:162 data/ui/window.blp:223
+#: data/ui/window.blp:164 data/ui/window.blp:226
 msgid "Decrypt"
 msgstr "Deschifrar"
 
-#: data/ui/window.blp:169 data/ui/window.blp:229
+#: data/ui/window.blp:171 data/ui/window.blp:232
 msgid "Sign"
 msgstr "Signar"
 
-#: data/ui/window.blp:176 data/ui/window.blp:241
+#: data/ui/window.blp:178 data/ui/window.blp:244
 msgid "Verify"
 msgstr "Verificar"
 
-#: data/ui/window.blp:200 data/ui/managementdialog.blp:30
+#: data/ui/window.blp:203 data/ui/managementdialog.blp:30
 msgid "Manage keys"
 msgstr "Gerir las claus"
 
-#: data/ui/window.blp:206
+#: data/ui/window.blp:209
 msgid "Keyboard Shortcuts"
 msgstr "Acorchis clavièr"
 
-#: data/ui/window.blp:210
+#: data/ui/window.blp:213
 msgid "About Lock"
 msgstr "A prepaus de Lock"
 
-#: data/ui/window.blp:233
+#: data/ui/window.blp:236
 msgid "Sign (Clear Text)"
 msgstr "Signar (Tèxte clar)"
 
-#: data/ui/window.blp:237
+#: data/ui/window.blp:240
 msgid "Sign (Detached)"
+msgstr ""
+
+#: data/ui/filerow.blp:18
+msgid "Close file"
 msgstr ""
 
 #: data/ui/selectiondialog.blp:35
@@ -786,6 +816,22 @@ msgstr "Tèxte brut"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Fenèstra de seleccion de clau"
+
+#, fuzzy
+#~ msgid "All signatures valid"
+#~ msgstr "Signatura invalida"
+
+#~ msgid "Input File"
+#~ msgstr "Fichièr en entrada"
+
+#~ msgid "Select input file"
+#~ msgstr "Seleccionar fichièr d’entrada"
+
+#~ msgid "Output File"
+#~ msgstr "Fichièr en sortida"
+
+#~ msgid "Select output file"
+#~ msgstr "Seleccionar fichièr en sortida"
 
 #~ msgid "Keypair generated"
 #~ msgstr "Parelh de claus generat"

@@ -12,9 +12,19 @@ G_DECLARE_FINAL_TYPE(LockWindow, lock_window, LOCK, WINDOW,
 LockWindow *lock_window_new(LockApplication * app);
 void lock_window_open(LockWindow * window, GFile * file);
 
+enum dialog_status {
+    SELECTING,
+    SELECTED,
+    ABORTED
+};
+
 /* UI */
 void lock_window_cryptography_processing(LockWindow * window,
                                          gboolean processing);
+
+/* File */
+void lock_window_file_select_output_directory_dialog_present(LockWindow *
+                                                             window);
 
 /* Cryptography */
 void lock_window_set_fingerprint(LockWindow * window, const char *fingerprint);

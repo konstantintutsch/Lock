@@ -84,100 +84,103 @@ template $LockWindow : Adw.ApplicationWindow {
                     title: _("File");
                     icon-name: "document-send-symbolic";
 
-                    child: Gtk.Box {
-                        orientation: vertical;
-                        halign: fill;
-                        valign: fill;
+                    child: Gtk.ScrolledWindow {
+                        child: Gtk.Box {
+                            orientation: vertical;
+                            halign: fill;
+                            valign: fill;
 
-                        Adw.Banner file_banner {
-                            title: _("No files selected for processing");
-                        }
+                            Adw.Clamp {
+                                vexpand: true;
+                                maximum-size: 400;
+                                tightening-threshold: 200;
+                                unit: sp;
 
-                        Adw.Clamp {
-                            vexpand: true;
-                            maximum-size: 400;
-                            tightening-threshold: 200;
-                            unit: sp;
-
-                            child: Gtk.Box {
-                                orientation: vertical;
-                                halign: fill;
-                                valign: center;
-                                spacing: 24;
-
-                                Gtk.ListBox {
-                                    styles ["boxed-list"]
-                                    selection-mode: none;
-
-                                    Adw.ActionRow file_input_row {
-                                        styles ["property"]
-                                        title: _("Input File");
-
-                                        Gtk.Box {
-                                            orientation: horizontal;
-                                            valign: center;
-
-                                            Gtk.Button file_input_button {
-                                                styles ["flat"]
-                                                icon-name: "document-open-symbolic";
-                                                tooltip-text: _("Select input file");
-                                            }
-                                        }
-                                    }
-
-                                    Adw.ActionRow file_output_row {
-                                        styles ["property"]
-                                        title: _("Output File");
-
-                                        Gtk.Box {
-                                            orientation: horizontal;
-                                            valign: center;
-
-                                            Gtk.Button file_output_button {
-                                                styles ["flat"]
-                                                icon-name: "document-new-symbolic";
-                                                tooltip-text: _("Select output file");
-                                            }
-                                        }
-                                    }
-                                }
-
-                                Gtk.Box file_process_box {
-                                    orientation: horizontal;
+                                child: Gtk.Box {
+                                    orientation: vertical;
+                                    halign: fill;
                                     valign: center;
-                                    halign: center;
-                                    spacing: 15;
+                                    spacing: 24;
+                                    margin-top: 20;
+                                    margin-bottom: 20;
 
-                                    Gtk.Button file_encrypt_button {
-                                        styles ["suggested-action", "circular"]
-
-                                        icon-name: "system-lock-screen-symbolic";
-                                        tooltip-text: _("Encrypt");
+                                    Adw.StatusPage file_status {
+                                        icon-name: "folder-open-symbolic";
+                                        title: _("No open files");
+                                        description: _("No files have been opened for processing");
                                     }
 
-                                    Gtk.Button file_decrypt_button {
-                                        styles ["suggested-action", "circular"]
+                                    Gtk.Box {
+                                        orientation: vertical;
+                                        spacing: 12;
 
-                                        icon-name: "dialog-password-symbolic";
-                                        tooltip-text: _("Decrypt");
+                                        Gtk.ListBox file_list {
+                                            styles ["boxed-list"]
+                                            selection-mode: browse;
+                                        }
+
+                                        Gtk.ListBox {
+                                            styles ["boxed-list"]
+                                            selection-mode: none;
+
+                                            Adw.ButtonRow file_open_button {
+                                                styles ["suggested-action"]
+
+                                                start-icon-name: "list-add-symbolic";
+                                                title: _("Open");
+                                                tooltip-text: _("Open files for processing");
+                                            }
+                                        }
+
+                                        Gtk.ListBox {
+                                            styles ["boxed-list"]
+                                            selection-mode: none;
+
+                                            Adw.ButtonRow file_clear_button {
+                                                end-icon-name: "list-remove-all-symbolic";
+                                                title: _("Clear");
+                                                tooltip-text: _("Close all open files");
+                                            }
+                                        }
                                     }
 
-                                    Gtk.Button file_sign_button {
-                                        styles ["suggested-action", "circular"]
+                                    Gtk.Box file_process_box {
+                                        orientation: horizontal;
+                                        valign: center;
+                                        halign: center;
+                                        spacing: 15;
 
-                                        icon-name: "emblem-ok-symbolic";
-                                        tooltip-text: _("Sign");
+                                        Gtk.Button file_encrypt_button {
+                                            styles ["circular"]
+
+                                            icon-name: "system-lock-screen-symbolic";
+                                            tooltip-text: _("Encrypt");
+                                        }
+
+                                        Gtk.Button file_decrypt_button {
+                                            styles ["circular"]
+
+                                            icon-name: "dialog-password-symbolic";
+                                            tooltip-text: _("Decrypt");
+                                        }
+
+                                        Gtk.Button file_sign_button {
+                                            styles ["circular"]
+
+                                            icon-name: "emblem-ok-symbolic";
+                                            tooltip-text: _("Sign");
+                                        }
+
+                                        Gtk.Button file_verify_button {
+                                            styles ["circular"]
+
+                                            icon-name: "dialog-question-symbolic";
+                                            tooltip-text: _("Verify");
+                                        }
                                     }
-
-                                    Gtk.Button file_verify_button {
-                                        styles ["suggested-action", "circular"]
-
-                                        icon-name: "dialog-question-symbolic";
-                                        tooltip-text: _("Verify");
-                                    }
-                                }
-                            };
-                        }
+                                };
+                            }
+                        };
                     };
                 }
             }

@@ -4,6 +4,7 @@
 #include <glib/gi18n.h>
 #include <locale.h>
 #include "application.h"
+#include "filerow.h"
 #include "selectiondialog.h"
 #include "managementdialog.h"
 #include "config.h"
@@ -11,6 +12,7 @@
 #include <gpgme.h>
 #include "cryptography.h"
 #include "threading.h"
+#include "text.h"
 
 #define ACTION_MODE_TEXT 0
 #define ACTION_MODE_FILE 1
@@ -40,16 +42,14 @@ struct _LockWindow {
 
     /* File */
     AdwViewStackPage *file_page;
-    AdwBanner *file_banner;
+    AdwStatusPage *file_status;
+    GtkListBox *file_list;
+    AdwButtonRow *file_open_button;
+    AdwButtonRow *file_clear_button;
+
+    GFile *file_output_directory;
+    enum dialog_status file_output_status;
     gboolean file_success; /**< Success of the last cryptography operation on files */
-    GFile *file_input;
-    GFile *file_output;
-
-    AdwActionRow *file_input_row;
-    GtkButton *file_input_button;
-
-    AdwActionRow *file_output_row;
-    GtkButton *file_output_button;
 
     GtkBox *file_process_box;
     GtkButton *file_encrypt_button;
@@ -64,7 +64,8 @@ G_DEFINE_TYPE(LockWindow, lock_window, ADW_TYPE_APPLICATION_WINDOW);
 static void lock_window_stack_page_on_changed(AdwViewStack * self,
                                               GParamSpec * pspec,
                                               LockWindow * window);
-static void lock_window_on_file_selected(LockWindow * window);
+static void lock_window_on_file_selection(GtkListBox * self,
+                                          LockWindow * window);
 
 // Encryption
 gboolean lock_window_encrypt_text_on_completed(LockWindow * window);
@@ -107,12 +108,9 @@ static void lock_window_text_queue_set_text(LockWindow * window,
 /* File */
 static void lock_window_file_open(GObject * source_object, GAsyncResult * res,
                                   gpointer data);
-static void lock_window_file_save(GObject * source_object, GAsyncResult * res,
-                                  gpointer data);
-static void lock_window_file_open_dialog_present(GtkButton * self,
+static void lock_window_file_open_dialog_present(AdwButtonRow * self,
                                                  LockWindow * window);
-static void lock_window_file_save_dialog_present(GtkButton * self,
-                                                 LockWindow * window);
+void lock_window_file_list_clear(AdwButtonRow * self, LockWindow * window);
 
 /* Encryption */
 void lock_window_encrypt_text_dialog(GSimpleAction * self, GVariant * parameter,
@@ -216,12 +214,16 @@ static void lock_window_init(LockWindow *window)
     g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(verify_text_action));
 
     /* File */
-    g_signal_connect(window->file_input_button, "clicked",
-                     G_CALLBACK(lock_window_file_open_dialog_present), window);
-    g_signal_connect(window->file_output_button, "clicked",
-                     G_CALLBACK(lock_window_file_save_dialog_present), window);
+    window->file_output_status = SELECTING;
 
-    lock_window_on_file_selected(window);
+    g_signal_connect(window->file_list, "selected-rows-changed",
+                     G_CALLBACK(lock_window_on_file_selection), window);
+    lock_window_on_file_selection(NULL, window);
+
+    g_signal_connect(window->file_open_button, "activated",
+                     G_CALLBACK(lock_window_file_open_dialog_present), window);
+    g_signal_connect(window->file_clear_button, "activated",
+                     G_CALLBACK(lock_window_file_list_clear), window);
 
     // Encrypt
     g_signal_connect(window->file_encrypt_button, "clicked",
@@ -266,17 +268,13 @@ static void lock_window_class_init(LockWindowClass *class)
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
                                          file_page);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_banner);
-
+                                         file_status);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_input_row);
+                                         file_list);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_input_button);
-
+                                         file_open_button);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_output_row);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_output_button);
+                                         file_clear_button);
 
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
                                          file_process_box);
@@ -364,16 +362,18 @@ static void lock_window_stack_page_on_changed(AdwViewStack *self,
 /**
  * This function updates the UI on a selection of an input or output file in a LockWindow.
  *
- * @param window Window to update the UI of
+ * @param self GtkListBox::selected-rows-changed
+ * @param window GtkListBox::selected-rows-changed
  */
-static void lock_window_on_file_selected(LockWindow *window)
+static void lock_window_on_file_selection(GtkListBox *self, LockWindow *window)
 {
-    gboolean ready = false;
+    (void)self;
 
-    if (window->file_input && window->file_output)
-        ready = true;
+    gboolean ready =
+        (gtk_list_box_get_row_at_index(window->file_list, 0) != NULL);
 
-    adw_banner_set_revealed(window->file_banner, !ready);
+    gtk_widget_set_visible(GTK_WIDGET(window->file_status), !ready);
+    gtk_widget_set_visible(GTK_WIDGET(window->file_list), ready);
 
     GtkWidget *process_widget =
         gtk_widget_get_first_child(GTK_WIDGET(window->file_process_box));
@@ -591,41 +591,31 @@ static void lock_window_file_open(GObject *source_object, GAsyncResult *res,
     GtkFileDialog *dialog = GTK_FILE_DIALOG(source_object);
     LockWindow *window = LOCK_WINDOW(data);
 
-    window->file_input = gtk_file_dialog_open_finish(dialog, res, NULL);
-    if (window->file_input == NULL)
+    window->file_output_status = SELECTING;
+
+    GListModel *files = gtk_file_dialog_open_multiple_finish(dialog, res, NULL);
+    if (files == NULL)
         goto cleanup;
 
-    adw_action_row_set_subtitle(window->file_input_row,
-                                g_file_get_basename(window->file_input));
-    lock_window_on_file_selected(window);
+    GFile *file;
+    int file_item = 0;
+    while ((file = g_list_model_get_item(files, file_item))) {
+        gtk_list_box_append(window->file_list,
+                            GTK_WIDGET(lock_file_row_new(g_file_dup(file))));
+        file_item++;
+    }
 
- cleanup:
-    g_object_unref(dialog);
-    dialog = NULL;
+    g_free(file);
+    file = NULL;
 
-    window = NULL;
-}
+    g_free(files);
+    files = NULL;
 
-/**
- * This function opens the output file of a LockWindow.
- *
- * @param object https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
- * @param result https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
- * @param user_data https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
- */
-static void lock_window_file_save(GObject *source_object,
-                                  GAsyncResult *res, gpointer data)
-{
-    GtkFileDialog *dialog = GTK_FILE_DIALOG(source_object);
-    LockWindow *window = LOCK_WINDOW(data);
-
-    window->file_output = gtk_file_dialog_save_finish(dialog, res, NULL);
-    if (window->file_output == NULL)
-        goto cleanup;
-
-    adw_action_row_set_subtitle(window->file_output_row,
-                                g_file_get_basename(window->file_output));
-    lock_window_on_file_selected(window);
+    file_item--;
+    if (file_item >= 0)
+        gtk_list_box_select_row(window->file_list,
+                                gtk_list_box_get_row_at_index(window->file_list,
+                                                              file_item));
 
  cleanup:
     g_object_unref(dialog);
@@ -637,37 +627,73 @@ static void lock_window_file_save(GObject *source_object,
 /**
  * This function opens an open file dialog for a LockWindow.
  *
- * @param self https://docs.gtk.org/gtk4/signal.Button.clicked.html
- * @param window https://docs.gtk.org/gtk4/signal.Button.clicked.html
+ * @param self Adw.ButtonRow::activate
+ * @param window Adw.ButtonRow::activate
  */
 static void
-lock_window_file_open_dialog_present(GtkButton *self, LockWindow *window)
+lock_window_file_open_dialog_present(AdwButtonRow *self, LockWindow *window)
 {
     (void)self;
 
     GtkFileDialog *dialog = gtk_file_dialog_new();
     GCancellable *cancel = g_cancellable_new();
 
-    gtk_file_dialog_open(dialog, GTK_WINDOW(window),
-                         cancel, lock_window_file_open, window);
+    gtk_file_dialog_open_multiple(dialog, GTK_WINDOW(window),
+                                  cancel, lock_window_file_open, window);
 }
 
 /**
- * This function opens a save file dialog for a LockWindow.
+ * This function opens the selected output directory of a LockWindow.
  *
- * @param self https://docs.gtk.org/gtk4/signal.Button.clicked.html
- * @param window https://docs.gtk.org/gtk4/signal.Button.clicked.html
+ * @param object https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
+ * @param result https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
+ * @param user_data https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
  */
-static void
-lock_window_file_save_dialog_present(GtkButton *self, LockWindow *window)
+void lock_window_file_select_output_directory(GObject *source_object,
+                                              GAsyncResult *res, gpointer data)
 {
-    (void)self;
+    GtkFileDialog *dialog = GTK_FILE_DIALOG(source_object);
+    LockWindow *window = LOCK_WINDOW(data);
 
+    window->file_output_directory =
+        gtk_file_dialog_select_folder_finish(dialog, res, NULL);
+    window->file_output_status =
+        (window->file_output_directory == NULL) ? ABORTED : SELECTED;
+
+    /* Cleanup */
+    g_object_unref(dialog);
+    dialog = NULL;
+
+    window = NULL;
+}
+
+/**
+ * This function opens an output folder selection dialog for a LockWindow.
+ *
+ * @param window Window to present the file dialog on
+ */
+void lock_window_file_select_output_directory_dialog_present(LockWindow *window)
+{
     GtkFileDialog *dialog = gtk_file_dialog_new();
     GCancellable *cancel = g_cancellable_new();
 
-    gtk_file_dialog_save(dialog, GTK_WINDOW(window),
-                         cancel, lock_window_file_save, window);
+    window->file_output_status = SELECTING;
+    gtk_file_dialog_select_folder(dialog, GTK_WINDOW(window), cancel,
+                                  lock_window_file_select_output_directory,
+                                  window);
+}
+
+/**
+ * This function closes all opened files
+ *
+ * @param self Adw.ButtonRow::activate
+ * @param window Adw.ButtonRow::activate
+ */
+void lock_window_file_list_clear(AdwButtonRow *self, LockWindow *window)
+{
+    (void)self;
+
+    gtk_list_box_remove_all(window->file_list);
 }
 
 /****** Cryptography ******/
@@ -800,19 +826,34 @@ gboolean lock_window_encrypt_text_on_completed(LockWindow *window)
  */
 void lock_window_encrypt_file(LockWindow *window)
 {
-    char *input_path = g_file_get_path(window->file_input);
-    char *output_path = g_file_get_path(window->file_output);
-
     gpgme_key_t key = key_get(window->fingerprint);
 
-    window->file_success = file_encrypt(input_path, output_path, key);
+    while (window->file_output_status == SELECTING)
+        sleep(1);
 
-    /* Cleanup */
-    g_free(input_path);
-    input_path = NULL;
+    if (window->file_output_status == ABORTED) {
+        lock_window_cryptography_processing(window, false);
+        g_thread_exit(0);
+    }
 
-    g_free(output_path);
-    output_path = NULL;
+    GtkWidget *row = gtk_widget_get_first_child(GTK_WIDGET(window->file_list));
+    GFile *file = NULL;
+
+    window->file_success = true;
+    while (row != NULL && window->file_success) {
+        file = lock_file_row_get_file(LOCK_FILE_ROW(row));
+        window->file_success =
+            file_encrypt(g_file_get_path(file),
+                         g_strdup_printf("%s/%s.pgp",
+                                         g_file_get_path
+                                         (window->file_output_directory),
+                                         g_file_get_basename(file)), key);
+
+        row = gtk_widget_get_next_sibling(row);
+    }
+
+    g_free(file);
+    file = NULL;
 
     gpgme_key_release(key);
 
@@ -836,7 +877,7 @@ gboolean lock_window_encrypt_file_on_completed(LockWindow *window)
     if (!window->file_success) {
         toast = adw_toast_new(_("Encryption failed"));
     } else {
-        toast = adw_toast_new(_("File encrypted"));
+        toast = adw_toast_new(_("Files encrypted"));
     }
 
     adw_toast_set_timeout(toast, 3);
@@ -920,14 +961,36 @@ gboolean lock_window_decrypt_text_on_completed(LockWindow *window)
  */
 void lock_window_decrypt_file(LockWindow *window)
 {
-    char *input_path = g_file_get_path(window->file_input);
-    char *output_path = g_file_get_path(window->file_output);
+    while (window->file_output_status == SELECTING)
+        sleep(1);
 
-    window->file_success = file_decrypt(input_path, output_path);
+    if (window->file_output_status == ABORTED) {
+        lock_window_cryptography_processing(window, false);
+        g_thread_exit(0);
+    }
 
-    /* Cleanup */
-    g_free(input_path);
-    input_path = NULL;
+    GtkWidget *row = gtk_widget_get_first_child(GTK_WIDGET(window->file_list));
+    GFile *file = NULL;
+    gchar *output_path = NULL;
+
+    window->file_success = true;
+    while (row != NULL && window->file_success) {
+        file = lock_file_row_get_file(LOCK_FILE_ROW(row));
+        output_path =
+            g_strdup_printf("%s/%s",
+                            g_file_get_path(window->file_output_directory),
+                            g_file_get_basename(file));
+
+        output_path = remove_extension(output_path, "pgp");
+        output_path = remove_extension(output_path, "gpg");
+
+        window->file_success = file_decrypt(g_file_get_path(file), output_path);
+
+        row = gtk_widget_get_next_sibling(row);
+    }
+
+    g_free(file);
+    file = NULL;
 
     g_free(output_path);
     output_path = NULL;
@@ -952,7 +1015,7 @@ gboolean lock_window_decrypt_file_on_completed(LockWindow *window)
     if (!window->file_success) {
         toast = adw_toast_new(_("Decryption failed"));
     } else {
-        toast = adw_toast_new(_("File decrypted"));
+        toast = adw_toast_new(_("Files decrypted"));
     }
 
     adw_toast_set_timeout(toast, 3);
@@ -1087,20 +1150,36 @@ gboolean lock_window_sign_text_on_completed(LockWindow *window)
  */
 void lock_window_sign_file(LockWindow *window)
 {
-    char *input_path = g_file_get_path(window->file_input);
-    char *output_path = g_file_get_path(window->file_output);
-
     gpgme_key_t key = key_get(window->fingerprint);
 
-    window->file_success = file_sign(input_path, output_path, key);
+    while (window->file_output_status == SELECTING)
+        sleep(1);
+
+    if (window->file_output_status == ABORTED) {
+        lock_window_cryptography_processing(window, false);
+        g_thread_exit(0);
+    }
+
+    GtkWidget *row = gtk_widget_get_first_child(GTK_WIDGET(window->file_list));
+    GFile *file = NULL;
+
+    window->file_success = true;
+    while (row != NULL && window->file_success) {
+        file = lock_file_row_get_file(LOCK_FILE_ROW(row));
+        window->file_success =
+            file_sign(g_file_get_path(file),
+                      g_strdup_printf("%s/%s.pgp",
+                                      g_file_get_path
+                                      (window->file_output_directory),
+                                      g_file_get_basename(file)), key);
+
+        row = gtk_widget_get_next_sibling(row);
+    }
+
+    g_free(file);
+    file = NULL;
 
     /* Cleanup */
-    g_free(input_path);
-    input_path = NULL;
-
-    g_free(output_path);
-    output_path = NULL;
-
     gpgme_key_release(key);
 
     /* UI */
@@ -1123,7 +1202,7 @@ gboolean lock_window_sign_file_on_completed(LockWindow *window)
     if (!window->file_success) {
         toast = adw_toast_new(_("Signing failed"));
     } else {
-        toast = adw_toast_new(_("File signed"));
+        toast = adw_toast_new(_("Files signed"));
     }
 
     adw_toast_set_timeout(toast, 3);
@@ -1209,13 +1288,43 @@ gboolean lock_window_verify_text_on_completed(LockWindow *window)
  */
 void lock_window_verify_file(LockWindow *window)
 {
-    char *input_path = g_file_get_path(window->file_input);
-    char *output_path = g_file_get_path(window->file_output);
+    while (window->file_output_status == SELECTING)
+        sleep(1);
 
-    window->file_success =
-        file_verify(input_path, output_path, &window->signer);
+    if (window->file_output_status == ABORTED) {
+        lock_window_cryptography_processing(window, false);
+        g_thread_exit(0);
+    }
 
-    /* Cleanup */
+    GtkWidget *row = gtk_widget_get_first_child(GTK_WIDGET(window->file_list));
+    GFile *file = NULL;
+    gchar *input_path = NULL;
+    gchar *output_path = NULL;
+
+    window->file_success = true;
+    while (row != NULL && window->file_success) {
+        file = lock_file_row_get_file(LOCK_FILE_ROW(row));
+        input_path = g_file_get_path(file);
+        output_path =
+            g_strdup_printf("%s/%s",
+                            g_file_get_path(window->file_output_directory),
+                            g_file_get_basename(file));
+
+        output_path = remove_extension(output_path, "pgp");
+        output_path = remove_extension(output_path, "gpg");
+
+        window->file_success =
+            file_verify(input_path, output_path, &window->signer);
+        g_message("%s: %s (%s)", input_path,
+                  (window->signer != NULL) ? window->signer : "",
+                  (window->file_success) ? _("valid") : _("invalid"));
+
+        row = gtk_widget_get_next_sibling(row);
+    }
+
+    g_free(file);
+    file = NULL;
+
     g_free(input_path);
     input_path = NULL;
 
@@ -1240,11 +1349,9 @@ gboolean lock_window_verify_file_on_completed(LockWindow *window)
     AdwToast *toast;
 
     if (!window->file_success) {
-        toast = adw_toast_new(_("Signature invalid"));
+        toast = adw_toast_new(_("At least one invalid signature"));
     } else {
-        toast =
-            adw_toast_new(g_strdup_printf
-                          (_("Signature valid - by %s"), window->signer));
+        toast = adw_toast_new(_("Signatures valid"));
     }
 
     adw_toast_set_timeout(toast, 3);

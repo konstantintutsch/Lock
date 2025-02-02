@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-21 09:44+0100\n"
+"POT-Creation-Date: 2025-02-02 16:12+0100\n"
 "PO-Revision-Date: 2024-12-20 08:03+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -49,7 +49,7 @@ msgstr "Priit Jõerüüt"
 msgid "Dependencies"
 msgstr "Sõltuvused"
 
-#: src/window.c:157
+#: src/window.c:155
 msgid "Enter text …"
 msgstr "Sisesta tekst…"
 
@@ -66,50 +66,70 @@ msgstr "Teksti lugemine lõikelaualt ei õnnestunud: %s"
 msgid "Text pasted"
 msgstr "Tekst on asetatud"
 
-#: src/window.c:775 src/window.c:837
+#: src/window.c:801 src/window.c:878
 msgid "Encryption failed"
 msgstr "Krüptimine ei õnnestunud"
 
-#: src/window.c:777
+#: src/window.c:803
 msgid "Text encrypted"
 msgstr "Tekst on krüptitud"
 
-#: src/window.c:839
-msgid "File encrypted"
+#: src/window.c:880
+#, fuzzy
+msgid "Files encrypted"
 msgstr "Fail on krüptitud"
 
-#: src/window.c:895 src/window.c:953
+#: src/window.c:936 src/window.c:1016
 msgid "Decryption failed"
 msgstr "Dekrüptimine ei õnnestunud"
 
-#: src/window.c:897
+#: src/window.c:938
 msgid "Text decrypted"
 msgstr "Tekst on dekrüptitud"
 
-#: src/window.c:955
-msgid "File decrypted"
+#: src/window.c:1018
+#, fuzzy
+msgid "Files decrypted"
 msgstr "Fail on dekrüptitud"
 
-#: src/window.c:1062 src/window.c:1124
+#: src/window.c:1125 src/window.c:1203
 msgid "Signing failed"
 msgstr "Allkirjastamine ei õnnestunud"
 
-#: src/window.c:1064
+#: src/window.c:1127
 msgid "Text signed"
 msgstr "Tekst on allkirjastatud"
 
-#: src/window.c:1126
-msgid "File signed"
+#: src/window.c:1205
+#, fuzzy
+msgid "Files signed"
 msgstr "Fail on allkirjastatud"
 
-#: src/window.c:1182 src/window.c:1243
+#: src/window.c:1261
 msgid "Signature invalid"
 msgstr "Allkiri on vigane"
 
-#: src/window.c:1186 src/window.c:1247
+#: src/window.c:1265
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Allkiri kehtib - allkirjastaja %s"
+
+#: src/window.c:1320
+msgid "valid"
+msgstr ""
+
+#: src/window.c:1320
+msgid "invalid"
+msgstr ""
+
+#: src/window.c:1352
+msgid "At least one invalid signature"
+msgstr ""
+
+#: src/window.c:1354
+#, fuzzy
+msgid "Signatures valid"
+msgstr "Allkiri on vigane"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
@@ -370,47 +390,47 @@ msgstr "GPGME failis asuvate andmete verifitseerimine ei õnnestunud: %s"
 msgid "Failed to create text encryption thread"
 msgstr "Teksti krüptimise lõime loomine ei õnnestunud"
 
-#: src/threading.c:79
+#: src/threading.c:80
 msgid "Failed to create file encryption thread"
 msgstr "Faili krüptimise lõime loomine ei õnnestunud"
 
-#: src/threading.c:100
+#: src/threading.c:101
 msgid "Failed to create text decryption thread"
 msgstr "Teksti dekrüptimise lõime loomine ei õnnestunud"
 
-#: src/threading.c:118
+#: src/threading.c:121
 msgid "Failed to create file decryption thread"
 msgstr "Faili dekrüptimise lõime loomine ei õnnestunud"
 
-#: src/threading.c:140
+#: src/threading.c:143
 msgid "Failed to create text signing thread"
 msgstr "Teksti allkirjastamise lõime loomine ei õnnestunud"
 
-#: src/threading.c:162
+#: src/threading.c:166
 msgid "Failed to create file signing thread"
 msgstr "Faili allkirjastamise lõime loomine ei õnnestunud"
 
-#: src/threading.c:183
+#: src/threading.c:187
 msgid "Failed to create text verification thread"
 msgstr "Teksti verifitseerimise lõime loomine ei õnnestunud"
 
-#: src/threading.c:201
+#: src/threading.c:207
 msgid "Failed to create file verification thread"
 msgstr "Faili verifitseerimise lõime loomine ei õnnestunud"
 
-#: src/threading.c:216
+#: src/threading.c:222
 msgid "Failed to create key import thread"
 msgstr "Võtme importimise lõime loomine ei õnnestunud"
 
-#: src/threading.c:238
+#: src/threading.c:244
 msgid "Failed to create key pair generation thread"
 msgstr "Võtme loomise lõime loomine ei õnnestunud"
 
-#: src/threading.c:253
+#: src/threading.c:259
 msgid "Failed to create key export thread"
 msgstr "Võtme eksportimise lõime loomine ei õnnestunud"
 
-#: src/threading.c:265
+#: src/threading.c:271
 msgid "Failed to create key removal thread"
 msgstr "Võtme eemaldamise lõime loomine ei õnnestunud"
 
@@ -453,7 +473,7 @@ msgstr "Allkirjasta tekst"
 msgid "Verify text"
 msgstr "Verifitseeri tekst"
 
-#: data/ui/window.blp:9 data/ui/window.blp:194
+#: data/ui/window.blp:9 data/ui/window.blp:197
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
@@ -483,65 +503,75 @@ msgstr "Põhimenüü"
 msgid "Text"
 msgstr "Tekst"
 
-#: data/ui/window.blp:84
+#: data/ui/window.blp:84 data/ui/filerow.blp:5
 msgid "File"
 msgstr "Fail"
 
-#: data/ui/window.blp:93
-msgid "No files selected for processing"
+#: data/ui/window.blp:109
+msgid "No open files"
+msgstr ""
+
+#: data/ui/window.blp:110
+#, fuzzy
+msgid "No files have been opened for processing"
 msgstr "Sa pole valinud töötlemiseks ühtegi faili"
 
-#: data/ui/window.blp:114
-msgid "Input File"
-msgstr "Sisendfail"
-
-#: data/ui/window.blp:123
-msgid "Select input file"
-msgstr "Vali sisendfail"
-
 #: data/ui/window.blp:130
-msgid "Output File"
-msgstr "Väljundfail"
+msgid "Open"
+msgstr ""
 
-#: data/ui/window.blp:139
-msgid "Select output file"
-msgstr "Vali väljundfail"
+#: data/ui/window.blp:131
+#, fuzzy
+msgid "Open files for processing"
+msgstr "Sa pole valinud töötlemiseks ühtegi faili"
 
-#: data/ui/window.blp:155 data/ui/window.blp:219
+#: data/ui/window.blp:141
+msgid "Clear"
+msgstr ""
+
+#: data/ui/window.blp:142
+msgid "Close all open files"
+msgstr ""
+
+#: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
 msgstr "Krüpti"
 
-#: data/ui/window.blp:162 data/ui/window.blp:223
+#: data/ui/window.blp:164 data/ui/window.blp:226
 msgid "Decrypt"
 msgstr "Dekrüpti"
 
-#: data/ui/window.blp:169 data/ui/window.blp:229
+#: data/ui/window.blp:171 data/ui/window.blp:232
 msgid "Sign"
 msgstr "Allkirjasta"
 
-#: data/ui/window.blp:176 data/ui/window.blp:241
+#: data/ui/window.blp:178 data/ui/window.blp:244
 msgid "Verify"
 msgstr "Verifitseeri"
 
-#: data/ui/window.blp:200 data/ui/managementdialog.blp:30
+#: data/ui/window.blp:203 data/ui/managementdialog.blp:30
 msgid "Manage keys"
 msgstr "Halda võtmeid"
 
-#: data/ui/window.blp:206
+#: data/ui/window.blp:209
 msgid "Keyboard Shortcuts"
 msgstr "Klaviatuuri kiirklahvid"
 
-#: data/ui/window.blp:210
+#: data/ui/window.blp:213
 msgid "About Lock"
 msgstr "Rakenduse teave"
 
-#: data/ui/window.blp:233
+#: data/ui/window.blp:236
 msgid "Sign (Clear Text)"
 msgstr "Allkirjasta (vormindamata tekst)"
 
-#: data/ui/window.blp:237
+#: data/ui/window.blp:240
 msgid "Sign (Detached)"
 msgstr "Allkirjasta (eraldi tekst)"
+
+#: data/ui/filerow.blp:18
+msgid "Close file"
+msgstr ""
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
@@ -759,6 +789,22 @@ msgstr "Vormindamata tekst"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Võtmevaliku vaade"
+
+#, fuzzy
+#~ msgid "All signatures valid"
+#~ msgstr "Allkiri on vigane"
+
+#~ msgid "Input File"
+#~ msgstr "Sisendfail"
+
+#~ msgid "Select input file"
+#~ msgstr "Vali sisendfail"
+
+#~ msgid "Output File"
+#~ msgstr "Väljundfail"
+
+#~ msgid "Select output file"
+#~ msgstr "Vali väljundfail"
 
 #~ msgctxt "Expiry time of the new keypair"
 #~ msgid "Expiry"

@@ -5,6 +5,7 @@
 blp = files(
   'shortcuts.blp',
   'window.blp',
+  'filerow.blp',
   'selectiondialog.blp',
   'managementdialog.blp',
   'keyrow.blp'

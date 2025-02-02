@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-21 09:44+0100\n"
+"POT-Creation-Date: 2025-02-02 16:12+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/Lock/"
@@ -50,7 +50,7 @@ msgstr "twlvnn kraftwerk <kraft_werk@tutanota.com>"
 msgid "Dependencies"
 msgstr "Зависимости"
 
-#: src/window.c:157
+#: src/window.c:155
 msgid "Enter text …"
 msgstr "Въведете текст …"
 
@@ -68,51 +68,69 @@ msgstr ""
 msgid "Text pasted"
 msgstr "Текстът е копиран"
 
-#: src/window.c:775 src/window.c:837
+#: src/window.c:801 src/window.c:878
 msgid "Encryption failed"
 msgstr "Шифрирането е неуспешно"
 
-#: src/window.c:777
+#: src/window.c:803
 #, fuzzy
 msgid "Text encrypted"
 msgstr "Текстът е дешифриран"
 
-#: src/window.c:839
+#: src/window.c:880
 #, fuzzy
-msgid "File encrypted"
+msgid "Files encrypted"
 msgstr "Файлът е дешифриран"
 
-#: src/window.c:895 src/window.c:953
+#: src/window.c:936 src/window.c:1016
 msgid "Decryption failed"
 msgstr "Дешифрирането е неуспешно"
 
-#: src/window.c:897
+#: src/window.c:938
 msgid "Text decrypted"
 msgstr "Текстът е дешифриран"
 
-#: src/window.c:955
-msgid "File decrypted"
+#: src/window.c:1018
+#, fuzzy
+msgid "Files decrypted"
 msgstr "Файлът е дешифриран"
 
-#: src/window.c:1062 src/window.c:1124
+#: src/window.c:1125 src/window.c:1203
 msgid "Signing failed"
 msgstr "Подписването е неуспешно"
 
-#: src/window.c:1064
+#: src/window.c:1127
 msgid "Text signed"
 msgstr "Текстът е подписан"
 
-#: src/window.c:1126
-msgid "File signed"
+#: src/window.c:1205
+#, fuzzy
+msgid "Files signed"
 msgstr "Файлът е подписан"
 
-#: src/window.c:1182 src/window.c:1243
+#: src/window.c:1261
 msgid "Signature invalid"
 msgstr ""
 
-#: src/window.c:1186 src/window.c:1247
+#: src/window.c:1265
 #, c-format
 msgid "Signature valid - by %s"
+msgstr ""
+
+#: src/window.c:1320
+msgid "valid"
+msgstr ""
+
+#: src/window.c:1320
+msgid "invalid"
+msgstr ""
+
+#: src/window.c:1352
+msgid "At least one invalid signature"
+msgstr ""
+
+#: src/window.c:1354
+msgid "Signatures valid"
 msgstr ""
 
 #: src/managementdialog.c:364
@@ -382,57 +400,57 @@ msgstr "потвърждаване на GPGME данни от файл"
 msgid "Failed to create text encryption thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:79
+#: src/threading.c:80
 #, fuzzy
 msgid "Failed to create file encryption thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:100
+#: src/threading.c:101
 #, fuzzy
 msgid "Failed to create text decryption thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:118
+#: src/threading.c:121
 #, fuzzy
 msgid "Failed to create file decryption thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:140
+#: src/threading.c:143
 #, fuzzy
 msgid "Failed to create text signing thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:162
+#: src/threading.c:166
 #, fuzzy
 msgid "Failed to create file signing thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:183
+#: src/threading.c:187
 #, fuzzy
 msgid "Failed to create text verification thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:201
+#: src/threading.c:207
 #, fuzzy
 msgid "Failed to create file verification thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:216
+#: src/threading.c:222
 #, fuzzy
 msgid "Failed to create key import thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:238
+#: src/threading.c:244
 #, fuzzy
 msgid "Failed to create key pair generation thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:253
+#: src/threading.c:259
 #, fuzzy
 msgid "Failed to create key export thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
 
-#: src/threading.c:265
+#: src/threading.c:271
 #, fuzzy
 msgid "Failed to create key removal thread"
 msgstr "Създаване на нишка %s е неуспешно: %s"
@@ -482,7 +500,7 @@ msgstr "Обикновен текст"
 msgid "Verify text"
 msgstr "Потвърждаване"
 
-#: data/ui/window.blp:9 data/ui/window.blp:194
+#: data/ui/window.blp:9 data/ui/window.blp:197
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
@@ -513,65 +531,73 @@ msgstr "Основно меню"
 msgid "Text"
 msgstr "Текст"
 
-#: data/ui/window.blp:84
+#: data/ui/window.blp:84 data/ui/filerow.blp:5
 msgid "File"
 msgstr "Файл"
 
-#: data/ui/window.blp:93
-msgid "No files selected for processing"
+#: data/ui/window.blp:109
+msgid "No open files"
 msgstr ""
 
-#: data/ui/window.blp:114
-msgid "Input File"
-msgstr "Входен файл"
-
-#: data/ui/window.blp:123
-msgid "Select input file"
+#: data/ui/window.blp:110
+msgid "No files have been opened for processing"
 msgstr ""
 
 #: data/ui/window.blp:130
-msgid "Output File"
-msgstr "Изходен файл"
+msgid "Open"
+msgstr ""
 
-#: data/ui/window.blp:139
+#: data/ui/window.blp:131
 #, fuzzy
-msgid "Select output file"
-msgstr "Изходният файл не може да бъде отворен: %s"
+msgid "Open files for processing"
+msgstr "Обработване на файлове"
 
-#: data/ui/window.blp:155 data/ui/window.blp:219
+#: data/ui/window.blp:141
+msgid "Clear"
+msgstr ""
+
+#: data/ui/window.blp:142
+msgid "Close all open files"
+msgstr ""
+
+#: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
 msgstr "Шифриране"
 
-#: data/ui/window.blp:162 data/ui/window.blp:223
+#: data/ui/window.blp:164 data/ui/window.blp:226
 msgid "Decrypt"
 msgstr "Дешифриране"
 
-#: data/ui/window.blp:169 data/ui/window.blp:229
+#: data/ui/window.blp:171 data/ui/window.blp:232
 msgid "Sign"
 msgstr "Подписване"
 
-#: data/ui/window.blp:176 data/ui/window.blp:241
+#: data/ui/window.blp:178 data/ui/window.blp:244
 msgid "Verify"
 msgstr "Потвърждаване"
 
-#: data/ui/window.blp:200 data/ui/managementdialog.blp:30
+#: data/ui/window.blp:203 data/ui/managementdialog.blp:30
 msgid "Manage keys"
 msgstr "Управление на ключовете"
 
-#: data/ui/window.blp:206
+#: data/ui/window.blp:209
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: data/ui/window.blp:210
+#: data/ui/window.blp:213
 msgid "About Lock"
 msgstr "Относно „Ключалка“"
 
-#: data/ui/window.blp:233
+#: data/ui/window.blp:236
 msgid "Sign (Clear Text)"
 msgstr ""
 
-#: data/ui/window.blp:237
+#: data/ui/window.blp:240
 msgid "Sign (Detached)"
+msgstr ""
+
+#: data/ui/filerow.blp:18
+msgid "Close file"
 msgstr ""
 
 #: data/ui/selectiondialog.blp:35
@@ -800,6 +826,16 @@ msgstr "Обикновен текст"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr ""
+
+#~ msgid "Input File"
+#~ msgstr "Входен файл"
+
+#~ msgid "Output File"
+#~ msgstr "Изходен файл"
+
+#, fuzzy
+#~ msgid "Select output file"
+#~ msgstr "Изходният файл не може да бъде отворен: %s"
 
 #, fuzzy
 #~ msgctxt "Expire date unit of the new key pair"

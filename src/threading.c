@@ -74,6 +74,7 @@ void thread_encrypt_file(LockSelectionDialog *self, const char *fingerprint,
     (void)self;
 
     lock_window_set_fingerprint(window, fingerprint);
+    lock_window_file_select_output_directory_dialog_present(window);
 
     bool success = thread_create("encrypt_file",
                                  _("Failed to create file encryption thread"),
@@ -113,6 +114,8 @@ void thread_decrypt_text(GSimpleAction *self, GVariant *parameter,
 void thread_decrypt_file(GtkButton *self, LockWindow *window)
 {
     (void)self;
+
+    lock_window_file_select_output_directory_dialog_present(window);
 
     bool success = thread_create("decrypt_file",
                                  _("Failed to create file decryption thread"),
@@ -157,6 +160,7 @@ void thread_sign_file(LockSelectionDialog *self, const char *fingerprint,
     (void)self;
 
     lock_window_set_fingerprint(window, fingerprint);
+    lock_window_file_select_output_directory_dialog_present(window);
 
     bool success = thread_create("sign_file",
                                  _("Failed to create file signing thread"),
@@ -196,6 +200,8 @@ void thread_verify_text(GSimpleAction *self, GVariant *parameter,
 void thread_verify_file(GtkButton *self, LockWindow *window)
 {
     (void)self;
+
+    lock_window_file_select_output_directory_dialog_present(window);
 
     bool success = thread_create("verify_file",
                                  _("Failed to create file verification thread"),

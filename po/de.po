@@ -2,23 +2,22 @@
 # Copyright (C) 2024 THE com.konstantintutsch.Lock'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.konstantintutsch.Lock package.
 # Automatically generated, 2024.
-# Konstantin Tutsch <mail@konstantintutsch.com>, 2024.
+# Konstantin Tutsch <mail@konstantintutsch.com>, 2024-2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-21 09:44+0100\n"
-"PO-Revision-Date: 2024-12-20 08:03+0000\n"
+"POT-Creation-Date: 2025-02-02 16:12+0100\n"
+"PO-Revision-Date: 2025-02-02 16:12+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/Lock/Application/"
-"de/>\n"
+"Language-Team: German\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9.2-dev\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 47.1\n"
 
 #: src/main.c:32
 #, c-format
@@ -50,7 +49,7 @@ msgstr "Konstantin Tutsch <mail@konstantintutsch.com>"
 msgid "Dependencies"
 msgstr "Abhängigkeiten"
 
-#: src/window.c:157
+#: src/window.c:155
 msgid "Enter text …"
 msgstr "Text eingeben …"
 
@@ -67,50 +66,66 @@ msgstr "Konnte Text nicht aus Zwischenablage lesen: %s"
 msgid "Text pasted"
 msgstr "Text eingefügt"
 
-#: src/window.c:775 src/window.c:837
+#: src/window.c:801 src/window.c:878
 msgid "Encryption failed"
 msgstr "Verschlüsselung fehlgeschlagen"
 
-#: src/window.c:777
+#: src/window.c:803
 msgid "Text encrypted"
 msgstr "Text verschlüsselt"
 
-#: src/window.c:839
-msgid "File encrypted"
-msgstr "Datei verschlüsselt"
+#: src/window.c:880
+msgid "Files encrypted"
+msgstr "Dateien verschlüsselt"
 
-#: src/window.c:895 src/window.c:953
+#: src/window.c:936 src/window.c:1016
 msgid "Decryption failed"
 msgstr "Entschlüsselung fehlgeschlagen"
 
-#: src/window.c:897
+#: src/window.c:938
 msgid "Text decrypted"
 msgstr "Text entschlüsselt"
 
-#: src/window.c:955
-msgid "File decrypted"
-msgstr "Datei entschlüsselt"
+#: src/window.c:1018
+msgid "Files decrypted"
+msgstr "Dateien entschlüsselt"
 
-#: src/window.c:1062 src/window.c:1124
+#: src/window.c:1125 src/window.c:1203
 msgid "Signing failed"
 msgstr "Signierung fehlgeschlagen"
 
-#: src/window.c:1064
+#: src/window.c:1127
 msgid "Text signed"
 msgstr "Text signiert"
 
-#: src/window.c:1126
-msgid "File signed"
-msgstr "Datei signiert"
+#: src/window.c:1205
+msgid "Files signed"
+msgstr "Dateien signiert"
 
-#: src/window.c:1182 src/window.c:1243
+#: src/window.c:1261
 msgid "Signature invalid"
 msgstr "Signatur ungültig"
 
-#: src/window.c:1186 src/window.c:1247
+#: src/window.c:1265
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Signatur gültig - von %s"
+
+#: src/window.c:1320
+msgid "valid"
+msgstr "gültig"
+
+#: src/window.c:1320
+msgid "invalid"
+msgstr "ungültig"
+
+#: src/window.c:1352
+msgid "At least one invalid signature"
+msgstr "Mindestens eine ungültige Signatur"
+
+#: src/window.c:1354
+msgid "Signatures valid"
+msgstr "Signaturen gültig"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
@@ -376,47 +391,47 @@ msgstr "Fehler beim Verifizieren von GPGME Daten aus einer Datei: %s"
 msgid "Failed to create text encryption thread"
 msgstr "Fehler bei der Thread-Erstellung zur Textverschlüsselung"
 
-#: src/threading.c:79
+#: src/threading.c:80
 msgid "Failed to create file encryption thread"
 msgstr "Fehler bei der Thread-Erstellung zur Dateiverschlüsselung"
 
-#: src/threading.c:100
+#: src/threading.c:101
 msgid "Failed to create text decryption thread"
 msgstr "Fehler bei der Thread-Erstellung zur Textentschlüsselung"
 
-#: src/threading.c:118
+#: src/threading.c:121
 msgid "Failed to create file decryption thread"
 msgstr "Fehler bei der Thread-Erstellung zur Dateientschlüsselung"
 
-#: src/threading.c:140
+#: src/threading.c:143
 msgid "Failed to create text signing thread"
 msgstr "Fehler bei der Thread-Erstellung zur Textsignierung"
 
-#: src/threading.c:162
+#: src/threading.c:166
 msgid "Failed to create file signing thread"
 msgstr "Fehler bei der Thread-Erstellung zur Dateisignierung"
 
-#: src/threading.c:183
+#: src/threading.c:187
 msgid "Failed to create text verification thread"
 msgstr "Fehler bei der Thread-Erstellung zur Textverifikation"
 
-#: src/threading.c:201
+#: src/threading.c:207
 msgid "Failed to create file verification thread"
 msgstr "Fehler bei der Thread-Erstellung zur Dateiverifikation"
 
-#: src/threading.c:216
+#: src/threading.c:222
 msgid "Failed to create key import thread"
 msgstr "Fehler bei der Thread-Erstellung zum Schlüsselimport"
 
-#: src/threading.c:238
+#: src/threading.c:244
 msgid "Failed to create key pair generation thread"
 msgstr "Fehler bei der Thread-Erstellung zur Schlüsselpaargeneration"
 
-#: src/threading.c:253
+#: src/threading.c:259
 msgid "Failed to create key export thread"
 msgstr "Fehler bei der Thread-Erstellung zum Schlüsselexport"
 
-#: src/threading.c:265
+#: src/threading.c:271
 msgid "Failed to create key removal thread"
 msgstr "Fehler bei der Thread-Erstellung zur Schlüsselentfernung"
 
@@ -459,7 +474,7 @@ msgstr "Text signieren"
 msgid "Verify text"
 msgstr "Text verifizieren"
 
-#: data/ui/window.blp:9 data/ui/window.blp:194
+#: data/ui/window.blp:9 data/ui/window.blp:197
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
@@ -489,65 +504,73 @@ msgstr "Hauptmenü"
 msgid "Text"
 msgstr "Text"
 
-#: data/ui/window.blp:84
+#: data/ui/window.blp:84 data/ui/filerow.blp:5
 msgid "File"
 msgstr "Datei"
 
-#: data/ui/window.blp:93
-msgid "No files selected for processing"
-msgstr "Keine Dateien für die Verarbeitung ausgewählt"
+#: data/ui/window.blp:109
+msgid "No open files"
+msgstr "Keine geöffneten Dateien"
 
-#: data/ui/window.blp:114
-msgid "Input File"
-msgstr "Eingabedatei"
-
-#: data/ui/window.blp:123
-msgid "Select input file"
-msgstr "Eingabedatei auswählen"
+#: data/ui/window.blp:110
+msgid "No files have been opened for processing"
+msgstr "Keine Dateien für die Verarbeitung geöffnet"
 
 #: data/ui/window.blp:130
-msgid "Output File"
-msgstr "Ausgabedatei"
+msgid "Open"
+msgstr "Öffnen"
 
-#: data/ui/window.blp:139
-msgid "Select output file"
-msgstr "Ausgabedatei auswählen"
+#: data/ui/window.blp:131
+msgid "Open files for processing"
+msgstr "Dateien für die Verarbeitung öffnen"
 
-#: data/ui/window.blp:155 data/ui/window.blp:219
+#: data/ui/window.blp:141
+msgid "Clear"
+msgstr "Leeren"
+
+#: data/ui/window.blp:142
+msgid "Close all open files"
+msgstr "Alle geöffneten Dateien schließen"
+
+#: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
 msgstr "Verschlüsseln"
 
-#: data/ui/window.blp:162 data/ui/window.blp:223
+#: data/ui/window.blp:164 data/ui/window.blp:226
 msgid "Decrypt"
 msgstr "Entschlüsseln"
 
-#: data/ui/window.blp:169 data/ui/window.blp:229
+#: data/ui/window.blp:171 data/ui/window.blp:232
 msgid "Sign"
 msgstr "Signieren"
 
-#: data/ui/window.blp:176 data/ui/window.blp:241
+#: data/ui/window.blp:178 data/ui/window.blp:244
 msgid "Verify"
 msgstr "Verifizieren"
 
-#: data/ui/window.blp:200 data/ui/managementdialog.blp:30
+#: data/ui/window.blp:203 data/ui/managementdialog.blp:30
 msgid "Manage keys"
 msgstr "Schlüssel verwalten"
 
-#: data/ui/window.blp:206
+#: data/ui/window.blp:209
 msgid "Keyboard Shortcuts"
 msgstr "Tastenkürzel"
 
-#: data/ui/window.blp:210
+#: data/ui/window.blp:213
 msgid "About Lock"
 msgstr "Info zu Schloss"
 
-#: data/ui/window.blp:233
+#: data/ui/window.blp:236
 msgid "Sign (Clear Text)"
 msgstr "Signieren (Klartext)"
 
-#: data/ui/window.blp:237
+#: data/ui/window.blp:240
 msgid "Sign (Detached)"
 msgstr "Signieren (Getrennt)"
+
+#: data/ui/filerow.blp:18
+msgid "Close file"
+msgstr "Datei schließen"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
@@ -764,6 +787,21 @@ msgstr "Klartext"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Schlüsselwahl Dialog"
+
+#~ msgid "All signatures valid"
+#~ msgstr "Alle Signaturen gültig"
+
+#~ msgid "Input File"
+#~ msgstr "Eingabedatei"
+
+#~ msgid "Select input file"
+#~ msgstr "Eingabedatei auswählen"
+
+#~ msgid "Output File"
+#~ msgstr "Ausgabedatei"
+
+#~ msgid "Select output file"
+#~ msgstr "Ausgabedatei auswählen"
 
 #~ msgctxt "Expire date unit of the new key pair"
 #~ msgid "Months, disable with zero"
@@ -1004,9 +1042,6 @@ msgstr "Schlüsselwahl Dialog"
 
 #~ msgid "Importing and Exporting of keys via files"
 #~ msgstr "Importieren und Exportieren von Schlüsseln über Dateien"
-
-#~ msgid "Could not open file"
-#~ msgstr "Datei konnte nicht geöffnet werden"
 
 #~ msgid "Enter Email or User ID …"
 #~ msgstr "E-Mail oder Nutzer ID eingeben …"

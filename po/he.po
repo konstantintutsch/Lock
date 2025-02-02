@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
-"POT-Creation-Date: 2024-12-21 09:44+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-02 16:12+0100\n"
 "PO-Revision-Date: 2025-01-14 12:01+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/Lock/Application/"
@@ -49,7 +49,7 @@ msgstr "ירון שהרבני <sh.yaron@gmail.com>"
 msgid "Dependencies"
 msgstr "תלויות"
 
-#: src/window.c:157
+#: src/window.c:155
 msgid "Enter text …"
 msgstr "נא למלא טקסט…"
 
@@ -66,50 +66,70 @@ msgstr "לא ניתן לקרוא טקסט מלוח הגזירים: %s"
 msgid "Text pasted"
 msgstr "הטקסט הודבק"
 
-#: src/window.c:775 src/window.c:837
+#: src/window.c:801 src/window.c:878
 msgid "Encryption failed"
 msgstr "ההצפנה נכשלה"
 
-#: src/window.c:777
+#: src/window.c:803
 msgid "Text encrypted"
 msgstr "הטקסט הוצפן"
 
-#: src/window.c:839
-msgid "File encrypted"
+#: src/window.c:880
+#, fuzzy
+msgid "Files encrypted"
 msgstr "הקובץ הוצפן"
 
-#: src/window.c:895 src/window.c:953
+#: src/window.c:936 src/window.c:1016
 msgid "Decryption failed"
 msgstr "הפענוח נכשל"
 
-#: src/window.c:897
+#: src/window.c:938
 msgid "Text decrypted"
 msgstr "הטקסט פוענח"
 
-#: src/window.c:955
-msgid "File decrypted"
+#: src/window.c:1018
+#, fuzzy
+msgid "Files decrypted"
 msgstr "הקובץ פוענח"
 
-#: src/window.c:1062 src/window.c:1124
+#: src/window.c:1125 src/window.c:1203
 msgid "Signing failed"
 msgstr "החתימה נכשלה"
 
-#: src/window.c:1064
+#: src/window.c:1127
 msgid "Text signed"
 msgstr "הטקסט נחתם"
 
-#: src/window.c:1126
-msgid "File signed"
+#: src/window.c:1205
+#, fuzzy
+msgid "Files signed"
 msgstr "הקובץ נחתם"
 
-#: src/window.c:1182 src/window.c:1243
+#: src/window.c:1261
 msgid "Signature invalid"
 msgstr "החתימה שגויה"
 
-#: src/window.c:1186 src/window.c:1247
+#: src/window.c:1265
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "החתימה שגויה - מאת %s"
+
+#: src/window.c:1320
+msgid "valid"
+msgstr ""
+
+#: src/window.c:1320
+msgid "invalid"
+msgstr ""
+
+#: src/window.c:1352
+msgid "At least one invalid signature"
+msgstr ""
+
+#: src/window.c:1354
+#, fuzzy
+msgid "Signatures valid"
+msgstr "החתימה שגויה"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
@@ -371,48 +391,48 @@ msgstr "אימות נתוני GPGME מקובץ נכשל: %s"
 msgid "Failed to create text encryption thread"
 msgstr "יצירת תהליכון הצפנת טקסט נכשלה"
 
-#: src/threading.c:79
+#: src/threading.c:80
 msgid "Failed to create file encryption thread"
 msgstr "יצירת תהליכון הצפנת קבצים נכשלה"
 
-#: src/threading.c:100
+#: src/threading.c:101
 msgid "Failed to create text decryption thread"
 msgstr "יצירת תהליכון פענוח טקסט נכשלה"
 
-#: src/threading.c:118
+#: src/threading.c:121
 msgid "Failed to create file decryption thread"
 msgstr "יצירת תהליכון פענוח קבצים נכשלה"
 
-#: src/threading.c:140
+#: src/threading.c:143
 msgid "Failed to create text signing thread"
 msgstr "יצירת תהליכון חתימת טקסט נכשלה"
 
-#: src/threading.c:162
+#: src/threading.c:166
 msgid "Failed to create file signing thread"
 msgstr "יצירת תהליכון חתימה על קבצים"
 
-#: src/threading.c:183
+#: src/threading.c:187
 msgid "Failed to create text verification thread"
 msgstr "יצירת תהליכון אימות טקסט נכשלה"
 
-#: src/threading.c:201
+#: src/threading.c:207
 msgid "Failed to create file verification thread"
 msgstr "יצירת תהליכון אימות קבצים נכשלה"
 
-#: src/threading.c:216
+#: src/threading.c:222
 msgid "Failed to create key import thread"
 msgstr "יצירת תהליכון ייבוא מפתח נכשלה"
 
-#: src/threading.c:238
+#: src/threading.c:244
 #, fuzzy
 msgid "Failed to create key pair generation thread"
 msgstr "יצירת תהליכון יצירת מפתח נכשלה"
 
-#: src/threading.c:253
+#: src/threading.c:259
 msgid "Failed to create key export thread"
 msgstr "יצירת תהליכון יצירת ייצוא מפתח נכשלה"
 
-#: src/threading.c:265
+#: src/threading.c:271
 msgid "Failed to create key removal thread"
 msgstr "יצירת תהליכון הסרת מפתח נכשלה"
 
@@ -455,7 +475,7 @@ msgstr "חתימה על טקסט"
 msgid "Verify text"
 msgstr "אימות טקסט"
 
-#: data/ui/window.blp:9 data/ui/window.blp:194
+#: data/ui/window.blp:9 data/ui/window.blp:197
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
@@ -485,65 +505,75 @@ msgstr "תפריט ראשי"
 msgid "Text"
 msgstr "טקסט"
 
-#: data/ui/window.blp:84
+#: data/ui/window.blp:84 data/ui/filerow.blp:5
 msgid "File"
 msgstr "קובץ"
 
-#: data/ui/window.blp:93
-msgid "No files selected for processing"
+#: data/ui/window.blp:109
+msgid "No open files"
+msgstr ""
+
+#: data/ui/window.blp:110
+#, fuzzy
+msgid "No files have been opened for processing"
 msgstr "לא נבחרו קבצים לעיבוד"
 
-#: data/ui/window.blp:114
-msgid "Input File"
-msgstr "קובץ קלט"
-
-#: data/ui/window.blp:123
-msgid "Select input file"
-msgstr "נא לבחור קובץ קלט"
-
 #: data/ui/window.blp:130
-msgid "Output File"
-msgstr "קובץ פלט"
+msgid "Open"
+msgstr ""
 
-#: data/ui/window.blp:139
-msgid "Select output file"
-msgstr "בחירת קובץ פלט"
+#: data/ui/window.blp:131
+#, fuzzy
+msgid "Open files for processing"
+msgstr "לא נבחרו קבצים לעיבוד"
 
-#: data/ui/window.blp:155 data/ui/window.blp:219
+#: data/ui/window.blp:141
+msgid "Clear"
+msgstr ""
+
+#: data/ui/window.blp:142
+msgid "Close all open files"
+msgstr ""
+
+#: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
 msgstr "הצפנה"
 
-#: data/ui/window.blp:162 data/ui/window.blp:223
+#: data/ui/window.blp:164 data/ui/window.blp:226
 msgid "Decrypt"
 msgstr "פענוח"
 
-#: data/ui/window.blp:169 data/ui/window.blp:229
+#: data/ui/window.blp:171 data/ui/window.blp:232
 msgid "Sign"
 msgstr "חתימה"
 
-#: data/ui/window.blp:176 data/ui/window.blp:241
+#: data/ui/window.blp:178 data/ui/window.blp:244
 msgid "Verify"
 msgstr "אימות"
 
-#: data/ui/window.blp:200 data/ui/managementdialog.blp:30
+#: data/ui/window.blp:203 data/ui/managementdialog.blp:30
 msgid "Manage keys"
 msgstr "ניהול מפתחות"
 
-#: data/ui/window.blp:206
+#: data/ui/window.blp:209
 msgid "Keyboard Shortcuts"
 msgstr "קיצורי מקלדת"
 
-#: data/ui/window.blp:210
+#: data/ui/window.blp:213
 msgid "About Lock"
 msgstr "על מנעול"
 
-#: data/ui/window.blp:233
+#: data/ui/window.blp:236
 msgid "Sign (Clear Text)"
 msgstr "חתימה (טקסט פשוט)"
 
-#: data/ui/window.blp:237
+#: data/ui/window.blp:240
 msgid "Sign (Detached)"
 msgstr "חתימה (מנותקת)"
+
+#: data/ui/filerow.blp:18
+msgid "Close file"
+msgstr ""
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
@@ -763,6 +793,22 @@ msgstr "טקסט פשוט"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "חלונית בחירת מפתח"
+
+#, fuzzy
+#~ msgid "All signatures valid"
+#~ msgstr "החתימה שגויה"
+
+#~ msgid "Input File"
+#~ msgstr "קובץ קלט"
+
+#~ msgid "Select input file"
+#~ msgstr "נא לבחור קובץ קלט"
+
+#~ msgid "Output File"
+#~ msgstr "קובץ פלט"
+
+#~ msgid "Select output file"
+#~ msgstr "בחירת קובץ פלט"
 
 #, fuzzy
 #~ msgctxt "Expire date unit of the new key pair"

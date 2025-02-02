@@ -1,0 +1,21 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $LockFileRow : Adw.ActionRow {
+    title: _("File");
+    use-markup: false;
+
+    activatable: true;
+
+    Gtk.Box {
+        orientation: horizontal;
+        valign: center;
+
+        Gtk.Button remove_button {
+            styles ["flat"]
+
+            icon-name: "list-remove-symbolic";
+            tooltip-text: _("Close file");
+        }
+    }
+}
