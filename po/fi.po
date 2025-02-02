@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-02 16:12+0100\n"
+"POT-Creation-Date: 2025-02-02 16:17+0100\n"
 "PO-Revision-Date: 2025-01-18 10:00+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -43,7 +43,7 @@ msgstr "Kehitä"
 
 #: src/application.c:220
 msgid "translator-credits"
-msgstr "Jiri Grönroos"
+msgstr "kääntäjien ansiot"
 
 #: src/application.c:225
 msgid "Dependencies"
@@ -789,10 +789,6 @@ msgstr "Raakateksti"
 msgid "Key selection dialog"
 msgstr "Avaimen valinnan ikkuna"
 
-#, fuzzy
-#~ msgid "All signatures valid"
-#~ msgstr "Virheellinen allekirjoitus"
-
 #~ msgid "Input File"
 #~ msgstr "Käsiteltävä tiedosto"
 
@@ -804,6 +800,22 @@ msgstr "Avaimen valinnan ikkuna"
 
 #~ msgid "Select output file"
 #~ msgstr "Valitse käsitelty tiedosto"
+
+#~ msgid "File encrypted"
+#~ msgstr "Tiedosto salattu"
+
+#~ msgid "File decrypted"
+#~ msgstr "Tiedoston salaus purettu"
+
+#~ msgid "File signed"
+#~ msgstr "Tiedosto allekirjoitettu"
+
+#~ msgid "No files selected for processing"
+#~ msgstr "Tiedostoja ei ole valittu käsiteltäväksi"
+
+#, fuzzy
+#~ msgid "All signatures valid"
+#~ msgstr "Virheellinen allekirjoitus"
 
 #~ msgctxt "Expiry time of the new keypair"
 #~ msgid "Expiry"

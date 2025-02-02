@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-02 16:12+0100\n"
+"POT-Creation-Date: 2025-02-02 16:17+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -23,7 +23,7 @@ msgstr ""
 #, c-format
 msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
 msgid "GnuPG Made Easy %s or greater required. Using %s."
-msgstr ""
+msgstr "需要 %s 或更高版本的 GnuPG Made Easy。正在使用 %s。"
 
 #. Details
 #: src/application.c:203 data/com.konstantintutsch.Lock.desktop.in.in:5
@@ -43,7 +43,7 @@ msgstr "开发"
 
 #: src/application.c:220
 msgid "translator-credits"
-msgstr "lumingzh <lumingzh@qq.com>, 2024"
+msgstr "lumingzh <lumingzh@qq.com>, 2024-2025"
 
 #: src/application.c:225
 msgid "Dependencies"
@@ -60,21 +60,19 @@ msgstr "文本已复制"
 #: src/window.c:528
 #, c-format
 msgid "Could not read text from clipboard: %s"
-msgstr ""
+msgstr "无法从剪贴板读取文本：%s"
 
 #: src/window.c:537
-#, fuzzy
 msgid "Text pasted"
-msgstr "文本已复制"
+msgstr "文本已粘贴"
 
 #: src/window.c:801 src/window.c:878
 msgid "Encryption failed"
 msgstr "加密失败"
 
 #: src/window.c:803
-#, fuzzy
 msgid "Text encrypted"
-msgstr "文本已解密"
+msgstr "文本已加密"
 
 #: src/window.c:880
 #, fuzzy
@@ -109,12 +107,12 @@ msgstr "文件已签署"
 
 #: src/window.c:1261
 msgid "Signature invalid"
-msgstr ""
+msgstr "签名无效"
 
 #: src/window.c:1265
 #, c-format
 msgid "Signature valid - by %s"
-msgstr ""
+msgstr "签名有效 - 由 %s"
 
 #: src/window.c:1320
 msgid "valid"
@@ -143,19 +141,17 @@ msgstr "密钥已导入"
 #: src/managementdialog.c:412
 msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
 msgid "%B %e, %Y"
-msgstr ""
+msgstr "%Y年%m月%d日"
 
 #: src/managementdialog.c:429
-#, fuzzy
 msgid "No expire date"
-msgstr "查看到期日期"
+msgstr "无到期日期"
 
 #: src/managementdialog.c:517
 msgid "Generation failed"
 msgstr "生成失败"
 
 #: src/managementdialog.c:519
-#, fuzzy
 msgid "Key pair generated"
 msgstr "密钥对已生成"
 
@@ -164,7 +160,7 @@ msgid "Key does not expire"
 msgstr "密钥未到期"
 
 #: src/keyrow.c:132
-#, fuzzy, c-format
+#, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
 msgstr "到期时间 %s %s"
@@ -176,9 +172,8 @@ msgid "Expires %s at %s"
 msgstr "到期时间 %s %s"
 
 #: src/keyrow.c:174
-#, fuzzy
 msgid "Fingerprint copied"
-msgstr "指纹"
+msgstr "指纹已复制"
 
 #: src/keyrow.c:263
 msgid "Export failed"
@@ -189,9 +184,8 @@ msgid "Key exported"
 msgstr "密钥已导出"
 
 #: src/keyrow.c:310
-#, fuzzy
 msgid "Remove key?"
-msgstr "移除密钥"
+msgstr "移除密钥吗？"
 
 #: src/keyrow.c:313
 #, c-format
@@ -215,142 +209,138 @@ msgid "Key removed"
 msgstr "密钥已移除"
 
 #: src/keyrow.c:410
-#, fuzzy
 msgid "Renewal failed"
-msgstr "移除失败"
+msgstr "续期失败"
 
 #: src/keyrow.c:412
-#, fuzzy
 msgid "Expire date renewed"
-msgstr "查看到期日期"
+msgstr "到期日期已续期"
 
 #: src/cryptography.c:29
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME context: %s"
-msgstr "创建新 GPGME 上下文"
+msgstr "创建新 GPGME 上下文失败：%s"
 
 #: src/cryptography.c:37
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
-msgstr "设置 GPGME 上下文协议为 OpenPGP"
+msgstr "设置 GPGME 上下文协议为 OpenPGP 失败：%s"
 
 #: src/cryptography.c:46
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set pinentry mode of GPGME context to ask: %s"
-msgstr "设置 GPGME 上下文协议为 OpenPGP"
+msgstr "设置 GPGME 上下文 pinentry 模式为询问失败：%s"
 
 #: src/cryptography.c:105
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to open file for writing: %s"
-msgstr "打开导出文件失败：%s"
+msgstr "打开要写入的文件失败：%s"
 
 #: src/cryptography.c:113
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to write to file: %s"
-msgstr "打开导出文件失败：%s"
+msgstr "写入文件失败：%s"
 
 #: src/cryptography.c:150
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to obtain key by fingerprint: %s"
-msgstr "查找匹配用户标识的密钥"
+msgstr "通过指纹获取密钥失败：%s"
 
 #: src/cryptography.c:190
-#, fuzzy
 msgid "Failed to find key matching User ID"
-msgstr "查找匹配用户标识的密钥"
+msgstr "查找匹配用户标识的密钥失败"
 
 #: src/cryptography.c:231
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to generate new GPG key for signing: %s"
-msgstr "生成用于签署的新 GPG 密钥"
+msgstr "生成用于签署的新 GPG 密钥失败：%s"
 
 #: src/cryptography.c:243
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to generate new GPG subkey for encryption: %s"
-msgstr "生成用于签署的新 GPG 密钥"
+msgstr "生成用于加密的新 GPG 子密钥失败：%s"
 
 #: src/cryptography.c:251
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to delete unfinished, generated key: %s"
-msgstr "删除未完成，已生成 ECC 密钥"
+msgstr "删除未完成的已生成密钥失败：%s"
 
 #: src/cryptography.c:288
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to load GPGME key data from file: %s"
-msgstr "从文件加载 GPGME 密钥数据"
+msgstr "从文件加载 GPGME 密钥数据失败：%s"
 
 #: src/cryptography.c:296
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to import GPG key from file: %s"
-msgstr "从文件导入 GPG 密钥"
+msgstr "从文件导入 GPG 密钥失败：%s"
 
 #: src/cryptography.c:333
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create GPGME key data in memory: %s"
-msgstr "在内存中创建 GPGME 密钥数据"
+msgstr "在内存中创建 GPGME 密钥数据失败：%s"
 
 #: src/cryptography.c:341
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to export GPG key(s) to file: %s"
-msgstr "导出 GPG 密钥至文件"
+msgstr "导出 GPG 密钥至文件失败：%s"
 
 #: src/cryptography.c:386
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for expire date renewal: %s"
-msgstr "获取 GPG 密钥来移除"
+msgstr "获取 GPG 密钥来续期到期日期失败：%s"
 
 #: src/cryptography.c:394
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to renew the expire date of a key: %s"
-msgstr "创建 %s 线程失败：%s"
+msgstr "续期密钥的到期日期失败：%s"
 
 #: src/cryptography.c:428
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for removal: %s"
-msgstr "获取 GPG 密钥来移除"
+msgstr "获取 GPG 密钥来移除失败：%s"
 
 #: src/cryptography.c:436
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to remove GPG key: %s"
-msgstr "移除 GPG 密钥"
+msgstr "移除 GPG 密钥失败：%s"
 
 #: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
 #: src/cryptography.c:659
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME input data from string: %s"
-msgstr "从字符串创建新 GPGME 输入数据"
+msgstr "从字符串创建新 GPGME 输入数据失败：%s"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
 #: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:837
 #: src/cryptography.c:924 src/cryptography.c:1017
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
-msgstr "在内存中创建新 GPGME 输出数据"
+msgstr "在内存中创建新 GPGME 输出数据失败：%s"
 
 #: src/cryptography.c:495
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to encrypt GPGME data from memory: %s"
-msgstr "从内存加密 GPGME 数据"
+msgstr "从内存加密 GPGME 数据失败：%s"
 
 #: src/cryptography.c:551
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to decrypt GPGME data from memory: %s"
-msgstr "从内存解密 GPGME 数据"
+msgstr "从内存解密 GPGME 数据失败：%s"
 
 #: src/cryptography.c:610 src/cryptography.c:942
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to add signing key to GPGME context: %s"
-msgstr "创建新 GPGME 上下文"
+msgstr "添加签署密钥至 GPGME 上下文失败：%s"
 
 #: src/cryptography.c:619
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to sign GPGME data from memory: %s"
-msgstr "从内存签署 GPGME 数据"
+msgstr "从内存签署 GPGME 数据失败：%s"
 
 #: src/cryptography.c:676
-#, fuzzy
 msgid "Failed to verify GPGME data from memory"
-msgstr "从内存校验 GPGME 数据"
+msgstr "从内存校验 GPGME 数据失败"
 
 #: src/cryptography.c:730 src/cryptography.c:902
 #, c-format
@@ -359,144 +349,126 @@ msgstr "已移除 %s 来准备覆盖"
 
 #: src/cryptography.c:735 src/cryptography.c:820 src/cryptography.c:907
 #: src/cryptography.c:1000
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME input data from file: %s"
-msgstr "从文件创建新 GPGME 输入数据"
+msgstr "从文件创建新 GPGME 输入数据失败：%s"
 
 #: src/cryptography.c:761 src/cryptography.c:933
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set file name of GPGME output data: %s"
-msgstr "设置 GPGME 输出数据的文件名"
+msgstr "设置 GPGME 输出数据的文件名失败：%s"
 
 #: src/cryptography.c:772
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to encrypt GPGME data from file: %s"
-msgstr "从文件加密 GPGME 数据"
+msgstr "从文件加密 GPGME 数据失败：%s"
 
 #: src/cryptography.c:828 src/cryptography.c:1008
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set file name of GPGME input data: %s"
-msgstr "设置 GPGME 输入数据的文件名"
+msgstr "设置 GPGME 输入数据的文件名失败：%s"
 
 #: src/cryptography.c:855
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to decrypt GPGME data from file: %s"
-msgstr "从文件解密 GPGME 数据"
+msgstr "从文件解密 GPGME 数据失败：%s"
 
 #: src/cryptography.c:951
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to sign GPGME data from file: %s"
-msgstr "从文件签署 GPGME 数据"
+msgstr "从文件签署 GPGME 数据失败：%s"
 
 #: src/cryptography.c:1035
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to verify GPGME data from file: %s"
-msgstr "从文件校验 GPGME 数据"
+msgstr "从文件校验 GPGME 数据失败：%s"
 
 #: src/threading.c:57
-#, fuzzy
 msgid "Failed to create text encryption thread"
-msgstr "创建 %s 线程失败：%s"
+msgstr "创建文本加密线程失败"
 
 #: src/threading.c:80
-#, fuzzy
 msgid "Failed to create file encryption thread"
-msgstr "创建 %s 线程失败：%s"
+msgstr "创建文件加密线程失败"
 
 #: src/threading.c:101
-#, fuzzy
 msgid "Failed to create text decryption thread"
-msgstr "创建 %s 线程失败：%s"
+msgstr "创建文本解密线程失败"
 
 #: src/threading.c:121
-#, fuzzy
 msgid "Failed to create file decryption thread"
-msgstr "创建 %s 线程失败：%s"
+msgstr "创建文件解密线程失败"
 
 #: src/threading.c:143
-#, fuzzy
 msgid "Failed to create text signing thread"
-msgstr "创建 %s 线程失败：%s"
+msgstr "创建文本签署线程失败"
 
 #: src/threading.c:166
-#, fuzzy
 msgid "Failed to create file signing thread"
-msgstr "创建 %s 线程失败：%s"
+msgstr "创建文件签署线程失败"
 
 #: src/threading.c:187
-#, fuzzy
 msgid "Failed to create text verification thread"
-msgstr "创建 %s 线程失败：%s"
+msgstr "创建文本校验线程失败"
 
 #: src/threading.c:207
-#, fuzzy
 msgid "Failed to create file verification thread"
-msgstr "创建 %s 线程失败：%s"
+msgstr "创建文件校验线程失败"
 
 #: src/threading.c:222
-#, fuzzy
 msgid "Failed to create key import thread"
-msgstr "创建 %s 线程失败：%s"
+msgstr "创建密钥导入线程失败"
 
 #: src/threading.c:244
-#, fuzzy
 msgid "Failed to create key pair generation thread"
-msgstr "创建 %s 线程失败：%s"
+msgstr "创建密钥对生成线程失败"
 
 #: src/threading.c:259
-#, fuzzy
 msgid "Failed to create key export thread"
-msgstr "创建 %s 线程失败：%s"
+msgstr "创建密钥导出线程失败"
 
 #: src/threading.c:271
-#, fuzzy
 msgid "Failed to create key removal thread"
-msgstr "创建 %s 线程失败：%s"
+msgstr "创建密钥移除线程失败"
 
 #: data/ui/shortcuts.blp:10
-#, fuzzy
 msgctxt "Shortcuts Group"
 msgid "General"
-msgstr "生成"
+msgstr "常规"
 
 #: data/ui/shortcuts.blp:13
 msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
-msgstr ""
+msgstr "显示快捷键"
 
 #: data/ui/shortcuts.blp:20
 msgid "Copy text view to clipboard"
-msgstr ""
+msgstr "复制文本视图至剪贴板"
 
 #: data/ui/shortcuts.blp:27
 msgid "Overwrite text view with clipboard"
-msgstr ""
+msgstr "用剪贴板覆盖文本视图"
 
 #: data/ui/shortcuts.blp:35
-#, fuzzy
 msgctxt "Shortcuts Group"
 msgid "Cryptography"
-msgstr "加密操作"
+msgstr "加解密"
 
 #: data/ui/shortcuts.blp:38
-#, fuzzy
 msgid "Encrypt text"
-msgstr "加密"
+msgstr "加密文本"
 
 #: data/ui/shortcuts.blp:45
-#, fuzzy
 msgid "Decrypt text"
-msgstr "解密"
+msgstr "解密文本"
 
 #: data/ui/shortcuts.blp:52
-#, fuzzy
 msgid "Sign text"
-msgstr "纯文本"
+msgstr "签署文本"
 
 #: data/ui/shortcuts.blp:59
-#, fuzzy
 msgid "Verify text"
-msgstr "校验"
+msgstr "校验文本"
 
 #: data/ui/window.blp:9 data/ui/window.blp:197
 #: data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -517,9 +489,8 @@ msgid "Cryptography operations"
 msgstr "加密操作"
 
 #: data/ui/window.blp:50
-#, fuzzy
 msgid "Processing …"
-msgstr "文件处理"
+msgstr "正在处理…"
 
 #: data/ui/window.blp:55
 msgid "Main Menu"
@@ -581,7 +552,7 @@ msgstr "管理密钥"
 
 #: data/ui/window.blp:209
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "键盘快捷键"
 
 #: data/ui/window.blp:213
 msgid "About Lock"
@@ -589,35 +560,32 @@ msgstr "关于 Lock"
 
 #: data/ui/window.blp:236
 msgid "Sign (Clear Text)"
-msgstr ""
+msgstr "签署（明文）"
 
 #: data/ui/window.blp:240
 msgid "Sign (Detached)"
-msgstr ""
+msgstr "签署（分离）"
 
 #: data/ui/filerow.blp:18
 msgid "Close file"
 msgstr ""
 
 #: data/ui/selectiondialog.blp:35
-#, fuzzy
 msgid "Select key"
-msgstr "移除密钥"
+msgstr "选择密钥"
 
 #: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
 msgid "Refresh keys"
 msgstr "刷新密钥"
 
 #: data/ui/selectiondialog.blp:68
-#, fuzzy
 msgid "No capable keys available"
 msgstr "无可用密钥"
 
 #: data/ui/selectiondialog.blp:69
-#, fuzzy
 msgid ""
 "Your GnuPG keyring does not contain any keys that support this functionality."
-msgstr "您的 GnuPG 密钥串不包含任何密钥。"
+msgstr "您的 GnuPG 密钥串不包含任何支持该功能的密钥。"
 
 #: data/ui/managementdialog.blp:68
 msgid "No keys available"
@@ -647,7 +615,7 @@ msgstr "生成密钥对"
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name (Mandatory)"
-msgstr ""
+msgstr "姓名（强制）"
 
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
@@ -657,7 +625,7 @@ msgstr "电子邮箱"
 #: data/ui/managementdialog.blp:151
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
-msgstr ""
+msgstr "注释"
 
 #: data/ui/managementdialog.blp:156
 msgctxt "Signing algorithm of the new keypair"
@@ -680,20 +648,17 @@ msgid "Subkey"
 msgstr "子密钥"
 
 #: data/ui/managementdialog.blp:174
-#, fuzzy
 msgctxt "Expire date of the new key pair"
 msgid "Expire Date"
-msgstr "查看到期日期"
+msgstr "到期日期"
 
 #: data/ui/managementdialog.blp:184
-#, fuzzy
 msgid "Remove expire date"
-msgstr "查看到期日期"
+msgstr "移除到期日期"
 
 #: data/ui/managementdialog.blp:192
-#, fuzzy
 msgid "Select expire date of the new key pair"
-msgstr "生成密钥对"
+msgstr "为新密钥对选择到期日期"
 
 #: data/ui/managementdialog.blp:213
 msgctxt "Generate a new keypair"
@@ -725,9 +690,8 @@ msgid "Export public key to file"
 msgstr "导出公钥至文件"
 
 #: data/ui/keyrow.blp:38
-#, fuzzy
 msgid "Edit expire date"
-msgstr "查看到期日期"
+msgstr "编辑到期日期"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
@@ -768,7 +732,6 @@ msgid "Manage your GnuPG keyring:"
 msgstr "管理您的 GnuPG 密钥串："
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
-#, fuzzy
 msgid "Generate new key pairs"
 msgstr "生成密钥对"
 
@@ -781,14 +744,12 @@ msgid "Export public keys"
 msgstr "导出公钥"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
-#, fuzzy
 msgid "View expire dates"
 msgstr "查看到期日期"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
-#, fuzzy
 msgid "Update expire dates of expired keys"
-msgstr "生成密钥对"
+msgstr "更新已到期密钥的到期日期"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
@@ -820,7 +781,7 @@ msgstr "纯文本"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
-msgstr ""
+msgstr "密钥选择对话框"
 
 #~ msgid "Input File"
 #~ msgstr "输入文件"
@@ -828,9 +789,23 @@ msgstr ""
 #~ msgid "Output File"
 #~ msgstr "输出文件"
 
-#, fuzzy
 #~ msgid "Select output file"
-#~ msgstr "打开输出文件失败：%s"
+#~ msgstr "选择输出文件"
+
+#~ msgid "File encrypted"
+#~ msgstr "文件已加密"
+
+#~ msgid "File decrypted"
+#~ msgstr "文件已解密"
+
+#~ msgid "File signed"
+#~ msgstr "文件已签署"
+
+#~ msgid "No files selected for processing"
+#~ msgstr "未选择要处理的文件"
+
+#~ msgid "Select input file"
+#~ msgstr "选择输入文件"
 
 #, fuzzy
 #~ msgctxt "Expire date unit of the new key pair"
