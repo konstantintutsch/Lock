@@ -43,7 +43,7 @@ msgstr "Kehitä"
 
 #: src/application.c:220
 msgid "translator-credits"
-msgstr "kääntäjien ansiot"
+msgstr "Jiri Grönroos"
 
 #: src/application.c:225
 msgid "Dependencies"
