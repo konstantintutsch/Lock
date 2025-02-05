@@ -677,6 +677,9 @@ void lock_window_file_select_output_directory_dialog_present(LockWindow *window)
     GtkFileDialog *dialog = gtk_file_dialog_new();
     GCancellable *cancel = g_cancellable_new();
 
+    gtk_file_dialog_set_title(dialog, _("Save files"));
+    gtk_file_dialog_set_accept_label(dialog, C_("Save files", "Save"));
+
     window->file_output_status = SELECTING;
     gtk_file_dialog_select_folder(dialog, GTK_WINDOW(window), cancel,
                                   lock_window_file_select_output_directory,
