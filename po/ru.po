@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-05 10:23+0100\n"
+"POT-Creation-Date: 2025-02-05 10:33+0100\n"
 "PO-Revision-Date: 2024-12-29 07:58+0000\n"
 "Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -85,9 +85,8 @@ msgid "Text encrypted"
 msgstr "Текст зашифрован"
 
 #: src/window.c:896
-#, fuzzy
 msgid "Files encrypted"
-msgstr "Файл зашифрован"
+msgstr "Файлы зашифрованы"
 
 #: src/window.c:952 src/window.c:1032
 msgid "Decryption failed"
@@ -98,9 +97,8 @@ msgid "Text decrypted"
 msgstr "Текст расшифрован"
 
 #: src/window.c:1034
-#, fuzzy
 msgid "Files decrypted"
-msgstr "Файл расшифрован"
+msgstr "Файлы расшифрованы"
 
 #: src/window.c:1141 src/window.c:1219
 msgid "Signing failed"
@@ -111,9 +109,8 @@ msgid "Text signed"
 msgstr "Текст подписан"
 
 #: src/window.c:1221
-#, fuzzy
 msgid "Files signed"
-msgstr "Файл подписан"
+msgstr "Файлы подписаны"
 
 #: src/window.c:1277
 msgid "Signature invalid"
@@ -126,20 +123,19 @@ msgstr "Действительная подпись - %s"
 
 #: src/window.c:1336
 msgid "valid"
-msgstr ""
+msgstr "действительная"
 
 #: src/window.c:1336
 msgid "invalid"
-msgstr ""
+msgstr "недействительная"
 
 #: src/window.c:1368
 msgid "At least one invalid signature"
-msgstr ""
+msgstr "По крайней мере одна недействительная подпись"
 
 #: src/window.c:1370
-#, fuzzy
 msgid "Signatures valid"
-msgstr "Недействительная подпись"
+msgstr "Подписи действительны"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
@@ -518,29 +514,27 @@ msgstr "Файл"
 
 #: data/ui/window.blp:109
 msgid "No open files"
-msgstr ""
+msgstr "Нет открытых файлов"
 
 #: data/ui/window.blp:110
-#, fuzzy
 msgid "No files have been opened for processing"
-msgstr "Файлы для обработки не выбраны"
+msgstr "Нет открытых файлов для обработки"
 
 #: data/ui/window.blp:130
 msgid "Open"
-msgstr ""
+msgstr "Открыть"
 
 #: data/ui/window.blp:131
-#, fuzzy
 msgid "Open files for processing"
-msgstr "Файлы для обработки не выбраны"
+msgstr "Открыть файлы для обработки"
 
 #: data/ui/window.blp:141
 msgid "Clear"
-msgstr ""
+msgstr "Очистить"
 
 #: data/ui/window.blp:142
 msgid "Close all open files"
-msgstr ""
+msgstr "Закрыть все открытые файлы"
 
 #: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
@@ -580,7 +574,7 @@ msgstr "Подписать (отделённая)"
 
 #: data/ui/filerow.blp:18
 msgid "Close file"
-msgstr ""
+msgstr "Закрыть файл"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"

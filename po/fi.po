@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-05 10:23+0100\n"
+"POT-Creation-Date: 2025-02-05 10:33+0100\n"
 "PO-Revision-Date: 2025-01-18 10:00+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -43,7 +43,7 @@ msgstr "Kehitä"
 
 #: src/application.c:220
 msgid "translator-credits"
-msgstr "kääntäjien ansiot"
+msgstr "Jiri Grönroos"
 
 #: src/application.c:225
 msgid "Dependencies"
@@ -84,9 +84,8 @@ msgid "Text encrypted"
 msgstr "Teksti salattu"
 
 #: src/window.c:896
-#, fuzzy
 msgid "Files encrypted"
-msgstr "Tiedosto salattu"
+msgstr "Tiedostot salattu"
 
 #: src/window.c:952 src/window.c:1032
 msgid "Decryption failed"
@@ -97,9 +96,8 @@ msgid "Text decrypted"
 msgstr "Tekstin salaus purettu"
 
 #: src/window.c:1034
-#, fuzzy
 msgid "Files decrypted"
-msgstr "Tiedoston salaus purettu"
+msgstr "Tiedostojen salaus purettu"
 
 #: src/window.c:1141 src/window.c:1219
 msgid "Signing failed"
@@ -110,9 +108,8 @@ msgid "Text signed"
 msgstr "Teksti allekirjoitettu"
 
 #: src/window.c:1221
-#, fuzzy
 msgid "Files signed"
-msgstr "Tiedosto allekirjoitettu"
+msgstr "Tiedostot allekirjoitettu"
 
 #: src/window.c:1277
 msgid "Signature invalid"
@@ -125,11 +122,11 @@ msgstr "Kelvollinen allekirjoitus - suorittanut %s"
 
 #: src/window.c:1336
 msgid "valid"
-msgstr ""
+msgstr "kelvollinen"
 
 #: src/window.c:1336
 msgid "invalid"
-msgstr ""
+msgstr "epäkelpo"
 
 #: src/window.c:1368
 msgid "At least one invalid signature"
@@ -302,9 +299,9 @@ msgstr ""
 "GPG-avaimen saaminen vanhentumispäivän uusimista varten epäonnistui: %s"
 
 #: src/cryptography.c:394
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to renew the expire date of a key: %s"
-msgstr "Avaimen vanhenemisajan päivittäminen epäonnistui: %s"
+msgstr "Avaimen vanhenemisajan uusiminen epäonnistui: %s"
 
 #: src/cryptography.c:428
 #, c-format
@@ -518,29 +515,27 @@ msgstr "Tiedosto"
 
 #: data/ui/window.blp:109
 msgid "No open files"
-msgstr ""
+msgstr "Ei avoimia tiedostoja"
 
 #: data/ui/window.blp:110
-#, fuzzy
 msgid "No files have been opened for processing"
-msgstr "Tiedostoja ei ole valittu käsiteltäväksi"
+msgstr "Tiedostoja ei ole avattu käsiteltäväksi"
 
 #: data/ui/window.blp:130
 msgid "Open"
-msgstr ""
+msgstr "Avaa"
 
 #: data/ui/window.blp:131
-#, fuzzy
 msgid "Open files for processing"
-msgstr "Tiedostoja ei ole valittu käsiteltäväksi"
+msgstr "Avaa tiedostoja käsiteltäväksi"
 
 #: data/ui/window.blp:141
 msgid "Clear"
-msgstr ""
+msgstr "Tyhjennä"
 
 #: data/ui/window.blp:142
 msgid "Close all open files"
-msgstr ""
+msgstr "Sulje kaikki avoimet tiedostot"
 
 #: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
@@ -580,7 +575,7 @@ msgstr "Allekirjoita (erillinen)"
 
 #: data/ui/filerow.blp:18
 msgid "Close file"
-msgstr ""
+msgstr "Sulje tiedosto"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"

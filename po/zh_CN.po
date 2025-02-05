@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-05 10:23+0100\n"
+"POT-Creation-Date: 2025-02-05 10:33+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -84,9 +84,8 @@ msgid "Text encrypted"
 msgstr "文本已加密"
 
 #: src/window.c:896
-#, fuzzy
 msgid "Files encrypted"
-msgstr "文件已解密"
+msgstr "文件已加密"
 
 #: src/window.c:952 src/window.c:1032
 msgid "Decryption failed"
@@ -97,7 +96,6 @@ msgid "Text decrypted"
 msgstr "文本已解密"
 
 #: src/window.c:1034
-#, fuzzy
 msgid "Files decrypted"
 msgstr "文件已解密"
 
@@ -110,7 +108,6 @@ msgid "Text signed"
 msgstr "文本已签署"
 
 #: src/window.c:1221
-#, fuzzy
 msgid "Files signed"
 msgstr "文件已签署"
 
@@ -125,19 +122,19 @@ msgstr "签名有效 - 由 %s"
 
 #: src/window.c:1336
 msgid "valid"
-msgstr ""
+msgstr "有效"
 
 #: src/window.c:1336
 msgid "invalid"
-msgstr ""
+msgstr "无效"
 
 #: src/window.c:1368
 msgid "At least one invalid signature"
-msgstr ""
+msgstr "至少一个无效签名"
 
 #: src/window.c:1370
 msgid "Signatures valid"
-msgstr ""
+msgstr "签名有效"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
@@ -515,29 +512,27 @@ msgstr "文件"
 
 #: data/ui/window.blp:109
 msgid "No open files"
-msgstr ""
+msgstr "无打开的文件"
 
 #: data/ui/window.blp:110
-#, fuzzy
 msgid "No files have been opened for processing"
-msgstr "未选择要处理的文件"
+msgstr "无用来处理的已打开文件"
 
 #: data/ui/window.blp:130
 msgid "Open"
-msgstr ""
+msgstr "打开"
 
 #: data/ui/window.blp:131
-#, fuzzy
 msgid "Open files for processing"
-msgstr "未选择要处理的文件"
+msgstr "打开要处理的文件"
 
 #: data/ui/window.blp:141
 msgid "Clear"
-msgstr ""
+msgstr "清除"
 
 #: data/ui/window.blp:142
 msgid "Close all open files"
-msgstr ""
+msgstr "关闭所有打开的文件"
 
 #: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
@@ -577,7 +572,7 @@ msgstr "签署（分离）"
 
 #: data/ui/filerow.blp:18
 msgid "Close file"
-msgstr ""
+msgstr "关闭文件"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"

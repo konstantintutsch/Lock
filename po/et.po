@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-05 10:23+0100\n"
+"POT-Creation-Date: 2025-02-05 10:33+0100\n"
 "PO-Revision-Date: 2024-12-20 08:03+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -84,9 +84,8 @@ msgid "Text encrypted"
 msgstr "Tekst on krüptitud"
 
 #: src/window.c:896
-#, fuzzy
 msgid "Files encrypted"
-msgstr "Fail on krüptitud"
+msgstr "Failid on krüptitud"
 
 #: src/window.c:952 src/window.c:1032
 msgid "Decryption failed"
@@ -97,9 +96,8 @@ msgid "Text decrypted"
 msgstr "Tekst on dekrüptitud"
 
 #: src/window.c:1034
-#, fuzzy
 msgid "Files decrypted"
-msgstr "Fail on dekrüptitud"
+msgstr "Failid on dekrüptitud"
 
 #: src/window.c:1141 src/window.c:1219
 msgid "Signing failed"
@@ -110,9 +108,8 @@ msgid "Text signed"
 msgstr "Tekst on allkirjastatud"
 
 #: src/window.c:1221
-#, fuzzy
 msgid "Files signed"
-msgstr "Fail on allkirjastatud"
+msgstr "Failid on allkirjastatud"
 
 #: src/window.c:1277
 msgid "Signature invalid"
@@ -125,20 +122,19 @@ msgstr "Allkiri kehtib - allkirjastaja %s"
 
 #: src/window.c:1336
 msgid "valid"
-msgstr ""
+msgstr "korrektne"
 
 #: src/window.c:1336
 msgid "invalid"
-msgstr ""
+msgstr "vigane"
 
 #: src/window.c:1368
 msgid "At least one invalid signature"
-msgstr ""
+msgstr "Vähemalt üks allkiri on vigane"
 
 #: src/window.c:1370
-#, fuzzy
 msgid "Signatures valid"
-msgstr "Allkiri on vigane"
+msgstr "Allkirjad on vigased"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
@@ -518,29 +514,27 @@ msgstr "Fail"
 
 #: data/ui/window.blp:109
 msgid "No open files"
-msgstr ""
+msgstr "Avatud faile pole"
 
 #: data/ui/window.blp:110
-#, fuzzy
 msgid "No files have been opened for processing"
 msgstr "Sa pole valinud töötlemiseks ühtegi faili"
 
 #: data/ui/window.blp:130
 msgid "Open"
-msgstr ""
+msgstr "Ava"
 
 #: data/ui/window.blp:131
-#, fuzzy
 msgid "Open files for processing"
-msgstr "Sa pole valinud töötlemiseks ühtegi faili"
+msgstr "Ava failid töötlemiseks"
 
 #: data/ui/window.blp:141
 msgid "Clear"
-msgstr ""
+msgstr "Tühjenda"
 
 #: data/ui/window.blp:142
 msgid "Close all open files"
-msgstr ""
+msgstr "Sulge kõik avatud failid"
 
 #: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
@@ -580,7 +574,7 @@ msgstr "Allkirjasta (eraldi tekst)"
 
 #: data/ui/filerow.blp:18
 msgid "Close file"
-msgstr ""
+msgstr "Sulge fail"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
