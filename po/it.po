@@ -6,15 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-02-05 10:33+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-02-06 22:01+0000\n"
+"Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/Lock/Application/"
+"it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -26,12 +29,12 @@ msgstr ""
 #: src/application.c:203 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
-msgstr ""
+msgstr "Elaborare i dati con GnuPG"
 
 #: src/application.c:205
 msgctxt "Button linking to translations"
 msgid "Translate"
-msgstr ""
+msgstr "Traduci"
 
 #: src/application.c:208
 msgctxt "Button linking to source code"
@@ -52,37 +55,37 @@ msgstr ""
 
 #: src/window.c:472
 msgid "Text copied"
-msgstr ""
+msgstr "Testo copiato"
 
 #: src/window.c:541
 #, c-format
 msgid "Could not read text from clipboard: %s"
-msgstr ""
+msgstr "Impossibile leggere il testo dagli appunti: %s"
 
 #: src/window.c:550
 msgid "Text pasted"
-msgstr ""
+msgstr "Testo incollato"
 
 #: src/window.c:693
 msgid "Save files"
-msgstr ""
+msgstr "Salva file"
 
 #: src/window.c:694
 msgctxt "Save files"
 msgid "Save"
-msgstr ""
+msgstr "Salva"
 
 #: src/window.c:817 src/window.c:894
 msgid "Encryption failed"
-msgstr ""
+msgstr "Crittografia non riuscita"
 
 #: src/window.c:819
 msgid "Text encrypted"
-msgstr ""
+msgstr "Testo crittografato"
 
 #: src/window.c:896
 msgid "Files encrypted"
-msgstr ""
+msgstr "File crittografato"
 
 #: src/window.c:952 src/window.c:1032
 msgid "Decryption failed"
@@ -123,7 +126,7 @@ msgstr ""
 
 #: src/window.c:1336
 msgid "invalid"
-msgstr ""
+msgstr "non valido"
 
 #: src/window.c:1368
 msgid "At least one invalid signature"
