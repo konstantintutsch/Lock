@@ -85,6 +85,18 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.4.1" date="2025-02-05">
+            <description translate="no">
+                <ul>
+                    <li>Lock further file processing options when file processing is ongoing</li>
+                    <li>Text of file save dialog clarified to indicate file saving</li>
+                    <li>Simplified Chinese translation updated</li>
+                    <li>Estonian translation updated</li>
+                    <li>Finnish translation updated</li>
+                    <li>Russian translation updated</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.4.0" date="2025-02-02">
             <description translate="no">
                 <p>File Batch Processing! 🗄️</p>
