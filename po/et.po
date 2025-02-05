@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-02-05 10:33+0100\n"
-"PO-Revision-Date: 2024-12-20 08:03+0000\n"
+"PO-Revision-Date: 2025-02-05 21:06+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
 "Application/et/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9.2-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -68,12 +68,12 @@ msgstr "Tekst on asetatud"
 
 #: src/window.c:693
 msgid "Save files"
-msgstr ""
+msgstr "Salvesta failid"
 
 #: src/window.c:694
 msgctxt "Save files"
 msgid "Save"
-msgstr ""
+msgstr "Salvesta"
 
 #: src/window.c:817 src/window.c:894
 msgid "Encryption failed"
