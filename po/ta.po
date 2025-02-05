@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-05 10:05+0100\n"
+"POT-Creation-Date: 2025-02-05 10:23+0100\n"
 "PO-Revision-Date: 2025-01-13 07:01+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/Lock/Application/"
@@ -50,93 +50,93 @@ msgstr "மொழிபெயர்ப்பாளர்-வரவு"
 msgid "Dependencies"
 msgstr "சார்புநிலைகள்"
 
-#: src/window.c:155
+#: src/window.c:156
 msgid "Enter text …"
 msgstr "உரையை உள்ளிடவும்…"
 
-#: src/window.c:459
+#: src/window.c:472
 msgid "Text copied"
 msgstr "உரை நகலெடுக்கப்பட்டது"
 
-#: src/window.c:528
+#: src/window.c:541
 #, c-format
 msgid "Could not read text from clipboard: %s"
 msgstr "கிளிப்போர்டில் இருந்து உரையைப் படிக்க முடியவில்லை: %s"
 
-#: src/window.c:537
+#: src/window.c:550
 msgid "Text pasted"
 msgstr "உரை ஒட்டப்பட்டது"
 
-#: src/window.c:680
+#: src/window.c:693
 msgid "Save files"
 msgstr ""
 
-#: src/window.c:681
+#: src/window.c:694
 msgctxt "Save files"
 msgid "Save"
 msgstr ""
 
-#: src/window.c:804 src/window.c:881
+#: src/window.c:817 src/window.c:894
 msgid "Encryption failed"
 msgstr "குறியாக்கம் தோல்வியடைந்தது"
 
-#: src/window.c:806
+#: src/window.c:819
 msgid "Text encrypted"
 msgstr "உரை குறியாக்கம்"
 
-#: src/window.c:883
+#: src/window.c:896
 #, fuzzy
 msgid "Files encrypted"
 msgstr "கோப்பு குறியாக்கம் செய்யப்பட்டது"
 
-#: src/window.c:939 src/window.c:1019
+#: src/window.c:952 src/window.c:1032
 msgid "Decryption failed"
 msgstr "மறைகுறியாக்கம் தோல்வியடைந்தது"
 
-#: src/window.c:941
+#: src/window.c:954
 msgid "Text decrypted"
 msgstr "உரை மறைகுறியாக்கப்பட்டது"
 
-#: src/window.c:1021
+#: src/window.c:1034
 #, fuzzy
 msgid "Files decrypted"
 msgstr "கோப்பு மறைகுறியாக்கப்பட்டது"
 
-#: src/window.c:1128 src/window.c:1206
+#: src/window.c:1141 src/window.c:1219
 msgid "Signing failed"
 msgstr "கையொப்பமிடுவது தோல்வியடைந்தது"
 
-#: src/window.c:1130
+#: src/window.c:1143
 msgid "Text signed"
 msgstr "உரை கையொப்பமிடப்பட்டது"
 
-#: src/window.c:1208
+#: src/window.c:1221
 #, fuzzy
 msgid "Files signed"
 msgstr "கோப்பு கையொப்பமிடப்பட்டது"
 
-#: src/window.c:1264
+#: src/window.c:1277
 msgid "Signature invalid"
 msgstr "கையொப்பம் தவறானது"
 
-#: src/window.c:1268
+#: src/window.c:1281
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "கையொப்பம் செல்லுபடியாகும் - %s ஆல்"
 
-#: src/window.c:1323
+#: src/window.c:1336
 msgid "valid"
 msgstr ""
 
-#: src/window.c:1323
+#: src/window.c:1336
 msgid "invalid"
 msgstr ""
 
-#: src/window.c:1355
+#: src/window.c:1368
 msgid "At least one invalid signature"
 msgstr ""
 
-#: src/window.c:1357
+#: src/window.c:1370
 #, fuzzy
 msgid "Signatures valid"
 msgstr "கையொப்பம் தவறானது"

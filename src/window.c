@@ -64,6 +64,7 @@ G_DEFINE_TYPE(LockWindow, lock_window, ADW_TYPE_APPLICATION_WINDOW);
 static void lock_window_stack_page_on_changed(AdwViewStack * self,
                                               GParamSpec * pspec,
                                               LockWindow * window);
+void lock_window_lock_file_processing(LockWindow * window, gboolean lock);
 static void lock_window_on_file_selection(GtkListBox * self,
                                           LockWindow * window);
 
@@ -324,6 +325,7 @@ void lock_window_open(LockWindow *window, GFile *file)
 void lock_window_cryptography_processing(LockWindow *window,
                                          gboolean processing)
 {
+    lock_window_lock_file_processing(window, processing);
     gtk_widget_set_visible(GTK_WIDGET(window->processing_spinner), processing);
 }
 
@@ -360,6 +362,27 @@ static void lock_window_stack_page_on_changed(AdwViewStack *self,
 }
 
 /**
+ * This functions updates the UI to lock or unlock file processing options.
+ *
+ * @param window Window to lock the file processing of
+ * @param lock Lock or unlock file processing
+ */
+void lock_window_lock_file_processing(LockWindow *window, gboolean lock)
+{
+    GtkWidget *process_widget =
+        gtk_widget_get_first_child(GTK_WIDGET(window->file_process_box));
+    while (process_widget != NULL) {
+        gtk_widget_set_sensitive(process_widget, !lock);
+
+        process_widget = gtk_widget_get_next_sibling(process_widget);
+    }
+
+    /* Cleanup */
+    g_free(process_widget);
+    process_widget = NULL;
+}
+
+/**
  * This function updates the UI on a selection of an input or output file in a LockWindow.
  *
  * @param self GtkListBox::selected-rows-changed
@@ -375,17 +398,7 @@ static void lock_window_on_file_selection(GtkListBox *self, LockWindow *window)
     gtk_widget_set_visible(GTK_WIDGET(window->file_status), !ready);
     gtk_widget_set_visible(GTK_WIDGET(window->file_list), ready);
 
-    GtkWidget *process_widget =
-        gtk_widget_get_first_child(GTK_WIDGET(window->file_process_box));
-    while (process_widget != NULL) {
-        gtk_widget_set_sensitive(process_widget, ready);
-
-        process_widget = gtk_widget_get_next_sibling(process_widget);
-    }
-
-    /* Cleanup */
-    g_free(process_widget);
-    process_widget = NULL;
+    lock_window_lock_file_processing(window, !ready);
 }
 
 /**** Key management ****/

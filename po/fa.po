@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-05 10:05+0100\n"
+"POT-Creation-Date: 2025-02-05 10:23+0100\n"
 "PO-Revision-Date: 2024-12-31 09:00+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -49,93 +49,93 @@ msgstr "رضا حسین‌زاده <rezahosseinzadeh@riseup.net>"
 msgid "Dependencies"
 msgstr "وابستگی‌ها"
 
-#: src/window.c:155
+#: src/window.c:156
 msgid "Enter text …"
 msgstr "متن را وارد کنید…"
 
-#: src/window.c:459
+#: src/window.c:472
 msgid "Text copied"
 msgstr "متن رونوشت شد"
 
-#: src/window.c:528
+#: src/window.c:541
 #, c-format
 msgid "Could not read text from clipboard: %s"
 msgstr "ناتوانی در خواندن متن از تخته‌گیره: %s"
 
-#: src/window.c:537
+#: src/window.c:550
 msgid "Text pasted"
 msgstr "متن چسبانده شد"
 
-#: src/window.c:680
+#: src/window.c:693
 msgid "Save files"
 msgstr ""
 
-#: src/window.c:681
+#: src/window.c:694
 msgctxt "Save files"
 msgid "Save"
 msgstr ""
 
-#: src/window.c:804 src/window.c:881
+#: src/window.c:817 src/window.c:894
 msgid "Encryption failed"
 msgstr "رمزگذاری شکست خورد"
 
-#: src/window.c:806
+#: src/window.c:819
 msgid "Text encrypted"
 msgstr "متن رمزگذاری شد"
 
-#: src/window.c:883
+#: src/window.c:896
 #, fuzzy
 msgid "Files encrypted"
 msgstr "پرونده رمزگذاری شد"
 
-#: src/window.c:939 src/window.c:1019
+#: src/window.c:952 src/window.c:1032
 msgid "Decryption failed"
 msgstr "رمزگشایی شکست خورد"
 
-#: src/window.c:941
+#: src/window.c:954
 msgid "Text decrypted"
 msgstr "متن رمزگشایی شد"
 
-#: src/window.c:1021
+#: src/window.c:1034
 #, fuzzy
 msgid "Files decrypted"
 msgstr "پرونده رمزگشایی شد"
 
-#: src/window.c:1128 src/window.c:1206
+#: src/window.c:1141 src/window.c:1219
 msgid "Signing failed"
 msgstr "امضا کردن شکست خورد"
 
-#: src/window.c:1130
+#: src/window.c:1143
 msgid "Text signed"
 msgstr "متن امضا شد"
 
-#: src/window.c:1208
+#: src/window.c:1221
 #, fuzzy
 msgid "Files signed"
 msgstr "پرونده امضا شد"
 
-#: src/window.c:1264
+#: src/window.c:1277
 msgid "Signature invalid"
 msgstr "امضا نامعتبر است"
 
-#: src/window.c:1268
+#: src/window.c:1281
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "امضا معتبر است - توسط %s"
 
-#: src/window.c:1323
+#: src/window.c:1336
 msgid "valid"
 msgstr ""
 
-#: src/window.c:1323
+#: src/window.c:1336
 msgid "invalid"
 msgstr ""
 
-#: src/window.c:1355
+#: src/window.c:1368
 msgid "At least one invalid signature"
 msgstr ""
 
-#: src/window.c:1357
+#: src/window.c:1370
 #, fuzzy
 msgid "Signatures valid"
 msgstr "امضا نامعتبر است"
