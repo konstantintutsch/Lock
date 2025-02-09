@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-05 10:33+0100\n"
-"PO-Revision-Date: 2025-01-18 10:00+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"POT-Creation-Date: 2025-02-09 18:26+0100\n"
+"PO-Revision-Date: 2025-02-09 17:02+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
 "fi/>\n"
 "Language: fi\n"
@@ -68,12 +68,12 @@ msgstr "Teksti liitetty"
 
 #: src/window.c:693
 msgid "Save files"
-msgstr ""
+msgstr "Tallenna tiedostot"
 
 #: src/window.c:694
 msgctxt "Save files"
 msgid "Save"
-msgstr ""
+msgstr "Tallenna"
 
 #: src/window.c:817 src/window.c:894
 msgid "Encryption failed"
@@ -130,12 +130,11 @@ msgstr "epäkelpo"
 
 #: src/window.c:1368
 msgid "At least one invalid signature"
-msgstr ""
+msgstr "Ainakin yksi virheellinen allekirjoitus"
 
 #: src/window.c:1370
-#, fuzzy
 msgid "Signatures valid"
-msgstr "Virheellinen allekirjoitus"
+msgstr "Allekirjoitukset ovat kelvollisia"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
