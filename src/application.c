@@ -117,9 +117,14 @@ static void lock_application_open(GApplication *self, GFile **files,
     LockWindow *window;
 
     windows = gtk_application_get_windows(GTK_APPLICATION(self));
-    if (!windows)
+    if (windows) {
+        window = LOCK_WINDOW(windows->data);
+    } else {
         window = lock_window_new(LOCK_APPLICATION(self));
-    window = LOCK_WINDOW(windows->data);
+    }
+
+    for (int i = 0; i < n_files; i++)
+        lock_window_file_open(window, files[i]);
 
     gtk_window_present(GTK_WINDOW(window));
 }
@@ -143,8 +148,7 @@ static void lock_application_class_init(LockApplicationClass *class)
 LockApplication *lock_application_new()
 {
     return g_object_new(LOCK_TYPE_APPLICATION, "application-id", PROJECT_ID,
-                        G_APPLICATION_DEFAULT_FLAGS, G_APPLICATION_HANDLES_OPEN,
-                        NULL);
+                        "flags", G_APPLICATION_HANDLES_OPEN, NULL);
 }
 
 /**

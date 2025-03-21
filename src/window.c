@@ -107,8 +107,9 @@ static void lock_window_text_queue_set_text(LockWindow * window,
                                             const char *text);
 
 /* File */
-static void lock_window_file_open(GObject * source_object, GAsyncResult * res,
-                                  gpointer data);
+static void lock_window_file_open_dialog_finish(GObject * source_object,
+                                                GAsyncResult * res,
+                                                gpointer data);
 static void lock_window_file_open_dialog_present(AdwButtonRow * self,
                                                  LockWindow * window);
 void lock_window_file_list_clear(AdwButtonRow * self, LockWindow * window);
@@ -345,6 +346,7 @@ static void lock_window_stack_page_on_changed(AdwViewStack *self,
     GtkWidget *visible_child = adw_view_stack_get_visible_child(self);
     AdwViewStackPage *visible_page =
         adw_view_stack_get_page(self, visible_child);
+    adw_view_stack_page_set_needs_attention(visible_page, false);
 
     if (visible_page == window->text_page) {
         window->action_mode = ACTION_MODE_TEXT;
@@ -592,14 +594,31 @@ static void lock_window_text_queue_set_text(LockWindow *window,
 /**** File ****/
 
 /**
- * This function opens the input file of a LockWindow.
+ * This function opens a file in a LockWindow
+ *
+ * @param window Window to open the file in
+ * @param file File to open
+ */
+void lock_window_file_open(LockWindow *window, GFile *file)
+{
+    gtk_list_box_append(window->file_list, GTK_WIDGET(lock_file_row_new(file)));
+    gtk_list_box_select_row(window->file_list,
+                            gtk_list_box_get_row_at_index(window->file_list,
+                                                          0));
+
+    adw_view_stack_page_set_needs_attention(window->file_page, true);
+}
+
+/**
+ * This function opens the input file of a LockWindow from a file dialog.
  *
  * @param object https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
  * @param result https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
  * @param user_data https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
  */
-static void lock_window_file_open(GObject *source_object, GAsyncResult *res,
-                                  gpointer data)
+static void lock_window_file_open_dialog_finish(GObject *source_object,
+                                                GAsyncResult *res,
+                                                gpointer data)
 {
     GtkFileDialog *dialog = GTK_FILE_DIALOG(source_object);
     LockWindow *window = LOCK_WINDOW(data);
@@ -613,8 +632,7 @@ static void lock_window_file_open(GObject *source_object, GAsyncResult *res,
     GFile *file;
     int file_item = 0;
     while ((file = g_list_model_get_item(files, file_item))) {
-        gtk_list_box_append(window->file_list,
-                            GTK_WIDGET(lock_file_row_new(g_file_dup(file))));
+        lock_window_file_open(window, g_file_dup(file));
         file_item++;
     }
 
@@ -623,12 +641,6 @@ static void lock_window_file_open(GObject *source_object, GAsyncResult *res,
 
     g_free(files);
     files = NULL;
-
-    file_item--;
-    if (file_item >= 0)
-        gtk_list_box_select_row(window->file_list,
-                                gtk_list_box_get_row_at_index(window->file_list,
-                                                              file_item));
 
  cleanup:
     g_object_unref(dialog);
@@ -652,7 +664,8 @@ lock_window_file_open_dialog_present(AdwButtonRow *self, LockWindow *window)
     GCancellable *cancel = g_cancellable_new();
 
     gtk_file_dialog_open_multiple(dialog, GTK_WINDOW(window),
-                                  cancel, lock_window_file_open, window);
+                                  cancel, lock_window_file_open_dialog_finish,
+                                  window);
 }
 
 /**

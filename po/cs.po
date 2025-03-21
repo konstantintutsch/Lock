@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-21 10:04+0100\n"
+"POT-Creation-Date: 2025-03-21 18:33+0100\n"
 "PO-Revision-Date: 2024-12-24 09:00+0000\n"
 "Last-Translator: Klára Holubová <witt087@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/Lock/Application/"
@@ -26,116 +26,116 @@ msgid "GnuPG Made Easy %s or greater required. Using %s."
 msgstr "Je vyžadována verze %s nebo novější GnuPG Made Easy. Používá se %s."
 
 #. Details
-#: src/application.c:203 data/com.konstantintutsch.Lock.desktop.in.in:5
+#: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "Spravujte data s GnuPG"
 
-#: src/application.c:205
+#: src/application.c:209
 msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr "Přeložit"
 
-#: src/application.c:208
+#: src/application.c:212
 msgctxt "Button linking to source code"
 msgid "Develop"
 msgstr "Vývoj"
 
-#: src/application.c:220
+#: src/application.c:224
 msgid "translator-credits"
 msgstr "Michael Kováč"
 
-#: src/application.c:225
+#: src/application.c:229
 msgid "Dependencies"
 msgstr "Závislosti"
 
-#: src/window.c:156
+#: src/window.c:157
 msgid "Enter text …"
 msgstr "Zadejte text …"
 
-#: src/window.c:472
+#: src/window.c:474
 msgid "Text copied"
 msgstr "Text zkopírován"
 
-#: src/window.c:541
+#: src/window.c:543
 #, c-format
 msgid "Could not read text from clipboard: %s"
 msgstr "Nepodařilo se přečíst text ze schránky: %s"
 
-#: src/window.c:550
+#: src/window.c:552
 msgid "Text pasted"
 msgstr "Text vložen"
 
-#: src/window.c:693
+#: src/window.c:706
 msgid "Save files"
 msgstr ""
 
-#: src/window.c:694
+#: src/window.c:707
 msgctxt "Save files"
 msgid "Save"
 msgstr ""
 
-#: src/window.c:817 src/window.c:894
+#: src/window.c:830 src/window.c:907
 msgid "Encryption failed"
 msgstr "Zašifrování selhalo"
 
-#: src/window.c:819
+#: src/window.c:832
 msgid "Text encrypted"
 msgstr "Text zašifrován"
 
-#: src/window.c:896
+#: src/window.c:909
 #, fuzzy
 msgid "Files encrypted"
 msgstr "Soubor zašifrován"
 
-#: src/window.c:952 src/window.c:1032
+#: src/window.c:965 src/window.c:1045
 msgid "Decryption failed"
 msgstr "Rozšifrování selhalo"
 
-#: src/window.c:954
+#: src/window.c:967
 msgid "Text decrypted"
 msgstr "Text rozšifrován"
 
-#: src/window.c:1034
+#: src/window.c:1047
 #, fuzzy
 msgid "Files decrypted"
 msgstr "Soubor rozšifrován"
 
-#: src/window.c:1141 src/window.c:1219
+#: src/window.c:1154 src/window.c:1232
 msgid "Signing failed"
 msgstr "Podepisování selhalo"
 
-#: src/window.c:1143
+#: src/window.c:1156
 msgid "Text signed"
 msgstr "Text podepsán"
 
-#: src/window.c:1221
+#: src/window.c:1234
 #, fuzzy
 msgid "Files signed"
 msgstr "Soubor podepsán"
 
-#: src/window.c:1277
+#: src/window.c:1290
 msgid "Signature invalid"
 msgstr "Neplatný podpis"
 
-#: src/window.c:1281
+#: src/window.c:1294
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Platný podpis od - %s"
 
-#: src/window.c:1336
+#: src/window.c:1349
 msgid "valid"
 msgstr ""
 
-#: src/window.c:1336
+#: src/window.c:1349
 msgid "invalid"
 msgstr ""
 
-#: src/window.c:1368
+#: src/window.c:1381
 msgid "At least one invalid signature"
 msgstr ""
 
-#: src/window.c:1370
+#: src/window.c:1383
 #, fuzzy
 msgid "Signatures valid"
 msgstr "Neplatný podpis"
@@ -726,7 +726,7 @@ msgstr "Exportovat veřejný klíč do souboru"
 msgid "Edit expire date"
 msgstr "Upravit datum platnosti"
 
-#: data/com.konstantintutsch.Lock.desktop.in.in:11
+#: data/com.konstantintutsch.Lock.desktop.in.in:12
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr "gpg;gnupg;kryptografie;opengpg;šifrovat;rozšifrovat;podepsat;ověřit;"
 

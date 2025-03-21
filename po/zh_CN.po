@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-21 10:04+0100\n"
+"POT-Creation-Date: 2025-03-21 18:33+0100\n"
 "PO-Revision-Date: 2025-03-20 21:28+0000\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -26,113 +26,113 @@ msgid "GnuPG Made Easy %s or greater required. Using %s."
 msgstr "需要 %s 或更高版本的 GnuPG Made Easy。正在使用 %s。"
 
 #. Details
-#: src/application.c:203 data/com.konstantintutsch.Lock.desktop.in.in:5
+#: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "使用 GnuPG 处理数据"
 
-#: src/application.c:205
+#: src/application.c:209
 msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr "翻译"
 
-#: src/application.c:208
+#: src/application.c:212
 msgctxt "Button linking to source code"
 msgid "Develop"
 msgstr "开发"
 
-#: src/application.c:220
+#: src/application.c:224
 msgid "translator-credits"
 msgstr "lumingzh <lumingzh@qq.com>, 2024-2025"
 
-#: src/application.c:225
+#: src/application.c:229
 msgid "Dependencies"
 msgstr "依赖"
 
-#: src/window.c:156
+#: src/window.c:157
 msgid "Enter text …"
 msgstr "输入文本…"
 
-#: src/window.c:472
+#: src/window.c:474
 msgid "Text copied"
 msgstr "文本已复制"
 
-#: src/window.c:541
+#: src/window.c:543
 #, c-format
 msgid "Could not read text from clipboard: %s"
 msgstr "无法从剪贴板读取文本：%s"
 
-#: src/window.c:550
+#: src/window.c:552
 msgid "Text pasted"
 msgstr "文本已粘贴"
 
-#: src/window.c:693
+#: src/window.c:706
 msgid "Save files"
 msgstr "保存文件"
 
-#: src/window.c:694
+#: src/window.c:707
 msgctxt "Save files"
 msgid "Save"
 msgstr "保存"
 
-#: src/window.c:817 src/window.c:894
+#: src/window.c:830 src/window.c:907
 msgid "Encryption failed"
 msgstr "加密失败"
 
-#: src/window.c:819
+#: src/window.c:832
 msgid "Text encrypted"
 msgstr "文本已加密"
 
-#: src/window.c:896
+#: src/window.c:909
 msgid "Files encrypted"
 msgstr "文件已加密"
 
-#: src/window.c:952 src/window.c:1032
+#: src/window.c:965 src/window.c:1045
 msgid "Decryption failed"
 msgstr "解密失败"
 
-#: src/window.c:954
+#: src/window.c:967
 msgid "Text decrypted"
 msgstr "文本已解密"
 
-#: src/window.c:1034
+#: src/window.c:1047
 msgid "Files decrypted"
 msgstr "文件已解密"
 
-#: src/window.c:1141 src/window.c:1219
+#: src/window.c:1154 src/window.c:1232
 msgid "Signing failed"
 msgstr "签署失败"
 
-#: src/window.c:1143
+#: src/window.c:1156
 msgid "Text signed"
 msgstr "文本已签署"
 
-#: src/window.c:1221
+#: src/window.c:1234
 msgid "Files signed"
 msgstr "文件已签署"
 
-#: src/window.c:1277
+#: src/window.c:1290
 msgid "Signature invalid"
 msgstr "签名无效"
 
-#: src/window.c:1281
+#: src/window.c:1294
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "签名有效 - 由 %s"
 
-#: src/window.c:1336
+#: src/window.c:1349
 msgid "valid"
 msgstr "有效"
 
-#: src/window.c:1336
+#: src/window.c:1349
 msgid "invalid"
 msgstr "无效"
 
-#: src/window.c:1368
+#: src/window.c:1381
 msgid "At least one invalid signature"
 msgstr "至少一个无效签名"
 
-#: src/window.c:1370
+#: src/window.c:1383
 msgid "Signatures valid"
 msgstr "签名有效"
 
@@ -697,7 +697,7 @@ msgstr "导出公钥至文件"
 msgid "Edit expire date"
 msgstr "编辑到期日期"
 
-#: data/com.konstantintutsch.Lock.desktop.in.in:11
+#: data/com.konstantintutsch.Lock.desktop.in.in:12
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr ""
 "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;密码学;加密;解密;"

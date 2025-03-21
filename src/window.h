@@ -23,6 +23,7 @@ void lock_window_cryptography_processing(LockWindow * window,
                                          gboolean processing);
 
 /* File */
+void lock_window_file_open(LockWindow * window, GFile * file);
 void lock_window_file_select_output_directory_dialog_present(LockWindow *
                                                              window);
 

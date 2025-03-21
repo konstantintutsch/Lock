@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-21 10:04+0100\n"
+"POT-Creation-Date: 2025-03-21 18:33+0100\n"
 "PO-Revision-Date: 2024-12-31 09:00+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -26,116 +26,116 @@ msgid "GnuPG Made Easy %s or greater required. Using %s."
 msgstr "GnuPG Made Easy %s یا بالاتر مورد نیاز است. با استفاده از %s."
 
 #. Details
-#: src/application.c:203 data/com.konstantintutsch.Lock.desktop.in.in:5
+#: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:5
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "پردازش داده با گنوپی‌جی"
 
-#: src/application.c:205
+#: src/application.c:209
 msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr "ترجمه کردن"
 
-#: src/application.c:208
+#: src/application.c:212
 msgctxt "Button linking to source code"
 msgid "Develop"
 msgstr "توسعه دادن"
 
-#: src/application.c:220
+#: src/application.c:224
 msgid "translator-credits"
 msgstr "رضا حسین‌زاده <rezahosseinzadeh@riseup.net>"
 
-#: src/application.c:225
+#: src/application.c:229
 msgid "Dependencies"
 msgstr "وابستگی‌ها"
 
-#: src/window.c:156
+#: src/window.c:157
 msgid "Enter text …"
 msgstr "متن را وارد کنید…"
 
-#: src/window.c:472
+#: src/window.c:474
 msgid "Text copied"
 msgstr "متن رونوشت شد"
 
-#: src/window.c:541
+#: src/window.c:543
 #, c-format
 msgid "Could not read text from clipboard: %s"
 msgstr "ناتوانی در خواندن متن از تخته‌گیره: %s"
 
-#: src/window.c:550
+#: src/window.c:552
 msgid "Text pasted"
 msgstr "متن چسبانده شد"
 
-#: src/window.c:693
+#: src/window.c:706
 msgid "Save files"
 msgstr ""
 
-#: src/window.c:694
+#: src/window.c:707
 msgctxt "Save files"
 msgid "Save"
 msgstr ""
 
-#: src/window.c:817 src/window.c:894
+#: src/window.c:830 src/window.c:907
 msgid "Encryption failed"
 msgstr "رمزگذاری شکست خورد"
 
-#: src/window.c:819
+#: src/window.c:832
 msgid "Text encrypted"
 msgstr "متن رمزگذاری شد"
 
-#: src/window.c:896
+#: src/window.c:909
 #, fuzzy
 msgid "Files encrypted"
 msgstr "پرونده رمزگذاری شد"
 
-#: src/window.c:952 src/window.c:1032
+#: src/window.c:965 src/window.c:1045
 msgid "Decryption failed"
 msgstr "رمزگشایی شکست خورد"
 
-#: src/window.c:954
+#: src/window.c:967
 msgid "Text decrypted"
 msgstr "متن رمزگشایی شد"
 
-#: src/window.c:1034
+#: src/window.c:1047
 #, fuzzy
 msgid "Files decrypted"
 msgstr "پرونده رمزگشایی شد"
 
-#: src/window.c:1141 src/window.c:1219
+#: src/window.c:1154 src/window.c:1232
 msgid "Signing failed"
 msgstr "امضا کردن شکست خورد"
 
-#: src/window.c:1143
+#: src/window.c:1156
 msgid "Text signed"
 msgstr "متن امضا شد"
 
-#: src/window.c:1221
+#: src/window.c:1234
 #, fuzzy
 msgid "Files signed"
 msgstr "پرونده امضا شد"
 
-#: src/window.c:1277
+#: src/window.c:1290
 msgid "Signature invalid"
 msgstr "امضا نامعتبر است"
 
-#: src/window.c:1281
+#: src/window.c:1294
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "امضا معتبر است - توسط %s"
 
-#: src/window.c:1336
+#: src/window.c:1349
 msgid "valid"
 msgstr ""
 
-#: src/window.c:1336
+#: src/window.c:1349
 msgid "invalid"
 msgstr ""
 
-#: src/window.c:1368
+#: src/window.c:1381
 msgid "At least one invalid signature"
 msgstr ""
 
-#: src/window.c:1370
+#: src/window.c:1383
 #, fuzzy
 msgid "Signatures valid"
 msgstr "امضا نامعتبر است"
@@ -705,7 +705,7 @@ msgstr "صادر کردن کلید عمومی به پرونده"
 msgid "Edit expire date"
 msgstr "ویرایش تاریخ انقضا"
 
-#: data/com.konstantintutsch.Lock.desktop.in.in:11
+#: data/com.konstantintutsch.Lock.desktop.in.in:12
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr "جی‌پی‌جی;گنوپی‌جی;رمزنگاری;اپن‌پی‌جی‌پی;رمزگذاری;رمزگشایی;امضا;اعتبارسنجی;"
 
