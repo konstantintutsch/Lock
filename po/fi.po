@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-21 18:59+0100\n"
+"POT-Creation-Date: 2025-03-21 20:30+0100\n"
 "PO-Revision-Date: 2025-02-09 17:02+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -66,73 +66,73 @@ msgstr "Ei voitu lukea leikepöydältä: %s"
 msgid "Text pasted"
 msgstr "Teksti liitetty"
 
-#: src/window.c:762
+#: src/window.c:764
 msgid "Save files"
 msgstr "Tallenna tiedostot"
 
-#: src/window.c:763
+#: src/window.c:765
 msgctxt "Save files"
 msgid "Save"
 msgstr "Tallenna"
 
-#: src/window.c:886 src/window.c:963
+#: src/window.c:888 src/window.c:965
 msgid "Encryption failed"
 msgstr "Salaaminen epäonnistui"
 
-#: src/window.c:888
+#: src/window.c:890
 msgid "Text encrypted"
 msgstr "Teksti salattu"
 
-#: src/window.c:965
+#: src/window.c:967
 msgid "Files encrypted"
 msgstr "Tiedostot salattu"
 
-#: src/window.c:1021 src/window.c:1101
+#: src/window.c:1023 src/window.c:1103
 msgid "Decryption failed"
 msgstr "Salauksen purkaminen epäonnistui"
 
-#: src/window.c:1023
+#: src/window.c:1025
 msgid "Text decrypted"
 msgstr "Tekstin salaus purettu"
 
-#: src/window.c:1103
+#: src/window.c:1105
 msgid "Files decrypted"
 msgstr "Tiedostojen salaus purettu"
 
-#: src/window.c:1210 src/window.c:1288
+#: src/window.c:1212 src/window.c:1290
 msgid "Signing failed"
 msgstr "Allekirjoittaminen epäonnistui"
 
-#: src/window.c:1212
+#: src/window.c:1214
 msgid "Text signed"
 msgstr "Teksti allekirjoitettu"
 
-#: src/window.c:1290
+#: src/window.c:1292
 msgid "Files signed"
 msgstr "Tiedostot allekirjoitettu"
 
-#: src/window.c:1346
+#: src/window.c:1348
 msgid "Signature invalid"
 msgstr "Virheellinen allekirjoitus"
 
-#: src/window.c:1350
+#: src/window.c:1352
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Kelvollinen allekirjoitus - suorittanut %s"
 
-#: src/window.c:1405
+#: src/window.c:1407
 msgid "valid"
 msgstr "kelvollinen"
 
-#: src/window.c:1405
+#: src/window.c:1407
 msgid "invalid"
 msgstr "epäkelpo"
 
-#: src/window.c:1437
+#: src/window.c:1439
 msgid "At least one invalid signature"
 msgstr "Ainakin yksi virheellinen allekirjoitus"
 
-#: src/window.c:1439
+#: src/window.c:1441
 msgid "Signatures valid"
 msgstr "Allekirjoitukset ovat kelvollisia"
 

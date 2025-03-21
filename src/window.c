@@ -654,10 +654,12 @@ lock_window_on_file_drop(GtkDropTarget *target,
     (void)x;
     (void)y;
 
+    if (!G_VALUE_HOLDS(value, G_TYPE_FILE))
+        return false;
+
     LockWindow *window = LOCK_WINDOW(data);
 
-    if (G_VALUE_HOLDS(value, G_TYPE_FILE))
-        lock_window_file_open(window, g_value_get_object(value));
+    lock_window_file_open(window, g_value_get_object(value));
 
     /* Cleanup */
     window = NULL;
