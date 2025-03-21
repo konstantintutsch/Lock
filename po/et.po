@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-21 20:30+0100\n"
+"POT-Creation-Date: 2025-03-21 20:49+0100\n"
 "PO-Revision-Date: 2025-02-05 21:06+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -66,73 +66,73 @@ msgstr "Teksti lugemine lõikelaualt ei õnnestunud: %s"
 msgid "Text pasted"
 msgstr "Tekst on asetatud"
 
-#: src/window.c:764
+#: src/window.c:769
 msgid "Save files"
 msgstr "Salvesta failid"
 
-#: src/window.c:765
+#: src/window.c:770
 msgctxt "Save files"
 msgid "Save"
 msgstr "Salvesta"
 
-#: src/window.c:888 src/window.c:965
+#: src/window.c:893 src/window.c:970
 msgid "Encryption failed"
 msgstr "Krüptimine ei õnnestunud"
 
-#: src/window.c:890
+#: src/window.c:895
 msgid "Text encrypted"
 msgstr "Tekst on krüptitud"
 
-#: src/window.c:967
+#: src/window.c:972
 msgid "Files encrypted"
 msgstr "Failid on krüptitud"
 
-#: src/window.c:1023 src/window.c:1103
+#: src/window.c:1028 src/window.c:1108
 msgid "Decryption failed"
 msgstr "Dekrüptimine ei õnnestunud"
 
-#: src/window.c:1025
+#: src/window.c:1030
 msgid "Text decrypted"
 msgstr "Tekst on dekrüptitud"
 
-#: src/window.c:1105
+#: src/window.c:1110
 msgid "Files decrypted"
 msgstr "Failid on dekrüptitud"
 
-#: src/window.c:1212 src/window.c:1290
+#: src/window.c:1217 src/window.c:1295
 msgid "Signing failed"
 msgstr "Allkirjastamine ei õnnestunud"
 
-#: src/window.c:1214
+#: src/window.c:1219
 msgid "Text signed"
 msgstr "Tekst on allkirjastatud"
 
-#: src/window.c:1292
+#: src/window.c:1297
 msgid "Files signed"
 msgstr "Failid on allkirjastatud"
 
-#: src/window.c:1348
+#: src/window.c:1353
 msgid "Signature invalid"
 msgstr "Allkiri on vigane"
 
-#: src/window.c:1352
+#: src/window.c:1357
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Allkiri kehtib - allkirjastaja %s"
 
-#: src/window.c:1407
+#: src/window.c:1412
 msgid "valid"
 msgstr "korrektne"
 
-#: src/window.c:1407
+#: src/window.c:1412
 msgid "invalid"
 msgstr "vigane"
 
-#: src/window.c:1439
+#: src/window.c:1444
 msgid "At least one invalid signature"
 msgstr "Vähemalt üks allkiri on vigane"
 
-#: src/window.c:1441
+#: src/window.c:1446
 msgid "Signatures valid"
 msgstr "Allkirjad on vigased"
 

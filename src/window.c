@@ -224,7 +224,7 @@ static void lock_window_init(LockWindow *window)
     GtkDropTarget *file_target =
         gtk_drop_target_new(G_TYPE_INVALID, GDK_ACTION_COPY);
     gtk_drop_target_set_gtypes(file_target, (GType[1]) {
-                               G_TYPE_FILE}, 1);
+                               GDK_TYPE_FILE_LIST}, 1);
 
     g_signal_connect(file_target, "drop", G_CALLBACK(lock_window_on_file_drop),
                      window);
@@ -654,15 +654,20 @@ lock_window_on_file_drop(GtkDropTarget *target,
     (void)x;
     (void)y;
 
-    if (!G_VALUE_HOLDS(value, G_TYPE_FILE))
+    if (!G_VALUE_HOLDS(value, GDK_TYPE_FILE_LIST))
         return false;
 
     LockWindow *window = LOCK_WINDOW(data);
+    GSList *files = gdk_file_list_get_files(g_value_get_boxed(value));
 
-    lock_window_file_open(window, g_value_get_object(value));
+    for (guint i = 0; i < g_slist_length(files); i++)
+        lock_window_file_open(window, g_file_dup(g_slist_nth_data(files, i)));
 
     /* Cleanup */
     window = NULL;
+
+    g_slist_free(files);
+    files = NULL;
 
     return true;
 }

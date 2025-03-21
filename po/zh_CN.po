@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-21 20:30+0100\n"
+"POT-Creation-Date: 2025-03-21 20:49+0100\n"
 "PO-Revision-Date: 2025-03-20 21:28+0000\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -66,73 +66,73 @@ msgstr "无法从剪贴板读取文本：%s"
 msgid "Text pasted"
 msgstr "文本已粘贴"
 
-#: src/window.c:764
+#: src/window.c:769
 msgid "Save files"
 msgstr "保存文件"
 
-#: src/window.c:765
+#: src/window.c:770
 msgctxt "Save files"
 msgid "Save"
 msgstr "保存"
 
-#: src/window.c:888 src/window.c:965
+#: src/window.c:893 src/window.c:970
 msgid "Encryption failed"
 msgstr "加密失败"
 
-#: src/window.c:890
+#: src/window.c:895
 msgid "Text encrypted"
 msgstr "文本已加密"
 
-#: src/window.c:967
+#: src/window.c:972
 msgid "Files encrypted"
 msgstr "文件已加密"
 
-#: src/window.c:1023 src/window.c:1103
+#: src/window.c:1028 src/window.c:1108
 msgid "Decryption failed"
 msgstr "解密失败"
 
-#: src/window.c:1025
+#: src/window.c:1030
 msgid "Text decrypted"
 msgstr "文本已解密"
 
-#: src/window.c:1105
+#: src/window.c:1110
 msgid "Files decrypted"
 msgstr "文件已解密"
 
-#: src/window.c:1212 src/window.c:1290
+#: src/window.c:1217 src/window.c:1295
 msgid "Signing failed"
 msgstr "签署失败"
 
-#: src/window.c:1214
+#: src/window.c:1219
 msgid "Text signed"
 msgstr "文本已签署"
 
-#: src/window.c:1292
+#: src/window.c:1297
 msgid "Files signed"
 msgstr "文件已签署"
 
-#: src/window.c:1348
+#: src/window.c:1353
 msgid "Signature invalid"
 msgstr "签名无效"
 
-#: src/window.c:1352
+#: src/window.c:1357
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "签名有效 - 由 %s"
 
-#: src/window.c:1407
+#: src/window.c:1412
 msgid "valid"
 msgstr "有效"
 
-#: src/window.c:1407
+#: src/window.c:1412
 msgid "invalid"
 msgstr "无效"
 
-#: src/window.c:1439
+#: src/window.c:1444
 msgid "At least one invalid signature"
 msgstr "至少一个无效签名"
 
-#: src/window.c:1441
+#: src/window.c:1446
 msgid "Signatures valid"
 msgstr "签名有效"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-21 20:30+0100\n"
+"POT-Creation-Date: 2025-03-21 20:49+0100\n"
 "PO-Revision-Date: 2025-02-05 10:05+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
@@ -66,73 +66,73 @@ msgstr "Konnte Text nicht aus Zwischenablage lesen: %s"
 msgid "Text pasted"
 msgstr "Text eingefügt"
 
-#: src/window.c:764
+#: src/window.c:769
 msgid "Save files"
 msgstr "Dateien speichern"
 
-#: src/window.c:765
+#: src/window.c:770
 msgctxt "Save files"
 msgid "Save"
 msgstr "Speichern"
 
-#: src/window.c:888 src/window.c:965
+#: src/window.c:893 src/window.c:970
 msgid "Encryption failed"
 msgstr "Verschlüsselung fehlgeschlagen"
 
-#: src/window.c:890
+#: src/window.c:895
 msgid "Text encrypted"
 msgstr "Text verschlüsselt"
 
-#: src/window.c:967
+#: src/window.c:972
 msgid "Files encrypted"
 msgstr "Dateien verschlüsselt"
 
-#: src/window.c:1023 src/window.c:1103
+#: src/window.c:1028 src/window.c:1108
 msgid "Decryption failed"
 msgstr "Entschlüsselung fehlgeschlagen"
 
-#: src/window.c:1025
+#: src/window.c:1030
 msgid "Text decrypted"
 msgstr "Text entschlüsselt"
 
-#: src/window.c:1105
+#: src/window.c:1110
 msgid "Files decrypted"
 msgstr "Dateien entschlüsselt"
 
-#: src/window.c:1212 src/window.c:1290
+#: src/window.c:1217 src/window.c:1295
 msgid "Signing failed"
 msgstr "Signierung fehlgeschlagen"
 
-#: src/window.c:1214
+#: src/window.c:1219
 msgid "Text signed"
 msgstr "Text signiert"
 
-#: src/window.c:1292
+#: src/window.c:1297
 msgid "Files signed"
 msgstr "Dateien signiert"
 
-#: src/window.c:1348
+#: src/window.c:1353
 msgid "Signature invalid"
 msgstr "Signatur ungültig"
 
-#: src/window.c:1352
+#: src/window.c:1357
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Signatur gültig - von %s"
 
-#: src/window.c:1407
+#: src/window.c:1412
 msgid "valid"
 msgstr "gültig"
 
-#: src/window.c:1407
+#: src/window.c:1412
 msgid "invalid"
 msgstr "ungültig"
 
-#: src/window.c:1439
+#: src/window.c:1444
 msgid "At least one invalid signature"
 msgstr "Mindestens eine ungültige Signatur"
 
-#: src/window.c:1441
+#: src/window.c:1446
 msgid "Signatures valid"
 msgstr "Signaturen gültig"
 
