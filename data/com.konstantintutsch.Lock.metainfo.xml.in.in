@@ -85,6 +85,15 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.5.0" date="2025-03-21">
+            <description translate="no">
+                <ul>
+                    <li>Add opening files via file managers</li>
+                    <li>Add opening files via the command line</li>
+                    <li>Add opening files via Drag-and-Drop</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.4.3" date="2025-03-21">
             <description translate="no">
                 <ul>
