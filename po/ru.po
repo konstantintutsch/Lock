@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-21 18:33+0100\n"
+"POT-Creation-Date: 2025-03-21 18:59+0100\n"
 "PO-Revision-Date: 2025-02-22 22:50+0000\n"
 "Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -50,90 +50,90 @@ msgstr "Ярослав Пронин <proninyaroslav@mail.ru>"
 msgid "Dependencies"
 msgstr "Зависимости"
 
-#: src/window.c:157
+#: src/window.c:162
 msgid "Enter text …"
 msgstr "Введите текст…"
 
-#: src/window.c:474
+#: src/window.c:491
 msgid "Text copied"
 msgstr "Текст скопирован"
 
-#: src/window.c:543
+#: src/window.c:560
 #, c-format
 msgid "Could not read text from clipboard: %s"
 msgstr "Не удалось прочитать текст из буфера обмена: %s"
 
-#: src/window.c:552
+#: src/window.c:569
 msgid "Text pasted"
 msgstr "Текст вставлен"
 
-#: src/window.c:706
+#: src/window.c:762
 msgid "Save files"
 msgstr "Сохранить файлы"
 
-#: src/window.c:707
+#: src/window.c:763
 msgctxt "Save files"
 msgid "Save"
 msgstr "Сохранить"
 
-#: src/window.c:830 src/window.c:907
+#: src/window.c:886 src/window.c:963
 msgid "Encryption failed"
 msgstr "Не удалось зашифровать"
 
-#: src/window.c:832
+#: src/window.c:888
 msgid "Text encrypted"
 msgstr "Текст зашифрован"
 
-#: src/window.c:909
+#: src/window.c:965
 msgid "Files encrypted"
 msgstr "Файлы зашифрованы"
 
-#: src/window.c:965 src/window.c:1045
+#: src/window.c:1021 src/window.c:1101
 msgid "Decryption failed"
 msgstr "Не удалось расшифровать"
 
-#: src/window.c:967
+#: src/window.c:1023
 msgid "Text decrypted"
 msgstr "Текст расшифрован"
 
-#: src/window.c:1047
+#: src/window.c:1103
 msgid "Files decrypted"
 msgstr "Файлы расшифрованы"
 
-#: src/window.c:1154 src/window.c:1232
+#: src/window.c:1210 src/window.c:1288
 msgid "Signing failed"
 msgstr "Не удалось подписать"
 
-#: src/window.c:1156
+#: src/window.c:1212
 msgid "Text signed"
 msgstr "Текст подписан"
 
-#: src/window.c:1234
+#: src/window.c:1290
 msgid "Files signed"
 msgstr "Файлы подписаны"
 
-#: src/window.c:1290
+#: src/window.c:1346
 msgid "Signature invalid"
 msgstr "Недействительная подпись"
 
-#: src/window.c:1294
+#: src/window.c:1350
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Действительная подпись - %s"
 
-#: src/window.c:1349
+#: src/window.c:1405
 msgid "valid"
 msgstr "действительная"
 
-#: src/window.c:1349
+#: src/window.c:1405
 msgid "invalid"
 msgstr "недействительная"
 
-#: src/window.c:1381
+#: src/window.c:1437
 msgid "At least one invalid signature"
 msgstr "По крайней мере одна недействительная подпись"
 
-#: src/window.c:1383
+#: src/window.c:1439
 msgid "Signatures valid"
 msgstr "Подписи действительны"
 

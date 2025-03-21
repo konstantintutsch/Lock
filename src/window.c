@@ -42,6 +42,7 @@ struct _LockWindow {
 
     /* File */
     AdwViewStackPage *file_page;
+    GtkBox *file_box;
     AdwStatusPage *file_status;
     GtkListBox *file_list;
     AdwButtonRow *file_open_button;
@@ -107,6 +108,10 @@ static void lock_window_text_queue_set_text(LockWindow * window,
                                             const char *text);
 
 /* File */
+gboolean
+lock_window_on_file_drop(GtkDropTarget * target,
+                         const GValue * value, double x, double y,
+                         gpointer data);
 static void lock_window_file_open_dialog_finish(GObject * source_object,
                                                 GAsyncResult * res,
                                                 gpointer data);
@@ -216,6 +221,16 @@ static void lock_window_init(LockWindow *window)
     g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(verify_text_action));
 
     /* File */
+    GtkDropTarget *file_target =
+        gtk_drop_target_new(G_TYPE_INVALID, GDK_ACTION_COPY);
+    gtk_drop_target_set_gtypes(file_target, (GType[1]) {
+                               G_TYPE_FILE}, 1);
+
+    g_signal_connect(file_target, "drop", G_CALLBACK(lock_window_on_file_drop),
+                     window);
+    gtk_widget_add_controller(GTK_WIDGET(window->file_box),
+                              GTK_EVENT_CONTROLLER(file_target));
+
     window->file_output_status = SELECTING;
 
     g_signal_connect(window->file_list, "selected-rows-changed",
@@ -269,6 +284,8 @@ static void lock_window_class_init(LockWindowClass *class)
     /* File */
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
                                          file_page);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
+                                         file_box);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
                                          file_status);
     gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
@@ -606,7 +623,46 @@ void lock_window_file_open(LockWindow *window, GFile *file)
                             gtk_list_box_get_row_at_index(window->file_list,
                                                           0));
 
-    adw_view_stack_page_set_needs_attention(window->file_page, true);
+    GtkWidget *visible_child = adw_view_stack_get_visible_child(window->stack);
+    AdwViewStackPage *visible_page =
+        adw_view_stack_get_page(window->stack, visible_child);
+
+    if (visible_page != window->file_page)
+        adw_view_stack_page_set_needs_attention(window->file_page, true);
+
+    /* Cleanup */
+    visible_child = NULL;
+    visible_page = NULL;
+}
+
+/**
+ * This function opens a dropped file.
+ *
+ * @param target Gtk.DropTarget::drop
+ * @param value Gtk.DropTarget::drop
+ * @param x Gtk.DropTarget::drop
+ * @param y Gtk.DropTarget::drop
+ * @param data Gtk.DropTarget::drop
+ *
+ * @return Gtk.DropTarget::drop
+ */
+gboolean
+lock_window_on_file_drop(GtkDropTarget *target,
+                         const GValue *value, double x, double y, gpointer data)
+{
+    (void)target;
+    (void)x;
+    (void)y;
+
+    LockWindow *window = LOCK_WINDOW(data);
+
+    if (G_VALUE_HOLDS(value, G_TYPE_FILE))
+        lock_window_file_open(window, g_value_get_object(value));
+
+    /* Cleanup */
+    window = NULL;
+
+    return true;
 }
 
 /**
