@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-22 13:30+0100\n"
+"POT-Creation-Date: 2025-03-22 13:45+0100\n"
 "PO-Revision-Date: 2024-12-01 19:04+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -66,76 +66,81 @@ msgstr "Lectura impossibla del tèxte del quichapapièrs : %s"
 msgid "Text pasted"
 msgstr "Tèxte pegat"
 
-#: src/window.c:769
+#: src/window.c:624
+#, fuzzy, c-format
+msgid "File selected to be opened is not a regular file: %s"
+msgstr "Fracàs de la dobertura del fichièr en sortida : %s"
+
+#: src/window.c:777
 msgid "Save files"
 msgstr ""
 
-#: src/window.c:770
+#: src/window.c:778
 msgctxt "Save files"
 msgid "Save"
 msgstr ""
 
-#: src/window.c:896 src/window.c:973
+#: src/window.c:904 src/window.c:981
 msgid "Encryption failed"
 msgstr "Fracàs del chiframent"
 
-#: src/window.c:898
+#: src/window.c:906
 msgid "Text encrypted"
 msgstr "Tèxte deschifrat"
 
-#: src/window.c:975
+#: src/window.c:983
 #, fuzzy
 msgid "Files encrypted"
 msgstr "Fichièr deschifrat"
 
-#: src/window.c:1031 src/window.c:1111
+#: src/window.c:1039 src/window.c:1119
 msgid "Decryption failed"
 msgstr "Fracàs del deschiframent"
 
-#: src/window.c:1033
+#: src/window.c:1041
 msgid "Text decrypted"
 msgstr "Tèxte deschifrat"
 
-#: src/window.c:1113
+#: src/window.c:1121
 #, fuzzy
 msgid "Files decrypted"
 msgstr "Fichièr deschifrat"
 
-#: src/window.c:1220 src/window.c:1298
+#: src/window.c:1228 src/window.c:1306
 msgid "Signing failed"
 msgstr "Fracàs de la signatura"
 
-#: src/window.c:1222
+#: src/window.c:1230
 msgid "Text signed"
 msgstr "Tèxte signat"
 
-#: src/window.c:1300
+#: src/window.c:1308
 #, fuzzy
 msgid "Files signed"
 msgstr "Fichièr signat"
 
-#: src/window.c:1356
+#: src/window.c:1364
 msgid "Signature invalid"
 msgstr "Signatura invalida"
 
-#: src/window.c:1360
+#: src/window.c:1368
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Signatura valida – per %s"
 
-#: src/window.c:1415
+#: src/window.c:1423
 msgid "valid"
 msgstr ""
 
-#: src/window.c:1415
+#: src/window.c:1423
 msgid "invalid"
 msgstr ""
 
-#: src/window.c:1447
+#: src/window.c:1455
 msgid "At least one invalid signature"
 msgstr ""
 
-#: src/window.c:1449
+#: src/window.c:1457
 #, fuzzy
 msgid "Signatures valid"
 msgstr "Signatura invalida"
@@ -882,10 +887,6 @@ msgstr "Fenèstra de seleccion de clau"
 
 #~ msgid "Failed to create new GPGME output data in memory"
 #~ msgstr "Fracàs de la creacion de las donadas GPGME de sortida en memòria"
-
-#, c-format
-#~ msgid "Failed to open output file: %s"
-#~ msgstr "Fracàs de la dobertura del fichièr en sortida : %s"
 
 #~ msgid "Failed to create new GPGME input data from file"
 #~ msgstr ""

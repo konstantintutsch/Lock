@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-22 13:30+0100\n"
+"POT-Creation-Date: 2025-03-22 13:45+0100\n"
 "PO-Revision-Date: 2025-02-05 21:06+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -66,73 +66,78 @@ msgstr "Teksti lugemine lõikelaualt ei õnnestunud: %s"
 msgid "Text pasted"
 msgstr "Tekst on asetatud"
 
-#: src/window.c:769
+#: src/window.c:624
+#, fuzzy, c-format
+msgid "File selected to be opened is not a regular file: %s"
+msgstr "Väljundfaili avamine ei õnnestunud: %s"
+
+#: src/window.c:777
 msgid "Save files"
 msgstr "Salvesta failid"
 
-#: src/window.c:770
+#: src/window.c:778
 msgctxt "Save files"
 msgid "Save"
 msgstr "Salvesta"
 
-#: src/window.c:896 src/window.c:973
+#: src/window.c:904 src/window.c:981
 msgid "Encryption failed"
 msgstr "Krüptimine ei õnnestunud"
 
-#: src/window.c:898
+#: src/window.c:906
 msgid "Text encrypted"
 msgstr "Tekst on krüptitud"
 
-#: src/window.c:975
+#: src/window.c:983
 msgid "Files encrypted"
 msgstr "Failid on krüptitud"
 
-#: src/window.c:1031 src/window.c:1111
+#: src/window.c:1039 src/window.c:1119
 msgid "Decryption failed"
 msgstr "Dekrüptimine ei õnnestunud"
 
-#: src/window.c:1033
+#: src/window.c:1041
 msgid "Text decrypted"
 msgstr "Tekst on dekrüptitud"
 
-#: src/window.c:1113
+#: src/window.c:1121
 msgid "Files decrypted"
 msgstr "Failid on dekrüptitud"
 
-#: src/window.c:1220 src/window.c:1298
+#: src/window.c:1228 src/window.c:1306
 msgid "Signing failed"
 msgstr "Allkirjastamine ei õnnestunud"
 
-#: src/window.c:1222
+#: src/window.c:1230
 msgid "Text signed"
 msgstr "Tekst on allkirjastatud"
 
-#: src/window.c:1300
+#: src/window.c:1308
 msgid "Files signed"
 msgstr "Failid on allkirjastatud"
 
-#: src/window.c:1356
+#: src/window.c:1364
 msgid "Signature invalid"
 msgstr "Allkiri on vigane"
 
-#: src/window.c:1360
+#: src/window.c:1368
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Allkiri kehtib - allkirjastaja %s"
 
-#: src/window.c:1415
+#: src/window.c:1423
 msgid "valid"
 msgstr "korrektne"
 
-#: src/window.c:1415
+#: src/window.c:1423
 msgid "invalid"
 msgstr "vigane"
 
-#: src/window.c:1447
+#: src/window.c:1455
 msgid "At least one invalid signature"
 msgstr "Vähemalt üks allkiri on vigane"
 
-#: src/window.c:1449
+#: src/window.c:1457
 msgid "Signatures valid"
 msgstr "Allkirjad on vigased"
 
@@ -832,10 +837,6 @@ msgstr "Võtmevaliku vaade"
 
 #~ msgid "Failed to create new GPGME output data in memory"
 #~ msgstr "Uute GPGME väljundandmete loomine mällu ei õnnestunud"
-
-#, c-format
-#~ msgid "Failed to open output file: %s"
-#~ msgstr "Väljundfaili avamine ei õnnestunud: %s"
 
 #~ msgid "Failed to create new GPGME input data from file"
 #~ msgstr "Failist uute GPGME sisendandmete loomine ei õnnestunud"

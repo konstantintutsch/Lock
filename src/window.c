@@ -618,6 +618,14 @@ static void lock_window_text_queue_set_text(LockWindow *window,
  */
 void lock_window_file_open(LockWindow *window, GFile *file)
 {
+    // Do not open directories, symlinks, etc
+    if (g_file_query_file_type(file, G_FILE_QUERY_INFO_NOFOLLOW_SYMLINKS, NULL)
+        != G_FILE_TYPE_REGULAR) {
+        g_warning(_("File selected to be opened is not a regular file: %s"),
+                  g_file_get_basename(file));
+        return;
+    }
+
     gtk_list_box_append(window->file_list, GTK_WIDGET(lock_file_row_new(file)));
     gtk_list_box_select_row(window->file_list,
                             gtk_list_box_get_row_at_index(window->file_list,

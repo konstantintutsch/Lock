@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-22 13:30+0100\n"
+"POT-Creation-Date: 2025-03-22 13:45+0100\n"
 "PO-Revision-Date: 2025-03-20 21:28+0000\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -66,73 +66,78 @@ msgstr "无法从剪贴板读取文本：%s"
 msgid "Text pasted"
 msgstr "文本已粘贴"
 
-#: src/window.c:769
+#: src/window.c:624
+#, fuzzy, c-format
+msgid "File selected to be opened is not a regular file: %s"
+msgstr "打开输出文件失败：%s"
+
+#: src/window.c:777
 msgid "Save files"
 msgstr "保存文件"
 
-#: src/window.c:770
+#: src/window.c:778
 msgctxt "Save files"
 msgid "Save"
 msgstr "保存"
 
-#: src/window.c:896 src/window.c:973
+#: src/window.c:904 src/window.c:981
 msgid "Encryption failed"
 msgstr "加密失败"
 
-#: src/window.c:898
+#: src/window.c:906
 msgid "Text encrypted"
 msgstr "文本已加密"
 
-#: src/window.c:975
+#: src/window.c:983
 msgid "Files encrypted"
 msgstr "文件已加密"
 
-#: src/window.c:1031 src/window.c:1111
+#: src/window.c:1039 src/window.c:1119
 msgid "Decryption failed"
 msgstr "解密失败"
 
-#: src/window.c:1033
+#: src/window.c:1041
 msgid "Text decrypted"
 msgstr "文本已解密"
 
-#: src/window.c:1113
+#: src/window.c:1121
 msgid "Files decrypted"
 msgstr "文件已解密"
 
-#: src/window.c:1220 src/window.c:1298
+#: src/window.c:1228 src/window.c:1306
 msgid "Signing failed"
 msgstr "签署失败"
 
-#: src/window.c:1222
+#: src/window.c:1230
 msgid "Text signed"
 msgstr "文本已签署"
 
-#: src/window.c:1300
+#: src/window.c:1308
 msgid "Files signed"
 msgstr "文件已签署"
 
-#: src/window.c:1356
+#: src/window.c:1364
 msgid "Signature invalid"
 msgstr "签名无效"
 
-#: src/window.c:1360
+#: src/window.c:1368
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "签名有效 - 由 %s"
 
-#: src/window.c:1415
+#: src/window.c:1423
 msgid "valid"
 msgstr "有效"
 
-#: src/window.c:1415
+#: src/window.c:1423
 msgid "invalid"
 msgstr "无效"
 
-#: src/window.c:1447
+#: src/window.c:1455
 msgid "At least one invalid signature"
 msgstr "至少一个无效签名"
 
-#: src/window.c:1449
+#: src/window.c:1457
 msgid "Signatures valid"
 msgstr "签名有效"
 
@@ -828,10 +833,6 @@ msgstr "密钥选择对话框"
 #, fuzzy
 #~ msgid "Failed to create new GPGME output data in memory"
 #~ msgstr "在内存中创建新 GPGME 输出数据"
-
-#, c-format
-#~ msgid "Failed to open output file: %s"
-#~ msgstr "打开输出文件失败：%s"
 
 #~ msgid "Verification failed"
 #~ msgstr "校验失败"

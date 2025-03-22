@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-22 13:30+0100\n"
+"POT-Creation-Date: 2025-03-22 13:45+0100\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/Lock/"
@@ -68,77 +68,82 @@ msgstr ""
 msgid "Text pasted"
 msgstr "Текстът е копиран"
 
-#: src/window.c:769
+#: src/window.c:624
+#, fuzzy, c-format
+msgid "File selected to be opened is not a regular file: %s"
+msgstr "Изходният файл не може да бъде отворен: %s"
+
+#: src/window.c:777
 msgid "Save files"
 msgstr ""
 
-#: src/window.c:770
+#: src/window.c:778
 msgctxt "Save files"
 msgid "Save"
 msgstr ""
 
-#: src/window.c:896 src/window.c:973
+#: src/window.c:904 src/window.c:981
 msgid "Encryption failed"
 msgstr "Шифрирането е неуспешно"
 
-#: src/window.c:898
+#: src/window.c:906
 #, fuzzy
 msgid "Text encrypted"
 msgstr "Текстът е дешифриран"
 
-#: src/window.c:975
+#: src/window.c:983
 #, fuzzy
 msgid "Files encrypted"
 msgstr "Файлът е дешифриран"
 
-#: src/window.c:1031 src/window.c:1111
+#: src/window.c:1039 src/window.c:1119
 msgid "Decryption failed"
 msgstr "Дешифрирането е неуспешно"
 
-#: src/window.c:1033
+#: src/window.c:1041
 msgid "Text decrypted"
 msgstr "Текстът е дешифриран"
 
-#: src/window.c:1113
+#: src/window.c:1121
 #, fuzzy
 msgid "Files decrypted"
 msgstr "Файлът е дешифриран"
 
-#: src/window.c:1220 src/window.c:1298
+#: src/window.c:1228 src/window.c:1306
 msgid "Signing failed"
 msgstr "Подписването е неуспешно"
 
-#: src/window.c:1222
+#: src/window.c:1230
 msgid "Text signed"
 msgstr "Текстът е подписан"
 
-#: src/window.c:1300
+#: src/window.c:1308
 #, fuzzy
 msgid "Files signed"
 msgstr "Файлът е подписан"
 
-#: src/window.c:1356
+#: src/window.c:1364
 msgid "Signature invalid"
 msgstr ""
 
-#: src/window.c:1360
+#: src/window.c:1368
 #, c-format
 msgid "Signature valid - by %s"
 msgstr ""
 
-#: src/window.c:1415
+#: src/window.c:1423
 msgid "valid"
 msgstr ""
 
-#: src/window.c:1415
+#: src/window.c:1423
 msgid "invalid"
 msgstr ""
 
-#: src/window.c:1447
+#: src/window.c:1455
 msgid "At least one invalid signature"
 msgstr ""
 
-#: src/window.c:1449
+#: src/window.c:1457
 msgid "Signatures valid"
 msgstr ""
 
@@ -863,10 +868,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Failed to create new GPGME output data in memory"
 #~ msgstr "създаване на данни за GPGME ключ в паметта"
-
-#, c-format
-#~ msgid "Failed to open output file: %s"
-#~ msgstr "Изходният файл не може да бъде отворен: %s"
 
 #~ msgid "Verification failed"
 #~ msgstr "Потвърждаването е неуспешно"

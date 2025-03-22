@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-22 13:30+0100\n"
+"POT-Creation-Date: 2025-03-22 13:45+0100\n"
 "PO-Revision-Date: 2025-02-22 22:50+0000\n"
 "Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -67,73 +67,78 @@ msgstr "Не удалось прочитать текст из буфера об
 msgid "Text pasted"
 msgstr "Текст вставлен"
 
-#: src/window.c:769
+#: src/window.c:624
+#, fuzzy, c-format
+msgid "File selected to be opened is not a regular file: %s"
+msgstr "Не удалось открыть выходной файл: %s"
+
+#: src/window.c:777
 msgid "Save files"
 msgstr "Сохранить файлы"
 
-#: src/window.c:770
+#: src/window.c:778
 msgctxt "Save files"
 msgid "Save"
 msgstr "Сохранить"
 
-#: src/window.c:896 src/window.c:973
+#: src/window.c:904 src/window.c:981
 msgid "Encryption failed"
 msgstr "Не удалось зашифровать"
 
-#: src/window.c:898
+#: src/window.c:906
 msgid "Text encrypted"
 msgstr "Текст зашифрован"
 
-#: src/window.c:975
+#: src/window.c:983
 msgid "Files encrypted"
 msgstr "Файлы зашифрованы"
 
-#: src/window.c:1031 src/window.c:1111
+#: src/window.c:1039 src/window.c:1119
 msgid "Decryption failed"
 msgstr "Не удалось расшифровать"
 
-#: src/window.c:1033
+#: src/window.c:1041
 msgid "Text decrypted"
 msgstr "Текст расшифрован"
 
-#: src/window.c:1113
+#: src/window.c:1121
 msgid "Files decrypted"
 msgstr "Файлы расшифрованы"
 
-#: src/window.c:1220 src/window.c:1298
+#: src/window.c:1228 src/window.c:1306
 msgid "Signing failed"
 msgstr "Не удалось подписать"
 
-#: src/window.c:1222
+#: src/window.c:1230
 msgid "Text signed"
 msgstr "Текст подписан"
 
-#: src/window.c:1300
+#: src/window.c:1308
 msgid "Files signed"
 msgstr "Файлы подписаны"
 
-#: src/window.c:1356
+#: src/window.c:1364
 msgid "Signature invalid"
 msgstr "Недействительная подпись"
 
-#: src/window.c:1360
+#: src/window.c:1368
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Действительная подпись - %s"
 
-#: src/window.c:1415
+#: src/window.c:1423
 msgid "valid"
 msgstr "действительная"
 
-#: src/window.c:1415
+#: src/window.c:1423
 msgid "invalid"
 msgstr "недействительная"
 
-#: src/window.c:1447
+#: src/window.c:1455
 msgid "At least one invalid signature"
 msgstr "По крайней мере одна недействительная подпись"
 
-#: src/window.c:1449
+#: src/window.c:1457
 msgid "Signatures valid"
 msgstr "Подписи действительны"
 
@@ -847,10 +852,6 @@ msgstr "Диалог выбора ключей"
 
 #~ msgid "Failed to create new GPGME output data in memory"
 #~ msgstr "Не удалось создать новые выходные данные GPGME в памяти"
-
-#, c-format
-#~ msgid "Failed to open output file: %s"
-#~ msgstr "Не удалось открыть выходной файл: %s"
 
 #~ msgid "Failed to create new GPGME input data from file"
 #~ msgstr "Не удалось создать новые входные данные GPGME из файла"
