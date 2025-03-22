@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-21 20:49+0100\n"
+"POT-Creation-Date: 2025-03-22 13:30+0100\n"
 "PO-Revision-Date: 2025-02-05 10:05+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
@@ -75,64 +75,64 @@ msgctxt "Save files"
 msgid "Save"
 msgstr "Speichern"
 
-#: src/window.c:893 src/window.c:970
+#: src/window.c:896 src/window.c:973
 msgid "Encryption failed"
 msgstr "Verschlüsselung fehlgeschlagen"
 
-#: src/window.c:895
+#: src/window.c:898
 msgid "Text encrypted"
 msgstr "Text verschlüsselt"
 
-#: src/window.c:972
+#: src/window.c:975
 msgid "Files encrypted"
 msgstr "Dateien verschlüsselt"
 
-#: src/window.c:1028 src/window.c:1108
+#: src/window.c:1031 src/window.c:1111
 msgid "Decryption failed"
 msgstr "Entschlüsselung fehlgeschlagen"
 
-#: src/window.c:1030
+#: src/window.c:1033
 msgid "Text decrypted"
 msgstr "Text entschlüsselt"
 
-#: src/window.c:1110
+#: src/window.c:1113
 msgid "Files decrypted"
 msgstr "Dateien entschlüsselt"
 
-#: src/window.c:1217 src/window.c:1295
+#: src/window.c:1220 src/window.c:1298
 msgid "Signing failed"
 msgstr "Signierung fehlgeschlagen"
 
-#: src/window.c:1219
+#: src/window.c:1222
 msgid "Text signed"
 msgstr "Text signiert"
 
-#: src/window.c:1297
+#: src/window.c:1300
 msgid "Files signed"
 msgstr "Dateien signiert"
 
-#: src/window.c:1353
+#: src/window.c:1356
 msgid "Signature invalid"
 msgstr "Signatur ungültig"
 
-#: src/window.c:1357
+#: src/window.c:1360
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Signatur gültig - von %s"
 
-#: src/window.c:1412
+#: src/window.c:1415
 msgid "valid"
 msgstr "gültig"
 
-#: src/window.c:1412
+#: src/window.c:1415
 msgid "invalid"
 msgstr "ungültig"
 
-#: src/window.c:1444
+#: src/window.c:1447
 msgid "At least one invalid signature"
 msgstr "Mindestens eine ungültige Signatur"
 
-#: src/window.c:1446
+#: src/window.c:1449
 msgid "Signatures valid"
 msgstr "Signaturen gültig"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-21 20:49+0100\n"
+"POT-Creation-Date: 2025-03-22 13:30+0100\n"
 "PO-Revision-Date: 2025-01-03 17:02+0000\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -75,67 +75,67 @@ msgctxt "Save files"
 msgid "Save"
 msgstr ""
 
-#: src/window.c:893 src/window.c:970
+#: src/window.c:896 src/window.c:973
 msgid "Encryption failed"
 msgstr "Şifrelenemedi"
 
-#: src/window.c:895
+#: src/window.c:898
 msgid "Text encrypted"
 msgstr "Metin şifrelendi"
 
-#: src/window.c:972
+#: src/window.c:975
 #, fuzzy
 msgid "Files encrypted"
 msgstr "Dosya şifrelendi"
 
-#: src/window.c:1028 src/window.c:1108
+#: src/window.c:1031 src/window.c:1111
 msgid "Decryption failed"
 msgstr "Şifre çözülemedi"
 
-#: src/window.c:1030
+#: src/window.c:1033
 msgid "Text decrypted"
 msgstr "Metin şifresi çözüldü"
 
-#: src/window.c:1110
+#: src/window.c:1113
 #, fuzzy
 msgid "Files decrypted"
 msgstr "Dosya şifresi çözüldü"
 
-#: src/window.c:1217 src/window.c:1295
+#: src/window.c:1220 src/window.c:1298
 msgid "Signing failed"
 msgstr "İmzalanamadı"
 
-#: src/window.c:1219
+#: src/window.c:1222
 msgid "Text signed"
 msgstr "Metin imzalandı"
 
-#: src/window.c:1297
+#: src/window.c:1300
 #, fuzzy
 msgid "Files signed"
 msgstr "Dosya imzalandı"
 
-#: src/window.c:1353
+#: src/window.c:1356
 msgid "Signature invalid"
 msgstr "İmza geçersiz"
 
-#: src/window.c:1357
+#: src/window.c:1360
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "İmza geçerli - %s tarafından"
 
-#: src/window.c:1412
+#: src/window.c:1415
 msgid "valid"
 msgstr ""
 
-#: src/window.c:1412
+#: src/window.c:1415
 msgid "invalid"
 msgstr ""
 
-#: src/window.c:1444
+#: src/window.c:1447
 msgid "At least one invalid signature"
 msgstr ""
 
-#: src/window.c:1446
+#: src/window.c:1449
 #, fuzzy
 msgid "Signatures valid"
 msgstr "İmza geçersiz"

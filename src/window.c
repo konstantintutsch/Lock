@@ -786,6 +786,9 @@ void lock_window_file_list_clear(AdwButtonRow *self, LockWindow *window)
     (void)self;
 
     gtk_list_box_remove_all(window->file_list);
+
+    // Hide empty list and show no open files status
+    lock_window_on_file_selection(window->file_list, window);
 }
 
 /****** Cryptography ******/
