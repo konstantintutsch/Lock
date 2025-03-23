@@ -85,6 +85,14 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.5.1" date="2025-03-23">
+            <description translate="no">
+                <ul>
+                    <li>Fix user interface not properly updating when clearing dropped files</li>
+                    <li>Fix opening of folders, symlinks and other non-regular files possible</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.5.0" date="2025-03-21">
             <description translate="no">
                 <ul>
