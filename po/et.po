@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-03-22 13:45+0100\n"
-"PO-Revision-Date: 2025-02-05 21:06+0000\n"
+"PO-Revision-Date: 2025-03-24 07:01+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
 "Application/et/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -67,9 +67,9 @@ msgid "Text pasted"
 msgstr "Tekst on asetatud"
 
 #: src/window.c:624
-#, fuzzy, c-format
+#, c-format
 msgid "File selected to be opened is not a regular file: %s"
-msgstr "Väljundfaili avamine ei õnnestunud: %s"
+msgstr "Fail, mille sa avamiseks valisid, pole tavaline fail: %s"
 
 #: src/window.c:777
 msgid "Save files"
