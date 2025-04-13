@@ -85,6 +85,13 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.5.3" date="2025-04-13">
+            <description translate="no">
+                <ul>
+                    <li>Simplified Chinese translation updated</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.5.2" date="2025-04-05">
             <description translate="no">
                 <ul>
