@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-03-22 13:45+0100\n"
-"PO-Revision-Date: 2025-03-20 21:28+0000\n"
+"PO-Revision-Date: 2025-04-12 23:33+0000\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/Lock/Application/zh_Hans/>\n"
@@ -67,9 +67,9 @@ msgid "Text pasted"
 msgstr "文本已粘贴"
 
 #: src/window.c:624
-#, fuzzy, c-format
+#, c-format
 msgid "File selected to be opened is not a regular file: %s"
-msgstr "打开输出文件失败：%s"
+msgstr "选中要打开的文件不是常规文件：%s"
 
 #: src/window.c:777
 msgid "Save files"
