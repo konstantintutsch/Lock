@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-22 13:45+0100\n"
+"POT-Creation-Date: 2025-04-15 19:18+0200\n"
 "PO-Revision-Date: 2024-12-31 09:00+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -26,7 +26,7 @@ msgid "GnuPG Made Easy %s or greater required. Using %s."
 msgstr "GnuPG Made Easy %s یا بالاتر مورد نیاز است. با استفاده از %s."
 
 #. Details
-#: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:5
+#: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "پردازش داده با گنوپی‌جی"
@@ -327,8 +327,8 @@ msgid "Failed to create new GPGME input data from string: %s"
 msgstr "ساختن دادهٔ ورودی جدید GPGME از پرونده شکست خورد"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
-#: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:837
-#: src/cryptography.c:924 src/cryptography.c:1017
+#: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:835
+#: src/cryptography.c:917 src/cryptography.c:1008
 #, fuzzy, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
 msgstr "ساختن دادهٔ کلید GPGME در حافظه شکست خورد"
@@ -343,7 +343,7 @@ msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
 msgid "Failed to decrypt GPGME data from memory: %s"
 msgstr "رمزگشایی دادهٔ GPGME از حافظه شکست خورد"
 
-#: src/cryptography.c:610 src/cryptography.c:942
+#: src/cryptography.c:610 src/cryptography.c:935
 #, fuzzy, c-format
 msgid "Failed to add signing key to GPGME context: %s"
 msgstr "اضافه کردن کلید امضا به محتوای GPGME شکست خورد"
@@ -357,18 +357,26 @@ msgstr "امضا کردن دادهٔ GPGME از حافظه شکست خورد"
 msgid "Failed to verify GPGME data from memory"
 msgstr "اعتبارسنجی دادهٔ GPGME از حافظه شکست خورد"
 
-#: src/cryptography.c:730 src/cryptography.c:902
+#: src/cryptography.c:730 src/cryptography.c:813 src/cryptography.c:895
+#: src/cryptography.c:986
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s برای بازنویسی حذف شد"
 
-#: src/cryptography.c:735 src/cryptography.c:820 src/cryptography.c:907
-#: src/cryptography.c:1000
+#: src/cryptography.c:735 src/cryptography.c:818 src/cryptography.c:900
+#: src/cryptography.c:991
 #, fuzzy, c-format
 msgid "Failed to create new GPGME input data from file: %s"
 msgstr "ساختن دادهٔ ورودی جدید GPGME از پرونده شکست خورد"
 
-#: src/cryptography.c:761 src/cryptography.c:933
+#: src/cryptography.c:743 src/cryptography.c:826 src/cryptography.c:908
+#: src/cryptography.c:999
+#, fuzzy, c-format
+msgid "Failed to set file name of GPGME input data: %s"
+msgstr "تنظیم کردن نام پروندهٔ دادهٔ ورودی GPGME شکست خورد"
+
+#: src/cryptography.c:761 src/cryptography.c:844 src/cryptography.c:926
+#: src/cryptography.c:1017
 #, fuzzy, c-format
 msgid "Failed to set file name of GPGME output data: %s"
 msgstr "تنظیم کردن نام پروندهٔ دادهٔ ورودی GPGME شکست خورد"
@@ -378,22 +386,17 @@ msgstr "تنظیم کردن نام پروندهٔ دادهٔ ورودی GPGME ش
 msgid "Failed to encrypt GPGME data from file: %s"
 msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
 
-#: src/cryptography.c:828 src/cryptography.c:1008
-#, fuzzy, c-format
-msgid "Failed to set file name of GPGME input data: %s"
-msgstr "تنظیم کردن نام پروندهٔ دادهٔ ورودی GPGME شکست خورد"
-
-#: src/cryptography.c:855
+#: src/cryptography.c:853
 #, fuzzy, c-format
 msgid "Failed to decrypt GPGME data from file: %s"
 msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
 
-#: src/cryptography.c:951
+#: src/cryptography.c:944
 #, fuzzy, c-format
 msgid "Failed to sign GPGME data from file: %s"
 msgstr "امضا کردن دادهٔ GPGME از پرونده شکست خورد"
 
-#: src/cryptography.c:1035
+#: src/cryptography.c:1026
 #, fuzzy, c-format
 msgid "Failed to verify GPGME data from file: %s"
 msgstr "اعتبارسنجی دادهٔ GPGME از پرونده شکست خورد"
@@ -487,7 +490,7 @@ msgid "Verify text"
 msgstr "اعتبارسنجی متن"
 
 #: data/ui/window.blp:9 data/ui/window.blp:197
-#: data/com.konstantintutsch.Lock.desktop.in.in:4
+#: data/com.konstantintutsch.Lock.desktop.in.in:3
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
 msgstr "قفل"
@@ -710,7 +713,7 @@ msgstr "صادر کردن کلید عمومی به پرونده"
 msgid "Edit expire date"
 msgstr "ویرایش تاریخ انقضا"
 
-#: data/com.konstantintutsch.Lock.desktop.in.in:12
+#: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr "جی‌پی‌جی;گنوپی‌جی;رمزنگاری;اپن‌پی‌جی‌پی;رمزگذاری;رمزگشایی;امضا;اعتبارسنجی;"
 

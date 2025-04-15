@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-22 13:45+0100\n"
+"POT-Creation-Date: 2025-04-15 19:18+0200\n"
 "PO-Revision-Date: 2024-12-01 19:04+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -26,7 +26,7 @@ msgid "GnuPG Made Easy %s or greater required. Using %s."
 msgstr "GnuPG Made Easy %s o superior es requerit. Utilizacion de %s."
 
 #. Details
-#: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:5
+#: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "Tractar las donadas amb GnuPG"
@@ -333,8 +333,8 @@ msgstr ""
 "cadena de tèxte"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
-#: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:837
-#: src/cryptography.c:924 src/cryptography.c:1017
+#: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:835
+#: src/cryptography.c:917 src/cryptography.c:1008
 #, fuzzy, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
 msgstr "Fracàs de la creacion de las donadas GPGME de sortida en memòria"
@@ -353,7 +353,7 @@ msgstr ""
 "Fracàs de la realizacion del deschiframent de las donadas GPGME a partir de "
 "la memòria"
 
-#: src/cryptography.c:610 src/cryptography.c:942
+#: src/cryptography.c:610 src/cryptography.c:935
 #, fuzzy, c-format
 msgid "Failed to add signing key to GPGME context: %s"
 msgstr "Fracàs de l’apondon de la clau al contèxte GPGME nòu"
@@ -367,20 +367,29 @@ msgstr "Fracàs de la signatura de las donadas GPGME a partir de la memòria"
 msgid "Failed to verify GPGME data from memory"
 msgstr "Fracàs de la verificacion de las donadas GPGME a partir de la memòria"
 
-#: src/cryptography.c:730 src/cryptography.c:902
+#: src/cryptography.c:730 src/cryptography.c:813 src/cryptography.c:895
+#: src/cryptography.c:986
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s suprimit per preparar lo subrecargament"
 
-#: src/cryptography.c:735 src/cryptography.c:820 src/cryptography.c:907
-#: src/cryptography.c:1000
+#: src/cryptography.c:735 src/cryptography.c:818 src/cryptography.c:900
+#: src/cryptography.c:991
 #, fuzzy, c-format
 msgid "Failed to create new GPGME input data from file: %s"
 msgstr ""
 "Fracàs de la creacion de las novèlas donadas GPGME d’entrada a partir del "
 "fichièr"
 
-#: src/cryptography.c:761 src/cryptography.c:933
+#: src/cryptography.c:743 src/cryptography.c:826 src/cryptography.c:908
+#: src/cryptography.c:999
+#, fuzzy, c-format
+msgid "Failed to set file name of GPGME input data: %s"
+msgstr ""
+"Fracàs de la definicion del nom de fichièr de las donadas GPGME d’entrada"
+
+#: src/cryptography.c:761 src/cryptography.c:844 src/cryptography.c:926
+#: src/cryptography.c:1017
 #, fuzzy, c-format
 msgid "Failed to set file name of GPGME output data: %s"
 msgstr ""
@@ -393,25 +402,19 @@ msgstr ""
 "Fracàs de la realizacion del deschiframent de las donadas GPGME a partir del "
 "fichièr"
 
-#: src/cryptography.c:828 src/cryptography.c:1008
-#, fuzzy, c-format
-msgid "Failed to set file name of GPGME input data: %s"
-msgstr ""
-"Fracàs de la definicion del nom de fichièr de las donadas GPGME d’entrada"
-
-#: src/cryptography.c:855
+#: src/cryptography.c:853
 #, fuzzy, c-format
 msgid "Failed to decrypt GPGME data from file: %s"
 msgstr ""
 "Fracàs de la realizacion del chiframent de las donadas GPGME a partir del "
 "fichièr"
 
-#: src/cryptography.c:951
+#: src/cryptography.c:944
 #, fuzzy, c-format
 msgid "Failed to sign GPGME data from file: %s"
 msgstr "Fracàs de la signatura de las donadas GPGME a partir del fichièr"
 
-#: src/cryptography.c:1035
+#: src/cryptography.c:1026
 #, fuzzy, c-format
 msgid "Failed to verify GPGME data from file: %s"
 msgstr "Fracàs de la verificacion de las donadas GPGME a partir del fichièr"
@@ -511,7 +514,7 @@ msgid "Verify text"
 msgstr "Verificar un tèxte"
 
 #: data/ui/window.blp:9 data/ui/window.blp:197
-#: data/com.konstantintutsch.Lock.desktop.in.in:4
+#: data/com.konstantintutsch.Lock.desktop.in.in:3
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
 msgstr "Verrolhar"
@@ -739,7 +742,7 @@ msgstr "Exportar la clau publica dins un fichièr"
 msgid "Edit expire date"
 msgstr "Afichar las datas d'expiracion"
 
-#: data/com.konstantintutsch.Lock.desktop.in.in:12
+#: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr "gpg;gnupg;criptografia;openpgp;chifrar;deschifrar;signar;verificar;"
 

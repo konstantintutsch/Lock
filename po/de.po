@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-22 13:45+0100\n"
+"POT-Creation-Date: 2025-04-15 19:18+0200\n"
 "PO-Revision-Date: 2025-03-22 13:45+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
@@ -26,7 +26,7 @@ msgid "GnuPG Made Easy %s or greater required. Using %s."
 msgstr "GnuPG Made Easy %s oder höher benötigt. Nutze %s."
 
 #. Details
-#: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:5
+#: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "Verarbeiten Sie Daten mit GnuPG"
@@ -330,8 +330,8 @@ msgstr ""
 "Fehler beim Erstellen von GPGME Eingangsdaten aus einer Zeichenkette: %s"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
-#: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:837
-#: src/cryptography.c:924 src/cryptography.c:1017
+#: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:835
+#: src/cryptography.c:917 src/cryptography.c:1008
 #, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
 msgstr "Fehler beim Erstellen von GPGME Ausgangsdaten im Hauptspeicher: %s"
@@ -346,7 +346,7 @@ msgstr "Fehler beim Verschlüsseln von GPGME Daten aus dem Hauptspeicher: %s"
 msgid "Failed to decrypt GPGME data from memory: %s"
 msgstr "Fehler beim Entschlüsseln von GPGME Daten aus dem Hauptspeicher: %s"
 
-#: src/cryptography.c:610 src/cryptography.c:942
+#: src/cryptography.c:610 src/cryptography.c:935
 #, c-format
 msgid "Failed to add signing key to GPGME context: %s"
 msgstr "Fehler beim Hinzufügen des Signierungsschlüssels zum GPGME Kontext: %s"
@@ -360,18 +360,26 @@ msgstr "Fehler beim Signieren von GPGME Daten aus dem Hauptspeicher: %s"
 msgid "Failed to verify GPGME data from memory"
 msgstr "Fehler beim Verifizieren von GPGME Daten aus dem Hauptspeicher"
 
-#: src/cryptography.c:730 src/cryptography.c:902
+#: src/cryptography.c:730 src/cryptography.c:813 src/cryptography.c:895
+#: src/cryptography.c:986
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s entfernt, um Überschreiben vorzubereiten"
 
-#: src/cryptography.c:735 src/cryptography.c:820 src/cryptography.c:907
-#: src/cryptography.c:1000
+#: src/cryptography.c:735 src/cryptography.c:818 src/cryptography.c:900
+#: src/cryptography.c:991
 #, c-format
 msgid "Failed to create new GPGME input data from file: %s"
 msgstr "Fehler beim Erstellen von GPGME Eingangsdaten aus einer Datei: %s"
 
-#: src/cryptography.c:761 src/cryptography.c:933
+#: src/cryptography.c:743 src/cryptography.c:826 src/cryptography.c:908
+#: src/cryptography.c:999
+#, c-format
+msgid "Failed to set file name of GPGME input data: %s"
+msgstr "Fehler beim Setzen des Dateipfades von GPGME Eingangsdaten: %s"
+
+#: src/cryptography.c:761 src/cryptography.c:844 src/cryptography.c:926
+#: src/cryptography.c:1017
 #, c-format
 msgid "Failed to set file name of GPGME output data: %s"
 msgstr "Fehler beim Setzen des Dateipfades von GPGME Ausgangsdaten: %s"
@@ -381,22 +389,17 @@ msgstr "Fehler beim Setzen des Dateipfades von GPGME Ausgangsdaten: %s"
 msgid "Failed to encrypt GPGME data from file: %s"
 msgstr "Fehler beim Verschlüsseln von GPGME Daten aus Datei: %s"
 
-#: src/cryptography.c:828 src/cryptography.c:1008
-#, c-format
-msgid "Failed to set file name of GPGME input data: %s"
-msgstr "Fehler beim Setzen des Dateipfades von GPGME Eingangsdaten: %s"
-
-#: src/cryptography.c:855
+#: src/cryptography.c:853
 #, c-format
 msgid "Failed to decrypt GPGME data from file: %s"
 msgstr "Fehler beim Entschlüsseln von GPGME Daten aus Datei: %s"
 
-#: src/cryptography.c:951
+#: src/cryptography.c:944
 #, c-format
 msgid "Failed to sign GPGME data from file: %s"
 msgstr "Fehler beim Signieren von GPGME Daten aus einer Datei: %s"
 
-#: src/cryptography.c:1035
+#: src/cryptography.c:1026
 #, c-format
 msgid "Failed to verify GPGME data from file: %s"
 msgstr "Fehler beim Verifizieren von GPGME Daten aus einer Datei: %s"
@@ -489,7 +492,7 @@ msgid "Verify text"
 msgstr "Text verifizieren"
 
 #: data/ui/window.blp:9 data/ui/window.blp:197
-#: data/com.konstantintutsch.Lock.desktop.in.in:4
+#: data/com.konstantintutsch.Lock.desktop.in.in:3
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
 msgstr "Schloss"
@@ -711,11 +714,9 @@ msgstr "Öffentlichen Schlüssel in Datei exportieren"
 msgid "Edit expire date"
 msgstr "Ablaufzeitpunkt bearbeiten"
 
-#: data/com.konstantintutsch.Lock.desktop.in.in:12
+#: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
-msgstr ""
-"gpg;gnupg;kryptographie;openpgp;verschlüsseln;entschlüsseln;signieren;"
-"verifizieren;"
+msgstr "gpg;gnupg;kryptographie;openpgp;verschlüsseln;entschlüsseln;signieren;verifizieren;"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
 msgid ""

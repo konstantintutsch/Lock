@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-22 13:45+0100\n"
+"POT-Creation-Date: 2025-04-15 19:18+0200\n"
 "PO-Revision-Date: 2024-11-23 17:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/Lock/"
@@ -27,7 +27,7 @@ msgid "GnuPG Made Easy %s or greater required. Using %s."
 msgstr ""
 
 #. Details
-#: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:5
+#: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "Обработване на данни с GnuPG"
@@ -337,8 +337,8 @@ msgid "Failed to create new GPGME input data from string: %s"
 msgstr "създаване на нови подписани GPGME данни от низ"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
-#: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:837
-#: src/cryptography.c:924 src/cryptography.c:1017
+#: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:835
+#: src/cryptography.c:917 src/cryptography.c:1008
 #, fuzzy, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
 msgstr "създаване на данни за GPGME ключ в паметта"
@@ -353,7 +353,7 @@ msgstr "шифриране на GPGME данни от паметта"
 msgid "Failed to decrypt GPGME data from memory: %s"
 msgstr "дешифриране на GPGME данни от паметта"
 
-#: src/cryptography.c:610 src/cryptography.c:942
+#: src/cryptography.c:610 src/cryptography.c:935
 #, fuzzy, c-format
 msgid "Failed to add signing key to GPGME context: %s"
 msgstr "създадане на нов GPGME контекст"
@@ -368,18 +368,26 @@ msgstr "подписване на GPGME данни от паметта"
 msgid "Failed to verify GPGME data from memory"
 msgstr "потвърждаване на GPGME данни от паметта"
 
-#: src/cryptography.c:730 src/cryptography.c:902
+#: src/cryptography.c:730 src/cryptography.c:813 src/cryptography.c:895
+#: src/cryptography.c:986
 #, c-format
 msgid "Removed %s to prepare overwriting"
 msgstr "%s е премахнато, за да се подготви презаписването"
 
-#: src/cryptography.c:735 src/cryptography.c:820 src/cryptography.c:907
-#: src/cryptography.c:1000
+#: src/cryptography.c:735 src/cryptography.c:818 src/cryptography.c:900
+#: src/cryptography.c:991
 #, fuzzy, c-format
 msgid "Failed to create new GPGME input data from file: %s"
 msgstr "създаване на нови подписани GPGME данни от низ"
 
-#: src/cryptography.c:761 src/cryptography.c:933
+#: src/cryptography.c:743 src/cryptography.c:826 src/cryptography.c:908
+#: src/cryptography.c:999
+#, fuzzy, c-format
+msgid "Failed to set file name of GPGME input data: %s"
+msgstr "задаване на местоположението до файла с подписаните GPGME данни"
+
+#: src/cryptography.c:761 src/cryptography.c:844 src/cryptography.c:926
+#: src/cryptography.c:1017
 #, fuzzy, c-format
 msgid "Failed to set file name of GPGME output data: %s"
 msgstr "задаване на местоположението до файла с подписаните GPGME данни"
@@ -389,22 +397,17 @@ msgstr "задаване на местоположението до файла �
 msgid "Failed to encrypt GPGME data from file: %s"
 msgstr "шифриране на GPGME данни от файл"
 
-#: src/cryptography.c:828 src/cryptography.c:1008
-#, fuzzy, c-format
-msgid "Failed to set file name of GPGME input data: %s"
-msgstr "задаване на местоположението до файла с подписаните GPGME данни"
-
-#: src/cryptography.c:855
+#: src/cryptography.c:853
 #, fuzzy, c-format
 msgid "Failed to decrypt GPGME data from file: %s"
 msgstr "дешифриране на GPGME данни от файл"
 
-#: src/cryptography.c:951
+#: src/cryptography.c:944
 #, fuzzy, c-format
 msgid "Failed to sign GPGME data from file: %s"
 msgstr "подписване на GPGME данни от файл"
 
-#: src/cryptography.c:1035
+#: src/cryptography.c:1026
 #, fuzzy, c-format
 msgid "Failed to verify GPGME data from file: %s"
 msgstr "потвърждаване на GPGME данни от файл"
@@ -515,7 +518,7 @@ msgid "Verify text"
 msgstr "Потвърждаване"
 
 #: data/ui/window.blp:9 data/ui/window.blp:197
-#: data/com.konstantintutsch.Lock.desktop.in.in:4
+#: data/com.konstantintutsch.Lock.desktop.in.in:3
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
 msgstr "Ключалка"
@@ -747,7 +750,7 @@ msgstr "Изнасяне на публичния ключ във файл"
 msgid "Edit expire date"
 msgstr "Преглеждайте датите на изтичане"
 
-#: data/com.konstantintutsch.Lock.desktop.in.in:12
+#: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr "криптография;шифриране;дешифриране;подписване;потвърждаване;"
 
