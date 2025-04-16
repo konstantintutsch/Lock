@@ -78,7 +78,7 @@ static void lock_selection_dialog_class_init(LockSelectionDialogClass *class)
                                          LockSelectionDialog, key_box);
 
     g_signal_new("entered", G_TYPE_FROM_CLASS(class), G_SIGNAL_RUN_FIRST, 0,
-                 NULL, NULL, g_cclosure_marshal_VOID__OBJECT, G_TYPE_NONE, 1,
+                 NULL, NULL, g_cclosure_marshal_VOID__STRING, G_TYPE_NONE, 1,
                  G_TYPE_STRING);
 }
 
@@ -191,7 +191,7 @@ void lock_selection_dialog_key_selected(GtkButton *self,
 {
     (void)self;
 
-    const gchar *fingerprint = adw_action_row_get_subtitle(ADW_ACTION_ROW(row));
+    const char *fingerprint = adw_action_row_get_subtitle(ADW_ACTION_ROW(row));
     g_signal_emit_by_name(dialog, "entered", fingerprint);
 
     adw_dialog_close(ADW_DIALOG(dialog));
