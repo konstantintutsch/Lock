@@ -85,6 +85,20 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.6.0" date="2025-04-16">
+            <description translate="no">
+                <p>GNOME 48 with</p>
+                <ul>
+                    <li>GTK 4.18</li>
+                    <li>Adwaita 1.7</li>
+                </ul>
+                <p>and improvements:</p>
+                <ul>
+                    <li>GPGME 1.24</li>
+                    <li>Fix crash when reprocessing already processed files</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.5.3" date="2025-04-13">
             <description translate="no">
                 <ul>
