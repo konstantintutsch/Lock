@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-16 11:30+0200\n"
+"POT-Creation-Date: 2025-04-16 11:38+0200\n"
 "PO-Revision-Date: 2025-02-09 17:02+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
@@ -92,52 +92,52 @@ msgstr "Teksti salattu"
 msgid "Files encrypted"
 msgstr "Tiedostot salattu"
 
-#: src/window.c:1039 src/window.c:1119
+#: src/window.c:1040 src/window.c:1120
 msgid "Decryption failed"
 msgstr "Salauksen purkaminen epäonnistui"
 
-#: src/window.c:1041
+#: src/window.c:1042
 msgid "Text decrypted"
 msgstr "Tekstin salaus purettu"
 
-#: src/window.c:1121
+#: src/window.c:1122
 msgid "Files decrypted"
 msgstr "Tiedostojen salaus purettu"
 
-#: src/window.c:1228 src/window.c:1306
+#: src/window.c:1230 src/window.c:1308
 msgid "Signing failed"
 msgstr "Allekirjoittaminen epäonnistui"
 
-#: src/window.c:1230
+#: src/window.c:1232
 msgid "Text signed"
 msgstr "Teksti allekirjoitettu"
 
-#: src/window.c:1308
+#: src/window.c:1310
 msgid "Files signed"
 msgstr "Tiedostot allekirjoitettu"
 
-#: src/window.c:1364
+#: src/window.c:1367
 msgid "Signature invalid"
 msgstr "Virheellinen allekirjoitus"
 
-#: src/window.c:1368
+#: src/window.c:1371
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Kelvollinen allekirjoitus - suorittanut %s"
 
-#: src/window.c:1423
+#: src/window.c:1426
 msgid "valid"
 msgstr "kelvollinen"
 
-#: src/window.c:1423
+#: src/window.c:1426
 msgid "invalid"
 msgstr "epäkelpo"
 
-#: src/window.c:1455
+#: src/window.c:1458
 msgid "At least one invalid signature"
 msgstr "Ainakin yksi virheellinen allekirjoitus"
 
-#: src/window.c:1457
+#: src/window.c:1460
 msgid "Signatures valid"
 msgstr "Allekirjoitukset ovat kelvollisia"
 

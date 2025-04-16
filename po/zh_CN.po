@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-16 11:30+0200\n"
+"POT-Creation-Date: 2025-04-16 11:38+0200\n"
 "PO-Revision-Date: 2025-04-12 23:33+0000\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -92,52 +92,52 @@ msgstr "文本已加密"
 msgid "Files encrypted"
 msgstr "文件已加密"
 
-#: src/window.c:1039 src/window.c:1119
+#: src/window.c:1040 src/window.c:1120
 msgid "Decryption failed"
 msgstr "解密失败"
 
-#: src/window.c:1041
+#: src/window.c:1042
 msgid "Text decrypted"
 msgstr "文本已解密"
 
-#: src/window.c:1121
+#: src/window.c:1122
 msgid "Files decrypted"
 msgstr "文件已解密"
 
-#: src/window.c:1228 src/window.c:1306
+#: src/window.c:1230 src/window.c:1308
 msgid "Signing failed"
 msgstr "签署失败"
 
-#: src/window.c:1230
+#: src/window.c:1232
 msgid "Text signed"
 msgstr "文本已签署"
 
-#: src/window.c:1308
+#: src/window.c:1310
 msgid "Files signed"
 msgstr "文件已签署"
 
-#: src/window.c:1364
+#: src/window.c:1367
 msgid "Signature invalid"
 msgstr "签名无效"
 
-#: src/window.c:1368
+#: src/window.c:1371
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "签名有效 - 由 %s"
 
-#: src/window.c:1423
+#: src/window.c:1426
 msgid "valid"
 msgstr "有效"
 
-#: src/window.c:1423
+#: src/window.c:1426
 msgid "invalid"
 msgstr "无效"
 
-#: src/window.c:1455
+#: src/window.c:1458
 msgid "At least one invalid signature"
 msgstr "至少一个无效签名"
 
-#: src/window.c:1457
+#: src/window.c:1460
 msgid "Signatures valid"
 msgstr "签名有效"
 

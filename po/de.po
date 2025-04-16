@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-16 11:30+0200\n"
+"POT-Creation-Date: 2025-04-16 11:38+0200\n"
 "PO-Revision-Date: 2025-03-22 13:45+0100\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
@@ -92,52 +92,52 @@ msgstr "Text verschlüsselt"
 msgid "Files encrypted"
 msgstr "Dateien verschlüsselt"
 
-#: src/window.c:1039 src/window.c:1119
+#: src/window.c:1040 src/window.c:1120
 msgid "Decryption failed"
 msgstr "Entschlüsselung fehlgeschlagen"
 
-#: src/window.c:1041
+#: src/window.c:1042
 msgid "Text decrypted"
 msgstr "Text entschlüsselt"
 
-#: src/window.c:1121
+#: src/window.c:1122
 msgid "Files decrypted"
 msgstr "Dateien entschlüsselt"
 
-#: src/window.c:1228 src/window.c:1306
+#: src/window.c:1230 src/window.c:1308
 msgid "Signing failed"
 msgstr "Signierung fehlgeschlagen"
 
-#: src/window.c:1230
+#: src/window.c:1232
 msgid "Text signed"
 msgstr "Text signiert"
 
-#: src/window.c:1308
+#: src/window.c:1310
 msgid "Files signed"
 msgstr "Dateien signiert"
 
-#: src/window.c:1364
+#: src/window.c:1367
 msgid "Signature invalid"
 msgstr "Signatur ungültig"
 
-#: src/window.c:1368
+#: src/window.c:1371
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Signatur gültig - von %s"
 
-#: src/window.c:1423
+#: src/window.c:1426
 msgid "valid"
 msgstr "gültig"
 
-#: src/window.c:1423
+#: src/window.c:1426
 msgid "invalid"
 msgstr "ungültig"
 
-#: src/window.c:1455
+#: src/window.c:1458
 msgid "At least one invalid signature"
 msgstr "Mindestens eine ungültige Signatur"
 
-#: src/window.c:1457
+#: src/window.c:1460
 msgid "Signatures valid"
 msgstr "Signaturen gültig"
 

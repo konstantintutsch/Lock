@@ -986,6 +986,7 @@ gboolean lock_window_encrypt_file_on_completed(LockWindow *window)
     adw_toast_set_timeout(toast, 3);
 
     lock_window_cryptography_processing(window, false);
+    lock_window_file_list_clear(NULL, window);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
 
     /* Only execute once */
@@ -1124,6 +1125,7 @@ gboolean lock_window_decrypt_file_on_completed(LockWindow *window)
     adw_toast_set_timeout(toast, 3);
 
     lock_window_cryptography_processing(window, false);
+    lock_window_file_list_clear(NULL, window);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
 
     /* Only execute once */
@@ -1311,6 +1313,7 @@ gboolean lock_window_sign_file_on_completed(LockWindow *window)
     adw_toast_set_timeout(toast, 3);
 
     lock_window_cryptography_processing(window, false);
+    lock_window_file_list_clear(NULL, window);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
 
     /* Only execute once */
@@ -1460,6 +1463,7 @@ gboolean lock_window_verify_file_on_completed(LockWindow *window)
     adw_toast_set_timeout(toast, 3);
 
     lock_window_cryptography_processing(window, false);
+    lock_window_file_list_clear(NULL, window);
     adw_toast_overlay_add_toast(window->toast_overlay, toast);
 
     /* Only execute once */
