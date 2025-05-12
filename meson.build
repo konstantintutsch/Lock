@@ -56,7 +56,7 @@ conf.set('localedir', localedir)
 #
 
 gettext_package = project_id
-gresource_file = datadir / project_id + '.gresource'
+gresource_file = datadir / project_id / project_id + '.gresource'
 ui_resource = project_root / 'ui'
 
 conf.set('gettext_package', gettext_package)

@@ -66,6 +66,6 @@ gnome.compile_resources(
   dependencies: [appstream_file, ui],
   gresource_bundle: true,
   install: true,
-  install_dir: datadir
+  install_dir: datadir / project_id
 )
 
