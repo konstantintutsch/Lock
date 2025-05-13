@@ -85,6 +85,13 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.6.1" date="2025-05-13">
+            <description translate="no">
+                <ul>
+                    <li>Compliance with Filesystem Hierarchy Standard version 3.0</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.6.0" date="2025-04-16">
             <description translate="no">
                 <p>GNOME 48 with</p>
