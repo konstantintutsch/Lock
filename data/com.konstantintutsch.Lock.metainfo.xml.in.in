@@ -85,6 +85,13 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.6.2" date="2025-05-18">
+            <description translate="no">
+                <ul>
+                    <li>Russian translation updated</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.6.1" date="2025-05-13">
             <description translate="no">
                 <ul>
