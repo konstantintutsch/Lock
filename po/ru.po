@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-04-16 11:38+0200\n"
-"PO-Revision-Date: 2025-02-22 22:50+0000\n"
-"Last-Translator: Yaroslav Pronin <proninyaroslav@gmail.com>\n"
+"PO-Revision-Date: 2025-05-18 13:02+0000\n"
+"Last-Translator: Yurt Page <yurtpage@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
 "ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.10.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -68,9 +68,9 @@ msgid "Text pasted"
 msgstr "Текст вставлен"
 
 #: src/window.c:624
-#, fuzzy, c-format
+#, c-format
 msgid "File selected to be opened is not a regular file: %s"
-msgstr "Не удалось открыть выходной файл: %s"
+msgstr "Файл выбранный для открытия не является обычным файлом: %s"
 
 #: src/window.c:777
 msgid "Save files"
