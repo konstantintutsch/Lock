@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-04-16 11:38+0200\n"
-"PO-Revision-Date: 2025-02-06 22:01+0000\n"
-"Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
+"PO-Revision-Date: 2025-06-03 16:53+0000\n"
+"Last-Translator: Mattia Borda <mattiagiovanni.borda@icloud.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/Lock/Application/"
 "it/>\n"
 "Language: it\n"
@@ -17,13 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: src/main.c:32
 #, c-format
 msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
 msgid "GnuPG Made Easy %s or greater required. Using %s."
 msgstr ""
+"È richiesta la versione %s o più recente di GnuPG Made Easy. Quella in uso è "
+"%s."
 
 #. Details
 #: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -39,19 +41,19 @@ msgstr "Traduci"
 #: src/application.c:212
 msgctxt "Button linking to source code"
 msgid "Develop"
-msgstr ""
+msgstr "Sviluppa"
 
 #: src/application.c:224
 msgid "translator-credits"
-msgstr ""
+msgstr "bordam <mattiagiovanni.borda@icloud.com>"
 
 #: src/application.c:229
 msgid "Dependencies"
-msgstr ""
+msgstr "Componenti utilizzati"
 
 #: src/window.c:162
 msgid "Enter text …"
-msgstr ""
+msgstr "Inserire del testo…"
 
 #: src/window.c:491
 msgid "Text copied"
@@ -69,7 +71,7 @@ msgstr "Testo incollato"
 #: src/window.c:624
 #, c-format
 msgid "File selected to be opened is not a regular file: %s"
-msgstr ""
+msgstr "Il file selezionato non è un file regolare: %s"
 
 #: src/window.c:777
 msgid "Save files"
@@ -86,708 +88,716 @@ msgstr "Crittografia non riuscita"
 
 #: src/window.c:906
 msgid "Text encrypted"
-msgstr "Testo crittografato"
+msgstr "Testo crittato"
 
 #: src/window.c:983
 msgid "Files encrypted"
-msgstr "File crittografato"
+msgstr "File crittato"
 
 #: src/window.c:1040 src/window.c:1120
 msgid "Decryption failed"
-msgstr ""
+msgstr "Decrittazione fallita"
 
 #: src/window.c:1042
 msgid "Text decrypted"
-msgstr ""
+msgstr "Testo decrittato"
 
 #: src/window.c:1122
 msgid "Files decrypted"
-msgstr ""
+msgstr "File decrittati"
 
 #: src/window.c:1230 src/window.c:1308
 msgid "Signing failed"
-msgstr ""
+msgstr "Firma non riuscita"
 
 #: src/window.c:1232
 msgid "Text signed"
-msgstr ""
+msgstr "Testo firmato"
 
 #: src/window.c:1310
 msgid "Files signed"
-msgstr ""
+msgstr "File firmati"
 
 #: src/window.c:1367
 msgid "Signature invalid"
-msgstr ""
+msgstr "Firma non valida"
 
 #: src/window.c:1371
 #, c-format
 msgid "Signature valid - by %s"
-msgstr ""
+msgstr "Firma valida - di %s"
 
 #: src/window.c:1426
 msgid "valid"
-msgstr ""
+msgstr "valida"
 
 #: src/window.c:1426
 msgid "invalid"
-msgstr "non valido"
+msgstr "non valida"
 
 #: src/window.c:1458
 msgid "At least one invalid signature"
-msgstr ""
+msgstr "Almeno una firma non è valida"
 
 #: src/window.c:1460
 msgid "Signatures valid"
-msgstr ""
+msgstr "Firme valide"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
-msgstr ""
+msgstr "Importazione non riuscita"
 
 #: src/managementdialog.c:366
 msgid "Keys imported"
-msgstr ""
+msgstr "Chiavi importate"
 
 #: src/managementdialog.c:412
 msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
 msgid "%B %e, %Y"
-msgstr ""
+msgstr "%e %B %Y"
 
 #: src/managementdialog.c:429
 msgid "No expire date"
-msgstr ""
+msgstr "Nessuna data di scadenza"
 
 #: src/managementdialog.c:517
 msgid "Generation failed"
-msgstr ""
+msgstr "Generazione non riuscita"
 
 #: src/managementdialog.c:519
 msgid "Key pair generated"
-msgstr ""
+msgstr "Coppia di chiavi generata"
 
 #: src/keyrow.c:128
 msgid "Key does not expire"
-msgstr ""
+msgstr "La chiave non scade"
 
 #: src/keyrow.c:132
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
-msgstr ""
+msgstr "Scaduta il giorno %s alle %s"
 
 #: src/keyrow.c:134
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
-msgstr ""
+msgstr "Scade il giorno %s alle %s"
 
 #: src/keyrow.c:174
 msgid "Fingerprint copied"
-msgstr ""
+msgstr "Impronta copiata"
 
 #: src/keyrow.c:263
 msgid "Export failed"
-msgstr ""
+msgstr "Esportazione non riuscita"
 
 #: src/keyrow.c:265
 msgid "Key exported"
-msgstr ""
+msgstr "Chiave esportata"
 
 #: src/keyrow.c:310
 msgid "Remove key?"
-msgstr ""
+msgstr "Rimuovere la chiave?"
 
 #: src/keyrow.c:313
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
-msgstr ""
+msgstr "La rimozione della chiave %s non può essere annullata!"
 
 #: src/keyrow.c:316
 msgid "_Cancel"
-msgstr ""
+msgstr "_Annulla"
 
 #: src/keyrow.c:317
 msgid "_Remove"
-msgstr ""
+msgstr "_Rimuovi"
 
 #: src/keyrow.c:358
 msgid "Removal failed"
-msgstr ""
+msgstr "Rimozione non riuscita"
 
 #: src/keyrow.c:360
 msgid "Key removed"
-msgstr ""
+msgstr "Chiave rimossa"
 
 #: src/keyrow.c:410
 msgid "Renewal failed"
-msgstr ""
+msgstr "Rinnovo non riuscito"
 
 #: src/keyrow.c:412
 msgid "Expire date renewed"
-msgstr ""
+msgstr "Data di scadenza rinnovata"
 
 #: src/cryptography.c:29
 #, c-format
 msgid "Failed to create new GPGME context: %s"
-msgstr ""
+msgstr "Impossibile creare il nuovo contesto GPGME: %s"
 
 #: src/cryptography.c:37
 #, c-format
 msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
-msgstr ""
+msgstr "Impossibile impostare il protocollo del contesto GPGME su OpenPGP: %s"
 
 #: src/cryptography.c:46
 #, c-format
 msgid "Failed to set pinentry mode of GPGME context to ask: %s"
 msgstr ""
+"Impossibile impostare la modalità pinentry del contesto GPGME da chiedere: %s"
 
 #: src/cryptography.c:105
 #, c-format
 msgid "Failed to open file for writing: %s"
-msgstr ""
+msgstr "Impossibile aprire il file in scrittura: %s"
 
 #: src/cryptography.c:113
 #, c-format
 msgid "Failed to write to file: %s"
-msgstr ""
+msgstr "Impossibile scrivere nel file: %s"
 
 #: src/cryptography.c:150
 #, c-format
 msgid "Failed to obtain key by fingerprint: %s"
-msgstr ""
+msgstr "Impossibile ottenere la chiave dall'impronta: %s"
 
 #: src/cryptography.c:190
 msgid "Failed to find key matching User ID"
-msgstr ""
+msgstr "Impossibile trovare la chiave cercando l'ID utente"
 
 #: src/cryptography.c:231
 #, c-format
 msgid "Failed to generate new GPG key for signing: %s"
-msgstr ""
+msgstr "Impossibile generare una nuova chiave GPG per la firma: %s"
 
 #: src/cryptography.c:243
 #, c-format
 msgid "Failed to generate new GPG subkey for encryption: %s"
-msgstr ""
+msgstr "Impossibile generare una nuova sottochiave GPG per la crittazione: %s"
 
 #: src/cryptography.c:251
 #, c-format
 msgid "Failed to delete unfinished, generated key: %s"
-msgstr ""
+msgstr "Impossibile eliminare la chiave non completa generata: %s"
 
 #: src/cryptography.c:288
 #, c-format
 msgid "Failed to load GPGME key data from file: %s"
-msgstr ""
+msgstr "Impossibile caricare i dati della chiave GPGME dal file: %s"
 
 #: src/cryptography.c:296
 #, c-format
 msgid "Failed to import GPG key from file: %s"
-msgstr ""
+msgstr "Impossibile importare la chiave GPG dal file: %s"
 
 #: src/cryptography.c:333
 #, c-format
 msgid "Failed to create GPGME key data in memory: %s"
-msgstr ""
+msgstr "Impossibile creare i dati della chiave GPG in memoria: %s"
 
 #: src/cryptography.c:341
 #, c-format
 msgid "Failed to export GPG key(s) to file: %s"
-msgstr ""
+msgstr "Impossibile esportare la/le chiave/i GPG dal file: %s"
 
 #: src/cryptography.c:386
 #, c-format
 msgid "Failed to get GPG key for expire date renewal: %s"
 msgstr ""
+"Impossibile recuperare la chiave GPG per il rinnovo della data di scadenza: "
+"%s"
 
 #: src/cryptography.c:394
 #, c-format
 msgid "Failed to renew the expire date of a key: %s"
-msgstr ""
+msgstr "Impossibile rinnovare la data di scadenza di una chiave: %s"
 
 #: src/cryptography.c:428
 #, c-format
 msgid "Failed to get GPG key for removal: %s"
-msgstr ""
+msgstr "Impossibile ottenere la chiave GPG per la rimozione: %s"
 
 #: src/cryptography.c:436
 #, c-format
 msgid "Failed to remove GPG key: %s"
-msgstr ""
+msgstr "Impossibile rimuovere la chiave GPG: %s"
 
 #: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
 #: src/cryptography.c:659
 #, c-format
 msgid "Failed to create new GPGME input data from string: %s"
-msgstr ""
+msgstr "Impossibile creare nuovi dati di input GPGME dalla stringa: %s"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
 #: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:835
 #: src/cryptography.c:917 src/cryptography.c:1008
 #, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
-msgstr ""
+msgstr "Impossibile creare nuovi dati di output GPGME in memoria: %s"
 
 #: src/cryptography.c:495
 #, c-format
 msgid "Failed to encrypt GPGME data from memory: %s"
-msgstr ""
+msgstr "Impossibile crittare i dati GPGME dalla memoria: %s"
 
 #: src/cryptography.c:551
 #, c-format
 msgid "Failed to decrypt GPGME data from memory: %s"
-msgstr ""
+msgstr "Impossibile decrittare i dati GPGME dalla memoria: %s"
 
 #: src/cryptography.c:610 src/cryptography.c:935
 #, c-format
 msgid "Failed to add signing key to GPGME context: %s"
-msgstr ""
+msgstr "Impossibile aggiungere la chiave con cui firmare al contesto GPGME: %s"
 
 #: src/cryptography.c:619
 #, c-format
 msgid "Failed to sign GPGME data from memory: %s"
-msgstr ""
+msgstr "Impossibile firmare i dati GPGME dalla memoria: %s"
 
 #: src/cryptography.c:676
 msgid "Failed to verify GPGME data from memory"
-msgstr ""
+msgstr "Impossibile verificare i dati GPGME dalla memoria"
 
 #: src/cryptography.c:730 src/cryptography.c:813 src/cryptography.c:895
 #: src/cryptography.c:986
 #, c-format
 msgid "Removed %s to prepare overwriting"
-msgstr ""
+msgstr "Rimosso %s per preparare la sovrascrittura"
 
 #: src/cryptography.c:735 src/cryptography.c:818 src/cryptography.c:900
 #: src/cryptography.c:991
 #, c-format
 msgid "Failed to create new GPGME input data from file: %s"
-msgstr ""
+msgstr "Impossibile creare un nuovi dati di input GPGME dal file: %s"
 
 #: src/cryptography.c:743 src/cryptography.c:826 src/cryptography.c:908
 #: src/cryptography.c:999
 #, c-format
 msgid "Failed to set file name of GPGME input data: %s"
-msgstr ""
+msgstr "Impossibile impostare il nome del file dei dati di input GPGME: %s"
 
 #: src/cryptography.c:761 src/cryptography.c:844 src/cryptography.c:926
 #: src/cryptography.c:1017
 #, c-format
 msgid "Failed to set file name of GPGME output data: %s"
-msgstr ""
+msgstr "Impossibile impostare il nome del file dei dati di output GPGME: %s"
 
 #: src/cryptography.c:772
 #, c-format
 msgid "Failed to encrypt GPGME data from file: %s"
-msgstr ""
+msgstr "Impossibile crittare i dati GPGME dal file: %s"
 
 #: src/cryptography.c:853
 #, c-format
 msgid "Failed to decrypt GPGME data from file: %s"
-msgstr ""
+msgstr "Impossibile decrittare i dati GPGME dal file: %s"
 
 #: src/cryptography.c:944
 #, c-format
 msgid "Failed to sign GPGME data from file: %s"
-msgstr ""
+msgstr "Impossibile firmare i dati GPGME dal file: %s"
 
 #: src/cryptography.c:1026
 #, c-format
 msgid "Failed to verify GPGME data from file: %s"
-msgstr ""
+msgstr "Impossibile verificare i dati GPGME dal file: %s"
 
 #: src/threading.c:57
 msgid "Failed to create text encryption thread"
-msgstr ""
+msgstr "Impossibile creare il thread per la crittazione del testo"
 
 #: src/threading.c:80
 msgid "Failed to create file encryption thread"
-msgstr ""
+msgstr "Impossibile creare il thread per la crittazione del file"
 
 #: src/threading.c:101
 msgid "Failed to create text decryption thread"
-msgstr ""
+msgstr "Impossibile creare il thread per la decrittazione del testo"
 
 #: src/threading.c:121
 msgid "Failed to create file decryption thread"
-msgstr ""
+msgstr "Impossibile creare il thread per la decrittazione del file"
 
 #: src/threading.c:143
 msgid "Failed to create text signing thread"
-msgstr ""
+msgstr "Impossibile creare il thread per la firma del testo"
 
 #: src/threading.c:166
 msgid "Failed to create file signing thread"
-msgstr ""
+msgstr "Impossibile creare il thread per la firma del file"
 
 #: src/threading.c:187
 msgid "Failed to create text verification thread"
-msgstr ""
+msgstr "Impossibile creare il thread per la verifica del testo"
 
 #: src/threading.c:207
 msgid "Failed to create file verification thread"
-msgstr ""
+msgstr "Impossibile creare il thread per la verifica del file"
 
 #: src/threading.c:222
 msgid "Failed to create key import thread"
-msgstr ""
+msgstr "Impossibile creare il thread per l'importazione della chiave"
 
 #: src/threading.c:244
 msgid "Failed to create key pair generation thread"
-msgstr ""
+msgstr "Impossibile creare il thread per la generazione della coppia di chiavi"
 
 #: src/threading.c:259
 msgid "Failed to create key export thread"
-msgstr ""
+msgstr "Impossibile creare il thread per l'esportazione della chiave"
 
 #: src/threading.c:271
 msgid "Failed to create key removal thread"
-msgstr ""
+msgstr "Impossibile creare il thread per la rimozione della chiave"
 
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
 msgid "General"
-msgstr ""
+msgstr "Generali"
 
 #: data/ui/shortcuts.blp:13
 msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
-msgstr ""
+msgstr "Mostra scorciatoie"
 
 #: data/ui/shortcuts.blp:20
 msgid "Copy text view to clipboard"
-msgstr ""
+msgstr "Copia il testo visualizzato negli appunti"
 
 #: data/ui/shortcuts.blp:27
 msgid "Overwrite text view with clipboard"
-msgstr ""
+msgstr "Sostituisci il testo visualizzato con gli appunti"
 
 #: data/ui/shortcuts.blp:35
 msgctxt "Shortcuts Group"
 msgid "Cryptography"
-msgstr ""
+msgstr "Crittografia"
 
 #: data/ui/shortcuts.blp:38
 msgid "Encrypt text"
-msgstr ""
+msgstr "Critta il testo"
 
 #: data/ui/shortcuts.blp:45
 msgid "Decrypt text"
-msgstr ""
+msgstr "Decritta il testo"
 
 #: data/ui/shortcuts.blp:52
 msgid "Sign text"
-msgstr ""
+msgstr "Firma il testo"
 
 #: data/ui/shortcuts.blp:59
 msgid "Verify text"
-msgstr ""
+msgstr "Verifica il testo"
 
 #: data/ui/window.blp:9 data/ui/window.blp:197
 #: data/com.konstantintutsch.Lock.desktop.in.in:3
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
-msgstr ""
+msgstr "Lucchetto"
 
 #: data/ui/window.blp:29
 msgid "Copy"
-msgstr ""
+msgstr "Copia"
 
 #: data/ui/window.blp:30
 msgid "Copy the text"
-msgstr ""
+msgstr "Copia il testo"
 
 #: data/ui/window.blp:33
 msgid "Cryptography operations"
-msgstr ""
+msgstr "Operazioni crittografiche"
 
 #: data/ui/window.blp:50
 msgid "Processing …"
-msgstr ""
+msgstr "Elaborazione …"
 
 #: data/ui/window.blp:55
 msgid "Main Menu"
-msgstr ""
+msgstr "Menu principale"
 
 #: data/ui/window.blp:66
 msgid "Text"
-msgstr ""
+msgstr "Testo"
 
 #: data/ui/window.blp:84 data/ui/filerow.blp:5
 msgid "File"
-msgstr ""
+msgstr "File"
 
 #: data/ui/window.blp:109
 msgid "No open files"
-msgstr ""
+msgstr "Nessun file aperto"
 
 #: data/ui/window.blp:110
 msgid "No files have been opened for processing"
-msgstr ""
+msgstr "Nessun file è stato aperto per l’elaborazione"
 
 #: data/ui/window.blp:130
 msgid "Open"
-msgstr ""
+msgstr "Apri"
 
 #: data/ui/window.blp:131
 msgid "Open files for processing"
-msgstr ""
+msgstr "Apri i file da elaborare"
 
 #: data/ui/window.blp:141
 msgid "Clear"
-msgstr ""
+msgstr "Pulisci"
 
 #: data/ui/window.blp:142
 msgid "Close all open files"
-msgstr ""
+msgstr "Chiudi tutti i file aperto"
 
 #: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
-msgstr ""
+msgstr "Critta"
 
 #: data/ui/window.blp:164 data/ui/window.blp:226
 msgid "Decrypt"
-msgstr ""
+msgstr "Decritta"
 
 #: data/ui/window.blp:171 data/ui/window.blp:232
 msgid "Sign"
-msgstr ""
+msgstr "Firma"
 
 #: data/ui/window.blp:178 data/ui/window.blp:244
 msgid "Verify"
-msgstr ""
+msgstr "Verifica"
 
 #: data/ui/window.blp:203 data/ui/managementdialog.blp:30
 msgid "Manage keys"
-msgstr ""
+msgstr "Gestisci chiavi"
 
 #: data/ui/window.blp:209
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Scorciatoie da tastiera"
 
 #: data/ui/window.blp:213
 msgid "About Lock"
-msgstr ""
+msgstr "Informazioni su Lucchetto"
 
 #: data/ui/window.blp:236
 msgid "Sign (Clear Text)"
-msgstr ""
+msgstr "Firma (testo non crittato)"
 
 #: data/ui/window.blp:240
 msgid "Sign (Detached)"
-msgstr ""
+msgstr "Firma (indipendente)"
 
 #: data/ui/filerow.blp:18
 msgid "Close file"
-msgstr ""
+msgstr "Chiudi il file"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
-msgstr ""
+msgstr "Seleziona chiave"
 
 #: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
 msgid "Refresh keys"
-msgstr ""
+msgstr "Aggiorna le chiavi"
 
 #: data/ui/selectiondialog.blp:68
 msgid "No capable keys available"
-msgstr ""
+msgstr "Nessuna chiave adatta disponibile"
 
 #: data/ui/selectiondialog.blp:69
 msgid ""
 "Your GnuPG keyring does not contain any keys that support this functionality."
 msgstr ""
+"Il tuo portachiavi GnuPG non contiene chiavi che supportano questa "
+"funzionalità."
 
 #: data/ui/managementdialog.blp:68
 msgid "No keys available"
-msgstr ""
+msgstr "Nessuna chiave disponibile"
 
 #: data/ui/managementdialog.blp:69
 msgid "Your GnuPG keyring does not contain any keys."
-msgstr ""
+msgstr "Il tuo portachiavi GnuPG non contiene nessuna chiave."
 
 #: data/ui/managementdialog.blp:89
 msgctxt "Import keys from files"
 msgid "Import"
-msgstr ""
+msgstr "Importa"
 
 #: data/ui/managementdialog.blp:90
 msgid "Import keys from files"
-msgstr ""
+msgstr "Importa chiavi da file"
 
 #: data/ui/managementdialog.blp:97
 msgid "Create a new keypair"
-msgstr ""
+msgstr "Crea nuova coppia di chiavi"
 
 #: data/ui/managementdialog.blp:110
 msgid "Generate keypair"
-msgstr ""
+msgstr "Genera coppia di chiavi"
 
 #: data/ui/managementdialog.blp:141
 msgctxt "Name of the UID of the new keypair"
 msgid "Name (Mandatory)"
-msgstr ""
+msgstr "Nome (obbligatorio)"
 
 #: data/ui/managementdialog.blp:146
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: data/ui/managementdialog.blp:151
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
-msgstr ""
+msgstr "Commento"
 
 #: data/ui/managementdialog.blp:156
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
-msgstr ""
+msgstr "Algoritmo di firma"
 
 #: data/ui/managementdialog.blp:157
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
-msgstr ""
+msgstr "Chiave"
 
 #: data/ui/managementdialog.blp:165
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
-msgstr ""
+msgstr "Algoritmo di crittografia"
 
 #: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
-msgstr ""
+msgstr "Sottochiave"
 
 #: data/ui/managementdialog.blp:174
 msgctxt "Expire date of the new key pair"
 msgid "Expire Date"
-msgstr ""
+msgstr "Data di scadenza"
 
 #: data/ui/managementdialog.blp:184
 msgid "Remove expire date"
-msgstr ""
+msgstr "Rimuovi data di scadenza"
 
 #: data/ui/managementdialog.blp:192
 msgid "Select expire date of the new key pair"
-msgstr ""
+msgstr "Seleziona la data di scadenza della nuova coppia di chiavi"
 
 #: data/ui/managementdialog.blp:213
 msgctxt "Generate a new keypair"
 msgid "Generate"
-msgstr ""
+msgstr "Genera"
 
 #: data/ui/managementdialog.blp:214
 msgid "Generate a new keypair"
-msgstr ""
+msgstr "Genera una nuova coppia di chiavi"
 
 #: data/ui/keyrow.blp:5
 msgid "User ID"
-msgstr ""
+msgstr "ID utente"
 
 #: data/ui/keyrow.blp:6
 msgid "Fingerprint"
-msgstr ""
+msgstr "Impronta"
 
 #: data/ui/keyrow.blp:7
 msgid "Expiry"
-msgstr ""
+msgstr "Scadenza"
 
 #: data/ui/keyrow.blp:20
 msgid "Remove key"
-msgstr ""
+msgstr "Rimuove la chiave"
 
 #: data/ui/keyrow.blp:27
 msgid "Export public key to file"
-msgstr ""
+msgstr "Esporta la chiave pubblica in un file"
 
 #: data/ui/keyrow.blp:38
 msgid "Edit expire date"
-msgstr ""
+msgstr "Modifica data di scadenza"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
 msgstr ""
+"gpg;gnupg;cryptography;crittografia;openpgp;encrypt;criptare;crittare;cifrare;decrypt;decriptare;decrittare;decifrare;sign;firmare;verify;verificare;"
+""
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
 msgid ""
 "Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
 "LibAdwaita GUI."
 msgstr ""
+"Lucchetto è una gradevole interfaccia grafica LibAdwaita per GnuPG (GPG)."
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
 msgid "Process text and files:"
-msgstr ""
+msgstr "Elabora testo e file:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:75
 msgid "Encryption"
-msgstr ""
+msgstr "Crittazione"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
 msgid "Decryption"
-msgstr ""
+msgstr "Decrittazione"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:14
 msgid "Signing"
-msgstr ""
+msgstr "Firma"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:15
 msgid "Verification"
-msgstr ""
+msgstr "Verifica"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:17
 msgid "Manage your GnuPG keyring:"
-msgstr ""
+msgstr "Gestisci il tuo portachiavi GnuPG:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
 msgid "Generate new key pairs"
-msgstr ""
+msgstr "Genera nuove coppie di chiavi"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
 msgid "Import keys"
-msgstr ""
+msgstr "Importa chiavi"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:21
 msgid "Export public keys"
-msgstr ""
+msgstr "Esporta chiavi pubbliche"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
 msgid "View expire dates"
-msgstr ""
+msgstr "Visualizza date di scadenza"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
 msgid "Update expire dates of expired keys"
-msgstr ""
+msgstr "Aggiorna date di scadenza di chiavi scadute"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
-msgstr ""
+msgstr "Rimuovi chiavi"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:47
 msgid "Light Appearance"
-msgstr ""
+msgstr "Tema chiaro"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:51
 msgid "Dark Appearance"
-msgstr ""
+msgstr "Tema scuro"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:55
 msgid "Key Management"
-msgstr ""
+msgstr "Gestione chiavi"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:59
 msgid "Keypair Generation"
-msgstr ""
+msgstr "Generazione di coppie di chiavi"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:63
 msgid "File processing"
-msgstr ""
+msgstr "Elaborazione di file"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:67
 msgid "Plain text"
-msgstr ""
+msgstr "Testo semplice"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
-msgstr ""
+msgstr "Finestra di selezione chiave"
