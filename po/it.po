@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-04-16 11:38+0200\n"
-"PO-Revision-Date: 2025-06-03 16:53+0000\n"
+"PO-Revision-Date: 2025-06-11 17:53+0000\n"
 "Last-Translator: Mattia Borda <mattiagiovanni.borda@icloud.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/Lock/Application/"
 "it/>\n"
@@ -92,7 +92,7 @@ msgstr "Testo crittato"
 
 #: src/window.c:983
 msgid "Files encrypted"
-msgstr "File crittato"
+msgstr "File crittati"
 
 #: src/window.c:1040 src/window.c:1120
 msgid "Decryption failed"
