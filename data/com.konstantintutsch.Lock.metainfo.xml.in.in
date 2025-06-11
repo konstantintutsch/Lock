@@ -85,6 +85,14 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.6.3" date="2025-06-11">
+            <description translate="no">
+                <ul>
+                    <li>Key list not filling key management dialog fixed</li>
+                    <li>Italian translation updated</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.6.2" date="2025-05-18">
             <description translate="no">
                 <ul>
