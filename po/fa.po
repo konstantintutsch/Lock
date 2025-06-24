@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-04-16 11:38+0200\n"
-"PO-Revision-Date: 2024-12-31 09:00+0000\n"
-"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
+"PO-Revision-Date: 2025-06-25 12:01+0000\n"
+"Last-Translator: Reza Hosseinzadeh <rezahsnzdh@protonmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
 "fa/>\n"
 "Language: fa\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -67,18 +67,18 @@ msgid "Text pasted"
 msgstr "متن چسبانده شد"
 
 #: src/window.c:624
-#, fuzzy, c-format
+#, c-format
 msgid "File selected to be opened is not a regular file: %s"
-msgstr "باز کردن پروندهٔ خروجی شکست خورد: %s"
+msgstr "پرونده‌ای که برای باز شدن انتخاب شده پرونده‌ای عادی نیست: %s"
 
 #: src/window.c:777
 msgid "Save files"
-msgstr ""
+msgstr "ذخیرهٔ پرونده‌ها"
 
 #: src/window.c:778
 msgctxt "Save files"
 msgid "Save"
-msgstr ""
+msgstr "ذخیره"
 
 #: src/window.c:904 src/window.c:981
 msgid "Encryption failed"
@@ -89,9 +89,8 @@ msgid "Text encrypted"
 msgstr "متن رمزگذاری شد"
 
 #: src/window.c:983
-#, fuzzy
 msgid "Files encrypted"
-msgstr "پرونده رمزگذاری شد"
+msgstr "پرونده‌ها رمزگذاری شدند"
 
 #: src/window.c:1040 src/window.c:1120
 msgid "Decryption failed"
@@ -102,9 +101,8 @@ msgid "Text decrypted"
 msgstr "متن رمزگشایی شد"
 
 #: src/window.c:1122
-#, fuzzy
 msgid "Files decrypted"
-msgstr "پرونده رمزگشایی شد"
+msgstr "پرونده‌ها رمزگشایی شدند"
 
 #: src/window.c:1230 src/window.c:1308
 msgid "Signing failed"
@@ -115,9 +113,8 @@ msgid "Text signed"
 msgstr "متن امضا شد"
 
 #: src/window.c:1310
-#, fuzzy
 msgid "Files signed"
-msgstr "پرونده امضا شد"
+msgstr "پرونده‌ها امضا شدند"
 
 #: src/window.c:1367
 msgid "Signature invalid"
@@ -130,15 +127,15 @@ msgstr "امضا معتبر است - توسط %s"
 
 #: src/window.c:1426
 msgid "valid"
-msgstr ""
+msgstr "معتبر"
 
 #: src/window.c:1426
 msgid "invalid"
-msgstr ""
+msgstr "نامعتبر"
 
 #: src/window.c:1458
 msgid "At least one invalid signature"
-msgstr ""
+msgstr "حداقل یک امضای نامعتبر"
 
 #: src/window.c:1460
 #, fuzzy
@@ -156,7 +153,7 @@ msgstr "کلیدها وارد شدند"
 #: src/managementdialog.c:412
 msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
 msgid "%B %e, %Y"
-msgstr ""
+msgstr "%B %e، %Y"
 
 #: src/managementdialog.c:429
 msgid "No expire date"
@@ -232,24 +229,24 @@ msgid "Expire date renewed"
 msgstr "تاریخ انقضا تجدید شد"
 
 #: src/cryptography.c:29
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME context: %s"
-msgstr "ساختن محتوای جدید GPGME شکست خورد"
+msgstr "ساختن محتوای جدید GPGME شکست خورد: %s"
 
 #: src/cryptography.c:37
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
-msgstr "تنظیم کردن شیوه‌نامهٔ محتوای GPGME به اپن‌پی‌جی‌پی شکست خورد"
+msgstr "تنظیم کردن شیوه‌نامهٔ محتوای GPGME به اپن‌پی‌جی‌پی شکست خورد: %s"
 
 #: src/cryptography.c:46
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set pinentry mode of GPGME context to ask: %s"
-msgstr "تنظیم کردن شیوه‌نامهٔ محتوای GPGME به اپن‌پی‌جی‌پی شکست خورد"
+msgstr "تنظیم کردن حالت پیننتریِ محتوای GPGME برای پرسش شکست خورد: %s"
 
 #: src/cryptography.c:105
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to open file for writing: %s"
-msgstr "ساختن رشتهٔ امضا کردن پرونده شکست خورد"
+msgstr "باز کردن پرونده برای نوشتن شکست خورد: %s"
 
 #: src/cryptography.c:113
 #, c-format
@@ -257,63 +254,63 @@ msgid "Failed to write to file: %s"
 msgstr "شکست در نوشتن روی پرونده: %s"
 
 #: src/cryptography.c:150
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to obtain key by fingerprint: %s"
-msgstr "گرفتن کلید با اثر انگشت شکست خورد"
+msgstr "گرفتن کلید با اثر انگشت شکست خورد: %s"
 
 #: src/cryptography.c:190
 msgid "Failed to find key matching User ID"
 msgstr "پیدا کردن کلیدی که با شناسهٔ کاربری مطابقت داشته باشد شکست خورد"
 
 #: src/cryptography.c:231
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to generate new GPG key for signing: %s"
-msgstr "ساختن کلید جی‌پی‌جی جدید برای امضا کردن شکست خورد"
+msgstr "ساختن کلید جی‌پی‌جی جدید برای امضا کردن شکست خورد: %s"
 
 #: src/cryptography.c:243
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to generate new GPG subkey for encryption: %s"
-msgstr "ساختن کلید جی‌پی‌جی جدید برای امضا کردن شکست خورد"
+msgstr "ساختن زیرکلید جی‌پی‌جی جدید برای امضا کردن شکست خورد: %s"
 
 #: src/cryptography.c:251
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to delete unfinished, generated key: %s"
-msgstr "بروزرسانی تاریخ انقضای کلیدهای منقضی‌شده"
+msgstr "حذف کردن کلید تولیدشدهٔ ناتمام شکست خورد: %s"
 
 #: src/cryptography.c:288
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to load GPGME key data from file: %s"
-msgstr "بار کردن دادهٔ کلید GPGME از پرونده شکست خورد"
+msgstr "بار کردن دادهٔ کلید GPGME از پرونده شکست خورد: %s"
 
 #: src/cryptography.c:296
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to import GPG key from file: %s"
-msgstr "وارد کردن کلید جی‌پی‌جی از پرونده شکست خورد"
+msgstr "وارد کردن کلید جی‌پی‌جی از پرونده شکست خورد: %s"
 
 #: src/cryptography.c:333
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create GPGME key data in memory: %s"
-msgstr "ساختن دادهٔ کلید GPGME در حافظه شکست خورد"
+msgstr "ساختن دادهٔ کلید GPGME در حافظه شکست خورد: %s"
 
 #: src/cryptography.c:341
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to export GPG key(s) to file: %s"
-msgstr "صادر کردن کلید(های) جی‌پی‌جی به پرونده شکست خورد"
+msgstr "صادر کردن کلید(های) جی‌پی‌جی به پرونده شکست خورد: %s"
 
 #: src/cryptography.c:386
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for expire date renewal: %s"
-msgstr "وارد کردن کلید جی‌پی‌جی از پرونده شکست خورد"
+msgstr "دریافت کردن کلید جی‌پی‌جی برای بروزرسانی تاریخ انقضاء شکست خورد: %s"
 
 #: src/cryptography.c:394
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to renew the expire date of a key: %s"
-msgstr "بروزرسانی تاریخ انقضای کلیدهای منقضی‌شده"
+msgstr "بروزرسانی تاریخ انقضای یک کلید شکست خورد: %s"
 
 #: src/cryptography.c:428
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for removal: %s"
-msgstr "ساختن کلید جی‌پی‌جی جدید برای امضا کردن شکست خورد"
+msgstr "دریافت کلید برای حذف شکست خورد: %s"
 
 #: src/cryptography.c:436
 #, c-format
@@ -322,36 +319,36 @@ msgstr "شکست در برداشتن کلید جی‌پی‌جی: %s"
 
 #: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
 #: src/cryptography.c:659
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME input data from string: %s"
-msgstr "ساختن دادهٔ ورودی جدید GPGME از پرونده شکست خورد"
+msgstr "ساختن دادهٔ ورودی جدید GPGME از رشته شکست خورد: %s"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
 #: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:835
 #: src/cryptography.c:917 src/cryptography.c:1008
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
-msgstr "ساختن دادهٔ کلید GPGME در حافظه شکست خورد"
+msgstr "ساختن دادهٔ خروجی جدید کلید GPGME در حافظه شکست خورد: %s"
 
 #: src/cryptography.c:495
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to encrypt GPGME data from memory: %s"
-msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
+msgstr "رمزگذاری دادهٔ GPGME از حافظه شکست خورد: %s"
 
 #: src/cryptography.c:551
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to decrypt GPGME data from memory: %s"
-msgstr "رمزگشایی دادهٔ GPGME از حافظه شکست خورد"
+msgstr "رمزگشایی دادهٔ GPGME از حافظه شکست خورد: %s"
 
 #: src/cryptography.c:610 src/cryptography.c:935
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to add signing key to GPGME context: %s"
-msgstr "اضافه کردن کلید امضا به محتوای GPGME شکست خورد"
+msgstr "اضافه کردن کلید امضا به محتوای GPGME شکست خورد: %s"
 
 #: src/cryptography.c:619
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to sign GPGME data from memory: %s"
-msgstr "امضا کردن دادهٔ GPGME از حافظه شکست خورد"
+msgstr "امضا کردن دادهٔ GPGME از حافظه شکست خورد: %s"
 
 #: src/cryptography.c:676
 msgid "Failed to verify GPGME data from memory"
@@ -365,41 +362,41 @@ msgstr "%s برای بازنویسی حذف شد"
 
 #: src/cryptography.c:735 src/cryptography.c:818 src/cryptography.c:900
 #: src/cryptography.c:991
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME input data from file: %s"
-msgstr "ساختن دادهٔ ورودی جدید GPGME از پرونده شکست خورد"
+msgstr "ساختن دادهٔ ورودی جدید GPGME از پرونده شکست خورد: %s"
 
 #: src/cryptography.c:743 src/cryptography.c:826 src/cryptography.c:908
 #: src/cryptography.c:999
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set file name of GPGME input data: %s"
-msgstr "تنظیم کردن نام پروندهٔ دادهٔ ورودی GPGME شکست خورد"
+msgstr "تنظیم کردن نام پروندهٔ دادهٔ ورودی GPGME شکست خورد: %s"
 
 #: src/cryptography.c:761 src/cryptography.c:844 src/cryptography.c:926
 #: src/cryptography.c:1017
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set file name of GPGME output data: %s"
-msgstr "تنظیم کردن نام پروندهٔ دادهٔ ورودی GPGME شکست خورد"
+msgstr "تنظیم کردن نام پروندهٔ دادهٔ خروجی GPGME شکست خورد: %s"
 
 #: src/cryptography.c:772
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to encrypt GPGME data from file: %s"
-msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
+msgstr "رمزگذاری دادهٔ GPGME از پرونده شکست خورد: %s"
 
 #: src/cryptography.c:853
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to decrypt GPGME data from file: %s"
-msgstr "رمزنگاری دادهٔ GPGME از حافظه شکست خورد"
+msgstr "رمزگشایی دادهٔ GPGME از پرونده شکست خورد: %s"
 
 #: src/cryptography.c:944
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to sign GPGME data from file: %s"
-msgstr "امضا کردن دادهٔ GPGME از پرونده شکست خورد"
+msgstr "امضا کردن دادهٔ GPGME از پرونده شکست خورد: %s"
 
 #: src/cryptography.c:1026
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to verify GPGME data from file: %s"
-msgstr "اعتبارسنجی دادهٔ GPGME از پرونده شکست خورد"
+msgstr "اعتبارسنجی دادهٔ GPGME از پرونده شکست خورد: %s"
 
 #: src/threading.c:57
 msgid "Failed to create text encryption thread"
@@ -438,9 +435,8 @@ msgid "Failed to create key import thread"
 msgstr "ساختن رشتهٔ وارد کردن کلید شکست خورد"
 
 #: src/threading.c:244
-#, fuzzy
 msgid "Failed to create key pair generation thread"
-msgstr "ساختن رشتهٔ تولید کلید شکست خورد"
+msgstr "ساختن ریسمان تولید جفت‌کلید شکست خورد"
 
 #: src/threading.c:259
 msgid "Failed to create key export thread"
@@ -525,29 +521,27 @@ msgstr "پرونده"
 
 #: data/ui/window.blp:109
 msgid "No open files"
-msgstr ""
+msgstr "پرونده‌ای باز نیست"
 
 #: data/ui/window.blp:110
-#, fuzzy
 msgid "No files have been opened for processing"
-msgstr "پرونده‌ای برای پردازش انتخاب نشده است"
+msgstr "پرونده‌ای برای پردازش باز نشده است"
 
 #: data/ui/window.blp:130
 msgid "Open"
-msgstr ""
+msgstr "باز کردن"
 
 #: data/ui/window.blp:131
-#, fuzzy
 msgid "Open files for processing"
-msgstr "پرونده‌ای برای پردازش انتخاب نشده است"
+msgstr "باز کردن پرونده‌ها برای پردازش کردن"
 
 #: data/ui/window.blp:141
 msgid "Clear"
-msgstr ""
+msgstr "پاک کردن"
 
 #: data/ui/window.blp:142
 msgid "Close all open files"
-msgstr ""
+msgstr "بستن همهٔ پرونده‌های باز"
 
 #: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
@@ -587,7 +581,7 @@ msgstr "امضا (جداشده)"
 
 #: data/ui/filerow.blp:18
 msgid "Close file"
-msgstr ""
+msgstr "بستن پرونده"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
@@ -676,9 +670,8 @@ msgid "Remove expire date"
 msgstr "برداشتن تاریخ انقضا"
 
 #: data/ui/managementdialog.blp:192
-#, fuzzy
 msgid "Select expire date of the new key pair"
-msgstr "تولید کردن یک جفت‌کلید جدید"
+msgstr "انتخاب تاریخ انقضاء جفت‌کلید جدید"
 
 #: data/ui/managementdialog.blp:213
 msgctxt "Generate a new keypair"
