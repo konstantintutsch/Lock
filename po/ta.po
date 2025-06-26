@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-04-16 11:38+0200\n"
-"PO-Revision-Date: 2025-01-13 07:01+0000\n"
+"PO-Revision-Date: 2025-06-27 03:05+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/Lock/Application/"
 "ta/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -40,7 +40,7 @@ msgstr "மொழிபெயர்த்திடு"
 #: src/application.c:212
 msgctxt "Button linking to source code"
 msgid "Develop"
-msgstr "உருவாக்கு"
+msgstr "மேம்படுத்து"
 
 #: src/application.c:224
 msgid "translator-credits"
@@ -70,16 +70,16 @@ msgstr "உரை ஒட்டப்பட்டது"
 #: src/window.c:624
 #, c-format
 msgid "File selected to be opened is not a regular file: %s"
-msgstr ""
+msgstr "திறக்க தேர்ந்தெடுக்கப்பட்ட கோப்பு வழக்கமான கோப்பு அல்ல: %s"
 
 #: src/window.c:777
 msgid "Save files"
-msgstr ""
+msgstr "கோப்புகளை சேமிக்கவும்"
 
 #: src/window.c:778
 msgctxt "Save files"
 msgid "Save"
-msgstr ""
+msgstr "சேமி"
 
 #: src/window.c:904 src/window.c:981
 msgid "Encryption failed"
@@ -87,12 +87,11 @@ msgstr "குறியாக்கம் தோல்வியடைந்த�
 
 #: src/window.c:906
 msgid "Text encrypted"
-msgstr "உரை குறியாக்கம்"
+msgstr "உரை குறியாக்கப்பட்டது"
 
 #: src/window.c:983
-#, fuzzy
 msgid "Files encrypted"
-msgstr "கோப்பு குறியாக்கம் செய்யப்பட்டது"
+msgstr "கோப்புகள் குறியாக்கம் செய்யப்பட்டன"
 
 #: src/window.c:1040 src/window.c:1120
 msgid "Decryption failed"
@@ -103,9 +102,8 @@ msgid "Text decrypted"
 msgstr "உரை மறைகுறியாக்கப்பட்டது"
 
 #: src/window.c:1122
-#, fuzzy
 msgid "Files decrypted"
-msgstr "கோப்பு மறைகுறியாக்கப்பட்டது"
+msgstr "மறைகுறியாக்கப்பட்ட கோப்புகள்"
 
 #: src/window.c:1230 src/window.c:1308
 msgid "Signing failed"
@@ -116,9 +114,8 @@ msgid "Text signed"
 msgstr "உரை கையொப்பமிடப்பட்டது"
 
 #: src/window.c:1310
-#, fuzzy
 msgid "Files signed"
-msgstr "கோப்பு கையொப்பமிடப்பட்டது"
+msgstr "கையொப்பமிடப்பட்ட கோப்புகள்"
 
 #: src/window.c:1367
 msgid "Signature invalid"
@@ -131,20 +128,19 @@ msgstr "கையொப்பம் செல்லுபடியாகும�
 
 #: src/window.c:1426
 msgid "valid"
-msgstr ""
+msgstr "செல்லுபடியாகும்"
 
 #: src/window.c:1426
 msgid "invalid"
-msgstr ""
+msgstr "செல்லுபடியாகாத"
 
 #: src/window.c:1458
 msgid "At least one invalid signature"
-msgstr ""
+msgstr "குறைந்தது ஒரு தவறான கையொப்பம்"
 
 #: src/window.c:1460
-#, fuzzy
 msgid "Signatures valid"
-msgstr "கையொப்பம் தவறானது"
+msgstr "கையொப்பங்கள் செல்லுபடியாகும்"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
@@ -179,13 +175,13 @@ msgstr "விசை காலாவதியாகாது"
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
-msgstr "%s காலாவதியானது"
+msgstr "%s காலாவதியானது %s"
 
 #: src/keyrow.c:134
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
-msgstr "%s இல் %s இல் காலாவதியாகிறது"
+msgstr "%s இல் %s காலாவதியாகிறது"
 
 #: src/keyrow.c:174
 msgid "Fingerprint copied"
@@ -525,29 +521,27 @@ msgstr "கோப்பு"
 
 #: data/ui/window.blp:109
 msgid "No open files"
-msgstr ""
+msgstr "திறந்த கோப்புகள் இல்லை"
 
 #: data/ui/window.blp:110
-#, fuzzy
 msgid "No files have been opened for processing"
-msgstr "செயலாக்க கோப்புகள் எதுவும் தேர்ந்தெடுக்கப்படவில்லை"
+msgstr "செயலாக்க கோப்புகள் எதுவும் திறக்கப்படவில்லை"
 
 #: data/ui/window.blp:130
 msgid "Open"
-msgstr ""
+msgstr "திற"
 
 #: data/ui/window.blp:131
-#, fuzzy
 msgid "Open files for processing"
-msgstr "செயலாக்க கோப்புகள் எதுவும் தேர்ந்தெடுக்கப்படவில்லை"
+msgstr "செயலாக்க கோப்புகளைத் திறக்கவும்"
 
 #: data/ui/window.blp:141
 msgid "Clear"
-msgstr ""
+msgstr "தெளிவான"
 
 #: data/ui/window.blp:142
 msgid "Close all open files"
-msgstr ""
+msgstr "அனைத்து திறந்த கோப்புகளையும் மூடு"
 
 #: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
@@ -587,7 +581,7 @@ msgstr "அடையாளம் (பிரிக்கப்பட்ட)"
 
 #: data/ui/filerow.blp:18
 msgid "Close file"
-msgstr ""
+msgstr "கோப்பை மூடு"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
