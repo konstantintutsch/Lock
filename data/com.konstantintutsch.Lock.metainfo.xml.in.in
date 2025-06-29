@@ -85,6 +85,14 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.6.4" date="2025-06-29">
+            <description translate="no">
+                <ul>
+                    <li>Persian translation updated</li>
+                    <li>Tamil translation updated</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.6.3" date="2025-06-11">
             <description translate="no">
                 <ul>
