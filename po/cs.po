@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-04-16 11:38+0200\n"
-"PO-Revision-Date: 2024-12-24 09:00+0000\n"
+"PO-Revision-Date: 2025-07-01 11:01+0000\n"
 "Last-Translator: Klára Holubová <witt087@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/Lock/Application/"
 "cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -67,9 +67,9 @@ msgid "Text pasted"
 msgstr "Text vložen"
 
 #: src/window.c:624
-#, fuzzy, c-format
+#, c-format
 msgid "File selected to be opened is not a regular file: %s"
-msgstr "Selhalo otevření výstupního souboru: %s"
+msgstr "Typ otevíraného souboru není standardní: %s"
 
 #: src/window.c:777
 msgid "Save files"
@@ -89,9 +89,8 @@ msgid "Text encrypted"
 msgstr "Text zašifrován"
 
 #: src/window.c:983
-#, fuzzy
 msgid "Files encrypted"
-msgstr "Soubor zašifrován"
+msgstr "Soubory zašifrovány"
 
 #: src/window.c:1040 src/window.c:1120
 msgid "Decryption failed"
@@ -102,9 +101,8 @@ msgid "Text decrypted"
 msgstr "Text rozšifrován"
 
 #: src/window.c:1122
-#, fuzzy
 msgid "Files decrypted"
-msgstr "Soubor rozšifrován"
+msgstr "Soubory rozšifrovány"
 
 #: src/window.c:1230 src/window.c:1308
 msgid "Signing failed"
@@ -115,9 +113,8 @@ msgid "Text signed"
 msgstr "Text podepsán"
 
 #: src/window.c:1310
-#, fuzzy
 msgid "Files signed"
-msgstr "Soubor podepsán"
+msgstr "Soubory podepsány"
 
 #: src/window.c:1367
 msgid "Signature invalid"
@@ -141,9 +138,8 @@ msgid "At least one invalid signature"
 msgstr ""
 
 #: src/window.c:1460
-#, fuzzy
 msgid "Signatures valid"
-msgstr "Neplatný podpis"
+msgstr "Platné podpisy"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
@@ -242,9 +238,9 @@ msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
 msgstr "Selhalo nastavení protokolu GPGME kontextu na OpenPGP: %s"
 
 #: src/cryptography.c:46
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set pinentry mode of GPGME context to ask: %s"
-msgstr "nastavení pinentry módu GPGME kontextu na zeptání se"
+msgstr "Nepodařilo se nastavit pinetry mód GPGME kontextu k zeptání: %s"
 
 #: src/cryptography.c:105
 #, c-format
@@ -257,34 +253,33 @@ msgid "Failed to write to file: %s"
 msgstr "Selhal zápis do souboru: %s"
 
 #: src/cryptography.c:150
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to obtain key by fingerprint: %s"
-msgstr "nalezení klíče odpovídající ID Uživatele"
+msgstr "Nepodařilo se získat klíč z otisku: %s"
 
 #: src/cryptography.c:190
-#, fuzzy
 msgid "Failed to find key matching User ID"
-msgstr "nalezení klíče odpovídající ID Uživatele"
+msgstr "Nepodařilo se najít klíč odpovídající User ID"
 
 #: src/cryptography.c:231
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to generate new GPG key for signing: %s"
-msgstr "Spravovat klíče"
+msgstr "Nepodařilo se vygenerovat nový GPG klíč pro podepisování: %s"
 
 #: src/cryptography.c:243
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to generate new GPG subkey for encryption: %s"
-msgstr "Spravovat klíče"
+msgstr "Nepodařilo se vygenerovat nový GPG podklíč pro šifrování: %s"
 
 #: src/cryptography.c:251
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to delete unfinished, generated key: %s"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se smazat nedokončený vygenerovaný klíč: %s"
 
 #: src/cryptography.c:288
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to load GPGME key data from file: %s"
-msgstr "načtení GPGME dat klíče ze souboru"
+msgstr "Nepodařilo se načíst data GPGME klíče ze souboru: %s"
 
 #: src/cryptography.c:296
 #, c-format
@@ -292,9 +287,9 @@ msgid "Failed to import GPG key from file: %s"
 msgstr "Selhalo importování GPG klíče ze souboru: %s"
 
 #: src/cryptography.c:333
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create GPGME key data in memory: %s"
-msgstr "vytvoření GPGME dat klíče v paměti"
+msgstr "Nepodařilo se vytvořit data GPGME klíče v paměti: %s"
 
 #: src/cryptography.c:341
 #, c-format
@@ -302,14 +297,15 @@ msgid "Failed to export GPG key(s) to file: %s"
 msgstr "Selhalo exportování GPG klíče do souboru: %s"
 
 #: src/cryptography.c:386
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for expire date renewal: %s"
-msgstr "Selhalo získání GPG klíče k upravení platnosti: %s"
+msgstr ""
+"Nepodařilo se získat datum platnosti GPG klíče pro obnovení platnosti: %s"
 
 #: src/cryptography.c:394
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to renew the expire date of a key: %s"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se obnovit datum platnosti klíče: %s"
 
 #: src/cryptography.c:428
 #, c-format
@@ -323,9 +319,9 @@ msgstr "Selhalo odstranění GPG klíče: %s"
 
 #: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
 #: src/cryptography.c:659
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME input data from string: %s"
-msgstr "vytvoření nových podepsaných GPGME dat z řetězce"
+msgstr "Nepodařilo se vytvořit nové vstupní data GPGME z textu: %s"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
 #: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:835
