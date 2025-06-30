@@ -321,39 +321,38 @@ msgstr "Selhalo odstranění GPG klíče: %s"
 #: src/cryptography.c:659
 #, c-format
 msgid "Failed to create new GPGME input data from string: %s"
-msgstr "Nepodařilo se vytvořit nové vstupní data GPGME z textu: %s"
+msgstr "Nepodařilo se vytvořit nové GPGME vstupní data z textu: %s"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
 #: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:835
 #: src/cryptography.c:917 src/cryptography.c:1008
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
-msgstr "vytvoření GPGME dat klíče v paměti"
+msgstr "Nepodařilo se vytvořit nová GPGME výstupní data v paměti: %s"
 
 #: src/cryptography.c:495
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to encrypt GPGME data from memory: %s"
-msgstr "zašifrování GPGME dat z paměti"
+msgstr "Nepodařilo se zašifrovat GPGME data z paměti: %s"
 
 #: src/cryptography.c:551
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to decrypt GPGME data from memory: %s"
-msgstr "rozšifrovat GPGME dat z paměti"
+msgstr "Nepodařilo se rozšifrovat GPGME data z paměti: %s"
 
 #: src/cryptography.c:610 src/cryptography.c:935
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to add signing key to GPGME context: %s"
-msgstr "vytvoření nového GPGME kontextu"
+msgstr "Nepodařilo se přidat podepisovací klíč do GPGME kontextu: %s"
 
 #: src/cryptography.c:619
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to sign GPGME data from memory: %s"
-msgstr "podepsání GPGME dat z paměti"
+msgstr "Nepodařilo se podepsat GPGME data z paměti: %s"
 
 #: src/cryptography.c:676
-#, fuzzy
 msgid "Failed to verify GPGME data from memory"
-msgstr "ověření GPGME dat z paměti"
+msgstr "Nepodařilo se ověřit GPGME data z paměti"
 
 #: src/cryptography.c:730 src/cryptography.c:813 src/cryptography.c:895
 #: src/cryptography.c:986
@@ -363,51 +362,49 @@ msgstr "Odstraněno %s pro přípravu přepsání"
 
 #: src/cryptography.c:735 src/cryptography.c:818 src/cryptography.c:900
 #: src/cryptography.c:991
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME input data from file: %s"
-msgstr "vytvoření nových podepsaných GPGME dat z řetězce"
+msgstr "Nepodařilo se vytvořit nová GPGME vstupní data ze souboru: %s"
 
 #: src/cryptography.c:743 src/cryptography.c:826 src/cryptography.c:908
 #: src/cryptography.c:999
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set file name of GPGME input data: %s"
-msgstr "nastavení cesty souboru podepsaných GPGME dat"
+msgstr "Nepodařilo se nastavit název souboru GPGME vstupních dat: %s"
 
 #: src/cryptography.c:761 src/cryptography.c:844 src/cryptography.c:926
 #: src/cryptography.c:1017
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set file name of GPGME output data: %s"
-msgstr "nastavení cesty souboru podepsaných GPGME dat"
+msgstr "Nepodařilo se nastavit název souboru GPGME výstupních dat: %s"
 
 #: src/cryptography.c:772
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to encrypt GPGME data from file: %s"
-msgstr "šifrování GPGME dat ze souboru"
+msgstr "Nepodařilo se zašifrovat GPGME data ze souboru: %s"
 
 #: src/cryptography.c:853
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to decrypt GPGME data from file: %s"
-msgstr "rozšifrování GPGME dat ze souboru"
+msgstr "Nepodařilo se rozšifrovat GPGME data ze souboru: %s"
 
 #: src/cryptography.c:944
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to sign GPGME data from file: %s"
-msgstr "podepsání GPGME dat ze souboru"
+msgstr "Nepodařilo se podepsat GPGME data ze souboru: %s"
 
 #: src/cryptography.c:1026
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to verify GPGME data from file: %s"
-msgstr "ověření GPGME dat ze souboru"
+msgstr "Nepodařilo se ověřit GPGME data ze souboru: %s"
 
 #: src/threading.c:57
-#, fuzzy
 msgid "Failed to create text encryption thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro zašifrování textu"
 
 #: src/threading.c:80
-#, fuzzy
 msgid "Failed to create file encryption thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro zašifrování souboru"
 
 #: src/threading.c:101
 #, fuzzy
