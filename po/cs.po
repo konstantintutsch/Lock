@@ -73,12 +73,12 @@ msgstr "Typ otevíraného souboru není standardní: %s"
 
 #: src/window.c:777
 msgid "Save files"
-msgstr ""
+msgstr "Uložit soubory"
 
 #: src/window.c:778
 msgctxt "Save files"
 msgid "Save"
-msgstr ""
+msgstr "Uložit"
 
 #: src/window.c:904 src/window.c:981
 msgid "Encryption failed"
@@ -127,15 +127,15 @@ msgstr "Platný podpis od - %s"
 
 #: src/window.c:1426
 msgid "valid"
-msgstr ""
+msgstr "platné"
 
 #: src/window.c:1426
 msgid "invalid"
-msgstr ""
+msgstr "neplatné"
 
 #: src/window.c:1458
 msgid "At least one invalid signature"
-msgstr ""
+msgstr "Alespoň jeden neplatný podpis"
 
 #: src/window.c:1460
 msgid "Signatures valid"
@@ -408,11 +408,11 @@ msgstr "Nepodařilo se vytvořit vlákno pro šifrování souborů"
 
 #: src/threading.c:101
 msgid "Failed to create text decryption thread"
-msgstr "Nepodařilo se vytvořit vlákno pro rozšifrování textu"
+msgstr "Nepodařilo se vytvořit vlákno pro rozšifrovávání textu"
 
 #: src/threading.c:121
 msgid "Failed to create file decryption thread"
-msgstr "Nepodařilo se vytvořit vlákno pro rozšifrování souborů"
+msgstr "Nepodařilo se vytvořit vlákno pro rozšifrovávání souborů"
 
 #: src/threading.c:143
 msgid "Failed to create text signing thread"
@@ -435,19 +435,16 @@ msgid "Failed to create key import thread"
 msgstr "Selhalo vytvoření threadu pro importování klíče"
 
 #: src/threading.c:244
-#, fuzzy
 msgid "Failed to create key pair generation thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro vytváření párů klíčů"
 
 #: src/threading.c:259
-#, fuzzy
 msgid "Failed to create key export thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro exportování klíčů"
 
 #: src/threading.c:271
-#, fuzzy
 msgid "Failed to create key removal thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro odstraňování klíčů"
 
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
@@ -468,30 +465,25 @@ msgid "Overwrite text view with clipboard"
 msgstr "Přepsat textové pole obsahem schránky"
 
 #: data/ui/shortcuts.blp:35
-#, fuzzy
 msgctxt "Shortcuts Group"
 msgid "Cryptography"
-msgstr "Kryptografické operace"
+msgstr "Kryptografie"
 
 #: data/ui/shortcuts.blp:38
-#, fuzzy
 msgid "Encrypt text"
-msgstr "Zašifrovat"
+msgstr "Zašifrovat text"
 
 #: data/ui/shortcuts.blp:45
-#, fuzzy
 msgid "Decrypt text"
-msgstr "Rozšifrovat"
+msgstr "Rozšifrovat text"
 
 #: data/ui/shortcuts.blp:52
-#, fuzzy
 msgid "Sign text"
-msgstr "Holý text"
+msgstr "Podepsat text"
 
 #: data/ui/shortcuts.blp:59
-#, fuzzy
 msgid "Verify text"
-msgstr "Ověřit"
+msgstr "Ověřit text"
 
 #: data/ui/window.blp:9 data/ui/window.blp:197
 #: data/com.konstantintutsch.Lock.desktop.in.in:3
@@ -512,9 +504,8 @@ msgid "Cryptography operations"
 msgstr "Kryptografické operace"
 
 #: data/ui/window.blp:50
-#, fuzzy
 msgid "Processing …"
-msgstr "Práce se soubory"
+msgstr "Zpracování …"
 
 #: data/ui/window.blp:55
 msgid "Main Menu"
@@ -530,29 +521,27 @@ msgstr "Soubor"
 
 #: data/ui/window.blp:109
 msgid "No open files"
-msgstr ""
+msgstr "Žádné otevřené soubory"
 
 #: data/ui/window.blp:110
-#, fuzzy
 msgid "No files have been opened for processing"
-msgstr "Nejsou vybrány žádné soubory pro zpracování"
+msgstr "Nejsou otevřeny žádné soubory pro zpracování"
 
 #: data/ui/window.blp:130
 msgid "Open"
-msgstr ""
+msgstr "Otevřít"
 
 #: data/ui/window.blp:131
-#, fuzzy
 msgid "Open files for processing"
-msgstr "Nejsou vybrány žádné soubory pro zpracování"
+msgstr "Otevřít soubory k zpracování"
 
 #: data/ui/window.blp:141
 msgid "Clear"
-msgstr ""
+msgstr "Zrušit výběr"
 
 #: data/ui/window.blp:142
 msgid "Close all open files"
-msgstr ""
+msgstr "Zavřít všechny otevřené soubory"
 
 #: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
@@ -584,7 +573,7 @@ msgstr "O Zámku"
 
 #: data/ui/window.blp:236
 msgid "Sign (Clear Text)"
-msgstr "Podepsat (Holý Text)"
+msgstr "Podepsat (Prostý Text)"
 
 #: data/ui/window.blp:240
 msgid "Sign (Detached)"
@@ -592,36 +581,33 @@ msgstr "Podepsat (Přiložený Soubor)"
 
 #: data/ui/filerow.blp:18
 msgid "Close file"
-msgstr ""
+msgstr "Zavřít soubor"
 
 #: data/ui/selectiondialog.blp:35
-#, fuzzy
 msgid "Select key"
-msgstr "Obnovit klíče"
+msgstr "Vybrat klíč"
 
 #: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
 msgid "Refresh keys"
 msgstr "Obnovit klíče"
 
 #: data/ui/selectiondialog.blp:68
-#, fuzzy
 msgid "No capable keys available"
-msgstr "Žádné klíče k dispozici"
+msgstr "Nejsou k dispozici žádné funkční klíče"
 
 #: data/ui/selectiondialog.blp:69
-#, fuzzy
 msgid ""
 "Your GnuPG keyring does not contain any keys that support this functionality."
-msgstr "Ve vašem systému nejsou uloženy žádné GnuPG klíče."
+msgstr ""
+"Vaše GnuPG klíčenka neobsahuje žádné klíče, které podporují tuhle funkci."
 
 #: data/ui/managementdialog.blp:68
 msgid "No keys available"
 msgstr "Žádné klíče k dispozici"
 
 #: data/ui/managementdialog.blp:69
-#, fuzzy
 msgid "Your GnuPG keyring does not contain any keys."
-msgstr "Ve vašem systému nejsou uloženy žádné GnuPG klíče."
+msgstr "Vaše GnuPG klíčenka neobsahuje žádné klíče."
 
 #: data/ui/managementdialog.blp:89
 msgctxt "Import keys from files"
