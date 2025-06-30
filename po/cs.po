@@ -400,41 +400,35 @@ msgstr "Nepodařilo se ověřit GPGME data ze souboru: %s"
 
 #: src/threading.c:57
 msgid "Failed to create text encryption thread"
-msgstr "Nepodařilo se vytvořit vlákno pro zašifrování textu"
+msgstr "Nepodařilo se vytvořit vlákno pro šifrování textu"
 
 #: src/threading.c:80
 msgid "Failed to create file encryption thread"
-msgstr "Nepodařilo se vytvořit vlákno pro zašifrování souboru"
+msgstr "Nepodařilo se vytvořit vlákno pro šifrování souborů"
 
 #: src/threading.c:101
-#, fuzzy
 msgid "Failed to create text decryption thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro rozšifrování textu"
 
 #: src/threading.c:121
-#, fuzzy
 msgid "Failed to create file decryption thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro rozšifrování souborů"
 
 #: src/threading.c:143
-#, fuzzy
 msgid "Failed to create text signing thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro podepisování textu"
 
 #: src/threading.c:166
-#, fuzzy
 msgid "Failed to create file signing thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro podepisování souborů"
 
 #: src/threading.c:187
-#, fuzzy
 msgid "Failed to create text verification thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro ověřování textu"
 
 #: src/threading.c:207
-#, fuzzy
 msgid "Failed to create file verification thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro ověřování souborů"
 
 #: src/threading.c:222
 msgid "Failed to create key import thread"
