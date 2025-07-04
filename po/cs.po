@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-04-16 11:38+0200\n"
-"PO-Revision-Date: 2024-12-24 09:00+0000\n"
+"PO-Revision-Date: 2025-07-01 11:01+0000\n"
 "Last-Translator: Klára Holubová <witt087@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/Lock/Application/"
 "cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -67,18 +67,18 @@ msgid "Text pasted"
 msgstr "Text vložen"
 
 #: src/window.c:624
-#, fuzzy, c-format
+#, c-format
 msgid "File selected to be opened is not a regular file: %s"
-msgstr "Selhalo otevření výstupního souboru: %s"
+msgstr "Typ otevíraného souboru není standardní: %s"
 
 #: src/window.c:777
 msgid "Save files"
-msgstr ""
+msgstr "Uložit soubory"
 
 #: src/window.c:778
 msgctxt "Save files"
 msgid "Save"
-msgstr ""
+msgstr "Uložit"
 
 #: src/window.c:904 src/window.c:981
 msgid "Encryption failed"
@@ -89,9 +89,8 @@ msgid "Text encrypted"
 msgstr "Text zašifrován"
 
 #: src/window.c:983
-#, fuzzy
 msgid "Files encrypted"
-msgstr "Soubor zašifrován"
+msgstr "Soubory zašifrovány"
 
 #: src/window.c:1040 src/window.c:1120
 msgid "Decryption failed"
@@ -102,9 +101,8 @@ msgid "Text decrypted"
 msgstr "Text rozšifrován"
 
 #: src/window.c:1122
-#, fuzzy
 msgid "Files decrypted"
-msgstr "Soubor rozšifrován"
+msgstr "Soubory rozšifrovány"
 
 #: src/window.c:1230 src/window.c:1308
 msgid "Signing failed"
@@ -115,9 +113,8 @@ msgid "Text signed"
 msgstr "Text podepsán"
 
 #: src/window.c:1310
-#, fuzzy
 msgid "Files signed"
-msgstr "Soubor podepsán"
+msgstr "Soubory podepsány"
 
 #: src/window.c:1367
 msgid "Signature invalid"
@@ -130,20 +127,19 @@ msgstr "Platný podpis od - %s"
 
 #: src/window.c:1426
 msgid "valid"
-msgstr ""
+msgstr "platné"
 
 #: src/window.c:1426
 msgid "invalid"
-msgstr ""
+msgstr "neplatné"
 
 #: src/window.c:1458
 msgid "At least one invalid signature"
-msgstr ""
+msgstr "Alespoň jeden neplatný podpis"
 
 #: src/window.c:1460
-#, fuzzy
 msgid "Signatures valid"
-msgstr "Neplatný podpis"
+msgstr "Platné podpisy"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
@@ -242,9 +238,9 @@ msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
 msgstr "Selhalo nastavení protokolu GPGME kontextu na OpenPGP: %s"
 
 #: src/cryptography.c:46
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set pinentry mode of GPGME context to ask: %s"
-msgstr "nastavení pinentry módu GPGME kontextu na zeptání se"
+msgstr "Nepodařilo se nastavit pinetry mód GPGME kontextu k zeptání: %s"
 
 #: src/cryptography.c:105
 #, c-format
@@ -257,34 +253,33 @@ msgid "Failed to write to file: %s"
 msgstr "Selhal zápis do souboru: %s"
 
 #: src/cryptography.c:150
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to obtain key by fingerprint: %s"
-msgstr "nalezení klíče odpovídající ID Uživatele"
+msgstr "Nepodařilo se získat klíč z otisku: %s"
 
 #: src/cryptography.c:190
-#, fuzzy
 msgid "Failed to find key matching User ID"
-msgstr "nalezení klíče odpovídající ID Uživatele"
+msgstr "Nepodařilo se najít klíč odpovídající User ID"
 
 #: src/cryptography.c:231
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to generate new GPG key for signing: %s"
-msgstr "Spravovat klíče"
+msgstr "Nepodařilo se vygenerovat nový GPG klíč pro podepisování: %s"
 
 #: src/cryptography.c:243
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to generate new GPG subkey for encryption: %s"
-msgstr "Spravovat klíče"
+msgstr "Nepodařilo se vygenerovat nový GPG podklíč pro šifrování: %s"
 
 #: src/cryptography.c:251
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to delete unfinished, generated key: %s"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se smazat nedokončený vygenerovaný klíč: %s"
 
 #: src/cryptography.c:288
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to load GPGME key data from file: %s"
-msgstr "načtení GPGME dat klíče ze souboru"
+msgstr "Nepodařilo se načíst data GPGME klíče ze souboru: %s"
 
 #: src/cryptography.c:296
 #, c-format
@@ -292,9 +287,9 @@ msgid "Failed to import GPG key from file: %s"
 msgstr "Selhalo importování GPG klíče ze souboru: %s"
 
 #: src/cryptography.c:333
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create GPGME key data in memory: %s"
-msgstr "vytvoření GPGME dat klíče v paměti"
+msgstr "Nepodařilo se vytvořit data GPGME klíče v paměti: %s"
 
 #: src/cryptography.c:341
 #, c-format
@@ -302,14 +297,15 @@ msgid "Failed to export GPG key(s) to file: %s"
 msgstr "Selhalo exportování GPG klíče do souboru: %s"
 
 #: src/cryptography.c:386
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to get GPG key for expire date renewal: %s"
-msgstr "Selhalo získání GPG klíče k upravení platnosti: %s"
+msgstr ""
+"Nepodařilo se získat datum platnosti GPG klíče pro obnovení platnosti: %s"
 
 #: src/cryptography.c:394
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to renew the expire date of a key: %s"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se obnovit datum platnosti klíče: %s"
 
 #: src/cryptography.c:428
 #, c-format
@@ -323,41 +319,40 @@ msgstr "Selhalo odstranění GPG klíče: %s"
 
 #: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
 #: src/cryptography.c:659
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME input data from string: %s"
-msgstr "vytvoření nových podepsaných GPGME dat z řetězce"
+msgstr "Nepodařilo se vytvořit nové GPGME vstupní data z textu: %s"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
 #: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:835
 #: src/cryptography.c:917 src/cryptography.c:1008
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
-msgstr "vytvoření GPGME dat klíče v paměti"
+msgstr "Nepodařilo se vytvořit nová GPGME výstupní data v paměti: %s"
 
 #: src/cryptography.c:495
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to encrypt GPGME data from memory: %s"
-msgstr "zašifrování GPGME dat z paměti"
+msgstr "Nepodařilo se zašifrovat GPGME data z paměti: %s"
 
 #: src/cryptography.c:551
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to decrypt GPGME data from memory: %s"
-msgstr "rozšifrovat GPGME dat z paměti"
+msgstr "Nepodařilo se rozšifrovat GPGME data z paměti: %s"
 
 #: src/cryptography.c:610 src/cryptography.c:935
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to add signing key to GPGME context: %s"
-msgstr "vytvoření nového GPGME kontextu"
+msgstr "Nepodařilo se přidat podepisovací klíč do GPGME kontextu: %s"
 
 #: src/cryptography.c:619
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to sign GPGME data from memory: %s"
-msgstr "podepsání GPGME dat z paměti"
+msgstr "Nepodařilo se podepsat GPGME data z paměti: %s"
 
 #: src/cryptography.c:676
-#, fuzzy
 msgid "Failed to verify GPGME data from memory"
-msgstr "ověření GPGME dat z paměti"
+msgstr "Nepodařilo se ověřit GPGME data z paměti"
 
 #: src/cryptography.c:730 src/cryptography.c:813 src/cryptography.c:895
 #: src/cryptography.c:986
@@ -367,100 +362,89 @@ msgstr "Odstraněno %s pro přípravu přepsání"
 
 #: src/cryptography.c:735 src/cryptography.c:818 src/cryptography.c:900
 #: src/cryptography.c:991
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create new GPGME input data from file: %s"
-msgstr "vytvoření nových podepsaných GPGME dat z řetězce"
+msgstr "Nepodařilo se vytvořit nová GPGME vstupní data ze souboru: %s"
 
 #: src/cryptography.c:743 src/cryptography.c:826 src/cryptography.c:908
 #: src/cryptography.c:999
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set file name of GPGME input data: %s"
-msgstr "nastavení cesty souboru podepsaných GPGME dat"
+msgstr "Nepodařilo se nastavit název souboru GPGME vstupních dat: %s"
 
 #: src/cryptography.c:761 src/cryptography.c:844 src/cryptography.c:926
 #: src/cryptography.c:1017
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set file name of GPGME output data: %s"
-msgstr "nastavení cesty souboru podepsaných GPGME dat"
+msgstr "Nepodařilo se nastavit název souboru GPGME výstupních dat: %s"
 
 #: src/cryptography.c:772
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to encrypt GPGME data from file: %s"
-msgstr "šifrování GPGME dat ze souboru"
+msgstr "Nepodařilo se zašifrovat GPGME data ze souboru: %s"
 
 #: src/cryptography.c:853
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to decrypt GPGME data from file: %s"
-msgstr "rozšifrování GPGME dat ze souboru"
+msgstr "Nepodařilo se rozšifrovat GPGME data ze souboru: %s"
 
 #: src/cryptography.c:944
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to sign GPGME data from file: %s"
-msgstr "podepsání GPGME dat ze souboru"
+msgstr "Nepodařilo se podepsat GPGME data ze souboru: %s"
 
 #: src/cryptography.c:1026
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to verify GPGME data from file: %s"
-msgstr "ověření GPGME dat ze souboru"
+msgstr "Nepodařilo se ověřit GPGME data ze souboru: %s"
 
 #: src/threading.c:57
-#, fuzzy
 msgid "Failed to create text encryption thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro šifrování textu"
 
 #: src/threading.c:80
-#, fuzzy
 msgid "Failed to create file encryption thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro šifrování souborů"
 
 #: src/threading.c:101
-#, fuzzy
 msgid "Failed to create text decryption thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro rozšifrovávání textu"
 
 #: src/threading.c:121
-#, fuzzy
 msgid "Failed to create file decryption thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro rozšifrovávání souborů"
 
 #: src/threading.c:143
-#, fuzzy
 msgid "Failed to create text signing thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro podepisování textu"
 
 #: src/threading.c:166
-#, fuzzy
 msgid "Failed to create file signing thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro podepisování souborů"
 
 #: src/threading.c:187
-#, fuzzy
 msgid "Failed to create text verification thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro ověřování textu"
 
 #: src/threading.c:207
-#, fuzzy
 msgid "Failed to create file verification thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro ověřování souborů"
 
 #: src/threading.c:222
 msgid "Failed to create key import thread"
 msgstr "Selhalo vytvoření threadu pro importování klíče"
 
 #: src/threading.c:244
-#, fuzzy
 msgid "Failed to create key pair generation thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro vytváření párů klíčů"
 
 #: src/threading.c:259
-#, fuzzy
 msgid "Failed to create key export thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro exportování klíčů"
 
 #: src/threading.c:271
-#, fuzzy
 msgid "Failed to create key removal thread"
-msgstr "Selhalo vytvoření vlákna %s: %s"
+msgstr "Nepodařilo se vytvořit vlákno pro odstraňování klíčů"
 
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
@@ -481,30 +465,25 @@ msgid "Overwrite text view with clipboard"
 msgstr "Přepsat textové pole obsahem schránky"
 
 #: data/ui/shortcuts.blp:35
-#, fuzzy
 msgctxt "Shortcuts Group"
 msgid "Cryptography"
-msgstr "Kryptografické operace"
+msgstr "Kryptografie"
 
 #: data/ui/shortcuts.blp:38
-#, fuzzy
 msgid "Encrypt text"
-msgstr "Zašifrovat"
+msgstr "Zašifrovat text"
 
 #: data/ui/shortcuts.blp:45
-#, fuzzy
 msgid "Decrypt text"
-msgstr "Rozšifrovat"
+msgstr "Rozšifrovat text"
 
 #: data/ui/shortcuts.blp:52
-#, fuzzy
 msgid "Sign text"
-msgstr "Holý text"
+msgstr "Podepsat text"
 
 #: data/ui/shortcuts.blp:59
-#, fuzzy
 msgid "Verify text"
-msgstr "Ověřit"
+msgstr "Ověřit text"
 
 #: data/ui/window.blp:9 data/ui/window.blp:197
 #: data/com.konstantintutsch.Lock.desktop.in.in:3
@@ -525,9 +504,8 @@ msgid "Cryptography operations"
 msgstr "Kryptografické operace"
 
 #: data/ui/window.blp:50
-#, fuzzy
 msgid "Processing …"
-msgstr "Práce se soubory"
+msgstr "Zpracování …"
 
 #: data/ui/window.blp:55
 msgid "Main Menu"
@@ -543,29 +521,27 @@ msgstr "Soubor"
 
 #: data/ui/window.blp:109
 msgid "No open files"
-msgstr ""
+msgstr "Žádné otevřené soubory"
 
 #: data/ui/window.blp:110
-#, fuzzy
 msgid "No files have been opened for processing"
-msgstr "Nejsou vybrány žádné soubory pro zpracování"
+msgstr "Nejsou otevřeny žádné soubory pro zpracování"
 
 #: data/ui/window.blp:130
 msgid "Open"
-msgstr ""
+msgstr "Otevřít"
 
 #: data/ui/window.blp:131
-#, fuzzy
 msgid "Open files for processing"
-msgstr "Nejsou vybrány žádné soubory pro zpracování"
+msgstr "Otevřít soubory k zpracování"
 
 #: data/ui/window.blp:141
 msgid "Clear"
-msgstr ""
+msgstr "Zrušit výběr"
 
 #: data/ui/window.blp:142
 msgid "Close all open files"
-msgstr ""
+msgstr "Zavřít všechny otevřené soubory"
 
 #: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
@@ -597,7 +573,7 @@ msgstr "O Zámku"
 
 #: data/ui/window.blp:236
 msgid "Sign (Clear Text)"
-msgstr "Podepsat (Holý Text)"
+msgstr "Podepsat (Prostý Text)"
 
 #: data/ui/window.blp:240
 msgid "Sign (Detached)"
@@ -605,36 +581,33 @@ msgstr "Podepsat (Přiložený Soubor)"
 
 #: data/ui/filerow.blp:18
 msgid "Close file"
-msgstr ""
+msgstr "Zavřít soubor"
 
 #: data/ui/selectiondialog.blp:35
-#, fuzzy
 msgid "Select key"
-msgstr "Obnovit klíče"
+msgstr "Vybrat klíč"
 
 #: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
 msgid "Refresh keys"
 msgstr "Obnovit klíče"
 
 #: data/ui/selectiondialog.blp:68
-#, fuzzy
 msgid "No capable keys available"
-msgstr "Žádné klíče k dispozici"
+msgstr "Nejsou k dispozici žádné funkční klíče"
 
 #: data/ui/selectiondialog.blp:69
-#, fuzzy
 msgid ""
 "Your GnuPG keyring does not contain any keys that support this functionality."
-msgstr "Ve vašem systému nejsou uloženy žádné GnuPG klíče."
+msgstr ""
+"Vaše GnuPG klíčenka neobsahuje žádné klíče, které podporují tuhle funkci."
 
 #: data/ui/managementdialog.blp:68
 msgid "No keys available"
 msgstr "Žádné klíče k dispozici"
 
 #: data/ui/managementdialog.blp:69
-#, fuzzy
 msgid "Your GnuPG keyring does not contain any keys."
-msgstr "Ve vašem systému nejsou uloženy žádné GnuPG klíče."
+msgstr "Vaše GnuPG klíčenka neobsahuje žádné klíče."
 
 #: data/ui/managementdialog.blp:89
 msgctxt "Import keys from files"
