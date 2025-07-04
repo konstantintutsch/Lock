@@ -85,6 +85,13 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.6.5" date="2025-07-04">
+            <description translate="no">
+                <ul>
+                    <li>Czech translation updated</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.6.4" date="2025-06-29">
             <description translate="no">
                 <ul>
