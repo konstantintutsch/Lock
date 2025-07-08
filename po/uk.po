@@ -129,7 +129,7 @@ msgstr "Дійсний підпис - %s"
 
 #: src/window.c:1426
 msgid "valid"
-msgstr "дійсна"
+msgstr "дійсний"
 
 #: src/window.c:1426
 msgid "invalid"
@@ -137,97 +137,97 @@ msgstr "не дійсний"
 
 #: src/window.c:1458
 msgid "At least one invalid signature"
-msgstr ""
+msgstr "Як мінімум, один не дійсний підпис"
 
 #: src/window.c:1460
 msgid "Signatures valid"
-msgstr ""
+msgstr "Підписи дійсні"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
-msgstr ""
+msgstr "Не вдалося імпортувати"
 
 #: src/managementdialog.c:366
 msgid "Keys imported"
-msgstr ""
+msgstr "Ключі імпортовано"
 
 #: src/managementdialog.c:412
 msgctxt "Expire date format for key pair generation (see GLib.DateTime.format)"
 msgid "%B %e, %Y"
-msgstr ""
+msgstr "%e %B %Y"
 
 #: src/managementdialog.c:429
 msgid "No expire date"
-msgstr ""
+msgstr "Немає дати закінчення терміну дії"
 
 #: src/managementdialog.c:517
 msgid "Generation failed"
-msgstr ""
+msgstr "Генерація не вдалась"
 
 #: src/managementdialog.c:519
 msgid "Key pair generated"
-msgstr ""
+msgstr "Пара ключів згенерована"
 
 #: src/keyrow.c:128
 msgid "Key does not expire"
-msgstr ""
+msgstr "Ключ не має терміну закінчення дії"
 
 #: src/keyrow.c:132
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expired %s at %s"
-msgstr ""
+msgstr "Термін закінчився %s в %s"
 
 #: src/keyrow.c:134
 #, c-format
 msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
 msgid "Expires %s at %s"
-msgstr ""
+msgstr "Термін закінчується %s в %s"
 
 #: src/keyrow.c:174
 msgid "Fingerprint copied"
-msgstr ""
+msgstr "Відбиток скопійовано"
 
 #: src/keyrow.c:263
 msgid "Export failed"
-msgstr ""
+msgstr "Не вдалося експортувати"
 
 #: src/keyrow.c:265
 msgid "Key exported"
-msgstr ""
+msgstr "Ключ експортовано"
 
 #: src/keyrow.c:310
 msgid "Remove key?"
-msgstr ""
+msgstr "Видалити ключ?"
 
 #: src/keyrow.c:313
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
-msgstr ""
+msgstr "Видалення ключу %s неможливо скасувати!"
 
 #: src/keyrow.c:316
 msgid "_Cancel"
-msgstr ""
+msgstr "_Скасувати"
 
 #: src/keyrow.c:317
 msgid "_Remove"
-msgstr ""
+msgstr "_Видалити"
 
 #: src/keyrow.c:358
 msgid "Removal failed"
-msgstr ""
+msgstr "Не вдалося видалити"
 
 #: src/keyrow.c:360
 msgid "Key removed"
-msgstr ""
+msgstr "Ключ видалено"
 
 #: src/keyrow.c:410
 msgid "Renewal failed"
-msgstr ""
+msgstr "Не вдалося поновити"
 
 #: src/keyrow.c:412
 msgid "Expire date renewed"
-msgstr ""
+msgstr "Дата закінчення терміну поновленно"
 
 #: src/cryptography.c:29
 #, c-format
