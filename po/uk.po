@@ -227,139 +227,141 @@ msgstr "Не вдалося поновити"
 
 #: src/keyrow.c:412
 msgid "Expire date renewed"
-msgstr "Дата закінчення терміну поновленно"
+msgstr "Дата закінчення терміну поновлено"
 
 #: src/cryptography.c:29
 #, c-format
 msgid "Failed to create new GPGME context: %s"
-msgstr ""
+msgstr "Не вдалося створити новий контекст GPGME: %s"
 
 #: src/cryptography.c:37
 #, c-format
 msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
-msgstr ""
+msgstr "Не вдалося встановити протокол контексту OpenPGP: %s"
 
 #: src/cryptography.c:46
 #, c-format
 msgid "Failed to set pinentry mode of GPGME context to ask: %s"
 msgstr ""
+"GPGME Не вдалося встановити режим запиту вводу PIN коду для контексту GPGME: "
+"%s"
 
 #: src/cryptography.c:105
 #, c-format
 msgid "Failed to open file for writing: %s"
-msgstr ""
+msgstr "Не вдалося відкрити файл для запису: %s"
 
 #: src/cryptography.c:113
 #, c-format
 msgid "Failed to write to file: %s"
-msgstr ""
+msgstr "Не вдалося записати у файл: %s"
 
 #: src/cryptography.c:150
 #, c-format
 msgid "Failed to obtain key by fingerprint: %s"
-msgstr ""
+msgstr "Не вдалося отримати ключ по відбитку: %s"
 
 #: src/cryptography.c:190
 msgid "Failed to find key matching User ID"
-msgstr ""
+msgstr "Не вдалося знайти ключ який відповідає ідентифікатору користувача"
 
 #: src/cryptography.c:231
 #, c-format
 msgid "Failed to generate new GPG key for signing: %s"
-msgstr ""
+msgstr "Не вдалося згенерувати новий ключ GPG для підпису: %s"
 
 #: src/cryptography.c:243
 #, c-format
 msgid "Failed to generate new GPG subkey for encryption: %s"
-msgstr ""
+msgstr "Не вдалося згенерувати новий підключ GPG для шифрування: %s"
 
 #: src/cryptography.c:251
 #, c-format
 msgid "Failed to delete unfinished, generated key: %s"
-msgstr ""
+msgstr "Не вдалося видалити не завершений, згенерований ключ: %s"
 
 #: src/cryptography.c:288
 #, c-format
 msgid "Failed to load GPGME key data from file: %s"
-msgstr ""
+msgstr "Не вдалося завантажити дані ключа GPGME з файлу: %s"
 
 #: src/cryptography.c:296
 #, c-format
 msgid "Failed to import GPG key from file: %s"
-msgstr ""
+msgstr "Не вдалося імпортувати ключ GPG з файлу: %s"
 
 #: src/cryptography.c:333
 #, c-format
 msgid "Failed to create GPGME key data in memory: %s"
-msgstr ""
+msgstr "Не вдалося створити дані ключа GPGME у пам'яті: %s"
 
 #: src/cryptography.c:341
 #, c-format
 msgid "Failed to export GPG key(s) to file: %s"
-msgstr ""
+msgstr "Не вдалося експортувати ключ(и) GPG у файл: %s"
 
 #: src/cryptography.c:386
 #, c-format
 msgid "Failed to get GPG key for expire date renewal: %s"
-msgstr ""
+msgstr "Не вдалося отримати ключ GPG для поновлення дати закінчення терміну: %s"
 
 #: src/cryptography.c:394
 #, c-format
 msgid "Failed to renew the expire date of a key: %s"
-msgstr ""
+msgstr "Не вдалося поновити дату закінчення терміну дії ключа: %s"
 
 #: src/cryptography.c:428
 #, c-format
 msgid "Failed to get GPG key for removal: %s"
-msgstr ""
+msgstr "Не вдалося отримати GPG ключ для видалення: %s"
 
 #: src/cryptography.c:436
 #, c-format
 msgid "Failed to remove GPG key: %s"
-msgstr ""
+msgstr "Не вдалося видалити ключ GPG: %s"
 
 #: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
 #: src/cryptography.c:659
 #, c-format
 msgid "Failed to create new GPGME input data from string: %s"
-msgstr ""
+msgstr "Не вдалося створити нові вхідні дані GPGME з рядку: %s"
 
 #: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
 #: src/cryptography.c:667 src/cryptography.c:752 src/cryptography.c:835
 #: src/cryptography.c:917 src/cryptography.c:1008
 #, c-format
 msgid "Failed to create new GPGME output data in memory: %s"
-msgstr ""
+msgstr "Не вдалося створити нові вихідні дані GPGME в пам'яті: %s"
 
 #: src/cryptography.c:495
 #, c-format
 msgid "Failed to encrypt GPGME data from memory: %s"
-msgstr ""
+msgstr "Не вдалося зашифрувати дані GPGME з пам'яті: %s"
 
 #: src/cryptography.c:551
 #, c-format
 msgid "Failed to decrypt GPGME data from memory: %s"
-msgstr ""
+msgstr "Не вдалося дешифрувати дані GPGME з пам'яті: %s"
 
 #: src/cryptography.c:610 src/cryptography.c:935
 #, c-format
 msgid "Failed to add signing key to GPGME context: %s"
-msgstr ""
+msgstr "Не вдалося додати ключ підпису в контекст GPGME: %s"
 
 #: src/cryptography.c:619
 #, c-format
 msgid "Failed to sign GPGME data from memory: %s"
-msgstr ""
+msgstr "Не вдалося підписати дані GPGME з пам'яті: %s"
 
 #: src/cryptography.c:676
 msgid "Failed to verify GPGME data from memory"
-msgstr ""
+msgstr "Не вдалося перевірити дані GPGME з пам'яті"
 
 #: src/cryptography.c:730 src/cryptography.c:813 src/cryptography.c:895
 #: src/cryptography.c:986
 #, c-format
 msgid "Removed %s to prepare overwriting"
-msgstr ""
+msgstr "%s видалено для підготовки перезапису"
 
 #: src/cryptography.c:735 src/cryptography.c:818 src/cryptography.c:900
 #: src/cryptography.c:991
