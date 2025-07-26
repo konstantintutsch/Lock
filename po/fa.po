@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-04-16 11:38+0200\n"
-"PO-Revision-Date: 2025-06-25 12:01+0000\n"
-"Last-Translator: Reza Hosseinzadeh <rezahsnzdh@protonmail.com>\n"
+"PO-Revision-Date: 2025-07-27 14:06+0000\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
 "fa/>\n"
 "Language: fa\n"
@@ -138,9 +138,8 @@ msgid "At least one invalid signature"
 msgstr "حداقل یک امضای نامعتبر"
 
 #: src/window.c:1460
-#, fuzzy
 msgid "Signatures valid"
-msgstr "امضا نامعتبر است"
+msgstr "امضا معتبر"
 
 #: src/managementdialog.c:364
 msgid "Import failed"
@@ -760,9 +759,8 @@ msgid "View expire dates"
 msgstr "نمایش تاریخ‌های انقضا"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
-#, fuzzy
 msgid "Update expire dates of expired keys"
-msgstr "بروزرسانی تاریخ انقضای کلیدهای منقضی‌شده"
+msgstr "به‌روز رسانی تاریخ انقضای کلیدهای منقضی"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
