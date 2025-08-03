@@ -2,7 +2,7 @@
 # Build
 #
 
-config_h = configure_file(
+configure_file(
   input: 'config.h.in',
   output: 'config.h',
   configuration: conf
@@ -23,7 +23,7 @@ src = files(
 
 internal_inc = include_directories('.')
 
-exe = executable(
+executable(
           project_exec,
                    src,
    include_directories: [internal_inc],
