@@ -682,6 +682,15 @@ char *text_verify(const char *text, char **signer)
 
     gpgme_verify_result_t verify_result = gpgme_op_verify_result(context);
 
+    if (!verify_result || !verify_result->signatures) {
+        error = gpgme_err_make(GPG_ERR_SOURCE_UNKNOWN, GPG_ERR_BAD_SIGNATURE);
+        g_warning("%s: %s", _("Failed to verify GPGME data from memory"),
+                  gpgme_strerror(error));
+
+        gpgme_data_release(output);
+        goto cleanup_input;
+    }
+
     if (!(verify_result->signatures->summary & GPGME_SIGSUM_VALID)) {
         gpgme_data_release(output);
         goto cleanup_input;
@@ -689,8 +698,8 @@ char *text_verify(const char *text, char **signer)
 
     *signer =
         g_strdup((verify_result->signatures->key !=
-                  NULL) ? verify_result->signatures->key->
-                 uids->uid : verify_result->signatures->fpr);
+                  NULL) ? verify_result->signatures->key->uids->
+                 uid : verify_result->signatures->fpr);
 
  cleanup_input:
     gpgme_data_release(input);
@@ -1039,8 +1048,8 @@ bool file_verify(const char *input_path, const char *output_path, char **signer)
 
     *signer =
         g_strdup((verify_result->signatures->key !=
-                  NULL) ? verify_result->signatures->key->
-                 uids->uid : verify_result->signatures->fpr);
+                  NULL) ? verify_result->signatures->key->uids->
+                 uid : verify_result->signatures->fpr);
 
  cleanup_input:
     gpgme_data_release(input);
