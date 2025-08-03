@@ -1237,7 +1237,7 @@ gboolean lock_window_sign_text_on_completed(LockWindow *window)
             GString *plain =
                 g_string_new(lock_window_text_view_get_text(window));
 
-            g_string_append(plain, "\n");
+            g_string_append(plain, "\n\n");
             g_string_append(plain, armor);
 
             lock_window_text_view_set_text(window, plain->str);
