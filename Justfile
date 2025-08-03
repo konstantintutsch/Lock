@@ -21,6 +21,9 @@ local:
     flatpak install --user --reinstall --assumeyes \
         --include-sdk --include-debug \
         com.konstantintutsch.Lock.Devel
+    just run
+
+run:
     GTK_DEBUG=interactive flatpak run \
         com.konstantintutsch.Lock.Devel
 
