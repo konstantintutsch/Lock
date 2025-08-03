@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-16 11:38+0200\n"
+"POT-Creation-Date: 2025-08-03 12:11+0200\n"
 "PO-Revision-Date: 2025-04-12 23:33+0000\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -104,7 +104,7 @@ msgstr "文本已解密"
 msgid "Files decrypted"
 msgstr "文件已解密"
 
-#: src/window.c:1230 src/window.c:1308
+#: src/window.c:1230 src/window.c:1323
 msgid "Signing failed"
 msgstr "签署失败"
 
@@ -112,32 +112,32 @@ msgstr "签署失败"
 msgid "Text signed"
 msgstr "文本已签署"
 
-#: src/window.c:1310
+#: src/window.c:1325
 msgid "Files signed"
 msgstr "文件已签署"
 
-#: src/window.c:1367
+#: src/window.c:1382
 msgid "Signature invalid"
 msgstr "签名无效"
 
-#: src/window.c:1371
+#: src/window.c:1386
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "签名有效 - 由 %s"
 
-#: src/window.c:1426
+#: src/window.c:1441
 msgid "valid"
 msgstr "有效"
 
-#: src/window.c:1426
+#: src/window.c:1441
 msgid "invalid"
 msgstr "无效"
 
-#: src/window.c:1458
+#: src/window.c:1473
 msgid "At least one invalid signature"
 msgstr "至少一个无效签名"
 
-#: src/window.c:1460
+#: src/window.c:1475
 msgid "Signatures valid"
 msgstr "签名有效"
 
@@ -586,7 +586,7 @@ msgstr "关闭文件"
 msgid "Select key"
 msgstr "选择密钥"
 
-#: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
+#: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:50
 msgid "Refresh keys"
 msgstr "刷新密钥"
 
@@ -599,85 +599,85 @@ msgid ""
 "Your GnuPG keyring does not contain any keys that support this functionality."
 msgstr "您的 GnuPG 密钥串不包含任何支持该功能的密钥。"
 
-#: data/ui/managementdialog.blp:68
+#: data/ui/managementdialog.blp:69
 msgid "No keys available"
 msgstr "无可用密钥"
 
-#: data/ui/managementdialog.blp:69
+#: data/ui/managementdialog.blp:70
 msgid "Your GnuPG keyring does not contain any keys."
 msgstr "您的 GnuPG 密钥串不包含任何密钥。"
 
-#: data/ui/managementdialog.blp:89
+#: data/ui/managementdialog.blp:90
 msgctxt "Import keys from files"
 msgid "Import"
 msgstr "导入"
 
-#: data/ui/managementdialog.blp:90
+#: data/ui/managementdialog.blp:91
 msgid "Import keys from files"
 msgstr "从文件导入密钥"
 
-#: data/ui/managementdialog.blp:97
+#: data/ui/managementdialog.blp:98
 msgid "Create a new keypair"
 msgstr "创建密钥对"
 
-#: data/ui/managementdialog.blp:110
+#: data/ui/managementdialog.blp:111
 msgid "Generate keypair"
 msgstr "生成密钥对"
 
-#: data/ui/managementdialog.blp:141
+#: data/ui/managementdialog.blp:142
 msgctxt "Name of the UID of the new keypair"
 msgid "Name (Mandatory)"
 msgstr "姓名（强制）"
 
-#: data/ui/managementdialog.blp:146
+#: data/ui/managementdialog.blp:147
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr "电子邮箱"
 
-#: data/ui/managementdialog.blp:151
+#: data/ui/managementdialog.blp:152
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
 msgstr "注释"
 
-#: data/ui/managementdialog.blp:156
+#: data/ui/managementdialog.blp:157
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr "签署算法"
 
-#: data/ui/managementdialog.blp:157
+#: data/ui/managementdialog.blp:158
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr "密钥"
 
-#: data/ui/managementdialog.blp:165
+#: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "加密算法"
 
-#: data/ui/managementdialog.blp:166
+#: data/ui/managementdialog.blp:167
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr "子密钥"
 
-#: data/ui/managementdialog.blp:174
+#: data/ui/managementdialog.blp:175
 msgctxt "Expire date of the new key pair"
 msgid "Expire Date"
 msgstr "到期日期"
 
-#: data/ui/managementdialog.blp:184
+#: data/ui/managementdialog.blp:185
 msgid "Remove expire date"
 msgstr "移除到期日期"
 
-#: data/ui/managementdialog.blp:192
+#: data/ui/managementdialog.blp:193
 msgid "Select expire date of the new key pair"
 msgstr "为新密钥对选择到期日期"
 
-#: data/ui/managementdialog.blp:213
+#: data/ui/managementdialog.blp:214
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "生成"
 
-#: data/ui/managementdialog.blp:214
+#: data/ui/managementdialog.blp:215
 msgid "Generate a new keypair"
 msgstr "生成密钥对"
 

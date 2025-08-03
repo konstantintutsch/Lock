@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
-"POT-Creation-Date: 2025-04-16 11:38+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-03 12:11+0200\n"
 "PO-Revision-Date: 2025-05-18 13:02+0000\n"
 "Last-Translator: Yurt Page <yurtpage@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -105,7 +105,7 @@ msgstr "Текст расшифрован"
 msgid "Files decrypted"
 msgstr "Файлы расшифрованы"
 
-#: src/window.c:1230 src/window.c:1308
+#: src/window.c:1230 src/window.c:1323
 msgid "Signing failed"
 msgstr "Не удалось подписать"
 
@@ -113,32 +113,32 @@ msgstr "Не удалось подписать"
 msgid "Text signed"
 msgstr "Текст подписан"
 
-#: src/window.c:1310
+#: src/window.c:1325
 msgid "Files signed"
 msgstr "Файлы подписаны"
 
-#: src/window.c:1367
+#: src/window.c:1382
 msgid "Signature invalid"
 msgstr "Недействительная подпись"
 
-#: src/window.c:1371
+#: src/window.c:1386
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Действительная подпись - %s"
 
-#: src/window.c:1426
+#: src/window.c:1441
 msgid "valid"
 msgstr "действительная"
 
-#: src/window.c:1426
+#: src/window.c:1441
 msgid "invalid"
 msgstr "недействительная"
 
-#: src/window.c:1458
+#: src/window.c:1473
 msgid "At least one invalid signature"
 msgstr "По крайней мере одна недействительная подпись"
 
-#: src/window.c:1460
+#: src/window.c:1475
 msgid "Signatures valid"
 msgstr "Подписи действительны"
 
@@ -588,7 +588,7 @@ msgstr "Закрыть файл"
 msgid "Select key"
 msgstr "Выбрать ключ"
 
-#: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
+#: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:50
 msgid "Refresh keys"
 msgstr "Обновить ключи"
 
@@ -602,85 +602,85 @@ msgid ""
 msgstr ""
 "Ваша связка ключей GnuPG не содержит ключи, поддерживающие эту функцию."
 
-#: data/ui/managementdialog.blp:68
+#: data/ui/managementdialog.blp:69
 msgid "No keys available"
 msgstr "Нет доступных ключей"
 
-#: data/ui/managementdialog.blp:69
+#: data/ui/managementdialog.blp:70
 msgid "Your GnuPG keyring does not contain any keys."
 msgstr "Ваша связка ключей GnuPG не содержит никаких ключей."
 
-#: data/ui/managementdialog.blp:89
+#: data/ui/managementdialog.blp:90
 msgctxt "Import keys from files"
 msgid "Import"
 msgstr "Импорт"
 
-#: data/ui/managementdialog.blp:90
+#: data/ui/managementdialog.blp:91
 msgid "Import keys from files"
 msgstr "Импортировать ключи из файла"
 
-#: data/ui/managementdialog.blp:97
+#: data/ui/managementdialog.blp:98
 msgid "Create a new keypair"
 msgstr "Создать новую пару ключей"
 
-#: data/ui/managementdialog.blp:110
+#: data/ui/managementdialog.blp:111
 msgid "Generate keypair"
 msgstr "Сгенерировать пару ключей"
 
-#: data/ui/managementdialog.blp:141
+#: data/ui/managementdialog.blp:142
 msgctxt "Name of the UID of the new keypair"
 msgid "Name (Mandatory)"
 msgstr "Имя (обязательно)"
 
-#: data/ui/managementdialog.blp:146
+#: data/ui/managementdialog.blp:147
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr "E-mail"
 
-#: data/ui/managementdialog.blp:151
+#: data/ui/managementdialog.blp:152
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
 msgstr "Комментарий"
 
-#: data/ui/managementdialog.blp:156
+#: data/ui/managementdialog.blp:157
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr "Алгоритм подписи"
 
-#: data/ui/managementdialog.blp:157
+#: data/ui/managementdialog.blp:158
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr "Ключ"
 
-#: data/ui/managementdialog.blp:165
+#: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "Алгоритм шифрования"
 
-#: data/ui/managementdialog.blp:166
+#: data/ui/managementdialog.blp:167
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr "Подключ"
 
-#: data/ui/managementdialog.blp:174
+#: data/ui/managementdialog.blp:175
 msgctxt "Expire date of the new key pair"
 msgid "Expire Date"
 msgstr "Дата истечения"
 
-#: data/ui/managementdialog.blp:184
+#: data/ui/managementdialog.blp:185
 msgid "Remove expire date"
 msgstr "Удалить дату истечения"
 
-#: data/ui/managementdialog.blp:192
+#: data/ui/managementdialog.blp:193
 msgid "Select expire date of the new key pair"
 msgstr "Выберите дату истечения срока действия новой пары ключей"
 
-#: data/ui/managementdialog.blp:213
+#: data/ui/managementdialog.blp:214
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "Сгенерировать"
 
-#: data/ui/managementdialog.blp:214
+#: data/ui/managementdialog.blp:215
 msgid "Generate a new keypair"
 msgstr "Сгенерировать новую пару ключей"
 

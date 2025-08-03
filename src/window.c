@@ -1232,7 +1232,22 @@ gboolean lock_window_sign_text_on_completed(LockWindow *window)
         toast = adw_toast_new(_("Text signed"));
 
         gchar *armor = lock_window_text_queue_get_text(window);
-        lock_window_text_view_set_text(window, armor);
+
+        if (window->signature_mode == GPGME_SIG_MODE_DETACH) {
+            GString *plain =
+                g_string_new(lock_window_text_view_get_text(window));
+
+            g_string_append(plain, "\n");
+            g_string_append(plain, armor);
+
+            lock_window_text_view_set_text(window, plain->str);
+
+            /* Cleanup */
+            (void)g_string_free(plain, true);
+            plain = NULL;
+        } else {
+            lock_window_text_view_set_text(window, armor);
+        }
 
         /* Cleanup */
         g_free(armor);

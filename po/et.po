@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-16 11:38+0200\n"
+"POT-Creation-Date: 2025-08-03 12:11+0200\n"
 "PO-Revision-Date: 2025-03-24 07:01+0000\n"
 "Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -104,7 +104,7 @@ msgstr "Tekst on dekrüptitud"
 msgid "Files decrypted"
 msgstr "Failid on dekrüptitud"
 
-#: src/window.c:1230 src/window.c:1308
+#: src/window.c:1230 src/window.c:1323
 msgid "Signing failed"
 msgstr "Allkirjastamine ei õnnestunud"
 
@@ -112,32 +112,32 @@ msgstr "Allkirjastamine ei õnnestunud"
 msgid "Text signed"
 msgstr "Tekst on allkirjastatud"
 
-#: src/window.c:1310
+#: src/window.c:1325
 msgid "Files signed"
 msgstr "Failid on allkirjastatud"
 
-#: src/window.c:1367
+#: src/window.c:1382
 msgid "Signature invalid"
 msgstr "Allkiri on vigane"
 
-#: src/window.c:1371
+#: src/window.c:1386
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Allkiri kehtib - allkirjastaja %s"
 
-#: src/window.c:1426
+#: src/window.c:1441
 msgid "valid"
 msgstr "korrektne"
 
-#: src/window.c:1426
+#: src/window.c:1441
 msgid "invalid"
 msgstr "vigane"
 
-#: src/window.c:1458
+#: src/window.c:1473
 msgid "At least one invalid signature"
 msgstr "Vähemalt üks allkiri on vigane"
 
-#: src/window.c:1460
+#: src/window.c:1475
 msgid "Signatures valid"
 msgstr "Allkirjad on vigased"
 
@@ -588,7 +588,7 @@ msgstr "Sulge fail"
 msgid "Select key"
 msgstr "Vali võti"
 
-#: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:49
+#: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:50
 msgid "Refresh keys"
 msgstr "Värskenda võtmeid"
 
@@ -603,85 +603,85 @@ msgstr ""
 "Sinu GnuPG võtmerõngas ei sisalda võtmeid, mis võimaldaks seda toimingut "
 "teha."
 
-#: data/ui/managementdialog.blp:68
+#: data/ui/managementdialog.blp:69
 msgid "No keys available"
 msgstr "Võtmeid pole saadaval"
 
-#: data/ui/managementdialog.blp:69
+#: data/ui/managementdialog.blp:70
 msgid "Your GnuPG keyring does not contain any keys."
 msgstr "Sinu GnuPG võtmerõngas pole üldse võtmeid."
 
-#: data/ui/managementdialog.blp:89
+#: data/ui/managementdialog.blp:90
 msgctxt "Import keys from files"
 msgid "Import"
 msgstr "Impordi"
 
-#: data/ui/managementdialog.blp:90
+#: data/ui/managementdialog.blp:91
 msgid "Import keys from files"
 msgstr "Impordi faili(de)st"
 
-#: data/ui/managementdialog.blp:97
+#: data/ui/managementdialog.blp:98
 msgid "Create a new keypair"
 msgstr "Loo uus võtmepaar"
 
-#: data/ui/managementdialog.blp:110
+#: data/ui/managementdialog.blp:111
 msgid "Generate keypair"
 msgstr "Loo võtmepaar"
 
-#: data/ui/managementdialog.blp:141
+#: data/ui/managementdialog.blp:142
 msgctxt "Name of the UID of the new keypair"
 msgid "Name (Mandatory)"
 msgstr "Nimi (kohustuslik)"
 
-#: data/ui/managementdialog.blp:146
+#: data/ui/managementdialog.blp:147
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
 msgstr "E-posti aadress"
 
-#: data/ui/managementdialog.blp:151
+#: data/ui/managementdialog.blp:152
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
 msgstr "Kommentaar"
 
-#: data/ui/managementdialog.blp:156
+#: data/ui/managementdialog.blp:157
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
 msgstr "Allkirjastamise algoritm"
 
-#: data/ui/managementdialog.blp:157
+#: data/ui/managementdialog.blp:158
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
 msgstr "Võti"
 
-#: data/ui/managementdialog.blp:165
+#: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
 msgstr "Krüptoalgoritm"
 
-#: data/ui/managementdialog.blp:166
+#: data/ui/managementdialog.blp:167
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
 msgstr "Alamvõti"
 
-#: data/ui/managementdialog.blp:174
+#: data/ui/managementdialog.blp:175
 msgctxt "Expire date of the new key pair"
 msgid "Expire Date"
 msgstr "Aegumise kuupäev"
 
-#: data/ui/managementdialog.blp:184
+#: data/ui/managementdialog.blp:185
 msgid "Remove expire date"
 msgstr "Eemalda aegumise kuupäev"
 
-#: data/ui/managementdialog.blp:192
+#: data/ui/managementdialog.blp:193
 msgid "Select expire date of the new key pair"
 msgstr "Vali uue võtmepaari jaoks aegumise kuupäev"
 
-#: data/ui/managementdialog.blp:213
+#: data/ui/managementdialog.blp:214
 msgctxt "Generate a new keypair"
 msgid "Generate"
 msgstr "Loo"
 
-#: data/ui/managementdialog.blp:214
+#: data/ui/managementdialog.blp:215
 msgid "Generate a new keypair"
 msgstr "Loo uus võtmepaar"
 
