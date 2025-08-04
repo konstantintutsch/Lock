@@ -85,6 +85,14 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.7.0" date="2025-08-04">
+            <description translate="no">
+                <ul>
+                    <li>Change replace to append detached text signature to signed text</li>
+                    <li>Fix crash when verifying bad text signature</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.6.7" date="2025-07-27">
             <description translate="no">
                 <ul>
