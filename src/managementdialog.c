@@ -408,7 +408,7 @@ void lock_management_dialog_select_expire_finish(GtkCalendar *self,
     adw_action_row_set_subtitle(dialog->expire_entry,
                                 g_date_time_format(expire,
                                                    C_
-                                                   ("Expire date format for key pair generation (see GLib.DateTime.format)",
+                                                   ("Expire date format for key pair generation (see GLib.DateTime.format / https://docs.gtk.org/glib/method.DateTime.format.html#description)",
                                                     "%B %e, %Y")));
 
     /* Cleanup */

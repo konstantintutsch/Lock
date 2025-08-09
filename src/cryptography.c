@@ -698,8 +698,8 @@ char *text_verify(const char *text, char **signer)
 
     *signer =
         g_strdup((verify_result->signatures->key !=
-                  NULL) ? verify_result->signatures->key->uids->
-                 uid : verify_result->signatures->fpr);
+                  NULL) ? verify_result->signatures->key->
+                 uids->uid : verify_result->signatures->fpr);
 
  cleanup_input:
     gpgme_data_release(input);
@@ -1048,8 +1048,8 @@ bool file_verify(const char *input_path, const char *output_path, char **signer)
 
     *signer =
         g_strdup((verify_result->signatures->key !=
-                  NULL) ? verify_result->signatures->key->uids->
-                 uid : verify_result->signatures->fpr);
+                  NULL) ? verify_result->signatures->key->
+                 uids->uid : verify_result->signatures->fpr);
 
  cleanup_input:
     gpgme_data_release(input);
