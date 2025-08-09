@@ -85,6 +85,13 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.7.1" date="2025-08-09">
+            <description translate="no">
+                <ul>
+                    <li>Finnish translation updated</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.7.0" date="2025-08-04">
             <description translate="no">
                 <ul>
