@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-08-03 16:39+0200\n"
-"PO-Revision-Date: 2025-02-09 17:02+0000\n"
+"PO-Revision-Date: 2025-08-08 13:02+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/Lock/Application/"
 "fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: src/main.c:32
 #, c-format
@@ -67,9 +67,9 @@ msgid "Text pasted"
 msgstr "Teksti liitetty"
 
 #: src/window.c:624
-#, fuzzy, c-format
+#, c-format
 msgid "File selected to be opened is not a regular file: %s"
-msgstr "Lähtötiedoston avaaminen epäonnistui: %s"
+msgstr "Avattavaksi valittu tiedosto ei ole tavallinen tiedosto: %s"
 
 #: src/window.c:777
 msgid "Save files"
