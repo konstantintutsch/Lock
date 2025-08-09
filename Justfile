@@ -46,7 +46,7 @@ setup:
     sudo dnf install -y meson
     sudo dnf install -y libadwaita-devel
     sudo dnf install -y gpgme-devel
-    flatpak install --user --assumeyes org.gnome.Platform//47
-    flatpak install --user --assumeyes org.gnome.Sdk//47
-    flatpak install --user --assumeyes org.gnome.Sdk.Debug//47
+    flatpak install --user --assumeyes org.gnome.Platform//48
+    flatpak install --user --assumeyes org.gnome.Sdk//48
+    flatpak install --user --assumeyes org.gnome.Sdk.Debug//48
     flatpak install --user --assumeyes org.flatpak.Builder
