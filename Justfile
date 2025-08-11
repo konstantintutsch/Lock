@@ -42,11 +42,17 @@ dist:
     rm --verbose --interactive=never --recursive .flatpak-builder
 
 setup:
-    sudo dnf install -y indent
-    sudo dnf install -y meson
-    sudo dnf install -y libadwaita-devel
-    sudo dnf install -y gpgme-devel
-    flatpak install --user --assumeyes org.gnome.Platform//48
-    flatpak install --user --assumeyes org.gnome.Sdk//48
-    flatpak install --user --assumeyes org.gnome.Sdk.Debug//48
-    flatpak install --user --assumeyes org.flatpak.Builder
+    sudo dnf install --assumeyes \
+        indent \
+        meson \
+        bear \
+        libadwaita-devel \
+        gpgme-devel
+    flatpak install --user --assumeyes \
+        org.gnome.Platform//48 \
+        org.gnome.Sdk//48 \
+        org.gnome.Sdk.Debug//48 \
+        org.flatpak.Builder
+
+    meson setup _meson
+    bear -- meson compile -C _meson
