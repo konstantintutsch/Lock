@@ -85,6 +85,14 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.7.2" date="2025-08-14">
+            <description translate="no">
+                <ul>
+                    <li>Localization of both the date and time format enabled in the key expire tooltip</li>
+                    <li>Localization of all log messages disabled</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.7.1" date="2025-08-09">
             <description translate="no">
                 <ul>
