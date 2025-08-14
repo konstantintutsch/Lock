@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 12:05+0200\n"
+"POT-Creation-Date: 2025-08-14 12:47+0200\n"
 "PO-Revision-Date: 2025-04-12 23:33+0000\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -18,12 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.11-dev\n"
-
-#: src/main.c:32
-#, c-format
-msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
-msgid "GnuPG Made Easy %s or greater required. Using %s."
-msgstr "需要 %s 或更高版本的 GnuPG Made Easy。正在使用 %s。"
 
 #. Details
 #: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -232,224 +226,6 @@ msgstr "续期失败"
 #: src/keyrow.c:395
 msgid "Expire date renewed"
 msgstr "到期日期已续期"
-
-#: src/cryptography.c:29
-#, c-format
-msgid "Failed to create new GPGME context: %s"
-msgstr "创建新 GPGME 上下文失败：%s"
-
-#: src/cryptography.c:37
-#, c-format
-msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
-msgstr "设置 GPGME 上下文协议为 OpenPGP 失败：%s"
-
-#: src/cryptography.c:46
-#, c-format
-msgid "Failed to set pinentry mode of GPGME context to ask: %s"
-msgstr "设置 GPGME 上下文 pinentry 模式为询问失败：%s"
-
-#: src/cryptography.c:105
-#, c-format
-msgid "Failed to open file for writing: %s"
-msgstr "打开要写入的文件失败：%s"
-
-#: src/cryptography.c:113
-#, c-format
-msgid "Failed to write to file: %s"
-msgstr "写入文件失败：%s"
-
-#: src/cryptography.c:150
-#, c-format
-msgid "Failed to obtain key by fingerprint: %s"
-msgstr "通过指纹获取密钥失败：%s"
-
-#: src/cryptography.c:190
-msgid "Failed to find key matching User ID"
-msgstr "查找匹配用户标识的密钥失败"
-
-#: src/cryptography.c:231
-#, c-format
-msgid "Failed to generate new GPG key for signing: %s"
-msgstr "生成用于签署的新 GPG 密钥失败：%s"
-
-#: src/cryptography.c:243
-#, c-format
-msgid "Failed to generate new GPG subkey for encryption: %s"
-msgstr "生成用于加密的新 GPG 子密钥失败：%s"
-
-#: src/cryptography.c:251
-#, c-format
-msgid "Failed to delete unfinished, generated key: %s"
-msgstr "删除未完成的已生成密钥失败：%s"
-
-#: src/cryptography.c:288
-#, c-format
-msgid "Failed to load GPGME key data from file: %s"
-msgstr "从文件加载 GPGME 密钥数据失败：%s"
-
-#: src/cryptography.c:296
-#, c-format
-msgid "Failed to import GPG key from file: %s"
-msgstr "从文件导入 GPG 密钥失败：%s"
-
-#: src/cryptography.c:333
-#, c-format
-msgid "Failed to create GPGME key data in memory: %s"
-msgstr "在内存中创建 GPGME 密钥数据失败：%s"
-
-#: src/cryptography.c:341
-#, c-format
-msgid "Failed to export GPG key(s) to file: %s"
-msgstr "导出 GPG 密钥至文件失败：%s"
-
-#: src/cryptography.c:386
-#, c-format
-msgid "Failed to get GPG key for expire date renewal: %s"
-msgstr "获取 GPG 密钥来续期到期日期失败：%s"
-
-#: src/cryptography.c:394
-#, c-format
-msgid "Failed to renew the expire date of a key: %s"
-msgstr "续期密钥的到期日期失败：%s"
-
-#: src/cryptography.c:428
-#, c-format
-msgid "Failed to get GPG key for removal: %s"
-msgstr "获取 GPG 密钥来移除失败：%s"
-
-#: src/cryptography.c:436
-#, c-format
-msgid "Failed to remove GPG key: %s"
-msgstr "移除 GPG 密钥失败：%s"
-
-#: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
-#: src/cryptography.c:659
-#, c-format
-msgid "Failed to create new GPGME input data from string: %s"
-msgstr "从字符串创建新 GPGME 输入数据失败：%s"
-
-#: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
-#: src/cryptography.c:667 src/cryptography.c:761 src/cryptography.c:844
-#: src/cryptography.c:926 src/cryptography.c:1017
-#, c-format
-msgid "Failed to create new GPGME output data in memory: %s"
-msgstr "在内存中创建新 GPGME 输出数据失败：%s"
-
-#: src/cryptography.c:495
-#, c-format
-msgid "Failed to encrypt GPGME data from memory: %s"
-msgstr "从内存加密 GPGME 数据失败：%s"
-
-#: src/cryptography.c:551
-#, c-format
-msgid "Failed to decrypt GPGME data from memory: %s"
-msgstr "从内存解密 GPGME 数据失败：%s"
-
-#: src/cryptography.c:610 src/cryptography.c:944
-#, c-format
-msgid "Failed to add signing key to GPGME context: %s"
-msgstr "添加签署密钥至 GPGME 上下文失败：%s"
-
-#: src/cryptography.c:619
-#, c-format
-msgid "Failed to sign GPGME data from memory: %s"
-msgstr "从内存签署 GPGME 数据失败：%s"
-
-#: src/cryptography.c:676 src/cryptography.c:687
-msgid "Failed to verify GPGME data from memory"
-msgstr "从内存校验 GPGME 数据失败"
-
-#: src/cryptography.c:739 src/cryptography.c:822 src/cryptography.c:904
-#: src/cryptography.c:995
-#, c-format
-msgid "Removed %s to prepare overwriting"
-msgstr "已移除 %s 来准备覆盖"
-
-#: src/cryptography.c:744 src/cryptography.c:827 src/cryptography.c:909
-#: src/cryptography.c:1000
-#, c-format
-msgid "Failed to create new GPGME input data from file: %s"
-msgstr "从文件创建新 GPGME 输入数据失败：%s"
-
-#: src/cryptography.c:752 src/cryptography.c:835 src/cryptography.c:917
-#: src/cryptography.c:1008
-#, c-format
-msgid "Failed to set file name of GPGME input data: %s"
-msgstr "设置 GPGME 输入数据的文件名失败：%s"
-
-#: src/cryptography.c:770 src/cryptography.c:853 src/cryptography.c:935
-#: src/cryptography.c:1026
-#, c-format
-msgid "Failed to set file name of GPGME output data: %s"
-msgstr "设置 GPGME 输出数据的文件名失败：%s"
-
-#: src/cryptography.c:781
-#, c-format
-msgid "Failed to encrypt GPGME data from file: %s"
-msgstr "从文件加密 GPGME 数据失败：%s"
-
-#: src/cryptography.c:862
-#, c-format
-msgid "Failed to decrypt GPGME data from file: %s"
-msgstr "从文件解密 GPGME 数据失败：%s"
-
-#: src/cryptography.c:953
-#, c-format
-msgid "Failed to sign GPGME data from file: %s"
-msgstr "从文件签署 GPGME 数据失败：%s"
-
-#: src/cryptography.c:1035
-#, c-format
-msgid "Failed to verify GPGME data from file: %s"
-msgstr "从文件校验 GPGME 数据失败：%s"
-
-#: src/threading.c:57
-msgid "Failed to create text encryption thread"
-msgstr "创建文本加密线程失败"
-
-#: src/threading.c:80
-msgid "Failed to create file encryption thread"
-msgstr "创建文件加密线程失败"
-
-#: src/threading.c:101
-msgid "Failed to create text decryption thread"
-msgstr "创建文本解密线程失败"
-
-#: src/threading.c:121
-msgid "Failed to create file decryption thread"
-msgstr "创建文件解密线程失败"
-
-#: src/threading.c:143
-msgid "Failed to create text signing thread"
-msgstr "创建文本签署线程失败"
-
-#: src/threading.c:166
-msgid "Failed to create file signing thread"
-msgstr "创建文件签署线程失败"
-
-#: src/threading.c:187
-msgid "Failed to create text verification thread"
-msgstr "创建文本校验线程失败"
-
-#: src/threading.c:207
-msgid "Failed to create file verification thread"
-msgstr "创建文件校验线程失败"
-
-#: src/threading.c:222
-msgid "Failed to create key import thread"
-msgstr "创建密钥导入线程失败"
-
-#: src/threading.c:244
-msgid "Failed to create key pair generation thread"
-msgstr "创建密钥对生成线程失败"
-
-#: src/threading.c:259
-msgid "Failed to create key export thread"
-msgstr "创建密钥导出线程失败"
-
-#: src/threading.c:271
-msgid "Failed to create key removal thread"
-msgstr "创建密钥移除线程失败"
 
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
@@ -800,6 +576,177 @@ msgstr "纯文本"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "密钥选择对话框"
+
+#~ msgid "Failed to create key pair generation thread"
+#~ msgstr "创建密钥对生成线程失败"
+
+#, c-format
+#~ msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
+#~ msgid "GnuPG Made Easy %s or greater required. Using %s."
+#~ msgstr "需要 %s 或更高版本的 GnuPG Made Easy。正在使用 %s。"
+
+#, c-format
+#~ msgid "Failed to create new GPGME context: %s"
+#~ msgstr "创建新 GPGME 上下文失败：%s"
+
+#, c-format
+#~ msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
+#~ msgstr "设置 GPGME 上下文协议为 OpenPGP 失败：%s"
+
+#, c-format
+#~ msgid "Failed to set pinentry mode of GPGME context to ask: %s"
+#~ msgstr "设置 GPGME 上下文 pinentry 模式为询问失败：%s"
+
+#, c-format
+#~ msgid "Failed to open file for writing: %s"
+#~ msgstr "打开要写入的文件失败：%s"
+
+#, c-format
+#~ msgid "Failed to write to file: %s"
+#~ msgstr "写入文件失败：%s"
+
+#, c-format
+#~ msgid "Failed to obtain key by fingerprint: %s"
+#~ msgstr "通过指纹获取密钥失败：%s"
+
+#~ msgid "Failed to find key matching User ID"
+#~ msgstr "查找匹配用户标识的密钥失败"
+
+#, c-format
+#~ msgid "Failed to generate new GPG key for signing: %s"
+#~ msgstr "生成用于签署的新 GPG 密钥失败：%s"
+
+#, c-format
+#~ msgid "Failed to generate new GPG subkey for encryption: %s"
+#~ msgstr "生成用于加密的新 GPG 子密钥失败：%s"
+
+#, c-format
+#~ msgid "Failed to delete unfinished, generated key: %s"
+#~ msgstr "删除未完成的已生成密钥失败：%s"
+
+#, c-format
+#~ msgid "Failed to load GPGME key data from file: %s"
+#~ msgstr "从文件加载 GPGME 密钥数据失败：%s"
+
+#, c-format
+#~ msgid "Failed to import GPG key from file: %s"
+#~ msgstr "从文件导入 GPG 密钥失败：%s"
+
+#, c-format
+#~ msgid "Failed to create GPGME key data in memory: %s"
+#~ msgstr "在内存中创建 GPGME 密钥数据失败：%s"
+
+#, c-format
+#~ msgid "Failed to export GPG key(s) to file: %s"
+#~ msgstr "导出 GPG 密钥至文件失败：%s"
+
+#, c-format
+#~ msgid "Failed to get GPG key for expire date renewal: %s"
+#~ msgstr "获取 GPG 密钥来续期到期日期失败：%s"
+
+#, c-format
+#~ msgid "Failed to renew the expire date of a key: %s"
+#~ msgstr "续期密钥的到期日期失败：%s"
+
+#, c-format
+#~ msgid "Failed to get GPG key for removal: %s"
+#~ msgstr "获取 GPG 密钥来移除失败：%s"
+
+#, c-format
+#~ msgid "Failed to remove GPG key: %s"
+#~ msgstr "移除 GPG 密钥失败：%s"
+
+#, c-format
+#~ msgid "Failed to create new GPGME input data from string: %s"
+#~ msgstr "从字符串创建新 GPGME 输入数据失败：%s"
+
+#, c-format
+#~ msgid "Failed to create new GPGME output data in memory: %s"
+#~ msgstr "在内存中创建新 GPGME 输出数据失败：%s"
+
+#, c-format
+#~ msgid "Failed to encrypt GPGME data from memory: %s"
+#~ msgstr "从内存加密 GPGME 数据失败：%s"
+
+#, c-format
+#~ msgid "Failed to decrypt GPGME data from memory: %s"
+#~ msgstr "从内存解密 GPGME 数据失败：%s"
+
+#, c-format
+#~ msgid "Failed to add signing key to GPGME context: %s"
+#~ msgstr "添加签署密钥至 GPGME 上下文失败：%s"
+
+#, c-format
+#~ msgid "Failed to sign GPGME data from memory: %s"
+#~ msgstr "从内存签署 GPGME 数据失败：%s"
+
+#~ msgid "Failed to verify GPGME data from memory"
+#~ msgstr "从内存校验 GPGME 数据失败"
+
+#, c-format
+#~ msgid "Removed %s to prepare overwriting"
+#~ msgstr "已移除 %s 来准备覆盖"
+
+#, c-format
+#~ msgid "Failed to create new GPGME input data from file: %s"
+#~ msgstr "从文件创建新 GPGME 输入数据失败：%s"
+
+#, c-format
+#~ msgid "Failed to set file name of GPGME input data: %s"
+#~ msgstr "设置 GPGME 输入数据的文件名失败：%s"
+
+#, c-format
+#~ msgid "Failed to set file name of GPGME output data: %s"
+#~ msgstr "设置 GPGME 输出数据的文件名失败：%s"
+
+#, c-format
+#~ msgid "Failed to encrypt GPGME data from file: %s"
+#~ msgstr "从文件加密 GPGME 数据失败：%s"
+
+#, c-format
+#~ msgid "Failed to decrypt GPGME data from file: %s"
+#~ msgstr "从文件解密 GPGME 数据失败：%s"
+
+#, c-format
+#~ msgid "Failed to sign GPGME data from file: %s"
+#~ msgstr "从文件签署 GPGME 数据失败：%s"
+
+#, c-format
+#~ msgid "Failed to verify GPGME data from file: %s"
+#~ msgstr "从文件校验 GPGME 数据失败：%s"
+
+#~ msgid "Failed to create text encryption thread"
+#~ msgstr "创建文本加密线程失败"
+
+#~ msgid "Failed to create file encryption thread"
+#~ msgstr "创建文件加密线程失败"
+
+#~ msgid "Failed to create text decryption thread"
+#~ msgstr "创建文本解密线程失败"
+
+#~ msgid "Failed to create file decryption thread"
+#~ msgstr "创建文件解密线程失败"
+
+#~ msgid "Failed to create text signing thread"
+#~ msgstr "创建文本签署线程失败"
+
+#~ msgid "Failed to create file signing thread"
+#~ msgstr "创建文件签署线程失败"
+
+#~ msgid "Failed to create text verification thread"
+#~ msgstr "创建文本校验线程失败"
+
+#~ msgid "Failed to create file verification thread"
+#~ msgstr "创建文件校验线程失败"
+
+#~ msgid "Failed to create key import thread"
+#~ msgstr "创建密钥导入线程失败"
+
+#~ msgid "Failed to create key export thread"
+#~ msgstr "创建密钥导出线程失败"
+
+#~ msgid "Failed to create key removal thread"
+#~ msgstr "创建密钥移除线程失败"
 
 #~ msgid "Input File"
 #~ msgstr "输入文件"

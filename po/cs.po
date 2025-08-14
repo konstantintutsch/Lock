@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 12:05+0200\n"
+"POT-Creation-Date: 2025-08-14 12:47+0200\n"
 "PO-Revision-Date: 2025-07-01 11:01+0000\n"
 "Last-Translator: Klára Holubová <witt087@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/Lock/Application/"
@@ -18,12 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "X-Generator: Weblate 5.13-dev\n"
-
-#: src/main.c:32
-#, c-format
-msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
-msgid "GnuPG Made Easy %s or greater required. Using %s."
-msgstr "Je vyžadována verze %s nebo novější GnuPG Made Easy. Používá se %s."
 
 #. Details
 #: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -232,225 +226,6 @@ msgstr "Obnovení selhalo"
 #: src/keyrow.c:395
 msgid "Expire date renewed"
 msgstr "Platnost obnovena"
-
-#: src/cryptography.c:29
-#, c-format
-msgid "Failed to create new GPGME context: %s"
-msgstr "Selhalo vytvoření nového GPGME kontextu: %s"
-
-#: src/cryptography.c:37
-#, c-format
-msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
-msgstr "Selhalo nastavení protokolu GPGME kontextu na OpenPGP: %s"
-
-#: src/cryptography.c:46
-#, c-format
-msgid "Failed to set pinentry mode of GPGME context to ask: %s"
-msgstr "Nepodařilo se nastavit pinetry mód GPGME kontextu k zeptání: %s"
-
-#: src/cryptography.c:105
-#, c-format
-msgid "Failed to open file for writing: %s"
-msgstr "Selhalo otevření souboru pro zapisování: %s"
-
-#: src/cryptography.c:113
-#, c-format
-msgid "Failed to write to file: %s"
-msgstr "Selhal zápis do souboru: %s"
-
-#: src/cryptography.c:150
-#, c-format
-msgid "Failed to obtain key by fingerprint: %s"
-msgstr "Nepodařilo se získat klíč z otisku: %s"
-
-#: src/cryptography.c:190
-msgid "Failed to find key matching User ID"
-msgstr "Nepodařilo se najít klíč odpovídající User ID"
-
-#: src/cryptography.c:231
-#, c-format
-msgid "Failed to generate new GPG key for signing: %s"
-msgstr "Nepodařilo se vygenerovat nový GPG klíč pro podepisování: %s"
-
-#: src/cryptography.c:243
-#, c-format
-msgid "Failed to generate new GPG subkey for encryption: %s"
-msgstr "Nepodařilo se vygenerovat nový GPG podklíč pro šifrování: %s"
-
-#: src/cryptography.c:251
-#, c-format
-msgid "Failed to delete unfinished, generated key: %s"
-msgstr "Nepodařilo se smazat nedokončený vygenerovaný klíč: %s"
-
-#: src/cryptography.c:288
-#, c-format
-msgid "Failed to load GPGME key data from file: %s"
-msgstr "Nepodařilo se načíst data GPGME klíče ze souboru: %s"
-
-#: src/cryptography.c:296
-#, c-format
-msgid "Failed to import GPG key from file: %s"
-msgstr "Selhalo importování GPG klíče ze souboru: %s"
-
-#: src/cryptography.c:333
-#, c-format
-msgid "Failed to create GPGME key data in memory: %s"
-msgstr "Nepodařilo se vytvořit data GPGME klíče v paměti: %s"
-
-#: src/cryptography.c:341
-#, c-format
-msgid "Failed to export GPG key(s) to file: %s"
-msgstr "Selhalo exportování GPG klíče do souboru: %s"
-
-#: src/cryptography.c:386
-#, c-format
-msgid "Failed to get GPG key for expire date renewal: %s"
-msgstr ""
-"Nepodařilo se získat datum platnosti GPG klíče pro obnovení platnosti: %s"
-
-#: src/cryptography.c:394
-#, c-format
-msgid "Failed to renew the expire date of a key: %s"
-msgstr "Nepodařilo se obnovit datum platnosti klíče: %s"
-
-#: src/cryptography.c:428
-#, c-format
-msgid "Failed to get GPG key for removal: %s"
-msgstr "Selhalo získání GPG klíče k odstranění: %s"
-
-#: src/cryptography.c:436
-#, c-format
-msgid "Failed to remove GPG key: %s"
-msgstr "Selhalo odstranění GPG klíče: %s"
-
-#: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
-#: src/cryptography.c:659
-#, c-format
-msgid "Failed to create new GPGME input data from string: %s"
-msgstr "Nepodařilo se vytvořit nové GPGME vstupní data z textu: %s"
-
-#: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
-#: src/cryptography.c:667 src/cryptography.c:761 src/cryptography.c:844
-#: src/cryptography.c:926 src/cryptography.c:1017
-#, c-format
-msgid "Failed to create new GPGME output data in memory: %s"
-msgstr "Nepodařilo se vytvořit nová GPGME výstupní data v paměti: %s"
-
-#: src/cryptography.c:495
-#, c-format
-msgid "Failed to encrypt GPGME data from memory: %s"
-msgstr "Nepodařilo se zašifrovat GPGME data z paměti: %s"
-
-#: src/cryptography.c:551
-#, c-format
-msgid "Failed to decrypt GPGME data from memory: %s"
-msgstr "Nepodařilo se rozšifrovat GPGME data z paměti: %s"
-
-#: src/cryptography.c:610 src/cryptography.c:944
-#, c-format
-msgid "Failed to add signing key to GPGME context: %s"
-msgstr "Nepodařilo se přidat podepisovací klíč do GPGME kontextu: %s"
-
-#: src/cryptography.c:619
-#, c-format
-msgid "Failed to sign GPGME data from memory: %s"
-msgstr "Nepodařilo se podepsat GPGME data z paměti: %s"
-
-#: src/cryptography.c:676 src/cryptography.c:687
-msgid "Failed to verify GPGME data from memory"
-msgstr "Nepodařilo se ověřit GPGME data z paměti"
-
-#: src/cryptography.c:739 src/cryptography.c:822 src/cryptography.c:904
-#: src/cryptography.c:995
-#, c-format
-msgid "Removed %s to prepare overwriting"
-msgstr "Odstraněno %s pro přípravu přepsání"
-
-#: src/cryptography.c:744 src/cryptography.c:827 src/cryptography.c:909
-#: src/cryptography.c:1000
-#, c-format
-msgid "Failed to create new GPGME input data from file: %s"
-msgstr "Nepodařilo se vytvořit nová GPGME vstupní data ze souboru: %s"
-
-#: src/cryptography.c:752 src/cryptography.c:835 src/cryptography.c:917
-#: src/cryptography.c:1008
-#, c-format
-msgid "Failed to set file name of GPGME input data: %s"
-msgstr "Nepodařilo se nastavit název souboru GPGME vstupních dat: %s"
-
-#: src/cryptography.c:770 src/cryptography.c:853 src/cryptography.c:935
-#: src/cryptography.c:1026
-#, c-format
-msgid "Failed to set file name of GPGME output data: %s"
-msgstr "Nepodařilo se nastavit název souboru GPGME výstupních dat: %s"
-
-#: src/cryptography.c:781
-#, c-format
-msgid "Failed to encrypt GPGME data from file: %s"
-msgstr "Nepodařilo se zašifrovat GPGME data ze souboru: %s"
-
-#: src/cryptography.c:862
-#, c-format
-msgid "Failed to decrypt GPGME data from file: %s"
-msgstr "Nepodařilo se rozšifrovat GPGME data ze souboru: %s"
-
-#: src/cryptography.c:953
-#, c-format
-msgid "Failed to sign GPGME data from file: %s"
-msgstr "Nepodařilo se podepsat GPGME data ze souboru: %s"
-
-#: src/cryptography.c:1035
-#, c-format
-msgid "Failed to verify GPGME data from file: %s"
-msgstr "Nepodařilo se ověřit GPGME data ze souboru: %s"
-
-#: src/threading.c:57
-msgid "Failed to create text encryption thread"
-msgstr "Nepodařilo se vytvořit vlákno pro šifrování textu"
-
-#: src/threading.c:80
-msgid "Failed to create file encryption thread"
-msgstr "Nepodařilo se vytvořit vlákno pro šifrování souborů"
-
-#: src/threading.c:101
-msgid "Failed to create text decryption thread"
-msgstr "Nepodařilo se vytvořit vlákno pro rozšifrovávání textu"
-
-#: src/threading.c:121
-msgid "Failed to create file decryption thread"
-msgstr "Nepodařilo se vytvořit vlákno pro rozšifrovávání souborů"
-
-#: src/threading.c:143
-msgid "Failed to create text signing thread"
-msgstr "Nepodařilo se vytvořit vlákno pro podepisování textu"
-
-#: src/threading.c:166
-msgid "Failed to create file signing thread"
-msgstr "Nepodařilo se vytvořit vlákno pro podepisování souborů"
-
-#: src/threading.c:187
-msgid "Failed to create text verification thread"
-msgstr "Nepodařilo se vytvořit vlákno pro ověřování textu"
-
-#: src/threading.c:207
-msgid "Failed to create file verification thread"
-msgstr "Nepodařilo se vytvořit vlákno pro ověřování souborů"
-
-#: src/threading.c:222
-msgid "Failed to create key import thread"
-msgstr "Selhalo vytvoření threadu pro importování klíče"
-
-#: src/threading.c:244
-msgid "Failed to create key pair generation thread"
-msgstr "Nepodařilo se vytvořit vlákno pro vytváření párů klíčů"
-
-#: src/threading.c:259
-msgid "Failed to create key export thread"
-msgstr "Nepodařilo se vytvořit vlákno pro exportování klíčů"
-
-#: src/threading.c:271
-msgid "Failed to create key removal thread"
-msgstr "Nepodařilo se vytvořit vlákno pro odstraňování klíčů"
 
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
@@ -801,6 +576,178 @@ msgstr "Holý text"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Okno pro vybírání klíče"
+
+#~ msgid "Failed to create key pair generation thread"
+#~ msgstr "Nepodařilo se vytvořit vlákno pro vytváření párů klíčů"
+
+#, c-format
+#~ msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
+#~ msgid "GnuPG Made Easy %s or greater required. Using %s."
+#~ msgstr "Je vyžadována verze %s nebo novější GnuPG Made Easy. Používá se %s."
+
+#, c-format
+#~ msgid "Failed to create new GPGME context: %s"
+#~ msgstr "Selhalo vytvoření nového GPGME kontextu: %s"
+
+#, c-format
+#~ msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
+#~ msgstr "Selhalo nastavení protokolu GPGME kontextu na OpenPGP: %s"
+
+#, c-format
+#~ msgid "Failed to set pinentry mode of GPGME context to ask: %s"
+#~ msgstr "Nepodařilo se nastavit pinetry mód GPGME kontextu k zeptání: %s"
+
+#, c-format
+#~ msgid "Failed to open file for writing: %s"
+#~ msgstr "Selhalo otevření souboru pro zapisování: %s"
+
+#, c-format
+#~ msgid "Failed to write to file: %s"
+#~ msgstr "Selhal zápis do souboru: %s"
+
+#, c-format
+#~ msgid "Failed to obtain key by fingerprint: %s"
+#~ msgstr "Nepodařilo se získat klíč z otisku: %s"
+
+#~ msgid "Failed to find key matching User ID"
+#~ msgstr "Nepodařilo se najít klíč odpovídající User ID"
+
+#, c-format
+#~ msgid "Failed to generate new GPG key for signing: %s"
+#~ msgstr "Nepodařilo se vygenerovat nový GPG klíč pro podepisování: %s"
+
+#, c-format
+#~ msgid "Failed to generate new GPG subkey for encryption: %s"
+#~ msgstr "Nepodařilo se vygenerovat nový GPG podklíč pro šifrování: %s"
+
+#, c-format
+#~ msgid "Failed to delete unfinished, generated key: %s"
+#~ msgstr "Nepodařilo se smazat nedokončený vygenerovaný klíč: %s"
+
+#, c-format
+#~ msgid "Failed to load GPGME key data from file: %s"
+#~ msgstr "Nepodařilo se načíst data GPGME klíče ze souboru: %s"
+
+#, c-format
+#~ msgid "Failed to import GPG key from file: %s"
+#~ msgstr "Selhalo importování GPG klíče ze souboru: %s"
+
+#, c-format
+#~ msgid "Failed to create GPGME key data in memory: %s"
+#~ msgstr "Nepodařilo se vytvořit data GPGME klíče v paměti: %s"
+
+#, c-format
+#~ msgid "Failed to export GPG key(s) to file: %s"
+#~ msgstr "Selhalo exportování GPG klíče do souboru: %s"
+
+#, c-format
+#~ msgid "Failed to get GPG key for expire date renewal: %s"
+#~ msgstr ""
+#~ "Nepodařilo se získat datum platnosti GPG klíče pro obnovení platnosti: %s"
+
+#, c-format
+#~ msgid "Failed to renew the expire date of a key: %s"
+#~ msgstr "Nepodařilo se obnovit datum platnosti klíče: %s"
+
+#, c-format
+#~ msgid "Failed to get GPG key for removal: %s"
+#~ msgstr "Selhalo získání GPG klíče k odstranění: %s"
+
+#, c-format
+#~ msgid "Failed to remove GPG key: %s"
+#~ msgstr "Selhalo odstranění GPG klíče: %s"
+
+#, c-format
+#~ msgid "Failed to create new GPGME input data from string: %s"
+#~ msgstr "Nepodařilo se vytvořit nové GPGME vstupní data z textu: %s"
+
+#, c-format
+#~ msgid "Failed to create new GPGME output data in memory: %s"
+#~ msgstr "Nepodařilo se vytvořit nová GPGME výstupní data v paměti: %s"
+
+#, c-format
+#~ msgid "Failed to encrypt GPGME data from memory: %s"
+#~ msgstr "Nepodařilo se zašifrovat GPGME data z paměti: %s"
+
+#, c-format
+#~ msgid "Failed to decrypt GPGME data from memory: %s"
+#~ msgstr "Nepodařilo se rozšifrovat GPGME data z paměti: %s"
+
+#, c-format
+#~ msgid "Failed to add signing key to GPGME context: %s"
+#~ msgstr "Nepodařilo se přidat podepisovací klíč do GPGME kontextu: %s"
+
+#, c-format
+#~ msgid "Failed to sign GPGME data from memory: %s"
+#~ msgstr "Nepodařilo se podepsat GPGME data z paměti: %s"
+
+#~ msgid "Failed to verify GPGME data from memory"
+#~ msgstr "Nepodařilo se ověřit GPGME data z paměti"
+
+#, c-format
+#~ msgid "Removed %s to prepare overwriting"
+#~ msgstr "Odstraněno %s pro přípravu přepsání"
+
+#, c-format
+#~ msgid "Failed to create new GPGME input data from file: %s"
+#~ msgstr "Nepodařilo se vytvořit nová GPGME vstupní data ze souboru: %s"
+
+#, c-format
+#~ msgid "Failed to set file name of GPGME input data: %s"
+#~ msgstr "Nepodařilo se nastavit název souboru GPGME vstupních dat: %s"
+
+#, c-format
+#~ msgid "Failed to set file name of GPGME output data: %s"
+#~ msgstr "Nepodařilo se nastavit název souboru GPGME výstupních dat: %s"
+
+#, c-format
+#~ msgid "Failed to encrypt GPGME data from file: %s"
+#~ msgstr "Nepodařilo se zašifrovat GPGME data ze souboru: %s"
+
+#, c-format
+#~ msgid "Failed to decrypt GPGME data from file: %s"
+#~ msgstr "Nepodařilo se rozšifrovat GPGME data ze souboru: %s"
+
+#, c-format
+#~ msgid "Failed to sign GPGME data from file: %s"
+#~ msgstr "Nepodařilo se podepsat GPGME data ze souboru: %s"
+
+#, c-format
+#~ msgid "Failed to verify GPGME data from file: %s"
+#~ msgstr "Nepodařilo se ověřit GPGME data ze souboru: %s"
+
+#~ msgid "Failed to create text encryption thread"
+#~ msgstr "Nepodařilo se vytvořit vlákno pro šifrování textu"
+
+#~ msgid "Failed to create file encryption thread"
+#~ msgstr "Nepodařilo se vytvořit vlákno pro šifrování souborů"
+
+#~ msgid "Failed to create text decryption thread"
+#~ msgstr "Nepodařilo se vytvořit vlákno pro rozšifrovávání textu"
+
+#~ msgid "Failed to create file decryption thread"
+#~ msgstr "Nepodařilo se vytvořit vlákno pro rozšifrovávání souborů"
+
+#~ msgid "Failed to create text signing thread"
+#~ msgstr "Nepodařilo se vytvořit vlákno pro podepisování textu"
+
+#~ msgid "Failed to create file signing thread"
+#~ msgstr "Nepodařilo se vytvořit vlákno pro podepisování souborů"
+
+#~ msgid "Failed to create text verification thread"
+#~ msgstr "Nepodařilo se vytvořit vlákno pro ověřování textu"
+
+#~ msgid "Failed to create file verification thread"
+#~ msgstr "Nepodařilo se vytvořit vlákno pro ověřování souborů"
+
+#~ msgid "Failed to create key import thread"
+#~ msgstr "Selhalo vytvoření threadu pro importování klíče"
+
+#~ msgid "Failed to create key export thread"
+#~ msgstr "Nepodařilo se vytvořit vlákno pro exportování klíčů"
+
+#~ msgid "Failed to create key removal thread"
+#~ msgstr "Nepodařilo se vytvořit vlákno pro odstraňování klíčů"
 
 #, fuzzy
 #~ msgid "All signatures valid"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 12:05+0200\n"
+"POT-Creation-Date: 2025-08-14 12:47+0200\n"
 "PO-Revision-Date: 2024-12-01 19:04+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -18,12 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 5.9-dev\n"
-
-#: src/main.c:32
-#, c-format
-msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
-msgid "GnuPG Made Easy %s or greater required. Using %s."
-msgstr "GnuPG Made Easy %s o superior es requerit. Utilizacion de %s."
 
 #. Details
 #: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -238,246 +232,6 @@ msgstr "Fracàs de la renovacion"
 #, fuzzy
 msgid "Expire date renewed"
 msgstr "Afichar las datas d'expiracion"
-
-#: src/cryptography.c:29
-#, fuzzy, c-format
-msgid "Failed to create new GPGME context: %s"
-msgstr "Fracàs de la creacion d’un contèxte GPGME nòu"
-
-#: src/cryptography.c:37
-#, fuzzy, c-format
-msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
-msgstr "Fracàs de la definicion del protocòl del contèxte GPGME per OpenPGP"
-
-#: src/cryptography.c:46
-#, fuzzy, c-format
-msgid "Failed to set pinentry mode of GPGME context to ask: %s"
-msgstr "Fracàs de la definicion del protocòl del contèxte GPGME per OpenPGP"
-
-#: src/cryptography.c:105
-#, fuzzy, c-format
-msgid "Failed to open file for writing: %s"
-msgstr "Fracàs de la dobertura del fichièr d’exportacion : %s"
-
-#: src/cryptography.c:113
-#, fuzzy, c-format
-msgid "Failed to write to file: %s"
-msgstr "Fracàs de la dobertura del fichièr d’exportacion : %s"
-
-#: src/cryptography.c:150
-#, fuzzy, c-format
-msgid "Failed to obtain key by fingerprint: %s"
-msgstr "Fracàs de l’obtencion de la clau per emprenta digitala"
-
-#: src/cryptography.c:190
-msgid "Failed to find key matching User ID"
-msgstr "Fracàs de la trobada d’una clau correspondenta a l’ID utilizaire"
-
-#: src/cryptography.c:231
-#, fuzzy, c-format
-msgid "Failed to generate new GPG key for signing: %s"
-msgstr "Fracàs de la generacion de la clau GPG novèla per signar"
-
-#: src/cryptography.c:243
-#, fuzzy, c-format
-msgid "Failed to generate new GPG subkey for encryption: %s"
-msgstr "Fracàs de la generacion de la clau GPG novèla per signar"
-
-#: src/cryptography.c:251
-#, fuzzy, c-format
-msgid "Failed to delete unfinished, generated key: %s"
-msgstr "Fracàs de la supression de la clau ECC generada non acabada"
-
-#: src/cryptography.c:288
-#, fuzzy, c-format
-msgid "Failed to load GPGME key data from file: %s"
-msgstr ""
-"Fracàs de la mesa en memòria de las donadas clau GPGME a partir del fichièr"
-
-#: src/cryptography.c:296
-#, fuzzy, c-format
-msgid "Failed to import GPG key from file: %s"
-msgstr "Fracàs de l’importacion de la clau GPG a partir del fichièr"
-
-#: src/cryptography.c:333
-#, fuzzy, c-format
-msgid "Failed to create GPGME key data in memory: %s"
-msgstr "Fracàs de la creacion de las donadas de la clau GPGME en memòria"
-
-#: src/cryptography.c:341
-#, fuzzy, c-format
-msgid "Failed to export GPG key(s) to file: %s"
-msgstr "Fracàs de l’exportacion de la(s) clau(s) dins un fichièr"
-
-#: src/cryptography.c:386
-#, fuzzy, c-format
-msgid "Failed to get GPG key for expire date renewal: %s"
-msgstr "Fracàs de l’obtencion de la clau GPG de suprimir"
-
-#: src/cryptography.c:394
-#, fuzzy, c-format
-msgid "Failed to renew the expire date of a key: %s"
-msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
-
-#: src/cryptography.c:428
-#, fuzzy, c-format
-msgid "Failed to get GPG key for removal: %s"
-msgstr "Fracàs de l’obtencion de la clau GPG de suprimir"
-
-#: src/cryptography.c:436
-#, fuzzy, c-format
-msgid "Failed to remove GPG key: %s"
-msgstr "Fracàs de la supression de la clau GPG"
-
-#: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
-#: src/cryptography.c:659
-#, fuzzy, c-format
-msgid "Failed to create new GPGME input data from string: %s"
-msgstr ""
-"Fracàs de la creacion de las donadas GPGME d’entrada novèlas a partir de la "
-"cadena de tèxte"
-
-#: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
-#: src/cryptography.c:667 src/cryptography.c:761 src/cryptography.c:844
-#: src/cryptography.c:926 src/cryptography.c:1017
-#, fuzzy, c-format
-msgid "Failed to create new GPGME output data in memory: %s"
-msgstr "Fracàs de la creacion de las donadas GPGME de sortida en memòria"
-
-#: src/cryptography.c:495
-#, fuzzy, c-format
-msgid "Failed to encrypt GPGME data from memory: %s"
-msgstr ""
-"Fracàs de la realizacion del chiframent de las donadas GPGME a partir de la "
-"memòria"
-
-#: src/cryptography.c:551
-#, fuzzy, c-format
-msgid "Failed to decrypt GPGME data from memory: %s"
-msgstr ""
-"Fracàs de la realizacion del deschiframent de las donadas GPGME a partir de "
-"la memòria"
-
-#: src/cryptography.c:610 src/cryptography.c:944
-#, fuzzy, c-format
-msgid "Failed to add signing key to GPGME context: %s"
-msgstr "Fracàs de l’apondon de la clau al contèxte GPGME nòu"
-
-#: src/cryptography.c:619
-#, fuzzy, c-format
-msgid "Failed to sign GPGME data from memory: %s"
-msgstr "Fracàs de la signatura de las donadas GPGME a partir de la memòria"
-
-#: src/cryptography.c:676 src/cryptography.c:687
-msgid "Failed to verify GPGME data from memory"
-msgstr "Fracàs de la verificacion de las donadas GPGME a partir de la memòria"
-
-#: src/cryptography.c:739 src/cryptography.c:822 src/cryptography.c:904
-#: src/cryptography.c:995
-#, c-format
-msgid "Removed %s to prepare overwriting"
-msgstr "%s suprimit per preparar lo subrecargament"
-
-#: src/cryptography.c:744 src/cryptography.c:827 src/cryptography.c:909
-#: src/cryptography.c:1000
-#, fuzzy, c-format
-msgid "Failed to create new GPGME input data from file: %s"
-msgstr ""
-"Fracàs de la creacion de las novèlas donadas GPGME d’entrada a partir del "
-"fichièr"
-
-#: src/cryptography.c:752 src/cryptography.c:835 src/cryptography.c:917
-#: src/cryptography.c:1008
-#, fuzzy, c-format
-msgid "Failed to set file name of GPGME input data: %s"
-msgstr ""
-"Fracàs de la definicion del nom de fichièr de las donadas GPGME d’entrada"
-
-#: src/cryptography.c:770 src/cryptography.c:853 src/cryptography.c:935
-#: src/cryptography.c:1026
-#, fuzzy, c-format
-msgid "Failed to set file name of GPGME output data: %s"
-msgstr ""
-"Fracàs de la definicion del nom de fichièr de las donadas GPGME de sortida"
-
-#: src/cryptography.c:781
-#, fuzzy, c-format
-msgid "Failed to encrypt GPGME data from file: %s"
-msgstr ""
-"Fracàs de la realizacion del deschiframent de las donadas GPGME a partir del "
-"fichièr"
-
-#: src/cryptography.c:862
-#, fuzzy, c-format
-msgid "Failed to decrypt GPGME data from file: %s"
-msgstr ""
-"Fracàs de la realizacion del chiframent de las donadas GPGME a partir del "
-"fichièr"
-
-#: src/cryptography.c:953
-#, fuzzy, c-format
-msgid "Failed to sign GPGME data from file: %s"
-msgstr "Fracàs de la signatura de las donadas GPGME a partir del fichièr"
-
-#: src/cryptography.c:1035
-#, fuzzy, c-format
-msgid "Failed to verify GPGME data from file: %s"
-msgstr "Fracàs de la verificacion de las donadas GPGME a partir del fichièr"
-
-#: src/threading.c:57
-msgid "Failed to create text encryption thread"
-msgstr "Fracàs de la creacion del fil d’execucion tèxte"
-
-#: src/threading.c:80
-msgid "Failed to create file encryption thread"
-msgstr "Fracàs de la creacion del fichièr del fil d’execucion"
-
-#: src/threading.c:101
-msgid "Failed to create text decryption thread"
-msgstr "Fracàs de la creacion del fil d’execucion tèxte"
-
-#: src/threading.c:121
-msgid "Failed to create file decryption thread"
-msgstr "Fracàs de la creacion del fichièr del fil d’execucion"
-
-#: src/threading.c:143
-msgid "Failed to create text signing thread"
-msgstr "Fracàs de la creacion del fil d’execucion tèxte"
-
-#: src/threading.c:166
-#, fuzzy
-msgid "Failed to create file signing thread"
-msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
-
-#: src/threading.c:187
-#, fuzzy
-msgid "Failed to create text verification thread"
-msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
-
-#: src/threading.c:207
-#, fuzzy
-msgid "Failed to create file verification thread"
-msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
-
-#: src/threading.c:222
-#, fuzzy
-msgid "Failed to create key import thread"
-msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
-
-#: src/threading.c:244
-#, fuzzy
-msgid "Failed to create key pair generation thread"
-msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
-
-#: src/threading.c:259
-#, fuzzy
-msgid "Failed to create key export thread"
-msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
-
-#: src/threading.c:271
-#, fuzzy
-msgid "Failed to create key removal thread"
-msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
@@ -838,6 +592,201 @@ msgstr "Tèxte brut"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Fenèstra de seleccion de clau"
+
+#, fuzzy
+#~ msgid "Failed to create key pair generation thread"
+#~ msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
+
+#, c-format
+#~ msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
+#~ msgid "GnuPG Made Easy %s or greater required. Using %s."
+#~ msgstr "GnuPG Made Easy %s o superior es requerit. Utilizacion de %s."
+
+#, fuzzy, c-format
+#~ msgid "Failed to create new GPGME context: %s"
+#~ msgstr "Fracàs de la creacion d’un contèxte GPGME nòu"
+
+#, fuzzy, c-format
+#~ msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
+#~ msgstr "Fracàs de la definicion del protocòl del contèxte GPGME per OpenPGP"
+
+#, fuzzy, c-format
+#~ msgid "Failed to set pinentry mode of GPGME context to ask: %s"
+#~ msgstr "Fracàs de la definicion del protocòl del contèxte GPGME per OpenPGP"
+
+#, fuzzy, c-format
+#~ msgid "Failed to open file for writing: %s"
+#~ msgstr "Fracàs de la dobertura del fichièr d’exportacion : %s"
+
+#, fuzzy, c-format
+#~ msgid "Failed to write to file: %s"
+#~ msgstr "Fracàs de la dobertura del fichièr d’exportacion : %s"
+
+#, fuzzy, c-format
+#~ msgid "Failed to obtain key by fingerprint: %s"
+#~ msgstr "Fracàs de l’obtencion de la clau per emprenta digitala"
+
+#~ msgid "Failed to find key matching User ID"
+#~ msgstr "Fracàs de la trobada d’una clau correspondenta a l’ID utilizaire"
+
+#, fuzzy, c-format
+#~ msgid "Failed to generate new GPG key for signing: %s"
+#~ msgstr "Fracàs de la generacion de la clau GPG novèla per signar"
+
+#, fuzzy, c-format
+#~ msgid "Failed to generate new GPG subkey for encryption: %s"
+#~ msgstr "Fracàs de la generacion de la clau GPG novèla per signar"
+
+#, fuzzy, c-format
+#~ msgid "Failed to delete unfinished, generated key: %s"
+#~ msgstr "Fracàs de la supression de la clau ECC generada non acabada"
+
+#, fuzzy, c-format
+#~ msgid "Failed to load GPGME key data from file: %s"
+#~ msgstr ""
+#~ "Fracàs de la mesa en memòria de las donadas clau GPGME a partir del "
+#~ "fichièr"
+
+#, fuzzy, c-format
+#~ msgid "Failed to import GPG key from file: %s"
+#~ msgstr "Fracàs de l’importacion de la clau GPG a partir del fichièr"
+
+#, fuzzy, c-format
+#~ msgid "Failed to create GPGME key data in memory: %s"
+#~ msgstr "Fracàs de la creacion de las donadas de la clau GPGME en memòria"
+
+#, fuzzy, c-format
+#~ msgid "Failed to export GPG key(s) to file: %s"
+#~ msgstr "Fracàs de l’exportacion de la(s) clau(s) dins un fichièr"
+
+#, fuzzy, c-format
+#~ msgid "Failed to get GPG key for expire date renewal: %s"
+#~ msgstr "Fracàs de l’obtencion de la clau GPG de suprimir"
+
+#, fuzzy, c-format
+#~ msgid "Failed to renew the expire date of a key: %s"
+#~ msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
+
+#, fuzzy, c-format
+#~ msgid "Failed to get GPG key for removal: %s"
+#~ msgstr "Fracàs de l’obtencion de la clau GPG de suprimir"
+
+#, fuzzy, c-format
+#~ msgid "Failed to remove GPG key: %s"
+#~ msgstr "Fracàs de la supression de la clau GPG"
+
+#, fuzzy, c-format
+#~ msgid "Failed to create new GPGME input data from string: %s"
+#~ msgstr ""
+#~ "Fracàs de la creacion de las donadas GPGME d’entrada novèlas a partir de "
+#~ "la cadena de tèxte"
+
+#, fuzzy, c-format
+#~ msgid "Failed to create new GPGME output data in memory: %s"
+#~ msgstr "Fracàs de la creacion de las donadas GPGME de sortida en memòria"
+
+#, fuzzy, c-format
+#~ msgid "Failed to encrypt GPGME data from memory: %s"
+#~ msgstr ""
+#~ "Fracàs de la realizacion del chiframent de las donadas GPGME a partir de "
+#~ "la memòria"
+
+#, fuzzy, c-format
+#~ msgid "Failed to decrypt GPGME data from memory: %s"
+#~ msgstr ""
+#~ "Fracàs de la realizacion del deschiframent de las donadas GPGME a partir "
+#~ "de la memòria"
+
+#, fuzzy, c-format
+#~ msgid "Failed to add signing key to GPGME context: %s"
+#~ msgstr "Fracàs de l’apondon de la clau al contèxte GPGME nòu"
+
+#, fuzzy, c-format
+#~ msgid "Failed to sign GPGME data from memory: %s"
+#~ msgstr "Fracàs de la signatura de las donadas GPGME a partir de la memòria"
+
+#~ msgid "Failed to verify GPGME data from memory"
+#~ msgstr ""
+#~ "Fracàs de la verificacion de las donadas GPGME a partir de la memòria"
+
+#, c-format
+#~ msgid "Removed %s to prepare overwriting"
+#~ msgstr "%s suprimit per preparar lo subrecargament"
+
+#, fuzzy, c-format
+#~ msgid "Failed to create new GPGME input data from file: %s"
+#~ msgstr ""
+#~ "Fracàs de la creacion de las novèlas donadas GPGME d’entrada a partir del "
+#~ "fichièr"
+
+#, fuzzy, c-format
+#~ msgid "Failed to set file name of GPGME input data: %s"
+#~ msgstr ""
+#~ "Fracàs de la definicion del nom de fichièr de las donadas GPGME d’entrada"
+
+#, fuzzy, c-format
+#~ msgid "Failed to set file name of GPGME output data: %s"
+#~ msgstr ""
+#~ "Fracàs de la definicion del nom de fichièr de las donadas GPGME de sortida"
+
+#, fuzzy, c-format
+#~ msgid "Failed to encrypt GPGME data from file: %s"
+#~ msgstr ""
+#~ "Fracàs de la realizacion del deschiframent de las donadas GPGME a partir "
+#~ "del fichièr"
+
+#, fuzzy, c-format
+#~ msgid "Failed to decrypt GPGME data from file: %s"
+#~ msgstr ""
+#~ "Fracàs de la realizacion del chiframent de las donadas GPGME a partir del "
+#~ "fichièr"
+
+#, fuzzy, c-format
+#~ msgid "Failed to sign GPGME data from file: %s"
+#~ msgstr "Fracàs de la signatura de las donadas GPGME a partir del fichièr"
+
+#, fuzzy, c-format
+#~ msgid "Failed to verify GPGME data from file: %s"
+#~ msgstr "Fracàs de la verificacion de las donadas GPGME a partir del fichièr"
+
+#~ msgid "Failed to create text encryption thread"
+#~ msgstr "Fracàs de la creacion del fil d’execucion tèxte"
+
+#~ msgid "Failed to create file encryption thread"
+#~ msgstr "Fracàs de la creacion del fichièr del fil d’execucion"
+
+#~ msgid "Failed to create text decryption thread"
+#~ msgstr "Fracàs de la creacion del fil d’execucion tèxte"
+
+#~ msgid "Failed to create file decryption thread"
+#~ msgstr "Fracàs de la creacion del fichièr del fil d’execucion"
+
+#~ msgid "Failed to create text signing thread"
+#~ msgstr "Fracàs de la creacion del fil d’execucion tèxte"
+
+#, fuzzy
+#~ msgid "Failed to create file signing thread"
+#~ msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
+
+#, fuzzy
+#~ msgid "Failed to create text verification thread"
+#~ msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
+
+#, fuzzy
+#~ msgid "Failed to create file verification thread"
+#~ msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
+
+#, fuzzy
+#~ msgid "Failed to create key import thread"
+#~ msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
+
+#, fuzzy
+#~ msgid "Failed to create key export thread"
+#~ msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
+
+#, fuzzy
+#~ msgid "Failed to create key removal thread"
+#~ msgstr "Fracàs de la creacion fil d’execucion per %s : %s"
 
 #, fuzzy
 #~ msgid "All signatures valid"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 12:05+0200\n"
+"POT-Creation-Date: 2025-08-14 12:47+0200\n"
 "PO-Revision-Date: 2025-06-11 17:53+0000\n"
 "Last-Translator: Mattia Borda <mattiagiovanni.borda@icloud.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -18,14 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.12-dev\n"
-
-#: src/main.c:32
-#, c-format
-msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
-msgid "GnuPG Made Easy %s or greater required. Using %s."
-msgstr ""
-"È richiesta la versione %s o più recente di GnuPG Made Easy. Quella in uso è "
-"%s."
 
 #. Details
 #: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -234,227 +226,6 @@ msgstr "Rinnovo non riuscito"
 #: src/keyrow.c:395
 msgid "Expire date renewed"
 msgstr "Data di scadenza rinnovata"
-
-#: src/cryptography.c:29
-#, c-format
-msgid "Failed to create new GPGME context: %s"
-msgstr "Impossibile creare il nuovo contesto GPGME: %s"
-
-#: src/cryptography.c:37
-#, c-format
-msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
-msgstr "Impossibile impostare il protocollo del contesto GPGME su OpenPGP: %s"
-
-#: src/cryptography.c:46
-#, c-format
-msgid "Failed to set pinentry mode of GPGME context to ask: %s"
-msgstr ""
-"Impossibile impostare la modalità pinentry del contesto GPGME da chiedere: %s"
-
-#: src/cryptography.c:105
-#, c-format
-msgid "Failed to open file for writing: %s"
-msgstr "Impossibile aprire il file in scrittura: %s"
-
-#: src/cryptography.c:113
-#, c-format
-msgid "Failed to write to file: %s"
-msgstr "Impossibile scrivere nel file: %s"
-
-#: src/cryptography.c:150
-#, c-format
-msgid "Failed to obtain key by fingerprint: %s"
-msgstr "Impossibile ottenere la chiave dall'impronta: %s"
-
-#: src/cryptography.c:190
-msgid "Failed to find key matching User ID"
-msgstr "Impossibile trovare la chiave cercando l'ID utente"
-
-#: src/cryptography.c:231
-#, c-format
-msgid "Failed to generate new GPG key for signing: %s"
-msgstr "Impossibile generare una nuova chiave GPG per la firma: %s"
-
-#: src/cryptography.c:243
-#, c-format
-msgid "Failed to generate new GPG subkey for encryption: %s"
-msgstr "Impossibile generare una nuova sottochiave GPG per la crittazione: %s"
-
-#: src/cryptography.c:251
-#, c-format
-msgid "Failed to delete unfinished, generated key: %s"
-msgstr "Impossibile eliminare la chiave non completa generata: %s"
-
-#: src/cryptography.c:288
-#, c-format
-msgid "Failed to load GPGME key data from file: %s"
-msgstr "Impossibile caricare i dati della chiave GPGME dal file: %s"
-
-#: src/cryptography.c:296
-#, c-format
-msgid "Failed to import GPG key from file: %s"
-msgstr "Impossibile importare la chiave GPG dal file: %s"
-
-#: src/cryptography.c:333
-#, c-format
-msgid "Failed to create GPGME key data in memory: %s"
-msgstr "Impossibile creare i dati della chiave GPG in memoria: %s"
-
-#: src/cryptography.c:341
-#, c-format
-msgid "Failed to export GPG key(s) to file: %s"
-msgstr "Impossibile esportare la/le chiave/i GPG dal file: %s"
-
-#: src/cryptography.c:386
-#, c-format
-msgid "Failed to get GPG key for expire date renewal: %s"
-msgstr ""
-"Impossibile recuperare la chiave GPG per il rinnovo della data di scadenza: "
-"%s"
-
-#: src/cryptography.c:394
-#, c-format
-msgid "Failed to renew the expire date of a key: %s"
-msgstr "Impossibile rinnovare la data di scadenza di una chiave: %s"
-
-#: src/cryptography.c:428
-#, c-format
-msgid "Failed to get GPG key for removal: %s"
-msgstr "Impossibile ottenere la chiave GPG per la rimozione: %s"
-
-#: src/cryptography.c:436
-#, c-format
-msgid "Failed to remove GPG key: %s"
-msgstr "Impossibile rimuovere la chiave GPG: %s"
-
-#: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
-#: src/cryptography.c:659
-#, c-format
-msgid "Failed to create new GPGME input data from string: %s"
-msgstr "Impossibile creare nuovi dati di input GPGME dalla stringa: %s"
-
-#: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
-#: src/cryptography.c:667 src/cryptography.c:761 src/cryptography.c:844
-#: src/cryptography.c:926 src/cryptography.c:1017
-#, c-format
-msgid "Failed to create new GPGME output data in memory: %s"
-msgstr "Impossibile creare nuovi dati di output GPGME in memoria: %s"
-
-#: src/cryptography.c:495
-#, c-format
-msgid "Failed to encrypt GPGME data from memory: %s"
-msgstr "Impossibile crittare i dati GPGME dalla memoria: %s"
-
-#: src/cryptography.c:551
-#, c-format
-msgid "Failed to decrypt GPGME data from memory: %s"
-msgstr "Impossibile decrittare i dati GPGME dalla memoria: %s"
-
-#: src/cryptography.c:610 src/cryptography.c:944
-#, c-format
-msgid "Failed to add signing key to GPGME context: %s"
-msgstr "Impossibile aggiungere la chiave con cui firmare al contesto GPGME: %s"
-
-#: src/cryptography.c:619
-#, c-format
-msgid "Failed to sign GPGME data from memory: %s"
-msgstr "Impossibile firmare i dati GPGME dalla memoria: %s"
-
-#: src/cryptography.c:676 src/cryptography.c:687
-msgid "Failed to verify GPGME data from memory"
-msgstr "Impossibile verificare i dati GPGME dalla memoria"
-
-#: src/cryptography.c:739 src/cryptography.c:822 src/cryptography.c:904
-#: src/cryptography.c:995
-#, c-format
-msgid "Removed %s to prepare overwriting"
-msgstr "Rimosso %s per preparare la sovrascrittura"
-
-#: src/cryptography.c:744 src/cryptography.c:827 src/cryptography.c:909
-#: src/cryptography.c:1000
-#, c-format
-msgid "Failed to create new GPGME input data from file: %s"
-msgstr "Impossibile creare un nuovi dati di input GPGME dal file: %s"
-
-#: src/cryptography.c:752 src/cryptography.c:835 src/cryptography.c:917
-#: src/cryptography.c:1008
-#, c-format
-msgid "Failed to set file name of GPGME input data: %s"
-msgstr "Impossibile impostare il nome del file dei dati di input GPGME: %s"
-
-#: src/cryptography.c:770 src/cryptography.c:853 src/cryptography.c:935
-#: src/cryptography.c:1026
-#, c-format
-msgid "Failed to set file name of GPGME output data: %s"
-msgstr "Impossibile impostare il nome del file dei dati di output GPGME: %s"
-
-#: src/cryptography.c:781
-#, c-format
-msgid "Failed to encrypt GPGME data from file: %s"
-msgstr "Impossibile crittare i dati GPGME dal file: %s"
-
-#: src/cryptography.c:862
-#, c-format
-msgid "Failed to decrypt GPGME data from file: %s"
-msgstr "Impossibile decrittare i dati GPGME dal file: %s"
-
-#: src/cryptography.c:953
-#, c-format
-msgid "Failed to sign GPGME data from file: %s"
-msgstr "Impossibile firmare i dati GPGME dal file: %s"
-
-#: src/cryptography.c:1035
-#, c-format
-msgid "Failed to verify GPGME data from file: %s"
-msgstr "Impossibile verificare i dati GPGME dal file: %s"
-
-#: src/threading.c:57
-msgid "Failed to create text encryption thread"
-msgstr "Impossibile creare il thread per la crittazione del testo"
-
-#: src/threading.c:80
-msgid "Failed to create file encryption thread"
-msgstr "Impossibile creare il thread per la crittazione del file"
-
-#: src/threading.c:101
-msgid "Failed to create text decryption thread"
-msgstr "Impossibile creare il thread per la decrittazione del testo"
-
-#: src/threading.c:121
-msgid "Failed to create file decryption thread"
-msgstr "Impossibile creare il thread per la decrittazione del file"
-
-#: src/threading.c:143
-msgid "Failed to create text signing thread"
-msgstr "Impossibile creare il thread per la firma del testo"
-
-#: src/threading.c:166
-msgid "Failed to create file signing thread"
-msgstr "Impossibile creare il thread per la firma del file"
-
-#: src/threading.c:187
-msgid "Failed to create text verification thread"
-msgstr "Impossibile creare il thread per la verifica del testo"
-
-#: src/threading.c:207
-msgid "Failed to create file verification thread"
-msgstr "Impossibile creare il thread per la verifica del file"
-
-#: src/threading.c:222
-msgid "Failed to create key import thread"
-msgstr "Impossibile creare il thread per l'importazione della chiave"
-
-#: src/threading.c:244
-msgid "Failed to create key pair generation thread"
-msgstr "Impossibile creare il thread per la generazione della coppia di chiavi"
-
-#: src/threading.c:259
-msgid "Failed to create key export thread"
-msgstr "Impossibile creare il thread per l'esportazione della chiave"
-
-#: src/threading.c:271
-msgid "Failed to create key removal thread"
-msgstr "Impossibile creare il thread per la rimozione della chiave"
 
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
@@ -805,3 +576,184 @@ msgstr "Testo semplice"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "Finestra di selezione chiave"
+
+#~ msgid "Failed to create key pair generation thread"
+#~ msgstr ""
+#~ "Impossibile creare il thread per la generazione della coppia di chiavi"
+
+#, c-format
+#~ msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
+#~ msgid "GnuPG Made Easy %s or greater required. Using %s."
+#~ msgstr ""
+#~ "È richiesta la versione %s o più recente di GnuPG Made Easy. Quella in "
+#~ "uso è %s."
+
+#, c-format
+#~ msgid "Failed to create new GPGME context: %s"
+#~ msgstr "Impossibile creare il nuovo contesto GPGME: %s"
+
+#, c-format
+#~ msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
+#~ msgstr ""
+#~ "Impossibile impostare il protocollo del contesto GPGME su OpenPGP: %s"
+
+#, c-format
+#~ msgid "Failed to set pinentry mode of GPGME context to ask: %s"
+#~ msgstr ""
+#~ "Impossibile impostare la modalità pinentry del contesto GPGME da "
+#~ "chiedere: %s"
+
+#, c-format
+#~ msgid "Failed to open file for writing: %s"
+#~ msgstr "Impossibile aprire il file in scrittura: %s"
+
+#, c-format
+#~ msgid "Failed to write to file: %s"
+#~ msgstr "Impossibile scrivere nel file: %s"
+
+#, c-format
+#~ msgid "Failed to obtain key by fingerprint: %s"
+#~ msgstr "Impossibile ottenere la chiave dall'impronta: %s"
+
+#~ msgid "Failed to find key matching User ID"
+#~ msgstr "Impossibile trovare la chiave cercando l'ID utente"
+
+#, c-format
+#~ msgid "Failed to generate new GPG key for signing: %s"
+#~ msgstr "Impossibile generare una nuova chiave GPG per la firma: %s"
+
+#, c-format
+#~ msgid "Failed to generate new GPG subkey for encryption: %s"
+#~ msgstr ""
+#~ "Impossibile generare una nuova sottochiave GPG per la crittazione: %s"
+
+#, c-format
+#~ msgid "Failed to delete unfinished, generated key: %s"
+#~ msgstr "Impossibile eliminare la chiave non completa generata: %s"
+
+#, c-format
+#~ msgid "Failed to load GPGME key data from file: %s"
+#~ msgstr "Impossibile caricare i dati della chiave GPGME dal file: %s"
+
+#, c-format
+#~ msgid "Failed to import GPG key from file: %s"
+#~ msgstr "Impossibile importare la chiave GPG dal file: %s"
+
+#, c-format
+#~ msgid "Failed to create GPGME key data in memory: %s"
+#~ msgstr "Impossibile creare i dati della chiave GPG in memoria: %s"
+
+#, c-format
+#~ msgid "Failed to export GPG key(s) to file: %s"
+#~ msgstr "Impossibile esportare la/le chiave/i GPG dal file: %s"
+
+#, c-format
+#~ msgid "Failed to get GPG key for expire date renewal: %s"
+#~ msgstr ""
+#~ "Impossibile recuperare la chiave GPG per il rinnovo della data di "
+#~ "scadenza: %s"
+
+#, c-format
+#~ msgid "Failed to renew the expire date of a key: %s"
+#~ msgstr "Impossibile rinnovare la data di scadenza di una chiave: %s"
+
+#, c-format
+#~ msgid "Failed to get GPG key for removal: %s"
+#~ msgstr "Impossibile ottenere la chiave GPG per la rimozione: %s"
+
+#, c-format
+#~ msgid "Failed to remove GPG key: %s"
+#~ msgstr "Impossibile rimuovere la chiave GPG: %s"
+
+#, c-format
+#~ msgid "Failed to create new GPGME input data from string: %s"
+#~ msgstr "Impossibile creare nuovi dati di input GPGME dalla stringa: %s"
+
+#, c-format
+#~ msgid "Failed to create new GPGME output data in memory: %s"
+#~ msgstr "Impossibile creare nuovi dati di output GPGME in memoria: %s"
+
+#, c-format
+#~ msgid "Failed to encrypt GPGME data from memory: %s"
+#~ msgstr "Impossibile crittare i dati GPGME dalla memoria: %s"
+
+#, c-format
+#~ msgid "Failed to decrypt GPGME data from memory: %s"
+#~ msgstr "Impossibile decrittare i dati GPGME dalla memoria: %s"
+
+#, c-format
+#~ msgid "Failed to add signing key to GPGME context: %s"
+#~ msgstr ""
+#~ "Impossibile aggiungere la chiave con cui firmare al contesto GPGME: %s"
+
+#, c-format
+#~ msgid "Failed to sign GPGME data from memory: %s"
+#~ msgstr "Impossibile firmare i dati GPGME dalla memoria: %s"
+
+#~ msgid "Failed to verify GPGME data from memory"
+#~ msgstr "Impossibile verificare i dati GPGME dalla memoria"
+
+#, c-format
+#~ msgid "Removed %s to prepare overwriting"
+#~ msgstr "Rimosso %s per preparare la sovrascrittura"
+
+#, c-format
+#~ msgid "Failed to create new GPGME input data from file: %s"
+#~ msgstr "Impossibile creare un nuovi dati di input GPGME dal file: %s"
+
+#, c-format
+#~ msgid "Failed to set file name of GPGME input data: %s"
+#~ msgstr "Impossibile impostare il nome del file dei dati di input GPGME: %s"
+
+#, c-format
+#~ msgid "Failed to set file name of GPGME output data: %s"
+#~ msgstr "Impossibile impostare il nome del file dei dati di output GPGME: %s"
+
+#, c-format
+#~ msgid "Failed to encrypt GPGME data from file: %s"
+#~ msgstr "Impossibile crittare i dati GPGME dal file: %s"
+
+#, c-format
+#~ msgid "Failed to decrypt GPGME data from file: %s"
+#~ msgstr "Impossibile decrittare i dati GPGME dal file: %s"
+
+#, c-format
+#~ msgid "Failed to sign GPGME data from file: %s"
+#~ msgstr "Impossibile firmare i dati GPGME dal file: %s"
+
+#, c-format
+#~ msgid "Failed to verify GPGME data from file: %s"
+#~ msgstr "Impossibile verificare i dati GPGME dal file: %s"
+
+#~ msgid "Failed to create text encryption thread"
+#~ msgstr "Impossibile creare il thread per la crittazione del testo"
+
+#~ msgid "Failed to create file encryption thread"
+#~ msgstr "Impossibile creare il thread per la crittazione del file"
+
+#~ msgid "Failed to create text decryption thread"
+#~ msgstr "Impossibile creare il thread per la decrittazione del testo"
+
+#~ msgid "Failed to create file decryption thread"
+#~ msgstr "Impossibile creare il thread per la decrittazione del file"
+
+#~ msgid "Failed to create text signing thread"
+#~ msgstr "Impossibile creare il thread per la firma del testo"
+
+#~ msgid "Failed to create file signing thread"
+#~ msgstr "Impossibile creare il thread per la firma del file"
+
+#~ msgid "Failed to create text verification thread"
+#~ msgstr "Impossibile creare il thread per la verifica del testo"
+
+#~ msgid "Failed to create file verification thread"
+#~ msgstr "Impossibile creare il thread per la verifica del file"
+
+#~ msgid "Failed to create key import thread"
+#~ msgstr "Impossibile creare il thread per l'importazione della chiave"
+
+#~ msgid "Failed to create key export thread"
+#~ msgstr "Impossibile creare il thread per l'esportazione della chiave"
+
+#~ msgid "Failed to create key removal thread"
+#~ msgstr "Impossibile creare il thread per la rimozione della chiave"

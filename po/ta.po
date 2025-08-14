@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 12:05+0200\n"
+"POT-Creation-Date: 2025-08-14 12:47+0200\n"
 "PO-Revision-Date: 2025-06-27 03:05+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/Lock/Application/"
@@ -18,13 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.13-dev\n"
-
-#: src/main.c:32
-#, c-format
-msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
-msgid "GnuPG Made Easy %s or greater required. Using %s."
-msgstr ""
-"GNUPG எளிதான %s அல்லது அதற்கு மேற்பட்ட தேவைகளை உருவாக்கியது. %s ஐப் பயன்படுத்துதல்."
 
 #. Details
 #: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -233,224 +226,6 @@ msgstr "புதுப்பித்தல் தோல்வியடைந�
 #: src/keyrow.c:395
 msgid "Expire date renewed"
 msgstr "காலாவதியான தேதி புதுப்பிக்கப்பட்டது"
-
-#: src/cryptography.c:29
-#, c-format
-msgid "Failed to create new GPGME context: %s"
-msgstr "புதிய GPGME சூழலை உருவாக்குவதில் தோல்வி: %s"
-
-#: src/cryptography.c:37
-#, c-format
-msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
-msgstr "GPGME சூழலின் நெறிமுறையை OpenPGP க்கு அமைப்பதில் தோல்வி: %s"
-
-#: src/cryptography.c:46
-#, c-format
-msgid "Failed to set pinentry mode of GPGME context to ask: %s"
-msgstr "கேட்க சி.பி.சி.எம்.இ சூழலின் பினென்ட்ரி பயன்முறையை அமைப்பதில் தோல்வி: %s"
-
-#: src/cryptography.c:105
-#, c-format
-msgid "Failed to open file for writing: %s"
-msgstr "எழுதுவதற்கு கோப்பைத் திறக்கத் தவறிவிட்டது: %s"
-
-#: src/cryptography.c:113
-#, c-format
-msgid "Failed to write to file: %s"
-msgstr "கோப்புக்கு எழுதத் தவறிவிட்டது: %s"
-
-#: src/cryptography.c:150
-#, c-format
-msgid "Failed to obtain key by fingerprint: %s"
-msgstr "கைரேகை மூலம் விசையைப் பெறுவதில் தோல்வி: %s"
-
-#: src/cryptography.c:190
-msgid "Failed to find key matching User ID"
-msgstr "பொருந்தக்கூடிய பயனர் ஐடியைக் கண்டுபிடிப்பதில் தோல்வி"
-
-#: src/cryptography.c:231
-#, c-format
-msgid "Failed to generate new GPG key for signing: %s"
-msgstr "கையொப்பமிட புதிய சிபிசி விசையை உருவாக்குவதில் தோல்வி: %s"
-
-#: src/cryptography.c:243
-#, c-format
-msgid "Failed to generate new GPG subkey for encryption: %s"
-msgstr "குறியாக்கத்திற்காக புதிய சிபிசி சப்சியை உருவாக்குவதில் தோல்வி: %s"
-
-#: src/cryptography.c:251
-#, c-format
-msgid "Failed to delete unfinished, generated key: %s"
-msgstr "முடிக்கப்படாத, உருவாக்கப்பட்ட விசையை நீக்குவதில் தோல்வி: %s"
-
-#: src/cryptography.c:288
-#, c-format
-msgid "Failed to load GPGME key data from file: %s"
-msgstr "GPGME முக்கிய தரவை கோப்பிலிருந்து ஏற்றுவதில் தோல்வி: %s"
-
-#: src/cryptography.c:296
-#, c-format
-msgid "Failed to import GPG key from file: %s"
-msgstr "கோப்பிலிருந்து சிபிசி விசையை இறக்குமதி செய்வதில் தோல்வி: %s"
-
-#: src/cryptography.c:333
-#, c-format
-msgid "Failed to create GPGME key data in memory: %s"
-msgstr "நினைவகத்தில் GPGME முக்கிய தரவை உருவாக்குவதில் தோல்வி: %s"
-
-#: src/cryptography.c:341
-#, c-format
-msgid "Failed to export GPG key(s) to file: %s"
-msgstr "கோப்புக்கு சிபிசி விசை (களை) ஏற்றுமதி செய்வதில் தோல்வி: %s"
-
-#: src/cryptography.c:386
-#, c-format
-msgid "Failed to get GPG key for expire date renewal: %s"
-msgstr "காலாவதியான தேதி புதுப்பிப்புக்கு சிபிசி விசையைப் பெறுவதில் தோல்வி: %s"
-
-#: src/cryptography.c:394
-#, c-format
-msgid "Failed to renew the expire date of a key: %s"
-msgstr "ஒரு விசையின் காலாவதியான தேதியை புதுப்பிக்கத் தவறிவிட்டது: %s"
-
-#: src/cryptography.c:428
-#, c-format
-msgid "Failed to get GPG key for removal: %s"
-msgstr "அகற்ற சிபிசி விசையைப் பெறுவதில் தோல்வி: %s"
-
-#: src/cryptography.c:436
-#, c-format
-msgid "Failed to remove GPG key: %s"
-msgstr "சிபிசி விசையை அகற்றுவதில் தோல்வி: %s"
-
-#: src/cryptography.c:476 src/cryptography.c:534 src/cryptography.c:593
-#: src/cryptography.c:659
-#, c-format
-msgid "Failed to create new GPGME input data from string: %s"
-msgstr "சரம்: %s புதிய சி.பி.சி.எம்.இ உள்ளீட்டு தரவை உருவாக்குவதில் தோல்வி"
-
-#: src/cryptography.c:484 src/cryptography.c:542 src/cryptography.c:601
-#: src/cryptography.c:667 src/cryptography.c:761 src/cryptography.c:844
-#: src/cryptography.c:926 src/cryptography.c:1017
-#, c-format
-msgid "Failed to create new GPGME output data in memory: %s"
-msgstr "நினைவகத்தில் புதிய சி.பி.சி.எம்.இ வெளியீட்டு தரவை உருவாக்குவதில் தோல்வி: %s"
-
-#: src/cryptography.c:495
-#, c-format
-msgid "Failed to encrypt GPGME data from memory: %s"
-msgstr "நினைவகத்திலிருந்து GPGME தரவை குறியாக்கத் தவறிவிட்டது: %s"
-
-#: src/cryptography.c:551
-#, c-format
-msgid "Failed to decrypt GPGME data from memory: %s"
-msgstr "நினைவகத்திலிருந்து சி.பி.சி.எம்.இ தரவை மறைகுறியாக்குவதில் தோல்வி: %s"
-
-#: src/cryptography.c:610 src/cryptography.c:944
-#, c-format
-msgid "Failed to add signing key to GPGME context: %s"
-msgstr "GPGME சூழலுக்கு கையொப்பமிடும் விசையைச் சேர்க்கத் தவறிவிட்டது: %s"
-
-#: src/cryptography.c:619
-#, c-format
-msgid "Failed to sign GPGME data from memory: %s"
-msgstr "நினைவகத்திலிருந்து சி.பி.சி.எம்.இ தரவில் கையெழுத்திடுவதில் தோல்வி: %s"
-
-#: src/cryptography.c:676 src/cryptography.c:687
-msgid "Failed to verify GPGME data from memory"
-msgstr "நினைவகத்திலிருந்து GPGME தரவை சரிபார்க்கத் தவறிவிட்டது"
-
-#: src/cryptography.c:739 src/cryptography.c:822 src/cryptography.c:904
-#: src/cryptography.c:995
-#, c-format
-msgid "Removed %s to prepare overwriting"
-msgstr "மேலெழுதலைத் தயாரிக்க %s அகற்றப்பட்டன"
-
-#: src/cryptography.c:744 src/cryptography.c:827 src/cryptography.c:909
-#: src/cryptography.c:1000
-#, c-format
-msgid "Failed to create new GPGME input data from file: %s"
-msgstr "கோப்பிலிருந்து புதிய சி.பி.சி.எம்.இ உள்ளீட்டு தரவை உருவாக்குவதில் தோல்வி: %s"
-
-#: src/cryptography.c:752 src/cryptography.c:835 src/cryptography.c:917
-#: src/cryptography.c:1008
-#, c-format
-msgid "Failed to set file name of GPGME input data: %s"
-msgstr "GPGME உள்ளீட்டு தரவின் கோப்பு பெயரை அமைப்பதில் தோல்வி: %s"
-
-#: src/cryptography.c:770 src/cryptography.c:853 src/cryptography.c:935
-#: src/cryptography.c:1026
-#, c-format
-msgid "Failed to set file name of GPGME output data: %s"
-msgstr "GPGME வெளியீட்டு தரவின் கோப்பு பெயரை அமைப்பதில் தோல்வி: %s"
-
-#: src/cryptography.c:781
-#, c-format
-msgid "Failed to encrypt GPGME data from file: %s"
-msgstr "GPGME தரவை கோப்பிலிருந்து குறியாக்கத் தவறிவிட்டது: %s"
-
-#: src/cryptography.c:862
-#, c-format
-msgid "Failed to decrypt GPGME data from file: %s"
-msgstr "கோப்பிலிருந்து சி.பி.சி.எம்.இ தரவை மறைகுறியாக்குவதில் தோல்வி: %s"
-
-#: src/cryptography.c:953
-#, c-format
-msgid "Failed to sign GPGME data from file: %s"
-msgstr "கோப்பிலிருந்து GPGME தரவுகளில் கையெழுத்திடுவதில் தோல்வி: %s"
-
-#: src/cryptography.c:1035
-#, c-format
-msgid "Failed to verify GPGME data from file: %s"
-msgstr "கோப்பிலிருந்து GPGME தரவை சரிபார்க்கத் தவறிவிட்டது: %s"
-
-#: src/threading.c:57
-msgid "Failed to create text encryption thread"
-msgstr "உரை குறியாக்க நூலை உருவாக்குவதில் தோல்வி"
-
-#: src/threading.c:80
-msgid "Failed to create file encryption thread"
-msgstr "கோப்பு குறியாக்க நூலை உருவாக்குவதில் தோல்வி"
-
-#: src/threading.c:101
-msgid "Failed to create text decryption thread"
-msgstr "உரை மறைகுறியாக்க நூலை உருவாக்குவதில் தோல்வி"
-
-#: src/threading.c:121
-msgid "Failed to create file decryption thread"
-msgstr "கோப்பு மறைகுறியாக்க நூலை உருவாக்குவதில் தோல்வி"
-
-#: src/threading.c:143
-msgid "Failed to create text signing thread"
-msgstr "உரை கையொப்பமிடும் நூலை உருவாக்குவதில் தோல்வி"
-
-#: src/threading.c:166
-msgid "Failed to create file signing thread"
-msgstr "கோப்பு கையொப்பமிடும் நூலை உருவாக்குவதில் தோல்வி"
-
-#: src/threading.c:187
-msgid "Failed to create text verification thread"
-msgstr "உரை சரிபார்ப்பு நூலை உருவாக்குவதில் தோல்வி"
-
-#: src/threading.c:207
-msgid "Failed to create file verification thread"
-msgstr "கோப்பு சரிபார்ப்பு நூலை உருவாக்குவதில் தோல்வி"
-
-#: src/threading.c:222
-msgid "Failed to create key import thread"
-msgstr "முக்கிய இறக்குமதி நூலை உருவாக்குவதில் தோல்வி"
-
-#: src/threading.c:244
-msgid "Failed to create key pair generation thread"
-msgstr "முக்கிய இணை தலைமுறை நூலை உருவாக்குவதில் தோல்வி"
-
-#: src/threading.c:259
-msgid "Failed to create key export thread"
-msgstr "முக்கிய ஏற்றுமதி நூலை உருவாக்குவதில் தோல்வி"
-
-#: src/threading.c:271
-msgid "Failed to create key removal thread"
-msgstr "விசை அகற்றும் நூலை உருவாக்குவதில் தோல்வி"
 
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
@@ -802,6 +577,178 @@ msgstr "சாதாரண எழுத்து"
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
 msgstr "முக்கிய தேர்வு உரையாடல்"
+
+#~ msgid "Failed to create key pair generation thread"
+#~ msgstr "முக்கிய இணை தலைமுறை நூலை உருவாக்குவதில் தோல்வி"
+
+#, c-format
+#~ msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
+#~ msgid "GnuPG Made Easy %s or greater required. Using %s."
+#~ msgstr ""
+#~ "GNUPG எளிதான %s அல்லது அதற்கு மேற்பட்ட தேவைகளை உருவாக்கியது. %s ஐப் பயன்படுத்துதல்."
+
+#, c-format
+#~ msgid "Failed to create new GPGME context: %s"
+#~ msgstr "புதிய GPGME சூழலை உருவாக்குவதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to set protocol of GPGME context to OpenPGP: %s"
+#~ msgstr "GPGME சூழலின் நெறிமுறையை OpenPGP க்கு அமைப்பதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to set pinentry mode of GPGME context to ask: %s"
+#~ msgstr "கேட்க சி.பி.சி.எம்.இ சூழலின் பினென்ட்ரி பயன்முறையை அமைப்பதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to open file for writing: %s"
+#~ msgstr "எழுதுவதற்கு கோப்பைத் திறக்கத் தவறிவிட்டது: %s"
+
+#, c-format
+#~ msgid "Failed to write to file: %s"
+#~ msgstr "கோப்புக்கு எழுதத் தவறிவிட்டது: %s"
+
+#, c-format
+#~ msgid "Failed to obtain key by fingerprint: %s"
+#~ msgstr "கைரேகை மூலம் விசையைப் பெறுவதில் தோல்வி: %s"
+
+#~ msgid "Failed to find key matching User ID"
+#~ msgstr "பொருந்தக்கூடிய பயனர் ஐடியைக் கண்டுபிடிப்பதில் தோல்வி"
+
+#, c-format
+#~ msgid "Failed to generate new GPG key for signing: %s"
+#~ msgstr "கையொப்பமிட புதிய சிபிசி விசையை உருவாக்குவதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to generate new GPG subkey for encryption: %s"
+#~ msgstr "குறியாக்கத்திற்காக புதிய சிபிசி சப்சியை உருவாக்குவதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to delete unfinished, generated key: %s"
+#~ msgstr "முடிக்கப்படாத, உருவாக்கப்பட்ட விசையை நீக்குவதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to load GPGME key data from file: %s"
+#~ msgstr "GPGME முக்கிய தரவை கோப்பிலிருந்து ஏற்றுவதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to import GPG key from file: %s"
+#~ msgstr "கோப்பிலிருந்து சிபிசி விசையை இறக்குமதி செய்வதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to create GPGME key data in memory: %s"
+#~ msgstr "நினைவகத்தில் GPGME முக்கிய தரவை உருவாக்குவதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to export GPG key(s) to file: %s"
+#~ msgstr "கோப்புக்கு சிபிசி விசை (களை) ஏற்றுமதி செய்வதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to get GPG key for expire date renewal: %s"
+#~ msgstr "காலாவதியான தேதி புதுப்பிப்புக்கு சிபிசி விசையைப் பெறுவதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to renew the expire date of a key: %s"
+#~ msgstr "ஒரு விசையின் காலாவதியான தேதியை புதுப்பிக்கத் தவறிவிட்டது: %s"
+
+#, c-format
+#~ msgid "Failed to get GPG key for removal: %s"
+#~ msgstr "அகற்ற சிபிசி விசையைப் பெறுவதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to remove GPG key: %s"
+#~ msgstr "சிபிசி விசையை அகற்றுவதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to create new GPGME input data from string: %s"
+#~ msgstr "சரம்: %s புதிய சி.பி.சி.எம்.இ உள்ளீட்டு தரவை உருவாக்குவதில் தோல்வி"
+
+#, c-format
+#~ msgid "Failed to create new GPGME output data in memory: %s"
+#~ msgstr "நினைவகத்தில் புதிய சி.பி.சி.எம்.இ வெளியீட்டு தரவை உருவாக்குவதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to encrypt GPGME data from memory: %s"
+#~ msgstr "நினைவகத்திலிருந்து GPGME தரவை குறியாக்கத் தவறிவிட்டது: %s"
+
+#, c-format
+#~ msgid "Failed to decrypt GPGME data from memory: %s"
+#~ msgstr "நினைவகத்திலிருந்து சி.பி.சி.எம்.இ தரவை மறைகுறியாக்குவதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to add signing key to GPGME context: %s"
+#~ msgstr "GPGME சூழலுக்கு கையொப்பமிடும் விசையைச் சேர்க்கத் தவறிவிட்டது: %s"
+
+#, c-format
+#~ msgid "Failed to sign GPGME data from memory: %s"
+#~ msgstr "நினைவகத்திலிருந்து சி.பி.சி.எம்.இ தரவில் கையெழுத்திடுவதில் தோல்வி: %s"
+
+#~ msgid "Failed to verify GPGME data from memory"
+#~ msgstr "நினைவகத்திலிருந்து GPGME தரவை சரிபார்க்கத் தவறிவிட்டது"
+
+#, c-format
+#~ msgid "Removed %s to prepare overwriting"
+#~ msgstr "மேலெழுதலைத் தயாரிக்க %s அகற்றப்பட்டன"
+
+#, c-format
+#~ msgid "Failed to create new GPGME input data from file: %s"
+#~ msgstr "கோப்பிலிருந்து புதிய சி.பி.சி.எம்.இ உள்ளீட்டு தரவை உருவாக்குவதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to set file name of GPGME input data: %s"
+#~ msgstr "GPGME உள்ளீட்டு தரவின் கோப்பு பெயரை அமைப்பதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to set file name of GPGME output data: %s"
+#~ msgstr "GPGME வெளியீட்டு தரவின் கோப்பு பெயரை அமைப்பதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to encrypt GPGME data from file: %s"
+#~ msgstr "GPGME தரவை கோப்பிலிருந்து குறியாக்கத் தவறிவிட்டது: %s"
+
+#, c-format
+#~ msgid "Failed to decrypt GPGME data from file: %s"
+#~ msgstr "கோப்பிலிருந்து சி.பி.சி.எம்.இ தரவை மறைகுறியாக்குவதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to sign GPGME data from file: %s"
+#~ msgstr "கோப்பிலிருந்து GPGME தரவுகளில் கையெழுத்திடுவதில் தோல்வி: %s"
+
+#, c-format
+#~ msgid "Failed to verify GPGME data from file: %s"
+#~ msgstr "கோப்பிலிருந்து GPGME தரவை சரிபார்க்கத் தவறிவிட்டது: %s"
+
+#~ msgid "Failed to create text encryption thread"
+#~ msgstr "உரை குறியாக்க நூலை உருவாக்குவதில் தோல்வி"
+
+#~ msgid "Failed to create file encryption thread"
+#~ msgstr "கோப்பு குறியாக்க நூலை உருவாக்குவதில் தோல்வி"
+
+#~ msgid "Failed to create text decryption thread"
+#~ msgstr "உரை மறைகுறியாக்க நூலை உருவாக்குவதில் தோல்வி"
+
+#~ msgid "Failed to create file decryption thread"
+#~ msgstr "கோப்பு மறைகுறியாக்க நூலை உருவாக்குவதில் தோல்வி"
+
+#~ msgid "Failed to create text signing thread"
+#~ msgstr "உரை கையொப்பமிடும் நூலை உருவாக்குவதில் தோல்வி"
+
+#~ msgid "Failed to create file signing thread"
+#~ msgstr "கோப்பு கையொப்பமிடும் நூலை உருவாக்குவதில் தோல்வி"
+
+#~ msgid "Failed to create text verification thread"
+#~ msgstr "உரை சரிபார்ப்பு நூலை உருவாக்குவதில் தோல்வி"
+
+#~ msgid "Failed to create file verification thread"
+#~ msgstr "கோப்பு சரிபார்ப்பு நூலை உருவாக்குவதில் தோல்வி"
+
+#~ msgid "Failed to create key import thread"
+#~ msgstr "முக்கிய இறக்குமதி நூலை உருவாக்குவதில் தோல்வி"
+
+#~ msgid "Failed to create key export thread"
+#~ msgstr "முக்கிய ஏற்றுமதி நூலை உருவாக்குவதில் தோல்வி"
+
+#~ msgid "Failed to create key removal thread"
+#~ msgstr "விசை அகற்றும் நூலை உருவாக்குவதில் தோல்வி"
 
 #, fuzzy
 #~ msgid "All signatures valid"

@@ -54,7 +54,7 @@ void thread_encrypt_text(LockSelectionDialog *self, const char *fingerprint,
     lock_window_set_fingerprint(window, fingerprint);
 
     bool success = thread_create("encrypt_text",
-                                 _("Failed to create text encryption thread"),
+                                 "Failed to create text encryption thread",
                                  lock_window_encrypt_text, window);
 
     if (success)
@@ -77,7 +77,7 @@ void thread_encrypt_file(LockSelectionDialog *self, const char *fingerprint,
     lock_window_file_select_output_directory_dialog_present(window);
 
     bool success = thread_create("encrypt_file",
-                                 _("Failed to create file encryption thread"),
+                                 "Failed to create file encryption thread",
                                  lock_window_encrypt_file, window);
 
     if (success)
@@ -98,7 +98,7 @@ void thread_decrypt_text(GSimpleAction *self, GVariant *parameter,
     (void)parameter;
 
     bool success = thread_create("decrypt_text",
-                                 _("Failed to create text decryption thread"),
+                                 "Failed to create text decryption thread",
                                  lock_window_decrypt_text, window);
 
     if (success)
@@ -118,7 +118,7 @@ void thread_decrypt_file(GtkButton *self, LockWindow *window)
     lock_window_file_select_output_directory_dialog_present(window);
 
     bool success = thread_create("decrypt_file",
-                                 _("Failed to create file decryption thread"),
+                                 "Failed to create file decryption thread",
                                  lock_window_decrypt_file, window);
 
     if (success)
@@ -140,7 +140,7 @@ void thread_sign_text(LockSelectionDialog *self, const char *fingerprint,
     lock_window_set_fingerprint(window, fingerprint);
 
     bool success = thread_create("sign_text",
-                                 _("Failed to create text signing thread"),
+                                 "Failed to create text signing thread",
                                  lock_window_sign_text, window);
 
     if (success)
@@ -163,7 +163,7 @@ void thread_sign_file(LockSelectionDialog *self, const char *fingerprint,
     lock_window_file_select_output_directory_dialog_present(window);
 
     bool success = thread_create("sign_file",
-                                 _("Failed to create file signing thread"),
+                                 "Failed to create file signing thread",
                                  lock_window_sign_file, window);
 
     if (success)
@@ -184,7 +184,7 @@ void thread_verify_text(GSimpleAction *self, GVariant *parameter,
     (void)parameter;
 
     bool success = thread_create("verify_text",
-                                 _("Failed to create text verification thread"),
+                                 "Failed to create text verification thread",
                                  lock_window_verify_text, window);
 
     if (success)
@@ -204,7 +204,7 @@ void thread_verify_file(GtkButton *self, LockWindow *window)
     lock_window_file_select_output_directory_dialog_present(window);
 
     bool success = thread_create("verify_file",
-                                 _("Failed to create file verification thread"),
+                                 "Failed to create file verification thread",
                                  lock_window_verify_file, window);
 
     if (success)
@@ -219,7 +219,7 @@ void thread_verify_file(GtkButton *self, LockWindow *window)
 void thread_import_key(LockManagementDialog *dialog)
 {
     bool success = thread_create("import_key",
-                                 _("Failed to create key import thread"),
+                                 "Failed to create key import thread",
                                  lock_management_dialog_import, dialog);
 
     if (success)
@@ -240,8 +240,7 @@ void thread_generate_key(GtkButton *self, LockManagementDialog *dialog)
         return;
 
     bool success = thread_create("generate_key",
-                                 _
-                                 ("Failed to create key pair generation thread"),
+                                 "Failed to create key pair generation thread",
                                  lock_management_dialog_generate, dialog);
 
     if (success)
@@ -256,7 +255,7 @@ void thread_generate_key(GtkButton *self, LockManagementDialog *dialog)
 void thread_export_key(LockKeyRow *row)
 {
     thread_create("export_key",
-                  _("Failed to create key export thread"),
+                  "Failed to create key export thread",
                   lock_key_row_export, row);
 }
 
@@ -268,6 +267,6 @@ void thread_export_key(LockKeyRow *row)
 void thread_remove_key(LockKeyRow *row)
 {
     thread_create("remove_key",
-                  _("Failed to create key removal thread"),
+                  "Failed to create key removal thread",
                   lock_key_row_remove, row);
 }
