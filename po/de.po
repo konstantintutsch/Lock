@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-09 09:21+0200\n"
-"PO-Revision-Date: 2025-08-09 09:16+0200\n"
+"POT-Creation-Date: 2025-08-14 12:05+0200\n"
+"PO-Revision-Date: 2025-08-14 12:06+0200\n"
 "Last-Translator: Konstantin Tutsch <mail@konstantintutsch.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -168,65 +168,67 @@ msgstr "Generierung fehlgeschlagen"
 msgid "Key pair generated"
 msgstr "Schlüsselpaar generiert"
 
-#: src/keyrow.c:128
+#: src/keyrow.c:112
 msgid "Key does not expire"
 msgstr "Schlüssel läuft nicht ab"
 
-#: src/keyrow.c:132
-#, c-format
-msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
-msgid "Expired %s at %s"
-msgstr "Abgelaufen %s um %s Uhr"
+#: src/keyrow.c:122
+msgctxt ""
+"Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
+"method.DateTime.format.html#description for date formatting)"
+msgid "Expired on %B %e, %Y at %R"
+msgstr "Abgelaufen am %e. %B %Y um %R Uhr"
 
-#: src/keyrow.c:134
-#, c-format
-msgctxt "First formatter: YYYY-mm-dd; Second formatter: HH:MM"
-msgid "Expires %s at %s"
-msgstr "Läuft %s um %s Uhr ab"
+#: src/keyrow.c:125
+msgctxt ""
+"Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
+"method.DateTime.format.html#description for date formatting)"
+msgid "Expires on %B %e, %Y at %R"
+msgstr "Läuft am %e. %B %Y um %R Uhr ab"
 
-#: src/keyrow.c:174
+#: src/keyrow.c:157
 msgid "Fingerprint copied"
 msgstr "Fingerabdruck kopiert"
 
-#: src/keyrow.c:263
+#: src/keyrow.c:246
 msgid "Export failed"
 msgstr "Export fehlgeschlagen"
 
-#: src/keyrow.c:265
+#: src/keyrow.c:248
 msgid "Key exported"
 msgstr "Schlüssel exportiert"
 
-#: src/keyrow.c:310
+#: src/keyrow.c:293
 msgid "Remove key?"
 msgstr "Schlüssel entfernen?"
 
-#: src/keyrow.c:313
+#: src/keyrow.c:296
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr ""
 "Die Entfernung des Schlüssels von %s kann nicht Rückgängig gemacht werden!"
 
-#: src/keyrow.c:316
+#: src/keyrow.c:299
 msgid "_Cancel"
 msgstr "_Abbrechen"
 
-#: src/keyrow.c:317
+#: src/keyrow.c:300
 msgid "_Remove"
 msgstr "_Entfernen"
 
-#: src/keyrow.c:358
+#: src/keyrow.c:341
 msgid "Removal failed"
 msgstr "Entfernung fehlgeschlagen"
 
-#: src/keyrow.c:360
+#: src/keyrow.c:343
 msgid "Key removed"
 msgstr "Schlüssel entfernt"
 
-#: src/keyrow.c:410
+#: src/keyrow.c:393
 msgid "Renewal failed"
 msgstr "Verlängerung fehlgeschlagen"
 
-#: src/keyrow.c:412
+#: src/keyrow.c:395
 msgid "Expire date renewed"
 msgstr "Ablaufzeitpunkt aktualisiert"
 
@@ -718,7 +720,9 @@ msgstr "Ablaufzeitpunkt bearbeiten"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
-msgstr "gpg;gnupg;kryptographie;openpgp;verschlüsseln;entschlüsseln;signieren;verifizieren;"
+msgstr ""
+"gpg;gnupg;kryptographie;openpgp;verschlüsseln;entschlüsseln;signieren;"
+"verifizieren;"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
 msgid ""

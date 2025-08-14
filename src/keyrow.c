@@ -3,6 +3,7 @@
 #include <adwaita.h>
 #include <glib/gi18n.h>
 #include <locale.h>
+#include "glib.h"
 #include "window.h"
 #include "managementdialog.h"
 #include "config.h"
@@ -105,34 +106,23 @@ static void lock_key_row_class_init(LockKeyRowClass *class)
  */
 LockKeyRow *lock_key_row_new(LockManagementDialog *dialog, gpgme_key_t key)
 {
-    /* Key Expiry */
-    size_t expire_date_length = strlen("YYYY-mm-dd") + 1;
-    gchar *expire_date = malloc(expire_date_length * sizeof(char));
-
-    size_t expire_time_length = strlen("HH:MM") + 1;
-    gchar *expire_time = malloc(expire_time_length * sizeof(char));
+    gchar *tooltip_text;
 
     if (key->subkeys->expires == 0) {
-        expire_date = NULL;
-        expire_time = NULL;
+        tooltip_text = g_strdup(_("Key does not expire"));
     } else {
-        time_t expire_timestamp = (time_t) key->subkeys->expires;
-        struct tm *expire = localtime(&expire_timestamp);
+        gint64 expire_timestamp = (gint64) key->subkeys->expires;
+        GDateTime *expire = g_date_time_new_from_unix_local(expire_timestamp);
 
-        strftime(expire_date, expire_date_length, "%Y-%m-%d", expire);
-        strftime(expire_time, expire_time_length, "%H:%M", expire);
-    }
-
-    gchar *tooltip_text;
-    if (expire_date == NULL || expire_time == NULL) {
-        tooltip_text = _("Key does not expire");
-    } else {
-        tooltip_text = g_strdup_printf((key->expired) ? C_
-                                       ("First formatter: YYYY-mm-dd; Second formatter: HH:MM",
-                                        "Expired %s at %s") : C_
-                                       ("First formatter: YYYY-mm-dd; Second formatter: HH:MM",
-                                        "Expires %s at %s"), expire_date,
-                                       expire_time);
+        tooltip_text =
+            g_date_time_format(expire,
+                               (key->expired) ?
+                               C_
+                               ("Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/method.DateTime.format.html#description for date formatting)",
+                                "Expired on %B %e, %Y at %R") :
+                               C_
+                               ("Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/method.DateTime.format.html#description for date formatting)",
+                                "Expires on %B %e, %Y at %R"));
     }
 
     /* Row */
@@ -147,13 +137,6 @@ LockKeyRow *lock_key_row_new(LockManagementDialog *dialog, gpgme_key_t key)
     /* TODO: implement g_object_class_install_property() */
     row->dialog = dialog;
     //memcpy(row->key, key, sizeof(&key));
-
-    /* Cleanup */
-    g_free(expire_date);
-    expire_date = NULL;
-
-    g_free(expire_time);
-    expire_time = NULL;
 
     return row;
 }
