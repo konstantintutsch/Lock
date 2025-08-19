@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-08-14 12:47+0200\n"
-"PO-Revision-Date: 2025-06-11 17:53+0000\n"
-"Last-Translator: Mattia Borda <mattiagiovanni.borda@icloud.com>\n"
+"PO-Revision-Date: 2025-08-15 14:02+0000\n"
+"Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/Lock/Application/"
 "it/>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.13\n"
 
 #. Details
 #: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -167,12 +167,11 @@ msgid "Key does not expire"
 msgstr "La chiave non scade"
 
 #: src/keyrow.c:122
-#, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expired on %B %e, %Y at %R"
-msgstr "Scaduta il giorno %s alle %s"
+msgstr "Scade in %B %e, %Y in %R"
 
 #: src/keyrow.c:125
 #, fuzzy
@@ -180,7 +179,7 @@ msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expires on %B %e, %Y at %R"
-msgstr "Scade il giorno %s alle %s"
+msgstr "Scade in %B %e, %Y in %R"
 
 #: src/keyrow.c:157
 msgid "Fingerprint copied"
