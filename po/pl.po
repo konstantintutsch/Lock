@@ -1,0 +1,580 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.konstantintutsch.Lock package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.konstantintutsch.Lock\n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
+"POT-Creation-Date: 2025-08-14 12:47+0200\n"
+"PO-Revision-Date: 2025-08-20 18:02+0000\n"
+"Last-Translator: hoek <hoek@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/Lock/Application/"
+"pl/>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.13\n"
+
+#. Details
+#: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:4
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
+msgid "Process data with GnuPG"
+msgstr "Przetwarzaj dane za pomocą GnuPG"
+
+#: src/application.c:209
+msgctxt "Button linking to translations"
+msgid "Translate"
+msgstr "Tłumaczenie"
+
+#: src/application.c:212
+msgctxt "Button linking to source code"
+msgid "Develop"
+msgstr "Rozwój"
+
+#: src/application.c:224
+msgid "translator-credits"
+msgstr "tłumacze"
+
+#: src/application.c:229
+msgid "Dependencies"
+msgstr "Zależności"
+
+#: src/window.c:162
+msgid "Enter text …"
+msgstr "Wpisz tekst…"
+
+#: src/window.c:491
+msgid "Text copied"
+msgstr "Skopiowano tekst"
+
+#: src/window.c:560
+#, c-format
+msgid "Could not read text from clipboard: %s"
+msgstr "Nie można odczytać tekstu ze schowka: %s"
+
+#: src/window.c:569
+msgid "Text pasted"
+msgstr "Wklejono tekst"
+
+#: src/window.c:624
+#, c-format
+msgid "File selected to be opened is not a regular file: %s"
+msgstr "Wybrany do otwarcia plik nie jest zwykłym plikiem: %s"
+
+#: src/window.c:777
+msgid "Save files"
+msgstr "Zapisz pliki"
+
+#: src/window.c:778
+msgctxt "Save files"
+msgid "Save"
+msgstr "Zapisz"
+
+#: src/window.c:904 src/window.c:981
+msgid "Encryption failed"
+msgstr "Szyfrowanie nie powiodło się"
+
+#: src/window.c:906
+msgid "Text encrypted"
+msgstr "Zaszyfrowano tekst"
+
+#: src/window.c:983
+msgid "Files encrypted"
+msgstr "Zaszyfrowano pliki"
+
+#: src/window.c:1040 src/window.c:1120
+msgid "Decryption failed"
+msgstr "Odszyfrowywanie nie powiodło się"
+
+#: src/window.c:1042
+msgid "Text decrypted"
+msgstr "Odszyfrowano tekst"
+
+#: src/window.c:1122
+msgid "Files decrypted"
+msgstr "Odszyfrowano pliki"
+
+#: src/window.c:1230 src/window.c:1323
+msgid "Signing failed"
+msgstr "Podpisywanie nie powiodło się"
+
+#: src/window.c:1232
+msgid "Text signed"
+msgstr "Podpisano tekst"
+
+#: src/window.c:1325
+msgid "Files signed"
+msgstr "Podpisano pliki"
+
+#: src/window.c:1382
+msgid "Signature invalid"
+msgstr "Nieprawidłowy podpis"
+
+#: src/window.c:1386
+#, c-format
+msgid "Signature valid - by %s"
+msgstr "Podpis prawidłowy – przez %s"
+
+#: src/window.c:1441
+msgid "valid"
+msgstr "prawidłowy"
+
+#: src/window.c:1441
+msgid "invalid"
+msgstr "nieprawidłowy"
+
+#: src/window.c:1473
+msgid "At least one invalid signature"
+msgstr "Co najmniej jeden nieprawidłowy podpis"
+
+#: src/window.c:1475
+msgid "Signatures valid"
+msgstr "Podpisy prawidłowe"
+
+#: src/managementdialog.c:364
+msgid "Import failed"
+msgstr "Import nie powiódł się"
+
+#: src/managementdialog.c:366
+msgid "Keys imported"
+msgstr "Zaimportowano klucze"
+
+#: src/managementdialog.c:412
+msgctxt ""
+"Expire date format for key pair generation (see GLib.DateTime.format / "
+"https://docs.gtk.org/glib/method.DateTime.format.html#description)"
+msgid "%B %e, %Y"
+msgstr "%B %e, %Y"
+
+#: src/managementdialog.c:429
+msgid "No expire date"
+msgstr "Brak daty wygaśnięcia"
+
+#: src/managementdialog.c:517
+msgid "Generation failed"
+msgstr "Generowanie nie powiodło się"
+
+#: src/managementdialog.c:519
+msgid "Key pair generated"
+msgstr "Wygenerowano parę kluczy"
+
+#: src/keyrow.c:112
+msgid "Key does not expire"
+msgstr "Klucz nie wygasa"
+
+#: src/keyrow.c:122
+msgctxt ""
+"Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
+"method.DateTime.format.html#description for date formatting)"
+msgid "Expired on %B %e, %Y at %R"
+msgstr "Wygasł %B %e, %Y at %R"
+
+#: src/keyrow.c:125
+msgctxt ""
+"Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
+"method.DateTime.format.html#description for date formatting)"
+msgid "Expires on %B %e, %Y at %R"
+msgstr "Wygasa %B %e, %Y at %R"
+
+#: src/keyrow.c:157
+msgid "Fingerprint copied"
+msgstr "Skopiowano odcisk"
+
+#: src/keyrow.c:246
+msgid "Export failed"
+msgstr "Eksport nie powiódł się"
+
+#: src/keyrow.c:248
+msgid "Key exported"
+msgstr "Wyeksportowano klucz"
+
+#: src/keyrow.c:293
+msgid "Remove key?"
+msgstr "Usunąć klucz?"
+
+#: src/keyrow.c:296
+#, c-format
+msgid "The removal of the key of %s cannot be undone!"
+msgstr "Usunięcie klucza %s jest nieodwracalne!"
+
+#: src/keyrow.c:299
+msgid "_Cancel"
+msgstr "_Anuluj"
+
+#: src/keyrow.c:300
+msgid "_Remove"
+msgstr "_Usuń"
+
+#: src/keyrow.c:341
+msgid "Removal failed"
+msgstr "Usunięcie nie powiodło się"
+
+#: src/keyrow.c:343
+msgid "Key removed"
+msgstr "Usunięto klucz"
+
+#: src/keyrow.c:393
+msgid "Renewal failed"
+msgstr "Odnowienie nie powiodło się"
+
+#: src/keyrow.c:395
+msgid "Expire date renewed"
+msgstr "Odnowiono datę wygaśnięcia"
+
+#: data/ui/shortcuts.blp:10
+msgctxt "Shortcuts Group"
+msgid "General"
+msgstr "Ogólne"
+
+#: data/ui/shortcuts.blp:13
+msgctxt "Shortcut as in keyboard shortcut"
+msgid "Show shortcuts"
+msgstr "Pokaż skróty"
+
+#: data/ui/shortcuts.blp:20
+msgid "Copy text view to clipboard"
+msgstr "Skopiuj widok tekstu do schowka"
+
+#: data/ui/shortcuts.blp:27
+msgid "Overwrite text view with clipboard"
+msgstr "Nadpisz widok tekstu zawartością schowka"
+
+#: data/ui/shortcuts.blp:35
+msgctxt "Shortcuts Group"
+msgid "Cryptography"
+msgstr "Kryptografia"
+
+#: data/ui/shortcuts.blp:38
+msgid "Encrypt text"
+msgstr "Zaszyfruj tekst"
+
+#: data/ui/shortcuts.blp:45
+msgid "Decrypt text"
+msgstr "Odszyfruj tekst"
+
+#: data/ui/shortcuts.blp:52
+msgid "Sign text"
+msgstr "Podpisz tekst"
+
+#: data/ui/shortcuts.blp:59
+msgid "Verify text"
+msgstr "Zweryfikuj tekst"
+
+#: data/ui/window.blp:9 data/ui/window.blp:197
+#: data/com.konstantintutsch.Lock.desktop.in.in:3
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
+msgid "Lock"
+msgstr "Zablokuj"
+
+#: data/ui/window.blp:29
+msgid "Copy"
+msgstr "Kopiuj"
+
+#: data/ui/window.blp:30
+msgid "Copy the text"
+msgstr "Kopiuj tekst"
+
+#: data/ui/window.blp:33
+msgid "Cryptography operations"
+msgstr "Operacje kryptograficzne"
+
+#: data/ui/window.blp:50
+msgid "Processing …"
+msgstr "Przetwarzanie …"
+
+#: data/ui/window.blp:55
+msgid "Main Menu"
+msgstr "Menu Główne"
+
+#: data/ui/window.blp:66
+msgid "Text"
+msgstr "Tekst"
+
+#: data/ui/window.blp:84 data/ui/filerow.blp:5
+msgid "File"
+msgstr "Plik"
+
+#: data/ui/window.blp:109
+msgid "No open files"
+msgstr "Brak otwartych plików"
+
+#: data/ui/window.blp:110
+msgid "No files have been opened for processing"
+msgstr "Nie otwarto żadnych plików do przetworzenia"
+
+#: data/ui/window.blp:130
+msgid "Open"
+msgstr "Otwórz"
+
+#: data/ui/window.blp:131
+msgid "Open files for processing"
+msgstr "Otwórz pliki do przetworzenia"
+
+#: data/ui/window.blp:141
+msgid "Clear"
+msgstr "Wyczyść"
+
+#: data/ui/window.blp:142
+msgid "Close all open files"
+msgstr "Zamknij wszystkie otwarte pliki"
+
+#: data/ui/window.blp:157 data/ui/window.blp:222
+msgid "Encrypt"
+msgstr "Zaszyfruj"
+
+#: data/ui/window.blp:164 data/ui/window.blp:226
+msgid "Decrypt"
+msgstr "Odszyfruj"
+
+#: data/ui/window.blp:171 data/ui/window.blp:232
+msgid "Sign"
+msgstr "Podpisz"
+
+#: data/ui/window.blp:178 data/ui/window.blp:244
+msgid "Verify"
+msgstr "Zweryfikuj"
+
+#: data/ui/window.blp:203 data/ui/managementdialog.blp:30
+msgid "Manage keys"
+msgstr "Zarządzaj kluczami"
+
+#: data/ui/window.blp:209
+msgid "Keyboard Shortcuts"
+msgstr "Skróty klawiaturowe"
+
+#: data/ui/window.blp:213
+msgid "About Lock"
+msgstr "O programie Lock"
+
+#: data/ui/window.blp:236
+msgid "Sign (Clear Text)"
+msgstr "Podpisz (Czysty Tekst)"
+
+#: data/ui/window.blp:240
+msgid "Sign (Detached)"
+msgstr "Podpisz (Oddzielnie)"
+
+#: data/ui/filerow.blp:18
+msgid "Close file"
+msgstr "Zamknij plik"
+
+#: data/ui/selectiondialog.blp:35
+msgid "Select key"
+msgstr "Wybierz klucz"
+
+#: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:50
+msgid "Refresh keys"
+msgstr "Odśwież klucze"
+
+#: data/ui/selectiondialog.blp:68
+msgid "No capable keys available"
+msgstr "Brak dostępnych odpowiednich kluczy"
+
+#: data/ui/selectiondialog.blp:69
+msgid ""
+"Your GnuPG keyring does not contain any keys that support this functionality."
+msgstr ""
+"Twój zbiór kluczy GnuPG nie zawiera żadnych kluczy obsługujących tę "
+"funkcjonalność."
+
+#: data/ui/managementdialog.blp:69
+msgid "No keys available"
+msgstr "Brak dostępnych kluczy"
+
+#: data/ui/managementdialog.blp:70
+msgid "Your GnuPG keyring does not contain any keys."
+msgstr "Twój zbiór kluczy GnuPG nie zawiera żadnych kluczy."
+
+#: data/ui/managementdialog.blp:90
+msgctxt "Import keys from files"
+msgid "Import"
+msgstr "Importuj"
+
+#: data/ui/managementdialog.blp:91
+msgid "Import keys from files"
+msgstr "Importuj klucze z plików"
+
+#: data/ui/managementdialog.blp:98
+msgid "Create a new keypair"
+msgstr "Utwórz nową parę kluczy"
+
+#: data/ui/managementdialog.blp:111
+msgid "Generate keypair"
+msgstr "Wygeneruj parę kluczy"
+
+#: data/ui/managementdialog.blp:142
+msgctxt "Name of the UID of the new keypair"
+msgid "Name (Mandatory)"
+msgstr "Nazwa (wymagane)"
+
+#: data/ui/managementdialog.blp:147
+msgctxt "Email of the UID of the new keypair"
+msgid "Email"
+msgstr "Email"
+
+#: data/ui/managementdialog.blp:152
+msgctxt "Comment of the UID of the new keypair"
+msgid "Comment"
+msgstr "Komentarz"
+
+#: data/ui/managementdialog.blp:157
+msgctxt "Signing algorithm of the new keypair"
+msgid "Signing Algorithm"
+msgstr "Algorytm podpisu"
+
+#: data/ui/managementdialog.blp:158
+msgctxt "Signing algorithm of the new keypair"
+msgid "Key"
+msgstr "Klucz"
+
+#: data/ui/managementdialog.blp:166
+msgctxt "Encryption algorithm of the new keypair"
+msgid "Encryption Algorithm"
+msgstr "Algorytm szyfrowania"
+
+#: data/ui/managementdialog.blp:167
+msgctxt "Encryption algorithm of the new keypair"
+msgid "Subkey"
+msgstr "Podklucz"
+
+#: data/ui/managementdialog.blp:175
+msgctxt "Expire date of the new key pair"
+msgid "Expire Date"
+msgstr "Data wygaśnięcia"
+
+#: data/ui/managementdialog.blp:185
+msgid "Remove expire date"
+msgstr "Usuń datę wygaśnięcia"
+
+#: data/ui/managementdialog.blp:193
+msgid "Select expire date of the new key pair"
+msgstr "Wybierz datę wygaśnięcia nowej pary kluczy"
+
+#: data/ui/managementdialog.blp:214
+msgctxt "Generate a new keypair"
+msgid "Generate"
+msgstr "Generuj"
+
+#: data/ui/managementdialog.blp:215
+msgid "Generate a new keypair"
+msgstr "Wygeneruj nową parę kluczy"
+
+#: data/ui/keyrow.blp:5
+msgid "User ID"
+msgstr "ID użytkownika"
+
+#: data/ui/keyrow.blp:6
+msgid "Fingerprint"
+msgstr "Odcisk"
+
+#: data/ui/keyrow.blp:7
+msgid "Expiry"
+msgstr "Wygaśnięcie"
+
+#: data/ui/keyrow.blp:20
+msgid "Remove key"
+msgstr "Usuń klucz"
+
+#: data/ui/keyrow.blp:27
+msgid "Export public key to file"
+msgstr "Eksportuj klucz publiczny do pliku"
+
+#: data/ui/keyrow.blp:38
+msgid "Edit expire date"
+msgstr "Edytuj datę wygaśnięcia"
+
+#: data/com.konstantintutsch.Lock.desktop.in.in:11
+msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
+msgstr ""
+"gpg;gnupg;kryptografia;openpgp;szyfrowanie;odszyfrowanie;podpisywanie;weryfikacja;"
+""
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
+msgid ""
+"Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
+"LibAdwaita GUI."
+msgstr ""
+"Lock to graficzna nakładka dla GnuPG (GPG) wykorzystująca estetyczne GUI "
+"LibAdwaita."
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
+msgid "Process text and files:"
+msgstr "Przetwarzaj tekst i pliki:"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:75
+msgid "Encryption"
+msgstr "Szyfrowanie"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
+msgid "Decryption"
+msgstr "Odszyfrowywanie"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:14
+msgid "Signing"
+msgstr "Podpisywanie"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:15
+msgid "Verification"
+msgstr "Weryfikacja"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:17
+msgid "Manage your GnuPG keyring:"
+msgstr "Zarządzaj swoim zbiorem kluczy GnuPG:"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
+msgid "Generate new key pairs"
+msgstr "Generuj nowe pary kluczy"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
+msgid "Import keys"
+msgstr "Importuj klucze"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:21
+msgid "Export public keys"
+msgstr "Eksportuj klucze publiczne"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
+msgid "View expire dates"
+msgstr "Wyświetl daty wygaśnięcia"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
+msgid "Update expire dates of expired keys"
+msgstr "Zaktualizuj daty wygaśnięcia wygasłych kluczy"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
+msgid "Remove keys"
+msgstr "Usuń klucze"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:47
+msgid "Light Appearance"
+msgstr "Jasny wygląd"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:51
+msgid "Dark Appearance"
+msgstr "Ciemny wygląd"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:55
+msgid "Key Management"
+msgstr "Zarządzanie kluczami"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:59
+msgid "Keypair Generation"
+msgstr "Generowanie pary kluczy"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:63
+msgid "File processing"
+msgstr "Przetwarzanie plików"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:67
+msgid "Plain text"
+msgstr "Zwykły tekst"
+
+#: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
+msgid "Key selection dialog"
+msgstr "Okno wyboru klucza"
