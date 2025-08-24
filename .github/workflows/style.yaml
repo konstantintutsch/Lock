@@ -1,0 +1,37 @@
+name: code style
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  flatpak:
+    runs-on: ubuntu-24.04
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4.1.1
+
+    - name: Update package lists
+      run: sudo apt-get update
+
+    - name: Install style tools
+      run: sudo apt-get install git indent just
+
+    - name: Check code style
+      run: |
+        just format
+
+        # Check for changes
+        git add .
+        git diff --cached --exit-code
+
+
+        # Check if changes occurred when styling according to style rules
+        if $?
+        then
+          git diff --no-pager --cached
+          exit 1
+        fi
