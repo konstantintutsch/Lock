@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-24 15:54+0200\n"
-"PO-Revision-Date: 2025-04-12 23:33+0000\n"
+"POT-Creation-Date: 2025-08-24 16:36+0200\n"
+"PO-Revision-Date: 2025-08-24 13:54+0000\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/Lock/Application/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.13\n"
 
 #. Details
 #: src/application.c:177 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -167,20 +167,18 @@ msgid "Key does not expire"
 msgstr "密钥未到期"
 
 #: src/keyrow.c:105
-#, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expired on %B %e, %Y at %R"
-msgstr "到期时间 %s %s"
+msgstr "到期时间 %Y年 %m月 %d日，%R"
 
 #: src/keyrow.c:105
-#, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expires on %B %e, %Y at %R"
-msgstr "到期时间 %s %s"
+msgstr "到期时间 %Y年 %m月 %d日，%R"
 
 #: src/keyrow.c:135
 msgid "Fingerprint copied"
