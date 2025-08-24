@@ -37,8 +37,7 @@ G_DEFINE_TYPE(LockKeyRow, lock_key_row, ADW_TYPE_ACTION_ROW);
 void lock_key_row_copy_fingerprint(AdwActionRow * self, LockKeyRow * row);
 
 /* Export */
-static void lock_key_row_export_file_present(GtkButton * self,
-                                             LockKeyRow * row);
+static void lock_key_row_export_file_present(GtkButton * self, LockKeyRow * row);
 static void lock_key_row_remove_confirm(GtkButton * self, LockKeyRow * row);
 
 gboolean lock_key_row_export_on_completed(LockKeyRow * row);
@@ -57,19 +56,14 @@ static void lock_key_row_init(LockKeyRow *row)
 {
     gtk_widget_init_template(GTK_WIDGET(row));
 
-    g_signal_connect(row, "activated",
-                     G_CALLBACK(lock_key_row_copy_fingerprint), row);
+    g_signal_connect(row, "activated", G_CALLBACK(lock_key_row_copy_fingerprint), row);
 
-    g_signal_connect(row->remove_button, "clicked",
-                     G_CALLBACK(lock_key_row_remove_confirm), row);
+    g_signal_connect(row->remove_button, "clicked", G_CALLBACK(lock_key_row_remove_confirm), row);
 
-    g_signal_connect(row->export_button, "clicked",
-                     G_CALLBACK(lock_key_row_export_file_present), row);
+    g_signal_connect(row->export_button, "clicked", G_CALLBACK(lock_key_row_export_file_present), row);
 
-    g_signal_connect(row->expire_button, "clicked",
-                     G_CALLBACK(lock_key_row_edit_expire), row);
-    g_signal_connect(row->expire_calendar, "day-selected",
-                     G_CALLBACK(lock_key_row_edit_expire_finish), row);
+    g_signal_connect(row->expire_button, "clicked", G_CALLBACK(lock_key_row_edit_expire), row);
+    g_signal_connect(row->expire_calendar, "day-selected", G_CALLBACK(lock_key_row_edit_expire_finish), row);
 }
 
 /**
@@ -79,21 +73,15 @@ static void lock_key_row_init(LockKeyRow *row)
  */
 static void lock_key_row_class_init(LockKeyRowClass *class)
 {
-    gtk_widget_class_set_template_from_resource(GTK_WIDGET_CLASS(class),
-                                                UI_RESOURCE("keyrow.ui"));
+    gtk_widget_class_set_template_from_resource(GTK_WIDGET_CLASS(class), UI_RESOURCE("keyrow.ui"));
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyRow,
-                                         remove_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyRow, remove_button);
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyRow,
-                                         export_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyRow, export_button);
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyRow,
-                                         expire_button);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyRow,
-                                         expire_popover);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyRow,
-                                         expire_calendar);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyRow, expire_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyRow, expire_popover);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockKeyRow, expire_calendar);
 }
 
 /**
@@ -114,22 +102,13 @@ LockKeyRow *lock_key_row_new(LockManagementDialog *dialog, gpgme_key_t key)
         gint64 expire_timestamp = (gint64) key->subkeys->expires;
         GDateTime *expire = g_date_time_new_from_unix_local(expire_timestamp);
 
-        tooltip_text =
-            g_date_time_format(expire,
-                               (key->expired) ?
-                               C_
-                               ("Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/method.DateTime.format.html#description for date formatting)",
-                                "Expired on %B %e, %Y at %R") :
-                               C_
-                               ("Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/method.DateTime.format.html#description for date formatting)",
-                                "Expires on %B %e, %Y at %R"));
+        tooltip_text = g_date_time_format(expire, (key->expired) ? C_("Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/method.DateTime.format.html#description for date formatting)", "Expired on %B %e, %Y at %R") : C_("Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/method.DateTime.format.html#description for date formatting)", "Expires on %B %e, %Y at %R"));
     }
 
     /* Row */
-    LockKeyRow *row =
-        g_object_new(LOCK_TYPE_KEY_ROW, "title", key->uids->uid, "subtitle",
-                     key->fpr,
-                     "tooltip-text", tooltip_text, NULL);
+    LockKeyRow *row = g_object_new(LOCK_TYPE_KEY_ROW, "title", key->uids->uid, "subtitle",
+                                   key->fpr,
+                                   "tooltip-text", tooltip_text, NULL);
 
     gtk_widget_set_visible(GTK_WIDGET(row->export_button), !key->expired);
     gtk_widget_set_visible(GTK_WIDGET(row->expire_button), key->expired);
@@ -151,8 +130,7 @@ void lock_key_row_copy_fingerprint(AdwActionRow *self, LockKeyRow *row)
 {
     (void)self;
 
-    GdkClipboard *active_clipboard =
-        gdk_display_get_clipboard(gdk_display_get_default());
+    GdkClipboard *active_clipboard = gdk_display_get_clipboard(gdk_display_get_default());
 
     AdwToast *toast = adw_toast_new(_("Fingerprint copied"));
     adw_toast_set_timeout(toast, 2);
@@ -172,8 +150,7 @@ void lock_key_row_copy_fingerprint(AdwActionRow *self, LockKeyRow *row)
  * @param result https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
  * @param user_data https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
  */
-static void lock_key_row_export_file_save(GObject *source_object,
-                                          GAsyncResult *res, gpointer data)
+static void lock_key_row_export_file_save(GObject *source_object, GAsyncResult *res, gpointer data)
 {
     GtkFileDialog *file = GTK_FILE_DIALOG(source_object);
     LockKeyRow *row = LOCK_KEY_ROW(data);
@@ -205,8 +182,7 @@ static void lock_key_row_export_file_present(GtkButton *self, LockKeyRow *row)
     LockWindow *window = lock_management_dialog_get_window(row->dialog);
     GCancellable *cancel = g_cancellable_new();
 
-    gtk_file_dialog_save(file, GTK_WINDOW(window),
-                         cancel, lock_key_row_export_file_save, row);
+    gtk_file_dialog_save(file, GTK_WINDOW(window), cancel, lock_key_row_export_file_save, row);
 }
 
 /**
@@ -264,9 +240,7 @@ gboolean lock_key_row_export_on_completed(LockKeyRow *row)
  * @param response https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/signal.AlertDialog.response.html
  * @param row https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/signal.AlertDialog.response.html
  */
-static void lock_key_row_remove_confirm_on_responded(AdwAlertDialog *self,
-                                                     gchar *response,
-                                                     LockKeyRow *row)
+static void lock_key_row_remove_confirm_on_responded(AdwAlertDialog *self, gchar *response, LockKeyRow *row)
 {
     (void)self;
 
@@ -289,22 +263,15 @@ static void lock_key_row_remove_confirm(GtkButton *self, LockKeyRow *row)
     LockWindow *window = lock_management_dialog_get_window(row->dialog);
     const char *uid = adw_preferences_row_get_title(ADW_PREFERENCES_ROW(row));
 
-    AdwAlertDialog *confirm =
-        ADW_ALERT_DIALOG(adw_alert_dialog_new(_("Remove key?"), NULL));
-    adw_alert_dialog_format_body(confirm,
-                                 _
-                                 ("The removal of the key of %s cannot be undone!"),
-                                 uid);
+    AdwAlertDialog *confirm = ADW_ALERT_DIALOG(adw_alert_dialog_new(_("Remove key?"), NULL));
+    adw_alert_dialog_format_body(confirm, _("The removal of the key of %s cannot be undone!"), uid);
 
-    adw_alert_dialog_add_responses(confirm, "cancel", _("_Cancel"), "remove",
-                                   _("_Remove"), NULL);
-    adw_alert_dialog_set_response_appearance(confirm, "remove",
-                                             ADW_RESPONSE_DESTRUCTIVE);
+    adw_alert_dialog_add_responses(confirm, "cancel", _("_Cancel"), "remove", _("_Remove"), NULL);
+    adw_alert_dialog_set_response_appearance(confirm, "remove", ADW_RESPONSE_DESTRUCTIVE);
 
     adw_alert_dialog_set_default_response(confirm, "cancel");
     adw_alert_dialog_set_close_response(confirm, "cancel");
-    g_signal_connect(confirm, "response",
-                     G_CALLBACK(lock_key_row_remove_confirm_on_responded), row);
+    g_signal_connect(confirm, "response", G_CALLBACK(lock_key_row_remove_confirm_on_responded), row);
 
     adw_dialog_present(ADW_DIALOG(confirm), GTK_WIDGET(window));
 }
@@ -381,13 +348,11 @@ void lock_key_row_edit_expire_finish(GtkCalendar *self, LockKeyRow *row)
 
     GDateTime *expire = gtk_calendar_get_date(self);
     GDateTime *now = g_date_time_new_now_local();
-    const gint64 expire_offset =
-        g_date_time_to_unix(expire) - g_date_time_to_unix(now);
+    const gint64 expire_offset = g_date_time_to_unix(expire) - g_date_time_to_unix(now);
 
     gtk_popover_popdown(row->expire_popover);
 
-    gboolean expire_success = (expire_offset >= 0) ?
-        key_expire(fingerprint, expire_offset) : false;
+    gboolean expire_success = (expire_offset >= 0) ? key_expire(fingerprint, expire_offset) : false;
 
     if (!expire_success) {
         toast = adw_toast_new(_("Renewal failed"));

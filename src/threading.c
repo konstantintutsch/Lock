@@ -20,8 +20,7 @@
  *
  * @return Success
  */
-bool thread_create(const gchar *id, const gchar *purpose, gpointer function,
-                   gpointer data)
+bool thread_create(const gchar *id, const gchar *purpose, gpointer function, gpointer data)
 {
     GError *error = NULL;
 
@@ -46,8 +45,7 @@ bool thread_create(const gchar *id, const gchar *purpose, gpointer function,
  * @param fingerprint LockSelectionDialog::entered
  * @param window LockSelectionDialog::entered
  */
-void thread_encrypt_text(LockSelectionDialog *self, const char *fingerprint,
-                         LockWindow *window)
+void thread_encrypt_text(LockSelectionDialog *self, const char *fingerprint, LockWindow *window)
 {
     (void)self;
 
@@ -68,8 +66,7 @@ void thread_encrypt_text(LockSelectionDialog *self, const char *fingerprint,
  * @param fingerprint LockSelectionDialog::entered
  * @param window LockSelectionDialog::entered
  */
-void thread_encrypt_file(LockSelectionDialog *self, const char *fingerprint,
-                         LockWindow *window)
+void thread_encrypt_file(LockSelectionDialog *self, const char *fingerprint, LockWindow *window)
 {
     (void)self;
 
@@ -91,8 +88,7 @@ void thread_encrypt_file(LockSelectionDialog *self, const char *fingerprint,
  * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  * @param window https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  */
-void thread_decrypt_text(GSimpleAction *self, GVariant *parameter,
-                         LockWindow *window)
+void thread_decrypt_text(GSimpleAction *self, GVariant *parameter, LockWindow *window)
 {
     (void)self;
     (void)parameter;
@@ -132,8 +128,7 @@ void thread_decrypt_file(GtkButton *self, LockWindow *window)
  * @param fingerprint LockSelectionDialog::entered
  * @param window LockSelectionDialog::entered
  */
-void thread_sign_text(LockSelectionDialog *self, const char *fingerprint,
-                      LockWindow *window)
+void thread_sign_text(LockSelectionDialog *self, const char *fingerprint, LockWindow *window)
 {
     (void)self;
 
@@ -154,8 +149,7 @@ void thread_sign_text(LockSelectionDialog *self, const char *fingerprint,
  * @param fingerprint LockSelectionDialog::entered
  * @param window LockSelectionDialog::entered
  */
-void thread_sign_file(LockSelectionDialog *self, const char *fingerprint,
-                      LockWindow *window)
+void thread_sign_file(LockSelectionDialog *self, const char *fingerprint, LockWindow *window)
 {
     (void)self;
 
@@ -177,8 +171,7 @@ void thread_sign_file(LockSelectionDialog *self, const char *fingerprint,
  * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  * @param window https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  */
-void thread_verify_text(GSimpleAction *self, GVariant *parameter,
-                        LockWindow *window)
+void thread_verify_text(GSimpleAction *self, GVariant *parameter, LockWindow *window)
 {
     (void)self;
     (void)parameter;
@@ -254,9 +247,7 @@ void thread_generate_key(GtkButton *self, LockManagementDialog *dialog)
  */
 void thread_export_key(LockKeyRow *row)
 {
-    thread_create("export_key",
-                  "Failed to create key export thread",
-                  lock_key_row_export, row);
+    thread_create("export_key", "Failed to create key export thread", lock_key_row_export, row);
 }
 
 /**
@@ -266,7 +257,5 @@ void thread_export_key(LockKeyRow *row)
  */
 void thread_remove_key(LockKeyRow *row)
 {
-    thread_create("remove_key",
-                  "Failed to create key removal thread",
-                  lock_key_row_remove, row);
+    thread_create("remove_key", "Failed to create key removal thread", lock_key_row_remove, row);
 }

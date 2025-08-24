@@ -27,8 +27,7 @@ int main(int argc, char *argv[])
     g_message("GnuPG Made Easy %s", gpgme_version);
 
     if (gpgme_check_version(GPGME_REQUIRED_VERSION) == NULL)
-        g_error("GnuPG Made Easy %s or greater required. Using %s.",
-                GPGME_REQUIRED_VERSION, gpgme_version);
+        g_error("GnuPG Made Easy %s or greater required. Using %s.", GPGME_REQUIRED_VERSION, gpgme_version);
 
     // GUI
     LockApplication *application = lock_application_new();

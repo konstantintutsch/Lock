@@ -3,7 +3,7 @@ default:
     just --list --justfile {{ justfile() }}
 
 format:
-    indent src/*.c src/*.h -linux -nut -i4
+    indent src/*.c src/*.h -linux -nut -i4 -l1024
 
 translate:
     meson compile -C _meson com.konstantintutsch.Lock-pot

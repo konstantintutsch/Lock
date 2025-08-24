@@ -30,8 +30,7 @@ void lock_file_row_init(LockFileRow *row)
 {
     gtk_widget_init_template(GTK_WIDGET(row));
 
-    g_signal_connect(row->remove_button, "clicked",
-                     G_CALLBACK(lock_file_row_remove), row);
+    g_signal_connect(row->remove_button, "clicked", G_CALLBACK(lock_file_row_remove), row);
 }
 
 /**
@@ -41,11 +40,9 @@ void lock_file_row_init(LockFileRow *row)
  */
 static void lock_file_row_class_init(LockFileRowClass *class)
 {
-    gtk_widget_class_set_template_from_resource(GTK_WIDGET_CLASS(class),
-                                                UI_RESOURCE("filerow.ui"));
+    gtk_widget_class_set_template_from_resource(GTK_WIDGET_CLASS(class), UI_RESOURCE("filerow.ui"));
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockFileRow,
-                                         remove_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockFileRow, remove_button);
 }
 
 /**
@@ -61,8 +58,7 @@ LockFileRow *lock_file_row_new(GFile *file)
 
     /* TODO: implement g_object_class_install_property() */
     row->file = file;
-    adw_preferences_row_set_title(ADW_PREFERENCES_ROW(row),
-                                  g_file_get_basename(row->file));
+    adw_preferences_row_set_title(ADW_PREFERENCES_ROW(row), g_file_get_basename(row->file));
 
     return row;
 }
@@ -78,8 +74,7 @@ void lock_file_row_remove(GtkButton *self, LockFileRow *row)
     (void)self;
     (void)row;
 
-    gtk_list_box_remove(GTK_LIST_BOX(gtk_widget_get_parent(GTK_WIDGET(row))),
-                        GTK_WIDGET(row));
+    gtk_list_box_remove(GTK_LIST_BOX(gtk_widget_get_parent(GTK_WIDGET(row))), GTK_WIDGET(row));
 }
 
 /**

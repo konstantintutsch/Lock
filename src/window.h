@@ -6,8 +6,7 @@
 
 #define LOCK_TYPE_WINDOW (lock_window_get_type())
 
-G_DECLARE_FINAL_TYPE(LockWindow, lock_window, LOCK, WINDOW,
-                     AdwApplicationWindow);
+G_DECLARE_FINAL_TYPE(LockWindow, lock_window, LOCK, WINDOW, AdwApplicationWindow);
 
 LockWindow *lock_window_new(LockApplication * app);
 void lock_window_open(LockWindow * window, GFile * file);
@@ -19,13 +18,11 @@ enum dialog_status {
 };
 
 /* UI */
-void lock_window_cryptography_processing(LockWindow * window,
-                                         gboolean processing);
+void lock_window_cryptography_processing(LockWindow * window, gboolean processing);
 
 /* File */
 void lock_window_file_open(LockWindow * window, GFile * file);
-void lock_window_file_select_output_directory_dialog_present(LockWindow *
-                                                             window);
+void lock_window_file_select_output_directory_dialog_present(LockWindow * window);
 
 /* Cryptography */
 void lock_window_set_fingerprint(LockWindow * window, const char *fingerprint);

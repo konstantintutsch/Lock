@@ -62,12 +62,9 @@ struct _LockWindow {
 G_DEFINE_TYPE(LockWindow, lock_window, ADW_TYPE_APPLICATION_WINDOW);
 
 /* UI */
-static void lock_window_stack_page_on_changed(AdwViewStack * self,
-                                              GParamSpec * pspec,
-                                              LockWindow * window);
+static void lock_window_stack_page_on_changed(AdwViewStack * self, GParamSpec * pspec, LockWindow * window);
 void lock_window_lock_file_processing(LockWindow * window, gboolean lock);
-static void lock_window_on_file_selection(GtkListBox * self,
-                                          LockWindow * window);
+static void lock_window_on_file_selection(GtkListBox * self, LockWindow * window);
 
 // Encryption
 gboolean lock_window_encrypt_text_on_completed(LockWindow * window);
@@ -86,47 +83,29 @@ gboolean lock_window_verify_text_on_completed(LockWindow * window);
 gboolean lock_window_verify_file_on_completed(LockWindow * window);
 
 /* Key management */
-static void lock_window_management_dialog(GSimpleAction * action,
-                                          GVariant * parameter,
-                                          LockWindow * window);
+static void lock_window_management_dialog(GSimpleAction * action, GVariant * parameter, LockWindow * window);
 
 /* Text */
-static void lock_window_text_view_copy(AdwSplitButton * self,
-                                       LockWindow * window);
-static void lock_window_text_view_copy_action(GSimpleAction * action,
-                                              GVariant * parameter,
-                                              LockWindow * window);
+static void lock_window_text_view_copy(AdwSplitButton * self, LockWindow * window);
+static void lock_window_text_view_copy_action(GSimpleAction * action, GVariant * parameter, LockWindow * window);
 
-static void lock_window_text_view_paste(GSimpleAction * action,
-                                        GVariant * parameter,
-                                        LockWindow * window);
-static void lock_window_text_view_paste_finish(GObject * object,
-                                               GAsyncResult * result,
-                                               gpointer data);
+static void lock_window_text_view_paste(GSimpleAction * action, GVariant * parameter, LockWindow * window);
+static void lock_window_text_view_paste_finish(GObject * object, GAsyncResult * result, gpointer data);
 
-static void lock_window_text_queue_set_text(LockWindow * window,
-                                            const char *text);
+static void lock_window_text_queue_set_text(LockWindow * window, const char *text);
 
 /* File */
-gboolean
-lock_window_on_file_drop(GtkDropTarget * target,
-                         const GValue * value, double x, double y,
-                         gpointer data);
-static void lock_window_file_open_dialog_finish(GObject * source_object,
-                                                GAsyncResult * res,
-                                                gpointer data);
-static void lock_window_file_open_dialog_present(AdwButtonRow * self,
-                                                 LockWindow * window);
+gboolean lock_window_on_file_drop(GtkDropTarget * target, const GValue * value, double x, double y, gpointer data);
+static void lock_window_file_open_dialog_finish(GObject * source_object, GAsyncResult * res, gpointer data);
+static void lock_window_file_open_dialog_present(AdwButtonRow * self, LockWindow * window);
 void lock_window_file_list_clear(AdwButtonRow * self, LockWindow * window);
 
 /* Encryption */
-void lock_window_encrypt_text_dialog(GSimpleAction * self, GVariant * parameter,
-                                     LockWindow * window);
+void lock_window_encrypt_text_dialog(GSimpleAction * self, GVariant * parameter, LockWindow * window);
 void lock_window_encrypt_file_dialog(GtkButton * self, LockWindow * window);
 
 /* Signing */
-void lock_window_sign_text_dialog(GSimpleAction * self, GVariant * parameter,
-                                  LockWindow * window);
+void lock_window_sign_text_dialog(GSimpleAction * self, GVariant * parameter, LockWindow * window);
 void lock_window_sign_file_dialog(GtkButton * self, LockWindow * window);
 
 /**
@@ -141,119 +120,84 @@ static void lock_window_init(LockWindow *window)
     window->fingerprint = malloc((0 + 1) * sizeof(char));
 
     /* UI */
-    g_signal_connect(window->stack, "notify::visible-child",
-                     G_CALLBACK(lock_window_stack_page_on_changed), window);
+    g_signal_connect(window->stack, "notify::visible-child", G_CALLBACK(lock_window_stack_page_on_changed), window);
     lock_window_stack_page_on_changed(window->stack, NULL, window);
 
     lock_window_cryptography_processing(window, false);
 
     /* Key management */
 
-    g_autoptr(GSimpleAction) manage_keys_action =
-        g_simple_action_new("manage_keys", NULL);
-    g_signal_connect(manage_keys_action, "activate",
-                     G_CALLBACK(lock_window_management_dialog), window);
+    g_autoptr(GSimpleAction) manage_keys_action = g_simple_action_new("manage_keys", NULL);
+    g_signal_connect(manage_keys_action, "activate", G_CALLBACK(lock_window_management_dialog), window);
     g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(manage_keys_action));
 
     /* Text */
-    g_signal_connect(window->text_button, "clicked",
-                     G_CALLBACK(lock_window_text_view_copy), window);
-    gtk_text_buffer_set_text(gtk_text_view_get_buffer(window->text_view),
-                             _("Enter text …"), -1);
+    g_signal_connect(window->text_button, "clicked", G_CALLBACK(lock_window_text_view_copy), window);
+    gtk_text_buffer_set_text(gtk_text_view_get_buffer(window->text_view), _("Enter text …"), -1);
 
     window->text_queue = gtk_text_buffer_new(NULL);
     lock_window_text_queue_set_text(window, "");
 
-    g_autoptr(GSimpleAction) copy_text_action =
-        g_simple_action_new("copy_text", NULL);
-    g_signal_connect(copy_text_action, "activate",
-                     G_CALLBACK(lock_window_text_view_copy_action), window);
+    g_autoptr(GSimpleAction) copy_text_action = g_simple_action_new("copy_text", NULL);
+    g_signal_connect(copy_text_action, "activate", G_CALLBACK(lock_window_text_view_copy_action), window);
     g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(copy_text_action));
 
-    g_autoptr(GSimpleAction) paste_text_action =
-        g_simple_action_new("paste_text", NULL);
-    g_signal_connect(paste_text_action, "activate",
-                     G_CALLBACK(lock_window_text_view_paste), window);
+    g_autoptr(GSimpleAction) paste_text_action = g_simple_action_new("paste_text", NULL);
+    g_signal_connect(paste_text_action, "activate", G_CALLBACK(lock_window_text_view_paste), window);
     g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(paste_text_action));
 
     // Encrypt
-    g_autoptr(GSimpleAction) encrypt_text_action =
-        g_simple_action_new("encrypt_text", NULL);
-    g_signal_connect(encrypt_text_action, "activate",
-                     G_CALLBACK(lock_window_encrypt_text_dialog), window);
-    g_action_map_add_action(G_ACTION_MAP(window),
-                            G_ACTION(encrypt_text_action));
+    g_autoptr(GSimpleAction) encrypt_text_action = g_simple_action_new("encrypt_text", NULL);
+    g_signal_connect(encrypt_text_action, "activate", G_CALLBACK(lock_window_encrypt_text_dialog), window);
+    g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(encrypt_text_action));
 
     // Decrypt
-    g_autoptr(GSimpleAction) decrypt_text_action =
-        g_simple_action_new("decrypt_text", NULL);
-    g_signal_connect(decrypt_text_action, "activate",
-                     G_CALLBACK(thread_decrypt_text), window);
-    g_action_map_add_action(G_ACTION_MAP(window),
-                            G_ACTION(decrypt_text_action));
+    g_autoptr(GSimpleAction) decrypt_text_action = g_simple_action_new("decrypt_text", NULL);
+    g_signal_connect(decrypt_text_action, "activate", G_CALLBACK(thread_decrypt_text), window);
+    g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(decrypt_text_action));
 
     // Sign
-    g_autoptr(GSimpleAction) sign_text_action =
-        g_simple_action_new("sign_text", NULL);
-    g_signal_connect(sign_text_action, "activate",
-                     G_CALLBACK(lock_window_sign_text_dialog), window);
+    g_autoptr(GSimpleAction) sign_text_action = g_simple_action_new("sign_text", NULL);
+    g_signal_connect(sign_text_action, "activate", G_CALLBACK(lock_window_sign_text_dialog), window);
     g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(sign_text_action));
 
-    g_autoptr(GSimpleAction) sign_text_clear_action =
-        g_simple_action_new("sign_text_clear", NULL);
-    g_signal_connect(sign_text_clear_action, "activate",
-                     G_CALLBACK(lock_window_sign_text_dialog), window);
-    g_action_map_add_action(G_ACTION_MAP(window),
-                            G_ACTION(sign_text_clear_action));
+    g_autoptr(GSimpleAction) sign_text_clear_action = g_simple_action_new("sign_text_clear", NULL);
+    g_signal_connect(sign_text_clear_action, "activate", G_CALLBACK(lock_window_sign_text_dialog), window);
+    g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(sign_text_clear_action));
 
-    g_autoptr(GSimpleAction) sign_text_detach_action =
-        g_simple_action_new("sign_text_detach", NULL);
-    g_signal_connect(sign_text_detach_action, "activate",
-                     G_CALLBACK(lock_window_sign_text_dialog), window);
-    g_action_map_add_action(G_ACTION_MAP(window),
-                            G_ACTION(sign_text_detach_action));
+    g_autoptr(GSimpleAction) sign_text_detach_action = g_simple_action_new("sign_text_detach", NULL);
+    g_signal_connect(sign_text_detach_action, "activate", G_CALLBACK(lock_window_sign_text_dialog), window);
+    g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(sign_text_detach_action));
 
     // Verify
-    g_autoptr(GSimpleAction) verify_text_action =
-        g_simple_action_new("verify_text", NULL);
-    g_signal_connect(verify_text_action, "activate",
-                     G_CALLBACK(thread_verify_text), window);
+    g_autoptr(GSimpleAction) verify_text_action = g_simple_action_new("verify_text", NULL);
+    g_signal_connect(verify_text_action, "activate", G_CALLBACK(thread_verify_text), window);
     g_action_map_add_action(G_ACTION_MAP(window), G_ACTION(verify_text_action));
 
     /* File */
-    GtkDropTarget *file_target =
-        gtk_drop_target_new(G_TYPE_INVALID, GDK_ACTION_COPY);
+    GtkDropTarget *file_target = gtk_drop_target_new(G_TYPE_INVALID, GDK_ACTION_COPY);
     gtk_drop_target_set_gtypes(file_target, (GType[1]) {
                                GDK_TYPE_FILE_LIST}, 1);
 
-    g_signal_connect(file_target, "drop", G_CALLBACK(lock_window_on_file_drop),
-                     window);
-    gtk_widget_add_controller(GTK_WIDGET(window->file_box),
-                              GTK_EVENT_CONTROLLER(file_target));
+    g_signal_connect(file_target, "drop", G_CALLBACK(lock_window_on_file_drop), window);
+    gtk_widget_add_controller(GTK_WIDGET(window->file_box), GTK_EVENT_CONTROLLER(file_target));
 
     window->file_output_status = SELECTING;
 
-    g_signal_connect(window->file_list, "selected-rows-changed",
-                     G_CALLBACK(lock_window_on_file_selection), window);
+    g_signal_connect(window->file_list, "selected-rows-changed", G_CALLBACK(lock_window_on_file_selection), window);
     lock_window_on_file_selection(NULL, window);
 
-    g_signal_connect(window->file_open_button, "activated",
-                     G_CALLBACK(lock_window_file_open_dialog_present), window);
-    g_signal_connect(window->file_clear_button, "activated",
-                     G_CALLBACK(lock_window_file_list_clear), window);
+    g_signal_connect(window->file_open_button, "activated", G_CALLBACK(lock_window_file_open_dialog_present), window);
+    g_signal_connect(window->file_clear_button, "activated", G_CALLBACK(lock_window_file_list_clear), window);
 
     // Encrypt
-    g_signal_connect(window->file_encrypt_button, "clicked",
-                     G_CALLBACK(lock_window_encrypt_file_dialog), window);
+    g_signal_connect(window->file_encrypt_button, "clicked", G_CALLBACK(lock_window_encrypt_file_dialog), window);
     // Decrypt
-    g_signal_connect(window->file_decrypt_button, "clicked",
-                     G_CALLBACK(thread_decrypt_file), window);
+    g_signal_connect(window->file_decrypt_button, "clicked", G_CALLBACK(thread_decrypt_file), window);
     // Sign
-    g_signal_connect(window->file_sign_button, "clicked",
-                     G_CALLBACK(lock_window_sign_file_dialog), window);
+    g_signal_connect(window->file_sign_button, "clicked", G_CALLBACK(lock_window_sign_file_dialog), window);
     // Verify
-    g_signal_connect(window->file_verify_button, "clicked",
-                     G_CALLBACK(thread_verify_file), window);
+    g_signal_connect(window->file_verify_button, "clicked", G_CALLBACK(thread_verify_file), window);
 }
 
 /**
@@ -263,48 +207,30 @@ static void lock_window_init(LockWindow *window)
  */
 static void lock_window_class_init(LockWindowClass *class)
 {
-    gtk_widget_class_set_template_from_resource(GTK_WIDGET_CLASS(class),
-                                                UI_RESOURCE("window.ui"));
+    gtk_widget_class_set_template_from_resource(GTK_WIDGET_CLASS(class), UI_RESOURCE("window.ui"));
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         processing_spinner);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         toast_overlay);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         stack);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, processing_spinner);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, toast_overlay);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, stack);
 
     /* Text */
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         text_page);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         text_button);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         text_view);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, text_page);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, text_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, text_view);
 
     /* File */
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_page);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_box);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_status);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_list);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_open_button);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_clear_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, file_page);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, file_box);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, file_status);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, file_list);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, file_open_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, file_clear_button);
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_process_box);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_encrypt_button);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_decrypt_button);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_sign_button);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow,
-                                         file_verify_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, file_process_box);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, file_encrypt_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, file_decrypt_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, file_sign_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockWindow, file_verify_button);
 }
 
 /**
@@ -340,8 +266,7 @@ void lock_window_open(LockWindow *window, GFile *file)
  * @param window Window to update the UI of
  * @param processing Whether an operation is currently being executed
  */
-void lock_window_cryptography_processing(LockWindow *window,
-                                         gboolean processing)
+void lock_window_cryptography_processing(LockWindow *window, gboolean processing)
 {
     lock_window_lock_file_processing(window, processing);
     gtk_widget_set_visible(GTK_WIDGET(window->processing_spinner), processing);
@@ -354,15 +279,12 @@ void lock_window_cryptography_processing(LockWindow *window,
  * @param pspec https://docs.gtk.org/gobject/signal.Object.notify.html
  * @param window https://docs.gtk.org/gobject/signal.Object.notify.html
  */
-static void lock_window_stack_page_on_changed(AdwViewStack *self,
-                                              GParamSpec *pspec,
-                                              LockWindow *window)
+static void lock_window_stack_page_on_changed(AdwViewStack *self, GParamSpec *pspec, LockWindow *window)
 {
     (void)pspec;
 
     GtkWidget *visible_child = adw_view_stack_get_visible_child(self);
-    AdwViewStackPage *visible_page =
-        adw_view_stack_get_page(self, visible_child);
+    AdwViewStackPage *visible_page = adw_view_stack_get_page(self, visible_child);
     adw_view_stack_page_set_needs_attention(visible_page, false);
 
     if (visible_page == window->text_page) {
@@ -388,8 +310,7 @@ static void lock_window_stack_page_on_changed(AdwViewStack *self,
  */
 void lock_window_lock_file_processing(LockWindow *window, gboolean lock)
 {
-    GtkWidget *process_widget =
-        gtk_widget_get_first_child(GTK_WIDGET(window->file_process_box));
+    GtkWidget *process_widget = gtk_widget_get_first_child(GTK_WIDGET(window->file_process_box));
     while (process_widget != NULL) {
         gtk_widget_set_sensitive(process_widget, !lock);
 
@@ -411,8 +332,7 @@ static void lock_window_on_file_selection(GtkListBox *self, LockWindow *window)
 {
     (void)self;
 
-    gboolean ready =
-        (gtk_list_box_get_row_at_index(window->file_list, 0) != NULL);
+    gboolean ready = (gtk_list_box_get_row_at_index(window->file_list, 0) != NULL);
 
     gtk_widget_set_visible(GTK_WIDGET(window->file_status), !ready);
     gtk_widget_set_visible(GTK_WIDGET(window->file_list), ready);
@@ -429,9 +349,7 @@ static void lock_window_on_file_selection(GtkListBox *self, LockWindow *window)
  * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  * @param window https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  */
-static void lock_window_management_dialog(GSimpleAction *action,
-                                          GVariant *parameter,
-                                          LockWindow *window)
+static void lock_window_management_dialog(GSimpleAction *action, GVariant *parameter, LockWindow *window)
 {
     (void)action;
     (void)parameter;
@@ -485,8 +403,7 @@ static void lock_window_text_view_copy(AdwSplitButton *self, LockWindow *window)
 {
     (void)self;
 
-    GdkClipboard *active_clipboard =
-        gdk_display_get_clipboard(gdk_display_get_default());
+    GdkClipboard *active_clipboard = gdk_display_get_clipboard(gdk_display_get_default());
 
     AdwToast *toast = adw_toast_new(_("Text copied"));
     adw_toast_set_timeout(toast, 2);
@@ -508,9 +425,7 @@ static void lock_window_text_view_copy(AdwSplitButton *self, LockWindow *window)
  * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  * @param window https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  */
-static void lock_window_text_view_copy_action(GSimpleAction *action,
-                                              GVariant *parameter,
-                                              LockWindow *window)
+static void lock_window_text_view_copy_action(GSimpleAction *action, GVariant *parameter, LockWindow *window)
 {
     (void)action;
     (void)parameter;
@@ -525,17 +440,14 @@ static void lock_window_text_view_copy_action(GSimpleAction *action,
  * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  * @param window https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  */
-static void lock_window_text_view_paste(GSimpleAction *action,
-                                        GVariant *parameter, LockWindow *window)
+static void lock_window_text_view_paste(GSimpleAction *action, GVariant *parameter, LockWindow *window)
 {
     (void)action;
     (void)parameter;
 
-    GdkClipboard *active_clipboard =
-        gdk_display_get_clipboard(gdk_display_get_default());
+    GdkClipboard *active_clipboard = gdk_display_get_clipboard(gdk_display_get_default());
 
-    gdk_clipboard_read_text_async(active_clipboard, NULL,
-                                  lock_window_text_view_paste_finish, window);
+    gdk_clipboard_read_text_async(active_clipboard, NULL, lock_window_text_view_paste_finish, window);
 }
 
 /**
@@ -545,9 +457,7 @@ static void lock_window_text_view_paste(GSimpleAction *action,
  * @param result https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
  * @param data https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
  */
-static void lock_window_text_view_paste_finish(GObject *object,
-                                               GAsyncResult *result,
-                                               gpointer data)
+static void lock_window_text_view_paste_finish(GObject *object, GAsyncResult *result, gpointer data)
 {
     GdkClipboard *clipboard = GDK_CLIPBOARD(object);
     LockWindow *window = LOCK_WINDOW(data);
@@ -592,8 +502,7 @@ gchar *lock_window_text_queue_get_text(LockWindow *window)
     gtk_text_buffer_get_start_iter(window->text_queue, &start_iter);
     gtk_text_buffer_get_end_iter(window->text_queue, &end_iter);
 
-    return gtk_text_buffer_get_text(window->text_queue, &start_iter, &end_iter,
-                                    true);
+    return gtk_text_buffer_get_text(window->text_queue, &start_iter, &end_iter, true);
 }
 
 /**
@@ -602,8 +511,7 @@ gchar *lock_window_text_queue_get_text(LockWindow *window)
  * @param window Window to set the text in
  * @param text Text to overwrite the text queue buffer with
  */
-static void lock_window_text_queue_set_text(LockWindow *window,
-                                            const char *text)
+static void lock_window_text_queue_set_text(LockWindow *window, const char *text)
 {
     gtk_text_buffer_set_text(window->text_queue, text, -1);
 }
@@ -621,19 +529,15 @@ void lock_window_file_open(LockWindow *window, GFile *file)
     // Do not open directories, symlinks, etc
     if (g_file_query_file_type(file, G_FILE_QUERY_INFO_NOFOLLOW_SYMLINKS, NULL)
         != G_FILE_TYPE_REGULAR) {
-        g_warning(_("File selected to be opened is not a regular file: %s"),
-                  g_file_get_basename(file));
+        g_warning(_("File selected to be opened is not a regular file: %s"), g_file_get_basename(file));
         return;
     }
 
     gtk_list_box_append(window->file_list, GTK_WIDGET(lock_file_row_new(file)));
-    gtk_list_box_select_row(window->file_list,
-                            gtk_list_box_get_row_at_index(window->file_list,
-                                                          0));
+    gtk_list_box_select_row(window->file_list, gtk_list_box_get_row_at_index(window->file_list, 0));
 
     GtkWidget *visible_child = adw_view_stack_get_visible_child(window->stack);
-    AdwViewStackPage *visible_page =
-        adw_view_stack_get_page(window->stack, visible_child);
+    AdwViewStackPage *visible_page = adw_view_stack_get_page(window->stack, visible_child);
 
     if (visible_page != window->file_page)
         adw_view_stack_page_set_needs_attention(window->file_page, true);
@@ -654,9 +558,7 @@ void lock_window_file_open(LockWindow *window, GFile *file)
  *
  * @return Gtk.DropTarget::drop
  */
-gboolean
-lock_window_on_file_drop(GtkDropTarget *target,
-                         const GValue *value, double x, double y, gpointer data)
+gboolean lock_window_on_file_drop(GtkDropTarget *target, const GValue *value, double x, double y, gpointer data)
 {
     (void)target;
     (void)x;
@@ -687,9 +589,7 @@ lock_window_on_file_drop(GtkDropTarget *target,
  * @param result https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
  * @param user_data https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
  */
-static void lock_window_file_open_dialog_finish(GObject *source_object,
-                                                GAsyncResult *res,
-                                                gpointer data)
+static void lock_window_file_open_dialog_finish(GObject *source_object, GAsyncResult *res, gpointer data)
 {
     GtkFileDialog *dialog = GTK_FILE_DIALOG(source_object);
     LockWindow *window = LOCK_WINDOW(data);
@@ -726,17 +626,14 @@ static void lock_window_file_open_dialog_finish(GObject *source_object,
  * @param self Adw.ButtonRow::activate
  * @param window Adw.ButtonRow::activate
  */
-static void
-lock_window_file_open_dialog_present(AdwButtonRow *self, LockWindow *window)
+static void lock_window_file_open_dialog_present(AdwButtonRow *self, LockWindow *window)
 {
     (void)self;
 
     GtkFileDialog *dialog = gtk_file_dialog_new();
     GCancellable *cancel = g_cancellable_new();
 
-    gtk_file_dialog_open_multiple(dialog, GTK_WINDOW(window),
-                                  cancel, lock_window_file_open_dialog_finish,
-                                  window);
+    gtk_file_dialog_open_multiple(dialog, GTK_WINDOW(window), cancel, lock_window_file_open_dialog_finish, window);
 }
 
 /**
@@ -746,16 +643,13 @@ lock_window_file_open_dialog_present(AdwButtonRow *self, LockWindow *window)
  * @param result https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
  * @param user_data https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
  */
-void lock_window_file_select_output_directory(GObject *source_object,
-                                              GAsyncResult *res, gpointer data)
+void lock_window_file_select_output_directory(GObject *source_object, GAsyncResult *res, gpointer data)
 {
     GtkFileDialog *dialog = GTK_FILE_DIALOG(source_object);
     LockWindow *window = LOCK_WINDOW(data);
 
-    window->file_output_directory =
-        gtk_file_dialog_select_folder_finish(dialog, res, NULL);
-    window->file_output_status =
-        (window->file_output_directory == NULL) ? ABORTED : SELECTED;
+    window->file_output_directory = gtk_file_dialog_select_folder_finish(dialog, res, NULL);
+    window->file_output_status = (window->file_output_directory == NULL) ? ABORTED : SELECTED;
 
     /* Cleanup */
     g_object_unref(dialog);
@@ -778,9 +672,7 @@ void lock_window_file_select_output_directory_dialog_present(LockWindow *window)
     gtk_file_dialog_set_accept_label(dialog, C_("Save files", "Save"));
 
     window->file_output_status = SELECTING;
-    gtk_file_dialog_select_folder(dialog, GTK_WINDOW(window), cancel,
-                                  lock_window_file_select_output_directory,
-                                  window);
+    gtk_file_dialog_select_folder(dialog, GTK_WINDOW(window), cancel, lock_window_file_select_output_directory, window);
 }
 
 /**
@@ -809,8 +701,7 @@ void lock_window_file_list_clear(AdwButtonRow *self, LockWindow *window)
  */
 void lock_window_set_fingerprint(LockWindow *window, const char *fingerprint)
 {
-    window->fingerprint =
-        realloc(window->fingerprint, (strlen(fingerprint) + 1) * sizeof(char));
+    window->fingerprint = realloc(window->fingerprint, (strlen(fingerprint) + 1) * sizeof(char));
     strcpy(window->fingerprint, fingerprint);
 }
 
@@ -823,16 +714,14 @@ void lock_window_set_fingerprint(LockWindow *window, const char *fingerprint)
  * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  * @param window https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  */
-void lock_window_encrypt_text_dialog(GSimpleAction *self, GVariant *parameter,
-                                     LockWindow *window)
+void lock_window_encrypt_text_dialog(GSimpleAction *self, GVariant *parameter, LockWindow *window)
 {
     (void)self;
     (void)parameter;
 
     LockSelectionDialog *dialog = lock_selection_dialog_new(true);
 
-    g_signal_connect(dialog, "entered", G_CALLBACK(thread_encrypt_text),
-                     window);
+    g_signal_connect(dialog, "entered", G_CALLBACK(thread_encrypt_text), window);
 
     adw_dialog_present(ADW_DIALOG(dialog), GTK_WIDGET(window));
 }
@@ -849,8 +738,7 @@ void lock_window_encrypt_file_dialog(GtkButton *self, LockWindow *window)
 
     LockSelectionDialog *dialog = lock_selection_dialog_new(true);
 
-    g_signal_connect(dialog, "entered", G_CALLBACK(thread_encrypt_file),
-                     window);
+    g_signal_connect(dialog, "entered", G_CALLBACK(thread_encrypt_file), window);
 
     adw_dialog_present(ADW_DIALOG(dialog), GTK_WIDGET(window));
 }
@@ -945,12 +833,7 @@ void lock_window_encrypt_file(LockWindow *window)
     window->file_success = true;
     while (row != NULL && window->file_success) {
         file = lock_file_row_get_file(LOCK_FILE_ROW(row));
-        window->file_success =
-            file_encrypt(g_file_get_path(file),
-                         g_strdup_printf("%s/%s.pgp",
-                                         g_file_get_path
-                                         (window->file_output_directory),
-                                         g_file_get_basename(file)), key);
+        window->file_success = file_encrypt(g_file_get_path(file), g_strdup_printf("%s/%s.pgp", g_file_get_path(window->file_output_directory), g_file_get_basename(file)), key);
 
         row = gtk_widget_get_next_sibling(row);
     }
@@ -1080,10 +963,7 @@ void lock_window_decrypt_file(LockWindow *window)
     window->file_success = true;
     while (row != NULL && window->file_success) {
         file = lock_file_row_get_file(LOCK_FILE_ROW(row));
-        output_path =
-            g_strdup_printf("%s/%s",
-                            g_file_get_path(window->file_output_directory),
-                            g_file_get_basename(file));
+        output_path = g_strdup_printf("%s/%s", g_file_get_path(window->file_output_directory), g_file_get_basename(file));
 
         output_path = remove_extension(output_path, "pgp");
         output_path = remove_extension(output_path, "gpg");
@@ -1141,19 +1021,16 @@ gboolean lock_window_decrypt_file_on_completed(LockWindow *window)
  * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  * @param window https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  */
-void lock_window_sign_text_dialog(GSimpleAction *self, GVariant *parameter,
-                                  LockWindow *window)
+void lock_window_sign_text_dialog(GSimpleAction *self, GVariant *parameter, LockWindow *window)
 {
     (void)self;
     (void)parameter;
 
     if (strcmp(g_action_get_name(G_ACTION(self)), "sign_text") == 0) {
         window->signature_mode = GPGME_SIG_MODE_NORMAL;
-    } else if (strcmp(g_action_get_name(G_ACTION(self)), "sign_text_clear") ==
-               0) {
+    } else if (strcmp(g_action_get_name(G_ACTION(self)), "sign_text_clear") == 0) {
         window->signature_mode = GPGME_SIG_MODE_CLEAR;
-    } else if (strcmp(g_action_get_name(G_ACTION(self)), "sign_text_detach") ==
-               0) {
+    } else if (strcmp(g_action_get_name(G_ACTION(self)), "sign_text_detach") == 0) {
         window->signature_mode = GPGME_SIG_MODE_DETACH;
     }
 
@@ -1234,8 +1111,7 @@ gboolean lock_window_sign_text_on_completed(LockWindow *window)
         gchar *armor = lock_window_text_queue_get_text(window);
 
         if (window->signature_mode == GPGME_SIG_MODE_DETACH) {
-            GString *plain =
-                g_string_new(lock_window_text_view_get_text(window));
+            GString *plain = g_string_new(lock_window_text_view_get_text(window));
 
             g_string_append(plain, "\n\n");
             g_string_append(plain, armor);
@@ -1286,12 +1162,7 @@ void lock_window_sign_file(LockWindow *window)
     window->file_success = true;
     while (row != NULL && window->file_success) {
         file = lock_file_row_get_file(LOCK_FILE_ROW(row));
-        window->file_success =
-            file_sign(g_file_get_path(file),
-                      g_strdup_printf("%s/%s.pgp",
-                                      g_file_get_path
-                                      (window->file_output_directory),
-                                      g_file_get_basename(file)), key);
+        window->file_success = file_sign(g_file_get_path(file), g_strdup_printf("%s/%s.pgp", g_file_get_path(window->file_output_directory), g_file_get_basename(file)), key);
 
         row = gtk_widget_get_next_sibling(row);
     }
@@ -1381,9 +1252,7 @@ gboolean lock_window_verify_text_on_completed(LockWindow *window)
     if (!window->text_success) {
         toast = adw_toast_new(_("Signature invalid"));
     } else {
-        toast =
-            adw_toast_new(g_strdup_printf
-                          (_("Signature valid - by %s"), window->signer));
+        toast = adw_toast_new(g_strdup_printf(_("Signature valid - by %s"), window->signer));
 
         gchar *plain = lock_window_text_queue_get_text(window);
         lock_window_text_view_set_text(window, plain);
@@ -1426,19 +1295,13 @@ void lock_window_verify_file(LockWindow *window)
     while (row != NULL && window->file_success) {
         file = lock_file_row_get_file(LOCK_FILE_ROW(row));
         input_path = g_file_get_path(file);
-        output_path =
-            g_strdup_printf("%s/%s",
-                            g_file_get_path(window->file_output_directory),
-                            g_file_get_basename(file));
+        output_path = g_strdup_printf("%s/%s", g_file_get_path(window->file_output_directory), g_file_get_basename(file));
 
         output_path = remove_extension(output_path, "pgp");
         output_path = remove_extension(output_path, "gpg");
 
-        window->file_success =
-            file_verify(input_path, output_path, &window->signer);
-        g_message("%s: %s (%s)", input_path,
-                  (window->signer != NULL) ? window->signer : "",
-                  (window->file_success) ? _("valid") : _("invalid"));
+        window->file_success = file_verify(input_path, output_path, &window->signer);
+        g_message("%s: %s (%s)", input_path, (window->signer != NULL) ? window->signer : "", (window->file_success) ? _("valid") : _("invalid"));
 
         row = gtk_widget_get_next_sibling(row);
     }

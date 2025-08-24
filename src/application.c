@@ -15,11 +15,8 @@ struct _LockApplication {
 
 G_DEFINE_TYPE(LockApplication, lock_application, ADW_TYPE_APPLICATION);
 
-void lock_application_show_shortcuts(GSimpleAction * self,
-                                     GVariant * parameter,
-                                     LockApplication * app);
-void lock_application_show_about(GSimpleAction * self,
-                                 GVariant * parameter, LockApplication * app);
+void lock_application_show_shortcuts(GSimpleAction * self, GVariant * parameter, LockApplication * app);
+void lock_application_show_about(GSimpleAction * self, GVariant * parameter, LockApplication * app);
 
 /**
  * This function initializes a LockApplication.
@@ -38,49 +35,32 @@ static void lock_application_init(LockApplication *app)
 
     // Add actions
     g_autoptr(GSimpleAction) about_action = g_simple_action_new("about", NULL);
-    g_signal_connect(about_action, "activate",
-                     G_CALLBACK(lock_application_show_about), app);
+    g_signal_connect(about_action, "activate", G_CALLBACK(lock_application_show_about), app);
     g_action_map_add_action(G_ACTION_MAP(app), G_ACTION(about_action));
 
     /* Shortcuts */
-    g_autoptr(GSimpleAction) shortcuts_action =
-        g_simple_action_new("shortcuts", NULL);
-    g_signal_connect(shortcuts_action, "activate",
-                     G_CALLBACK(lock_application_show_shortcuts), app);
+    g_autoptr(GSimpleAction) shortcuts_action = g_simple_action_new("shortcuts", NULL);
+    g_signal_connect(shortcuts_action, "activate", G_CALLBACK(lock_application_show_shortcuts), app);
     g_action_map_add_action(G_ACTION_MAP(app), G_ACTION(shortcuts_action));
-    gtk_application_set_accels_for_action(GTK_APPLICATION(app), "app.shortcuts",
-                                          (const gchar *
-                                           []) { "<Control>question", NULL });
+    gtk_application_set_accels_for_action(GTK_APPLICATION(app), "app.shortcuts", (const gchar *[]) { "<Control>question", NULL });
 
     // Text
-    gtk_application_set_accels_for_action(GTK_APPLICATION(app), "win.copy_text",
-                                          (const gchar *
-                                           []) { "<Control>c", NULL });
-    gtk_application_set_accels_for_action(GTK_APPLICATION(app),
-                                          "win.paste_text",
-                                          (const gchar *[]) { "<Control>v",
+    gtk_application_set_accels_for_action(GTK_APPLICATION(app), "win.copy_text", (const gchar *[]) { "<Control>c", NULL });
+    gtk_application_set_accels_for_action(GTK_APPLICATION(app), "win.paste_text", (const gchar *[]) { "<Control>v",
                                           NULL
                                           });
 
     // Cryptography
-    gtk_application_set_accels_for_action(GTK_APPLICATION(app),
-                                          "win.encrypt_text",
-                                          (const gchar *[]) { "<Control>e",
+    gtk_application_set_accels_for_action(GTK_APPLICATION(app), "win.encrypt_text", (const gchar *[]) { "<Control>e",
                                           NULL
                                           });
-    gtk_application_set_accels_for_action(GTK_APPLICATION(app),
-                                          "win.decrypt_text",
-                                          (const gchar *[]) { "<Control>d",
+    gtk_application_set_accels_for_action(GTK_APPLICATION(app), "win.decrypt_text", (const gchar *[]) { "<Control>d",
                                           NULL
                                           });
-    gtk_application_set_accels_for_action(GTK_APPLICATION(app), "win.sign_text",
-                                          (const gchar *[]) { "<Control>s",
+    gtk_application_set_accels_for_action(GTK_APPLICATION(app), "win.sign_text", (const gchar *[]) { "<Control>s",
                                           NULL
                                           });
-    gtk_application_set_accels_for_action(GTK_APPLICATION(app),
-                                          "win.verify_text",
-                                          (const gchar *
-                                           []) { "<Control>ampersand",
+    gtk_application_set_accels_for_action(GTK_APPLICATION(app), "win.verify_text", (const gchar *[]) { "<Control>ampersand",
                                           NULL
                                           });
 }
@@ -106,8 +86,7 @@ static void lock_application_activate(GApplication *app)
  * @param n_files https://docs.gtk.org/gio/signal.Application.open.html
  * @param hint https://docs.gtk.org/gio/signal.Application.open.html
  */
-static void lock_application_open(GApplication *self, GFile **files,
-                                  int n_files, const char *hint)
+static void lock_application_open(GApplication *self, GFile **files, int n_files, const char *hint)
 {
     (void)files;
     (void)n_files;
@@ -147,8 +126,7 @@ static void lock_application_class_init(LockApplicationClass *class)
  */
 LockApplication *lock_application_new()
 {
-    return g_object_new(LOCK_TYPE_APPLICATION, "application-id", PROJECT_ID,
-                        "flags", G_APPLICATION_HANDLES_OPEN, NULL);
+    return g_object_new(LOCK_TYPE_APPLICATION, "application-id", PROJECT_ID, "flags", G_APPLICATION_HANDLES_OPEN, NULL);
 }
 
 /**
@@ -158,19 +136,15 @@ LockApplication *lock_application_new()
  * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  * @param app https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  */
-void lock_application_show_shortcuts(GSimpleAction *self,
-                                     GVariant *parameter, LockApplication *app)
+void lock_application_show_shortcuts(GSimpleAction *self, GVariant *parameter, LockApplication *app)
 {
     (void)self;
     (void)parameter;
 
-    GtkBuilder *builder =
-        gtk_builder_new_from_resource(UI_RESOURCE("shortcuts.ui"));
-    GtkShortcutsWindow *window =
-        GTK_SHORTCUTS_WINDOW(gtk_builder_get_object(builder, "shortcuts"));
+    GtkBuilder *builder = gtk_builder_new_from_resource(UI_RESOURCE("shortcuts.ui"));
+    GtkShortcutsWindow *window = GTK_SHORTCUTS_WINDOW(gtk_builder_get_object(builder, "shortcuts"));
 
-    LockWindow *active_window =
-        LOCK_WINDOW(gtk_application_get_active_window(GTK_APPLICATION(app)));
+    LockWindow *active_window = LOCK_WINDOW(gtk_application_get_active_window(GTK_APPLICATION(app)));
     gtk_window_set_transient_for(GTK_WINDOW(window), GTK_WINDOW(active_window));
 
     gtk_window_present(GTK_WINDOW(window));
@@ -186,38 +160,28 @@ void lock_application_show_shortcuts(GSimpleAction *self,
  * @param parameter https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  * @param app https://docs.gtk.org/gio/signal.SimpleAction.activate.html
  */
-void lock_application_show_about(GSimpleAction *self,
-                                 GVariant *parameter, LockApplication *app)
+void lock_application_show_about(GSimpleAction *self, GVariant *parameter, LockApplication *app)
 {
     (void)self;
     (void)parameter;
 
-    LockWindow *active_window =
-        LOCK_WINDOW(gtk_application_get_active_window(GTK_APPLICATION(app)));
+    LockWindow *active_window = LOCK_WINDOW(gtk_application_get_active_window(GTK_APPLICATION(app)));
 
-    AdwAboutDialog *about =
-        ADW_ABOUT_DIALOG(adw_about_dialog_new_from_appdata
-                         (ROOT_RESOURCE(_PROJECT_ID(".metainfo.xml")),
-                          PROJECT_VERSION));
+    AdwAboutDialog *about = ADW_ABOUT_DIALOG(adw_about_dialog_new_from_appdata(ROOT_RESOURCE(_PROJECT_ID(".metainfo.xml")),
+                                                                               PROJECT_VERSION));
 
     // Show version suffix
     adw_about_dialog_set_version(about, PROJECT_BUILD);
 
     // Details
     adw_about_dialog_set_comments(about, _("Process data with GnuPG"));
-    adw_about_dialog_add_link(about,
-                              C_("Button linking to translations", "Translate"),
-                              "https://hosted.weblate.org/engage/Lock/");
-    adw_about_dialog_add_link(about,
-                              C_("Button linking to source code", "Develop"),
-                              "https://github.com/konstantintutsch/Lock");
+    adw_about_dialog_add_link(about, C_("Button linking to translations", "Translate"), "https://hosted.weblate.org/engage/Lock/");
+    adw_about_dialog_add_link(about, C_("Button linking to source code", "Develop"), "https://github.com/konstantintutsch/Lock");
 
     // Credits
-    const char *developers[] =
-        { "Konstantin Tutsch <mail@konstantintutsch.com>", NULL };
+    const char *developers[] = { "Konstantin Tutsch <mail@konstantintutsch.com>", NULL };
     adw_about_dialog_set_developers(about, developers);
-    const char *designers[] =
-        { "GNOME Design Team https://welcome.gnome.org/team/design/",
+    const char *designers[] = { "GNOME Design Team https://welcome.gnome.org/team/design/",
         "Konstantin Tutsch <mail@konstantintutsch.com>", NULL
     };
     adw_about_dialog_set_designers(about, designers);
@@ -226,8 +190,7 @@ void lock_application_show_about(GSimpleAction *self,
         "The GNU Privacy Guard https://gnupg.org/",
         "GnuPG Made Easy https://gnupg.org/software/gpgme/index.html", NULL
     };
-    adw_about_dialog_add_acknowledgement_section(about, _("Dependencies"),
-                                                 libraries);
+    adw_about_dialog_add_acknowledgement_section(about, _("Dependencies"), libraries);
 
     // Legal
     adw_about_dialog_set_copyright(about, "© 2024-2025 Konstantin Tutsch");

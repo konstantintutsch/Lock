@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 12:47+0200\n"
+"POT-Creation-Date: 2025-08-24 15:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,208 +18,208 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Details
-#: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:4
+#: src/application.c:177 data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr ""
 
-#: src/application.c:209
+#: src/application.c:178
 msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr ""
 
-#: src/application.c:212
+#: src/application.c:179
 msgctxt "Button linking to source code"
 msgid "Develop"
 msgstr ""
 
-#: src/application.c:224
+#: src/application.c:188
 msgid "translator-credits"
 msgstr ""
 
-#: src/application.c:229
+#: src/application.c:193
 msgid "Dependencies"
 msgstr ""
 
-#: src/window.c:162
+#: src/window.c:136
 msgid "Enter text …"
 msgstr ""
 
-#: src/window.c:491
+#: src/window.c:408
 msgid "Text copied"
 msgstr ""
 
-#: src/window.c:560
+#: src/window.c:470
 #, c-format
 msgid "Could not read text from clipboard: %s"
 msgstr ""
 
-#: src/window.c:569
+#: src/window.c:479
 msgid "Text pasted"
 msgstr ""
 
-#: src/window.c:624
+#: src/window.c:532
 #, c-format
 msgid "File selected to be opened is not a regular file: %s"
 msgstr ""
 
-#: src/window.c:777
+#: src/window.c:671
 msgid "Save files"
 msgstr ""
 
-#: src/window.c:778
+#: src/window.c:672
 msgctxt "Save files"
 msgid "Save"
 msgstr ""
 
-#: src/window.c:904 src/window.c:981
+#: src/window.c:792 src/window.c:864
 msgid "Encryption failed"
 msgstr ""
 
-#: src/window.c:906
+#: src/window.c:794
 msgid "Text encrypted"
 msgstr ""
 
-#: src/window.c:983
+#: src/window.c:866
 msgid "Files encrypted"
 msgstr ""
 
-#: src/window.c:1040 src/window.c:1120
+#: src/window.c:923 src/window.c:1000
 msgid "Decryption failed"
 msgstr ""
 
-#: src/window.c:1042
+#: src/window.c:925
 msgid "Text decrypted"
 msgstr ""
 
-#: src/window.c:1122
+#: src/window.c:1002
 msgid "Files decrypted"
 msgstr ""
 
-#: src/window.c:1230 src/window.c:1323
+#: src/window.c:1107 src/window.c:1194
 msgid "Signing failed"
 msgstr ""
 
-#: src/window.c:1232
+#: src/window.c:1109
 msgid "Text signed"
 msgstr ""
 
-#: src/window.c:1325
+#: src/window.c:1196
 msgid "Files signed"
 msgstr ""
 
-#: src/window.c:1382
+#: src/window.c:1253
 msgid "Signature invalid"
 msgstr ""
 
-#: src/window.c:1386
+#: src/window.c:1255
 #, c-format
 msgid "Signature valid - by %s"
 msgstr ""
 
-#: src/window.c:1441
+#: src/window.c:1304
 msgid "valid"
 msgstr ""
 
-#: src/window.c:1441
+#: src/window.c:1304
 msgid "invalid"
 msgstr ""
 
-#: src/window.c:1473
+#: src/window.c:1336
 msgid "At least one invalid signature"
 msgstr ""
 
-#: src/window.c:1475
+#: src/window.c:1338
 msgid "Signatures valid"
 msgstr ""
 
-#: src/managementdialog.c:364
+#: src/managementdialog.c:313
 msgid "Import failed"
 msgstr ""
 
-#: src/managementdialog.c:366
+#: src/managementdialog.c:315
 msgid "Keys imported"
 msgstr ""
 
-#: src/managementdialog.c:412
+#: src/managementdialog.c:355
 msgctxt ""
 "Expire date format for key pair generation (see GLib.DateTime.format / "
 "https://docs.gtk.org/glib/method.DateTime.format.html#description)"
 msgid "%B %e, %Y"
 msgstr ""
 
-#: src/managementdialog.c:429
+#: src/managementdialog.c:371
 msgid "No expire date"
 msgstr ""
 
-#: src/managementdialog.c:517
+#: src/managementdialog.c:449
 msgid "Generation failed"
 msgstr ""
 
-#: src/managementdialog.c:519
+#: src/managementdialog.c:451
 msgid "Key pair generated"
 msgstr ""
 
-#: src/keyrow.c:112
+#: src/keyrow.c:100
 msgid "Key does not expire"
 msgstr ""
 
-#: src/keyrow.c:122
+#: src/keyrow.c:105
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expired on %B %e, %Y at %R"
 msgstr ""
 
-#: src/keyrow.c:125
+#: src/keyrow.c:105
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expires on %B %e, %Y at %R"
 msgstr ""
 
-#: src/keyrow.c:157
+#: src/keyrow.c:135
 msgid "Fingerprint copied"
 msgstr ""
 
-#: src/keyrow.c:246
+#: src/keyrow.c:222
 msgid "Export failed"
 msgstr ""
 
-#: src/keyrow.c:248
+#: src/keyrow.c:224
 msgid "Key exported"
 msgstr ""
 
-#: src/keyrow.c:293
+#: src/keyrow.c:266
 msgid "Remove key?"
 msgstr ""
 
-#: src/keyrow.c:296
+#: src/keyrow.c:267
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr ""
 
-#: src/keyrow.c:299
+#: src/keyrow.c:269
 msgid "_Cancel"
 msgstr ""
 
-#: src/keyrow.c:300
+#: src/keyrow.c:269
 msgid "_Remove"
 msgstr ""
 
-#: src/keyrow.c:341
+#: src/keyrow.c:308
 msgid "Removal failed"
 msgstr ""
 
-#: src/keyrow.c:343
+#: src/keyrow.c:310
 msgid "Key removed"
 msgstr ""
 
-#: src/keyrow.c:393
+#: src/keyrow.c:358
 msgid "Renewal failed"
 msgstr ""
 
-#: src/keyrow.c:395
+#: src/keyrow.c:360
 msgid "Expire date renewed"
 msgstr ""
 

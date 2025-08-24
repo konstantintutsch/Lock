@@ -6,8 +6,7 @@
 
 #define LOCK_TYPE_SELECTION_DIALOG (lock_selection_dialog_get_type())
 
-G_DECLARE_FINAL_TYPE(LockSelectionDialog, lock_selection_dialog, LOCK,
-                     SELECTION_DIALOG, AdwDialog);
+G_DECLARE_FINAL_TYPE(LockSelectionDialog, lock_selection_dialog, LOCK, SELECTION_DIALOG, AdwDialog);
 
 LockSelectionDialog *lock_selection_dialog_new(gboolean target);
 

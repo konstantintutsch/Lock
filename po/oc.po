@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 12:47+0200\n"
+"POT-Creation-Date: 2025-08-24 15:54+0200\n"
 "PO-Revision-Date: 2024-12-01 19:04+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
@@ -20,158 +20,158 @@ msgstr ""
 "X-Generator: Weblate 5.9-dev\n"
 
 #. Details
-#: src/application.c:207 data/com.konstantintutsch.Lock.desktop.in.in:4
+#: src/application.c:177 data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "Tractar las donadas amb GnuPG"
 
-#: src/application.c:209
+#: src/application.c:178
 msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr "Traduire"
 
-#: src/application.c:212
+#: src/application.c:179
 msgctxt "Button linking to source code"
 msgid "Develop"
 msgstr "Desvolopar"
 
-#: src/application.c:224
+#: src/application.c:188
 msgid "translator-credits"
 msgstr "Quentin PAGÈS"
 
-#: src/application.c:229
+#: src/application.c:193
 msgid "Dependencies"
 msgstr "Dependéncias"
 
-#: src/window.c:162
+#: src/window.c:136
 msgid "Enter text …"
 msgstr "Picar de tèxte…"
 
-#: src/window.c:491
+#: src/window.c:408
 msgid "Text copied"
 msgstr "Tèxte copiat"
 
-#: src/window.c:560
+#: src/window.c:470
 #, c-format
 msgid "Could not read text from clipboard: %s"
 msgstr "Lectura impossibla del tèxte del quichapapièrs : %s"
 
-#: src/window.c:569
+#: src/window.c:479
 msgid "Text pasted"
 msgstr "Tèxte pegat"
 
-#: src/window.c:624
+#: src/window.c:532
 #, fuzzy, c-format
 msgid "File selected to be opened is not a regular file: %s"
 msgstr "Fracàs de la dobertura del fichièr en sortida : %s"
 
-#: src/window.c:777
+#: src/window.c:671
 msgid "Save files"
 msgstr ""
 
-#: src/window.c:778
+#: src/window.c:672
 msgctxt "Save files"
 msgid "Save"
 msgstr ""
 
-#: src/window.c:904 src/window.c:981
+#: src/window.c:792 src/window.c:864
 msgid "Encryption failed"
 msgstr "Fracàs del chiframent"
 
-#: src/window.c:906
+#: src/window.c:794
 msgid "Text encrypted"
 msgstr "Tèxte deschifrat"
 
-#: src/window.c:983
+#: src/window.c:866
 #, fuzzy
 msgid "Files encrypted"
 msgstr "Fichièr deschifrat"
 
-#: src/window.c:1040 src/window.c:1120
+#: src/window.c:923 src/window.c:1000
 msgid "Decryption failed"
 msgstr "Fracàs del deschiframent"
 
-#: src/window.c:1042
+#: src/window.c:925
 msgid "Text decrypted"
 msgstr "Tèxte deschifrat"
 
-#: src/window.c:1122
+#: src/window.c:1002
 #, fuzzy
 msgid "Files decrypted"
 msgstr "Fichièr deschifrat"
 
-#: src/window.c:1230 src/window.c:1323
+#: src/window.c:1107 src/window.c:1194
 msgid "Signing failed"
 msgstr "Fracàs de la signatura"
 
-#: src/window.c:1232
+#: src/window.c:1109
 msgid "Text signed"
 msgstr "Tèxte signat"
 
-#: src/window.c:1325
+#: src/window.c:1196
 #, fuzzy
 msgid "Files signed"
 msgstr "Fichièr signat"
 
-#: src/window.c:1382
+#: src/window.c:1253
 msgid "Signature invalid"
 msgstr "Signatura invalida"
 
-#: src/window.c:1386
+#: src/window.c:1255
 #, c-format
 msgid "Signature valid - by %s"
 msgstr "Signatura valida – per %s"
 
-#: src/window.c:1441
+#: src/window.c:1304
 msgid "valid"
 msgstr ""
 
-#: src/window.c:1441
+#: src/window.c:1304
 msgid "invalid"
 msgstr ""
 
-#: src/window.c:1473
+#: src/window.c:1336
 msgid "At least one invalid signature"
 msgstr ""
 
-#: src/window.c:1475
+#: src/window.c:1338
 #, fuzzy
 msgid "Signatures valid"
 msgstr "Signatura invalida"
 
-#: src/managementdialog.c:364
+#: src/managementdialog.c:313
 msgid "Import failed"
 msgstr "Fracàs de l'importacion"
 
-#: src/managementdialog.c:366
+#: src/managementdialog.c:315
 msgid "Keys imported"
 msgstr "Claus importadas"
 
-#: src/managementdialog.c:412
+#: src/managementdialog.c:355
 msgctxt ""
 "Expire date format for key pair generation (see GLib.DateTime.format / "
 "https://docs.gtk.org/glib/method.DateTime.format.html#description)"
 msgid "%B %e, %Y"
 msgstr "%e %B de %Y"
 
-#: src/managementdialog.c:429
+#: src/managementdialog.c:371
 msgid "No expire date"
 msgstr "Cap de data d'expiracion"
 
-#: src/managementdialog.c:517
+#: src/managementdialog.c:449
 msgid "Generation failed"
 msgstr "Fracàs de generacion"
 
-#: src/managementdialog.c:519
+#: src/managementdialog.c:451
 #, fuzzy
 msgid "Key pair generated"
 msgstr "Parelh de claus generat"
 
-#: src/keyrow.c:112
+#: src/keyrow.c:100
 msgid "Key does not expire"
 msgstr "La clau expira pas"
 
-#: src/keyrow.c:122
+#: src/keyrow.c:105
 #, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
@@ -179,7 +179,7 @@ msgctxt ""
 msgid "Expired on %B %e, %Y at %R"
 msgstr "Expirat lo %s a %s"
 
-#: src/keyrow.c:125
+#: src/keyrow.c:105
 #, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
@@ -187,48 +187,48 @@ msgctxt ""
 msgid "Expires on %B %e, %Y at %R"
 msgstr "Expira lo %s a %s"
 
-#: src/keyrow.c:157
+#: src/keyrow.c:135
 msgid "Fingerprint copied"
 msgstr "Emprenta digital copiada"
 
-#: src/keyrow.c:246
+#: src/keyrow.c:222
 msgid "Export failed"
 msgstr "L'exportacion a fracassat"
 
-#: src/keyrow.c:248
+#: src/keyrow.c:224
 msgid "Key exported"
 msgstr "Clau exportada"
 
-#: src/keyrow.c:293
+#: src/keyrow.c:266
 msgid "Remove key?"
 msgstr "Levar la clau ?"
 
-#: src/keyrow.c:296
+#: src/keyrow.c:267
 #, c-format
 msgid "The removal of the key of %s cannot be undone!"
 msgstr "La supression de la clau %s se pòt desfar !"
 
-#: src/keyrow.c:299
+#: src/keyrow.c:269
 msgid "_Cancel"
 msgstr "_Anullar"
 
-#: src/keyrow.c:300
+#: src/keyrow.c:269
 msgid "_Remove"
 msgstr "_Levar"
 
-#: src/keyrow.c:341
+#: src/keyrow.c:308
 msgid "Removal failed"
 msgstr "Fracàs de la supression"
 
-#: src/keyrow.c:343
+#: src/keyrow.c:310
 msgid "Key removed"
 msgstr "Clau suprimida"
 
-#: src/keyrow.c:393
+#: src/keyrow.c:358
 msgid "Renewal failed"
 msgstr "Fracàs de la renovacion"
 
-#: src/keyrow.c:395
+#: src/keyrow.c:360
 #, fuzzy
 msgid "Expire date renewed"
 msgstr "Afichar las datas d'expiracion"

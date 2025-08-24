@@ -28,12 +28,9 @@ struct _LockSelectionDialog {
 
 G_DEFINE_TYPE(LockSelectionDialog, lock_selection_dialog, ADW_TYPE_DIALOG);
 
-void lock_selection_dialog_refresh(GtkButton * self,
-                                   LockSelectionDialog * dialog);
+void lock_selection_dialog_refresh(GtkButton * self, LockSelectionDialog * dialog);
 
-void lock_selection_dialog_key_selected(GtkButton * self,
-                                        GtkListBoxRow * row,
-                                        LockSelectionDialog * dialog);
+void lock_selection_dialog_key_selected(GtkButton * self, GtkListBoxRow * row, LockSelectionDialog * dialog);
 
 /**
  * This function initializes a LockSelectionDialog.
@@ -44,11 +41,9 @@ static void lock_selection_dialog_init(LockSelectionDialog *dialog)
 {
     gtk_widget_init_template(GTK_WIDGET(dialog));
 
-    g_signal_connect(dialog->refresh_button, "clicked",
-                     G_CALLBACK(lock_selection_dialog_refresh), dialog);
+    g_signal_connect(dialog->refresh_button, "clicked", G_CALLBACK(lock_selection_dialog_refresh), dialog);
 
-    g_signal_connect(dialog->key_box, "row-activated",
-                     G_CALLBACK(lock_selection_dialog_key_selected), dialog);
+    g_signal_connect(dialog->key_box, "row-activated", G_CALLBACK(lock_selection_dialog_key_selected), dialog);
 }
 
 /**
@@ -58,28 +53,18 @@ static void lock_selection_dialog_init(LockSelectionDialog *dialog)
  */
 static void lock_selection_dialog_class_init(LockSelectionDialogClass *class)
 {
-    gtk_widget_class_set_template_from_resource(GTK_WIDGET_CLASS(class),
-                                                UI_RESOURCE
-                                                ("selectiondialog.ui"));
+    gtk_widget_class_set_template_from_resource(GTK_WIDGET_CLASS(class), UI_RESOURCE("selectiondialog.ui"));
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockSelectionDialog, spinner);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockSelectionDialog, view);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockSelectionDialog, spinner);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockSelectionDialog, view);
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockSelectionDialog, refresh_button);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockSelectionDialog, manage_box);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockSelectionDialog, refresh_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockSelectionDialog, manage_box);
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockSelectionDialog, status_page);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockSelectionDialog, key_box);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockSelectionDialog, status_page);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockSelectionDialog, key_box);
 
-    g_signal_new("entered", G_TYPE_FROM_CLASS(class), G_SIGNAL_RUN_FIRST, 0,
-                 NULL, NULL, g_cclosure_marshal_VOID__STRING, G_TYPE_NONE, 1,
-                 G_TYPE_STRING);
+    g_signal_new("entered", G_TYPE_FROM_CLASS(class), G_SIGNAL_RUN_FIRST, 0, NULL, NULL, g_cclosure_marshal_VOID__STRING, G_TYPE_NONE, 1, G_TYPE_STRING);
 }
 
 /**
@@ -91,8 +76,7 @@ static void lock_selection_dialog_class_init(LockSelectionDialogClass *class)
  */
 LockSelectionDialog *lock_selection_dialog_new(gboolean target)
 {
-    LockSelectionDialog *dialog =
-        g_object_new(LOCK_TYPE_SELECTION_DIALOG, NULL);
+    LockSelectionDialog *dialog = g_object_new(LOCK_TYPE_SELECTION_DIALOG, NULL);
 
     /* TODO: implement g_object_class_install_property() */
     dialog->target = target;
@@ -107,8 +91,7 @@ LockSelectionDialog *lock_selection_dialog_new(gboolean target)
  * @param dialog Dialog to update the UI of
  * @param spinning Whether something is happening
  */
-void lock_selection_dialog_show_spinner(LockSelectionDialog *dialog,
-                                        gboolean spinning)
+void lock_selection_dialog_show_spinner(LockSelectionDialog *dialog, gboolean spinning)
 {
     gtk_widget_set_visible(GTK_WIDGET(dialog->spinner), spinning);
     gtk_widget_set_visible(GTK_WIDGET(dialog->view), !spinning);
@@ -185,9 +168,7 @@ void lock_selection_dialog_refresh(GtkButton *self, LockSelectionDialog *dialog)
  * @param row https://docs.gtk.org/gtk4/signal.ListBox.row-activated.html
  * @param dialog https://docs.gtk.org/gtk4/signal.ListBox.row-activated.html
  */
-void lock_selection_dialog_key_selected(GtkButton *self,
-                                        GtkListBoxRow *row,
-                                        LockSelectionDialog *dialog)
+void lock_selection_dialog_key_selected(GtkButton *self, GtkListBoxRow *row, LockSelectionDialog *dialog)
 {
     (void)self;
 

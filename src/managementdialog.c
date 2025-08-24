@@ -53,23 +53,16 @@ struct _LockManagementDialog {
 G_DEFINE_TYPE(LockManagementDialog, lock_management_dialog, ADW_TYPE_DIALOG);
 
 /* UI */
-gboolean lock_management_dialog_import_on_completed(LockManagementDialog *
-                                                    dialog);
-gboolean lock_management_dialog_generate_on_completed(LockManagementDialog *
-                                                      dialog);
+gboolean lock_management_dialog_import_on_completed(LockManagementDialog * dialog);
+gboolean lock_management_dialog_generate_on_completed(LockManagementDialog * dialog);
 
 /* Import */
-static void lock_management_dialog_import_file_present(GtkButton * self,
-                                                       LockManagementDialog *
-                                                       dialog);
+static void lock_management_dialog_import_file_present(GtkButton * self, LockManagementDialog * dialog);
 
 /* Expire */
-void lock_management_dialog_select_expire(GtkButton * self,
-                                          LockManagementDialog * dialog);
-void lock_management_dialog_select_expire_finish(GtkCalendar * self,
-                                                 LockManagementDialog * dialog);
-void lock_management_dialog_reset_expire(GtkButton * self,
-                                         LockManagementDialog * dialog);
+void lock_management_dialog_select_expire(GtkButton * self, LockManagementDialog * dialog);
+void lock_management_dialog_select_expire_finish(GtkCalendar * self, LockManagementDialog * dialog);
+void lock_management_dialog_reset_expire(GtkButton * self, LockManagementDialog * dialog);
 
 /**
  * This function initializes a LockManagementDialog.
@@ -80,24 +73,16 @@ static void lock_management_dialog_init(LockManagementDialog *dialog)
 {
     gtk_widget_init_template(GTK_WIDGET(dialog));
 
-    g_signal_connect(dialog->refresh_button, "clicked",
-                     G_CALLBACK(lock_management_dialog_refresh), dialog);
+    g_signal_connect(dialog->refresh_button, "clicked", G_CALLBACK(lock_management_dialog_refresh), dialog);
     lock_management_dialog_refresh(NULL, dialog);
 
-    g_signal_connect(dialog->import_button, "clicked",
-                     G_CALLBACK(lock_management_dialog_import_file_present),
-                     dialog);
+    g_signal_connect(dialog->import_button, "clicked", G_CALLBACK(lock_management_dialog_import_file_present), dialog);
 
     lock_management_dialog_reset_expire(NULL, dialog);
-    g_signal_connect(dialog->expire_reset_button, "clicked",
-                     G_CALLBACK(lock_management_dialog_reset_expire), dialog);
-    g_signal_connect(dialog->expire_button, "clicked",
-                     G_CALLBACK(lock_management_dialog_select_expire), dialog);
-    g_signal_connect(dialog->expire_calendar, "day-selected",
-                     G_CALLBACK(lock_management_dialog_select_expire_finish),
-                     dialog);
-    g_signal_connect(dialog->generate_button, "clicked",
-                     G_CALLBACK(thread_generate_key), dialog);
+    g_signal_connect(dialog->expire_reset_button, "clicked", G_CALLBACK(lock_management_dialog_reset_expire), dialog);
+    g_signal_connect(dialog->expire_button, "clicked", G_CALLBACK(lock_management_dialog_select_expire), dialog);
+    g_signal_connect(dialog->expire_calendar, "day-selected", G_CALLBACK(lock_management_dialog_select_expire_finish), dialog);
+    g_signal_connect(dialog->generate_button, "clicked", G_CALLBACK(thread_generate_key), dialog);
 }
 
 /**
@@ -107,54 +92,32 @@ static void lock_management_dialog_init(LockManagementDialog *dialog)
  */
 static void lock_management_dialog_class_init(LockManagementDialogClass *class)
 {
-    gtk_widget_class_set_template_from_resource(GTK_WIDGET_CLASS(class),
-                                                UI_RESOURCE
-                                                ("managementdialog.ui"));
+    gtk_widget_class_set_template_from_resource(GTK_WIDGET_CLASS(class), UI_RESOURCE("managementdialog.ui"));
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, toast_overlay);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, toast_overlay);
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, spinner);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, view);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, spinner);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, view);
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, refresh_button);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, manage_box);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, refresh_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, manage_box);
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, status_page);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, key_box);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, status_page);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, key_box);
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, import_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, import_button);
 
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, generate_button);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, name_entry);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, email_entry);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, comment_entry);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, sign_entry);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, encrypt_entry);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, expire_entry);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog,
-                                         expire_reset_button);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, expire_button);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, expire_popover);
-    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class),
-                                         LockManagementDialog, expire_calendar);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, generate_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, name_entry);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, email_entry);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, comment_entry);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, sign_entry);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, encrypt_entry);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, expire_entry);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, expire_reset_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, expire_button);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, expire_popover);
+    gtk_widget_class_bind_template_child(GTK_WIDGET_CLASS(class), LockManagementDialog, expire_calendar);
 }
 
 /**
@@ -166,8 +129,7 @@ static void lock_management_dialog_class_init(LockManagementDialogClass *class)
  */
 LockManagementDialog *lock_management_dialog_new(LockWindow *window)
 {
-    LockManagementDialog *dialog =
-        g_object_new(LOCK_TYPE_MANAGEMENT_DIALOG, NULL);
+    LockManagementDialog *dialog = g_object_new(LOCK_TYPE_MANAGEMENT_DIALOG, NULL);
 
     /* TODO: implement g_object_class_install_property() */
     dialog->window = window;
@@ -183,8 +145,7 @@ LockManagementDialog *lock_management_dialog_new(LockWindow *window)
  * @param dialog Dialog to update the UI of
  * @param spinning Whether something is happening
  */
-void lock_management_dialog_show_spinner(LockManagementDialog *dialog,
-                                         gboolean spinning)
+void lock_management_dialog_show_spinner(LockManagementDialog *dialog, gboolean spinning)
 {
     gtk_widget_set_visible(GTK_WIDGET(dialog->spinner), spinning);
     gtk_widget_set_visible(GTK_WIDGET(dialog->view), !spinning);
@@ -196,8 +157,7 @@ void lock_management_dialog_show_spinner(LockManagementDialog *dialog,
  * @param self https://docs.gtk.org/gtk4/signal.Button.clicked.html
  * @param dialog https://docs.gtk.org/gtk4/signal.Button.clicked.html
  */
-void lock_management_dialog_refresh(GtkButton *self,
-                                    LockManagementDialog *dialog)
+void lock_management_dialog_refresh(GtkButton *self, LockManagementDialog *dialog)
 {
     (void)self;
 
@@ -220,8 +180,7 @@ void lock_management_dialog_refresh(GtkButton *self,
         if (error)
             break;
 
-        gtk_list_box_append(dialog->key_box,
-                            GTK_WIDGET(lock_key_row_new(dialog, key)));
+        gtk_list_box_append(dialog->key_box, GTK_WIDGET(lock_key_row_new(dialog, key)));
     }
 
     /* Cleanup */
@@ -261,8 +220,7 @@ LockWindow *lock_management_dialog_get_window(LockManagementDialog *dialog)
  * @param dialog Dialog to add the toast to
  * @param toast Toast to add to the dialog
  */
-void lock_management_dialog_add_toast(LockManagementDialog *dialog,
-                                      AdwToast *toast)
+void lock_management_dialog_add_toast(LockManagementDialog *dialog, AdwToast *toast)
 {
     adw_toast_overlay_add_toast(dialog->toast_overlay, toast);
 }
@@ -276,9 +234,7 @@ void lock_management_dialog_add_toast(LockManagementDialog *dialog,
  * @param result https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
  * @param user_data https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
  */
-static void lock_management_dialog_import_file_open(GObject *source_object,
-                                                    GAsyncResult *res,
-                                                    gpointer data)
+static void lock_management_dialog_import_file_open(GObject *source_object, GAsyncResult *res, gpointer data)
 {
     GtkFileDialog *file = GTK_FILE_DIALOG(source_object);
     LockManagementDialog *dialog = LOCK_MANAGEMENT_DIALOG(data);
@@ -302,19 +258,14 @@ static void lock_management_dialog_import_file_open(GObject *source_object,
  * @param self https://docs.gtk.org/gtk4/signal.Button.clicked.html
  * @param dialog https://docs.gtk.org/gtk4/signal.Button.clicked.html
  */
-static void lock_management_dialog_import_file_present(GtkButton *self,
-                                                       LockManagementDialog
-                                                       *dialog)
+static void lock_management_dialog_import_file_present(GtkButton *self, LockManagementDialog *dialog)
 {
     (void)self;
 
     GtkFileDialog *file = gtk_file_dialog_new();
     GCancellable *cancel = g_cancellable_new();
 
-    gtk_file_dialog_open_multiple(file, GTK_WINDOW(dialog->window),
-                                  cancel,
-                                  lock_management_dialog_import_file_open,
-                                  dialog);
+    gtk_file_dialog_open_multiple(file, GTK_WINDOW(dialog->window), cancel, lock_management_dialog_import_file_open, dialog);
 }
 
 /**
@@ -342,8 +293,7 @@ void lock_management_dialog_import(LockManagementDialog *dialog)
     path = NULL;
 
     /* UI */
-    g_idle_add((GSourceFunc) lock_management_dialog_import_on_completed,
-               dialog);
+    g_idle_add((GSourceFunc) lock_management_dialog_import_on_completed, dialog);
 
     g_thread_exit(0);
 }
@@ -355,8 +305,7 @@ void lock_management_dialog_import(LockManagementDialog *dialog)
  *
  * @return https://docs.gtk.org/glib/func.idle_add.html
  */
-gboolean lock_management_dialog_import_on_completed(LockManagementDialog
-                                                    *dialog)
+gboolean lock_management_dialog_import_on_completed(LockManagementDialog *dialog)
 {
     AdwToast *toast;
 
@@ -385,8 +334,7 @@ gboolean lock_management_dialog_import_on_completed(LockManagementDialog
  * @param self Gtk.Button::clicked
  * @param row Gtk.Button::clicked
  */
-void lock_management_dialog_select_expire(GtkButton *self,
-                                          LockManagementDialog *dialog)
+void lock_management_dialog_select_expire(GtkButton *self, LockManagementDialog *dialog)
 {
     (void)self;
 
@@ -399,17 +347,12 @@ void lock_management_dialog_select_expire(GtkButton *self,
  * @param self Gtk.Calendar::day-selected
  * @param row Gtk.Calendar::day-selected
  */
-void lock_management_dialog_select_expire_finish(GtkCalendar *self,
-                                                 LockManagementDialog *dialog)
+void lock_management_dialog_select_expire_finish(GtkCalendar *self, LockManagementDialog *dialog)
 {
     GDateTime *expire = gtk_calendar_get_date(self);
 
     dialog->generate_expire = true;
-    adw_action_row_set_subtitle(dialog->expire_entry,
-                                g_date_time_format(expire,
-                                                   C_
-                                                   ("Expire date format for key pair generation (see GLib.DateTime.format / https://docs.gtk.org/glib/method.DateTime.format.html#description)",
-                                                    "%B %e, %Y")));
+    adw_action_row_set_subtitle(dialog->expire_entry, g_date_time_format(expire, C_("Expire date format for key pair generation (see GLib.DateTime.format / https://docs.gtk.org/glib/method.DateTime.format.html#description)", "%B %e, %Y")));
 
     /* Cleanup */
     g_date_time_unref(expire);
@@ -421,8 +364,7 @@ void lock_management_dialog_select_expire_finish(GtkCalendar *self,
  * @param self Gtk.Button::clicked
  * @param row Gtk.Button::clicked
  */
-void lock_management_dialog_reset_expire(GtkButton *self,
-                                         LockManagementDialog *dialog)
+void lock_management_dialog_reset_expire(GtkButton *self, LockManagementDialog *dialog)
 {
     (void)self;
 
@@ -455,10 +397,8 @@ bool lock_management_dialog_generate_ready(LockManagementDialog *dialog)
 void lock_management_dialog_generate(LockManagementDialog *dialog)
 {
     const gchar *name = gtk_editable_get_text(GTK_EDITABLE(dialog->name_entry));
-    const gchar *email =
-        gtk_editable_get_text(GTK_EDITABLE(dialog->email_entry));
-    const gchar *comment =
-        gtk_editable_get_text(GTK_EDITABLE(dialog->comment_entry));
+    const gchar *email = gtk_editable_get_text(GTK_EDITABLE(dialog->email_entry));
+    const gchar *comment = gtk_editable_get_text(GTK_EDITABLE(dialog->comment_entry));
 
     // Name (Comment) <Email>
     gchar *userid = g_strdup_printf("%s", name);
@@ -468,24 +408,18 @@ void lock_management_dialog_generate(LockManagementDialog *dialog)
         userid = g_strdup_printf("%s <%s>", userid, email);
 
     gint sign_selected = adw_combo_row_get_selected(dialog->sign_entry);
-    GtkStringList *sign_list =
-        GTK_STRING_LIST(adw_combo_row_get_model(dialog->sign_entry));
-    const gchar *sign_algorithm =
-        gtk_string_list_get_string(sign_list, sign_selected);
+    GtkStringList *sign_list = GTK_STRING_LIST(adw_combo_row_get_model(dialog->sign_entry));
+    const gchar *sign_algorithm = gtk_string_list_get_string(sign_list, sign_selected);
 
     gint encrypt_selected = adw_combo_row_get_selected(dialog->encrypt_entry);
-    GtkStringList *encrypt_list =
-        GTK_STRING_LIST(adw_combo_row_get_model(dialog->encrypt_entry));
-    const gchar *encrypt_algorithm =
-        gtk_string_list_get_string(encrypt_list, encrypt_selected);
+    GtkStringList *encrypt_list = GTK_STRING_LIST(adw_combo_row_get_model(dialog->encrypt_entry));
+    const gchar *encrypt_algorithm = gtk_string_list_get_string(encrypt_list, encrypt_selected);
 
     GDateTime *expire = gtk_calendar_get_date(dialog->expire_calendar);
     GDateTime *now = g_date_time_new_now_local();
-    const gint64 expire_offset = (dialog->generate_expire) ?
-        g_date_time_to_unix(expire) - g_date_time_to_unix(now) : 0;
+    const gint64 expire_offset = (dialog->generate_expire) ? g_date_time_to_unix(expire) - g_date_time_to_unix(now) : 0;
 
-    dialog->generate_success =
-        key_generate(userid, sign_algorithm, encrypt_algorithm, expire_offset);
+    dialog->generate_success = key_generate(userid, sign_algorithm, encrypt_algorithm, expire_offset);
 
     /* Cleanup */
     g_free(userid);
@@ -495,8 +429,7 @@ void lock_management_dialog_generate(LockManagementDialog *dialog)
     g_date_time_unref(now);
 
     /* UI */
-    g_idle_add((GSourceFunc) lock_management_dialog_generate_on_completed,
-               dialog);
+    g_idle_add((GSourceFunc) lock_management_dialog_generate_on_completed, dialog);
 
     g_thread_exit(0);
 }
@@ -508,8 +441,7 @@ void lock_management_dialog_generate(LockManagementDialog *dialog)
  *
  * @return https://docs.gtk.org/glib/func.idle_add.html
  */
-gboolean lock_management_dialog_generate_on_completed(LockManagementDialog
-                                                      *dialog)
+gboolean lock_management_dialog_generate_on_completed(LockManagementDialog *dialog)
 {
     AdwToast *toast;
 

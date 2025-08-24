@@ -26,16 +26,14 @@ bool context_initialize(gpgme_ctx_t *context)
 
     error = gpgme_new(context);
     if (error) {
-        g_warning("Failed to create new GPGME context: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME context: %s", gpgme_strerror(error));
 
         goto cleanup;
     }
 
     error = gpgme_set_protocol(*context, GPGME_PROTOCOL_OpenPGP);
     if (error) {
-        g_warning("Failed to set protocol of GPGME context to OpenPGP: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to set protocol of GPGME context to OpenPGP: %s", gpgme_strerror(error));
 
         gpgme_release(*context);
         goto cleanup;
@@ -43,8 +41,7 @@ bool context_initialize(gpgme_ctx_t *context)
 
     error = gpgme_set_pinentry_mode(*context, GPGME_PINENTRY_MODE_ASK);
     if (error) {
-        g_warning("Failed to set pinentry mode of GPGME context to ask: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to set pinentry mode of GPGME context to ask: %s", gpgme_strerror(error));
 
         gpgme_release(*context);
         // goto cleanup;
@@ -147,8 +144,7 @@ gpgme_key_t key_get(const char *fingerprint)
 
     error = gpgme_get_key(context, fingerprint, &key, 0);
     if (error) {
-        g_warning("Failed to obtain key by fingerprint: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to obtain key by fingerprint: %s", gpgme_strerror(error));
 
         // goto cleanup;
         // Necessary when more steps are added behind this call.
@@ -187,8 +183,7 @@ gpgme_key_t key_search(const char *userid)
             break;
     }
     if (error) {
-        g_warning("%s: %s", "Failed to find key matching User ID",
-                  gpgme_strerror(error));
+        g_warning("%s: %s", "Failed to find key matching User ID", gpgme_strerror(error));
 
         gpgme_key_release(key);
 
@@ -211,8 +206,7 @@ gpgme_key_t key_search(const char *userid)
  *
  * @return Success
  */
-bool key_generate(const char *userid, const char *sign_algorithm,
-                  const char *encrypt_algorithm, const unsigned long int expire)
+bool key_generate(const char *userid, const char *sign_algorithm, const char *encrypt_algorithm, const unsigned long int expire)
 {
     gpgme_ctx_t context;
     gpgme_error_t error;
@@ -224,32 +218,23 @@ bool key_generate(const char *userid, const char *sign_algorithm,
     if (expire == 0)
         flags = GPGME_CREATE_NOEXPIRE;
 
-    error =
-        gpgme_op_createkey(context, userid, sign_algorithm, 0, expire, NULL,
-                           GPGME_CREATE_SIGN | flags);
+    error = gpgme_op_createkey(context, userid, sign_algorithm, 0, expire, NULL, GPGME_CREATE_SIGN | flags);
     if (error) {
-        g_warning("Failed to generate new GPG key for signing: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to generate new GPG key for signing: %s", gpgme_strerror(error));
 
         goto cleanup;
     }
 
     gpgme_key_t key = key_search(userid);
 
-    error =
-        gpgme_op_createsubkey(context, key, encrypt_algorithm, 0, expire,
-                              GPGME_CREATE_ENCR | flags);
+    error = gpgme_op_createsubkey(context, key, encrypt_algorithm, 0, expire, GPGME_CREATE_ENCR | flags);
     if (error) {
-        g_warning("Failed to generate new GPG subkey for encryption: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to generate new GPG subkey for encryption: %s", gpgme_strerror(error));
 
-        error =
-            gpgme_op_delete_ext(context, key,
-                                GPGME_DELETE_ALLOW_SECRET | GPGME_DELETE_FORCE);
+        error = gpgme_op_delete_ext(context, key, GPGME_DELETE_ALLOW_SECRET | GPGME_DELETE_FORCE);
 
         if (error) {
-            g_warning("Failed to delete unfinished, generated key: %s",
-                      gpgme_strerror(error));
+            g_warning("Failed to delete unfinished, generated key: %s", gpgme_strerror(error));
 
             // goto cleanup_key;
             // Necessary when more steps are added behind this call.
@@ -285,16 +270,14 @@ bool key_import(const char *path)
 
     error = gpgme_data_new_from_file(&key_data, path, 1);
     if (error) {
-        g_warning("Failed to load GPGME key data from file: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to load GPGME key data from file: %s", gpgme_strerror(error));
 
         goto cleanup;
     }
 
     error = gpgme_op_import(context, key_data);
     if (error) {
-        g_warning("Failed to import GPG key from file: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to import GPG key from file: %s", gpgme_strerror(error));
 
         // goto cleanup_key_data;
         // Necessary when more steps are added behind this call.
@@ -330,16 +313,14 @@ bool key_export(const char *path, const char *fingerprint)
 
     error = gpgme_data_new(&key_data);
     if (error) {
-        g_warning("Failed to create GPGME key data in memory: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create GPGME key data in memory: %s", gpgme_strerror(error));
 
         goto cleanup;
     }
 
     error = gpgme_op_export(context, fingerprint, 0, key_data);
     if (error) {
-        g_warning("Failed to export GPG key(s) to file: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to export GPG key(s) to file: %s", gpgme_strerror(error));
 
         goto cleanup_key_data;
     }
@@ -383,16 +364,14 @@ bool key_expire(const char *fingerprint, const unsigned long int expire)
 
     error = gpgme_get_key(context, fingerprint, &key, 0);
     if (error) {
-        g_warning("Failed to get GPG key for expire date renewal: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to get GPG key for expire date renewal: %s", gpgme_strerror(error));
 
         goto cleanup;
     }
 
     error = gpgme_op_setexpire(context, key, expire, NULL, 0);
     if (error) {
-        g_warning("Failed to renew the expire date of a key: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to renew the expire date of a key: %s", gpgme_strerror(error));
 
         // goto cleanup_key;
         // Necessary when more steps are added behind this call.
@@ -425,8 +404,7 @@ bool key_remove(const char *fingerprint)
 
     error = gpgme_get_key(context, fingerprint, &key, 0);
     if (error) {
-        g_warning("Failed to get GPG key for removal: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to get GPG key for removal: %s", gpgme_strerror(error));
 
         goto cleanup;
     }
@@ -473,16 +451,14 @@ char *text_encrypt(const char *text, gpgme_key_t key)
 
     error = gpgme_data_new_from_mem(&input, text, strlen(text), 1);
     if (error) {
-        g_warning("Failed to create new GPGME input data from string: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME input data from string: %s", gpgme_strerror(error));
 
         goto cleanup;
     }
 
     error = gpgme_data_new(&output);
     if (error) {
-        g_warning("Failed to create new GPGME output data in memory: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME output data in memory: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -492,8 +468,7 @@ char *text_encrypt(const char *text, gpgme_key_t key)
                              key, NULL}
                              , GPGME_ENCRYPT_ALWAYS_TRUST, input, output);
     if (error) {
-        g_warning("Failed to encrypt GPGME data from memory: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to encrypt GPGME data from memory: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         // goto cleanup_input;
@@ -531,16 +506,14 @@ char *text_decrypt(const char *text)
 
     error = gpgme_data_new_from_mem(&input, text, strlen(text), 1);
     if (error) {
-        g_warning("Failed to create new GPGME input data from string: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME input data from string: %s", gpgme_strerror(error));
 
         goto cleanup;
     }
 
     error = gpgme_data_new(&output);
     if (error) {
-        g_warning("Failed to create new GPGME output data in memory: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME output data in memory: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -548,8 +521,7 @@ char *text_decrypt(const char *text)
 
     error = gpgme_op_decrypt(context, input, output);
     if (error) {
-        g_warning("Failed to decrypt GPGME data from memory: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to decrypt GPGME data from memory: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         // goto cleanup_input;
@@ -574,8 +546,7 @@ char *text_decrypt(const char *text)
  *
  * @return Signed text in an OpenPGP ASCII armor. Owned by caller
  */
-char *text_sign(const char *text, gpgme_key_t key,
-                gpgme_sig_mode_t signature_mode)
+char *text_sign(const char *text, gpgme_key_t key, gpgme_sig_mode_t signature_mode)
 {
     gpgme_ctx_t context;
     gpgme_error_t error;
@@ -590,16 +561,14 @@ char *text_sign(const char *text, gpgme_key_t key,
 
     error = gpgme_data_new_from_mem(&input, text, strlen(text), 1);
     if (error) {
-        g_warning("Failed to create new GPGME input data from string: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME input data from string: %s", gpgme_strerror(error));
 
         goto cleanup;
     }
 
     error = gpgme_data_new(&output);
     if (error) {
-        g_warning("Failed to create new GPGME output data in memory: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME output data in memory: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -607,8 +576,7 @@ char *text_sign(const char *text, gpgme_key_t key,
 
     error = gpgme_signers_add(context, key);
     if (error) {
-        g_warning("Failed to add signing key to GPGME context: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to add signing key to GPGME context: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -616,8 +584,7 @@ char *text_sign(const char *text, gpgme_key_t key,
 
     error = gpgme_op_sign(context, input, output, signature_mode);
     if (error) {
-        g_warning("Failed to sign GPGME data from memory: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to sign GPGME data from memory: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         // goto cleanup_input;
@@ -656,16 +623,14 @@ char *text_verify(const char *text, char **signer)
 
     error = gpgme_data_new_from_mem(&input, text, strlen(text), 1);
     if (error) {
-        g_warning("Failed to create new GPGME input data from string: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME input data from string: %s", gpgme_strerror(error));
 
         goto cleanup;
     }
 
     error = gpgme_data_new(&output);
     if (error) {
-        g_warning("Failed to create new GPGME output data in memory: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME output data in memory: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -673,8 +638,7 @@ char *text_verify(const char *text, char **signer)
 
     error = gpgme_op_verify(context, input, NULL, output);
     if (error) {
-        g_warning("%s: %s", "Failed to verify GPGME data from memory",
-                  gpgme_strerror(error));
+        g_warning("%s: %s", "Failed to verify GPGME data from memory", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -684,8 +648,7 @@ char *text_verify(const char *text, char **signer)
 
     if (!verify_result || !verify_result->signatures) {
         error = gpgme_err_make(GPG_ERR_SOURCE_UNKNOWN, GPG_ERR_BAD_SIGNATURE);
-        g_warning("%s: %s", "Failed to verify GPGME data from memory",
-                  gpgme_strerror(error));
+        g_warning("%s: %s", "Failed to verify GPGME data from memory", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -696,10 +659,7 @@ char *text_verify(const char *text, char **signer)
         goto cleanup_input;
     }
 
-    *signer =
-        g_strdup((verify_result->signatures->key !=
-                  NULL) ? verify_result->signatures->key->
-                 uids->uid : verify_result->signatures->fpr);
+    *signer = g_strdup((verify_result->signatures->key != NULL) ? verify_result->signatures->key->uids->uid : verify_result->signatures->fpr);
 
  cleanup_input:
     gpgme_data_release(input);
@@ -719,8 +679,7 @@ char *text_verify(const char *text, char **signer)
  *
  * @return Success
  */
-bool file_encrypt(const char *input_path, const char *output_path,
-                  gpgme_key_t key)
+bool file_encrypt(const char *input_path, const char *output_path, gpgme_key_t key)
 {
     gpgme_ctx_t context;
     gpgme_error_t error;
@@ -741,16 +700,14 @@ bool file_encrypt(const char *input_path, const char *output_path,
     // TODO: Do not copy file data to memory once GPGME supports this behavior
     error = gpgme_data_new_from_file(&input, input_path, 1);
     if (error) {
-        g_warning("Failed to create new GPGME input data from file: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME input data from file: %s", gpgme_strerror(error));
 
         goto cleanup;
     }
 
     error = gpgme_data_set_file_name(input, input_path);
     if (error) {
-        g_warning("Failed to set file name of GPGME input data: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to set file name of GPGME input data: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -758,8 +715,7 @@ bool file_encrypt(const char *input_path, const char *output_path,
 
     error = gpgme_data_new(&output);
     if (error) {
-        g_warning("Failed to create new GPGME output data in memory: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME output data in memory: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -767,8 +723,7 @@ bool file_encrypt(const char *input_path, const char *output_path,
 
     error = gpgme_data_set_file_name(output, output_path);
     if (error) {
-        g_warning("Failed to set file name of GPGME output data: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to set file name of GPGME output data: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -778,8 +733,7 @@ bool file_encrypt(const char *input_path, const char *output_path,
                              key, NULL}
                              , GPGME_ENCRYPT_ALWAYS_TRUST, input, output);
     if (error) {
-        g_warning("Failed to encrypt GPGME data from file: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to encrypt GPGME data from file: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         // goto cleanup_input;
@@ -824,16 +778,14 @@ bool file_decrypt(const char *input_path, const char *output_path)
     // TODO: Do not copy file data to memory once GPGME supports this behavior
     error = gpgme_data_new_from_file(&input, input_path, 1);
     if (error) {
-        g_warning("Failed to create new GPGME input data from file: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME input data from file: %s", gpgme_strerror(error));
 
         goto cleanup;
     }
 
     error = gpgme_data_set_file_name(input, input_path);
     if (error) {
-        g_warning("Failed to set file name of GPGME input data: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to set file name of GPGME input data: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -841,8 +793,7 @@ bool file_decrypt(const char *input_path, const char *output_path)
 
     error = gpgme_data_new(&output);
     if (error) {
-        g_warning("Failed to create new GPGME output data in memory: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME output data in memory: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -850,8 +801,7 @@ bool file_decrypt(const char *input_path, const char *output_path)
 
     error = gpgme_data_set_file_name(output, output_path);
     if (error) {
-        g_warning("Failed to set file name of GPGME output data: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to set file name of GPGME output data: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -859,8 +809,7 @@ bool file_decrypt(const char *input_path, const char *output_path)
 
     error = gpgme_op_decrypt(context, input, output);
     if (error) {
-        g_warning("Failed to decrypt GPGME data from file: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to decrypt GPGME data from file: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         // goto cleanup_input;
@@ -906,16 +855,14 @@ bool file_sign(const char *input_path, const char *output_path, gpgme_key_t key)
     // TODO: Do not copy file data to memory once GPGME supports this behavior
     error = gpgme_data_new_from_file(&input, input_path, 1);
     if (error) {
-        g_warning("Failed to create new GPGME input data from file: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME input data from file: %s", gpgme_strerror(error));
 
         goto cleanup;
     }
 
     error = gpgme_data_set_file_name(input, input_path);
     if (error) {
-        g_warning("Failed to set file name of GPGME input data: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to set file name of GPGME input data: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -923,8 +870,7 @@ bool file_sign(const char *input_path, const char *output_path, gpgme_key_t key)
 
     error = gpgme_data_new(&output);
     if (error) {
-        g_warning("Failed to create new GPGME output data in memory: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME output data in memory: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -932,8 +878,7 @@ bool file_sign(const char *input_path, const char *output_path, gpgme_key_t key)
 
     error = gpgme_data_set_file_name(output, output_path);
     if (error) {
-        g_warning("Failed to set file name of GPGME output data: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to set file name of GPGME output data: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -941,8 +886,7 @@ bool file_sign(const char *input_path, const char *output_path, gpgme_key_t key)
 
     error = gpgme_signers_add(context, key);
     if (error) {
-        g_warning("Failed to add signing key to GPGME context: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to add signing key to GPGME context: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -950,8 +894,7 @@ bool file_sign(const char *input_path, const char *output_path, gpgme_key_t key)
 
     error = gpgme_op_sign(context, input, output, GPGME_SIG_MODE_NORMAL);
     if (error) {
-        g_warning("Failed to sign GPGME data from file: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to sign GPGME data from file: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         // goto cleanup_input;
@@ -997,16 +940,14 @@ bool file_verify(const char *input_path, const char *output_path, char **signer)
     // TODO: Do not copy file data to memory once GPGME supports this behavior
     error = gpgme_data_new_from_file(&input, input_path, 1);
     if (error) {
-        g_warning("Failed to create new GPGME input data from file: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME input data from file: %s", gpgme_strerror(error));
 
         goto cleanup;
     }
 
     error = gpgme_data_set_file_name(input, input_path);
     if (error) {
-        g_warning("Failed to set file name of GPGME input data: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to set file name of GPGME input data: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -1014,8 +955,7 @@ bool file_verify(const char *input_path, const char *output_path, char **signer)
 
     error = gpgme_data_new(&output);
     if (error) {
-        g_warning("Failed to create new GPGME output data in memory: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to create new GPGME output data in memory: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -1023,8 +963,7 @@ bool file_verify(const char *input_path, const char *output_path, char **signer)
 
     error = gpgme_data_set_file_name(output, output_path);
     if (error) {
-        g_warning("Failed to set file name of GPGME output data: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to set file name of GPGME output data: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -1032,8 +971,7 @@ bool file_verify(const char *input_path, const char *output_path, char **signer)
 
     error = gpgme_op_verify(context, input, NULL, output);
     if (error) {
-        g_warning("Failed to verify GPGME data from file: %s",
-                  gpgme_strerror(error));
+        g_warning("Failed to verify GPGME data from file: %s", gpgme_strerror(error));
 
         gpgme_data_release(output);
         goto cleanup_input;
@@ -1046,10 +984,7 @@ bool file_verify(const char *input_path, const char *output_path, char **signer)
         goto cleanup_input;
     }
 
-    *signer =
-        g_strdup((verify_result->signatures->key !=
-                  NULL) ? verify_result->signatures->key->
-                 uids->uid : verify_result->signatures->fpr);
+    *signer = g_strdup((verify_result->signatures->key != NULL) ? verify_result->signatures->key->uids->uid : verify_result->signatures->fpr);
 
  cleanup_input:
     gpgme_data_release(input);
