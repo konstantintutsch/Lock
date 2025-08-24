@@ -30,8 +30,7 @@ jobs:
 
 
         # Check if changes occurred when styling according to style rules
-        if $?
+        if [[ "$?" == 1 ]]
         then
-          git diff --no-pager --cached
           exit 1
         fi
