@@ -6,11 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-08-24 16:36+0200\n"
-"PO-Revision-Date: 2025-07-09 11:01+0000\n"
-"Last-Translator: freeducks-debug <209897795+freeducks-"
-"debug@users.noreply.github.com>\n"
+"PO-Revision-Date: 2025-08-29 19:02+0000\n"
+"Last-Translator: Максим Горпиніч <gorpinicmaksim0@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/Lock/"
 "Application/uk/>\n"
 "Language: uk\n"
@@ -19,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.13.1-dev\n"
 
 #. Details
 #: src/application.c:177 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -169,20 +168,18 @@ msgid "Key does not expire"
 msgstr "Ключ не має терміну закінчення дії"
 
 #: src/keyrow.c:105
-#, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expired on %B %e, %Y at %R"
-msgstr "Термін закінчився %s в %s"
+msgstr "Термін дії закінчився %B %e, %Y о %R"
 
 #: src/keyrow.c:105
-#, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expires on %B %e, %Y at %R"
-msgstr "Термін закінчується %s в %s"
+msgstr "Термін дії закінчується %B %e, %Y о %R"
 
 #: src/keyrow.c:135
 msgid "Fingerprint copied"
@@ -232,349 +229,353 @@ msgstr "Дата закінчення терміну поновлено"
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
 msgid "General"
-msgstr ""
+msgstr "Загальне"
 
 #: data/ui/shortcuts.blp:13
 msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
-msgstr ""
+msgstr "Показати комбінації клавіш"
 
 #: data/ui/shortcuts.blp:20
 msgid "Copy text view to clipboard"
-msgstr ""
+msgstr "Копіювати текстовий вигляд у буфер обміну"
 
 #: data/ui/shortcuts.blp:27
 msgid "Overwrite text view with clipboard"
-msgstr ""
+msgstr "Перезаписати текстовий режим за допомогою буфера обміну"
 
 #: data/ui/shortcuts.blp:35
 msgctxt "Shortcuts Group"
 msgid "Cryptography"
-msgstr ""
+msgstr "Криптографія"
 
 #: data/ui/shortcuts.blp:38
 msgid "Encrypt text"
-msgstr ""
+msgstr "Зашифрувати текст"
 
 #: data/ui/shortcuts.blp:45
 msgid "Decrypt text"
-msgstr ""
+msgstr "Розшифрувати текст"
 
 #: data/ui/shortcuts.blp:52
 msgid "Sign text"
-msgstr ""
+msgstr "Текст знака"
 
 #: data/ui/shortcuts.blp:59
 msgid "Verify text"
-msgstr ""
+msgstr "Перевірити текст"
 
 #: data/ui/window.blp:9 data/ui/window.blp:197
 #: data/com.konstantintutsch.Lock.desktop.in.in:3
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:6
 msgid "Lock"
-msgstr ""
+msgstr "Замок"
 
 #: data/ui/window.blp:29
 msgid "Copy"
-msgstr ""
+msgstr "Копіювати"
 
 #: data/ui/window.blp:30
 msgid "Copy the text"
-msgstr ""
+msgstr "Скопіюйте текст"
 
 #: data/ui/window.blp:33
 msgid "Cryptography operations"
-msgstr ""
+msgstr "Криптографічні операції"
 
 #: data/ui/window.blp:50
 msgid "Processing …"
-msgstr ""
+msgstr "Обробка …"
 
 #: data/ui/window.blp:55
 msgid "Main Menu"
-msgstr ""
+msgstr "Головне меню"
 
 #: data/ui/window.blp:66
 msgid "Text"
-msgstr ""
+msgstr "Текст"
 
 #: data/ui/window.blp:84 data/ui/filerow.blp:5
 msgid "File"
-msgstr ""
+msgstr "Файл"
 
 #: data/ui/window.blp:109
 msgid "No open files"
-msgstr ""
+msgstr "Немає відкритих файлів"
 
 #: data/ui/window.blp:110
 msgid "No files have been opened for processing"
-msgstr ""
+msgstr "Жоден файл не було відкрито для обробки"
 
 #: data/ui/window.blp:130
 msgid "Open"
-msgstr ""
+msgstr "Відкрито"
 
 #: data/ui/window.blp:131
 msgid "Open files for processing"
-msgstr ""
+msgstr "Відкрити файли для обробки"
 
 #: data/ui/window.blp:141
 msgid "Clear"
-msgstr ""
+msgstr "Очистити"
 
 #: data/ui/window.blp:142
 msgid "Close all open files"
-msgstr ""
+msgstr "Закрийте всі відкриті файли"
 
 #: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
-msgstr ""
+msgstr "Шифрувати"
 
 #: data/ui/window.blp:164 data/ui/window.blp:226
 msgid "Decrypt"
-msgstr ""
+msgstr "Розшифрувати"
 
 #: data/ui/window.blp:171 data/ui/window.blp:232
 msgid "Sign"
-msgstr ""
+msgstr "Знак"
 
 #: data/ui/window.blp:178 data/ui/window.blp:244
 msgid "Verify"
-msgstr ""
+msgstr "Перевірити"
 
 #: data/ui/window.blp:203 data/ui/managementdialog.blp:30
 msgid "Manage keys"
-msgstr ""
+msgstr "Керування ключами"
 
 #: data/ui/window.blp:209
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Комбінації клавіш"
 
 #: data/ui/window.blp:213
 msgid "About Lock"
-msgstr ""
+msgstr "Про блокування"
 
 #: data/ui/window.blp:236
 msgid "Sign (Clear Text)"
-msgstr ""
+msgstr "Знак (відкритий текст)"
 
 #: data/ui/window.blp:240
 msgid "Sign (Detached)"
-msgstr ""
+msgstr "Знак (окремий)"
 
 #: data/ui/filerow.blp:18
 msgid "Close file"
-msgstr ""
+msgstr "Закрити файл"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
-msgstr ""
+msgstr "Виберіть клавішу"
 
 #: data/ui/selectiondialog.blp:48 data/ui/managementdialog.blp:50
 msgid "Refresh keys"
-msgstr ""
+msgstr "Оновити ключі"
 
 #: data/ui/selectiondialog.blp:68
 msgid "No capable keys available"
-msgstr ""
+msgstr "Немає сумісних ключів"
 
 #: data/ui/selectiondialog.blp:69
 msgid ""
 "Your GnuPG keyring does not contain any keys that support this functionality."
 msgstr ""
+"Ваша зв'язка ключів GnuPG не містить жодних ключів, які підтримують цю "
+"функціональність."
 
 #: data/ui/managementdialog.blp:69
 msgid "No keys available"
-msgstr ""
+msgstr "Ключів немає"
 
 #: data/ui/managementdialog.blp:70
 msgid "Your GnuPG keyring does not contain any keys."
-msgstr ""
+msgstr "Ваша зв'язка ключів GnuPG не містить жодних ключів."
 
 #: data/ui/managementdialog.blp:90
 msgctxt "Import keys from files"
 msgid "Import"
-msgstr ""
+msgstr "Імпорт"
 
 #: data/ui/managementdialog.blp:91
 msgid "Import keys from files"
-msgstr ""
+msgstr "Імпорт ключів з файлів"
 
 #: data/ui/managementdialog.blp:98
 msgid "Create a new keypair"
-msgstr ""
+msgstr "Створіть нову пару ключів"
 
 #: data/ui/managementdialog.blp:111
 msgid "Generate keypair"
-msgstr ""
+msgstr "Згенерувати пару ключів"
 
 #: data/ui/managementdialog.blp:142
 msgctxt "Name of the UID of the new keypair"
 msgid "Name (Mandatory)"
-msgstr ""
+msgstr "Ім'я (обов'язково)"
 
 #: data/ui/managementdialog.blp:147
 msgctxt "Email of the UID of the new keypair"
 msgid "Email"
-msgstr ""
+msgstr "Електронна пошта"
 
 #: data/ui/managementdialog.blp:152
 msgctxt "Comment of the UID of the new keypair"
 msgid "Comment"
-msgstr ""
+msgstr "Коментар"
 
 #: data/ui/managementdialog.blp:157
 msgctxt "Signing algorithm of the new keypair"
 msgid "Signing Algorithm"
-msgstr ""
+msgstr "Алгоритм підписання"
 
 #: data/ui/managementdialog.blp:158
 msgctxt "Signing algorithm of the new keypair"
 msgid "Key"
-msgstr ""
+msgstr "Ключ"
 
 #: data/ui/managementdialog.blp:166
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Encryption Algorithm"
-msgstr ""
+msgstr "Алгоритм шифрування"
 
 #: data/ui/managementdialog.blp:167
 msgctxt "Encryption algorithm of the new keypair"
 msgid "Subkey"
-msgstr ""
+msgstr "Підключ"
 
 #: data/ui/managementdialog.blp:175
 msgctxt "Expire date of the new key pair"
 msgid "Expire Date"
-msgstr ""
+msgstr "Термін дії"
 
 #: data/ui/managementdialog.blp:185
 msgid "Remove expire date"
-msgstr ""
+msgstr "Вилучити термін дії"
 
 #: data/ui/managementdialog.blp:193
 msgid "Select expire date of the new key pair"
-msgstr ""
+msgstr "Виберіть дату закінчення терміну дії нової пари ключів"
 
 #: data/ui/managementdialog.blp:214
 msgctxt "Generate a new keypair"
 msgid "Generate"
-msgstr ""
+msgstr "Згенерувати"
 
 #: data/ui/managementdialog.blp:215
 msgid "Generate a new keypair"
-msgstr ""
+msgstr "Згенерувати нову пару ключів"
 
 #: data/ui/keyrow.blp:5
 msgid "User ID"
-msgstr ""
+msgstr "Ідентифікатор користувача"
 
 #: data/ui/keyrow.blp:6
 msgid "Fingerprint"
-msgstr ""
+msgstr "Відбиток пальця"
 
 #: data/ui/keyrow.blp:7
 msgid "Expiry"
-msgstr ""
+msgstr "Термін дії'"
 
 #: data/ui/keyrow.blp:20
 msgid "Remove key"
-msgstr ""
+msgstr "Вилучити ключ"
 
 #: data/ui/keyrow.blp:27
 msgid "Export public key to file"
-msgstr ""
+msgstr "Експортувати відкритий ключ у файл"
 
 #: data/ui/keyrow.blp:38
 msgid "Edit expire date"
-msgstr ""
+msgstr "Змінити дату закінчення терміну дії"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
-msgstr ""
+msgstr "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify';"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:9
 msgid ""
 "Lock is a graphical front-end for GnuPG (GPG) making use of a beautiful "
 "LibAdwaita GUI."
 msgstr ""
+"Lock — це графічний інтерфейс для GnuPG (GPG), що використовує гарний "
+"графічний інтерфейс LibAdwaita."
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:10
 msgid "Process text and files:"
-msgstr ""
+msgstr "Обробка тексту та файлів:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:12
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:75
 msgid "Encryption"
-msgstr ""
+msgstr "Шифрування"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
 msgid "Decryption"
-msgstr ""
+msgstr "Розшифрування"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:14
 msgid "Signing"
-msgstr ""
+msgstr "Підписання"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:15
 msgid "Verification"
-msgstr ""
+msgstr "Перевірка"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:17
 msgid "Manage your GnuPG keyring:"
-msgstr ""
+msgstr "Керуйте своєю зв'язкою ключів GnuPG:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
 msgid "Generate new key pairs"
-msgstr ""
+msgstr "Генерувати нові пари ключів"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:20
 msgid "Import keys"
-msgstr ""
+msgstr "Імпорт ключів"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:21
 msgid "Export public keys"
-msgstr ""
+msgstr "Експорт відкритих ключів"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
 msgid "View expire dates"
-msgstr ""
+msgstr "Переглянути дати закінчення терміну дії"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
 msgid "Update expire dates of expired keys"
-msgstr ""
+msgstr "Оновити дати закінчення терміну дії прострочених ключів"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
-msgstr ""
+msgstr "Вилучити ключі"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:47
 msgid "Light Appearance"
-msgstr ""
+msgstr "Зовнішній вигляд світла"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:51
 msgid "Dark Appearance"
-msgstr ""
+msgstr "Темний вигляд"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:55
 msgid "Key Management"
-msgstr ""
+msgstr "Управління ключами"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:59
 msgid "Keypair Generation"
-msgstr ""
+msgstr "Генерація пар ключів"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:63
 msgid "File processing"
-msgstr ""
+msgstr "Обробка файлів"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:67
 msgid "Plain text"
-msgstr ""
+msgstr "Звичайний текст"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:71
 msgid "Key selection dialog"
-msgstr ""
+msgstr "Діалогове вікно вибору клавіші"
 
 #, c-format
 #~ msgctxt "Translators: do NOT translate “GnuPG Made Easy”"
