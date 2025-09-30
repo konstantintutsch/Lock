@@ -85,6 +85,11 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.8.0" date="2025-10-01">
+            <description translate="no">
+                <p>GNOME 49 runtime</p>
+            </description>
+        </release>
         <release version="1.7.6" date="2025-09-05">
             <description translate="no">
                 <ul>
