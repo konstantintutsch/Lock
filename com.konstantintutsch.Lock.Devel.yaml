@@ -1,6 +1,6 @@
 id: com.konstantintutsch.Lock.Devel
 runtime: org.gnome.Platform
-runtime-version: '48'
+runtime-version: '49'
 sdk: org.gnome.Sdk
 command: com.konstantintutsch.Lock.Devel
 finish-args:
