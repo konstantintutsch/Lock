@@ -85,6 +85,14 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.8.1" date="2025-10-11">
+            <description translate="no">
+                <ul>
+                    <li>Updated: Italian translation</li>
+                    <li>Updated: Occitan translation</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.8.0" date="2025-10-01">
             <description translate="no">
                 <p>GNOME 49 runtime</p>
