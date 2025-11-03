@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-08-24 16:36+0200\n"
-"PO-Revision-Date: 2025-01-14 12:01+0000\n"
+"PO-Revision-Date: 2025-11-04 02:51+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/Lock/Application/"
 "he/>\n"
@@ -15,9 +15,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
-"n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 5.10-dev\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : "
+"((n > 10 && n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Weblate 5.14.1-dev\n"
 
 #. Details
 #: src/application.c:177 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -61,18 +61,18 @@ msgid "Text pasted"
 msgstr "הטקסט הודבק"
 
 #: src/window.c:532
-#, fuzzy, c-format
+#, c-format
 msgid "File selected to be opened is not a regular file: %s"
-msgstr "פתיחת קובץ הפלט נכשלה: %s"
+msgstr "הקובץ שנבחר לפתיחה אינו קובץ רגיל: %s"
 
 #: src/window.c:671
 msgid "Save files"
-msgstr ""
+msgstr "שמירת קבצים"
 
 #: src/window.c:672
 msgctxt "Save files"
 msgid "Save"
-msgstr ""
+msgstr "שמירה"
 
 #: src/window.c:792 src/window.c:864
 msgid "Encryption failed"
@@ -83,9 +83,8 @@ msgid "Text encrypted"
 msgstr "הטקסט הוצפן"
 
 #: src/window.c:866
-#, fuzzy
 msgid "Files encrypted"
-msgstr "הקובץ הוצפן"
+msgstr "הקבצים הוצפנו"
 
 #: src/window.c:923 src/window.c:1000
 msgid "Decryption failed"
@@ -96,9 +95,8 @@ msgid "Text decrypted"
 msgstr "הטקסט פוענח"
 
 #: src/window.c:1002
-#, fuzzy
 msgid "Files decrypted"
-msgstr "הקובץ פוענח"
+msgstr "הקבצים פוענחו"
 
 #: src/window.c:1107 src/window.c:1194
 msgid "Signing failed"
@@ -109,9 +107,8 @@ msgid "Text signed"
 msgstr "הטקסט נחתם"
 
 #: src/window.c:1196
-#, fuzzy
 msgid "Files signed"
-msgstr "הקובץ נחתם"
+msgstr "הקבצים נחתמו"
 
 #: src/window.c:1253
 msgid "Signature invalid"
@@ -124,20 +121,19 @@ msgstr "החתימה שגויה - מאת %s"
 
 #: src/window.c:1304
 msgid "valid"
-msgstr ""
+msgstr "תקף"
 
 #: src/window.c:1304
 msgid "invalid"
-msgstr ""
+msgstr "שגוי"
 
 #: src/window.c:1336
 msgid "At least one invalid signature"
-msgstr ""
+msgstr "לפחות חתימה אחת שגויה"
 
 #: src/window.c:1338
-#, fuzzy
 msgid "Signatures valid"
-msgstr "החתימה שגויה"
+msgstr "החתימות תקפות"
 
 #: src/managementdialog.c:313
 msgid "Import failed"
@@ -155,16 +151,14 @@ msgid "%B %e, %Y"
 msgstr ""
 
 #: src/managementdialog.c:371
-#, fuzzy
 msgid "No expire date"
-msgstr "הצגת תאריכי תפוגת תוקף"
+msgstr "אין תאריך תפוגת תוקף"
 
 #: src/managementdialog.c:449
 msgid "Generation failed"
 msgstr "היצירה נכשלה"
 
 #: src/managementdialog.c:451
-#, fuzzy
 msgid "Key pair generated"
 msgstr "נוצר צמד מפתחות"
 
@@ -230,9 +224,8 @@ msgid "Renewal failed"
 msgstr "החידוש נכשל"
 
 #: src/keyrow.c:360
-#, fuzzy
 msgid "Expire date renewed"
-msgstr "התפוגה התחדשה"
+msgstr "תאריך התפוגה התחדש"
 
 #: data/ui/shortcuts.blp:10
 msgctxt "Shortcuts Group"
@@ -309,29 +302,27 @@ msgstr "קובץ"
 
 #: data/ui/window.blp:109
 msgid "No open files"
-msgstr ""
+msgstr "אין קבצים פתוחים"
 
 #: data/ui/window.blp:110
-#, fuzzy
 msgid "No files have been opened for processing"
-msgstr "לא נבחרו קבצים לעיבוד"
+msgstr "לא נפתחו קבצים לעיבוד"
 
 #: data/ui/window.blp:130
 msgid "Open"
-msgstr ""
+msgstr "פתיחה"
 
 #: data/ui/window.blp:131
-#, fuzzy
 msgid "Open files for processing"
-msgstr "לא נבחרו קבצים לעיבוד"
+msgstr "פתיחת קבצים לעיבוד"
 
 #: data/ui/window.blp:141
 msgid "Clear"
-msgstr ""
+msgstr "פינוי"
 
 #: data/ui/window.blp:142
 msgid "Close all open files"
-msgstr ""
+msgstr "סגירת כל הקבצים הפתוחים"
 
 #: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
@@ -371,7 +362,7 @@ msgstr "חתימה (מנותקת)"
 
 #: data/ui/filerow.blp:18
 msgid "Close file"
-msgstr ""
+msgstr "סגירת קובץ"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
@@ -451,20 +442,17 @@ msgid "Subkey"
 msgstr "תת־מפתח"
 
 #: data/ui/managementdialog.blp:175
-#, fuzzy
 msgctxt "Expire date of the new key pair"
 msgid "Expire Date"
-msgstr "הצגת תאריכי תפוגת תוקף"
+msgstr "תאריך תפוגת תוקף"
 
 #: data/ui/managementdialog.blp:185
-#, fuzzy
 msgid "Remove expire date"
-msgstr "הצגת תאריכי תפוגת תוקף"
+msgstr "הסרת תאריך תפוגת תוקף"
 
 #: data/ui/managementdialog.blp:193
-#, fuzzy
 msgid "Select expire date of the new key pair"
-msgstr "יצירת צמד מפתחות חדש"
+msgstr "נא לבחור תאריך תפוגה לצמד המפתחות החדש"
 
 #: data/ui/managementdialog.blp:214
 msgctxt "Generate a new keypair"
@@ -496,9 +484,8 @@ msgid "Export public key to file"
 msgstr "ייצוא מפתח ציבורי לקובץ"
 
 #: data/ui/keyrow.blp:38
-#, fuzzy
 msgid "Edit expire date"
-msgstr "הצגת תאריכי תפוגת תוקף"
+msgstr "עריכת תאריך תפוגת תוקף"
 
 #: data/com.konstantintutsch.Lock.desktop.in.in:11
 msgid "gpg;gnupg;cryptography;openpgp;encrypt;decrypt;sign;verify;"
@@ -538,7 +525,6 @@ msgid "Manage your GnuPG keyring:"
 msgstr "ניהול צרור מפתחות ה־GnuPG שלך:"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:19
-#, fuzzy
 msgid "Generate new key pairs"
 msgstr "יצירת צמדי מפתחות חדשים"
 
@@ -551,14 +537,12 @@ msgid "Export public keys"
 msgstr "ייצוא מפתחות ציבוריים"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:22
-#, fuzzy
 msgid "View expire dates"
 msgstr "הצגת תאריכי תפוגת תוקף"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:23
-#, fuzzy
 msgid "Update expire dates of expired keys"
-msgstr "יצירת צמד מפתחות חדש"
+msgstr "עדכון תאריכי תפוגת תוקף של מפתחות שתוקפם פג"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:24
 msgid "Remove keys"
