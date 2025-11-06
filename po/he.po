@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-08-24 16:36+0200\n"
-"PO-Revision-Date: 2025-11-04 02:51+0000\n"
+"PO-Revision-Date: 2025-11-07 15:51+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/Lock/Application/"
 "he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : "
 "((n > 10 && n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #. Details
 #: src/application.c:177 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -148,7 +148,7 @@ msgctxt ""
 "Expire date format for key pair generation (see GLib.DateTime.format / "
 "https://docs.gtk.org/glib/method.DateTime.format.html#description)"
 msgid "%B %e, %Y"
-msgstr ""
+msgstr "%e ב%B, %Y"
 
 #: src/managementdialog.c:371
 msgid "No expire date"
@@ -167,20 +167,18 @@ msgid "Key does not expire"
 msgstr "תוקף המפתח לא יפוג"
 
 #: src/keyrow.c:105
-#, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expired on %B %e, %Y at %R"
-msgstr "התוקף פג ב־%s בשעה %s"
+msgstr "התוקף פג ב־%e ב%B, %Y בשעה %R"
 
 #: src/keyrow.c:105
-#, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expires on %B %e, %Y at %R"
-msgstr "התוקף יפוג ב־%s בשעה %s"
+msgstr "התוקף יפוג ב־%e ב%B, %Y בשעה %R"
 
 #: src/keyrow.c:135
 msgid "Fingerprint copied"
