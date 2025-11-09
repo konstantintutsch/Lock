@@ -85,6 +85,16 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.8.2" date="2025-11-09">
+            <description translate="no">
+                <ul>
+                    <li>Added Norwegian Nynorsk translation</li>
+                    <li>Updated Turkish translation</li>
+                    <li>Updated Hebrew translation</li>
+                    <li>Updated Czech translation</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.8.1" date="2025-10-11">
             <description translate="no">
                 <ul>
