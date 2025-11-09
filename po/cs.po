@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-08-24 16:36+0200\n"
-"PO-Revision-Date: 2025-07-01 11:01+0000\n"
-"Last-Translator: Klára Holubová <witt087@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2025-11-06 09:51+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/Lock/Application/"
 "cs/>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #. Details
 #: src/application.c:177 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -167,20 +167,18 @@ msgid "Key does not expire"
 msgstr "Platnost klíče nevyprší"
 
 #: src/keyrow.c:105
-#, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expired on %B %e, %Y at %R"
-msgstr "Vypršel %s v %s"
+msgstr "Platnost skončila %B %e, %Y v %R"
 
 #: src/keyrow.c:105
-#, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expires on %B %e, %Y at %R"
-msgstr "Vyprší %s v %s"
+msgstr "Platnost končí %B %e, %Y v %R"
 
 #: src/keyrow.c:135
 msgid "Fingerprint copied"
@@ -511,7 +509,7 @@ msgstr "Šifrovat"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:13
 msgid "Decryption"
-msgstr "Rozšifrovat"
+msgstr "Rozšifrování"
 
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:14
 msgid "Signing"

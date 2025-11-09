@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-08-24 16:36+0200\n"
-"PO-Revision-Date: 2025-01-03 17:02+0000\n"
+"PO-Revision-Date: 2025-10-25 10:02+0000\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/Lock/Application/"
 "tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.14.1-dev\n"
 
 #. Details
 #: src/application.c:177 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -61,18 +61,18 @@ msgid "Text pasted"
 msgstr "Metin yapıştırıldı"
 
 #: src/window.c:532
-#, fuzzy, c-format
+#, c-format
 msgid "File selected to be opened is not a regular file: %s"
-msgstr "Çıktı dosyası açılamadı: %s"
+msgstr "Açılmak üzere seçilen dosya normal dosya değil: %s"
 
 #: src/window.c:671
 msgid "Save files"
-msgstr ""
+msgstr "Dosyaları kaydet"
 
 #: src/window.c:672
 msgctxt "Save files"
 msgid "Save"
-msgstr ""
+msgstr "Kaydet"
 
 #: src/window.c:792 src/window.c:864
 msgid "Encryption failed"
@@ -83,9 +83,8 @@ msgid "Text encrypted"
 msgstr "Metin şifrelendi"
 
 #: src/window.c:866
-#, fuzzy
 msgid "Files encrypted"
-msgstr "Dosya şifrelendi"
+msgstr "Dosyalar şifrelendi"
 
 #: src/window.c:923 src/window.c:1000
 msgid "Decryption failed"
@@ -96,9 +95,8 @@ msgid "Text decrypted"
 msgstr "Metin şifresi çözüldü"
 
 #: src/window.c:1002
-#, fuzzy
 msgid "Files decrypted"
-msgstr "Dosya şifresi çözüldü"
+msgstr "Dosyaların şifresi çözüldü"
 
 #: src/window.c:1107 src/window.c:1194
 msgid "Signing failed"
@@ -109,9 +107,8 @@ msgid "Text signed"
 msgstr "Metin imzalandı"
 
 #: src/window.c:1196
-#, fuzzy
 msgid "Files signed"
-msgstr "Dosya imzalandı"
+msgstr "Dosyalar imzalandı"
 
 #: src/window.c:1253
 msgid "Signature invalid"
@@ -124,20 +121,19 @@ msgstr "İmza geçerli - %s tarafından"
 
 #: src/window.c:1304
 msgid "valid"
-msgstr ""
+msgstr "geçerli"
 
 #: src/window.c:1304
 msgid "invalid"
-msgstr ""
+msgstr "geçersiz"
 
 #: src/window.c:1336
 msgid "At least one invalid signature"
-msgstr ""
+msgstr "En az bir imza geçersiz"
 
 #: src/window.c:1338
-#, fuzzy
 msgid "Signatures valid"
-msgstr "İmza geçersiz"
+msgstr "İmzalar geçerli"
 
 #: src/managementdialog.c:313
 msgid "Import failed"
@@ -171,20 +167,18 @@ msgid "Key does not expire"
 msgstr "Anahtar geçerlilik tarihi yok"
 
 #: src/keyrow.c:105
-#, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expired on %B %e, %Y at %R"
-msgstr "Geçerlilik süresi doldu: %s saat %s"
+msgstr "%e %B %Y %R tarihinde süresi doldu"
 
 #: src/keyrow.c:105
-#, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expires on %B %e, %Y at %R"
-msgstr "Geçerlilik tarihi: %s saat %s"
+msgstr "%e %B %Y %R tarihinde süresi dolar"
 
 #: src/keyrow.c:135
 msgid "Fingerprint copied"
@@ -306,29 +300,27 @@ msgstr "Dosya"
 
 #: data/ui/window.blp:109
 msgid "No open files"
-msgstr ""
+msgstr "Açık dosya yok"
 
 #: data/ui/window.blp:110
-#, fuzzy
 msgid "No files have been opened for processing"
-msgstr "İşlenmek için dosya seçilmedi"
+msgstr "İşlenmek için dosya açılmadı"
 
 #: data/ui/window.blp:130
 msgid "Open"
-msgstr ""
+msgstr "Aç"
 
 #: data/ui/window.blp:131
-#, fuzzy
 msgid "Open files for processing"
-msgstr "İşlenmek için dosya seçilmedi"
+msgstr "İşlenmek için dosya aç"
 
 #: data/ui/window.blp:141
 msgid "Clear"
-msgstr ""
+msgstr "Temizle"
 
 #: data/ui/window.blp:142
 msgid "Close all open files"
-msgstr ""
+msgstr "Tüm açık dosyaları kapat"
 
 #: data/ui/window.blp:157 data/ui/window.blp:222
 msgid "Encrypt"
@@ -368,7 +360,7 @@ msgstr "İmzala (Ayrı)"
 
 #: data/ui/filerow.blp:18
 msgid "Close file"
-msgstr ""
+msgstr "Dosyayı kapat"
 
 #: data/ui/selectiondialog.blp:35
 msgid "Select key"
