@@ -11,5 +11,9 @@
     <gresource prefix="@project_root@">
         <file preprocess="xml-stripblanks">@project_id@.metainfo.xml</file>
         <file>style.css</file>
+        <file preprocess="xml-stripblanks">icons/scalable/actions/padlock2-symbolic.svg</file>
+        <file preprocess="xml-stripblanks">icons/scalable/actions/padlock2-open-symbolic.svg</file>
+        <file preprocess="xml-stripblanks">icons/scalable/actions/verified-checkmark-symbolic.svg</file>
+        <file preprocess="xml-stripblanks">icons/scalable/actions/signature-symbolic.svg</file>
     </gresource>
 </gresources>
