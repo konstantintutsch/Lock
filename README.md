@@ -35,11 +35,3 @@ Manage your GnuPG keyring:
 ![Keypair generation](data/com.konstantintutsch.Lock.Screenshot.Generate.png)
 
 ![File processing](data/com.konstantintutsch.Lock.Screenshot.File.png)
-
-### Usage
-
-![Plain text](data/com.konstantintutsch.Lock.Screenshot.Showcase.1Text.png)
-
-![Key selection dialog](data/com.konstantintutsch.Lock.Screenshot.Showcase.2Select.png)
-
-![Encryption](data/com.konstantintutsch.Lock.Screenshot.Showcase.3Encrypted.png)
