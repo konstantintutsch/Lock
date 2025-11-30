@@ -142,12 +142,11 @@ void lock_application_show_shortcuts(GSimpleAction *self, GVariant *parameter, L
     (void)parameter;
 
     GtkBuilder *builder = gtk_builder_new_from_resource(UI_RESOURCE("shortcuts.ui"));
-    GtkShortcutsWindow *window = GTK_SHORTCUTS_WINDOW(gtk_builder_get_object(builder, "shortcuts"));
+    AdwShortcutsDialog *dialog = ADW_SHORTCUTS_DIALOG(gtk_builder_get_object(builder, "shortcuts"));
 
-    LockWindow *active_window = LOCK_WINDOW(gtk_application_get_active_window(GTK_APPLICATION(app)));
-    gtk_window_set_transient_for(GTK_WINDOW(window), GTK_WINDOW(active_window));
+    LockWindow *window = LOCK_WINDOW(gtk_application_get_active_window(GTK_APPLICATION(app)));
 
-    gtk_window_present(GTK_WINDOW(window));
+    adw_dialog_present(ADW_DIALOG(dialog), GTK_WIDGET(window));
 
     /* Cleanup */
     g_object_unref(builder);

@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
-"POT-Creation-Date: 2025-08-24 16:36+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-30 11:07+0100\n"
 "PO-Revision-Date: 2025-08-29 19:02+0000\n"
 "Last-Translator: Максим Горпиніч <gorpinicmaksim0@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/Lock/"
@@ -21,26 +21,26 @@ msgstr ""
 "X-Generator: Weblate 5.13.1-dev\n"
 
 #. Details
-#: src/application.c:177 data/com.konstantintutsch.Lock.desktop.in.in:4
+#: src/application.c:176 data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "Обробка даних за допомогою GnuPG"
 
-#: src/application.c:178
+#: src/application.c:177
 msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr "Перекласти"
 
-#: src/application.c:179
+#: src/application.c:178
 msgctxt "Button linking to source code"
 msgid "Develop"
 msgstr "Розробка"
 
-#: src/application.c:188
+#: src/application.c:187
 msgid "translator-credits"
 msgstr "freeducks-debug"
 
-#: src/application.c:193
+#: src/application.c:192
 msgid "Dependencies"
 msgstr "Залежності"
 
@@ -226,42 +226,44 @@ msgstr "Не вдалося поновити"
 msgid "Expire date renewed"
 msgstr "Дата закінчення терміну поновлено"
 
-#: data/ui/shortcuts.blp:10
-msgctxt "Shortcuts Group"
+#: data/ui/shortcuts.blp:6
+#, fuzzy
+msgctxt "Shortcuts Section"
 msgid "General"
 msgstr "Загальне"
 
-#: data/ui/shortcuts.blp:13
+#: data/ui/shortcuts.blp:9
 msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
 msgstr "Показати комбінації клавіш"
 
-#: data/ui/shortcuts.blp:20
+#: data/ui/shortcuts.blp:14
 msgid "Copy text view to clipboard"
 msgstr "Копіювати текстовий вигляд у буфер обміну"
 
-#: data/ui/shortcuts.blp:27
+#: data/ui/shortcuts.blp:19
 msgid "Overwrite text view with clipboard"
 msgstr "Перезаписати текстовий режим за допомогою буфера обміну"
 
-#: data/ui/shortcuts.blp:35
-msgctxt "Shortcuts Group"
+#: data/ui/shortcuts.blp:25
+#, fuzzy
+msgctxt "Shortcuts Section"
 msgid "Cryptography"
 msgstr "Криптографія"
 
-#: data/ui/shortcuts.blp:38
+#: data/ui/shortcuts.blp:28
 msgid "Encrypt text"
 msgstr "Зашифрувати текст"
 
-#: data/ui/shortcuts.blp:45
+#: data/ui/shortcuts.blp:33
 msgid "Decrypt text"
 msgstr "Розшифрувати текст"
 
-#: data/ui/shortcuts.blp:52
+#: data/ui/shortcuts.blp:38
 msgid "Sign text"
 msgstr "Текст знака"
 
-#: data/ui/shortcuts.blp:59
+#: data/ui/shortcuts.blp:43
 msgid "Verify text"
 msgstr "Перевірити текст"
 

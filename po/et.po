@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-24 16:36+0200\n"
+"POT-Creation-Date: 2025-11-30 11:07+0100\n"
 "PO-Revision-Date: 2025-08-16 23:02+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
@@ -20,26 +20,26 @@ msgstr ""
 "X-Generator: Weblate 5.13\n"
 
 #. Details
-#: src/application.c:177 data/com.konstantintutsch.Lock.desktop.in.in:4
+#: src/application.c:176 data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "Krüpti ja dekrüpti andmeid GnuPG-ga"
 
-#: src/application.c:178
+#: src/application.c:177
 msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr "Tõlgi"
 
-#: src/application.c:179
+#: src/application.c:178
 msgctxt "Button linking to source code"
 msgid "Develop"
 msgstr "Arenda"
 
-#: src/application.c:188
+#: src/application.c:187
 msgid "translator-credits"
 msgstr "Priit Jõerüüt"
 
-#: src/application.c:193
+#: src/application.c:192
 msgid "Dependencies"
 msgstr "Sõltuvused"
 
@@ -225,42 +225,44 @@ msgstr "Uuendamine ei õnnestunud"
 msgid "Expire date renewed"
 msgstr "Aegumiskuupäev on uuendatud"
 
-#: data/ui/shortcuts.blp:10
-msgctxt "Shortcuts Group"
+#: data/ui/shortcuts.blp:6
+#, fuzzy
+msgctxt "Shortcuts Section"
 msgid "General"
 msgstr "Üldised"
 
-#: data/ui/shortcuts.blp:13
+#: data/ui/shortcuts.blp:9
 msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
 msgstr "Näita kiirklahve"
 
-#: data/ui/shortcuts.blp:20
+#: data/ui/shortcuts.blp:14
 msgid "Copy text view to clipboard"
 msgstr "Kopeeri tekstivaade lõikelauale"
 
-#: data/ui/shortcuts.blp:27
+#: data/ui/shortcuts.blp:19
 msgid "Overwrite text view with clipboard"
 msgstr "Kirjuta tekstivaade üle väärtusega lõikelaualt"
 
-#: data/ui/shortcuts.blp:35
-msgctxt "Shortcuts Group"
+#: data/ui/shortcuts.blp:25
+#, fuzzy
+msgctxt "Shortcuts Section"
 msgid "Cryptography"
 msgstr "Krüptograafia"
 
-#: data/ui/shortcuts.blp:38
+#: data/ui/shortcuts.blp:28
 msgid "Encrypt text"
 msgstr "Krüpti tekst"
 
-#: data/ui/shortcuts.blp:45
+#: data/ui/shortcuts.blp:33
 msgid "Decrypt text"
 msgstr "Dekrüpti tekst"
 
-#: data/ui/shortcuts.blp:52
+#: data/ui/shortcuts.blp:38
 msgid "Sign text"
 msgstr "Allkirjasta tekst"
 
-#: data/ui/shortcuts.blp:59
+#: data/ui/shortcuts.blp:43
 msgid "Verify text"
 msgstr "Verifitseeri tekst"
 

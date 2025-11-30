@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-24 16:36+0200\n"
+"POT-Creation-Date: 2025-11-30 11:07+0100\n"
 "PO-Revision-Date: 2025-08-24 13:54+0000\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -20,26 +20,26 @@ msgstr ""
 "X-Generator: Weblate 5.13\n"
 
 #. Details
-#: src/application.c:177 data/com.konstantintutsch.Lock.desktop.in.in:4
+#: src/application.c:176 data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "使用 GnuPG 处理数据"
 
-#: src/application.c:178
+#: src/application.c:177
 msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr "翻译"
 
-#: src/application.c:179
+#: src/application.c:178
 msgctxt "Button linking to source code"
 msgid "Develop"
 msgstr "开发"
 
-#: src/application.c:188
+#: src/application.c:187
 msgid "translator-credits"
 msgstr "lumingzh <lumingzh@qq.com>, 2024-2025"
 
-#: src/application.c:193
+#: src/application.c:192
 msgid "Dependencies"
 msgstr "依赖"
 
@@ -225,42 +225,44 @@ msgstr "续期失败"
 msgid "Expire date renewed"
 msgstr "到期日期已续期"
 
-#: data/ui/shortcuts.blp:10
-msgctxt "Shortcuts Group"
+#: data/ui/shortcuts.blp:6
+#, fuzzy
+msgctxt "Shortcuts Section"
 msgid "General"
 msgstr "常规"
 
-#: data/ui/shortcuts.blp:13
+#: data/ui/shortcuts.blp:9
 msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
 msgstr "显示快捷键"
 
-#: data/ui/shortcuts.blp:20
+#: data/ui/shortcuts.blp:14
 msgid "Copy text view to clipboard"
 msgstr "复制文本视图至剪贴板"
 
-#: data/ui/shortcuts.blp:27
+#: data/ui/shortcuts.blp:19
 msgid "Overwrite text view with clipboard"
 msgstr "用剪贴板覆盖文本视图"
 
-#: data/ui/shortcuts.blp:35
-msgctxt "Shortcuts Group"
+#: data/ui/shortcuts.blp:25
+#, fuzzy
+msgctxt "Shortcuts Section"
 msgid "Cryptography"
 msgstr "加解密"
 
-#: data/ui/shortcuts.blp:38
+#: data/ui/shortcuts.blp:28
 msgid "Encrypt text"
 msgstr "加密文本"
 
-#: data/ui/shortcuts.blp:45
+#: data/ui/shortcuts.blp:33
 msgid "Decrypt text"
 msgstr "解密文本"
 
-#: data/ui/shortcuts.blp:52
+#: data/ui/shortcuts.blp:38
 msgid "Sign text"
 msgstr "签署文本"
 
-#: data/ui/shortcuts.blp:59
+#: data/ui/shortcuts.blp:43
 msgid "Verify text"
 msgstr "校验文本"
 

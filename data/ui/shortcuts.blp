@@ -1,66 +1,47 @@
 using Gtk 4.0;
+using Adw 1;
 
-Gtk.ShortcutsWindow shortcuts {
-    modal: true;
+Adw.ShortcutsDialog shortcuts {
+    Adw.ShortcutsSection {
+        title: C_("Shortcuts Section", "General");
 
-    Gtk.ShortcutsSection {
-        section-name: "shortcuts";
-
-        Gtk.ShortcutsGroup {
-            title: C_("Shortcuts Group", "General");
-
-            Gtk.ShortcutsShortcut {
-                title: C_("Shortcut as in keyboard shortcut", "Show shortcuts");
-                // TODO: make action-name work
-                //action-name: "app.shortcuts";
-                accelerator: "<Control>question";
-            }
-
-            Gtk.ShortcutsShortcut {
-                title: _("Copy text view to clipboard");
-                // TODO: make action-name work
-                //action-name: "win.copy_text";
-                accelerator: "<Control>c";
-            }
-
-            Gtk.ShortcutsShortcut {
-                title: _("Overwrite text view with clipboard");
-                // TODO: make action-name work
-                //action-name: "win.paste_text";
-                accelerator: "<Control>v";
-            }
+        Adw.ShortcutsItem {
+            title: C_("Shortcut as in keyboard shortcut", "Show shortcuts");
+            action-name: "app.shortcuts";
         }
 
-        Gtk.ShortcutsGroup {
-            title: C_("Shortcuts Group", "Cryptography");
+        Adw.ShortcutsItem {
+            title: _("Copy text view to clipboard");
+            action-name: "win.copy_text";
+        }
 
-            Gtk.ShortcutsShortcut {
-                title: _("Encrypt text");
-                // TODO: make action-name work
-                // action-name: "win.encrypt_text";
-                accelerator: "<Control>e";
-            }
+        Adw.ShortcutsItem {
+            title: _("Overwrite text view with clipboard");
+            action-name: "win.paste_text";
+        }
+    }
 
-            Gtk.ShortcutsShortcut {
-                title: _("Decrypt text");
-                // TODO: make action-name work
-                // action-name: "win.decrypt_text";
-                accelerator: "<Control>d";
-            }
+    Adw.ShortcutsSection {
+        title: C_("Shortcuts Section", "Cryptography");
 
-            Gtk.ShortcutsShortcut {
-                title: _("Sign text");
-                // TODO: make action-name work
-                // action-name: "win.sign_text";
-                accelerator: "<Control>s";
-            }
+        Adw.ShortcutsItem {
+            title: _("Encrypt text");
+            action-name: "win.encrypt_text";
+        }
 
-            Gtk.ShortcutsShortcut {
-                title: _("Verify text");
-                // TODO: make action-name work
-                // action-name: "win.verify_text";
-                accelerator: "<Control>ampersand";
-            }
+        Adw.ShortcutsItem {
+            title: _("Decrypt text");
+            action-name: "win.decrypt_text";
+        }
+
+        Adw.ShortcutsItem {
+            title: _("Sign text");
+            action-name: "win.sign_text";
+        }
+
+        Adw.ShortcutsItem {
+            title: _("Verify text");
+            action-name: "win.verify_text";
         }
     }
 }

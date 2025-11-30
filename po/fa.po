@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-24 16:36+0200\n"
+"POT-Creation-Date: 2025-11-30 11:07+0100\n"
 "PO-Revision-Date: 2025-07-27 14:06+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/Lock/Application/"
@@ -20,26 +20,26 @@ msgstr ""
 "X-Generator: Weblate 5.13-dev\n"
 
 #. Details
-#: src/application.c:177 data/com.konstantintutsch.Lock.desktop.in.in:4
+#: src/application.c:176 data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
 msgstr "پردازش داده با گنوپی‌جی"
 
-#: src/application.c:178
+#: src/application.c:177
 msgctxt "Button linking to translations"
 msgid "Translate"
 msgstr "ترجمه کردن"
 
-#: src/application.c:179
+#: src/application.c:178
 msgctxt "Button linking to source code"
 msgid "Develop"
 msgstr "توسعه دادن"
 
-#: src/application.c:188
+#: src/application.c:187
 msgid "translator-credits"
 msgstr "رضا حسین‌زاده <rezahosseinzadeh@riseup.net>"
 
-#: src/application.c:193
+#: src/application.c:192
 msgid "Dependencies"
 msgstr "وابستگی‌ها"
 
@@ -227,42 +227,44 @@ msgstr "تجدید شکست خورد"
 msgid "Expire date renewed"
 msgstr "تاریخ انقضا تجدید شد"
 
-#: data/ui/shortcuts.blp:10
-msgctxt "Shortcuts Group"
+#: data/ui/shortcuts.blp:6
+#, fuzzy
+msgctxt "Shortcuts Section"
 msgid "General"
 msgstr "عمومی"
 
-#: data/ui/shortcuts.blp:13
+#: data/ui/shortcuts.blp:9
 msgctxt "Shortcut as in keyboard shortcut"
 msgid "Show shortcuts"
 msgstr "نمایش میانبرها"
 
-#: data/ui/shortcuts.blp:20
+#: data/ui/shortcuts.blp:14
 msgid "Copy text view to clipboard"
 msgstr "رونوشت کردن نمای متن به تخته‌گیره"
 
-#: data/ui/shortcuts.blp:27
+#: data/ui/shortcuts.blp:19
 msgid "Overwrite text view with clipboard"
 msgstr "بازنویسی کردن نمای متن با تخته‌گیره"
 
-#: data/ui/shortcuts.blp:35
-msgctxt "Shortcuts Group"
+#: data/ui/shortcuts.blp:25
+#, fuzzy
+msgctxt "Shortcuts Section"
 msgid "Cryptography"
 msgstr "رمزنگاری"
 
-#: data/ui/shortcuts.blp:38
+#: data/ui/shortcuts.blp:28
 msgid "Encrypt text"
 msgstr "رمزگذاری متن"
 
-#: data/ui/shortcuts.blp:45
+#: data/ui/shortcuts.blp:33
 msgid "Decrypt text"
 msgstr "رمزگشایی متن"
 
-#: data/ui/shortcuts.blp:52
+#: data/ui/shortcuts.blp:38
 msgid "Sign text"
 msgstr "امضا کردن متن"
 
-#: data/ui/shortcuts.blp:59
+#: data/ui/shortcuts.blp:43
 msgid "Verify text"
 msgstr "اعتبارسنجی متن"
 
