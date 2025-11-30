@@ -73,6 +73,14 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.9.0" date="2025-11-30">
+            <description translate="no">
+                <ul>
+                    <li>Implemented new Adwaita shortcuts dialog</li>
+                    <li>Improved iconography of file operations</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.8.2" date="2025-11-09">
             <description translate="no">
                 <ul>
