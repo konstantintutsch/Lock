@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-11-30 11:07+0100\n"
-"PO-Revision-Date: 2025-08-16 23:02+0000\n"
+"PO-Revision-Date: 2025-12-01 14:00+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/Lock/"
 "Application/et/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #. Details
 #: src/application.c:176 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -226,7 +226,6 @@ msgid "Expire date renewed"
 msgstr "Aegumiskuupäev on uuendatud"
 
 #: data/ui/shortcuts.blp:6
-#, fuzzy
 msgctxt "Shortcuts Section"
 msgid "General"
 msgstr "Üldised"
@@ -245,7 +244,6 @@ msgid "Overwrite text view with clipboard"
 msgstr "Kirjuta tekstivaade üle väärtusega lõikelaualt"
 
 #: data/ui/shortcuts.blp:25
-#, fuzzy
 msgctxt "Shortcuts Section"
 msgid "Cryptography"
 msgstr "Krüptograafia"
