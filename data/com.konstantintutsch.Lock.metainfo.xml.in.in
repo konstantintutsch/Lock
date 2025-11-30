@@ -62,18 +62,6 @@
             <image>https://github.com/konstantintutsch/Lock/raw/refs/heads/main/data/com.konstantintutsch.Lock.Screenshot.File.png</image>
             <caption>File processing</caption>
         </screenshot>
-        <screenshot>
-            <image>https://github.com/konstantintutsch/Lock/raw/refs/heads/main/data/com.konstantintutsch.Lock.Screenshot.Showcase.1Text.png</image>
-            <caption>Plain text</caption>
-        </screenshot>
-        <screenshot>
-            <image>https://github.com/konstantintutsch/Lock/raw/refs/heads/main/data/com.konstantintutsch.Lock.Screenshot.Showcase.2Select.png</image>
-            <caption>Key selection dialog</caption>
-        </screenshot>
-        <screenshot>
-            <image>https://github.com/konstantintutsch/Lock/raw/refs/heads/main/data/com.konstantintutsch.Lock.Screenshot.Showcase.3Encrypted.png</image>
-            <caption>Encryption</caption>
-        </screenshot>
     </screenshots>
     <recommends>
         <display_length compare="ge">500</display_length>
