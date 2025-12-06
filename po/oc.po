@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-11-30 11:07+0100\n"
-"PO-Revision-Date: 2025-10-05 06:02+0000\n"
+"PO-Revision-Date: 2025-12-01 14:00+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/Lock/Application/"
 "oc/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #. Details
 #: src/application.c:176 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -167,24 +167,22 @@ msgid "Key does not expire"
 msgstr "La clau expira pas"
 
 #: src/keyrow.c:105
-#, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expired on %B %e, %Y at %R"
-msgstr "Expirada lo %e %B %Y a %R"
+msgstr "Expirada lo %e %B de %Y a %R"
 
 #: src/keyrow.c:105
-#, fuzzy
 msgctxt ""
 "Expired key tooltip (see GLib.DateTime.format / https://docs.gtk.org/glib/"
 "method.DateTime.format.html#description for date formatting)"
 msgid "Expires on %B %e, %Y at %R"
-msgstr "Expira lo %s a %s"
+msgstr "Expira lo %e %B de %Y a %R"
 
 #: src/keyrow.c:135
 msgid "Fingerprint copied"
-msgstr "Emprenta digital copiada"
+msgstr "Emprenta digitala copiada"
 
 #: src/keyrow.c:222
 msgid "Export failed"
@@ -228,7 +226,6 @@ msgid "Expire date renewed"
 msgstr "Data d'expiracion renovada"
 
 #: data/ui/shortcuts.blp:6
-#, fuzzy
 msgctxt "Shortcuts Section"
 msgid "General"
 msgstr "General"
@@ -247,7 +244,6 @@ msgid "Overwrite text view with clipboard"
 msgstr "Remplaçar la vista del tèxt amb lo quichapapièrs"
 
 #: data/ui/shortcuts.blp:25
-#, fuzzy
 msgctxt "Shortcuts Section"
 msgid "Cryptography"
 msgstr "Criptografia"
