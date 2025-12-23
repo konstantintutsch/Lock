@@ -19,27 +19,6 @@ cleanup:
   - "*.la"
   - "*.a"
 modules:
-  - name: gpgme
-    buildsystem: autotools
-    config-opts:
-      - --enable-maintainer-mode
-    sources:
-      - type: git
-        url: https://dev.gnupg.org/source/gpgme.git
-        tag: gpgme-1.24.2
-    cleanup:
-      - /include
-      - /share/pkgconfig
-      - "*.la"
-      - "*.a"
-  - name: blueprint-compiler
-    buildsystem: meson
-    sources:
-      - type: git
-        url: https://gitlab.gnome.org/jwestman/blueprint-compiler.git
-        tag: v0.18.0
-    cleanup:
-      - '*'
   - name: Lock
     buildsystem: meson
     run-tests: true
