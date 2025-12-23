@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-11-30 11:07+0100\n"
-"PO-Revision-Date: 2025-10-25 10:02+0000\n"
+"PO-Revision-Date: 2025-12-14 00:00+0000\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/Lock/Application/"
 "tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #. Details
 #: src/application.c:176 data/com.konstantintutsch.Lock.desktop.in.in:4
@@ -226,7 +226,6 @@ msgid "Expire date renewed"
 msgstr "Geçerlilik tarihi yenilendi"
 
 #: data/ui/shortcuts.blp:6
-#, fuzzy
 msgctxt "Shortcuts Section"
 msgid "General"
 msgstr "Genel"
@@ -245,7 +244,6 @@ msgid "Overwrite text view with clipboard"
 msgstr "Metin görünümünün üzerine pano ile yaz"
 
 #: data/ui/shortcuts.blp:25
-#, fuzzy
 msgctxt "Shortcuts Section"
 msgid "Cryptography"
 msgstr "Şifreleme"
