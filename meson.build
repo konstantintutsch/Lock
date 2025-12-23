@@ -76,7 +76,7 @@ gdk_dep = dependency('gdk-pixbuf-2.0', version: '>=2.42')
 glib_dep = dependency('glib-2.0', version: '>=2.84')
 gio_dep = dependency('gio-2.0', version: '>=2.84')
 
-gpgme_required_version = '1.24.0'
+gpgme_required_version = '1.24.0' # compatible and tested up to 2.0.1
 conf.set('gpgme_required_version', gpgme_required_version)
 gpgme_dep = dependency('gpgme', version: '>=' + gpgme_required_version)
 
