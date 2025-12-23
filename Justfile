@@ -40,6 +40,8 @@ bundle:
 dist:
     rm --verbose --interactive=never --recursive _*
     rm --verbose --interactive=never --recursive .flatpak-builder
+    rm --verbose --interactive=never --recursive .cache
+    rm --verbose --interactive=never --recursive compile_commands.json
 
 setup:
     sudo dnf install --assumeyes \
