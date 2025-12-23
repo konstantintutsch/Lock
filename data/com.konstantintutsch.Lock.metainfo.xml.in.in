@@ -73,6 +73,15 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.9.2" date="2025-12-23">
+            <description translate="no">
+                <ul>
+                    <li>Updated Turkish translation</li>
+                    <li>Updated Chinese (Simplified Han script) translation</li>
+                    <li>Switched to runtime GnuPG Made Easy (Flatpak)</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.9.1" date="2025-12-10">
             <description translate="no">
                 <ul>
