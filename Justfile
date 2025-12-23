@@ -51,9 +51,9 @@ setup:
         libadwaita-devel \
         gpgme-devel
     flatpak install --user --assumeyes \
-        org.gnome.Platform//48 \
-        org.gnome.Sdk//48 \
-        org.gnome.Sdk.Debug//48 \
+        org.gnome.Platform//49 \
+        org.gnome.Sdk//49 \
+        org.gnome.Sdk.Debug//49 \
         org.flatpak.Builder
 
     meson setup _meson
