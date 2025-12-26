@@ -6,11 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.konstantintutsch.Lock\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: mail@konstantintutsch.com\n"
 "POT-Creation-Date: 2025-11-30 11:07+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-12-27 16:00+0000\n"
+"Last-Translator: Flynn <cirilla@tuta.io>\n"
+"Language-Team: Cornish <https://hosted.weblate.org/projects/Lock/Application/"
+"kw/>\n"
 "Language: kw\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,85 +23,86 @@ msgstr ""
 "1000000 == 100000) ? 2 : ((n % 100 == 3 || n % 100 == 23 || n % 100 == 43 || "
 "n % 100 == 63 || n % 100 == 83) ? 3 : ((n != 1 && (n % 100 == 1 || n % 100 "
 "== 21 || n % 100 == 41 || n % 100 == 61 || n % 100 == 81)) ? 4 : 5))));\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #. Details
 #: src/application.c:176 data/com.konstantintutsch.Lock.desktop.in.in:4
 #: data/com.konstantintutsch.Lock.metainfo.xml.in.in:7
 msgid "Process data with GnuPG"
-msgstr ""
+msgstr "Argerdhes data gans GnuPG"
 
 #: src/application.c:177
 msgctxt "Button linking to translations"
 msgid "Translate"
-msgstr ""
+msgstr "Treylya"
 
 #: src/application.c:178
 msgctxt "Button linking to source code"
 msgid "Develop"
-msgstr ""
+msgstr "Displegya"
 
 #: src/application.c:187
 msgid "translator-credits"
-msgstr ""
+msgstr "Flynn"
 
 #: src/application.c:192
 msgid "Dependencies"
-msgstr ""
+msgstr "Serghogyon"
 
 #: src/window.c:136
 msgid "Enter text …"
-msgstr ""
+msgstr "Ynworra tekst…"
 
 #: src/window.c:408
 msgid "Text copied"
-msgstr ""
+msgstr "Tekst kopys"
 
 #: src/window.c:470
 #, c-format
 msgid "Could not read text from clipboard: %s"
-msgstr ""
+msgstr "Fyllis dhe redya tekst a-dhia astel glypp: %s"
 
 #: src/window.c:479
 msgid "Text pasted"
-msgstr ""
+msgstr "Tekst dasskrifys"
 
 #: src/window.c:532
 #, c-format
 msgid "File selected to be opened is not a regular file: %s"
-msgstr ""
+msgstr "Restren dewisys dhe ygerys yw na unn restren rewlys: %s"
 
 #: src/window.c:671
 msgid "Save files"
-msgstr ""
+msgstr "Sawya restrennow"
 
 #: src/window.c:672
 msgctxt "Save files"
 msgid "Save"
-msgstr ""
+msgstr "Sawya"
 
 #: src/window.c:792 src/window.c:864
 msgid "Encryption failed"
-msgstr ""
+msgstr "Argelyans fyllys"
 
 #: src/window.c:794
 msgid "Text encrypted"
-msgstr ""
+msgstr "Tekst argelesys"
 
 #: src/window.c:866
 msgid "Files encrypted"
-msgstr ""
+msgstr "Restrennow argelesys"
 
 #: src/window.c:923 src/window.c:1000
 msgid "Decryption failed"
-msgstr ""
+msgstr "Disargelyans fyllys"
 
 #: src/window.c:925
 msgid "Text decrypted"
-msgstr ""
+msgstr "Tekst disargelyans"
 
 #: src/window.c:1002
 msgid "Files decrypted"
-msgstr ""
+msgstr "Restrennow disargelyans"
 
 #: src/window.c:1107 src/window.c:1194
 msgid "Signing failed"
