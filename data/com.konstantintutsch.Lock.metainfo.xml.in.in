@@ -73,6 +73,13 @@
         <display_length compare="gt">350</display_length>
     </requires>
     <releases>
+        <release version="1.9.3" date="2025-12-29">
+            <description translate="no">
+                <ul>
+                    <li>Added Cornish translation</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.9.2" date="2025-12-23">
             <description translate="no">
                 <ul>
